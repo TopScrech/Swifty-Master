@@ -7,22 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F3BBD9E22AEECD3400A9F7E7 /* Everything_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E12AEECD3400A9F7E7 /* Everything_SwiftUIApp.swift */; };
+		F32E88D52AF856E400959D49 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32E88D42AF856E400959D49 /* JournalView.swift */; };
+		F37916EE2AF14A7A00B880AF /* Image Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37916ED2AF14A7A00B880AF /* Image Picker.swift */; };
+		F3BBD9E22AEECD3400A9F7E7 /* Everything SwiftUI App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E12AEECD3400A9F7E7 /* Everything SwiftUI App.swift */; };
 		F3BBD9E42AEECD3400A9F7E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E32AEECD3400A9F7E7 /* ContentView.swift */; };
 		F3BBD9E62AEECD3400A9F7E7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E52AEECD3400A9F7E7 /* Item.swift */; };
 		F3BBD9E82AEECD3500A9F7E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */; };
-		F3BBD9EC2AEECD3500A9F7E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BBD9EB2AEECD3500A9F7E7 /* Preview Assets.xcassets */; };
+		F3BBD9F42AEECD6C00A9F7E7 /* MaterialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9F32AEECD6C00A9F7E7 /* MaterialsView.swift */; };
+		F3BBD9F72AEECE4000A9F7E7 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3BBD9F62AEECE4000A9F7E7 /* ScrechKit */; };
+		F3BBD9F92AEED4BC00A9F7E7 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9F82AEED4BC00A9F7E7 /* ImagePickerView.swift */; };
+		F3BBD9FB2AEED4CE00A9F7E7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9FA2AEED4CE00A9F7E7 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F32E88D42AF856E400959D49 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		F37916ED2AF14A7A00B880AF /* Image Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker.swift"; sourceTree = "<group>"; };
 		F3BBD9DE2AEECD3400A9F7E7 /* Everything SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Everything SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3BBD9E12AEECD3400A9F7E7 /* Everything_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Everything_SwiftUIApp.swift; sourceTree = "<group>"; };
+		F3BBD9E12AEECD3400A9F7E7 /* Everything SwiftUI App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Everything SwiftUI App.swift"; sourceTree = "<group>"; };
 		F3BBD9E32AEECD3400A9F7E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F3BBD9E52AEECD3400A9F7E7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3BBD9E92AEECD3500A9F7E7 /* Everything_SwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Everything_SwiftUI.entitlements; sourceTree = "<group>"; };
-		F3BBD9EB2AEECD3500A9F7E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F3BBD9ED2AEECD3500A9F7E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3BBD9F32AEECD6C00A9F7E7 /* MaterialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsView.swift; sourceTree = "<group>"; };
+		F3BBD9F82AEED4BC00A9F7E7 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		F3BBD9FA2AEED4CE00A9F7E7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3BBD9F72AEECE4000A9F7E7 /* ScrechKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,23 +65,19 @@
 		F3BBD9E02AEECD3400A9F7E7 /* Everything SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				F3BBD9E12AEECD3400A9F7E7 /* Everything_SwiftUIApp.swift */,
-				F3BBD9E32AEECD3400A9F7E7 /* ContentView.swift */,
-				F3BBD9E52AEECD3400A9F7E7 /* Item.swift */,
+				F3BBD9E12AEECD3400A9F7E7 /* Everything SwiftUI App.swift */,
 				F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */,
-				F3BBD9E92AEECD3500A9F7E7 /* Everything_SwiftUI.entitlements */,
 				F3BBD9ED2AEECD3500A9F7E7 /* Info.plist */,
-				F3BBD9EA2AEECD3500A9F7E7 /* Preview Content */,
+				F3BBD9E92AEECD3500A9F7E7 /* Everything_SwiftUI.entitlements */,
+				F3BBD9E32AEECD3400A9F7E7 /* ContentView.swift */,
+				F3BBD9F82AEED4BC00A9F7E7 /* ImagePickerView.swift */,
+				F32E88D42AF856E400959D49 /* JournalView.swift */,
+				F3BBD9FA2AEED4CE00A9F7E7 /* ImagePicker.swift */,
+				F37916ED2AF14A7A00B880AF /* Image Picker.swift */,
+				F3BBD9F32AEECD6C00A9F7E7 /* MaterialsView.swift */,
+				F3BBD9E52AEECD3400A9F7E7 /* Item.swift */,
 			);
 			path = "Everything SwiftUI";
-			sourceTree = "<group>";
-		};
-		F3BBD9EA2AEECD3500A9F7E7 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				F3BBD9EB2AEECD3500A9F7E7 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +96,9 @@
 			dependencies = (
 			);
 			name = "Everything SwiftUI";
+			packageProductDependencies = (
+				F3BBD9F62AEECE4000A9F7E7 /* ScrechKit */,
+			);
 			productName = "Everything SwiftUI";
 			productReference = F3BBD9DE2AEECD3400A9F7E7 /* Everything SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +127,9 @@
 				Base,
 			);
 			mainGroup = F3BBD9D52AEECD3400A9F7E7;
+			packageReferences = (
+				F3BBD9F52AEECE4000A9F7E7 /* XCRemoteSwiftPackageReference "ScrechKit" */,
+			);
 			productRefGroup = F3BBD9DF2AEECD3400A9F7E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,7 +144,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3BBD9EC2AEECD3500A9F7E7 /* Preview Assets.xcassets in Resources */,
 				F3BBD9E82AEECD3500A9F7E7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,9 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F37916EE2AF14A7A00B880AF /* Image Picker.swift in Sources */,
 				F3BBD9E42AEECD3400A9F7E7 /* ContentView.swift in Sources */,
+				F32E88D52AF856E400959D49 /* JournalView.swift in Sources */,
 				F3BBD9E62AEECD3400A9F7E7 /* Item.swift in Sources */,
-				F3BBD9E22AEECD3400A9F7E7 /* Everything_SwiftUIApp.swift in Sources */,
+				F3BBD9E22AEECD3400A9F7E7 /* Everything SwiftUI App.swift in Sources */,
+				F3BBD9FB2AEED4CE00A9F7E7 /* ImagePicker.swift in Sources */,
+				F3BBD9F42AEECD6C00A9F7E7 /* MaterialsView.swift in Sources */,
+				F3BBD9F92AEED4BC00A9F7E7 /* ImagePickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +291,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Everything SwiftUI/Everything_SwiftUI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Everything SwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -294,7 +310,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Everything-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -314,7 +330,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Everything SwiftUI/Everything_SwiftUI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Everything SwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -333,7 +349,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Everything-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -367,6 +383,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F3BBD9F52AEECE4000A9F7E7 /* XCRemoteSwiftPackageReference "ScrechKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/ScrechKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F3BBD9F62AEECE4000A9F7E7 /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3BBD9F52AEECE4000A9F7E7 /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F3BBD9D62AEECD3400A9F7E7 /* Project object */;
 }

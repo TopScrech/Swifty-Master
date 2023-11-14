@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "screchkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TopScrech/ScrechKit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a51f06692e58c9424c8543205630942d80c62987"
+      }
+    }
+  ],
+  "version" : 2
+}

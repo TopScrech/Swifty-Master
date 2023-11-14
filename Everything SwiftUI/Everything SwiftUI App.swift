@@ -1,11 +1,4 @@
-//
-//  Everything_SwiftUIApp.swift
-//  Everything SwiftUI
-//
-//  Created by Sergei Saliukov on 29/10/2023.
-//
-
-import SwiftUI
+import ScrechKit
 import SwiftData
 
 @main
@@ -15,14 +8,14 @@ struct Everything_SwiftUIApp: App {
             Item.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
+        
         do {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])
         } catch {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
-
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
