@@ -18,7 +18,9 @@ struct Everything_SwiftUIApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                ContentView()
+            }
         }
         .modelContainer(sharedModelContainer)
     }

@@ -8,6 +8,10 @@ struct ContentView: View {
                 MaterialsView()
             }
             
+            NavigationLink("Sensory Feedback") {
+                FeedbackView()
+            }
+            
             NavigationLink("Drag and Drop") {
                 ImagePickerView()
             }
