@@ -68,6 +68,22 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		F3146C6C2CF73DD6005D58B3 /* Materials */ = {
+			isa = PBXGroup;
+			children = (
+				F3BBD9F32AEECD6C00A9F7E7 /* Materials View.swift */,
+			);
+			path = Materials;
+			sourceTree = "<group>";
+		};
+		F3146C6D2CF73DE2005D58B3 /* Haptic */ = {
+			isa = PBXGroup;
+			children = (
+				F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */,
+			);
+			path = Haptic;
+			sourceTree = "<group>";
+		};
 		F3BBD9D52AEECD3400A9F7E7 = {
 			isa = PBXGroup;
 			children = (
@@ -94,12 +110,12 @@
 				F3BBD9E92AEECD3500A9F7E7 /* Everything_SwiftUI.entitlements */,
 				F3146C502CF73BA5005D58B3 /* Fonts */,
 				F3146C4F2CF73B9E005D58B3 /* Hover */,
-				F3BBD9F82AEED4BC00A9F7E7 /* Image Picker View.swift */,
+				F3146C6C2CF73DD6005D58B3 /* Materials */,
+				F3146C6D2CF73DE2005D58B3 /* Haptic */,
 				F32E88D42AF856E400959D49 /* JournalView.swift */,
-				F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */,
+				F3BBD9F82AEED4BC00A9F7E7 /* Image Picker View.swift */,
 				F3BBD9FA2AEED4CE00A9F7E7 /* ImagePicker.swift */,
 				F37916ED2AF14A7A00B880AF /* Image Picker.swift */,
-				F3BBD9F32AEECD6C00A9F7E7 /* Materials View.swift */,
 				F3BBD9E52AEECD3400A9F7E7 /* Item.swift */,
 			);
 			path = "Everything SwiftUI";

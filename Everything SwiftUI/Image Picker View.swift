@@ -5,14 +5,12 @@ struct ImagePickerView: View {
         VStack {
             ImagePicker(
                 title: "Drag & Drop",
-                subTitle: "Tap to add an Image", 
+                subTitle: "Tap to add an Image",
                 systemImage: "square.and.arrow.up",
                 tint: .blue
             ) { image in
                 print(image)
             }
-            
-            Spacer()
         }
         .padding()
         .ignoresSafeArea(edges: [.bottom])
