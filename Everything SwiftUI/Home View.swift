@@ -15,12 +15,18 @@ struct HomeView: View {
                 FeedbackView()
             }
             
-            NavigationLink("Drag and Drop") {
+            NavigationLink {
                 ImagePickerView()
+            } label: {
+                Label("Drag & Drop", systemImage: "hand.tap")
+                    .foregroundStyle(.foreground)
             }
             
-            NavigationLink("Font sizes") {
+            NavigationLink {
                 FontList()
+            } label: {
+                Label("Font sizes", systemImage: "textformat.size")
+                    .foregroundStyle(.foreground)
             }
         }
     }
