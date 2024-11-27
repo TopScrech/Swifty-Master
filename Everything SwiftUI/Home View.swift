@@ -1,9 +1,13 @@
 import SwiftUI
 import SwiftData
 
-struct ContentView: View {
+struct HomeView: View {
     var body: some View {
         List {
+            NavigationLink("Hover Effects") {
+                HoverEffect()
+            }
+            
             NavigationLink("Materials") {
                 MaterialsView()
             }
@@ -21,6 +25,6 @@ struct ContentView: View {
 
 #Preview {
     NavigationView {
-        ContentView()
+        HomeView()
     }
 }

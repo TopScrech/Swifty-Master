@@ -19,7 +19,7 @@ struct Everything_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                ContentView()
+                HomeView()
             }
         }
         .modelContainer(sharedModelContainer)
