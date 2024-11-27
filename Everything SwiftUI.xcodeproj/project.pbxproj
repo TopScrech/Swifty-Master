@@ -10,9 +10,8 @@
 		F3146C4E2CF7382C005D58B3 /* Font List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3146C4D2CF7382C005D58B3 /* Font List.swift */; };
 		F32E88D52AF856E400959D49 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32E88D42AF856E400959D49 /* JournalView.swift */; };
 		F37916EE2AF14A7A00B880AF /* Image Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37916ED2AF14A7A00B880AF /* Image Picker.swift */; };
-		F3BBD9E22AEECD3400A9F7E7 /* Everything SwiftUI App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E12AEECD3400A9F7E7 /* Everything SwiftUI App.swift */; };
+		F3BBD9E22AEECD3400A9F7E7 /* Everything SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E12AEECD3400A9F7E7 /* Everything SwiftUI.swift */; };
 		F3BBD9E42AEECD3400A9F7E7 /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E32AEECD3400A9F7E7 /* Home View.swift */; };
-		F3BBD9E62AEECD3400A9F7E7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E52AEECD3400A9F7E7 /* Item.swift */; };
 		F3BBD9E82AEECD3500A9F7E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */; };
 		F3BBD9F42AEECD6C00A9F7E7 /* Materials View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9F32AEECD6C00A9F7E7 /* Materials View.swift */; };
 		F3BBD9F72AEECE4000A9F7E7 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3BBD9F62AEECE4000A9F7E7 /* ScrechKit */; };
@@ -27,9 +26,8 @@
 		F32E88D42AF856E400959D49 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		F37916ED2AF14A7A00B880AF /* Image Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker.swift"; sourceTree = "<group>"; };
 		F3BBD9DE2AEECD3400A9F7E7 /* Everything SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Everything SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3BBD9E12AEECD3400A9F7E7 /* Everything SwiftUI App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Everything SwiftUI App.swift"; sourceTree = "<group>"; };
+		F3BBD9E12AEECD3400A9F7E7 /* Everything SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Everything SwiftUI.swift"; sourceTree = "<group>"; };
 		F3BBD9E32AEECD3400A9F7E7 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
-		F3BBD9E52AEECD3400A9F7E7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3BBD9E92AEECD3500A9F7E7 /* Everything_SwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Everything_SwiftUI.entitlements; sourceTree = "<group>"; };
 		F3BBD9ED2AEECD3500A9F7E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,7 +101,7 @@
 		F3BBD9E02AEECD3400A9F7E7 /* Everything SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				F3BBD9E12AEECD3400A9F7E7 /* Everything SwiftUI App.swift */,
+				F3BBD9E12AEECD3400A9F7E7 /* Everything SwiftUI.swift */,
 				F3BBD9E32AEECD3400A9F7E7 /* Home View.swift */,
 				F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */,
 				F3BBD9ED2AEECD3500A9F7E7 /* Info.plist */,
@@ -116,7 +114,6 @@
 				F3BBD9F82AEED4BC00A9F7E7 /* Image Picker View.swift */,
 				F3BBD9FA2AEED4CE00A9F7E7 /* ImagePicker.swift */,
 				F37916ED2AF14A7A00B880AF /* Image Picker.swift */,
-				F3BBD9E52AEECD3400A9F7E7 /* Item.swift */,
 			);
 			path = "Everything SwiftUI";
 			sourceTree = "<group>";
@@ -201,8 +198,7 @@
 				F3BBD9E42AEECD3400A9F7E7 /* Home View.swift in Sources */,
 				F32E88D52AF856E400959D49 /* JournalView.swift in Sources */,
 				F3146C4E2CF7382C005D58B3 /* Font List.swift in Sources */,
-				F3BBD9E62AEECD3400A9F7E7 /* Item.swift in Sources */,
-				F3BBD9E22AEECD3400A9F7E7 /* Everything SwiftUI App.swift in Sources */,
+				F3BBD9E22AEECD3400A9F7E7 /* Everything SwiftUI.swift in Sources */,
 				F3BBD9FB2AEED4CE00A9F7E7 /* ImagePicker.swift in Sources */,
 				F3D8C11C2B2BB51000C7B0A9 /* Sensory Feedback.swift in Sources */,
 				F3BBD9F42AEECD6C00A9F7E7 /* Materials View.swift in Sources */,
