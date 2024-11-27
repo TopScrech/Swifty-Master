@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3146C4E2CF7382C005D58B3 /* Font List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3146C4D2CF7382C005D58B3 /* Font List.swift */; };
 		F32E88D52AF856E400959D49 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32E88D42AF856E400959D49 /* JournalView.swift */; };
 		F37916EE2AF14A7A00B880AF /* Image Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37916ED2AF14A7A00B880AF /* Image Picker.swift */; };
 		F3BBD9E22AEECD3400A9F7E7 /* Everything SwiftUI App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E12AEECD3400A9F7E7 /* Everything SwiftUI App.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F3146C4D2CF7382C005D58B3 /* Font List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font List.swift"; sourceTree = "<group>"; };
 		F32E88D42AF856E400959D49 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		F37916ED2AF14A7A00B880AF /* Image Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker.swift"; sourceTree = "<group>"; };
 		F3BBD9DE2AEECD3400A9F7E7 /* Everything SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Everything SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +76,7 @@
 				F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */,
 				F3BBD9ED2AEECD3500A9F7E7 /* Info.plist */,
 				F3BBD9E92AEECD3500A9F7E7 /* Everything_SwiftUI.entitlements */,
+				F3146C4D2CF7382C005D58B3 /* Font List.swift */,
 				F3EB1CB52C58FFE5007E6366 /* Hover Effect.swift */,
 				F3BBD9F82AEED4BC00A9F7E7 /* Image Picker View.swift */,
 				F32E88D42AF856E400959D49 /* JournalView.swift */,
@@ -165,6 +168,7 @@
 				F37916EE2AF14A7A00B880AF /* Image Picker.swift in Sources */,
 				F3BBD9E42AEECD3400A9F7E7 /* Home View.swift in Sources */,
 				F32E88D52AF856E400959D49 /* JournalView.swift in Sources */,
+				F3146C4E2CF7382C005D58B3 /* Font List.swift in Sources */,
 				F3BBD9E62AEECD3400A9F7E7 /* Item.swift in Sources */,
 				F3BBD9E22AEECD3400A9F7E7 /* Everything SwiftUI App.swift in Sources */,
 				F3BBD9FB2AEED4CE00A9F7E7 /* ImagePicker.swift in Sources */,

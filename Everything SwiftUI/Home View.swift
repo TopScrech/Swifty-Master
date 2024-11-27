@@ -1,5 +1,4 @@
 import SwiftUI
-import SwiftData
 
 struct HomeView: View {
     var body: some View {
@@ -18,6 +17,10 @@ struct HomeView: View {
             
             NavigationLink("Drag and Drop") {
                 ImagePickerView()
+            }
+            
+            NavigationLink("Font sizes") {
+                FontList()
             }
         }
     }
