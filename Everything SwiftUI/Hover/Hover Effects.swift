@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HoverEffect: View {
+struct HoverEffects: View {
     var body: some View {
         Text("Highlight")
             .hoverEffect(.highlight)
@@ -11,5 +11,5 @@ struct HoverEffect: View {
 }
 
 #Preview {
-    HoverEffect()
+    HoverEffects()
 }

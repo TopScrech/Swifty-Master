@@ -4,21 +4,24 @@ struct HomeView: View {
     var body: some View {
         List {
             NavigationLink("Hover Effects") {
-                HoverEffect()
+                HoverEffects()
             }
             
             NavigationLink("Materials") {
                 MaterialsView()
             }
             
-            NavigationLink("Sensory Feedback") {
+            NavigationLink {
                 FeedbackView()
+            } label: {
+                Label("Sensory Feedback", systemImage: "hand.tap")
+                    .foregroundStyle(.foreground)
             }
             
             NavigationLink {
                 ImagePickerView()
             } label: {
-                Label("Drag & Drop", systemImage: "hand.tap")
+                Label("Drag & Drop", systemImage: "doc")
                     .foregroundStyle(.foreground)
             }
             

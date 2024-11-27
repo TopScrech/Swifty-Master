@@ -37,7 +37,7 @@ struct ImagePicker: View {
                 if let previewImage {
                     Image(uiImage: previewImage)
                         .resizable()
-                        .aspectRatio(contentMode: .fit)
+                        .scaledToFit()
                         .padding(15)
                 }
             }
@@ -100,7 +100,7 @@ struct ImagePicker: View {
         }
     }
     
-    func extractImage(
+    private func extractImage(
         _ photoItem: PhotosPickerItem,
         _ viewSize: CGSize
     ) {

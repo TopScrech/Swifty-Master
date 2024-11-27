@@ -19,7 +19,7 @@
 		F3BBD9F92AEED4BC00A9F7E7 /* Image Picker View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9F82AEED4BC00A9F7E7 /* Image Picker View.swift */; };
 		F3BBD9FB2AEED4CE00A9F7E7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9FA2AEED4CE00A9F7E7 /* ImagePicker.swift */; };
 		F3D8C11C2B2BB51000C7B0A9 /* Sensory Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */; };
-		F3EB1CB62C58FFE5007E6366 /* Hover Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EB1CB52C58FFE5007E6366 /* Hover Effect.swift */; };
+		F3EB1CB62C58FFE5007E6366 /* Hover Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,7 @@
 		F3BBD9F82AEED4BC00A9F7E7 /* Image Picker View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker View.swift"; sourceTree = "<group>"; };
 		F3BBD9FA2AEED4CE00A9F7E7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensory Feedback.swift"; sourceTree = "<group>"; };
-		F3EB1CB52C58FFE5007E6366 /* Hover Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hover Effect.swift"; sourceTree = "<group>"; };
+		F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hover Effects.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +52,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3146C4F2CF73B9E005D58B3 /* Hover */ = {
+			isa = PBXGroup;
+			children = (
+				F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */,
+			);
+			path = Hover;
+			sourceTree = "<group>";
+		};
+		F3146C502CF73BA5005D58B3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F3146C4D2CF7382C005D58B3 /* Font List.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		F3BBD9D52AEECD3400A9F7E7 = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +92,8 @@
 				F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */,
 				F3BBD9ED2AEECD3500A9F7E7 /* Info.plist */,
 				F3BBD9E92AEECD3500A9F7E7 /* Everything_SwiftUI.entitlements */,
-				F3146C4D2CF7382C005D58B3 /* Font List.swift */,
-				F3EB1CB52C58FFE5007E6366 /* Hover Effect.swift */,
+				F3146C502CF73BA5005D58B3 /* Fonts */,
+				F3146C4F2CF73B9E005D58B3 /* Hover */,
 				F3BBD9F82AEED4BC00A9F7E7 /* Image Picker View.swift */,
 				F32E88D42AF856E400959D49 /* JournalView.swift */,
 				F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */,
@@ -164,7 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3EB1CB62C58FFE5007E6366 /* Hover Effect.swift in Sources */,
+				F3EB1CB62C58FFE5007E6366 /* Hover Effects.swift in Sources */,
 				F37916EE2AF14A7A00B880AF /* Image Picker.swift in Sources */,
 				F3BBD9E42AEECD3400A9F7E7 /* Home View.swift in Sources */,
 				F32E88D52AF856E400959D49 /* JournalView.swift in Sources */,
