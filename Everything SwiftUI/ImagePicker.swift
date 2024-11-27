@@ -41,7 +41,7 @@ struct ImagePicker: View {
                         .padding(15)
                 }
             }
-            /// Displaying Loading UI
+            // Loading UI
             .overlay {
                 if isLoading {
                     ProgressView()
@@ -52,10 +52,10 @@ struct ImagePicker: View {
             .animation(.snappy, value: isLoading)
             .animation(.snappy, value: previewImage)
             .contentShape(.rect)
-            /// Implementing Drop Action and Retreving Dropped Image
+            // Drop Action and Retreving Dropped Image
             .dropDestination(for: Data.self) { items, location in
                 if let firstItem = items.first, let droppedImage = UIImage(data: firstItem) {
-                    /// Sending the Image using the callback
+                    // Sending the Image using the callback
                     generateImageThumbnail(droppedImage, size)
                     onImageChange(droppedImage)
                     return true
@@ -69,7 +69,7 @@ struct ImagePicker: View {
                 showImagePicker.toggle()
             }
             .photosPicker(isPresented: $showImagePicker, selection: $photoItem)
-            /// Let's Process the Selected Image
+            // Process Selected Image
             .optionalViewModifier { contentView in
                 if #available(iOS 17, *) {
                     contentView
@@ -146,4 +146,8 @@ extension View {
     ) -> some View {
         content(self)
     }
+}
+
+#Preview {
+    ImagePickerView()
 }
