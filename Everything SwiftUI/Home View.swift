@@ -11,6 +11,10 @@ struct HomeView: View {
                 MaterialsView()
             }
             
+            NavigationLink("Gauges") {
+                GaugesView()
+            }
+            
             NavigationLink {
                 FeedbackView()
             } label: {
