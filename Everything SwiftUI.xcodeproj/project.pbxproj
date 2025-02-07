@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		F3146C4E2CF7382C005D58B3 /* Font List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3146C4D2CF7382C005D58B3 /* Font List.swift */; };
+		F3202C942D55952F0030B3CC /* App Store Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3202C932D55952F0030B3CC /* App Store Overlay.swift */; };
+		F3202CB72D5596210030B3CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3202CAF2D5596210030B3CC /* Assets.xcassets */; };
+		F3202CBB2D5596380030B3CC /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3202CBA2D5596380030B3CC /* ScrechKit */; };
+		F3202CBD2D5597180030B3CC /* Hover Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */; };
+		F3202CBE2D5597310030B3CC /* Font List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3146C4D2CF7382C005D58B3 /* Font List.swift */; };
+		F3202CC02D5597400030B3CC /* App Store Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3202C932D55952F0030B3CC /* App Store Overlay.swift */; };
+		F3202CC12D5597450030B3CC /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E32AEECD3400A9F7E7 /* Home View.swift */; };
+		F3202CC22D5597490030B3CC /* Everything SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E12AEECD3400A9F7E7 /* Everything SwiftUI.swift */; };
+		F3202CC42D5597640030B3CC /* Gauges View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE40BE2D1387FE00B7AD35 /* Gauges View.swift */; };
+		F3202CC52D55977A0030B3CC /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9FA2AEED4CE00A9F7E7 /* ImagePicker.swift */; };
+		F3202CC62D55977A0030B3CC /* Image Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37916ED2AF14A7A00B880AF /* Image Picker.swift */; };
+		F3202CC72D55977A0030B3CC /* Image Picker View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9F82AEED4BC00A9F7E7 /* Image Picker View.swift */; };
+		F3202CC82D55978A0030B3CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */; };
 		F32E88D52AF856E400959D49 /* Journal View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32E88D42AF856E400959D49 /* Journal View.swift */; };
 		F37916EE2AF14A7A00B880AF /* Image Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37916ED2AF14A7A00B880AF /* Image Picker.swift */; };
 		F3BBD9E22AEECD3400A9F7E7 /* Everything SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E12AEECD3400A9F7E7 /* Everything SwiftUI.swift */; };
@@ -24,6 +37,10 @@
 
 /* Begin PBXFileReference section */
 		F3146C4D2CF7382C005D58B3 /* Font List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font List.swift"; sourceTree = "<group>"; };
+		F3202C932D55952F0030B3CC /* App Store Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Store Overlay.swift"; sourceTree = "<group>"; };
+		F3202C992D5596100030B3CC /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3202CAF2D5596210030B3CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3202CB22D5596210030B3CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F32E88D42AF856E400959D49 /* Journal View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journal View.swift"; sourceTree = "<group>"; };
 		F37916ED2AF14A7A00B880AF /* Image Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker.swift"; sourceTree = "<group>"; };
 		F3BBD9DE2AEECD3400A9F7E7 /* Everything SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Everything SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +58,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F3202C962D5596100030B3CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3202CBB2D5596380030B3CC /* ScrechKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3BBD9DB2AEECD3400A9F7E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -84,10 +109,44 @@
 			path = Haptic;
 			sourceTree = "<group>";
 		};
+		F3202CB32D5596210030B3CC /* visionOS */ = {
+			isa = PBXGroup;
+			children = (
+				F3202CB22D5596210030B3CC /* Info.plist */,
+				F3202CAF2D5596210030B3CC /* Assets.xcassets */,
+			);
+			path = visionOS;
+			sourceTree = "<group>";
+		};
+		F3202CB92D5596380030B3CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3202CBF2D5597370030B3CC /* App Store Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				F3202C932D55952F0030B3CC /* App Store Overlay.swift */,
+			);
+			path = "App Store Overlay";
+			sourceTree = "<group>";
+		};
+		F3202CC32D55975E0030B3CC /* Gauges */ = {
+			isa = PBXGroup;
+			children = (
+				F3BE40BE2D1387FE00B7AD35 /* Gauges View.swift */,
+			);
+			path = Gauges;
+			sourceTree = "<group>";
+		};
 		F3BBD9D52AEECD3400A9F7E7 = {
 			isa = PBXGroup;
 			children = (
 				F3BBD9E02AEECD3400A9F7E7 /* Everything SwiftUI */,
+				F3202CB32D5596210030B3CC /* visionOS */,
+				F3202CB92D5596380030B3CC /* Frameworks */,
 				F3BBD9DF2AEECD3400A9F7E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				F3BBD9DE2AEECD3400A9F7E7 /* Everything SwiftUI.app */,
+				F3202C992D5596100030B3CC /* visionOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,12 +168,13 @@
 				F3BBD9ED2AEECD3500A9F7E7 /* Info.plist */,
 				F3BBD9E92AEECD3500A9F7E7 /* Everything_SwiftUI.entitlements */,
 				F3BBD9E32AEECD3400A9F7E7 /* Home View.swift */,
+				F3202CBF2D5597370030B3CC /* App Store Overlay */,
 				F3146C502CF73BA5005D58B3 /* Fonts */,
 				F3146C4F2CF73B9E005D58B3 /* Hover */,
 				F3146C6C2CF73DD6005D58B3 /* Materials */,
 				F3146C6D2CF73DE2005D58B3 /* Haptic */,
 				F32E88D42AF856E400959D49 /* Journal View.swift */,
-				F3BE40BE2D1387FE00B7AD35 /* Gauges View.swift */,
+				F3202CC32D55975E0030B3CC /* Gauges */,
 				F3BBD9F82AEED4BC00A9F7E7 /* Image Picker View.swift */,
 				F3BBD9FA2AEED4CE00A9F7E7 /* ImagePicker.swift */,
 				F37916ED2AF14A7A00B880AF /* Image Picker.swift */,
@@ -124,6 +185,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F3202C982D5596100030B3CC /* visionOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3202CAA2D5596100030B3CC /* Build configuration list for PBXNativeTarget "visionOS" */;
+			buildPhases = (
+				F3202C952D5596100030B3CC /* Sources */,
+				F3202C962D5596100030B3CC /* Frameworks */,
+				F3202C972D5596100030B3CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = visionOS;
+			packageProductDependencies = (
+				F3202CBA2D5596380030B3CC /* ScrechKit */,
+			);
+			productName = "Everything SwiftUI visionOS";
+			productReference = F3202C992D5596100030B3CC /* visionOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F3BBD9DD2AEECD3400A9F7E7 /* Everything SwiftUI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3BBD9F02AEECD3500A9F7E7 /* Build configuration list for PBXNativeTarget "Everything SwiftUI" */;
@@ -151,9 +232,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1510;
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					F3202C982D5596100030B3CC = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					F3BBD9DD2AEECD3400A9F7E7 = {
 						CreatedOnToolsVersion = 15.1;
 					};
@@ -176,11 +260,21 @@
 			projectRoot = "";
 			targets = (
 				F3BBD9DD2AEECD3400A9F7E7 /* Everything SwiftUI */,
+				F3202C982D5596100030B3CC /* visionOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F3202C972D5596100030B3CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3202CC82D55978A0030B3CC /* Assets.xcassets in Resources */,
+				F3202CB72D5596210030B3CC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3BBD9DC2AEECD3400A9F7E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -192,6 +286,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F3202C952D5596100030B3CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3202CC22D5597490030B3CC /* Everything SwiftUI.swift in Sources */,
+				F3202CBE2D5597310030B3CC /* Font List.swift in Sources */,
+				F3202CBD2D5597180030B3CC /* Hover Effects.swift in Sources */,
+				F3202CC52D55977A0030B3CC /* ImagePicker.swift in Sources */,
+				F3202CC62D55977A0030B3CC /* Image Picker.swift in Sources */,
+				F3202CC72D55977A0030B3CC /* Image Picker View.swift in Sources */,
+				F3202CC42D5597640030B3CC /* Gauges View.swift in Sources */,
+				F3202CC12D5597450030B3CC /* Home View.swift in Sources */,
+				F3202CC02D5597400030B3CC /* App Store Overlay.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3BBD9DA2AEECD3400A9F7E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -200,6 +310,7 @@
 				F37916EE2AF14A7A00B880AF /* Image Picker.swift in Sources */,
 				F3BBD9E42AEECD3400A9F7E7 /* Home View.swift in Sources */,
 				F32E88D52AF856E400959D49 /* Journal View.swift in Sources */,
+				F3202C942D55952F0030B3CC /* App Store Overlay.swift in Sources */,
 				F3146C4E2CF7382C005D58B3 /* Font List.swift in Sources */,
 				F3BBD9E22AEECD3400A9F7E7 /* Everything SwiftUI.swift in Sources */,
 				F3BBD9FB2AEED4CE00A9F7E7 /* ImagePicker.swift in Sources */,
@@ -213,6 +324,63 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		F3202CAB2D5596100030B3CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Everything SwiftUI";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Everything-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		F3202CAC2D5596100030B3CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Everything SwiftUI";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Everything-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
 		F3BBD9EE2AEECD3500A9F7E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -354,15 +522,16 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Everything-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -394,15 +563,16 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Everything-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -412,6 +582,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F3202CAA2D5596100030B3CC /* Build configuration list for PBXNativeTarget "visionOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3202CAB2D5596100030B3CC /* Debug */,
+				F3202CAC2D5596100030B3CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F3BBD9D92AEECD3400A9F7E7 /* Build configuration list for PBXProject "Everything SwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -444,6 +623,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F3202CBA2D5596380030B3CC /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3BBD9F52AEECE4000A9F7E7 /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
 		F3BBD9F62AEECE4000A9F7E7 /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F3BBD9F52AEECE4000A9F7E7 /* XCRemoteSwiftPackageReference "ScrechKit" */;
