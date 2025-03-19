@@ -3,6 +3,10 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         List {
+            NavigationLink("Markdown") {
+                Markdown()
+            }
+            
             NavigationLink("Hover Effects") {
                 HoverEffects()
             }
