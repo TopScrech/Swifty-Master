@@ -12,7 +12,6 @@ struct ImagePickerView: View {
                 print(image)
             }
         }
-        .padding()
         .ignoresSafeArea(edges: [.bottom])
         .navigationTitle("Image Picker")
     }

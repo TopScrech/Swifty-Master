@@ -34,11 +34,20 @@ struct HomeView: View {
             }
 #endif
             
-            NavigationLink {
-                ImagePickerView()
-            } label: {
-                Label("Drag & Drop", systemImage: "doc")
-                    .foregroundStyle(.foreground)
+            Section {
+                NavigationLink {
+                    ImagePickerView()
+                } label: {
+                    Label("Drag & Drop", systemImage: "doc")
+                        .foregroundStyle(.foreground)
+                }
+                
+                NavigationLink {
+                    Image_Picker()
+                } label: {
+                    Label("Picker 2", systemImage: "doc")
+                        .foregroundStyle(.foreground)
+                }
             }
             
             NavigationLink {
