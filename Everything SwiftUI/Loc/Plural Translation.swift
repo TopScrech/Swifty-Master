@@ -1,7 +1,7 @@
 import ScrechKit
 
 struct PluralTranslation: View {
-    private let days = [1, 2, 5, 1.5]
+    private let days = [1, 2, 5]
     
     var body: some View {
         List {
