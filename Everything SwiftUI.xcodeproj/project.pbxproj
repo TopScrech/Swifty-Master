@@ -25,6 +25,10 @@
 		F3202CC82D55978A0030B3CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */; };
 		F32E88D52AF856E400959D49 /* Journal View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32E88D42AF856E400959D49 /* Journal View.swift */; };
 		F37916EE2AF14A7A00B880AF /* Image Picker 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37916ED2AF14A7A00B880AF /* Image Picker 2.swift */; };
+		F3ADA6162D9C03E700F2DAA6 /* Plural Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ADA6152D9C03E700F2DAA6 /* Plural Translation.swift */; };
+		F3ADA6172D9C03E700F2DAA6 /* Plural Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ADA6152D9C03E700F2DAA6 /* Plural Translation.swift */; };
+		F3ADA61A2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */; };
+		F3ADA61B2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */; };
 		F3BBD9E22AEECD3400A9F7E7 /* Everything SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E12AEECD3400A9F7E7 /* Everything SwiftUI.swift */; };
 		F3BBD9E42AEECD3400A9F7E7 /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E32AEECD3400A9F7E7 /* Home View.swift */; };
 		F3BBD9E82AEECD3500A9F7E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */; };
@@ -43,14 +47,16 @@
 		F3202C932D55952F0030B3CC /* App Store Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Store Overlay.swift"; sourceTree = "<group>"; };
 		F3202C992D5596100030B3CC /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3202CAF2D5596210030B3CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F3202CB22D5596210030B3CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3202CB22D5596210030B3CC /* visionOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = visionOS.plist; sourceTree = "<group>"; };
 		F32E88D42AF856E400959D49 /* Journal View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journal View.swift"; sourceTree = "<group>"; };
 		F37916ED2AF14A7A00B880AF /* Image Picker 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker 2.swift"; sourceTree = "<group>"; };
+		F3ADA6152D9C03E700F2DAA6 /* Plural Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plural Translation.swift"; sourceTree = "<group>"; };
+		F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F3BBD9DE2AEECD3400A9F7E7 /* Everything SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Everything SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3BBD9E12AEECD3400A9F7E7 /* Everything SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Everything SwiftUI.swift"; sourceTree = "<group>"; };
 		F3BBD9E32AEECD3400A9F7E7 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F3BBD9E92AEECD3500A9F7E7 /* Everything_SwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Everything_SwiftUI.entitlements; sourceTree = "<group>"; };
+		F3BBD9E92AEECD3500A9F7E7 /* iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS.entitlements; sourceTree = "<group>"; };
 		F3BBD9ED2AEECD3500A9F7E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3BBD9F32AEECD6C00A9F7E7 /* Materials View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Materials View.swift"; sourceTree = "<group>"; };
 		F3BBD9F82AEED4BC00A9F7E7 /* Image Picker View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker View.swift"; sourceTree = "<group>"; };
@@ -115,7 +121,7 @@
 		F3202CB32D5596210030B3CC /* visionOS */ = {
 			isa = PBXGroup;
 			children = (
-				F3202CB22D5596210030B3CC /* Info.plist */,
+				F3202CB22D5596210030B3CC /* visionOS.plist */,
 				F3202CAF2D5596210030B3CC /* Assets.xcassets */,
 			);
 			path = visionOS;
@@ -144,6 +150,14 @@
 			path = Gauges;
 			sourceTree = "<group>";
 		};
+		F3ADA6182D9C03EC00F2DAA6 /* Loc */ = {
+			isa = PBXGroup;
+			children = (
+				F3ADA6152D9C03E700F2DAA6 /* Plural Translation.swift */,
+			);
+			path = Loc;
+			sourceTree = "<group>";
+		};
 		F3BBD9D52AEECD3400A9F7E7 = {
 			isa = PBXGroup;
 			children = (
@@ -167,11 +181,13 @@
 			isa = PBXGroup;
 			children = (
 				F3BBD9E12AEECD3400A9F7E7 /* Everything SwiftUI.swift */,
-				F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */,
 				F3BBD9ED2AEECD3500A9F7E7 /* Info.plist */,
-				F3BBD9E92AEECD3500A9F7E7 /* Everything_SwiftUI.entitlements */,
+				F3BBD9E92AEECD3500A9F7E7 /* iOS.entitlements */,
+				F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */,
+				F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */,
 				F3BBD9E32AEECD3400A9F7E7 /* Home View.swift */,
 				F30207CD2D8B001300C26008 /* Markdown.swift */,
+				F3ADA6182D9C03EC00F2DAA6 /* Loc */,
 				F3202CBF2D5597370030B3CC /* App Store Overlay */,
 				F3146C502CF73BA5005D58B3 /* Fonts */,
 				F3146C4F2CF73B9E005D58B3 /* Hover */,
@@ -237,7 +253,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					F3202C982D5596100030B3CC = {
 						CreatedOnToolsVersion = 16.2;
@@ -254,6 +270,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = F3BBD9D52AEECD3400A9F7E7;
 			packageReferences = (
@@ -276,6 +293,7 @@
 			files = (
 				F3202CC82D55978A0030B3CC /* Assets.xcassets in Resources */,
 				F3202CB72D5596210030B3CC /* Assets.xcassets in Resources */,
+				F3ADA61B2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3ADA61A2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */,
 				F3BBD9E82AEECD3500A9F7E7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +321,7 @@
 				F3202CC72D55977A0030B3CC /* Image Picker View.swift in Sources */,
 				F30207CE2D8B001300C26008 /* Markdown.swift in Sources */,
 				F3202CC42D5597640030B3CC /* Gauges View.swift in Sources */,
+				F3ADA6172D9C03E700F2DAA6 /* Plural Translation.swift in Sources */,
 				F3202CC12D5597450030B3CC /* Home View.swift in Sources */,
 				F3202CC02D5597400030B3CC /* App Store Overlay.swift in Sources */,
 			);
@@ -323,6 +343,7 @@
 				F3D8C11C2B2BB51000C7B0A9 /* Sensory Feedback.swift in Sources */,
 				F3BE40BF2D1387FE00B7AD35 /* Gauges View.swift in Sources */,
 				F3BBD9F42AEECD6C00A9F7E7 /* Materials View.swift in Sources */,
+				F3ADA6162D9C03E700F2DAA6 /* Plural Translation.swift in Sources */,
 				F3BBD9F92AEED4BC00A9F7E7 /* Image Picker View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,10 +358,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_FILE = "$(TARGET_NAME)/visionOS.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Everything SwiftUI";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -365,10 +385,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_FILE = "$(TARGET_NAME)/visionOS.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Everything SwiftUI";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -392,6 +411,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -423,6 +443,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -445,6 +466,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -454,6 +476,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -485,6 +508,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -500,6 +524,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};
@@ -508,12 +533,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Everything SwiftUI/Everything_SwiftUI.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Everything SwiftUI/iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -549,12 +573,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Everything SwiftUI/Everything_SwiftUI.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Everything SwiftUI/iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

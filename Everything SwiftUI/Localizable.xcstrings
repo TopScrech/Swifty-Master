@@ -1,0 +1,172 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "* This is **bold** text, this is *italic* text, and this is ***bold, italic*** text." : {
+
+    },
+    "%lf days ago" : {
+
+    },
+    "%lld days ago" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld day ago"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "new",
+                  "value" : "%lld days ago"
+                }
+              }
+            }
+          }
+        },
+        "ru" : {
+          "variations" : {
+            "plural" : {
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld дня назад"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld дней назад"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld день назад"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld дня назад"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "`Monospaced works too`" : {
+
+    },
+    "~~A strikethrough example~~" : {
+
+    },
+    "accessoryCircular" : {
+
+    },
+    "accessoryCircularCapacity" : {
+
+    },
+    "accessoryLinear" : {
+
+    },
+    "accessoryLinearCapacity" : {
+
+    },
+    "App Store Overlay" : {
+
+    },
+    "Body" : {
+
+    },
+    "C" : {
+
+    },
+    "Callout" : {
+
+    },
+    "Caption" : {
+
+    },
+    "Caption 2" : {
+
+    },
+    "Drag & Drop" : {
+
+    },
+    "Font sizes" : {
+
+    },
+    "Footnote" : {
+
+    },
+    "Gauges" : {
+
+    },
+    "Headline" : {
+
+    },
+    "Highlight" : {
+
+    },
+    "Hover Effects" : {
+
+    },
+    "Image Picker" : {
+
+    },
+    "Large title" : {
+
+    },
+    "Lift" : {
+
+    },
+    "linearCapacity" : {
+
+    },
+    "Loc" : {
+
+    },
+    "Markdown" : {
+
+    },
+    "Materials" : {
+
+    },
+    "Open Settings" : {
+
+    },
+    "Picker 2" : {
+
+    },
+    "Present" : {
+
+    },
+    "Sensory Feedback" : {
+
+    },
+    "Subheadline" : {
+
+    },
+    "This is regular text." : {
+
+    },
+    "Title" : {
+
+    },
+    "Title 2" : {
+
+    },
+    "Title 3" : {
+
+    },
+    "Visit Apple: [click here](https://apple.com)" : {
+
+    }
+  },
+  "version" : "1.0"
+}
