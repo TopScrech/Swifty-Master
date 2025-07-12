@@ -3,9 +3,9 @@ import SwiftUI
 struct Markdown: View {
     var body: some View {
         VStack {
-            Text("This is regular text.")
+            Text("This is regular text")
             
-            Text("* This is **bold** text, this is *italic* text, and this is ***bold, italic*** text.")
+            Text("* This is **bold** text, this is *italic* text, and this is ***bold, italic*** text")
             
             Text("~~A strikethrough example~~")
             
