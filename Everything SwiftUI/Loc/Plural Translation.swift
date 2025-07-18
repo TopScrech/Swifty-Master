@@ -10,10 +10,8 @@ struct PluralTranslation: View {
             }
             
             Section {
-                Button {
+                Button("Open Settings", systemImage: "gear") {
                     openSettings()
-                } label: {
-                    Label("Open Settings", systemImage: "gear")
                 }
             }
         }
