@@ -102,7 +102,7 @@ func attributedString(for code: String) -> AttributedString {
     }
     
     // Modifiers
-    let modifiers = ["gaugeStyle", "tint", "green", "opacity", "brown", "red", "accessoryCircular", "accessoryCircularCapacity", "accessoryLinear", "accessoryLinearCapacity", "linearCapacity", "padding", "horizontal"]
+    let modifiers = ["gaugeStyle", "tint", "green", "opacity", "brown", "red", "accessoryCircular", "accessoryCircularCapacity", "accessoryLinear", "accessoryLinearCapacity", "linearCapacity", "padding", "horizontal", "indigo"]
     
     for keyword in modifiers {
         let ranges = code.ranges(of: keyword)
