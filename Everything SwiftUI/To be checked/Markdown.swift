@@ -38,7 +38,7 @@ struct Markdown: View {
             
             Section {
                 VStack {
-                    Text("Visit Apple: [click here](https://apple.com)")
+                    Text("Link: [click](https://topscrech.dev)")
                         .tint(.indigo)
                     
                     CodeBlockView(.mdLink)
