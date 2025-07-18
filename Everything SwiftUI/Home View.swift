@@ -19,8 +19,10 @@ struct HomeView: View {
                 MaterialsView()
             }
 #endif
-            NavigationLink("Gauges") {
+            NavigationLink {
                 GaugesView()
+            } label: {
+                Label("Gauges", systemImage: "gauge.with.needle")
             }
             
             NavigationLink("App Store Overlay") {
@@ -31,7 +33,6 @@ struct HomeView: View {
                 FeedbackView()
             } label: {
                 Label("Sensory Feedback", systemImage: "hand.tap")
-                    .foregroundStyle(.foreground)
             }
 #endif
             Section {
@@ -39,14 +40,12 @@ struct HomeView: View {
                     ImagePickerView()
                 } label: {
                     Label("Drag & Drop", systemImage: "doc")
-                        .foregroundStyle(.foreground)
                 }
                 
                 NavigationLink {
                     Image_Picker()
                 } label: {
                     Label("Picker 2", systemImage: "doc")
-                        .foregroundStyle(.foreground)
                 }
             }
             
@@ -54,9 +53,11 @@ struct HomeView: View {
                 FontList()
             } label: {
                 Label("Font sizes", systemImage: "textformat.size")
-                    .foregroundStyle(.foreground)
             }
         }
+        .navigationTitle("Everything SwiftUI")
+        .foregroundStyle(.foreground)
+        .labelIconToTitleSpacing(8)
     }
 }
 
@@ -64,4 +65,5 @@ struct HomeView: View {
     NavigationView {
         HomeView()
     }
+    .darkSchemePreferred()
 }

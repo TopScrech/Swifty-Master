@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct GaugesView: View {
     var body: some View {
@@ -34,9 +34,14 @@ struct GaugesView: View {
                     .tint(.brown)
             }
         }
+        .padding(.horizontal)
+        .codeBlock(.gauges)
     }
 }
 
 #Preview {
-    GaugesView()
+    NavigationView {
+        GaugesView()
+    }
+    .darkSchemePreferred()
 }
