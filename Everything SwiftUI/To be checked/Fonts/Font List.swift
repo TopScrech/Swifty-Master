@@ -49,6 +49,8 @@ struct FontList: View {
             Text("Caption 2")
                 .caption2()
         }
+        .navigationTitle("Fonts")
+        .toolbarTitleDisplayMode(.inline)
         .bold(isBold)
         .toolbar {
             SFButton("bold") {
