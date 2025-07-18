@@ -7,7 +7,7 @@ struct Markdown: View {
                 VStack {
                     Text("This is regular text")
                     
-                    CodeBlockView(.mdRegular)
+                    SimpleCodeBlockView(.mdRegular)
                 }
             }
             
@@ -15,8 +15,7 @@ struct Markdown: View {
                 VStack {
                     Text("This is **bold** text, this is *italic* text, and this is ***bold, italic*** text")
                     
-                    CodeBlockView(.mdBoldItalic)
-                    
+                    SimpleCodeBlockView(.mdBoldItalic)
                 }
             }
             
@@ -24,7 +23,7 @@ struct Markdown: View {
                 VStack {
                     Text("~~A strikethrough example~~")
                     
-                    CodeBlockView(.mdStrikethrough)
+                    SimpleCodeBlockView(.mdStrikethrough)
                 }
             }
             
@@ -32,7 +31,7 @@ struct Markdown: View {
                 VStack {
                     Text("`Monospaced works too`")
                     
-                    CodeBlockView(.mdMonospaced)
+                    SimpleCodeBlockView(.mdMonospaced)
                 }
             }
             
@@ -41,7 +40,7 @@ struct Markdown: View {
                     Text("Link: [click](https://topscrech.dev)")
                         .tint(.indigo)
                     
-                    CodeBlockView(.mdLink)
+                    SimpleCodeBlockView(.mdLink)
                         .multilineTextAlignment(.leading)
                 }
             }
