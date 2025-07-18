@@ -14,13 +14,11 @@ struct HomeView: View {
             NavigationLink("Hover Effects") {
                 HoverEffects()
             }
-            
 #if !os(visionOS)
             NavigationLink("Materials") {
                 MaterialsView()
             }
 #endif
-            
             NavigationLink("Gauges") {
                 GaugesView()
             }
@@ -28,7 +26,6 @@ struct HomeView: View {
             NavigationLink("App Store Overlay") {
                 AppStoreOverlay()
             }
-            
 #if !os(visionOS)
             NavigationLink {
                 FeedbackView()
@@ -37,7 +34,6 @@ struct HomeView: View {
                     .foregroundStyle(.foreground)
             }
 #endif
-            
             Section {
                 NavigationLink {
                     ImagePickerView()
