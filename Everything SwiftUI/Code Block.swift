@@ -1,16 +1,26 @@
 import Foundation
 
 enum CodeBlock: String {
-    case gauges
-    
-    var title: String {
-        switch self {
-        case .gauges: "Gauges"
-        }
-    }
+    case gauges, mdRegular, mdBoldItalic, mdStrikethrough, mdMonospaced, mdLink
     
     var code: String {
         switch self {
+        case .mdBoldItalic:
+            "Text(\"This is **bold** text, this is *italic* text, and this is ***bold, italic*** text\")"
+            
+        case .mdRegular:
+            "Text(\"This is regular text\")"
+        case .mdLink:
+"""
+Text("Visit Apple: [click here](https://apple.com)")
+    .tint(.indigo)
+"""
+        case .mdStrikethrough:
+            "Text(\"~~A strikethrough example~~\")"
+            
+        case .mdMonospaced:
+            "Text(\"`Monospaced works too`\")"
+            
         case .gauges:
 """
 VStack(spacing: 64) {

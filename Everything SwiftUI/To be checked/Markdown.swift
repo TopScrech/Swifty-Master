@@ -2,21 +2,59 @@ import SwiftUI
 
 struct Markdown: View {
     var body: some View {
-        VStack {
-            Text("This is regular text")
+        List {
+            Section {
+                VStack {
+                    Text("This is regular text")
+                    
+                    CodeBlockView(.mdRegular)
+                }
+            }
             
-            Text("* This is **bold** text, this is *italic* text, and this is ***bold, italic*** text")
+            Section {
+                VStack {
+                    Text("This is **bold** text, this is *italic* text, and this is ***bold, italic*** text")
+                    
+                    CodeBlockView(.mdBoldItalic)
+                    
+                }
+            }
             
-            Text("~~A strikethrough example~~")
+            Section {
+                VStack {
+                    Text("~~A strikethrough example~~")
+                    
+                    CodeBlockView(.mdStrikethrough)
+                }
+            }
             
-            Text("`Monospaced works too`")
+            Section {
+                VStack {
+                    Text("`Monospaced works too`")
+                    
+                    CodeBlockView(.mdMonospaced)
+                }
+            }
             
-            Text("Visit Apple: [click here](https://apple.com)")
-                .tint(.indigo)
+            Section {
+                VStack {
+                    Text("Visit Apple: [click here](https://apple.com)")
+                        .tint(.indigo)
+                    
+                    CodeBlockView(.mdLink)
+                        .multilineTextAlignment(.leading)
+                }
+            }
         }
+        .multilineTextAlignment(.center)
+        .navigationTitle("Martdown")
+        .toolbarTitleDisplayMode(.inline)
     }
 }
 
 #Preview {
-    Markdown()
+    NavigationView {
+        Markdown()
+    }
+    .darkSchemePreferred()
 }
