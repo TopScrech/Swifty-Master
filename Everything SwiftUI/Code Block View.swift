@@ -4,41 +4,40 @@ struct CodeBlockView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.colorScheme) private var colorScheme
     
-    private let code: String
+    private let code: CodeBlock
     
-    init(_ code: String) {
+    init(_ code: CodeBlock) {
         self.code = code
     }
     
     var body: some View {
-        NavigationView {
-            ScrollView(.horizontal, showsIndicators: false) {
-                Text(attributedString(for: code))
-                    .monospaced()
-                    .padding()
-                    .background {
-                        if colorScheme == .light {
-                            Color.black
-                        }
+        ScrollView(.horizontal, showsIndicators: false) {
+            Text(attributedString(for: code.code))
+                .monospaced()
+                .padding()
+                .background {
+                    if colorScheme == .light {
+                        Color.black
                     }
-                    .cornerRadius(8)
-                    .foregroundColor(.white)
-            }
-            .toolbar {
-                ToolbarItem(placement: .bottomBar) {
-                    SFButton("xmark") {
-                        dismiss()
-                    }
-                    .tint(.red)
                 }
+                .cornerRadius(8)
+                .foregroundColor(.white)
+        }
+        .toolbar {
+            ToolbarItem(placement: .bottomBar) {
+                SFButton("xmark") {
+                    dismiss()
+                }
+                .tint(.red)
+            }
+            
+            ToolbarSpacer(placement: .bottomBar)
+            
+            ToolbarItemGroup(placement: .bottomBar) {
+                ShareLink(item: code.code)
                 
-                ToolbarSpacer(placement: .bottomBar)
-                
-                ToolbarItem(placement: .bottomBar) {
-                    SFButton("document.on.document") {
-                        UIPasteboard.general.string = code
-                    }
-                    .tint(.blue)
+                SFButton("document.on.document") {
+                    UIPasteboard.general.string = code.code
                 }
             }
         }
@@ -167,24 +166,22 @@ extension String {
 }
 
 #Preview {
-    let code = CodeBlock.gauges.code
-    
-    CodeBlockView(code)
+    CodeBlockView(.gauges)
         .darkSchemePreferred()
 }
 
-#Preview {
-    let code = """
-struct Person {
-    let name: String
-    var age: Int
-    
-    func greet() {
-        print("Hello, \\(name)!")
-    }
-}
-"""
-    
-    CodeBlockView(code)
-        .darkSchemePreferred()
-}
+//#Preview {
+//    let code = """
+//struct Person {
+//    let name: String
+//    var age: Int
+//
+//    func greet() {
+//        print("Hello, \\(name)!")
+//    }
+//}
+//"""
+//
+//    CodeBlockView(code)
+//        .darkSchemePreferred()
+//}

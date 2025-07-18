@@ -12,7 +12,9 @@ struct CodeBlockModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .sheet($sheetCode) {
-                CodeBlockView(code.code)
+                NavigationView {
+                    CodeBlockView(code)
+                }
             }
             .toolbar {
                 SFButton("curlybraces") {

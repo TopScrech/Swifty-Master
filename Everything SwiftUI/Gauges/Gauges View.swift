@@ -2,7 +2,7 @@ import ScrechKit
 
 struct GaugesView: View {
     var body: some View {
-        VStack(spacing: 32) {
+        VStack(spacing: 64) {
             GaugeCard("accessoryCircular") {
                 Gauge(value: 50, in: 0...100) {
                     Text("C")
@@ -30,7 +30,6 @@ struct GaugesView: View {
             GaugeCard("accessoryLinearCapacity") {
                 Gauge(value: 10, in: 0...100) {}
                     .gaugeStyle(.accessoryLinearCapacity)
-                    .opacity(0.7)
                     .tint(.brown)
             }
         }

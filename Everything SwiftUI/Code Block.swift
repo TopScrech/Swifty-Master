@@ -3,11 +3,17 @@ import Foundation
 enum CodeBlock: String {
     case gauges
     
+    var title: String {
+        switch self {
+        case .gauges: "Gauges"
+        }
+    }
+    
     var code: String {
         switch self {
         case .gauges:
 """
-VStack(spacing: 32) {
+VStack(spacing: 64) {
     GaugeCard("accessoryCircular") {
         Gauge(value: 50, in: 0...100) {
             Text("C")
@@ -35,7 +41,6 @@ VStack(spacing: 32) {
     GaugeCard("accessoryLinearCapacity") {
         Gauge(value: 10, in: 0...100) {}
             .gaugeStyle(.accessoryLinearCapacity)
-            .opacity(0.7)
             .tint(.brown)
     }
 }
