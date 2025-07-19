@@ -25,11 +25,11 @@ private struct Label: View {
     
     var body: some View {
         HStack(spacing: 20) {
-            Image(systemName: experience.imageName)
+            Image(systemName: experience.icon)
                 .title()
                 .foregroundStyle(shapeStyle(Color.accentColor))
             
-            Text(experience.localizedName)
+            Text(experience.name)
                 .bold()
                 .foregroundStyle(shapeStyle(Color.primary))
         }

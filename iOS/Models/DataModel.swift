@@ -30,6 +30,7 @@ final class DataModel {
         .init("Popover", category: .view),
         .init("Alert", category: .view),
         .init("Empty View", category: .view),
+        .init("App Store Overlay", category: .view),
         
         // Navigation
         .init("Navigation View", category: .navigation),

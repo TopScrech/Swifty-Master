@@ -10,18 +10,18 @@ struct Topic: Codable, Hashable, Identifiable {
     var name: String
     var category: Category
     var related: [Topic.ID]
-    var imageName: String?
+    var icon: String?
     
     init(
         _ name: String,
         category: Category,
         related: [Topic.ID] = [],
-        imageName: String? = nil
+        icon: String? = nil
     ) {
         self.name = name
         self.category = category
         self.related = related
-        self.imageName = imageName
+        self.icon = icon
     }
 }
 

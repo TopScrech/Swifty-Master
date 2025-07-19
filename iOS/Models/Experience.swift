@@ -11,7 +11,7 @@ enum Experience: Int, Identifiable, CaseIterable, Codable {
     }
     
     /// The image name of the navigation experience.
-    var imageName: String {
+    var icon: String {
         switch self {
         case .stack: "list.bullet.rectangle.portrait"
         case .twoColumn: "sidebar.left"
@@ -19,7 +19,7 @@ enum Experience: Int, Identifiable, CaseIterable, Codable {
     }
     
     /// The localized name of the navigation experience.
-    var localizedName: LocalizedStringKey {
+    var name: LocalizedStringKey {
         switch self {
         case .stack: "Stack"
         case .twoColumn: "Two columns"
