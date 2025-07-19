@@ -42,7 +42,6 @@ private struct Content<Link: View>: View {
             title
             
             HStack(alignment: .top, spacing: 20) {
-                image
                 ingredients
                 
                 Spacer()
@@ -68,7 +67,6 @@ private struct Content<Link: View>: View {
     private var narrowDetailsContent: some View {
         VStack(alignment: narrowDetailsAlignment) {
             title
-            image
             ingredients
             relatedRecipes
         }
@@ -88,11 +86,6 @@ private struct Content<Link: View>: View {
         Text(recipe.name)
             .largeTitle(.bold)
 #endif
-    }
-    
-    private var image: some View {
-        RecipePhoto(recipe: recipe)
-            .frame(width: 300, height: 300)
     }
     
     private let columns = [

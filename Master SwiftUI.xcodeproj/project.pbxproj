@@ -40,7 +40,6 @@
 		F35198FE2E2B9F53004E0F02 /* ExperienceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F32E2B9F53004E0F02 /* ExperienceButton.swift */; };
 		F35198FF2E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F52E2B9F53004E0F02 /* ExperiencePickerRow.swift */; };
 		F35199002E2B9F53004E0F02 /* RecipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F72E2B9F53004E0F02 /* RecipeDetail.swift */; };
-		F35199012E2B9F53004E0F02 /* RecipePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198FA2E2B9F53004E0F02 /* RecipePhoto.swift */; };
 		F35199022E2B9F53004E0F02 /* NavModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EA2E2B9F53004E0F02 /* NavModel.swift */; };
 		F35199032E2B9F53004E0F02 /* ExperienceToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F62E2B9F53004E0F02 /* ExperienceToolbar.swift */; };
 		F35199052E2B9F53004E0F02 /* NavContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198ED2E2B9F53004E0F02 /* NavContainer.swift */; };
@@ -57,7 +56,6 @@
 		F35199122E2B9F53004E0F02 /* ExperienceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F32E2B9F53004E0F02 /* ExperienceButton.swift */; };
 		F35199132E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F52E2B9F53004E0F02 /* ExperiencePickerRow.swift */; };
 		F35199142E2B9F53004E0F02 /* RecipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F72E2B9F53004E0F02 /* RecipeDetail.swift */; };
-		F35199152E2B9F53004E0F02 /* RecipePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198FA2E2B9F53004E0F02 /* RecipePhoto.swift */; };
 		F35199162E2B9F53004E0F02 /* NavModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EA2E2B9F53004E0F02 /* NavModel.swift */; };
 		F35199172E2B9F53004E0F02 /* ExperienceToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F62E2B9F53004E0F02 /* ExperienceToolbar.swift */; };
 		F35199192E2B9F53004E0F02 /* NavContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198ED2E2B9F53004E0F02 /* NavContainer.swift */; };
@@ -116,7 +114,6 @@
 		F35198F62E2B9F53004E0F02 /* ExperienceToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceToolbar.swift; sourceTree = "<group>"; };
 		F35198F72E2B9F53004E0F02 /* RecipeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetail.swift; sourceTree = "<group>"; };
 		F35198F82E2B9F53004E0F02 /* RecipeGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeGrid.swift; sourceTree = "<group>"; };
-		F35198FA2E2B9F53004E0F02 /* RecipePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePhoto.swift; sourceTree = "<group>"; };
 		F35198FB2E2B9F53004E0F02 /* RecipeTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTile.swift; sourceTree = "<group>"; };
 		F37916ED2AF14A7A00B880AF /* Image Picker 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker 2.swift"; sourceTree = "<group>"; };
 		F3ADA6152D9C03E700F2DAA6 /* Plural Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plural Translation.swift"; sourceTree = "<group>"; };
@@ -277,7 +274,6 @@
 				F35198F62E2B9F53004E0F02 /* ExperienceToolbar.swift */,
 				F35198F72E2B9F53004E0F02 /* RecipeDetail.swift */,
 				F35198F82E2B9F53004E0F02 /* RecipeGrid.swift */,
-				F35198FA2E2B9F53004E0F02 /* RecipePhoto.swift */,
 				F35198FB2E2B9F53004E0F02 /* RecipeTile.swift */,
 			);
 			path = Views;
@@ -452,7 +448,6 @@
 				F35198FE2E2B9F53004E0F02 /* ExperienceButton.swift in Sources */,
 				F35198FF2E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */,
 				F35199002E2B9F53004E0F02 /* RecipeDetail.swift in Sources */,
-				F35199012E2B9F53004E0F02 /* RecipePhoto.swift in Sources */,
 				F35199022E2B9F53004E0F02 /* NavModel.swift in Sources */,
 				F35199032E2B9F53004E0F02 /* ExperienceToolbar.swift in Sources */,
 				F35199052E2B9F53004E0F02 /* NavContainer.swift in Sources */,
@@ -482,7 +477,6 @@
 				F35199122E2B9F53004E0F02 /* ExperienceButton.swift in Sources */,
 				F35199132E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */,
 				F35199142E2B9F53004E0F02 /* RecipeDetail.swift in Sources */,
-				F35199152E2B9F53004E0F02 /* RecipePhoto.swift in Sources */,
 				F35199162E2B9F53004E0F02 /* NavModel.swift in Sources */,
 				F35199172E2B9F53004E0F02 /* ExperienceToolbar.swift in Sources */,
 				F35199192E2B9F53004E0F02 /* NavContainer.swift in Sources */,

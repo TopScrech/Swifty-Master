@@ -12,11 +12,7 @@ struct RecipeTile: View {
     @State private var isHovering = false
     
     var body: some View {
-        VStack(alignment: .leading) {
-            RecipePhoto(recipe: recipe)
-                .aspectRatio(1, contentMode: .fill)
-                .frame(maxWidth: 240, maxHeight: 240)
-            
+        VStack(alignment: .leading) {            
             Text(recipe.name)
                 .lineLimit(2, reservesSpace: true)
         }
