@@ -48,7 +48,6 @@
 		F35199062E2B9F53004E0F02 /* TwoColumnContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */; };
 		F35199072E2B9F53004E0F02 /* RecipeGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F82E2B9F53004E0F02 /* RecipeGrid.swift */; };
 		F35199082E2B9F53004E0F02 /* ExperiencePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F42E2B9F53004E0F02 /* ExperiencePicker.swift */; };
-		F35199092E2B9F53004E0F02 /* ThreeColumnContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EF2E2B9F53004E0F02 /* ThreeColumnContentView.swift */; };
 		F351990A2E2B9F53004E0F02 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E72E2B9F53004E0F02 /* DataModel.swift */; };
 		F351990B2E2B9F53004E0F02 /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F22E2B9F53004E0F02 /* ContinueButton.swift */; };
 		F351990D2E2B9F53004E0F02 /* StackContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EE2E2B9F53004E0F02 /* StackContentView.swift */; };
@@ -67,7 +66,6 @@
 		F351991A2E2B9F53004E0F02 /* TwoColumnContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */; };
 		F351991B2E2B9F53004E0F02 /* RecipeGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F82E2B9F53004E0F02 /* RecipeGrid.swift */; };
 		F351991C2E2B9F53004E0F02 /* ExperiencePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F42E2B9F53004E0F02 /* ExperiencePicker.swift */; };
-		F351991D2E2B9F53004E0F02 /* ThreeColumnContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EF2E2B9F53004E0F02 /* ThreeColumnContentView.swift */; };
 		F351991E2E2B9F53004E0F02 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E72E2B9F53004E0F02 /* DataModel.swift */; };
 		F351991F2E2B9F53004E0F02 /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F22E2B9F53004E0F02 /* ContinueButton.swift */; };
 		F35199212E2B9F53004E0F02 /* StackContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EE2E2B9F53004E0F02 /* StackContentView.swift */; };
@@ -113,7 +111,6 @@
 		F35198EB2E2B9F53004E0F02 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		F35198ED2E2B9F53004E0F02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F35198EE2E2B9F53004E0F02 /* StackContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackContentView.swift; sourceTree = "<group>"; };
-		F35198EF2E2B9F53004E0F02 /* ThreeColumnContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeColumnContentView.swift; sourceTree = "<group>"; };
 		F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnContentView.swift; sourceTree = "<group>"; };
 		F35198F22E2B9F53004E0F02 /* ContinueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
 		F35198F32E2B9F53004E0F02 /* ExperienceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceButton.swift; sourceTree = "<group>"; };
@@ -269,7 +266,6 @@
 			children = (
 				F35198ED2E2B9F53004E0F02 /* ContentView.swift */,
 				F35198EE2E2B9F53004E0F02 /* StackContentView.swift */,
-				F35198EF2E2B9F53004E0F02 /* ThreeColumnContentView.swift */,
 				F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */,
 			);
 			path = Nav;
@@ -468,7 +464,6 @@
 				F35199062E2B9F53004E0F02 /* TwoColumnContentView.swift in Sources */,
 				F35199072E2B9F53004E0F02 /* RecipeGrid.swift in Sources */,
 				F35199082E2B9F53004E0F02 /* ExperiencePicker.swift in Sources */,
-				F35199092E2B9F53004E0F02 /* ThreeColumnContentView.swift in Sources */,
 				F351990A2E2B9F53004E0F02 /* DataModel.swift in Sources */,
 				F351990B2E2B9F53004E0F02 /* ContinueButton.swift in Sources */,
 				F351990D2E2B9F53004E0F02 /* StackContentView.swift in Sources */,
@@ -500,7 +495,6 @@
 				F351991A2E2B9F53004E0F02 /* TwoColumnContentView.swift in Sources */,
 				F351991B2E2B9F53004E0F02 /* RecipeGrid.swift in Sources */,
 				F351991C2E2B9F53004E0F02 /* ExperiencePicker.swift in Sources */,
-				F351991D2E2B9F53004E0F02 /* ThreeColumnContentView.swift in Sources */,
 				F351991E2E2B9F53004E0F02 /* DataModel.swift in Sources */,
 				F351991F2E2B9F53004E0F02 /* ContinueButton.swift in Sources */,
 				F35199212E2B9F53004E0F02 /* StackContentView.swift in Sources */,

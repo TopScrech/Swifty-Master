@@ -22,9 +22,6 @@ struct ContentView: View {
             case .twoColumn?:
                 TwoColumnContentView()
                 
-            case .threeColumn?:
-                ThreeColumnContentView()
-                
             case nil:
                 VStack {
                     Text("🧑🏼‍🍳 Bon appétit!")
