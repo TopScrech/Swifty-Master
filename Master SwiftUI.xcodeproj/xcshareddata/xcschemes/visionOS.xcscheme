@@ -18,7 +18,7 @@
                BlueprintIdentifier = "F3202C982D5596100030B3CC"
                BuildableName = "visionOS.app"
                BlueprintName = "visionOS"
-               ReferencedContainer = "container:Everything SwiftUI.xcodeproj">
+               ReferencedContainer = "container:Master SwiftUI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,7 +47,7 @@
             BlueprintIdentifier = "F3202C982D5596100030B3CC"
             BuildableName = "visionOS.app"
             BlueprintName = "visionOS"
-            ReferencedContainer = "container:Everything SwiftUI.xcodeproj">
+            ReferencedContainer = "container:Master SwiftUI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "F3202C982D5596100030B3CC"
             BuildableName = "visionOS.app"
             BlueprintName = "visionOS"
-            ReferencedContainer = "container:Everything SwiftUI.xcodeproj">
+            ReferencedContainer = "container:Master SwiftUI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

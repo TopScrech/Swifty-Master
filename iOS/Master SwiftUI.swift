@@ -1,7 +1,7 @@
 import ScrechKit
 
 @main
-struct EverythingSwiftUI: App {
+struct MasterSwiftUI: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {

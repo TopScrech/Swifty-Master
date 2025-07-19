@@ -55,7 +55,7 @@ struct HomeView: View {
                 Label("Font sizes", systemImage: "textformat.size")
             }
         }
-        .navigationTitle("Everything SwiftUI")
+        .navigationTitle("Master SwiftUI")
         .foregroundStyle(.foreground)
         .labelIconToTitleSpacing(8)
     }
