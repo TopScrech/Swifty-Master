@@ -4,38 +4,24 @@ import SwiftUI
 
 @Observable
 final class DataModel {
-    private(set) var recipes: [Recipe] = []
+    private(set) var recipes: [Topic] = []
     
-    private var recipesById: [Recipe.ID: Recipe] = [:]
+    private var recipesById: [Topic.ID: Topic] = [:]
     
     /// The shared singleton data model object
     static let shared: DataModel = {
         DataModel()
     }()
     
-    private static var dataURL: URL {
-        get throws {
-            let bundle = Bundle.main
-            
-            guard
-                let path = bundle.path(forResource: "Recipes", ofType: "json")
-            else {
-                throw CocoaError(.fileReadNoSuchFile)
-            }
-            
-            return URL(fileURLWithPath: path)
-        }
-    }
-    
     /// The recipes for a given category, sorted by name
-    func recipes(in category: Category?) -> [Recipe] {
+    func recipes(in category: Category?) -> [Topic] {
         recipes.filter {
             $0.category == category
         }
     }
     
     /// The related recipes for a given recipe, sorted by name
-    func recipes(relatedTo recipe: Recipe) -> [Recipe] {
+    func recipes(relatedTo recipe: Topic) -> [Topic] {
         recipes.filter {
             recipe.related.contains($0.id)
         }
@@ -43,7 +29,7 @@ final class DataModel {
     
     /// Accesses the recipe associated with the given unique identifier
     /// if the identifier is tracked by the data model; otherwise, returns `nil`
-    subscript(recipeId: Recipe.ID) -> Recipe? {
+    subscript(recipeId: Topic.ID) -> Topic? {
         recipesById[recipeId]
     }
 }

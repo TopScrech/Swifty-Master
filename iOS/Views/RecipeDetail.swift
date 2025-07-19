@@ -3,8 +3,8 @@
 import SwiftUI
 
 struct RecipeDetail<Link: View>: View {
-    var recipe: Recipe?
-    var relatedLink: (Recipe) -> Link
+    var recipe: Topic?
+    var relatedLink: (Topic) -> Link
     
     var body: some View {
         if let recipe {
@@ -20,8 +20,8 @@ struct RecipeDetail<Link: View>: View {
 private struct Content<Link: View>: View {
     @Environment(DataModel.self) private var dataModel
     
-    var recipe: Recipe
-    var relatedLink: (Recipe) -> Link
+    var recipe: Topic
+    var relatedLink: (Topic) -> Link
     
     var body: some View {
         ScrollView {

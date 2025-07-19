@@ -36,7 +36,7 @@
 		F35198C22E2B7E34004E0F02 /* Attributed Code String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198C02E2B7E34004E0F02 /* Attributed Code String.swift */; };
 		F35198C42E2B7E56004E0F02 /* Simple Code Block View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198C32E2B7E56004E0F02 /* Simple Code Block View.swift */; };
 		F35198C52E2B7E56004E0F02 /* Simple Code Block View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198C32E2B7E56004E0F02 /* Simple Code Block View.swift */; };
-		F35198FD2E2B9F53004E0F02 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EB2E2B9F53004E0F02 /* Recipe.swift */; };
+		F35198FD2E2B9F53004E0F02 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EB2E2B9F53004E0F02 /* Topic.swift */; };
 		F35198FE2E2B9F53004E0F02 /* ExperienceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F32E2B9F53004E0F02 /* ExperienceButton.swift */; };
 		F35198FF2E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F52E2B9F53004E0F02 /* ExperiencePickerRow.swift */; };
 		F35199002E2B9F53004E0F02 /* RecipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F72E2B9F53004E0F02 /* RecipeDetail.swift */; };
@@ -54,7 +54,7 @@
 		F351990E2E2B9F53004E0F02 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E62E2B9F53004E0F02 /* Category.swift */; };
 		F351990F2E2B9F53004E0F02 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E82E2B9F53004E0F02 /* Experience.swift */; };
 		F35199102E2B9F53004E0F02 /* RecipeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198FB2E2B9F53004E0F02 /* RecipeTile.swift */; };
-		F35199112E2B9F53004E0F02 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EB2E2B9F53004E0F02 /* Recipe.swift */; };
+		F35199112E2B9F53004E0F02 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EB2E2B9F53004E0F02 /* Topic.swift */; };
 		F35199122E2B9F53004E0F02 /* ExperienceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F32E2B9F53004E0F02 /* ExperienceButton.swift */; };
 		F35199132E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F52E2B9F53004E0F02 /* ExperiencePickerRow.swift */; };
 		F35199142E2B9F53004E0F02 /* RecipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F72E2B9F53004E0F02 /* RecipeDetail.swift */; };
@@ -108,7 +108,7 @@
 		F35198E82E2B9F53004E0F02 /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
 		F35198E92E2B9F53004E0F02 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		F35198EA2E2B9F53004E0F02 /* NavModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModel.swift; sourceTree = "<group>"; };
-		F35198EB2E2B9F53004E0F02 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		F35198EB2E2B9F53004E0F02 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		F35198ED2E2B9F53004E0F02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F35198EE2E2B9F53004E0F02 /* StackContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackContentView.swift; sourceTree = "<group>"; };
 		F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnContentView.swift; sourceTree = "<group>"; };
@@ -256,7 +256,7 @@
 				F35198E82E2B9F53004E0F02 /* Experience.swift */,
 				F35198E92E2B9F53004E0F02 /* Ingredient.swift */,
 				F35198EA2E2B9F53004E0F02 /* NavModel.swift */,
-				F35198EB2E2B9F53004E0F02 /* Recipe.swift */,
+				F35198EB2E2B9F53004E0F02 /* Topic.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -452,7 +452,7 @@
 				F3ADA6172D9C03E700F2DAA6 /* Plural Translation.swift in Sources */,
 				F3202CC12D5597450030B3CC /* Home View.swift in Sources */,
 				F351984C2E2AEDCB004E0F02 /* Code Block View.swift in Sources */,
-				F35198FD2E2B9F53004E0F02 /* Recipe.swift in Sources */,
+				F35198FD2E2B9F53004E0F02 /* Topic.swift in Sources */,
 				F35198FE2E2B9F53004E0F02 /* ExperienceButton.swift in Sources */,
 				F35198FF2E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */,
 				F35199002E2B9F53004E0F02 /* RecipeDetail.swift in Sources */,
@@ -483,7 +483,7 @@
 				F3BBD9E42AEECD3400A9F7E7 /* Home View.swift in Sources */,
 				F32E88D52AF856E400959D49 /* Journal View.swift in Sources */,
 				F35198472E2AECAA004E0F02 /* Gauge Card.swift in Sources */,
-				F35199112E2B9F53004E0F02 /* Recipe.swift in Sources */,
+				F35199112E2B9F53004E0F02 /* Topic.swift in Sources */,
 				F35199122E2B9F53004E0F02 /* ExperienceButton.swift in Sources */,
 				F35199132E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */,
 				F35199142E2B9F53004E0F02 /* RecipeDetail.swift in Sources */,

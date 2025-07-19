@@ -3,7 +3,7 @@
 import SwiftUI
 
 struct RecipePhoto: View {
-    var recipe: Recipe
+    var recipe: Topic
     
     var body: some View {
         if let imageName = recipe.imageName {

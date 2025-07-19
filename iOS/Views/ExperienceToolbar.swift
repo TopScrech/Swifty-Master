@@ -1,4 +1,4 @@
-// Populates the navigation bar with the "Recipe of the Day" and experience buttons
+// Populates the navigation bar with the "Topic of the Day" and experience buttons
 
 import SwiftUI
 
