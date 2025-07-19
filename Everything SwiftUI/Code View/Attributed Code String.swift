@@ -1,76 +1,7 @@
 import ScrechKit
 
-struct CodeBlockView: View {
-    @Environment(\.dismiss) private var dismiss
-    @Environment(\.colorScheme) private var colorScheme
-    
-    private let code: CodeBlock
-    
-    init(_ code: CodeBlock) {
-        self.code = code
-    }
-    
-    var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            Text(attributedString(for: code.code))
-                .monospaced()
-                .padding()
-                .background {
-                    if colorScheme == .light {
-                        Color.black
-                    }
-                }
-                .cornerRadius(8)
-                .foregroundColor(.white)
-        }
-        .toolbar {
-            ToolbarItem(placement: .bottomBar) {
-                SFButton("xmark") {
-                    dismiss()
-                }
-                .tint(.red)
-            }
-            
-            ToolbarSpacer(placement: .bottomBar)
-            
-            ToolbarItemGroup(placement: .bottomBar) {
-                ShareLink(item: code.code)
-                
-                SFButton("document.on.document") {
-                    UIPasteboard.general.string = code.code
-                }
-            }
-        }
-    }
-}
-
-struct SimpleCodeBlockView: View {
-    @Environment(\.colorScheme) private var colorScheme
-    
-    private let code: CodeBlock
-    
-    init(_ code: CodeBlock) {
-        self.code = code
-    }
-    
-    var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            Text(attributedString(for: code.code))
-                .monospaced()
-                .padding()
-                .background {
-                    if colorScheme == .light {
-                        Color.black
-                    }
-                }
-                .cornerRadius(8)
-                .foregroundColor(.white)
-        }
-    }
-}
-
 /// Helper function to create an AttributedString with simulated syntax highlighting
-func attributedString(for code: String) -> AttributedString {
+func attributedCodeString(for code: String) -> AttributedString {
     var attributedString = AttributedString(code)
     
     // Swift keywords
@@ -189,24 +120,3 @@ extension String {
         return result
     }
 }
-
-#Preview {
-    CodeBlockView(.gauges)
-        .darkSchemePreferred()
-}
-
-//#Preview {
-//    let code = """
-//struct Person {
-//    let name: String
-//    var age: Int
-//
-//    func greet() {
-//        print("Hello, \\(name)!")
-//    }
-//}
-//"""
-//
-//    CodeBlockView(code)
-//        .darkSchemePreferred()
-//}
