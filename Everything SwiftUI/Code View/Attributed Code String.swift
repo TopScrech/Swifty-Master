@@ -5,7 +5,7 @@ func attributedCodeString(for code: String) -> AttributedString {
     var attributedString = AttributedString(code)
     
     // Swift keywords
-    let keywords = ["let", "var", "if", "else", "struct", "func", "return"]
+    let keywords = ["let", "var", "if ", "else", "struct", "func", "return", "import", "public", "extension"]
     
     for keyword in keywords {
         let ranges = code.ranges(of: keyword)
@@ -14,6 +14,21 @@ func attributedCodeString(for code: String) -> AttributedString {
             if let attributedRange = Range(NSRange(range, in: code), in: attributedString) {
                 attributedString[attributedRange].foregroundColor = Color(0xFC5FA3)
                 attributedString[attributedRange].font = .body.bold()
+            }
+        }
+    }
+    
+    let directivePattern = #"(?m)^#(if|else|endif).*"#
+    
+    if let regex = try? NSRegularExpression(pattern: directivePattern) {
+        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+        
+        for match in matches {
+            let range = match.range(at: 0)
+            
+            if let stringRange = Range(range, in: code),
+               let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
+                attributedString[attributedRange].foregroundColor = Color(0xFD8F3F)
             }
         }
     }

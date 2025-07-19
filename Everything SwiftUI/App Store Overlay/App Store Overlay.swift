@@ -9,6 +9,7 @@ struct AppStoreOverlay: View {
                 overlay = true
             }
         }
+        .codeBlock(.appStoreOverlay)
 #if os(iOS) || os(visionOS)
         .appStoreOverlay($overlay, id: "1639409934")
 #endif
