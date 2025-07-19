@@ -12,9 +12,9 @@ struct TopicGrid: View {
         if let category = navigationModel.selectedCategory {
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 20) {
-                    ForEach(dataModel.recipes(in: category)) { recipe in
-                        NavigationLink(value: recipe) {
-                            TopicTile(recipe)
+                    ForEach(dataModel.topics(in: category)) { topic in
+                        NavigationLink(value: topic) {
+                            TopicTile(topic)
                         }
                         .buttonStyle(.plain)
                     }
@@ -22,12 +22,12 @@ struct TopicGrid: View {
                 .padding()
             }
             .navigationTitle(category.localizedName)
-            .navigationDestination(for: Topic.self) { recipe in
-                TopicDetail(recipe) { relatedRecipe in
+            .navigationDestination(for: Topic.self) { topic in
+                TopicDetail(topic) { relatedTopic in
                     Button {
-                        navigationModel.recipePath.append(relatedRecipe)
+                        navigationModel.topicPath.append(relatedTopic)
                     } label: {
-                        TopicTile(relatedRecipe)
+                        TopicTile(relatedTopic)
                     }
                     .buttonStyle(.plain)
                 }

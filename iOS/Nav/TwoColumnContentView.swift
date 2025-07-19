@@ -17,7 +17,7 @@ struct TwoColumnContentView: View {
             }
             .navigationTitle("Categories")
         } detail: {
-            NavigationStack(path: $nav.recipePath) {
+            NavigationStack(path: $nav.topicPath) {
                 TopicGrid()
             }
             .experienceToolbar()

@@ -1,11 +1,11 @@
-// An observable data model of recipes and miscellaneous groupings
+// An observable data model of topics and miscellaneous groupings
 
 import SwiftUI
 
 @Observable
 final class DataModel {
-    private let recipes = Topic.allCases
-//    private let recipes: [Topic] = [
+    private let topics = Topic.allCases
+//    private let topics: [Topic] = [
 //        // Content
 //        .init("Text", category: .content),
 //        .init("TextField", category: .content),
@@ -75,31 +75,31 @@ final class DataModel {
 //        .init("Detect lang", category: .system)
 //    ]
     
-    private var recipesById: [Topic.ID: Topic] = [:]
+    private var topicsById: [Topic.ID: Topic] = [:]
     
     /// The shared singleton data model object
     static let shared: DataModel = {
         DataModel()
     }()
     
-    /// The recipes for a given category, sorted by name
-    func recipes(in category: Category?) -> [Topic] {
-        recipes.filter {
+    /// The topics for a given category, sorted by name
+    func topics(in category: Category?) -> [Topic] {
+        topics.filter {
             $0.category == category
         }
     }
     
-    /// The related recipes for a given topic, sorted by name
-    func recipes(relatedTo recipe: Topic) -> [Topic] {
-        recipes.filter {
-            recipe.related.contains($0.id)
+    /// The related topics for a given topic, sorted by name
+    func topics(relatedTo topic: Topic) -> [Topic] {
+        topics.filter {
+            topic.related.contains($0.id)
         }
     }
     
     /// Accesses the topic associated with the given unique identifier
     /// if the identifier is tracked by the data model; otherwise, returns `nil`
-    subscript(recipeId: Topic.ID) -> Topic? {
-        recipesById[recipeId]
+    subscript(topicId: Topic.ID) -> Topic? {
+        topicsById[topicId]
     }
 }
 

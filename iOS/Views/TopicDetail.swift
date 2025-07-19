@@ -1,24 +1,24 @@
 import SwiftUI
 
 struct TopicDetail<Link: View>: View {
-    private let recipe: Topic?
+    private let topic: Topic?
     private let relatedLink: (Topic) -> Link
     
     init(
-        _ recipe: Topic?,
+        _ topic: Topic?,
         relatedLink: @escaping (Topic) -> Link
     ) {
-        self.recipe = recipe
+        self.topic = topic
         self.relatedLink = relatedLink
     }
     
     var body: some View {
-        if let recipe {
+        if let topic {
             Content(
-                recipe: recipe,
+                topic: topic,
                 relatedLink: relatedLink
             )
-            .id(recipe.id)
+            .id(topic.id)
         } else {
             Text("Choose a topic")
                 .navigationTitle("")
@@ -29,7 +29,7 @@ struct TopicDetail<Link: View>: View {
 private struct Content<Link: View>: View {
     @Environment(DataModel.self) private var dataModel
     
-    var recipe: Topic
+    var topic: Topic
     var relatedLink: (Topic) -> Link
     
     var body: some View {
@@ -40,7 +40,7 @@ private struct Content<Link: View>: View {
             }
             .scenePadding()
         }
-        .navigationTitle(recipe.name)
+        .navigationTitle(topic.name)
     }
     
     private var wideDetails: some View {
@@ -53,7 +53,7 @@ private struct Content<Link: View>: View {
                 Spacer()
             }
             
-            relatedRecipes
+            relatedTopics
         }
     }
     
@@ -74,7 +74,7 @@ private struct Content<Link: View>: View {
         VStack(alignment: narrowDetailsAlignment) {
             title
             ingredients
-            relatedRecipes
+            relatedTopics
         }
     }
     
@@ -89,7 +89,7 @@ private struct Content<Link: View>: View {
     @ViewBuilder
     private var title: some View {
 #if os(macOS)
-        Text(recipe.name)
+        Text(topic.name)
             .largeTitle(.bold)
 #endif
     }
@@ -111,20 +111,20 @@ private struct Content<Link: View>: View {
     }
     
     @ViewBuilder
-    private var relatedRecipes: some View {
+    private var relatedTopics: some View {
         let padding = EdgeInsets(top: 16, leading: 0, bottom: 8, trailing: 0)
         
-        if !recipe.related.isEmpty {
+        if !topic.related.isEmpty {
             VStack(alignment: .leading) {
-                Text("Related Recipes")
+                Text("Related Topics")
                     .title2(.bold)
                     .padding(padding)
                 
                 LazyVGrid(columns: columns, alignment: .leading, spacing: 20) {
-                    let relatedRecipes = dataModel.recipes(relatedTo: recipe)
+                    let relatedTopics = dataModel.topics(relatedTo: topic)
                     
-                    ForEach(relatedRecipes) { relatedRecipe in
-                        relatedLink(relatedRecipe)
+                    ForEach(relatedTopics) { relatedTopic in
+                        relatedLink(relatedTopic)
                     }
                 }
             }

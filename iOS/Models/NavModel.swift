@@ -8,7 +8,7 @@ final class NavModel: Codable {
     var selectedCategory: Category?
     
     /// The homogenous navigation state used by the app's navigation stacks
-    var recipePath: [Topic]
+    var topicPath: [Topic]
     
     /// The leading columns' visibility state used by the app's navigation split views
     var columnVisibility: NavigationSplitViewVisibility
@@ -35,15 +35,15 @@ final class NavModel: Codable {
     }()
     
     /// Initialize a `NavigationModel` that enables programmatic control of leading columns’
-    /// visibility, selected topic category, and navigation state based on recipe data
+    /// visibility, selected topic category, and navigation state based on topic data
     init(
         columnVisibility: NavigationSplitViewVisibility = .automatic,
         selectedCategory: Category? = nil,
-        recipePath: [Topic] = []
+        topicPath: [Topic] = []
     ) {
         self.columnVisibility = columnVisibility
         self.selectedCategory = selectedCategory
-        self.recipePath = recipePath
+        self.topicPath = topicPath
     }
     
     /// Initialize a `DataModel` with the contents of a `URL`
@@ -57,7 +57,7 @@ final class NavModel: Codable {
         self.init(
             columnVisibility: model.columnVisibility,
             selectedCategory: model.selectedCategory,
-            recipePath: model.recipePath
+            topicPath: model.topicPath
         )
     }
     
@@ -66,7 +66,7 @@ final class NavModel: Codable {
         let model = try NavModel(contentsOf: Self.dataURL)
         
         selectedCategory = model.selectedCategory
-        recipePath = model.recipePath
+        topicPath = model.topicPath
         columnVisibility = model.columnVisibility
     }
     
@@ -78,17 +78,17 @@ final class NavModel: Codable {
     //    /// The selected topic; otherwise returns `nil`
     //    var selectedTopic: Topic? {
     //        get {
-    //            recipePath.first
+    //            topicPath.first
     //        } set {
-    //            recipePath = [newValue].compactMap { $0 }
+    //            topicPath = [newValue].compactMap { $0 }
     //        }
     //    }
     
     var selectedTopic: Set<Topic> {
         get {
-            Set(recipePath)
+            Set(topicPath)
         } set {
-            recipePath = Array(newValue)
+            topicPath = Array(newValue)
         }
     }
     
@@ -105,7 +105,7 @@ final class NavModel: Codable {
             }
             
             selectedCategory = model.selectedCategory
-            recipePath = model.recipePath
+            topicPath = model.topicPath
             columnVisibility = model.columnVisibility
         }
     }
@@ -115,8 +115,8 @@ final class NavModel: Codable {
         
         self.selectedCategory = try container.decodeIfPresent(Category.self, forKey: .selectedCategory)
         
-        let topicIds = try container.decode([Topic.ID].self, forKey: .recipePathIds)
-        self.recipePath = topicIds.compactMap {
+        let topicIds = try container.decode([Topic.ID].self, forKey: .topicPathIds)
+        self.topicPath = topicIds.compactMap {
             DataModel.shared[$0]
         }
         
@@ -127,11 +127,11 @@ final class NavModel: Codable {
         var container = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encodeIfPresent(selectedCategory, forKey: .selectedCategory)
-        try container.encode(recipePath.map(\.id), forKey: .recipePathIds)
+        try container.encode(topicPath.map(\.id), forKey: .topicPathIds)
         try container.encode(columnVisibility, forKey: .columnVisibility)
     }
     
     private enum CodingKeys: String, CodingKey {
-        case selectedCategory, recipePathIds, columnVisibility
+        case selectedCategory, topicPathIds, columnVisibility
     }
 }

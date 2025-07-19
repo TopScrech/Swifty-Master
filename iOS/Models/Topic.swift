@@ -1,4 +1,4 @@
-// A data model for a topic and its metadata, including its related recipes
+// A data model for a topic and its metadata, including its related topics
 
 import SwiftUI
 
@@ -108,7 +108,10 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
     }
     
     var related: [Topic.ID] {
-        []
+        switch self {
+        case .textField: [Topic.textEditor.id]
+        default: []
+        }
     }
     
     var icon: String {

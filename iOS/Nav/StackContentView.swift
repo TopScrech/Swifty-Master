@@ -11,11 +11,11 @@ struct StackContentView: View {
     var body: some View {
         @Bindable var nav = nav
         
-        NavigationStack(path: $nav.recipePath) {
+        NavigationStack(path: $nav.topicPath) {
             List(categories) { category in
                 Section {
-                    ForEach(dataModel.recipes(in: category)) { recipe in
-                        NavigationLink(recipe.name, value: recipe)
+                    ForEach(dataModel.topics(in: category)) { topic in
+                        NavigationLink(topic.name, value: topic)
                     }
                 } header: {
                     Text(category.localizedName)
@@ -23,12 +23,12 @@ struct StackContentView: View {
             }
             .navigationTitle("Categories")
             .experienceToolbar()
-            .navigationDestination(for: Topic.self) { recipe in
-                TopicDetail(recipe) { relatedRecipe in
+            .navigationDestination(for: Topic.self) { topic in
+                TopicDetail(topic) { relatedTopic in
                     Button {
-                        nav.recipePath.append(relatedRecipe)
+                        nav.topicPath.append(relatedTopic)
                     } label: {
-                        TopicTile(relatedRecipe)
+                        TopicTile(relatedTopic)
                     }
                     .buttonStyle(.plain)
                 }
