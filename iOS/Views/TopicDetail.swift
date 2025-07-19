@@ -1,8 +1,16 @@
 import SwiftUI
 
 struct TopicDetail<Link: View>: View {
-    var recipe: Topic?
-    var relatedLink: (Topic) -> Link
+    private let recipe: Topic?
+    private let relatedLink: (Topic) -> Link
+    
+    init(
+        _ recipe: Topic?,
+        relatedLink: @escaping (Topic) -> Link
+    ) {
+        self.recipe = recipe
+        self.relatedLink = relatedLink
+    }
     
     var body: some View {
         if let recipe {

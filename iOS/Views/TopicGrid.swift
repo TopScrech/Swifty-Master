@@ -4,6 +4,10 @@ struct TopicGrid: View {
     @Environment(NavModel.self) private var navigationModel
     @Environment(DataModel.self) private var dataModel
     
+    private let columns = [
+        GridItem(.adaptive(minimum: 240))
+    ]
+    
     var body: some View {
         if let category = navigationModel.selectedCategory {
             ScrollView {
@@ -19,7 +23,7 @@ struct TopicGrid: View {
             }
             .navigationTitle(category.localizedName)
             .navigationDestination(for: Topic.self) { recipe in
-                TopicDetail(recipe: recipe) { relatedRecipe in
+                TopicDetail(recipe) { relatedRecipe in
                     Button {
                         navigationModel.recipePath.append(relatedRecipe)
                     } label: {
@@ -33,10 +37,6 @@ struct TopicGrid: View {
             Text("Choose a category")
                 .navigationTitle("")
         }
-    }
-    
-    var columns: [GridItem] {
-        [ GridItem(.adaptive(minimum: 240)) ]
     }
 }
 

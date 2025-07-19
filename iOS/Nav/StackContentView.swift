@@ -24,7 +24,7 @@ struct StackContentView: View {
             .navigationTitle("Categories")
             .experienceToolbar()
             .navigationDestination(for: Topic.self) { recipe in
-                TopicDetail(recipe: recipe) { relatedRecipe in
+                TopicDetail(recipe) { relatedRecipe in
                     Button {
                         nav.recipePath.append(relatedRecipe)
                     } label: {
