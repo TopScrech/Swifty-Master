@@ -123,7 +123,7 @@
 		F3BBD9E32AEECD3400A9F7E7 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3BBD9E92AEECD3500A9F7E7 /* iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS.entitlements; sourceTree = "<group>"; };
-		F3BBD9ED2AEECD3500A9F7E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3BBD9ED2AEECD3500A9F7E7 /* iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iOS.plist; sourceTree = "<group>"; };
 		F3BBD9F32AEECD6C00A9F7E7 /* Materials View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Materials View.swift"; sourceTree = "<group>"; };
 		F3BBD9F82AEED4BC00A9F7E7 /* Image Picker View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker View.swift"; sourceTree = "<group>"; };
 		F3BBD9FA2AEED4CE00A9F7E7 /* Image Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker.swift"; sourceTree = "<group>"; };
@@ -313,7 +313,7 @@
 				F35198F12E2B9F53004E0F02 /* Nav */,
 				F35198EC2E2B9F53004E0F02 /* Models */,
 				F35198FC2E2B9F53004E0F02 /* Views */,
-				F3BBD9ED2AEECD3500A9F7E7 /* Info.plist */,
+				F3BBD9ED2AEECD3500A9F7E7 /* iOS.plist */,
 				F3BBD9E92AEECD3500A9F7E7 /* iOS.entitlements */,
 				F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */,
 				F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */,
@@ -702,7 +702,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_FILE = iOS/iOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Master SwiftUI";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
@@ -744,7 +744,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_FILE = iOS/iOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Master SwiftUI";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
