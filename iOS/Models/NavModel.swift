@@ -75,14 +75,14 @@ final class NavModel: Codable {
         try jsonData?.write(to: Self.dataURL)
     }
     
-//    /// The selected recipe; otherwise returns `nil`
-//    var selectedTopic: Topic? {
-//        get {
-//            recipePath.first
-//        } set {
-//            recipePath = [newValue].compactMap { $0 }
-//        }
-//    }
+    //    /// The selected recipe; otherwise returns `nil`
+    //    var selectedTopic: Topic? {
+    //        get {
+    //            recipePath.first
+    //        } set {
+    //            recipePath = [newValue].compactMap { $0 }
+    //        }
+    //    }
     
     var selectedTopic: Set<Topic> {
         get {
@@ -108,5 +108,30 @@ final class NavModel: Codable {
             recipePath = model.recipePath
             columnVisibility = model.columnVisibility
         }
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        self.selectedCategory = try container.decodeIfPresent(Category.self, forKey: .selectedCategory)
+        
+        let topicIds = try container.decode([Topic.ID].self, forKey: .recipePathIds)
+        self.recipePath = topicIds.compactMap {
+            DataModel.shared[$0]
+        }
+        
+        self.columnVisibility = try container.decode(NavigationSplitViewVisibility.self, forKey: .columnVisibility)
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        
+        try container.encodeIfPresent(selectedCategory, forKey: .selectedCategory)
+        try container.encode(recipePath.map(\.id), forKey: .recipePathIds)
+        try container.encode(columnVisibility, forKey: .columnVisibility)
+    }
+    
+    private enum CodingKeys: String, CodingKey {
+        case selectedCategory, recipePathIds, columnVisibility
     }
 }
