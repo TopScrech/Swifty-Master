@@ -1,4 +1,4 @@
-// An enumeration of recipe groupings used to display sidebar items
+// An enumeration of topic groupings used to display sidebar items
 
 import SwiftUI
 
@@ -16,7 +16,7 @@ enum Category: Int, CaseIterable, Identifiable, Codable {
         rawValue
     }
     
-    /// The localized name of the recipe category.
+    /// The localized name of the topic category.
     var localizedName: LocalizedStringKey {
         switch self {
         case .content:     "Content"

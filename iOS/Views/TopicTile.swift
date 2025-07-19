@@ -1,17 +1,17 @@
 import SwiftUI
 
 struct TopicTile: View {
-    private var recipe: Topic
+    private var topic: Topic
     
-    init(_ recipe: Topic) {
-        self.recipe = recipe
+    init(_ topic: Topic) {
+        self.topic = topic
     }
     
     @State private var isHovering = false
     
     var body: some View {
-        VStack(alignment: .leading) {            
-            Text(recipe.name)
+        VStack(alignment: .leading) {
+            Label(topic.name, systemImage: topic.icon)
                 .lineLimit(2, reservesSpace: true)
         }
         .tint(.primary)

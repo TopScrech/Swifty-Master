@@ -89,14 +89,14 @@ final class DataModel {
         }
     }
     
-    /// The related recipes for a given recipe, sorted by name
+    /// The related recipes for a given topic, sorted by name
     func recipes(relatedTo recipe: Topic) -> [Topic] {
         recipes.filter {
             recipe.related.contains($0.id)
         }
     }
     
-    /// Accesses the recipe associated with the given unique identifier
+    /// Accesses the topic associated with the given unique identifier
     /// if the identifier is tracked by the data model; otherwise, returns `nil`
     subscript(recipeId: Topic.ID) -> Topic? {
         recipesById[recipeId]

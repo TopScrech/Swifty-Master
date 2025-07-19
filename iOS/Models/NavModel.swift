@@ -4,7 +4,7 @@ import SwiftUI
 
 @Observable
 final class NavModel: Codable {
-    /// The selected recipe category; otherwise returns `nil`
+    /// The selected topic category; otherwise returns `nil`
     var selectedCategory: Category?
     
     /// The homogenous navigation state used by the app's navigation stacks
@@ -20,7 +20,7 @@ final class NavModel: Codable {
     
     private static let encoder = JSONEncoder()
     
-    /// The URL for the JSON file that stores the recipe data
+    /// The URL for the JSON file that stores the topic data
     private static var dataURL: URL {
         .cachesDirectory.appending(path: "NavigationData.json")
     }
@@ -35,7 +35,7 @@ final class NavModel: Codable {
     }()
     
     /// Initialize a `NavigationModel` that enables programmatic control of leading columns’
-    /// visibility, selected recipe category, and navigation state based on recipe data
+    /// visibility, selected topic category, and navigation state based on recipe data
     init(
         columnVisibility: NavigationSplitViewVisibility = .automatic,
         selectedCategory: Category? = nil,
@@ -75,7 +75,7 @@ final class NavModel: Codable {
         try jsonData?.write(to: Self.dataURL)
     }
     
-    //    /// The selected recipe; otherwise returns `nil`
+    //    /// The selected topic; otherwise returns `nil`
     //    var selectedTopic: Topic? {
     //        get {
     //            recipePath.first

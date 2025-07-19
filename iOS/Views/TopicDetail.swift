@@ -20,7 +20,7 @@ struct TopicDetail<Link: View>: View {
             )
             .id(recipe.id)
         } else {
-            Text("Choose a recipe")
+            Text("Choose a topic")
                 .navigationTitle("")
         }
     }
@@ -133,7 +133,7 @@ private struct Content<Link: View>: View {
 }
 
 //#Preview() {
-//    TopicDetail(recipe: .mock) { _ in
+//    TopicDetail(topic: .mock) { _ in
 //        EmptyView()
 //    }
 //    .environment(DataModel.shared)
