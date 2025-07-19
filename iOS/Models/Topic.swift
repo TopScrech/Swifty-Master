@@ -3,7 +3,10 @@
 import SwiftUI
 
 struct Topic: Codable, Hashable, Identifiable {
-    let id: Int
+    var id: String {
+        name
+    }
+    
     var name: String
     var category: Category
     var related: [Topic.ID] = []
@@ -12,6 +15,6 @@ struct Topic: Codable, Hashable, Identifiable {
 
 extension Topic {
     static var mock: Topic {
-        .init(id: 0, name: "Test", category: .content)
+        .init(name: "Test", category: .content)
     }
 }

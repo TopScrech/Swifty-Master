@@ -5,7 +5,15 @@ import SwiftUI
 @Observable
 final class DataModel {
     private let recipes: [Topic] = [
-        .init(id: 0, name: "Test", category: .content)
+        .init(name: "Text", category: .content),
+        .init(name: "TextField", category: .content),
+        .init(name: "Text Editor", category: .content),
+        .init(name: "Image", category: .content),
+        .init(name: "SF Symbols", category: .content),
+        .init(name: "Label", category: .content),
+        .init(name: "Shape", category: .content),
+        .init(name: "Divider", category: .content),
+        .init(name: "Custom Keyboard", category: .content)
     ]
     
     private var recipesById: [Topic.ID: Topic] = [:]
