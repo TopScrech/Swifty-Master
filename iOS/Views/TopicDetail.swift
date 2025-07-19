@@ -124,9 +124,9 @@ private struct Content<Link: View>: View {
     }
 }
 
-#Preview() {
-    TopicDetail(recipe: .mock) { _ in
-        EmptyView()
-    }
-    .environment(DataModel.shared)
-}
+//#Preview() {
+//    TopicDetail(recipe: .mock) { _ in
+//        EmptyView()
+//    }
+//    .environment(DataModel.shared)
+//}
