@@ -77,7 +77,7 @@ struct ExperiencePicker: View {
     }
 }
 
-#Preview() {
+#Preview {
     @Previewable @State var selectedExperience: Experience? = .stack
     
     ExperiencePicker($selectedExperience)

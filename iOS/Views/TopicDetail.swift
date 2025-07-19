@@ -132,7 +132,7 @@ private struct Content<Link: View>: View {
     }
 }
 
-//#Preview() {
+//#Preview {
 //    TopicDetail(topic: .mock) { _ in
 //        EmptyView()
 //    }

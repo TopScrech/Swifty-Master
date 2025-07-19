@@ -37,6 +37,6 @@ struct ContinueButtonStyle: ButtonStyle {
 }
 #endif
 
-#Preview() {
+#Preview {
     ContinueButton {}
 }

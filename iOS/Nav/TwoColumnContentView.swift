@@ -25,7 +25,7 @@ struct TwoColumnContentView: View {
     }
 }
 
-#Preview() {
+#Preview {
     TwoColumnContentView()
         .environment(DataModel.shared)
         .environment(NavModel.shared)

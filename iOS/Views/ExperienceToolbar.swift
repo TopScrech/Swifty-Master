@@ -17,7 +17,7 @@ extension View {
     }
 }
 
-#Preview() {
+#Preview {
     NavigationStack {
         Color.white
             .experienceToolbar()

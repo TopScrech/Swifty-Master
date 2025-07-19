@@ -40,13 +40,13 @@ struct TopicGrid: View {
     }
 }
 
-#Preview() {
+#Preview {
     TopicGrid()
         .environment(DataModel.shared)
         .environment(NavModel(selectedCategory: .content))
 }
 
-#Preview() {
+#Preview {
     TopicGrid()
         .environment(DataModel.shared)
         .environment(NavModel(selectedCategory: nil))

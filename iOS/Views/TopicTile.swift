@@ -26,6 +26,6 @@ struct TopicTile: View {
     }
 }
 
-//#Preview() {
+//#Preview {
 //    TopicTile(.mock)
 //}

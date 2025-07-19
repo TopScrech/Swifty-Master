@@ -61,7 +61,7 @@ private struct Label: View {
     }
 }
 
-#Preview() {
+#Preview {
     ForEach(Experience.allCases) {
         ExperiencePickerItem(
             selection: .constant($0),

@@ -13,7 +13,7 @@ struct ExperienceButton: View {
     }
 }
 
-#Preview() {
+#Preview {
     ExperienceButton()
         .environment(NavModel.shared)
 }
