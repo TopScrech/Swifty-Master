@@ -45,7 +45,7 @@ struct RecipeGrid: View {
 #Preview() {
     RecipeGrid()
         .environment(DataModel.shared)
-        .environment(NavModel(selectedCategory: .dessert))
+        .environment(NavModel(selectedCategory: .content))
 }
 
 #Preview() {

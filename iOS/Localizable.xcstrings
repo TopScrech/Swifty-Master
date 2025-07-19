@@ -110,10 +110,19 @@
     "Choose your navigation experience" : {
 
     },
+    "Collections" : {
+
+    },
+    "Content" : {
+
+    },
     "Continue" : {
 
     },
-    "Dessert" : {
+    "Control" : {
+
+    },
+    "Design" : {
 
     },
     "Drag & Drop" : {
@@ -153,6 +162,9 @@
     "Large title" : {
 
     },
+    "Layout" : {
+
+    },
     "Lift" : {
 
     },
@@ -179,10 +191,10 @@
     "Materials" : {
 
     },
-    "Open Settings" : {
+    "Navigation" : {
 
     },
-    "Pancake" : {
+    "Open Settings" : {
 
     },
     "Picker 2" : {
@@ -194,12 +206,6 @@
     "Related Recipes" : {
 
     },
-    "Salad" : {
-
-    },
-    "Sandwich" : {
-
-    },
     "Sensory Feedback" : {
 
     },
@@ -207,6 +213,9 @@
 
     },
     "Subheadline" : {
+
+    },
+    "System" : {
 
     },
     "This is **bold** text, this is *italic* text, and this is ***bold, italic*** text" : {
@@ -227,6 +236,9 @@
 
     },
     "Two columns" : {
+
+    },
+    "View" : {
 
     }
   },
