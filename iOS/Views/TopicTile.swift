@@ -1,8 +1,6 @@
-// A recipe tile, displaying the recipe's photo and name
-
 import SwiftUI
 
-struct RecipeTile: View {
+struct TopicTile: View {
     private var recipe: Topic
     
     init(_ recipe: Topic) {
@@ -29,5 +27,5 @@ struct RecipeTile: View {
 }
 
 #Preview() {
-    RecipeTile(.mock)
+    TopicTile(.mock)
 }

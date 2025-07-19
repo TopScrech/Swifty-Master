@@ -24,11 +24,11 @@ struct StackContentView: View {
             .navigationTitle("Categories")
             .experienceToolbar()
             .navigationDestination(for: Topic.self) { recipe in
-                RecipeDetail(recipe: recipe) { relatedRecipe in
+                TopicDetail(recipe: recipe) { relatedRecipe in
                     Button {
                         nav.recipePath.append(relatedRecipe)
                     } label: {
-                        RecipeTile(relatedRecipe)
+                        TopicTile(relatedRecipe)
                     }
                     .buttonStyle(.plain)
                 }

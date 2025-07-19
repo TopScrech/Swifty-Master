@@ -1,8 +1,6 @@
-// A detail view the app uses to display the metadata for a given recipe, as well as its related recipes
-
 import SwiftUI
 
-struct RecipeDetail<Link: View>: View {
+struct TopicDetail<Link: View>: View {
     var recipe: Topic?
     var relatedLink: (Topic) -> Link
     
@@ -127,7 +125,7 @@ private struct Content<Link: View>: View {
 }
 
 #Preview() {
-    RecipeDetail(recipe: .mock) { _ in
+    TopicDetail(recipe: .mock) { _ in
         EmptyView()
     }
     .environment(DataModel.shared)

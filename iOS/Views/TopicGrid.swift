@@ -1,8 +1,6 @@
-// A grid of recipe tiles, based on a given recipe category
-
 import SwiftUI
 
-struct RecipeGrid: View {
+struct TopicGrid: View {
     @Environment(NavModel.self) private var navigationModel
     @Environment(DataModel.self) private var dataModel
     
@@ -12,7 +10,7 @@ struct RecipeGrid: View {
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(dataModel.recipes(in: category)) { recipe in
                         NavigationLink(value: recipe) {
-                            RecipeTile(recipe)
+                            TopicTile(recipe)
                         }
                         .buttonStyle(.plain)
                     }
@@ -21,11 +19,11 @@ struct RecipeGrid: View {
             }
             .navigationTitle(category.localizedName)
             .navigationDestination(for: Topic.self) { recipe in
-                RecipeDetail(recipe: recipe) { relatedRecipe in
+                TopicDetail(recipe: recipe) { relatedRecipe in
                     Button {
                         navigationModel.recipePath.append(relatedRecipe)
                     } label: {
-                        RecipeTile(relatedRecipe)
+                        TopicTile(relatedRecipe)
                     }
                     .buttonStyle(.plain)
                 }
@@ -43,13 +41,13 @@ struct RecipeGrid: View {
 }
 
 #Preview() {
-    RecipeGrid()
+    TopicGrid()
         .environment(DataModel.shared)
         .environment(NavModel(selectedCategory: .content))
 }
 
 #Preview() {
-    RecipeGrid()
+    TopicGrid()
         .environment(DataModel.shared)
         .environment(NavModel(selectedCategory: nil))
 }
