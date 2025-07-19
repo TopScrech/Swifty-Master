@@ -6,12 +6,10 @@ struct ExperienceButton: View {
     @Environment(NavModel.self) private var nav
     
     var body: some View {
-        Button {
+        Button("Experience", systemImage: "wand.and.stars") {
             nav.showExperiencePicker = true
-        } label: {
-            Label("Experience", systemImage: "wand.and.stars")
-                .help("Choose your navigation experience")
         }
+        .help("Choose your navigation experience")
     }
 }
 
