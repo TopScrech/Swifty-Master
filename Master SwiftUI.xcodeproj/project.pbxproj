@@ -318,8 +318,8 @@
 			isa = PBXGroup;
 			children = (
 				F3BBD9E12AEECD3400A9F7E7 /* Master SwiftUI.swift */,
-				F35198EC2E2B9F53004E0F02 /* Models */,
 				F35198F12E2B9F53004E0F02 /* Nav */,
+				F35198EC2E2B9F53004E0F02 /* Models */,
 				F35198FC2E2B9F53004E0F02 /* Views */,
 				F3BBD9ED2AEECD3500A9F7E7 /* Info.plist */,
 				F3BBD9E92AEECD3500A9F7E7 /* iOS.entitlements */,
