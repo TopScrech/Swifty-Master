@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct NavContainer: View {
     @Environment(\.scenePhase) private var scenePhase
     private var nav: NavModel = .shared
     private var dataModel: DataModel = .shared
@@ -55,9 +55,23 @@ struct ContentView: View {
             }
         }
 #endif
+        .onChange(of: nav.selectedCategory) {
+            save()
+        }
+        .onChange(of: nav.selectedTopic) {
+            save()
+        }
+    }
+    
+    private func save() {
+        do {
+            try nav.save()
+        } catch {
+            print(error)
+        }
     }
 }
 
 #Preview {
-    ContentView()
+    NavContainer()
 }

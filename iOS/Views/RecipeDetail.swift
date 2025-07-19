@@ -8,8 +8,11 @@ struct RecipeDetail<Link: View>: View {
     
     var body: some View {
         if let recipe {
-            Content(recipe: recipe, relatedLink: relatedLink)
-                .id(recipe.id)
+            Content(
+                recipe: recipe,
+                relatedLink: relatedLink
+            )
+            .id(recipe.id)
         } else {
             Text("Choose a recipe")
                 .navigationTitle("")
@@ -92,9 +95,9 @@ private struct Content<Link: View>: View {
             .frame(width: 300, height: 300)
     }
     
-    private var columns: [GridItem] {[
+    private let columns = [
         GridItem(.adaptive(minimum: 120, maximum: 120))
-    ]}
+    ]
     
     @ViewBuilder
     private var ingredients: some View {
@@ -104,12 +107,6 @@ private struct Content<Link: View>: View {
             Text("Ingredients")
                 .title2(.bold)
                 .padding(padding)
-            
-            VStack(alignment: .leading) {
-                ForEach(recipe.ingredients) { ingredient in
-                    Text(ingredient.description)
-                }
-            }
         }
         .frame(minWidth: 300, alignment: .leading)
     }

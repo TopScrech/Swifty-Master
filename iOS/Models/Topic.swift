@@ -6,7 +6,6 @@ struct Topic: Codable, Hashable, Identifiable {
     let id: UUID
     var name: String
     var category: Category
-    var ingredients: [Ingredient]
     var related: [Topic.ID] = []
     var imageName: String? = nil
 }

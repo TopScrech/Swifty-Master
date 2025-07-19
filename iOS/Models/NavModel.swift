@@ -76,14 +76,15 @@ final class NavModel: Codable {
     }
     
 //    /// The selected recipe; otherwise returns `nil`
-//    var selectedRecipe: Topic? {
+//    var selectedTopic: Topic? {
 //        get {
 //            recipePath.first
 //        } set {
 //            recipePath = [newValue].compactMap { $0 }
 //        }
 //    }
-    var selectedRecipe: Set<Topic> {
+    
+    var selectedTopic: Set<Topic> {
         get {
             Set(recipePath)
         } set {

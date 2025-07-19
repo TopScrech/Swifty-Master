@@ -4,7 +4,9 @@ import SwiftUI
 
 @Observable
 final class DataModel {
-    private(set) var recipes: [Topic] = []
+    private(set) var recipes: [Topic] = [
+        .init(id: UUID(), name: "Test", category: .content)
+    ]
     
     private var recipesById: [Topic.ID: Topic] = [:]
     
