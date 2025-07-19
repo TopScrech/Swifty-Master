@@ -9,12 +9,24 @@ struct Topic: Codable, Hashable, Identifiable {
     
     var name: String
     var category: Category
-    var related: [Topic.ID] = []
-    var imageName: String? = nil
+    var related: [Topic.ID]
+    var imageName: String?
+    
+    init(
+        _ name: String,
+        category: Category,
+        related: [Topic.ID] = [],
+        imageName: String? = nil
+    ) {
+        self.name = name
+        self.category = category
+        self.related = related
+        self.imageName = imageName
+    }
 }
 
 extension Topic {
     static var mock: Topic {
-        .init(name: "Test", category: .content)
+        .init("Test", category: .content)
     }
 }
