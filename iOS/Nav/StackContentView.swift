@@ -16,8 +16,13 @@ struct StackContentView: View {
                 Section {
                     ForEach(dataModel.topics(in: category)) { topic in
                         NavigationLink(value: topic) {
-                            Label(topic.name, systemImage: topic.icon)
-                                .labelReservedIconWidth(16)
+                            Label {
+                                Text(topic.name)
+                            } icon: {
+                                Image(systemName: topic.icon)
+                                    .rotationEffect(.degrees(topic == .lazyVGrid ? 90 : 0))
+                            }
+                            .labelReservedIconWidth(16)
                         }
                     }
                 } header: {
