@@ -13,16 +13,9 @@ struct TopicDismiss: View {
                 color: Color(0xA167E6)
             ))
             
-            Button {
+            TopicButton("Dismiss", color: .red.opacity(0.2)) {
                 dismiss()
-            } label: {
-                Text("Dismiss")
-                    .frame(maxWidth: .infinity)
-                    .semibold()
-                    .padding(.vertical, 10)
             }
-            .buttonStyle(.glassProminent)
-            .tint(.red.opacity(0.2))
             
             SimpleCodeBlockView("""
 struct ContentView: View {
@@ -37,7 +30,11 @@ struct ContentView: View {
 """)
             TopicHeading("Hide native back button")
             
-            Text("Don't worry, you can also disable the native dismiss button by using the view modifier called `.navigationBarBackButtonHidden()`")
+            Text(highlightOccurrences(
+                in: "Don't worry, you can also disable the native dismiss button by using the view modifier called .navigationBarBackButtonHidden()",
+                target: "navigationBarBackButtonHidden",
+                color: Color(0xA167E6)
+            ))
             
             Toggle("Hide native back button", isOn: $hideBackButton)
                 .padding()

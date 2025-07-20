@@ -7,7 +7,7 @@ func attributedCodeString(for code: String) -> AttributedString {
     // Primary keywords
     let keywords = [
         "let", "var",
-        "if ", "else", "elseif",
+        "if ", "else", "elseif", "@available",
         "struct", "func", "return", "import", "public", "extension", "private", "some",
         "true", "false"
     ]
