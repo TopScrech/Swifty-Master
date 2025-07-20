@@ -8,25 +8,29 @@ struct ContentView: View {
     }
     
     var body: some View {
-        VStack {
-            switch topic {
-            case .dismiss: TopicDismiss()
-            case .appStoreOverlay: AppStoreOverlay()
-            case .detectDarkMode: TopicDarkMode()
-                
-                // View
-            case .emptyView: TopicEmptyView()
-                
-                // Layout
-            case .spacer: TopicSpacer()
-                
-                // Control
-            case .toggle: TopicToggle()
-                
-            default: EmptyView()
-            }
+        if let view = topicView(topic) {
+            view
+                .padding(.horizontal)
         }
-        .padding(.horizontal)
+    }
+}
+
+func topicView(_ topic: Topic) -> AnyView? {
+    switch topic {
+    case .dismiss: AnyView(TopicDismiss())
+    case .appStoreOverlay: AnyView(AppStoreOverlay())
+    case .detectDarkMode: AnyView(TopicDarkMode())
+        
+        // View
+    case .emptyView: AnyView(TopicEmptyView())
+        
+        // Layout
+    case .spacer: AnyView(TopicSpacer())
+        
+        // Control
+    case .toggle: AnyView(TopicToggle())
+        
+    default: nil
     }
 }
 

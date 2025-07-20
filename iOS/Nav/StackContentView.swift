@@ -19,13 +19,22 @@ struct StackContentView: View {
                     Section(category.localizedName) {
                         ForEach(dataModel.topics(in: category)) { topic in
                             NavigationLink(value: topic) {
-                                Label {
-                                    Text(topic.name)
-                                } icon: {
-                                    Image(systemName: topic.icon)
-                                        .rotationEffect(.degrees(topic == .lazyVGrid ? 90 : 0))
+                                HStack {
+                                    Label {
+                                        Text(topic.name)
+                                    } icon: {
+                                        Image(systemName: topic.icon)
+                                            .rotationEffect(.degrees(topic == .lazyVGrid ? 90 : 0))
+                                    }
+                                    .labelReservedIconWidth(16)
+                                    
+                                    if topicView(topic) == nil {
+                                        Spacer()
+                                        
+                                        Image(systemName: "lock")
+                                            .secondary()
+                                    }
                                 }
-                                .labelReservedIconWidth(16)
                             }
                             .id(topic.id)
                             .onAppear {
