@@ -20,10 +20,11 @@ func attributedCodeString(for code: String) -> AttributedString {
     
     // Secondary keywords
     let secondaryKeywords = [
-        "Gauge", "GaugeCard", "Text", "VStack", "Button",
+        "Gauge", "GaugeCard", "Text", "VStack", "Button", "List",
         "SomeView",
         "spacing", "value", "in", " View",
-        "@State", "@Environment"
+        "@State", "@Environment",
+        "SKOverlay", "Binding", "Bool", "AppConfiguration", "appIdentifier", "position"
     ]
     
     colorKeywords(secondaryKeywords, color: Color(0xD0A8FF))
@@ -33,7 +34,7 @@ func attributedCodeString(for code: String) -> AttributedString {
         "brown", "red", "indigo", "tint", "green",
         "accessoryCircular", "accessoryCircularCapacity", "accessoryLinear", "accessoryLinearCapacity", "linearCapacity",
         "gaugeStyle", "dismiss", "opacity", "padding", "horizontal",
-        "navigationBarBackButtonHidden"
+        "navigationBarBackButtonHidden", "appStoreOverlay"
     ]
     
     colorKeywords(modifiers, color: Color(0xA167E6))
