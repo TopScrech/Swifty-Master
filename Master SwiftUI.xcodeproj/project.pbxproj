@@ -34,6 +34,8 @@
 		F34480412E2D4E0500D18E2E /* TopicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F344803F2E2D4E0500D18E2E /* TopicButton.swift */; };
 		F34480442E2D548F00D18E2E /* TopicToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480432E2D548F00D18E2E /* TopicToggle.swift */; };
 		F34480452E2D548F00D18E2E /* TopicToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480432E2D548F00D18E2E /* TopicToggle.swift */; };
+		F34480472E2D5D1900D18E2E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480462E2D5D1900D18E2E /* SettingsView.swift */; };
+		F34480482E2D5D1900D18E2E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480462E2D5D1900D18E2E /* SettingsView.swift */; };
 		F35198472E2AECAA004E0F02 /* Gauge Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198462E2AECAA004E0F02 /* Gauge Card.swift */; };
 		F35198482E2AECAA004E0F02 /* Gauge Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198462E2AECAA004E0F02 /* Gauge Card.swift */; };
 		F351984B2E2AEDCB004E0F02 /* Code Block View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351984A2E2AEDCB004E0F02 /* Code Block View.swift */; };
@@ -116,6 +118,7 @@
 		F34480392E2D225A00D18E2E /* TopicSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicSpacer.swift; sourceTree = "<group>"; };
 		F344803F2E2D4E0500D18E2E /* TopicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicButton.swift; sourceTree = "<group>"; };
 		F34480432E2D548F00D18E2E /* TopicToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicToggle.swift; sourceTree = "<group>"; };
+		F34480462E2D5D1900D18E2E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F35198462E2AECAA004E0F02 /* Gauge Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gauge Card.swift"; sourceTree = "<group>"; };
 		F351984A2E2AEDCB004E0F02 /* Code Block View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Code Block View.swift"; sourceTree = "<group>"; };
 		F351984D2E2AF689004E0F02 /* Code Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Code Block.swift"; sourceTree = "<group>"; };
@@ -377,6 +380,7 @@
 				F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */,
 				F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */,
 				F3BF16D92E2C76A8005212D1 /* ContentView.swift */,
+				F34480462E2D5D1900D18E2E /* SettingsView.swift */,
 				F3BF16DF2E2C779E005212D1 /* Topics */,
 				F3BBD9E32AEECD3400A9F7E7 /* Home View.swift */,
 				F35198C62E2B7E73004E0F02 /* Code View */,
@@ -524,6 +528,7 @@
 				F35198C42E2B7E56004E0F02 /* Simple Code Block View.swift in Sources */,
 				F35198482E2AECAA004E0F02 /* Gauge Card.swift in Sources */,
 				F3202CC72D55977A0030B3CC /* Image Picker View.swift in Sources */,
+				F34480482E2D5D1900D18E2E /* SettingsView.swift in Sources */,
 				F30207CE2D8B001300C26008 /* Markdown.swift in Sources */,
 				F351984F2E2AF689004E0F02 /* Code Block.swift in Sources */,
 				F3202CC42D5597640030B3CC /* Gauges View.swift in Sources */,
@@ -560,6 +565,7 @@
 			isa = PBXSourcesBuildPhase;
 			files = (
 				F30207CF2D8B001300C26008 /* Markdown.swift in Sources */,
+				F34480472E2D5D1900D18E2E /* SettingsView.swift in Sources */,
 				F351985A2E2AFF55004E0F02 /* Code Block Modifier.swift in Sources */,
 				F3EB1CB62C58FFE5007E6366 /* Hover Effects.swift in Sources */,
 				F37916EE2AF14A7A00B880AF /* Image Picker 2.swift in Sources */,
