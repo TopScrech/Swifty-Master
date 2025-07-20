@@ -17,7 +17,6 @@ final class NavModel: Codable {
     var showExperiencePicker = false
     
     private static let decoder = JSONDecoder()
-    
     private static let encoder = JSONEncoder()
     
     /// The URL for the JSON file that stores the topic data
@@ -34,8 +33,8 @@ final class NavModel: Codable {
         }
     }()
     
-    /// Initialize a `NavigationModel` that enables programmatic control of leading columns’
-    /// visibility, selected topic category, and navigation state based on topic data
+    /// Initialize a `NavigationModel` that enables programmatic control of leading columns’ visibility,
+    /// selected topic category, and navigation state based on topic data
     init(
         columnVisibility: NavigationSplitViewVisibility = .automatic,
         selectedCategory: Category? = nil,
@@ -61,18 +60,34 @@ final class NavModel: Codable {
         )
     }
     
-    /// Loads the navigation data for the navigation model from a previously saved state
-    func load() throws {
-        let model = try NavModel(contentsOf: Self.dataURL)
-        
-        selectedCategory = model.selectedCategory
-        topicPath = model.topicPath
-        columnVisibility = model.columnVisibility
+    func clearNavCache() {
+        do {
+            try FileManager.default.removeItem(at: Self.dataURL)
+        } catch {
+            print(error)
+        }
     }
     
-    /// Saves the JSON data for the navigation model at its current state
+    /// Loads the navigation data for the navigation model from a previously saved state
+    func load() {
+        do {
+            let model = try NavModel(contentsOf: Self.dataURL)
+            
+            selectedCategory = model.selectedCategory
+            topicPath = model.topicPath
+            columnVisibility = model.columnVisibility
+            
+            print("Loaded NavModel \(topicPath)")
+        } catch {
+            print(error)
+        }
+    }
+    
+    /// Saves the JSON data for the NavModel
     func save() throws {
         try jsonData?.write(to: Self.dataURL)
+        
+        print("Saved nav path \(topicPath)")
     }
     
     //    /// The selected topic; otherwise returns `nil`
@@ -116,6 +131,7 @@ final class NavModel: Codable {
         self.selectedCategory = try container.decodeIfPresent(Category.self, forKey: .selectedCategory)
         
         let topicIds = try container.decode([Topic.ID].self, forKey: .topicPathIds)
+        
         self.topicPath = topicIds.compactMap {
             DataModel.shared[$0]
         }

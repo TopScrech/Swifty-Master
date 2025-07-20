@@ -73,21 +73,28 @@ func attributedCodeString(for code: String) -> AttributedString {
     
     // Int & Double
     let numberPattern = #"(?<!\w)(?:\d+\.\d+|\d+)(?!\w)"#
+    colorBasedOnPattern(numberPattern, color: Color(0xD0BF69))
     
-    if let regex = try? NSRegularExpression(pattern: numberPattern) {
-        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
-        
-        for match in matches {
-            let range = match.range(at: 0)
+    return attributedString
+    
+    func colorBasedOnPattern(
+        _ pattern: String,
+        color: Color,
+        range: Int = 0
+    ) {
+        if let regex = try? NSRegularExpression(pattern: numberPattern) {
+            let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
             
-            if let stringRange = Range(range, in: code),
-               let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
-                attributedString[attributedRange].foregroundColor = Color(0xD0BF69)
+            for match in matches {
+                let range = match.range(at: range)
+                
+                if let stringRange = Range(range, in: code),
+                   let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
+                    attributedString[attributedRange].foregroundColor = Color(0xD0BF69)
+                }
             }
         }
     }
-    
-    return attributedString
     
     func colorWholeLine(_ regex: String, color: Color) {
         if let regex = try? NSRegularExpression(pattern: regex) {
