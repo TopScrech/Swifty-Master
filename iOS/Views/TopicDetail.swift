@@ -40,8 +40,6 @@ private struct Content<Link: View>: View {
     
     var body: some View {
         ScrollView {
-            Button("Load") { navModel.load() }
-            
             ContentView(topic)
             
             ViewThatFits(in: .horizontal) {
