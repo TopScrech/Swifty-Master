@@ -5,7 +5,13 @@ func attributedCodeString(for code: String) -> AttributedString {
     var attributedString = AttributedString(code)
     
     // Primary keywords
-    let keywords = ["let", "var", "if ", "else", "struct", "func", "return", "import", "public", "extension", "private"]
+    let keywords = [
+        "let", "var",
+        "if ", "else", "elseif",
+        "struct", "func", "return", "import", "public", "extension", "private",
+        "true", "false"
+    ]
+    
     colorKeywords(keywords, color: Color(0xFC5FA3))
     
     colorWholeLine(#"(?m)^#(if|else|endif).*"#, color: Color(0xFD8F3F))
