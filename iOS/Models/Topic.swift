@@ -188,6 +188,10 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         case .dismiss:
             ["Apple Developer: dismiss()": "https://developer.apple.com/documentation/swiftui/environmentvalues/dismiss"]
             
+            // Control
+        case .picker:
+            ["Apple Developer: Toggle": "https://developer.apple.com/documentation/swiftui/toggle"]
+            
         default: [:]
         }
     }
