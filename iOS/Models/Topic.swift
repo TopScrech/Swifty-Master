@@ -31,6 +31,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          appStoreOverlay = "App Store Overlay",
          
          // Navigation
+         dismiss = "Dismiss",
          navigationView = "Navigation View",
          navigationStack = "Navigation Stack",
          navigationSplitView = "Navigation Split View",
@@ -90,7 +91,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         case .sheet, .popover, .alert, .emptyView, .appStoreOverlay:
                 .view
             
-        case .navigationView, .navigationStack, .navigationSplitView, .navigationBar, .navigationLink, .passAView, .link:
+        case .dismiss, .navigationView, .navigationStack, .navigationSplitView, .navigationBar, .navigationLink, .passAView, .link:
                 .navigation
             
         case .vStack, .hStack, .zStack, .list, .scrollView, .grid, .lazyVGrid, .lazyHGrid, .tabView:
@@ -137,6 +138,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         case .alert: "exclamationmark.bubble"
         case .emptyView: "rectangle.dashed"
         case .appStoreOverlay: "apple.logo"
+        case .dismiss: "chevron.backward.chevron.backward.dotted"
         case .navigationView: ""
         case .navigationStack: ""
         case .navigationSplitView: ""
