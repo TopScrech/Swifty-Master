@@ -28,8 +28,8 @@ struct SimpleCodeBlockView: View {
             } label: {
                 Image(systemName: "document.on.document")
                     .title3(.semibold)
-                    .padding(8)
-                    .glassEffect(in: .rect(cornerRadius: 8))
+                    .padding(10)
+                    .glassEffect(in: .rect(cornerRadius: 20))
 //                    .background(.ultraThinMaterial, in: .rect(cornerRadius: 8))
                     .padding(8)
             }

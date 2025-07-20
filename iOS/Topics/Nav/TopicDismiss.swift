@@ -9,12 +9,16 @@ struct TopicDismiss: View {
         VStack(spacing: 25) {
             Text("You can programmatically dismiss any view or sheet using the `dismiss()` environment method")
             
-            Button("Dismiss") {
+            Button {
                 dismiss()
+            } label: {
+                Text("Dismiss")
+                    .frame(maxWidth: .infinity)
+                    .semibold()
+                    .padding(.vertical, 10)
             }
-            .semibold()
             .buttonStyle(.glassProminent)
-            .tint(.red)
+            .tint(.red.opacity(0.2))
             
             SimpleCodeBlockView("""
 struct ContentView: View {
@@ -51,6 +55,7 @@ struct ContentView: View {
 }
 """)
         }
+        .padding(.horizontal)
         .navigationBarBackButtonHidden(hideBackButton)
     }
 }
