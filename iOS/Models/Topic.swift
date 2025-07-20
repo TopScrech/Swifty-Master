@@ -181,6 +181,10 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         case .appStoreOverlay:
             ["Apple Developer: appstoreoverlay(ispresented:configuration:)": "https://developer.apple.com/documentation/swiftui/view/appstoreoverlay(ispresented:configuration:)"]
             
+            // Nav
+        case .dismiss:
+            ["Apple Developer: dismiss()": "https://developer.apple.com/documentation/swiftui/environmentvalues/dismiss"]
+            
         default: [:]
         }
     }
