@@ -20,6 +20,9 @@ struct ContentView: View {
                 // Layout
             case .spacer: TopicSpacer()
                 
+                // Control
+            case .toggle: TopicToggle()
+                
             default: EmptyView()
             }
         }

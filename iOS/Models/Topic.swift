@@ -129,7 +129,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         case .button: "character.textbox"
         case .menu: "filemenu.and.pointer.arrow"
         case .contextMenu: "contextualmenu.and.pointer.arrow"
-        case .toggle: "checkmark.circle"
+        case .toggle: "switch.2"
         case .slider: "slider.horizontal.3"
         case .stepper: "plus.minus.capsule"
         case .picker: "checklist"

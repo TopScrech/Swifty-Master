@@ -32,6 +32,8 @@
 		F344803B2E2D225A00D18E2E /* TopicSpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480392E2D225A00D18E2E /* TopicSpacer.swift */; };
 		F34480402E2D4E0500D18E2E /* TopicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F344803F2E2D4E0500D18E2E /* TopicButton.swift */; };
 		F34480412E2D4E0500D18E2E /* TopicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F344803F2E2D4E0500D18E2E /* TopicButton.swift */; };
+		F34480442E2D548F00D18E2E /* TopicToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480432E2D548F00D18E2E /* TopicToggle.swift */; };
+		F34480452E2D548F00D18E2E /* TopicToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480432E2D548F00D18E2E /* TopicToggle.swift */; };
 		F35198472E2AECAA004E0F02 /* Gauge Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198462E2AECAA004E0F02 /* Gauge Card.swift */; };
 		F35198482E2AECAA004E0F02 /* Gauge Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198462E2AECAA004E0F02 /* Gauge Card.swift */; };
 		F351984B2E2AEDCB004E0F02 /* Code Block View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351984A2E2AEDCB004E0F02 /* Code Block View.swift */; };
@@ -113,6 +115,7 @@
 		F34480352E2D218400D18E2E /* TopicEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicEmptyView.swift; sourceTree = "<group>"; };
 		F34480392E2D225A00D18E2E /* TopicSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicSpacer.swift; sourceTree = "<group>"; };
 		F344803F2E2D4E0500D18E2E /* TopicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicButton.swift; sourceTree = "<group>"; };
+		F34480432E2D548F00D18E2E /* TopicToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicToggle.swift; sourceTree = "<group>"; };
 		F35198462E2AECAA004E0F02 /* Gauge Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gauge Card.swift"; sourceTree = "<group>"; };
 		F351984A2E2AEDCB004E0F02 /* Code Block View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Code Block View.swift"; sourceTree = "<group>"; };
 		F351984D2E2AF689004E0F02 /* Code Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Code Block.swift"; sourceTree = "<group>"; };
@@ -261,6 +264,14 @@
 			path = Layout;
 			sourceTree = "<group>";
 		};
+		F34480422E2D548500D18E2E /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				F34480432E2D548F00D18E2E /* TopicToggle.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
 		F35198492E2AECCF004E0F02 /* To be checked */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,6 +393,7 @@
 				F3BF16E12E2C7D1C005212D1 /* TopicHeading.swift */,
 				F3BF16E52E2CCDEE005212D1 /* TopicDocs.swift */,
 				F344803F2E2D4E0500D18E2E /* TopicButton.swift */,
+				F34480422E2D548500D18E2E /* Control */,
 				F34480382E2D224E00D18E2E /* Layout */,
 				F34480342E2D217600D18E2E /* View */,
 				F3BF16E42E2CCDE8005212D1 /* Nav */,
@@ -537,6 +549,7 @@
 				F3BF16E72E2CCDEE005212D1 /* TopicDocs.swift in Sources */,
 				F351990B2E2B9F53004E0F02 /* ContinueButton.swift in Sources */,
 				F351990D2E2B9F53004E0F02 /* StackContentView.swift in Sources */,
+				F34480442E2D548F00D18E2E /* TopicToggle.swift in Sources */,
 				F351990E2E2B9F53004E0F02 /* Category.swift in Sources */,
 				F351990F2E2B9F53004E0F02 /* Experience.swift in Sources */,
 				F35199102E2B9F53004E0F02 /* TopicTile.swift in Sources */,
@@ -568,6 +581,7 @@
 				F351991C2E2B9F53004E0F02 /* ExperiencePicker.swift in Sources */,
 				F351991E2E2B9F53004E0F02 /* DataModel.swift in Sources */,
 				F351991F2E2B9F53004E0F02 /* ContinueButton.swift in Sources */,
+				F34480452E2D548F00D18E2E /* TopicToggle.swift in Sources */,
 				F35199212E2B9F53004E0F02 /* StackContentView.swift in Sources */,
 				F35199222E2B9F53004E0F02 /* Category.swift in Sources */,
 				F35199232E2B9F53004E0F02 /* Experience.swift in Sources */,
