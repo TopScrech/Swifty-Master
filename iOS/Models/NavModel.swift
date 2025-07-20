@@ -136,8 +136,18 @@ final class NavModel: Codable {
         
         let topicIds = try container.decode([Topic.ID].self, forKey: .topicPathIds)
         
+//        self.topicPath = topicIds.compactMap {
+//            DataModel.shared[$0]
+//        }
+        
         self.topicPath = topicIds.compactMap {
-            DataModel.shared[$0]
+            let topic = DataModel.shared[$0]
+            
+            if topic == nil {
+                print("Warning: Missing topic for ID \($0)")
+            }
+            
+            return topic
         }
         
         self.columnVisibility = try container.decode(NavigationSplitViewVisibility.self, forKey: .columnVisibility)

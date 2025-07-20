@@ -24,6 +24,7 @@ struct TopicDetail<Link: View>: View {
 }
 
 private struct Content<Link: View>: View {
+    @Environment(NavModel.self) private var navModel
     @Environment(DataModel.self) private var dataModel
     
     private let topic: Topic
@@ -39,6 +40,8 @@ private struct Content<Link: View>: View {
     
     var body: some View {
         ScrollView {
+            Button("Load") { navModel.load() }
+            
             ContentView(topic)
             
             ViewThatFits(in: .horizontal) {

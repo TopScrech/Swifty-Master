@@ -23,16 +23,10 @@ struct NavContainer: View {
                 TwoColumnContentView()
                 
             case nil:
-                VStack {
-                    Text("🧑🏼‍🍳 Bon appétit!")
-                        .largeTitle()
-                    
-                    ExperienceButton()
-                }
-                .padding()
-                .onAppear {
-                    nav.showExperiencePicker = true
-                }
+                ExperienceButton()
+                    .onAppear {
+                        nav.showExperiencePicker = true
+                    }
             }
         }
         .environment(nav)

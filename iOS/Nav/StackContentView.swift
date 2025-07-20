@@ -12,8 +12,6 @@ struct StackContentView: View {
         @Bindable var nav = nav
         
         NavigationStack(path: $nav.topicPath) {
-            Button("Load") { nav.load() }
-            
             List(categories) { category in
                 Section {
                     ForEach(dataModel.topics(in: category)) { topic in
