@@ -87,6 +87,8 @@
 		F3BF16DE2E2C7717005212D1 /* TopicDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF16DC2E2C7717005212D1 /* TopicDismiss.swift */; };
 		F3BF16E22E2C7D1C005212D1 /* TopicHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF16E12E2C7D1C005212D1 /* TopicHeading.swift */; };
 		F3BF16E32E2C7D1C005212D1 /* TopicHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF16E12E2C7D1C005212D1 /* TopicHeading.swift */; };
+		F3BF16E62E2CCDEE005212D1 /* TopicDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF16E52E2CCDEE005212D1 /* TopicDocs.swift */; };
+		F3BF16E72E2CCDEE005212D1 /* TopicDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF16E52E2CCDEE005212D1 /* TopicDocs.swift */; };
 		F3D8C11C2B2BB51000C7B0A9 /* Sensory Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */; };
 		F3EB1CB62C58FFE5007E6366 /* Hover Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */; };
 /* End PBXBuildFile section */
@@ -137,6 +139,7 @@
 		F3BF16D92E2C76A8005212D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F3BF16DC2E2C7717005212D1 /* TopicDismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDismiss.swift; sourceTree = "<group>"; };
 		F3BF16E12E2C7D1C005212D1 /* TopicHeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicHeading.swift; sourceTree = "<group>"; };
+		F3BF16E52E2CCDEE005212D1 /* TopicDocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocs.swift; sourceTree = "<group>"; };
 		F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensory Feedback.swift"; sourceTree = "<group>"; };
 		F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hover Effects.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -340,10 +343,19 @@
 		F3BF16DF2E2C779E005212D1 /* Topics */ = {
 			isa = PBXGroup;
 			children = (
-				F3BF16DC2E2C7717005212D1 /* TopicDismiss.swift */,
 				F3BF16E12E2C7D1C005212D1 /* TopicHeading.swift */,
+				F3BF16E52E2CCDEE005212D1 /* TopicDocs.swift */,
+				F3BF16E42E2CCDE8005212D1 /* Nav */,
 			);
 			path = Topics;
+			sourceTree = "<group>";
+		};
+		F3BF16E42E2CCDE8005212D1 /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				F3BF16DC2E2C7717005212D1 /* TopicDismiss.swift */,
+			);
+			path = Nav;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,6 +490,7 @@
 				F35199072E2B9F53004E0F02 /* TopicGrid.swift in Sources */,
 				F35199082E2B9F53004E0F02 /* ExperiencePicker.swift in Sources */,
 				F351990A2E2B9F53004E0F02 /* DataModel.swift in Sources */,
+				F3BF16E72E2CCDEE005212D1 /* TopicDocs.swift in Sources */,
 				F351990B2E2B9F53004E0F02 /* ContinueButton.swift in Sources */,
 				F351990D2E2B9F53004E0F02 /* StackContentView.swift in Sources */,
 				F351990E2E2B9F53004E0F02 /* Category.swift in Sources */,
@@ -497,6 +510,7 @@
 				F32E88D52AF856E400959D49 /* Journal View.swift in Sources */,
 				F3BF16DD2E2C7717005212D1 /* TopicDismiss.swift in Sources */,
 				F35198472E2AECAA004E0F02 /* Gauge Card.swift in Sources */,
+				F3BF16E62E2CCDEE005212D1 /* TopicDocs.swift in Sources */,
 				F35199112E2B9F53004E0F02 /* Topic.swift in Sources */,
 				F35199122E2B9F53004E0F02 /* ExperienceButton.swift in Sources */,
 				F35199132E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */,

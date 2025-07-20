@@ -40,7 +40,6 @@ struct StackContentView: View {
                     }
                     .buttonStyle(.plain)
                 }
-                .experienceToolbar()
             }
         }
     }

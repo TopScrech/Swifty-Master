@@ -10,6 +10,7 @@ struct ContentView: View {
     var body: some View {
         switch topic {
         case .dismiss: TopicDismiss()
+        case .appStoreOverlay: AppStoreOverlay()
         default: EmptyView()
         }
     }

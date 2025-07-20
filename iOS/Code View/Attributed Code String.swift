@@ -22,7 +22,7 @@ func attributedCodeString(for code: String) -> AttributedString {
     let secondaryKeywords = [
         "Gauge", "GaugeCard", "Text", "VStack", "Button",
         "SomeView",
-        "spacing", "value", "in", "View",
+        "spacing", "value", "in", " View",
         "@State", "@Environment"
     ]
     

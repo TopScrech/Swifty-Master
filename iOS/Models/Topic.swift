@@ -172,4 +172,11 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         case .detectLang: "text.magnifyingglass"
         }
     }
+    
+    var docs: [String: String] {
+        switch self {
+        case .appStoreOverlay: ["Apple Developer": "https://developer.apple.com/documentation/swiftui/view/appstoreoverlay(ispresented:configuration:)"]
+        default: [:]
+        }
+    }
 }
