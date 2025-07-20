@@ -6,7 +6,7 @@ struct TopicDismiss: View {
     @State private var hideBackButton = false
     
     var body: some View {
-        VStack(spacing: 32) {
+        VStack(spacing: 25) {
             Text("You can programmatically dismiss any view or sheet using the `dismiss()` environment method")
             
             Button("Dismiss") {
@@ -17,10 +17,14 @@ struct TopicDismiss: View {
             .tint(.red)
             
             SimpleCodeBlockView("""
-@Environment(\\.dismiss) private var dismiss
-
-Button("Dismiss") {
-    dismiss()
+struct ContentView: View {
+    @Environment(\\.dismiss) private var dismiss
+    
+    var body: some View {
+        Button("Dismiss") {
+            dismiss()
+        }
+    }
 }
 """)
             TopicHeading("Hide native back button")
@@ -32,15 +36,16 @@ Button("Dismiss") {
                 .glassEffect()
             
             SimpleCodeBlockView("""
-SomeView {...}
-    .navigationBarBackButtonHidden()
-
-// or
-
-@State private var hideBackButton = false
-
-SomeView {...}
-    .navigationBarBackButtonHidden(hideBackButton)
+struct ContentView: View {
+    @State private var hideBackButton = false
+    
+    var body: some View {
+        SomeView {...}
+            .navigationBarBackButtonHidden()
+            // or
+            .navigationBarBackButtonHidden(hideBackButton)
+    }
+}
 """)
         }
         .navigationBarBackButtonHidden(hideBackButton)

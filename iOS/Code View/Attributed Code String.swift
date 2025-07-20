@@ -8,7 +8,7 @@ func attributedCodeString(for code: String) -> AttributedString {
     let keywords = [
         "let", "var",
         "if ", "else", "elseif",
-        "struct", "func", "return", "import", "public", "extension", "private",
+        "struct", "func", "return", "import", "public", "extension", "private", "some",
         "true", "false"
     ]
     
@@ -20,8 +20,9 @@ func attributedCodeString(for code: String) -> AttributedString {
     
     // Secondary keywords
     let secondaryKeywords = [
-        "Gauge", "GaugeCard", "Text", "VStack", "Button", "SomeView",
-        "spacing", "value", "in",
+        "Gauge", "GaugeCard", "Text", "VStack", "Button",
+        "SomeView",
+        "spacing", "value", "in", "View",
         "@State", "@Environment"
     ]
     

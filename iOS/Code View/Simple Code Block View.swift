@@ -18,13 +18,22 @@ struct SimpleCodeBlockView: View {
             Text(attributedCodeString(for: code))
                 .monospaced()
                 .padding(5)
-                .background {
-                    if colorScheme == .light {
-                        Color.black
-                    }
-                }
+                .background(.ultraThinMaterial)
                 .cornerRadius(8)
                 .foregroundColor(.white)
+        }
+        .overlay(alignment: .bottomLeading) {
+            Button {
+                UIPasteboard.general.string = code
+            } label: {
+                Image(systemName: "document.on.document")
+                    .title3(.semibold)
+                    .padding(8)
+                    .glassEffect(in: .rect(cornerRadius: 8))
+//                    .background(.ultraThinMaterial, in: .rect(cornerRadius: 8))
+                    .padding(8)
+            }
+            .foregroundStyle(.secondary)
         }
     }
 }
