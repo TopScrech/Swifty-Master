@@ -7,7 +7,11 @@ struct TopicDismiss: View {
     
     var body: some View {
         VStack(spacing: 25) {
-            Text("You can programmatically dismiss any view or sheet using the `dismiss()` environment method")
+            Text(highlightOccurrences(
+                in: "You can programmatically go back from any view or close a sheet using the dismiss() environment method",
+                target: "dismiss",
+                color: Color(0xA167E6)
+            ))
             
             Button {
                 dismiss()
@@ -59,6 +63,30 @@ struct ContentView: View {
         .padding(.horizontal)
         .navigationBarBackButtonHidden(hideBackButton)
     }
+}
+
+func highlightOccurrences(
+    in text: String,
+    target: String,
+    color: Color
+) -> AttributedString {
+    
+    var attributed = AttributedString(text)
+    
+    guard !target.isEmpty else {
+        return attributed
+    }
+    
+    var currentIndex = attributed.startIndex
+    
+    while currentIndex < attributed.endIndex,
+          let range = attributed[currentIndex...].range(of: target) {
+        attributed[range].foregroundColor = color
+        attributed[range].font = .body.weight(.bold).monospaced()
+        currentIndex = range.upperBound
+    }
+    
+    return attributed
 }
 
 #Preview {
