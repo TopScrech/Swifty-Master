@@ -175,7 +175,12 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
     
     var docs: [String: String] {
         switch self {
-        case .appStoreOverlay: ["Apple Developer": "https://developer.apple.com/documentation/swiftui/view/appstoreoverlay(ispresented:configuration:)"]
+        case .textEditor:
+            ["Apple Developer: Text Editor": "https://developer.apple.com/documentation/swiftui/texteditor"]
+            
+        case .appStoreOverlay:
+            ["Apple Developer: appstoreoverlay(ispresented:configuration:)": "https://developer.apple.com/documentation/swiftui/view/appstoreoverlay(ispresented:configuration:)"]
+            
         default: [:]
         }
     }
