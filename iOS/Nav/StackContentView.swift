@@ -6,27 +6,38 @@ struct StackContentView: View {
     @Environment(NavModel.self) private var nav
     @Environment(DataModel.self) private var dataModel
     
+    @AppStorage("lastVisibleTopicID") var lastVisibleTopicID: String?
+    
     private let categories = Category.allCases
     
     var body: some View {
         @Bindable var nav = nav
         
         NavigationStack(path: $nav.topicPath) {
-            List(categories) { category in
-                Section {
-                    ForEach(dataModel.topics(in: category)) { topic in
-                        NavigationLink(value: topic) {
-                            Label {
-                                Text(topic.name)
-                            } icon: {
-                                Image(systemName: topic.icon)
-                                    .rotationEffect(.degrees(topic == .lazyVGrid ? 90 : 0))
+            ScrollViewReader { proxy in
+                List(categories) { category in
+                    Section(category.localizedName) {
+                        ForEach(dataModel.topics(in: category)) { topic in
+                            NavigationLink(value: topic) {
+                                Label {
+                                    Text(topic.name)
+                                } icon: {
+                                    Image(systemName: topic.icon)
+                                        .rotationEffect(.degrees(topic == .lazyVGrid ? 90 : 0))
+                                }
+                                .labelReservedIconWidth(16)
                             }
-                            .labelReservedIconWidth(16)
+                            .id(topic.id)
+                            .onAppear {
+                                lastVisibleTopicID = topic.id
+                            }
                         }
                     }
-                } header: {
-                    Text(category.localizedName)
+                }
+                .onAppear {
+                    if let id = lastVisibleTopicID {
+                        proxy.scrollTo(id, anchor: .top)
+                    }
                 }
             }
             .navigationTitle("Categories")

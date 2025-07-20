@@ -33,8 +33,11 @@ struct ContentView: View {
             
             Toggle("Hide native back button", isOn: $hideBackButton)
                 .padding()
+#if os(visionOS)
+                .background(.ultraThinMaterial, in: .capsule)
+#else
                 .glassEffect()
-            
+#endif
             SimpleCodeBlockView("""
 struct ContentView: View {
     @State private var hideBackButton = false
