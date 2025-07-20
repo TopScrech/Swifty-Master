@@ -39,7 +39,7 @@ struct AppStoreOverlay: View {
             }
         }
 #if os(iOS) || os(visionOS)
-        .appStoreOverlay($overlay, id: "1639409934")
+        .appStoreOverlay($overlay, id: 1639409934)
 #endif
     }
 }
