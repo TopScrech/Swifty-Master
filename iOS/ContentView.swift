@@ -12,6 +12,13 @@ struct ContentView: View {
         case .dismiss: TopicDismiss()
         case .appStoreOverlay: AppStoreOverlay()
         case .detectDarkMode: TopicDarkMode()
+            
+            // View
+        case .emptyView: TopicEmptyView()
+            
+            // Layout
+        case .spacer: TopicSpacer()
+            
         default: EmptyView()
         }
     }
