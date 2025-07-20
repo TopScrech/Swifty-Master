@@ -24,6 +24,8 @@
 		F3202CC72D55977A0030B3CC /* Image Picker View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9F82AEED4BC00A9F7E7 /* Image Picker View.swift */; };
 		F3202CC82D55978A0030B3CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */; };
 		F32E88D52AF856E400959D49 /* Journal View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32E88D42AF856E400959D49 /* Journal View.swift */; };
+		F34480322E2CD41100D18E2E /* TopicDarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480312E2CD41100D18E2E /* TopicDarkMode.swift */; };
+		F34480332E2CD41100D18E2E /* TopicDarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480312E2CD41100D18E2E /* TopicDarkMode.swift */; };
 		F35198472E2AECAA004E0F02 /* Gauge Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198462E2AECAA004E0F02 /* Gauge Card.swift */; };
 		F35198482E2AECAA004E0F02 /* Gauge Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198462E2AECAA004E0F02 /* Gauge Card.swift */; };
 		F351984B2E2AEDCB004E0F02 /* Code Block View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351984A2E2AEDCB004E0F02 /* Code Block View.swift */; };
@@ -101,6 +103,7 @@
 		F3202CAF2D5596210030B3CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3202CB22D5596210030B3CC /* visionOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = visionOS.plist; sourceTree = "<group>"; };
 		F32E88D42AF856E400959D49 /* Journal View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journal View.swift"; sourceTree = "<group>"; };
+		F34480312E2CD41100D18E2E /* TopicDarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDarkMode.swift; sourceTree = "<group>"; };
 		F35198462E2AECAA004E0F02 /* Gauge Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gauge Card.swift"; sourceTree = "<group>"; };
 		F351984A2E2AEDCB004E0F02 /* Code Block View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Code Block View.swift"; sourceTree = "<group>"; };
 		F351984D2E2AF689004E0F02 /* Code Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Code Block.swift"; sourceTree = "<group>"; };
@@ -225,6 +228,14 @@
 			path = Gauges;
 			sourceTree = "<group>";
 		};
+		F34480302E2CD3FF00D18E2E /* System */ = {
+			isa = PBXGroup;
+			children = (
+				F34480312E2CD41100D18E2E /* TopicDarkMode.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
 		F35198492E2AECCF004E0F02 /* To be checked */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +357,7 @@
 				F3BF16E12E2C7D1C005212D1 /* TopicHeading.swift */,
 				F3BF16E52E2CCDEE005212D1 /* TopicDocs.swift */,
 				F3BF16E42E2CCDE8005212D1 /* Nav */,
+				F34480302E2CD3FF00D18E2E /* System */,
 			);
 			path = Topics;
 			sourceTree = "<group>";
@@ -462,6 +474,7 @@
 			files = (
 				F3202CC22D5597490030B3CC /* Master SwiftUI.swift in Sources */,
 				F3202CBE2D5597310030B3CC /* Font List.swift in Sources */,
+				F34480322E2CD41100D18E2E /* TopicDarkMode.swift in Sources */,
 				F3202CBD2D5597180030B3CC /* Hover Effects.swift in Sources */,
 				F3202CC52D55977A0030B3CC /* Image Picker.swift in Sources */,
 				F35198592E2AFF55004E0F02 /* Code Block Modifier.swift in Sources */,
@@ -541,6 +554,7 @@
 				F351984E2E2AF689004E0F02 /* Code Block.swift in Sources */,
 				F3BBD9F92AEED4BC00A9F7E7 /* Image Picker View.swift in Sources */,
 				F35198C12E2B7E34004E0F02 /* Attributed Code String.swift in Sources */,
+				F34480332E2CD41100D18E2E /* TopicDarkMode.swift in Sources */,
 				F351984B2E2AEDCB004E0F02 /* Code Block View.swift in Sources */,
 			);
 		};

@@ -11,6 +11,7 @@ struct ContentView: View {
         switch topic {
         case .dismiss: TopicDismiss()
         case .appStoreOverlay: AppStoreOverlay()
+        case .detectDarkMode: TopicDarkMode()
         default: EmptyView()
         }
     }
