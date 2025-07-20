@@ -8,9 +8,13 @@ struct ContentView: View {
     }
     
     var body: some View {
-        if let view = topicView(topic) {
-            view
-                .padding(.horizontal)
+        VStack(spacing: 25) {
+            if let view = topicView(topic) {
+                view
+                    .padding(.horizontal)
+            }
+            
+            TopicDocs(topic.docs)
         }
     }
 }

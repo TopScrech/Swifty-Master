@@ -55,7 +55,6 @@ struct ContentView: View {
     }
 }
 """)
-            TopicDocs(Topic.dismiss.docs)
         }
         .navigationBarBackButtonHidden(hideBackButton)
     }

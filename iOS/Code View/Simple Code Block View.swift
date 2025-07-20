@@ -17,9 +17,9 @@ struct SimpleCodeBlockView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             Text(attributedCodeString(for: code))
                 .monospaced()
-                .padding(5)
+                .padding(20)
                 .background(.ultraThinMaterial)
-                .cornerRadius(8)
+                .cornerRadius(20)
                 .foregroundColor(.white)
         }
         .overlay(alignment: .bottomLeading) {
@@ -29,7 +29,7 @@ struct SimpleCodeBlockView: View {
                 Image(systemName: "document.on.document")
                     .title3(.semibold)
                     .padding(10)
-                    .glassEffect(in: .rect(cornerRadius: 20))
+                    .glassEffect(in: .rect(cornerRadius: 16))
 //                    .background(.ultraThinMaterial, in: .rect(cornerRadius: 8))
                     .padding(8)
             }

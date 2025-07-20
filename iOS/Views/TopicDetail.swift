@@ -49,6 +49,7 @@ private struct Content<Link: View>: View {
             .scenePadding()
         }
         .navigationTitle(topic.name)
+        .navigationSubtitle(topic.category.localizedName)
     }
     
     private var wideDetails: some View {
