@@ -84,10 +84,14 @@ final class NavModel: Codable {
     }
     
     /// Saves the JSON data for the NavModel
-    func save() throws {
-        try jsonData?.write(to: Self.dataURL)
-        
-        print("Saved nav path \(topicPath)")
+    func save() {
+        do {
+            try jsonData?.write(to: Self.dataURL)
+            
+            print("Saved nav path \(topicPath)")
+        } catch {
+            print(error)
+        }
     }
     
     //    /// The selected topic; otherwise returns `nil`

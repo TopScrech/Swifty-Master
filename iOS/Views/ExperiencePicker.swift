@@ -31,7 +31,8 @@ struct ExperiencePicker: View {
                     ForEach(Experience.allCases) { experience in
                         ExperiencePickerItem(
                             selection: $selection,
-                            experience: experience)
+                            experience: experience
+                        )
                     }
                 }
                 

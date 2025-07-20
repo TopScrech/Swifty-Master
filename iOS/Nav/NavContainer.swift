@@ -45,29 +45,21 @@ struct NavContainer: View {
         }
         .onChange(of: scenePhase) { _, newScenePhase in
             if newScenePhase == .background {
-                try? nav.save()
+                nav.save()
             }
         }
 #if os(macOS)
         .onChange(of: appearsActive) { _, appearsActive in
             if !appearsActive {
-                try? nav.save()
+                nav.save()
             }
         }
 #endif
         .onChange(of: nav.selectedCategory) {
-            save()
+            nav.save()
         }
         .onChange(of: nav.selectedTopic) {
-            save()
-        }
-    }
-    
-    private func save() {
-        do {
-            try nav.save()
-        } catch {
-            print(error)
+            nav.save()
         }
     }
 }
