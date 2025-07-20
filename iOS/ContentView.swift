@@ -8,19 +8,22 @@ struct ContentView: View {
     }
     
     var body: some View {
-        switch topic {
-        case .dismiss: TopicDismiss()
-        case .appStoreOverlay: AppStoreOverlay()
-        case .detectDarkMode: TopicDarkMode()
-            
-            // View
-        case .emptyView: TopicEmptyView()
-            
-            // Layout
-        case .spacer: TopicSpacer()
-            
-        default: EmptyView()
+        VStack {
+            switch topic {
+            case .dismiss: TopicDismiss()
+            case .appStoreOverlay: AppStoreOverlay()
+            case .detectDarkMode: TopicDarkMode()
+                
+                // View
+            case .emptyView: TopicEmptyView()
+                
+                // Layout
+            case .spacer: TopicSpacer()
+                
+            default: EmptyView()
+            }
         }
+        .padding(.horizontal)
     }
 }
 
