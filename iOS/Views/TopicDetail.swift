@@ -39,7 +39,7 @@ private struct Content<Link: View>: View {
     }
     
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             ContentView(topic)
             
             ViewThatFits(in: .horizontal) {
