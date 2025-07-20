@@ -4,15 +4,19 @@ struct CodeBlockView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.colorScheme) private var colorScheme
     
-    private let code: CodeBlock
+    private let code: String
     
     init(_ code: CodeBlock) {
+        self.code = code.code
+    }
+    
+    init(_ code: String) {
         self.code = code
     }
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            Text(attributedCodeString(for: code.code))
+            Text(attributedCodeString(for: code))
                 .monospaced()
                 .padding()
                 .background {
@@ -34,10 +38,10 @@ struct CodeBlockView: View {
             ToolbarSpacer(placement: .bottomBar)
             
             ToolbarItemGroup(placement: .bottomBar) {
-                ShareLink(item: code.code)
+                ShareLink(item: code)
                 
                 SFButton("document.on.document") {
-                    UIPasteboard.general.string = code.code
+                    UIPasteboard.general.string = code
                 }
             }
         }

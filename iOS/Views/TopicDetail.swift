@@ -14,11 +14,8 @@ struct TopicDetail<Link: View>: View {
     
     var body: some View {
         if let topic {
-            Content(
-                topic: topic,
-                relatedLink: relatedLink
-            )
-            .id(topic.id)
+            Content(topic, relatedLink: relatedLink)
+                .id(topic.id)
         } else {
             Text("Choose a topic")
                 .navigationTitle("")
@@ -29,11 +26,21 @@ struct TopicDetail<Link: View>: View {
 private struct Content<Link: View>: View {
     @Environment(DataModel.self) private var dataModel
     
-    var topic: Topic
-    var relatedLink: (Topic) -> Link
+    private let topic: Topic
+    private let relatedLink: (Topic) -> Link
+    
+    init(
+        _ topic: Topic,
+        relatedLink: @escaping (Topic) -> Link
+    ) {
+        self.topic = topic
+        self.relatedLink = relatedLink
+    }
     
     var body: some View {
         ScrollView {
+            ContentView(topic)
+            
             ViewThatFits(in: .horizontal) {
                 wideDetails
                 narrowDetails
@@ -46,13 +53,6 @@ private struct Content<Link: View>: View {
     private var wideDetails: some View {
         VStack(alignment: .leading) {
             title
-            
-            HStack(alignment: .top, spacing: 20) {
-                ingredients
-                
-                Spacer()
-            }
-            
             relatedTopics
         }
     }
@@ -73,7 +73,6 @@ private struct Content<Link: View>: View {
     private var narrowDetailsContent: some View {
         VStack(alignment: narrowDetailsAlignment) {
             title
-            ingredients
             relatedTopics
         }
     }
@@ -97,18 +96,6 @@ private struct Content<Link: View>: View {
     private let columns = [
         GridItem(.adaptive(minimum: 120, maximum: 120))
     ]
-    
-    @ViewBuilder
-    private var ingredients: some View {
-        let padding = EdgeInsets(top: 16, leading: 0, bottom: 8, trailing: 0)
-        
-        VStack(alignment: .leading) {
-            Text("Ingredients")
-                .title2(.bold)
-                .padding(padding)
-        }
-        .frame(minWidth: 300, alignment: .leading)
-    }
     
     @ViewBuilder
     private var relatedTopics: some View {

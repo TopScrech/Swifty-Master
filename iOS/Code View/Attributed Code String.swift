@@ -5,7 +5,7 @@ func attributedCodeString(for code: String) -> AttributedString {
     var attributedString = AttributedString(code)
     
     // Swift keywords
-    let keywords = ["let", "var", "if ", "else", "struct", "func", "return", "import", "public", "extension"]
+    let keywords = ["let", "var", "if ", "else", "struct", "func", "return", "import", "public", "extension", "private"]
     
     for keyword in keywords {
         let ranges = code.ranges(of: keyword)
@@ -33,8 +33,28 @@ func attributedCodeString(for code: String) -> AttributedString {
         }
     }
     
+    // MARK: Comment
+    let commentPattern = #"(?m)^//.*"#
+    
+    if let regex = try? NSRegularExpression(pattern: commentPattern) {
+        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+        
+        for match in matches {
+            let range = match.range(at: 0)
+            
+            if let stringRange = Range(range, in: code),
+               let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
+                attributedString[attributedRange].foregroundColor = Color(0x6C7986)
+            }
+        }
+    }
+    
     // Swift secondary keywords
-    let secondaryKeywords = ["Gauge", "GaugeCard", "Text", "VStack", "spacing", "value", "in"]
+    let secondaryKeywords = [
+        "Gauge", "GaugeCard", "Text", "VStack", "Button", "SomeView",
+        "spacing", "value", "in",
+        "@State", "@Environment"
+    ]
     
     for keyword in secondaryKeywords {
         let ranges = code.ranges(of: keyword)
@@ -48,7 +68,12 @@ func attributedCodeString(for code: String) -> AttributedString {
     }
     
     // Modifiers
-    let modifiers = ["gaugeStyle", "tint", "green", "opacity", "brown", "red", "accessoryCircular", "accessoryCircularCapacity", "accessoryLinear", "accessoryLinearCapacity", "linearCapacity", "padding", "horizontal", "indigo"]
+    let modifiers = [
+        "brown", "red", "indigo", "tint", "green",
+        "accessoryCircular", "accessoryCircularCapacity", "accessoryLinear", "accessoryLinearCapacity", "linearCapacity",
+        "gaugeStyle", "dismiss", "opacity", "padding", "horizontal",
+        "navigationBarBackButtonHidden"
+    ]
     
     for keyword in modifiers {
         let ranges = code.ranges(of: keyword)
