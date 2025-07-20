@@ -15,7 +15,10 @@ struct StackContentView: View {
             List(categories) { category in
                 Section {
                     ForEach(dataModel.topics(in: category)) { topic in
-                        NavigationLink(topic.name, value: topic)
+                        NavigationLink(value: topic) {
+                            Label(topic.name, systemImage: topic.icon)
+                                .labelReservedIconWidth(16)
+                        }
                     }
                 } header: {
                     Text(category.localizedName)
