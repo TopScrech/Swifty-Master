@@ -4,68 +4,22 @@ import ScrechKit
 func attributedCodeString(for code: String) -> AttributedString {
     var attributedString = AttributedString(code)
     
-    // Swift keywords
+    // Primary keywords
     let keywords = ["let", "var", "if ", "else", "struct", "func", "return", "import", "public", "extension", "private"]
+    colorKeywords(keywords, color: Color(0xFC5FA3))
     
-    for keyword in keywords {
-        let ranges = code.ranges(of: keyword)
-        
-        for range in ranges {
-            if let attributedRange = Range(NSRange(range, in: code), in: attributedString) {
-                attributedString[attributedRange].foregroundColor = Color(0xFC5FA3)
-                attributedString[attributedRange].font = .body.bold()
-            }
-        }
-    }
+    colorWholeLine(#"(?m)^#(if|else|endif).*"#, color: Color(0xFD8F3F))
     
-    let directivePattern = #"(?m)^#(if|else|endif).*"#
+    colorWholeLine(#"(?m)^//.*"#, color: Color(0x6C7986))
     
-    if let regex = try? NSRegularExpression(pattern: directivePattern) {
-        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
-        
-        for match in matches {
-            let range = match.range(at: 0)
-            
-            if let stringRange = Range(range, in: code),
-               let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
-                attributedString[attributedRange].foregroundColor = Color(0xFD8F3F)
-            }
-        }
-    }
-    
-    // MARK: Comment
-    let commentPattern = #"(?m)^//.*"#
-    
-    if let regex = try? NSRegularExpression(pattern: commentPattern) {
-        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
-        
-        for match in matches {
-            let range = match.range(at: 0)
-            
-            if let stringRange = Range(range, in: code),
-               let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
-                attributedString[attributedRange].foregroundColor = Color(0x6C7986)
-            }
-        }
-    }
-    
-    // Swift secondary keywords
+    // Secondary keywords
     let secondaryKeywords = [
         "Gauge", "GaugeCard", "Text", "VStack", "Button", "SomeView",
         "spacing", "value", "in",
         "@State", "@Environment"
     ]
     
-    for keyword in secondaryKeywords {
-        let ranges = code.ranges(of: keyword)
-        
-        for range in ranges {
-            if let attributedRange = Range(NSRange(range, in: code), in: attributedString) {
-                attributedString[attributedRange].foregroundColor = Color(0xD0A8FF)
-                attributedString[attributedRange].font = .body.bold()
-            }
-        }
-    }
+    colorKeywords(secondaryKeywords, color: Color(0xD0A8FF))
     
     // Modifiers
     let modifiers = [
@@ -75,17 +29,9 @@ func attributedCodeString(for code: String) -> AttributedString {
         "navigationBarBackButtonHidden"
     ]
     
-    for keyword in modifiers {
-        let ranges = code.ranges(of: keyword)
-        
-        for range in ranges {
-            if let attributedRange = Range(NSRange(range, in: code), in: attributedString) {
-                attributedString[attributedRange].foregroundColor = Color(0xA167E6)
-                attributedString[attributedRange].font = .body.bold()
-            }
-        }
-    }
+    colorKeywords(modifiers, color: Color(0xA167E6))
     
+    // String
     let quotedStringPattern = #""([^"]*?)""#
     
     if let regex = try? NSRegularExpression(pattern: quotedStringPattern) {
@@ -105,7 +51,7 @@ func attributedCodeString(for code: String) -> AttributedString {
         }
     }
     
-    // Interpolation propName
+    // Interpolation \(somethin')
     let interpolationPattern = #"\\\(([^)]+?)\)"#
     
     if let regex = try? NSRegularExpression(pattern: interpolationPattern) {
@@ -125,6 +71,7 @@ func attributedCodeString(for code: String) -> AttributedString {
         }
     }
     
+    // Int & Double
     let numberPattern = #"(?<!\w)(?:\d+\.\d+|\d+)(?!\w)"#
     
     if let regex = try? NSRegularExpression(pattern: numberPattern) {
@@ -141,6 +88,34 @@ func attributedCodeString(for code: String) -> AttributedString {
     }
     
     return attributedString
+    
+    func colorWholeLine(_ regex: String, color: Color) {
+        if let regex = try? NSRegularExpression(pattern: regex) {
+            let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+            
+            for match in matches {
+                let range = match.range(at: 0)
+                
+                if let stringRange = Range(range, in: code),
+                   let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
+                    attributedString[attributedRange].foregroundColor = color
+                }
+            }
+        }
+    }
+    
+    func colorKeywords(_ keywords: [String], color: Color) {
+        for keyword in keywords {
+            let ranges = code.ranges(of: keyword)
+            
+            for range in ranges {
+                if let attributedRange = Range(NSRange(range, in: code), in: attributedString) {
+                    attributedString[attributedRange].foregroundColor = color
+                    attributedString[attributedRange].font = .body.bold()
+                }
+            }
+        }
+    }
 }
 
 extension String {
