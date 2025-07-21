@@ -9,15 +9,8 @@ struct TopicToggle: View {
             
             Toggle("Toggle", isOn: $isOn)
             
-            SimpleCodeBlockView("""
-struct ContentView: View {
-    @State private var toggleIsOn = true
-    
-    var body: some View {
-        Toggle("Toggle", isOn: $isOn)
-    }
-}
-""")
+            SimpleCodeBlockView(.toggle)
+            
             TopicHeading("Style Details")
             
             DisclosureGroup {
@@ -25,25 +18,21 @@ struct ContentView: View {
                     Toggle("Purple", isOn: $isOn)
                         .tint(.purple)
                 }
-                .padding()
+                .padding(5)
             } label: {
                 Text("Style")
                     .title3(.semibold, design: .rounded)
                     .foregroundStyle(.foreground)
             }
             
-            
             DisclosureGroup {
                 VStack(spacing: 25) {
                     Toggle("Purple", isOn: $isOn)
                         .tint(.purple)
                     
-                    SimpleCodeBlockView("""
-Toggle("Purple", isOn: $toggle1)
-    .tint(.purple)
-""")
+                    SimpleCodeBlockView(.toggleTint)
                 }
-                .padding()
+                .padding(5)
             } label: {
                 Text("Color")
                     .title3(.semibold, design: .rounded)

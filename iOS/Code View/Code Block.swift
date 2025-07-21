@@ -1,11 +1,83 @@
 import Foundation
 
 enum CodeBlock: String {
-    case gauges, appStoreOverlay,
+    case gauges,
+         appStoreOverlay,
+         toggle, toggleTint,
+         spacer,
+         dismiss,
+         darkMode,
+         dismissHideBackButton,
+         emptyView,
          mdRegular, mdBoldItalic, mdStrikethrough, mdMonospaced, mdLink
     
     var code: String {
         switch self {
+        case .darkMode:
+"""
+struct ContentView: View {
+    @Environment(\\.colorScheme) private var colorScheme
+    
+    var body: some View {
+        Text(colorScheme == .dark ? "Dark" : "Light"
+    }
+}
+"""
+            
+        case .dismissHideBackButton:
+"""
+struct ContentView: View {
+    @State private var hideBackButton = false
+    
+    var body: some View {
+        SomeView {...}
+            .navigationBarBackButtonHidden()
+            // or
+            .navigationBarBackButtonHidden(hideBackButton)
+    }
+}
+"""
+            
+        case .dismiss:
+"""
+struct ContentView: View {
+    @Environment(\\.dismiss) private var dismiss
+    
+    var body: some View {
+        Button("Dismiss") {
+            dismiss()
+        }
+    }
+}
+"""
+            
+        case .emptyView:
+"""
+EmptyView()
+"""
+            
+        case .spacer:
+"""
+Spacer()
+"""
+            
+        case .toggleTint:
+"""
+Toggle("Purple", isOn: $toggle1)
+    .tint(.purple)
+"""
+            
+        case .toggle:
+"""
+struct ContentView: View {
+    @State private var toggleIsOn = true
+    
+    var body: some View {
+        Toggle("Toggle", isOn: $isOn)
+    }
+}
+"""
+            
         case .appStoreOverlay:
 """
 import SwiftUI

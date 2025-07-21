@@ -17,17 +17,8 @@ struct TopicDismiss: View {
                 dismiss()
             }
             
-            SimpleCodeBlockView("""
-struct ContentView: View {
-    @Environment(\\.dismiss) private var dismiss
-    
-    var body: some View {
-        Button("Dismiss") {
-            dismiss()
-        }
-    }
-}
-""")
+            SimpleCodeBlockView(.dismiss)
+            
             TopicHeading("Hide native back button")
             
             Text(highlightOccurrences(
@@ -43,18 +34,7 @@ struct ContentView: View {
 #else
                 .glassEffect()
 #endif
-            SimpleCodeBlockView("""
-struct ContentView: View {
-    @State private var hideBackButton = false
-    
-    var body: some View {
-        SomeView {...}
-            .navigationBarBackButtonHidden()
-            // or
-            .navigationBarBackButtonHidden(hideBackButton)
-    }
-}
-""")
+            SimpleCodeBlockView(.dismissHideBackButton)
         }
         .navigationBarBackButtonHidden(hideBackButton)
     }
