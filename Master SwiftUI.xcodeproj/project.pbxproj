@@ -291,7 +291,6 @@
 		F34480422E2D548500D18E2E /* Control */ = {
 			isa = PBXGroup;
 			children = (
-				F344803F2E2D4E0500D18E2E /* TopicButton.swift */,
 				F34480432E2D548F00D18E2E /* TopicToggle.swift */,
 			);
 			path = Control;
@@ -413,6 +412,7 @@
 			children = (
 				F3BF16E12E2C7D1C005212D1 /* TopicHeading.swift */,
 				F3BF16E52E2CCDEE005212D1 /* TopicDocs.swift */,
+				F344803F2E2D4E0500D18E2E /* TopicButton.swift */,
 				F34480422E2D548500D18E2E /* Control */,
 				F34480382E2D224E00D18E2E /* Layout */,
 				F34480342E2D217600D18E2E /* View */,

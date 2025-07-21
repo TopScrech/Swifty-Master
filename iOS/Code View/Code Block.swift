@@ -8,11 +8,21 @@ enum CodeBlock: String {
          dismiss,
          darkMode,
          dismissHideBackButton,
-         emptyView,
+         emptyView, emptyViewAnyView,
          mdRegular, mdBoldItalic, mdStrikethrough, mdMonospaced, mdLink
     
     var code: String {
         switch self {
+        case .emptyViewAnyView:
+"""
+func view(for option: String) -> AnyView {
+    switch option {
+    case "A": AnyView(Text("Option A"))
+    case "B": AnyView(Image(systemName: "star"))
+    default: AnyView(EmptyView())
+}
+"""
+            
         case .darkMode:
 """
 struct ContentView: View {

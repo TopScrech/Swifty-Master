@@ -2,7 +2,7 @@ import SwiftUI
 
 struct TopicDarkMode: View {
     var body: some View {
-        VStack {
+        VStack(spacing: 25) {
             SimpleCodeBlockView(.darkMode)
         }
     }
