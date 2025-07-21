@@ -1,10 +1,12 @@
-import SwiftUI
+import ScrechKit
 
 struct StackContentView: View {
     @Environment(NavModel.self) private var nav
     @Environment(DataModel.self) private var dataModel
     
     private let categories = Category.allCases
+    
+    @State private var sheetSettings = false
     
     var body: some View {
         @Bindable var nav = nav
@@ -21,6 +23,7 @@ struct StackContentView: View {
             }
             .navigationTitle("Categories")
             .experienceToolbar()
+            .scrollIndicators(.never)
             .navigationDestination(for: Topic.self) { topic in
                 TopicDetail(topic) { relatedTopic in
                     Button {
@@ -29,6 +32,16 @@ struct StackContentView: View {
                         TopicTile(relatedTopic)
                     }
                     .buttonStyle(.plain)
+                }
+            }
+            .toolbar {
+                SFButton("gear") {
+                    sheetSettings = true
+                }
+            }
+            .sheet($sheetSettings) {
+                NavigationView {
+                    SettingsView()
                 }
             }
         }
