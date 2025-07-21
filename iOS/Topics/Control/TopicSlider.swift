@@ -5,7 +5,9 @@ struct TopicSlider: View {
     
     var body: some View {
         VStack(spacing: 25) {
-            Text("TopicSlider")
+            Text("Slider is a customizable UI control that allows users to select a value from a continuous range")
+            
+            SimpleCodeBlockView(.slider)
         }
     }
 }

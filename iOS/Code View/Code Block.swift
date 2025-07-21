@@ -12,6 +12,7 @@ enum CodeBlock: String {
          // Control
          picker,
          stepper,
+         slider,
          toggle, toggleTint,
          
          // View
@@ -41,6 +42,20 @@ enum CodeBlock: String {
     
     var code: String {
         switch self {
+        case .slider:
+"""
+struct ContentView: View {
+    @State private var sliderValue = 5.0
+    
+    var body: some View {
+        Slider(
+            value: $sliderValue,
+            in: 0...10
+        )
+    }
+}
+"""
+            
         case .stepper:
 """
 struct ContentView: View {
