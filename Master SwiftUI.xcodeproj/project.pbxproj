@@ -210,6 +210,27 @@
 			path = Haptic;
 			sourceTree = "<group>";
 		};
+		F314C7EF2E2E143F00F63B6A /* Experience */ = {
+			isa = PBXGroup;
+			children = (
+				F35198F22E2B9F53004E0F02 /* ContinueButton.swift */,
+				F35198F32E2B9F53004E0F02 /* ExperienceButton.swift */,
+				F35198F42E2B9F53004E0F02 /* ExperiencePicker.swift */,
+				F35198F52E2B9F53004E0F02 /* ExperiencePickerRow.swift */,
+				F35198F62E2B9F53004E0F02 /* ExperienceToolbar.swift */,
+				F35198E82E2B9F53004E0F02 /* Experience.swift */,
+			);
+			path = Experience;
+			sourceTree = "<group>";
+		};
+		F314C7F02E2E146100F63B6A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F34480462E2D5D1900D18E2E /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		F3202CB32D5596210030B3CC /* visionOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,9 +329,6 @@
 			isa = PBXGroup;
 			children = (
 				F35198E62E2B9F53004E0F02 /* Category.swift */,
-				F35198E72E2B9F53004E0F02 /* DataModel.swift */,
-				F35198E82E2B9F53004E0F02 /* Experience.swift */,
-				F35198EA2E2B9F53004E0F02 /* NavModel.swift */,
 				F35198EB2E2B9F53004E0F02 /* Topic.swift */,
 			);
 			path = Models;
@@ -322,6 +340,7 @@
 				F35198ED2E2B9F53004E0F02 /* NavContainer.swift */,
 				F35198EE2E2B9F53004E0F02 /* StackContentView.swift */,
 				F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */,
+				F314C7EF2E2E143F00F63B6A /* Experience */,
 			);
 			path = Nav;
 			sourceTree = "<group>";
@@ -329,13 +348,8 @@
 		F35198FC2E2B9F53004E0F02 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F35198F22E2B9F53004E0F02 /* ContinueButton.swift */,
-				F35198F32E2B9F53004E0F02 /* ExperienceButton.swift */,
-				F35198F42E2B9F53004E0F02 /* ExperiencePicker.swift */,
-				F35198F52E2B9F53004E0F02 /* ExperiencePickerRow.swift */,
-				F35198F62E2B9F53004E0F02 /* ExperienceToolbar.swift */,
-				F35198F72E2B9F53004E0F02 /* TopicDetail.swift */,
 				F35198F82E2B9F53004E0F02 /* TopicGrid.swift */,
+				F35198F72E2B9F53004E0F02 /* TopicDetail.swift */,
 				F35198FB2E2B9F53004E0F02 /* TopicTile.swift */,
 			);
 			path = Views;
@@ -373,17 +387,19 @@
 			children = (
 				F3BBD9E12AEECD3400A9F7E7 /* Master SwiftUI.swift */,
 				F35198F12E2B9F53004E0F02 /* Nav */,
-				F35198EC2E2B9F53004E0F02 /* Models */,
 				F35198FC2E2B9F53004E0F02 /* Views */,
 				F3BBD9ED2AEECD3500A9F7E7 /* iOS.plist */,
 				F3BBD9E92AEECD3500A9F7E7 /* iOS.entitlements */,
 				F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */,
 				F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */,
 				F3BF16D92E2C76A8005212D1 /* ContentView.swift */,
-				F34480462E2D5D1900D18E2E /* SettingsView.swift */,
+				F35198E72E2B9F53004E0F02 /* DataModel.swift */,
+				F35198EA2E2B9F53004E0F02 /* NavModel.swift */,
+				F35198EC2E2B9F53004E0F02 /* Models */,
 				F3BF16DF2E2C779E005212D1 /* Topics */,
 				F3BBD9E32AEECD3400A9F7E7 /* Home View.swift */,
 				F35198C62E2B7E73004E0F02 /* Code View */,
+				F314C7F02E2E146100F63B6A /* Settings */,
 				F3202CBF2D5597370030B3CC /* App Store Overlay */,
 				F3202CC32D55975E0030B3CC /* Gauges */,
 				F35198492E2AECCF004E0F02 /* To be checked */,
