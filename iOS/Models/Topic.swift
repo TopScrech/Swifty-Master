@@ -111,6 +111,11 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
     var related: [Topic.ID] {
         switch self {
         case .textField: [Topic.textEditor.id]
+        case .textEditor: [Topic.textField.id]
+            
+        case .image: [Topic.sfSymbols.id]
+        case .sfSymbols: [Topic.image.id]
+            
         default: []
         }
     }
