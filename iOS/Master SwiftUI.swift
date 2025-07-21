@@ -6,5 +6,10 @@ struct MasterSwiftUI: App {
         WindowGroup {
             NavContainer()
         }
+#if os(macOS)
+        Settings {
+            SettingsView()
+        }
+#endif
     }
 }
