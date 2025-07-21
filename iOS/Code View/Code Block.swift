@@ -6,7 +6,7 @@ enum CodeBlock: String {
          toggle, toggleTint,
          textLineLimit,
          spacer,
-         sheet,
+         sheet, sheetBefore15,
          dismiss,
          darkMode,
          image,
@@ -19,6 +19,21 @@ enum CodeBlock: String {
     
     var code: String {
         switch self {
+        case .sheetBefore15:
+"""
+struct SheetView: View {
+// REPLACE: "@Environment(\\.dismiss) var dismiss" BY:
+@Environment (\\.presentationMode) var presentationMode
+
+var body: some View {
+    Button("Dismiss the sheet") {
+        // REPLACE: "dismiss()" BY:
+        presentationMode.wrappedValue.dismiss()
+    }
+}
+}
+"""
+            
         case .sheet:
 """
 // ContentView - Which triggers the sheet

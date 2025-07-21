@@ -355,8 +355,8 @@
 		F34480342E2D217600D18E2E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F34480352E2D218400D18E2E /* TopicEmptyView.swift */,
 				F314C83A2E2E540800F63B6A /* TopicSheet.swift */,
+				F34480352E2D218400D18E2E /* TopicEmptyView.swift */,
 				F3202C932D55952F0030B3CC /* AppStoreOverlay.swift */,
 			);
 			path = View;

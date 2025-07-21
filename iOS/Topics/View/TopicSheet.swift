@@ -6,6 +6,12 @@ struct TopicSheet: View {
             Text("Sheet")
             
             SimpleCodeBlockView(.sheet)
+            
+            TopicDisclosureGroup("Dismiss a sheet (before iOS 15)") {
+                Text("To dismiss a sheet before ios 15, there is a change to make only in the sheet content")
+                
+                SimpleCodeBlockView(.sheetBefore15)
+            }
         }
     }
 }
