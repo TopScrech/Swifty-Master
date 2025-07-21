@@ -184,6 +184,10 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
                 "Apple Developer: SKOverlay": "https://developer.apple.com/documentation/storekit/skoverlay"
             ]
             
+            // Content
+        case .text:
+            ["Apple Developer: Text": "https://developer.apple.com/documentation/swiftui/text"]
+            
             // Nav
         case .dismiss:
             ["Apple Developer: dismiss()": "https://developer.apple.com/documentation/swiftui/environmentvalues/dismiss"]

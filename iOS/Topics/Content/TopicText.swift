@@ -1,62 +1,74 @@
 import ScrechKit
 
+struct TextStyle: Identifiable {
+    var id: String {
+        name
+    }
+    
+    let name: String
+    let size: Int
+    let font: Font
+    
+    init(_ name: String, size: Int, font: Font) {
+        self.name = name
+        self.size = size
+        self.font = font
+    }
+}
+
 struct TopicText: View {
     @State private var isBold = false
     
+    private let styles: [TextStyle] = [
+        .init("largeTitle",  size: 34, font: .largeTitle),
+        .init("title",       size: 28, font: .title),
+        .init("title2",      size: 26, font: .title2),
+        .init("title3",      size: 22, font: .title3),
+        .init("headline",    size: 20, font: .headline),
+        .init("callout",     size: 18, font: .callout),
+        .init("body",        size: 17, font: .body),
+        .init("subheadline", size: 16, font: .subheadline),
+        .init("footnote",    size: 14, font: .footnote),
+        .init("caption",     size: 12, font: .caption),
+        .init("caption2",    size: 11, font: .caption2)
+    ]
+    
     var body: some View {
         VStack(spacing: 25) {
+            Text("Text is a SwiftUI element used to display static or dynamic strings in the interface. It supports rich formatting, localization, and adapts to system-wide accessibility settings")
+            
             TopicDisclosureGroup("Font Size") {
-                Text("Large title")
-                    .largeTitle()
-                
-                Text("Title")
-                    .title()
-                
-                Text("Title 2")
-                    .title2()
-                
-                Text("Title 3")
-                    .title3()
-                
-                Text("Headline")
-                    .headline()
-                
-                Text("Callout")
-                    .callout()
-                
-                Text("Body")
-                
-                Text("Subheadline")
-                    .subheadline()
-                
-                Text("Footnote")
-                    .footnote()
-                
-                Text("Caption")
-                    .caption()
-                
-                Text("Caption 2")
-                    .caption2()
+                ForEach(styles) { text in
+                    FontItem(text)
+                }
             }
-            
-            // largeTitle  34pt
-            // title       28pt
-            // title2      26pt
-            // title3      22pt
-            // headline    20pt
-            // callout     18pt
-            // body        17pt
-            // subheadline 16pt
-            // footnote    14pt
-            // caption     12pt
-            // caption2    11pt
-            
         }
         .bold(isBold)
         .toolbar {
             SFButton("bold") {
                 isBold.toggle()
             }
+        }
+    }
+}
+
+struct FontItem: View {
+    private let font: TextStyle
+    
+    init(_ font: TextStyle) {
+        self.font = font
+    }
+    
+    var body: some View {
+        HStack(alignment: .firstTextBaseline) {
+            Text("\(font.size)pt")
+                .secondary()
+                .monospacedDigit()
+            
+            Text(font.name)
+                .font(font.font)
+            
+            Spacer()
         }
     }
 }
