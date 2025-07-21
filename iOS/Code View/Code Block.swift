@@ -10,6 +10,7 @@ enum CodeBlock: String {
          dismiss,
          darkMode,
          image,
+         detectOSVersion, detectOSVersionNewAndOld,
          color,
          gradient,
          alert,
@@ -22,6 +23,22 @@ enum CodeBlock: String {
     
     var code: String {
         switch self {
+        case .detectOSVersion:
+"""
+if #available(iOS 15, *) {
+    // Some code here
+}
+"""
+            
+        case .detectOSVersionNewAndOld:
+"""
+if #available(iOS 15, *) {
+    // Some code here
+} else {
+    // Some other code here
+}
+"""
+            
         case .gradient:
 """
 // Declaration of the colors used - Linear stops

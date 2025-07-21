@@ -60,6 +60,7 @@ func topicView(_ topic: Topic) -> AnyView? {
         
         // System
     case .detectDarkMode: AnyView(TopicDarkMode())
+    case .detectOSVersion: AnyView(TopicDetectOSVersion())
         
     default: nil
     }
