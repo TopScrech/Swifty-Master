@@ -26,6 +26,8 @@
 		F314C8072E2E2D4A00F63B6A /* FontDesignItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8052E2E2D4A00F63B6A /* FontDesignItem.swift */; };
 		F314C8092E2E458B00F63B6A /* TopicTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8082E2E458B00F63B6A /* TopicTextField.swift */; };
 		F314C80A2E2E458B00F63B6A /* TopicTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8082E2E458B00F63B6A /* TopicTextField.swift */; };
+		F314C80C2E2E486200F63B6A /* TopicTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C80B2E2E486200F63B6A /* TopicTextEditor.swift */; };
+		F314C80D2E2E486200F63B6A /* TopicTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C80B2E2E486200F63B6A /* TopicTextEditor.swift */; };
 		F3202C942D55952F0030B3CC /* App Store Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3202C932D55952F0030B3CC /* App Store Overlay.swift */; };
 		F3202CB72D5596210030B3CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3202CAF2D5596210030B3CC /* Assets.xcassets */; };
 		F3202CBB2D5596380030B3CC /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3202CBA2D5596380030B3CC /* ScrechKit */; };
@@ -132,6 +134,7 @@
 		F314C8022E2E2AA800F63B6A /* FontWeightItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontWeightItem.swift; sourceTree = "<group>"; };
 		F314C8052E2E2D4A00F63B6A /* FontDesignItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDesignItem.swift; sourceTree = "<group>"; };
 		F314C8082E2E458B00F63B6A /* TopicTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTextField.swift; sourceTree = "<group>"; };
+		F314C80B2E2E486200F63B6A /* TopicTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTextEditor.swift; sourceTree = "<group>"; };
 		F3202C932D55952F0030B3CC /* App Store Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Store Overlay.swift"; sourceTree = "<group>"; };
 		F3202C992D5596100030B3CC /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3202CAF2D5596210030B3CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -260,6 +263,7 @@
 			children = (
 				F314C7FB2E2E2A7C00F63B6A /* Text */,
 				F314C8082E2E458B00F63B6A /* TopicTextField.swift */,
+				F314C80B2E2E486200F63B6A /* TopicTextEditor.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -611,6 +615,7 @@
 				F3BF16DE2E2C7717005212D1 /* TopicDismiss.swift in Sources */,
 				F3BF16DB2E2C76A8005212D1 /* ContentView.swift in Sources */,
 				F34480412E2D4E0500D18E2E /* TopicButton.swift in Sources */,
+				F314C80D2E2E486200F63B6A /* TopicTextEditor.swift in Sources */,
 				F35199072E2B9F53004E0F02 /* TopicGrid.swift in Sources */,
 				F35199082E2B9F53004E0F02 /* ExperiencePicker.swift in Sources */,
 				F351990A2E2B9F53004E0F02 /* DataModel.swift in Sources */,
@@ -665,6 +670,7 @@
 				F3202C942D55952F0030B3CC /* App Store Overlay.swift in Sources */,
 				F3146C4E2CF7382C005D58B3 /* Font List.swift in Sources */,
 				F3BBD9E22AEECD3400A9F7E7 /* Master SwiftUI.swift in Sources */,
+				F314C80C2E2E486200F63B6A /* TopicTextEditor.swift in Sources */,
 				F3BBD9FB2AEED4CE00A9F7E7 /* Image Picker.swift in Sources */,
 				F34480362E2D218400D18E2E /* TopicEmptyView.swift in Sources */,
 				F34480402E2D4E0500D18E2E /* TopicButton.swift in Sources */,

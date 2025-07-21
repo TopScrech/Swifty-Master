@@ -9,6 +9,7 @@ enum CodeBlock: String {
          dismiss,
          darkMode,
          textField, textFieldDisableAutocorrection,
+         textEditor,
          dismissHideBackButton,
          emptyView, emptyViewAnyView,
          mdRegular, mdBoldItalic, mdStrikethrough, mdMonospaced, mdLink
@@ -32,6 +33,17 @@ struct ContentView: View {
     
     var body: some View {
         TextField("Placeholder", text: $text)
+    }
+}
+"""
+            
+        case .textEditor:
+"""
+struct ContentView: View {
+    @State private var text = ""
+    
+    var body: some View {
+        TextEditor(text: $text)
     }
 }
 """
