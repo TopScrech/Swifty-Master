@@ -4,6 +4,7 @@ enum CodeBlock: String {
     case gauges,
          appStoreOverlay,
          toggle, toggleTint,
+         textLineLimit,
          spacer,
          dismiss,
          darkMode,
@@ -13,6 +14,13 @@ enum CodeBlock: String {
     
     var code: String {
         switch self {
+        case .textLineLimit:
+"""
+Text("GoidaGoida")
+    .frame(width: 16)
+    .lineLimit(2)
+"""
+            
         case .emptyViewAnyView:
 """
 func view(for option: String) -> AnyView {
@@ -132,6 +140,7 @@ struct AppStoreOverlay: View {
             
         case .mdRegular:
             "Text(\"This is regular text\")"
+            
         case .mdLink:
 """
 Text("Link: [click](https://topscrech.dev)")
