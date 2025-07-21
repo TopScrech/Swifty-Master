@@ -13,7 +13,7 @@ struct TopicDismiss: View {
                 color: Color(0xA167E6)
             ))
             
-            TopicButton("Dismiss", color: .red.opacity(0.2)) {
+            TopicActionButton("Dismiss", color: .red.opacity(0.2)) {
                 dismiss()
             }
             

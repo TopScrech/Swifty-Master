@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct TopicButton: View {
+struct TopicActionButton: View {
     private let name: LocalizedStringKey
     private let color: Color
     private let action: () -> Void
@@ -30,5 +30,5 @@ struct TopicButton: View {
 }
 
 //#Preview {
-//    TopicButton()
+//    TopicActionButton()
 //}

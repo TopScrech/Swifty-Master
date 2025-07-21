@@ -7,7 +7,7 @@ struct AppStoreOverlay: View {
         VStack(spacing: 25) {
             Text("The App Store overlay lets you promote an app that’s already published on the App Store and even trigger updates for it")
             
-            TopicButton("Present", color: .blue.opacity(0.2)) {
+            TopicActionButton("Present", color: .blue.opacity(0.2)) {
                 overlay = true
             }
             

@@ -42,6 +42,12 @@
 		F314C81F2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C81D2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift */; };
 		F314C8262E2E52A200F63B6A /* ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8252E2E52A200F63B6A /* ValueStore.swift */; };
 		F314C8272E2E52A200F63B6A /* ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8252E2E52A200F63B6A /* ValueStore.swift */; };
+		F314C8322E2E536F00F63B6A /* TopicMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8312E2E536F00F63B6A /* TopicMenu.swift */; };
+		F314C8332E2E536F00F63B6A /* TopicMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8312E2E536F00F63B6A /* TopicMenu.swift */; };
+		F314C8352E2E538200F63B6A /* TopicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8342E2E538200F63B6A /* TopicButton.swift */; };
+		F314C8362E2E538200F63B6A /* TopicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8342E2E538200F63B6A /* TopicButton.swift */; };
+		F314C8382E2E53A100F63B6A /* TopicContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8372E2E53A100F63B6A /* TopicContextMenu.swift */; };
+		F314C8392E2E53A100F63B6A /* TopicContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8372E2E53A100F63B6A /* TopicContextMenu.swift */; };
 		F3202C942D55952F0030B3CC /* App Store Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3202C932D55952F0030B3CC /* App Store Overlay.swift */; };
 		F3202CB72D5596210030B3CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3202CAF2D5596210030B3CC /* Assets.xcassets */; };
 		F3202CBB2D5596380030B3CC /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3202CBA2D5596380030B3CC /* ScrechKit */; };
@@ -62,8 +68,8 @@
 		F34480372E2D218400D18E2E /* TopicEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480352E2D218400D18E2E /* TopicEmptyView.swift */; };
 		F344803A2E2D225A00D18E2E /* TopicSpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480392E2D225A00D18E2E /* TopicSpacer.swift */; };
 		F344803B2E2D225A00D18E2E /* TopicSpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480392E2D225A00D18E2E /* TopicSpacer.swift */; };
-		F34480402E2D4E0500D18E2E /* TopicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F344803F2E2D4E0500D18E2E /* TopicButton.swift */; };
-		F34480412E2D4E0500D18E2E /* TopicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F344803F2E2D4E0500D18E2E /* TopicButton.swift */; };
+		F34480402E2D4E0500D18E2E /* TopicActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F344803F2E2D4E0500D18E2E /* TopicActionButton.swift */; };
+		F34480412E2D4E0500D18E2E /* TopicActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F344803F2E2D4E0500D18E2E /* TopicActionButton.swift */; };
 		F34480442E2D548F00D18E2E /* TopicToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480432E2D548F00D18E2E /* TopicToggle.swift */; };
 		F34480452E2D548F00D18E2E /* TopicToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480432E2D548F00D18E2E /* TopicToggle.swift */; };
 		F34480472E2D5D1900D18E2E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480462E2D5D1900D18E2E /* SettingsView.swift */; };
@@ -156,6 +162,9 @@
 		F314C81A2E2E4BB900F63B6A /* TopicShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicShape.swift; sourceTree = "<group>"; };
 		F314C81D2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCustomKeyboard.swift; sourceTree = "<group>"; };
 		F314C8252E2E52A200F63B6A /* ValueStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueStore.swift; sourceTree = "<group>"; };
+		F314C8312E2E536F00F63B6A /* TopicMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicMenu.swift; sourceTree = "<group>"; };
+		F314C8342E2E538200F63B6A /* TopicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicButton.swift; sourceTree = "<group>"; };
+		F314C8372E2E53A100F63B6A /* TopicContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicContextMenu.swift; sourceTree = "<group>"; };
 		F3202C932D55952F0030B3CC /* App Store Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Store Overlay.swift"; sourceTree = "<group>"; };
 		F3202C992D5596100030B3CC /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3202CAF2D5596210030B3CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -164,7 +173,7 @@
 		F34480312E2CD41100D18E2E /* TopicDarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDarkMode.swift; sourceTree = "<group>"; };
 		F34480352E2D218400D18E2E /* TopicEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicEmptyView.swift; sourceTree = "<group>"; };
 		F34480392E2D225A00D18E2E /* TopicSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicSpacer.swift; sourceTree = "<group>"; };
-		F344803F2E2D4E0500D18E2E /* TopicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicButton.swift; sourceTree = "<group>"; };
+		F344803F2E2D4E0500D18E2E /* TopicActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicActionButton.swift; sourceTree = "<group>"; };
 		F34480432E2D548F00D18E2E /* TopicToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicToggle.swift; sourceTree = "<group>"; };
 		F34480462E2D5D1900D18E2E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F35198462E2AECAA004E0F02 /* Gauge Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gauge Card.swift"; sourceTree = "<group>"; };
@@ -360,6 +369,9 @@
 		F34480422E2D548500D18E2E /* Control */ = {
 			isa = PBXGroup;
 			children = (
+				F314C8342E2E538200F63B6A /* TopicButton.swift */,
+				F314C8312E2E536F00F63B6A /* TopicMenu.swift */,
+				F314C8372E2E53A100F63B6A /* TopicContextMenu.swift */,
 				F34480432E2D548F00D18E2E /* TopicToggle.swift */,
 			);
 			path = Control;
@@ -482,7 +494,7 @@
 				F3BF16D92E2C76A8005212D1 /* ContentView.swift */,
 				F3BF16E12E2C7D1C005212D1 /* TopicHeading.swift */,
 				F3BF16E52E2CCDEE005212D1 /* TopicDocs.swift */,
-				F344803F2E2D4E0500D18E2E /* TopicButton.swift */,
+				F344803F2E2D4E0500D18E2E /* TopicActionButton.swift */,
 				F314C7F82E2E1F0F00F63B6A /* TopicDisclosureGroup.swift */,
 				F314C7F42E2E1E7200F63B6A /* Content */,
 				F34480422E2D548500D18E2E /* Control */,
@@ -613,6 +625,7 @@
 				F314C7FD2E2E2A8400F63B6A /* Models.swift in Sources */,
 				F314C7F62E2E1E7900F63B6A /* TopicText.swift in Sources */,
 				F35198592E2AFF55004E0F02 /* Code Block Modifier.swift in Sources */,
+				F314C8332E2E536F00F63B6A /* TopicMenu.swift in Sources */,
 				F314C8042E2E2AA800F63B6A /* FontWeightItem.swift in Sources */,
 				F34480372E2D218400D18E2E /* TopicEmptyView.swift in Sources */,
 				F35198C22E2B7E34004E0F02 /* Attributed Code String.swift in Sources */,
@@ -631,6 +644,7 @@
 				F3202CC42D5597640030B3CC /* Gauges View.swift in Sources */,
 				F314C8192E2E4BB600F63B6A /* TopicDivider.swift in Sources */,
 				F314C8162E2E4B8700F63B6A /* TopicLabel.swift in Sources */,
+				F314C8362E2E538200F63B6A /* TopicButton.swift in Sources */,
 				F3ADA6172D9C03E700F2DAA6 /* Plural Translation.swift in Sources */,
 				F3202CC12D5597450030B3CC /* Home View.swift in Sources */,
 				F351984C2E2AEDCB004E0F02 /* Code Block View.swift in Sources */,
@@ -649,7 +663,8 @@
 				F314C80A2E2E458B00F63B6A /* TopicTextField.swift in Sources */,
 				F3BF16DE2E2C7717005212D1 /* TopicDismiss.swift in Sources */,
 				F3BF16DB2E2C76A8005212D1 /* ContentView.swift in Sources */,
-				F34480412E2D4E0500D18E2E /* TopicButton.swift in Sources */,
+				F314C8392E2E53A100F63B6A /* TopicContextMenu.swift in Sources */,
+				F34480412E2D4E0500D18E2E /* TopicActionButton.swift in Sources */,
 				F314C80D2E2E486200F63B6A /* TopicTextEditor.swift in Sources */,
 				F314C80F2E2E4A0100F63B6A /* TopicImage.swift in Sources */,
 				F35199072E2B9F53004E0F02 /* TopicGrid.swift in Sources */,
@@ -685,6 +700,7 @@
 				F3BF16E62E2CCDEE005212D1 /* TopicDocs.swift in Sources */,
 				F35199112E2B9F53004E0F02 /* Topic.swift in Sources */,
 				F314C8102E2E4A0100F63B6A /* TopicImage.swift in Sources */,
+				F314C8322E2E536F00F63B6A /* TopicMenu.swift in Sources */,
 				F35199122E2B9F53004E0F02 /* ExperienceButton.swift in Sources */,
 				F35199132E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */,
 				F35199142E2B9F53004E0F02 /* TopicDetail.swift in Sources */,
@@ -696,6 +712,7 @@
 				F35199172E2B9F53004E0F02 /* ExperienceToolbar.swift in Sources */,
 				F35199192E2B9F53004E0F02 /* NavContainer.swift in Sources */,
 				F351991A2E2B9F53004E0F02 /* TwoColumnContentView.swift in Sources */,
+				F314C8382E2E53A100F63B6A /* TopicContextMenu.swift in Sources */,
 				F351991B2E2B9F53004E0F02 /* TopicGrid.swift in Sources */,
 				F351991C2E2B9F53004E0F02 /* ExperiencePicker.swift in Sources */,
 				F351991E2E2B9F53004E0F02 /* DataModel.swift in Sources */,
@@ -706,6 +723,7 @@
 				F35199212E2B9F53004E0F02 /* StackContentView.swift in Sources */,
 				F35199222E2B9F53004E0F02 /* Category.swift in Sources */,
 				F314C8012E2E2A9400F63B6A /* FontSizeItem.swift in Sources */,
+				F314C8352E2E538200F63B6A /* TopicButton.swift in Sources */,
 				F35199232E2B9F53004E0F02 /* Experience.swift in Sources */,
 				F35199242E2B9F53004E0F02 /* TopicTile.swift in Sources */,
 				F3202C942D55952F0030B3CC /* App Store Overlay.swift in Sources */,
@@ -715,7 +733,7 @@
 				F314C8122E2E4B6A00F63B6A /* TopicSFSymbols.swift in Sources */,
 				F3BBD9FB2AEED4CE00A9F7E7 /* Image Picker.swift in Sources */,
 				F34480362E2D218400D18E2E /* TopicEmptyView.swift in Sources */,
-				F34480402E2D4E0500D18E2E /* TopicButton.swift in Sources */,
+				F34480402E2D4E0500D18E2E /* TopicActionButton.swift in Sources */,
 				F3BF16E22E2C7D1C005212D1 /* TopicHeading.swift in Sources */,
 				F35198C52E2B7E56004E0F02 /* Simple Code Block View.swift in Sources */,
 				F3D8C11C2B2BB51000C7B0A9 /* Sensory Feedback.swift in Sources */,

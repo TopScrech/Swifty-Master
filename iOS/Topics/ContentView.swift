@@ -32,6 +32,12 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .divider: AnyView(TopicDivider())
     case .customKeyboard: AnyView(TopicCustomKeyboard())
         
+        // Control
+    case .toggle: AnyView(TopicToggle())
+    case .button: AnyView(TopicButton())
+    case .menu: AnyView(TopicMenu())
+    case .contextMenu: AnyView(TopicContextMenu())
+        
         // View
     case .emptyView: AnyView(TopicEmptyView())
     case .appStoreOverlay: AnyView(AppStoreOverlay())
@@ -41,9 +47,6 @@ func topicView(_ topic: Topic) -> AnyView? {
         
         // Layout
     case .spacer: AnyView(TopicSpacer())
-        
-        // Control
-    case .toggle: AnyView(TopicToggle())
         
         // System
     case .detectDarkMode: AnyView(TopicDarkMode())
