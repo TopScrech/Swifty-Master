@@ -30,13 +30,16 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .label: AnyView(TopicLabel())
     case .shape: AnyView(TopicShape())
     case .divider: AnyView(TopicDivider())
-//    case .customKeyboard: AnyView(TopicCustomKeyboard())
+        //    case .customKeyboard: AnyView(TopicCustomKeyboard())
         
         // Control
     case .toggle: AnyView(TopicToggle())
     case .button: AnyView(TopicButton())
     case .menu: AnyView(TopicMenu())
     case .contextMenu: AnyView(TopicContextMenu())
+    case .slider: AnyView(TopicSlider())
+    case .stepper: AnyView(TopicStepper())
+    case .picker: AnyView(TopicPicker())
         
         // View
     case .emptyView: AnyView(TopicEmptyView())
