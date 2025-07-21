@@ -12,6 +12,7 @@ enum CodeBlock: String {
          image,
          detectOSVersion, detectOSVersionNewAndOld,
          color,
+         popover,
          gradient,
          alert,
          divider,
@@ -23,6 +24,36 @@ enum CodeBlock: String {
     
     var code: String {
         switch self {
+        case .popover:
+"""
+// ContentView - Which triggers the popover
+
+struct ContentView: View {
+    @State private var showingPopover = false
+
+    var body: some View {
+        Button("Open a popover") {
+            showingPopover.toggle()
+        }
+        .popover(isPresented: $showingPopover) {
+            PopoverView()
+        }
+    }
+}
+
+// PopoverView
+
+struct PopoverView: View {
+    @Environment(\\.dismiss) var dismiss
+
+    var body: some View {
+        Button("Dismiss the popover") {
+            dismiss()
+        }
+    }
+}
+"""
+            
         case .detectOSVersion:
 """
 if #available(iOS 15, *) {
