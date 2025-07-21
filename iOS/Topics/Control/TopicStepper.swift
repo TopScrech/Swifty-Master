@@ -5,7 +5,9 @@ struct TopicStepper: View {
     
     var body: some View {
         VStack(spacing: 25) {
-            Text("TopicStepper")
+            Text("Stepper is a customizable slider control that allows to select a value from a range, providing a simple and intuitive way to adjust settings or display progress")
+            
+            SimpleCodeBlockView(.stepper)
         }
     }
 }

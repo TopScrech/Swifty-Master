@@ -17,6 +17,7 @@ enum CodeBlock: String {
          alert,
          picker,
          divider,
+         stepper,
          textField, textFieldDisableAutocorrection,
          textEditor,
          dismissHideBackButton,
@@ -25,6 +26,24 @@ enum CodeBlock: String {
     
     var code: String {
         switch self {
+        case .stepper:
+"""
+struct ContentView: View {
+    @State private var stepperValue = 0
+    
+    var body: some View {
+        Stepper(
+            value: $stepperValue,
+            in: 1...10,
+            step: 2
+        ) {
+            // Label
+            Text("Stepper")
+        }
+    }
+}
+"""
+            
         case .picker:
 """
 struct ContentView: View {
