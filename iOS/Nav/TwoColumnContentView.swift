@@ -1,5 +1,3 @@
-// The content view for the two-column navigation split view experience
-
 import SwiftUI
 
 struct TwoColumnContentView: View {

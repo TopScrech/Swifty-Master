@@ -1,12 +1,8 @@
-// The content view for the navigation stack view experience
-
 import SwiftUI
 
 struct StackContentView: View {
     @Environment(NavModel.self) private var nav
     @Environment(DataModel.self) private var dataModel
-    
-    @AppStorage("lastVisibleTopicID") var lastVisibleTopicID: String?
     
     private let categories = Category.allCases
     
@@ -14,23 +10,12 @@ struct StackContentView: View {
         @Bindable var nav = nav
         
         NavigationStack(path: $nav.topicPath) {
-            ScrollViewReader { proxy in
-                List(categories) { category in
-                    Section(category.localizedName) {
-                        ForEach(dataModel.topics(in: category)) { topic in
-                            NavigationLink(value: topic) {
-                                TopicLinkLabel(topic)
-                            }
-                            .id(topic.id)
-                            .onAppear {
-                                lastVisibleTopicID = topic.id
-                            }
+            List(categories) { category in
+                Section(category.localizedName) {
+                    ForEach(dataModel.topics(in: category)) { topic in
+                        NavigationLink(value: topic) {
+                            TopicLinkLabel(topic)
                         }
-                    }
-                }
-                .onAppear {
-                    if let id = lastVisibleTopicID {
-                        proxy.scrollTo(id, anchor: .top)
                     }
                 }
             }
