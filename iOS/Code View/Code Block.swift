@@ -1,28 +1,43 @@
 import Foundation
 
 enum CodeBlock: String {
-    case gauges,
-         appStoreOverlay,
-         toggle, toggleTint,
+    
+    // Content
+    case mdRegular, mdBoldItalic, mdStrikethrough, mdMonospaced, mdLink,
          textLineLimit,
-         spacer,
-         sheet, sheetBefore15,
-         dismiss,
-         darkMode,
          image,
-         detectOSVersion, detectOSVersionNewAndOld,
-         color,
-         popover,
-         gradient,
-         alert,
-         picker,
-         divider,
-         stepper,
          textField, textFieldDisableAutocorrection,
          textEditor,
-         dismissHideBackButton,
+         
+         // Control
+         picker,
+         stepper,
+         toggle, toggleTint,
+         
+         // View
+         appStoreOverlay,
          emptyView, emptyViewAnyView,
-         mdRegular, mdBoldItalic, mdStrikethrough, mdMonospaced, mdLink
+         sheet, sheetBefore15,
+         popover,
+         alert,
+         gauges,
+         
+         // Nav
+         dismiss, dismissHideBackButton,
+         
+         // Collection
+         
+         // Layout
+         spacer,
+         divider,
+         
+         // Design
+         color,
+         gradient,
+         
+         // System
+         darkMode,
+         detectOSVersion, detectOSVersionNewAndOld
     
     var code: String {
         switch self {
