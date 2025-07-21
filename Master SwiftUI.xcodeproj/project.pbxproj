@@ -340,19 +340,20 @@
 				F35198ED2E2B9F53004E0F02 /* NavContainer.swift */,
 				F35198EE2E2B9F53004E0F02 /* StackContentView.swift */,
 				F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */,
+				F35198FC2E2B9F53004E0F02 /* Topic */,
 				F314C7EF2E2E143F00F63B6A /* Experience */,
 			);
 			path = Nav;
 			sourceTree = "<group>";
 		};
-		F35198FC2E2B9F53004E0F02 /* Views */ = {
+		F35198FC2E2B9F53004E0F02 /* Topic */ = {
 			isa = PBXGroup;
 			children = (
 				F35198F82E2B9F53004E0F02 /* TopicGrid.swift */,
 				F35198F72E2B9F53004E0F02 /* TopicDetail.swift */,
 				F35198FB2E2B9F53004E0F02 /* TopicTile.swift */,
 			);
-			path = Views;
+			path = Topic;
 			sourceTree = "<group>";
 		};
 		F3ADA6182D9C03EC00F2DAA6 /* Loc */ = {
@@ -387,7 +388,6 @@
 			children = (
 				F3BBD9E12AEECD3400A9F7E7 /* Master SwiftUI.swift */,
 				F35198F12E2B9F53004E0F02 /* Nav */,
-				F35198FC2E2B9F53004E0F02 /* Views */,
 				F3BBD9ED2AEECD3500A9F7E7 /* iOS.plist */,
 				F3BBD9E92AEECD3500A9F7E7 /* iOS.entitlements */,
 				F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */,
