@@ -1,25 +1,9 @@
 import ScrechKit
 
-struct TextStyle: Identifiable {
-    var id: String {
-        name
-    }
-    
-    let name: String
-    let size: Int
-    let font: Font
-    
-    init(_ name: String, size: Int, font: Font) {
-        self.name = name
-        self.size = size
-        self.font = font
-    }
-}
-
 struct TopicText: View {
     @State private var isBold = false
     
-    private let styles: [TextStyle] = [
+    private let styles: [TextFontSize] = [
         .init("largeTitle",  size: 34, font: .largeTitle),
         .init("title",       size: 28, font: .title),
         .init("title2",      size: 26, font: .title2),
@@ -33,13 +17,31 @@ struct TopicText: View {
         .init("caption2",    size: 11, font: .caption2)
     ]
     
+    private let weights: [TextFontWeight] = [
+        .init("UltraLight", weight: .ultraLight),
+        .init("Thin",       weight: .thin),
+        .init("Light",      weight: .light),
+        .init("Regular",    weight: .regular),
+        .init("Medium",     weight: .medium),
+        .init("Semibold",   weight: .semibold),
+        .init("Bold",       weight: .bold),
+        .init("Heavy",      weight: .heavy),
+        .init("Black",      weight: .black)
+    ]
+    
     var body: some View {
         VStack(spacing: 25) {
             Text("Text is a SwiftUI element used to display static or dynamic strings in the interface. It supports rich formatting, localization, and adapts to system-wide accessibility settings")
             
             TopicDisclosureGroup("Font Size") {
                 ForEach(styles) { text in
-                    FontItem(text)
+                    FontSizeItem(text)
+                }
+            }
+            
+            TopicDisclosureGroup("Font Weight") {
+                ForEach(weights) { text in
+                    FontWeightItem(text)
                 }
             }
         }
@@ -48,27 +50,6 @@ struct TopicText: View {
             SFButton("bold") {
                 isBold.toggle()
             }
-        }
-    }
-}
-
-struct FontItem: View {
-    private let font: TextStyle
-    
-    init(_ font: TextStyle) {
-        self.font = font
-    }
-    
-    var body: some View {
-        HStack(alignment: .firstTextBaseline) {
-            Text("\(font.size)pt")
-                .secondary()
-                .monospacedDigit()
-            
-            Text(font.name)
-                .font(font.font)
-            
-            Spacer()
         }
     }
 }

@@ -16,6 +16,12 @@
 		F314C7F72E2E1E7900F63B6A /* TopicText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C7F52E2E1E7900F63B6A /* TopicText.swift */; };
 		F314C7F92E2E1F0F00F63B6A /* TopicDisclosureGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C7F82E2E1F0F00F63B6A /* TopicDisclosureGroup.swift */; };
 		F314C7FA2E2E1F0F00F63B6A /* TopicDisclosureGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C7F82E2E1F0F00F63B6A /* TopicDisclosureGroup.swift */; };
+		F314C7FD2E2E2A8400F63B6A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C7FC2E2E2A8400F63B6A /* Models.swift */; };
+		F314C7FE2E2E2A8400F63B6A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C7FC2E2E2A8400F63B6A /* Models.swift */; };
+		F314C8002E2E2A9400F63B6A /* FontSizeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C7FF2E2E2A9400F63B6A /* FontSizeItem.swift */; };
+		F314C8012E2E2A9400F63B6A /* FontSizeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C7FF2E2E2A9400F63B6A /* FontSizeItem.swift */; };
+		F314C8032E2E2AA800F63B6A /* FontWeightItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8022E2E2AA800F63B6A /* FontWeightItem.swift */; };
+		F314C8042E2E2AA800F63B6A /* FontWeightItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8022E2E2AA800F63B6A /* FontWeightItem.swift */; };
 		F3202C942D55952F0030B3CC /* App Store Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3202C932D55952F0030B3CC /* App Store Overlay.swift */; };
 		F3202CB72D5596210030B3CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3202CAF2D5596210030B3CC /* Assets.xcassets */; };
 		F3202CBB2D5596380030B3CC /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3202CBA2D5596380030B3CC /* ScrechKit */; };
@@ -117,6 +123,9 @@
 		F314C7F12E2E1C1800F63B6A /* TopicLinkLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLinkLabel.swift; sourceTree = "<group>"; };
 		F314C7F52E2E1E7900F63B6A /* TopicText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicText.swift; sourceTree = "<group>"; };
 		F314C7F82E2E1F0F00F63B6A /* TopicDisclosureGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDisclosureGroup.swift; sourceTree = "<group>"; };
+		F314C7FC2E2E2A8400F63B6A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		F314C7FF2E2E2A9400F63B6A /* FontSizeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizeItem.swift; sourceTree = "<group>"; };
+		F314C8022E2E2AA800F63B6A /* FontWeightItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontWeightItem.swift; sourceTree = "<group>"; };
 		F3202C932D55952F0030B3CC /* App Store Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Store Overlay.swift"; sourceTree = "<group>"; };
 		F3202C992D5596100030B3CC /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3202CAF2D5596210030B3CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -243,9 +252,20 @@
 		F314C7F42E2E1E7200F63B6A /* Content */ = {
 			isa = PBXGroup;
 			children = (
-				F314C7F52E2E1E7900F63B6A /* TopicText.swift */,
+				F314C7FB2E2E2A7C00F63B6A /* Text */,
 			);
 			path = Content;
+			sourceTree = "<group>";
+		};
+		F314C7FB2E2E2A7C00F63B6A /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				F314C7F52E2E1E7900F63B6A /* TopicText.swift */,
+				F314C7FF2E2E2A9400F63B6A /* FontSizeItem.swift */,
+				F314C8022E2E2AA800F63B6A /* FontWeightItem.swift */,
+				F314C7FC2E2E2A8400F63B6A /* Models.swift */,
+			);
+			path = Text;
 			sourceTree = "<group>";
 		};
 		F3202CB32D5596210030B3CC /* visionOS */ = {
@@ -549,14 +569,17 @@
 				F34480322E2CD41100D18E2E /* TopicDarkMode.swift in Sources */,
 				F3202CBD2D5597180030B3CC /* Hover Effects.swift in Sources */,
 				F3202CC52D55977A0030B3CC /* Image Picker.swift in Sources */,
+				F314C7FD2E2E2A8400F63B6A /* Models.swift in Sources */,
 				F314C7F62E2E1E7900F63B6A /* TopicText.swift in Sources */,
 				F35198592E2AFF55004E0F02 /* Code Block Modifier.swift in Sources */,
+				F314C8042E2E2AA800F63B6A /* FontWeightItem.swift in Sources */,
 				F34480372E2D218400D18E2E /* TopicEmptyView.swift in Sources */,
 				F35198C22E2B7E34004E0F02 /* Attributed Code String.swift in Sources */,
 				F314C7F32E2E1C1800F63B6A /* TopicLinkLabel.swift in Sources */,
 				F314C7FA2E2E1F0F00F63B6A /* TopicDisclosureGroup.swift in Sources */,
 				F3202CC62D55977A0030B3CC /* Image Picker 2.swift in Sources */,
 				F35198C42E2B7E56004E0F02 /* Simple Code Block View.swift in Sources */,
+				F314C8002E2E2A9400F63B6A /* FontSizeItem.swift in Sources */,
 				F35198482E2AECAA004E0F02 /* Gauge Card.swift in Sources */,
 				F3202CC72D55977A0030B3CC /* Image Picker View.swift in Sources */,
 				F34480482E2D5D1900D18E2E /* SettingsView.swift in Sources */,
@@ -605,6 +628,7 @@
 				F3BF16DD2E2C7717005212D1 /* TopicDismiss.swift in Sources */,
 				F314C7F92E2E1F0F00F63B6A /* TopicDisclosureGroup.swift in Sources */,
 				F35198472E2AECAA004E0F02 /* Gauge Card.swift in Sources */,
+				F314C7FE2E2E2A8400F63B6A /* Models.swift in Sources */,
 				F3BF16E62E2CCDEE005212D1 /* TopicDocs.swift in Sources */,
 				F35199112E2B9F53004E0F02 /* Topic.swift in Sources */,
 				F35199122E2B9F53004E0F02 /* ExperienceButton.swift in Sources */,
@@ -612,6 +636,7 @@
 				F35199142E2B9F53004E0F02 /* TopicDetail.swift in Sources */,
 				F314C7F72E2E1E7900F63B6A /* TopicText.swift in Sources */,
 				F3BF16DA2E2C76A8005212D1 /* ContentView.swift in Sources */,
+				F314C8032E2E2AA800F63B6A /* FontWeightItem.swift in Sources */,
 				F35199162E2B9F53004E0F02 /* NavModel.swift in Sources */,
 				F35199172E2B9F53004E0F02 /* ExperienceToolbar.swift in Sources */,
 				F35199192E2B9F53004E0F02 /* NavContainer.swift in Sources */,
@@ -623,6 +648,7 @@
 				F34480452E2D548F00D18E2E /* TopicToggle.swift in Sources */,
 				F35199212E2B9F53004E0F02 /* StackContentView.swift in Sources */,
 				F35199222E2B9F53004E0F02 /* Category.swift in Sources */,
+				F314C8012E2E2A9400F63B6A /* FontSizeItem.swift in Sources */,
 				F35199232E2B9F53004E0F02 /* Experience.swift in Sources */,
 				F35199242E2B9F53004E0F02 /* TopicTile.swift in Sources */,
 				F3202C942D55952F0030B3CC /* App Store Overlay.swift in Sources */,
