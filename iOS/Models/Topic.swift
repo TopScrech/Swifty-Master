@@ -141,7 +141,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
     
     var icon: String {
         switch self {
-        case .text: "textformat.characters"
+        case .text: "textformat"
         case .textField: "character.cursor.ibeam"
         case .textEditor: "square.and.pencil"
         case .image: "photo"
