@@ -45,12 +45,18 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .emptyView: AnyView(TopicEmptyView())
     case .appStoreOverlay: AnyView(AppStoreOverlay())
     case .sheet: AnyView(TopicSheet())
+    case .alert: AnyView(TopicAlert())
+    case .popover: AnyView(TopicPopover())
         
         // Nav
     case .dismiss: AnyView(TopicDismiss())
         
         // Layout
     case .spacer: AnyView(TopicSpacer())
+        
+        // Design
+    case .color: AnyView(TopicColor())
+    case .gradient: AnyView(TopicGradient())
         
         // System
     case .detectDarkMode: AnyView(TopicDarkMode())
