@@ -10,6 +10,7 @@ enum CodeBlock: String {
          dismiss,
          darkMode,
          image,
+         alert,
          divider,
          textField, textFieldDisableAutocorrection,
          textEditor,
@@ -19,6 +20,24 @@ enum CodeBlock: String {
     
     var code: String {
         switch self {
+        case .alert:
+"""
+struct ContentView: View {
+    @State private var presentAlert = false
+    
+    var body: some View {
+        Button("Show alert") {
+            showingSheet = true
+        }
+        .alert(isPresented: $showingSheet) {
+            Button("Done") {...}
+        } message: {
+            //optional
+            Text("Message")
+        }
+}
+"""
+            
         case .sheetBefore15:
 """
 struct SheetView: View {
@@ -36,22 +55,18 @@ var body: some View {
             
         case .sheet:
 """
-// ContentView - Which triggers the sheet
-
 struct ContentView: View {
     @State private var showingSheet = false
 
     var body: some View {
         Button("Open a sheet") {
-            showingSheet.toggle()
+            showingSheet = true
         }
         .sheet(isPresented: $showingSheet) {
             SheetView()
         }
     }
 }
-
-// SheetView
 
 struct SheetView: View {
     @Environment(\\.dismiss) var dismiss
