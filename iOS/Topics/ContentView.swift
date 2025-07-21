@@ -25,6 +25,7 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .text: AnyView(TopicText())
     case .textField: AnyView(TopicTextField())
     case .textEditor: AnyView(TopicTextEditor())
+    case .image: AnyView(TopicImage())
         
         // View
     case .emptyView: AnyView(TopicEmptyView())

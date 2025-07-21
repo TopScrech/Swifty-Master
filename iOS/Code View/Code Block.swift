@@ -8,6 +8,7 @@ enum CodeBlock: String {
          spacer,
          dismiss,
          darkMode,
+         image,
          textField, textFieldDisableAutocorrection,
          textEditor,
          dismissHideBackButton,
@@ -16,6 +17,20 @@ enum CodeBlock: String {
     
     var code: String {
         switch self {
+        case .image:
+"""
+struct ContentView: View {    
+    var body: some View {
+        Image("Image Name")
+        
+        // or
+        
+        // Requires iOS/iPadOS/tvOS 17+, macOS 14+ or watchOS 10+
+        Image(.imageName)
+    }
+}
+"""
+            
         case .textFieldDisableAutocorrection:
 """
 TextField("Placeholder", text: $text)

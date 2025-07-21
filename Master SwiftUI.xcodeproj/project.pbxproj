@@ -28,6 +28,8 @@
 		F314C80A2E2E458B00F63B6A /* TopicTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8082E2E458B00F63B6A /* TopicTextField.swift */; };
 		F314C80C2E2E486200F63B6A /* TopicTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C80B2E2E486200F63B6A /* TopicTextEditor.swift */; };
 		F314C80D2E2E486200F63B6A /* TopicTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C80B2E2E486200F63B6A /* TopicTextEditor.swift */; };
+		F314C80F2E2E4A0100F63B6A /* TopicImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C80E2E2E4A0100F63B6A /* TopicImage.swift */; };
+		F314C8102E2E4A0100F63B6A /* TopicImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C80E2E2E4A0100F63B6A /* TopicImage.swift */; };
 		F3202C942D55952F0030B3CC /* App Store Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3202C932D55952F0030B3CC /* App Store Overlay.swift */; };
 		F3202CB72D5596210030B3CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3202CAF2D5596210030B3CC /* Assets.xcassets */; };
 		F3202CBB2D5596380030B3CC /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3202CBA2D5596380030B3CC /* ScrechKit */; };
@@ -135,6 +137,7 @@
 		F314C8052E2E2D4A00F63B6A /* FontDesignItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDesignItem.swift; sourceTree = "<group>"; };
 		F314C8082E2E458B00F63B6A /* TopicTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTextField.swift; sourceTree = "<group>"; };
 		F314C80B2E2E486200F63B6A /* TopicTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTextEditor.swift; sourceTree = "<group>"; };
+		F314C80E2E2E4A0100F63B6A /* TopicImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicImage.swift; sourceTree = "<group>"; };
 		F3202C932D55952F0030B3CC /* App Store Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Store Overlay.swift"; sourceTree = "<group>"; };
 		F3202C992D5596100030B3CC /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3202CAF2D5596210030B3CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -264,6 +267,7 @@
 				F314C7FB2E2E2A7C00F63B6A /* Text */,
 				F314C8082E2E458B00F63B6A /* TopicTextField.swift */,
 				F314C80B2E2E486200F63B6A /* TopicTextEditor.swift */,
+				F314C80E2E2E4A0100F63B6A /* TopicImage.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -616,6 +620,7 @@
 				F3BF16DB2E2C76A8005212D1 /* ContentView.swift in Sources */,
 				F34480412E2D4E0500D18E2E /* TopicButton.swift in Sources */,
 				F314C80D2E2E486200F63B6A /* TopicTextEditor.swift in Sources */,
+				F314C80F2E2E4A0100F63B6A /* TopicImage.swift in Sources */,
 				F35199072E2B9F53004E0F02 /* TopicGrid.swift in Sources */,
 				F35199082E2B9F53004E0F02 /* ExperiencePicker.swift in Sources */,
 				F351990A2E2B9F53004E0F02 /* DataModel.swift in Sources */,
@@ -646,6 +651,7 @@
 				F314C7FE2E2E2A8400F63B6A /* Models.swift in Sources */,
 				F3BF16E62E2CCDEE005212D1 /* TopicDocs.swift in Sources */,
 				F35199112E2B9F53004E0F02 /* Topic.swift in Sources */,
+				F314C8102E2E4A0100F63B6A /* TopicImage.swift in Sources */,
 				F35199122E2B9F53004E0F02 /* ExperienceButton.swift in Sources */,
 				F35199132E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */,
 				F35199142E2B9F53004E0F02 /* TopicDetail.swift in Sources */,
