@@ -9,6 +9,7 @@ enum CodeBlock: String {
          dismiss,
          darkMode,
          image,
+         divider,
          textField, textFieldDisableAutocorrection,
          textEditor,
          dismissHideBackButton,
@@ -17,6 +18,19 @@ enum CodeBlock: String {
     
     var code: String {
         switch self {
+        case .divider:
+"""
+struct ContentView: View {    
+    var body: some View {
+        Text("1")
+        
+        Divider()
+        
+        Text("2")
+    }
+}
+"""
+            
         case .image:
 """
 struct ContentView: View {    
