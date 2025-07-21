@@ -18,17 +18,7 @@ struct HomeView: View {
             NavigationLink("Materials") {
                 MaterialsView()
             }
-#endif
-            NavigationLink {
-                GaugesView()
-            } label: {
-                Label("Gauges", systemImage: "gauge.with.needle")
-            }
             
-            NavigationLink("App Store Overlay") {
-                AppStoreOverlay()
-            }
-#if !os(visionOS)
             NavigationLink {
                 FeedbackView()
             } label: {
