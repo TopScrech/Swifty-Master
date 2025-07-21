@@ -10,6 +10,8 @@ enum CodeBlock: String {
          dismiss,
          darkMode,
          image,
+         color,
+         gradient,
          alert,
          divider,
          textField, textFieldDisableAutocorrection,
@@ -20,6 +22,38 @@ enum CodeBlock: String {
     
     var code: String {
         switch self {
+        case .gradient:
+"""
+// Declaration of the colors used - Linear stops
+let gradientOne = Gradient(colors: [.green, .blue])
+
+// Declaration of the colors used - Custom stops
+let gradientOne = Gradient(stops: [
+    .init(color: .green, location: 0.2),
+    .init(color: .blue, location: 0.4)
+])
+
+var body: some View {
+    // Apply the gradient
+    Rectangle().fill(
+        LinearGradient(gradient: gradientOne, startPoint: .top, endPoint: .bottom)
+        AngularGradient(gradient: gradientOne, center: .center)
+        RadialGradient(gradient: gradientOne, center: .center, startRadius: 0, endRadius: 100)
+        EllipticalGradient(gradient: gradientOne, center: .top)
+    )
+}
+"""
+            
+        case .color:
+"""
+Text("Hello")
+    .foregroundColor(.blue)                         // Color
+    .foregroundColor(Color(uiColor: .systemBlue))  // UIColor - Not on macOS
+    .foregroundColor(Color(nsColor: .systemBlue)) // NSColor - macOS-only
+    .foregroundColor(Color("customColorName"))   // Custom color
+    .foregroundColor(.customColorName)  // Custom color
+"""
+            
         case .alert:
 """
 struct ContentView: View {
