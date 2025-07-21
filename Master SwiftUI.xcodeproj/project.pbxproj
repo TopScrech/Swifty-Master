@@ -30,6 +30,16 @@
 		F314C80D2E2E486200F63B6A /* TopicTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C80B2E2E486200F63B6A /* TopicTextEditor.swift */; };
 		F314C80F2E2E4A0100F63B6A /* TopicImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C80E2E2E4A0100F63B6A /* TopicImage.swift */; };
 		F314C8102E2E4A0100F63B6A /* TopicImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C80E2E2E4A0100F63B6A /* TopicImage.swift */; };
+		F314C8122E2E4B6A00F63B6A /* TopicSFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8112E2E4B6A00F63B6A /* TopicSFSymbols.swift */; };
+		F314C8132E2E4B6A00F63B6A /* TopicSFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8112E2E4B6A00F63B6A /* TopicSFSymbols.swift */; };
+		F314C8152E2E4B8700F63B6A /* TopicLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8142E2E4B8700F63B6A /* TopicLabel.swift */; };
+		F314C8162E2E4B8700F63B6A /* TopicLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8142E2E4B8700F63B6A /* TopicLabel.swift */; };
+		F314C8182E2E4BB600F63B6A /* TopicDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8172E2E4BB600F63B6A /* TopicDivider.swift */; };
+		F314C8192E2E4BB600F63B6A /* TopicDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8172E2E4BB600F63B6A /* TopicDivider.swift */; };
+		F314C81B2E2E4BB900F63B6A /* TopicShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C81A2E2E4BB900F63B6A /* TopicShape.swift */; };
+		F314C81C2E2E4BB900F63B6A /* TopicShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C81A2E2E4BB900F63B6A /* TopicShape.swift */; };
+		F314C81E2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C81D2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift */; };
+		F314C81F2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C81D2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift */; };
 		F3202C942D55952F0030B3CC /* App Store Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3202C932D55952F0030B3CC /* App Store Overlay.swift */; };
 		F3202CB72D5596210030B3CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3202CAF2D5596210030B3CC /* Assets.xcassets */; };
 		F3202CBB2D5596380030B3CC /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3202CBA2D5596380030B3CC /* ScrechKit */; };
@@ -138,6 +148,11 @@
 		F314C8082E2E458B00F63B6A /* TopicTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTextField.swift; sourceTree = "<group>"; };
 		F314C80B2E2E486200F63B6A /* TopicTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTextEditor.swift; sourceTree = "<group>"; };
 		F314C80E2E2E4A0100F63B6A /* TopicImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicImage.swift; sourceTree = "<group>"; };
+		F314C8112E2E4B6A00F63B6A /* TopicSFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicSFSymbols.swift; sourceTree = "<group>"; };
+		F314C8142E2E4B8700F63B6A /* TopicLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLabel.swift; sourceTree = "<group>"; };
+		F314C8172E2E4BB600F63B6A /* TopicDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDivider.swift; sourceTree = "<group>"; };
+		F314C81A2E2E4BB900F63B6A /* TopicShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicShape.swift; sourceTree = "<group>"; };
+		F314C81D2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCustomKeyboard.swift; sourceTree = "<group>"; };
 		F3202C932D55952F0030B3CC /* App Store Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Store Overlay.swift"; sourceTree = "<group>"; };
 		F3202C992D5596100030B3CC /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3202CAF2D5596210030B3CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -268,6 +283,11 @@
 				F314C8082E2E458B00F63B6A /* TopicTextField.swift */,
 				F314C80B2E2E486200F63B6A /* TopicTextEditor.swift */,
 				F314C80E2E2E4A0100F63B6A /* TopicImage.swift */,
+				F314C8112E2E4B6A00F63B6A /* TopicSFSymbols.swift */,
+				F314C8142E2E4B8700F63B6A /* TopicLabel.swift */,
+				F314C81A2E2E4BB900F63B6A /* TopicShape.swift */,
+				F314C8172E2E4BB600F63B6A /* TopicDivider.swift */,
+				F314C81D2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -594,6 +614,7 @@
 				F314C7F32E2E1C1800F63B6A /* TopicLinkLabel.swift in Sources */,
 				F314C7FA2E2E1F0F00F63B6A /* TopicDisclosureGroup.swift in Sources */,
 				F3202CC62D55977A0030B3CC /* Image Picker 2.swift in Sources */,
+				F314C81F2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift in Sources */,
 				F35198C42E2B7E56004E0F02 /* Simple Code Block View.swift in Sources */,
 				F314C8002E2E2A9400F63B6A /* FontSizeItem.swift in Sources */,
 				F35198482E2AECAA004E0F02 /* Gauge Card.swift in Sources */,
@@ -602,13 +623,17 @@
 				F30207CE2D8B001300C26008 /* Markdown.swift in Sources */,
 				F351984F2E2AF689004E0F02 /* Code Block.swift in Sources */,
 				F3202CC42D5597640030B3CC /* Gauges View.swift in Sources */,
+				F314C8192E2E4BB600F63B6A /* TopicDivider.swift in Sources */,
+				F314C8162E2E4B8700F63B6A /* TopicLabel.swift in Sources */,
 				F3ADA6172D9C03E700F2DAA6 /* Plural Translation.swift in Sources */,
 				F3202CC12D5597450030B3CC /* Home View.swift in Sources */,
 				F351984C2E2AEDCB004E0F02 /* Code Block View.swift in Sources */,
 				F35198FD2E2B9F53004E0F02 /* Topic.swift in Sources */,
 				F35198FE2E2B9F53004E0F02 /* ExperienceButton.swift in Sources */,
+				F314C8132E2E4B6A00F63B6A /* TopicSFSymbols.swift in Sources */,
 				F35198FF2E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */,
 				F35199002E2B9F53004E0F02 /* TopicDetail.swift in Sources */,
+				F314C81C2E2E4BB900F63B6A /* TopicShape.swift in Sources */,
 				F3BF16E32E2C7D1C005212D1 /* TopicHeading.swift in Sources */,
 				F35199022E2B9F53004E0F02 /* NavModel.swift in Sources */,
 				F35199032E2B9F53004E0F02 /* ExperienceToolbar.swift in Sources */,
@@ -648,7 +673,9 @@
 				F3BF16DD2E2C7717005212D1 /* TopicDismiss.swift in Sources */,
 				F314C7F92E2E1F0F00F63B6A /* TopicDisclosureGroup.swift in Sources */,
 				F35198472E2AECAA004E0F02 /* Gauge Card.swift in Sources */,
+				F314C81E2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift in Sources */,
 				F314C7FE2E2E2A8400F63B6A /* Models.swift in Sources */,
+				F314C81B2E2E4BB900F63B6A /* TopicShape.swift in Sources */,
 				F3BF16E62E2CCDEE005212D1 /* TopicDocs.swift in Sources */,
 				F35199112E2B9F53004E0F02 /* Topic.swift in Sources */,
 				F314C8102E2E4A0100F63B6A /* TopicImage.swift in Sources */,
@@ -666,6 +693,7 @@
 				F351991C2E2B9F53004E0F02 /* ExperiencePicker.swift in Sources */,
 				F351991E2E2B9F53004E0F02 /* DataModel.swift in Sources */,
 				F351991F2E2B9F53004E0F02 /* ContinueButton.swift in Sources */,
+				F314C8152E2E4B8700F63B6A /* TopicLabel.swift in Sources */,
 				F314C8062E2E2D4A00F63B6A /* FontDesignItem.swift in Sources */,
 				F34480452E2D548F00D18E2E /* TopicToggle.swift in Sources */,
 				F35199212E2B9F53004E0F02 /* StackContentView.swift in Sources */,
@@ -677,6 +705,7 @@
 				F3146C4E2CF7382C005D58B3 /* Font List.swift in Sources */,
 				F3BBD9E22AEECD3400A9F7E7 /* Master SwiftUI.swift in Sources */,
 				F314C80C2E2E486200F63B6A /* TopicTextEditor.swift in Sources */,
+				F314C8122E2E4B6A00F63B6A /* TopicSFSymbols.swift in Sources */,
 				F3BBD9FB2AEED4CE00A9F7E7 /* Image Picker.swift in Sources */,
 				F34480362E2D218400D18E2E /* TopicEmptyView.swift in Sources */,
 				F34480402E2D4E0500D18E2E /* TopicButton.swift in Sources */,
@@ -692,6 +721,7 @@
 				F351984E2E2AF689004E0F02 /* Code Block.swift in Sources */,
 				F3BBD9F92AEED4BC00A9F7E7 /* Image Picker View.swift in Sources */,
 				F35198C12E2B7E34004E0F02 /* Attributed Code String.swift in Sources */,
+				F314C8182E2E4BB600F63B6A /* TopicDivider.swift in Sources */,
 				F34480332E2CD41100D18E2E /* TopicDarkMode.swift in Sources */,
 				F351984B2E2AEDCB004E0F02 /* Code Block View.swift in Sources */,
 			);
