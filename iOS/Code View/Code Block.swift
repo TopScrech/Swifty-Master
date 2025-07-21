@@ -15,6 +15,7 @@ enum CodeBlock: String {
          popover,
          gradient,
          alert,
+         picker,
          divider,
          textField, textFieldDisableAutocorrection,
          textEditor,
@@ -24,6 +25,25 @@ enum CodeBlock: String {
     
     var code: String {
         switch self {
+        case .picker:
+"""
+struct ContentView: View {
+    @State private var favoriteAnimal = "Dog"
+    
+    var body: some View {
+        Picker("Favorite animal", selection: $favoriteAnimal) {
+            Text("Dog")
+                .tag("Dog")
+            
+            Text("Cat")
+                .tag("Cat")
+            
+            Text("Fish")
+                .tag("Fish")
+    }
+}
+"""
+            
         case .popover:
 """
 // ContentView - Which triggers the popover

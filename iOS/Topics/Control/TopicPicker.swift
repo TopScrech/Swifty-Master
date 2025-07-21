@@ -5,7 +5,9 @@ struct TopicPicker: View {
     
     var body: some View {
         VStack(spacing: 25) {
-            Text("TopicPicker")
+            Text("SwiftUI's Picker is a customizable, interactive way allowing users to select from a list of options")
+            
+            SimpleCodeBlockView(.picker)
         }
     }
 }
