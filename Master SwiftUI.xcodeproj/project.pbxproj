@@ -48,12 +48,14 @@
 		F314C8362E2E538200F63B6A /* TopicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8342E2E538200F63B6A /* TopicButton.swift */; };
 		F314C8382E2E53A100F63B6A /* TopicContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8372E2E53A100F63B6A /* TopicContextMenu.swift */; };
 		F314C8392E2E53A100F63B6A /* TopicContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8372E2E53A100F63B6A /* TopicContextMenu.swift */; };
-		F3202C942D55952F0030B3CC /* App Store Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3202C932D55952F0030B3CC /* App Store Overlay.swift */; };
+		F314C83B2E2E540800F63B6A /* TopicSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C83A2E2E540800F63B6A /* TopicSheet.swift */; };
+		F314C83C2E2E540800F63B6A /* TopicSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C83A2E2E540800F63B6A /* TopicSheet.swift */; };
+		F3202C942D55952F0030B3CC /* AppStoreOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3202C932D55952F0030B3CC /* AppStoreOverlay.swift */; };
 		F3202CB72D5596210030B3CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3202CAF2D5596210030B3CC /* Assets.xcassets */; };
 		F3202CBB2D5596380030B3CC /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3202CBA2D5596380030B3CC /* ScrechKit */; };
 		F3202CBD2D5597180030B3CC /* Hover Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */; };
 		F3202CBE2D5597310030B3CC /* Font List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3146C4D2CF7382C005D58B3 /* Font List.swift */; };
-		F3202CC02D5597400030B3CC /* App Store Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3202C932D55952F0030B3CC /* App Store Overlay.swift */; };
+		F3202CC02D5597400030B3CC /* AppStoreOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3202C932D55952F0030B3CC /* AppStoreOverlay.swift */; };
 		F3202CC12D5597450030B3CC /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E32AEECD3400A9F7E7 /* Home View.swift */; };
 		F3202CC22D5597490030B3CC /* Master SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E12AEECD3400A9F7E7 /* Master SwiftUI.swift */; };
 		F3202CC42D5597640030B3CC /* Gauges View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE40BE2D1387FE00B7AD35 /* Gauges View.swift */; };
@@ -165,7 +167,8 @@
 		F314C8312E2E536F00F63B6A /* TopicMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicMenu.swift; sourceTree = "<group>"; };
 		F314C8342E2E538200F63B6A /* TopicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicButton.swift; sourceTree = "<group>"; };
 		F314C8372E2E53A100F63B6A /* TopicContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicContextMenu.swift; sourceTree = "<group>"; };
-		F3202C932D55952F0030B3CC /* App Store Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Store Overlay.swift"; sourceTree = "<group>"; };
+		F314C83A2E2E540800F63B6A /* TopicSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicSheet.swift; sourceTree = "<group>"; };
+		F3202C932D55952F0030B3CC /* AppStoreOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreOverlay.swift; sourceTree = "<group>"; };
 		F3202C992D5596100030B3CC /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3202CAF2D5596210030B3CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3202CB22D5596210030B3CC /* visionOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = visionOS.plist; sourceTree = "<group>"; };
@@ -353,7 +356,8 @@
 			isa = PBXGroup;
 			children = (
 				F34480352E2D218400D18E2E /* TopicEmptyView.swift */,
-				F3202C932D55952F0030B3CC /* App Store Overlay.swift */,
+				F314C83A2E2E540800F63B6A /* TopicSheet.swift */,
+				F3202C932D55952F0030B3CC /* AppStoreOverlay.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -646,6 +650,7 @@
 				F314C8162E2E4B8700F63B6A /* TopicLabel.swift in Sources */,
 				F314C8362E2E538200F63B6A /* TopicButton.swift in Sources */,
 				F3ADA6172D9C03E700F2DAA6 /* Plural Translation.swift in Sources */,
+				F314C83C2E2E540800F63B6A /* TopicSheet.swift in Sources */,
 				F3202CC12D5597450030B3CC /* Home View.swift in Sources */,
 				F351984C2E2AEDCB004E0F02 /* Code Block View.swift in Sources */,
 				F35198FD2E2B9F53004E0F02 /* Topic.swift in Sources */,
@@ -678,7 +683,7 @@
 				F351990E2E2B9F53004E0F02 /* Category.swift in Sources */,
 				F351990F2E2B9F53004E0F02 /* Experience.swift in Sources */,
 				F35199102E2B9F53004E0F02 /* TopicTile.swift in Sources */,
-				F3202CC02D5597400030B3CC /* App Store Overlay.swift in Sources */,
+				F3202CC02D5597400030B3CC /* AppStoreOverlay.swift in Sources */,
 			);
 		};
 		F3BBD9DA2AEECD3400A9F7E7 /* Sources */ = {
@@ -704,6 +709,7 @@
 				F35199122E2B9F53004E0F02 /* ExperienceButton.swift in Sources */,
 				F35199132E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */,
 				F35199142E2B9F53004E0F02 /* TopicDetail.swift in Sources */,
+				F314C83B2E2E540800F63B6A /* TopicSheet.swift in Sources */,
 				F314C7F72E2E1E7900F63B6A /* TopicText.swift in Sources */,
 				F3BF16DA2E2C76A8005212D1 /* ContentView.swift in Sources */,
 				F314C8032E2E2AA800F63B6A /* FontWeightItem.swift in Sources */,
@@ -726,7 +732,7 @@
 				F314C8352E2E538200F63B6A /* TopicButton.swift in Sources */,
 				F35199232E2B9F53004E0F02 /* Experience.swift in Sources */,
 				F35199242E2B9F53004E0F02 /* TopicTile.swift in Sources */,
-				F3202C942D55952F0030B3CC /* App Store Overlay.swift in Sources */,
+				F3202C942D55952F0030B3CC /* AppStoreOverlay.swift in Sources */,
 				F3146C4E2CF7382C005D58B3 /* Font List.swift in Sources */,
 				F3BBD9E22AEECD3400A9F7E7 /* Master SwiftUI.swift in Sources */,
 				F314C80C2E2E486200F63B6A /* TopicTextEditor.swift in Sources */,

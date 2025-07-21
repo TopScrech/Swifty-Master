@@ -41,6 +41,7 @@ func topicView(_ topic: Topic) -> AnyView? {
         // View
     case .emptyView: AnyView(TopicEmptyView())
     case .appStoreOverlay: AnyView(AppStoreOverlay())
+    case .sheet: AnyView(TopicSheet())
         
         // Nav
     case .dismiss: AnyView(TopicDismiss())
