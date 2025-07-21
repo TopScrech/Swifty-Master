@@ -6,6 +6,7 @@ struct SettingsView: View {
         Form {
             
         }
+        .navigationTitle("Settings")
         .formStyle(.grouped)
         .buttonStyle(.plain)
         .scrollIndicators(.never)

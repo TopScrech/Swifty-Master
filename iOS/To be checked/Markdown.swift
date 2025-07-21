@@ -46,7 +46,7 @@ struct Markdown: View {
             }
         }
         .multilineTextAlignment(.center)
-        .navigationTitle("Martdown")
+        .navigationTitle("Markdown")
         .toolbarTitleDisplayMode(.inline)
     }
 }
