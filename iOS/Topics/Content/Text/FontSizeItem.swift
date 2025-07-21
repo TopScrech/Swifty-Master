@@ -1,20 +1,20 @@
 import SwiftUI
 
 struct FontSizeItem: View {
-    private let font: TextFontSize
+    private let text: TextFontSize
     
-    init(_ font: TextFontSize) {
-        self.font = font
+    init(_ text: TextFontSize) {
+        self.text = text
     }
     
     var body: some View {
         HStack(alignment: .firstTextBaseline) {
-            Text("\(font.size)pt")
+            Text("\(text.size)pt")
                 .secondary()
                 .monospacedDigit()
             
-            Text(font.name)
-                .font(font.font)
+            Text(text.name)
+                .font(text.font)
             
             Spacer()
         }

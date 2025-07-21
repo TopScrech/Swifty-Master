@@ -29,6 +29,13 @@ struct TopicText: View {
         .init("Black",      weight: .black)
     ]
     
+    private let designs: [TextFontDesign] = [
+        .init("Default",    design: .default),
+        .init("Serif",      design: .serif),
+        .init("Monospaced", design: .monospaced),
+        .init("Rounded",    design: .rounded)
+    ]
+    
     var body: some View {
         VStack(spacing: 25) {
             Text("Text is a SwiftUI element used to display static or dynamic strings in the interface. It supports rich formatting, localization, and adapts to system-wide accessibility settings")
@@ -42,6 +49,12 @@ struct TopicText: View {
             TopicDisclosureGroup("Font Weight") {
                 ForEach(weights) { text in
                     FontWeightItem(text)
+                }
+            }
+            
+            TopicDisclosureGroup("Font Design") {
+                ForEach(designs) { text in
+                    FontDesignItem(text)
                 }
             }
             

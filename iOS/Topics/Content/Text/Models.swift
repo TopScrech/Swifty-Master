@@ -29,3 +29,17 @@ struct TextFontWeight: Identifiable {
         self.weight = weight
     }
 }
+
+struct TextFontDesign: Identifiable {
+    var id: String {
+        name
+    }
+    
+    let name: String
+    let design: Font.Design
+    
+    init(_ name: String, design: Font.Design) {
+        self.name = name
+        self.design = design
+    }
+}
