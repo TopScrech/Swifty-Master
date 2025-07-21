@@ -13,30 +13,20 @@ struct TopicToggle: View {
             
             TopicHeading("Style Details")
             
-            DisclosureGroup {
+            TopicDisclosureGroup("Style") {
                 VStack(spacing: 25) {
                     Toggle("Purple", isOn: $isOn)
                         .tint(.purple)
                 }
-                .padding(5)
-            } label: {
-                Text("Style")
-                    .title3(.semibold, design: .rounded)
-                    .foregroundStyle(.foreground)
             }
             
-            DisclosureGroup {
+            TopicDisclosureGroup("Color") {
                 VStack(spacing: 25) {
                     Toggle("Purple", isOn: $isOn)
                         .tint(.purple)
                     
                     SimpleCodeBlockView(.toggleTint)
                 }
-                .padding(5)
-            } label: {
-                Text("Color")
-                    .title3(.semibold, design: .rounded)
-                    .foregroundStyle(.foreground)
             }
         }
     }

@@ -21,18 +21,24 @@ struct ContentView: View {
 
 func topicView(_ topic: Topic) -> AnyView? {
     switch topic {
-    case .dismiss: AnyView(TopicDismiss())
-    case .appStoreOverlay: AnyView(AppStoreOverlay())
-    case .detectDarkMode: AnyView(TopicDarkMode())
+        // Content
+    case .text: AnyView(TopicText())
         
         // View
     case .emptyView: AnyView(TopicEmptyView())
+    case .appStoreOverlay: AnyView(AppStoreOverlay())
+        
+        // Nav
+    case .dismiss: AnyView(TopicDismiss())
         
         // Layout
     case .spacer: AnyView(TopicSpacer())
         
         // Control
     case .toggle: AnyView(TopicToggle())
+        
+        // System
+    case .detectDarkMode: AnyView(TopicDarkMode())
         
     default: nil
     }

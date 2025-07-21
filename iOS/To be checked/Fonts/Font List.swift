@@ -1,18 +1,6 @@
 import ScrechKit
 
-struct FontList: View {
-    // largeTitle  34pt
-    // title       28pt
-    // title2      26pt
-    // title3      22pt
-    // headline    20pt
-    // callout     18pt
-    // body        17pt
-    // subheadline 16pt
-    // footnote    14pt
-    // caption     12pt
-    // caption2    11pt
-    
+struct FontList: View {    
     @State private var isBold = false
     
     var body: some View {
