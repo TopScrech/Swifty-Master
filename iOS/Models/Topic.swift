@@ -148,7 +148,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         case .sfSymbols: "environments"
         case .label: "character.textbox"
         case .shape: "circle.on.square"
-        case .divider: "square.filled.and.line.vertical.and.square"
+        case .divider: "square.and.line.vertical.and.square"
         case .customKeyboard: "keyboard"
         case .button: "digitalcrown.press"
         case .menu: "filemenu.and.pointer.arrow"
