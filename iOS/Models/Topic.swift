@@ -126,7 +126,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         case .shape: "circle.on.square"
         case .divider: "square.filled.and.line.vertical.and.square"
         case .customKeyboard: "keyboard"
-        case .button: "character.textbox"
+        case .button: "digitalcrown.press"
         case .menu: "filemenu.and.pointer.arrow"
         case .contextMenu: "contextualmenu.and.pointer.arrow"
         case .toggle: "switch.2"
