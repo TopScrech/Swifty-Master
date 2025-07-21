@@ -6,6 +6,7 @@ struct TopicSpacer: View {
             Text("Spacer() is an element that takes up as much space as it can in a layout")
             
             Text("Simple Spacer")
+            
             SimpleCodeBlockView(.spacer)
             
             Text("Spacer with a minimum size")
@@ -18,8 +19,8 @@ Spacer(minLength: 16)
 Spacer()
     .minLength(16)
 """)
-            
             Text("Spacer with a fixed size")
+            
             SimpleCodeBlockView("""
 Spacer()
     .frame(width: 6, height: 6)
