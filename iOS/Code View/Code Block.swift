@@ -15,6 +15,8 @@ enum CodeBlock: String {
          stepper,
          slider,
          toggle, toggleTint,
+         menu,
+         contextMenu,
          
          // View
          appStoreOverlay,
@@ -43,6 +45,40 @@ enum CodeBlock: String {
     
     var code: String {
         switch self {
+        case .menu:
+"""
+Menu {
+    Button {
+        ...
+    } label: {
+        Label("Copy", systemImage: "doc.on.doc")
+    }
+} label: {
+    Image(systemName: "pencil")
+}
+"""
+            
+        case .contextMenu:
+"""
+Text("Goida")
+    .contextMenu {
+        Button {
+            
+        } label: {
+            Label("Button", systemName: "hammer")
+            
+            // or
+            
+            Label {
+                Text("Button")
+                Text("Button Subtitle") // optional
+            } icon: {
+                Image(systemName: "hammer")
+            }
+        }
+    }
+"""
+            
         case .button:
 """
 Button("TextDisplayed") {
