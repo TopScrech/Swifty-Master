@@ -3,9 +3,13 @@ import SwiftUI
 struct TopicButton: View {
     var body: some View {
         VStack(spacing: 25) {
-            Text("TopicButton")
+            Text("Button is a UI element that allows users to trigger an action when tapped")
             
-//            SimpleCodeBlockView(.image)
+            SimpleCodeBlockView(.button)
+            
+            TopicHeading("Custom Label")
+            
+            SimpleCodeBlockView(.buttonCustom)
         }
     }
 }

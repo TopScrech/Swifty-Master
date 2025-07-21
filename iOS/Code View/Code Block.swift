@@ -10,6 +10,7 @@ enum CodeBlock: String {
          textEditor,
          
          // Control
+         button, buttonCustom,
          picker,
          stepper,
          slider,
@@ -42,6 +43,28 @@ enum CodeBlock: String {
     
     var code: String {
         switch self {
+        case .button:
+"""
+Button("TextDisplayed") {
+    // What the button does
+}
+.buttonStyle(.borderedProminent)
+.tint(.red)
+.controlSize(.large)
+.buttonBorderShape(.capsule) // Not on macOS
+.disabled(false)
+"""
+            
+        case .buttonCustom:
+"""
+Button {
+    // What the button does
+} label: {
+    // How the button looks like
+}
+.buttonStyle(.plain) // Prevents the automatic style
+"""
+            
         case .slider:
 """
 struct ContentView: View {
