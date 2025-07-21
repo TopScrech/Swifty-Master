@@ -23,6 +23,7 @@ func topicView(_ topic: Topic) -> AnyView? {
     switch topic {
         // Content
     case .text: AnyView(TopicText())
+    case .textField: AnyView(TopicTextField())
         
         // View
     case .emptyView: AnyView(TopicEmptyView())

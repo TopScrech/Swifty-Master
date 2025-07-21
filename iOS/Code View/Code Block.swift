@@ -8,12 +8,34 @@ enum CodeBlock: String {
          spacer,
          dismiss,
          darkMode,
+         textField, textFieldDisableAutocorrection,
          dismissHideBackButton,
          emptyView, emptyViewAnyView,
          mdRegular, mdBoldItalic, mdStrikethrough, mdMonospaced, mdLink
     
     var code: String {
         switch self {
+        case .textFieldDisableAutocorrection:
+"""
+TextField("Placeholder", text: $text)
+    .autocorrectionDisabled()
+    
+    //or
+    
+    .autocorrectionDisabled(boolProperty)
+"""
+            
+        case .textField:
+"""
+struct ContentView: View {
+    @State private var text = ""
+    
+    var body: some View {
+        TextField("Placeholder", text: $text)
+    }
+}
+"""
+            
         case .textLineLimit:
 """
 Text("GoidaGoida")
