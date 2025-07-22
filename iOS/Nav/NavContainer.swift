@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct NavContainer: View {
+    @EnvironmentObject private var store: ValueStore
     @Environment(\.scenePhase) private var scenePhase
     private var nav: NavModel = .shared
     private var dataModel: DataModel = .shared
@@ -31,6 +32,7 @@ struct NavContainer: View {
         }
         .environment(nav)
         .environment(dataModel)
+        .preferredColorScheme(store.colorTheme.scheme)
         .sheet(isPresented: $nav.showExperiencePicker) {
             ExperiencePicker($experience)
         }
@@ -60,4 +62,5 @@ struct NavContainer: View {
 
 #Preview {
     NavContainer()
+        .environmentObject(ValueStore())
 }

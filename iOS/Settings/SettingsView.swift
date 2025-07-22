@@ -5,7 +5,12 @@ struct SettingsView: View {
     
     var body: some View {
         Form {
-            Text("Settings")
+            Picker("Color theme", selection: $store.colorTheme) {
+                ForEach(ColorTheme.allCases) { theme in
+                    Text(theme.loc)
+                        .tag(theme)
+                }
+            }
         }
         .navigationTitle("Settings")
         .formStyle(.grouped)
