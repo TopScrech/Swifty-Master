@@ -18,6 +18,19 @@ struct StackContentView: View {
                         NavigationLink(value: topic) {
                             TopicLinkLabel(topic)
                         }
+                        .swipeActions(edge: .leading) {
+                            Button {
+#warning("Does nothing")
+                            } label: {
+                                Label("Favorite", systemImage: "star")
+                                    .tint(.yellow)
+                            }
+                        }
+                        .swipeActions {
+                            if let url = topic.shareLink {
+                                ShareLink(item: url)
+                            }
+                        }
                     }
                 }
             }
