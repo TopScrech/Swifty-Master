@@ -40,6 +40,10 @@ struct TopicLinkLabel: View {
                 Label("Favorite", systemImage: "star")
                     .tint(.yellow)
             }
+            
+            if let url = topic.shareLink {
+                ShareLink(item: url)
+            }
         }
     }
 }
