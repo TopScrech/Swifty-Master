@@ -70,7 +70,6 @@
 		F3202CBD2D5597180030B3CC /* Hover Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */; };
 		F3202CBE2D5597310030B3CC /* Font List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3146C4D2CF7382C005D58B3 /* Font List.swift */; };
 		F3202CC02D5597400030B3CC /* AppStoreOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3202C932D55952F0030B3CC /* AppStoreOverlay.swift */; };
-		F3202CC12D5597450030B3CC /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E32AEECD3400A9F7E7 /* Home View.swift */; };
 		F3202CC22D5597490030B3CC /* Master SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E12AEECD3400A9F7E7 /* Master SwiftUI.swift */; };
 		F3202CC42D5597640030B3CC /* Gauges View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE40BE2D1387FE00B7AD35 /* Gauges View.swift */; };
 		F3202CC52D55977A0030B3CC /* Image Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9FA2AEED4CE00A9F7E7 /* Image Picker.swift */; };
@@ -148,7 +147,6 @@
 		F3AE99D92E2F861C00D70249 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE99D82E2F861C00D70249 /* ColorTheme.swift */; };
 		F3AE99DA2E2F861C00D70249 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE99D82E2F861C00D70249 /* ColorTheme.swift */; };
 		F3BBD9E22AEECD3400A9F7E7 /* Master SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E12AEECD3400A9F7E7 /* Master SwiftUI.swift */; };
-		F3BBD9E42AEECD3400A9F7E7 /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E32AEECD3400A9F7E7 /* Home View.swift */; };
 		F3BBD9E82AEECD3500A9F7E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */; };
 		F3BBD9F42AEECD6C00A9F7E7 /* Materials View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9F32AEECD6C00A9F7E7 /* Materials View.swift */; };
 		F3BBD9F72AEECE4000A9F7E7 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3BBD9F62AEECE4000A9F7E7 /* ScrechKit */; };
@@ -312,7 +310,6 @@
 		F3AE99D82E2F861C00D70249 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
 		F3BBD9DE2AEECD3400A9F7E7 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3BBD9E12AEECD3400A9F7E7 /* Master SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Master SwiftUI.swift"; sourceTree = "<group>"; };
-		F3BBD9E32AEECD3400A9F7E7 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3BBD9E92AEECD3500A9F7E7 /* iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS.entitlements; sourceTree = "<group>"; };
 		F3BBD9ED2AEECD3500A9F7E7 /* iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iOS.plist; sourceTree = "<group>"; };
@@ -641,7 +638,6 @@
 				F314C8252E2E52A200F63B6A /* ValueStore.swift */,
 				F35198E72E2B9F53004E0F02 /* DataModel.swift */,
 				F35198EA2E2B9F53004E0F02 /* NavModel.swift */,
-				F3BBD9E32AEECD3400A9F7E7 /* Home View.swift */,
 				F35198EC2E2B9F53004E0F02 /* Models */,
 				F3BF16DF2E2C779E005212D1 /* Topics */,
 				F35198C62E2B7E73004E0F02 /* Code View */,
@@ -934,7 +930,6 @@
 				F314C8362E2E538200F63B6A /* TopicButton.swift in Sources */,
 				F3ADA6172D9C03E700F2DAA6 /* Plural Translation.swift in Sources */,
 				F314C83C2E2E540800F63B6A /* TopicSheet.swift in Sources */,
-				F3202CC12D5597450030B3CC /* Home View.swift in Sources */,
 				F351984C2E2AEDCB004E0F02 /* Code Block View.swift in Sources */,
 				F35198FD2E2B9F53004E0F02 /* Topic.swift in Sources */,
 				F3378F9E2E2E68DF00A31D7F /* TopicDetectOSVersion.swift in Sources */,
@@ -983,7 +978,6 @@
 				F351985A2E2AFF55004E0F02 /* Code Block Modifier.swift in Sources */,
 				F3EB1CB62C58FFE5007E6366 /* Hover Effects.swift in Sources */,
 				F37916EE2AF14A7A00B880AF /* Image Picker 2.swift in Sources */,
-				F3BBD9E42AEECD3400A9F7E7 /* Home View.swift in Sources */,
 				F32E88D52AF856E400959D49 /* Journal View.swift in Sources */,
 				F3BF16DD2E2C7717005212D1 /* TopicDismiss.swift in Sources */,
 				F314C7F92E2E1F0F00F63B6A /* TopicDisclosureGroup.swift in Sources */,
