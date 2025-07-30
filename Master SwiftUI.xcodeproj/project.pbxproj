@@ -558,7 +558,7 @@
 				F35198C32E2B7E56004E0F02 /* Simple Code Block View.swift */,
 				F35198C02E2B7E34004E0F02 /* Attributed Code String.swift */,
 				F35198582E2AFF55004E0F02 /* Code Block Modifier.swift */,
-				F3CC1E0E2E343C3A00611B60 /* CodeBlock Cases */,
+				F3CC1E0E2E343C3A00611B60 /* Code Blocks */,
 			);
 			path = "Code View";
 			sourceTree = "<group>";
@@ -673,7 +673,7 @@
 			path = Nav;
 			sourceTree = "<group>";
 		};
-		F3CC1E0E2E343C3A00611B60 /* CodeBlock Cases */ = {
+		F3CC1E0E2E343C3A00611B60 /* Code Blocks */ = {
 			isa = PBXGroup;
 			children = (
 				F3CC1DEA2E343C3A00611B60 /* alert.txt */,
@@ -713,7 +713,7 @@
 				F3CC1E0C2E343C3A00611B60 /* toggle.txt */,
 				F3CC1E0D2E343C3A00611B60 /* toggleTint.txt */,
 			);
-			path = "CodeBlock Cases";
+			path = "Code Blocks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
