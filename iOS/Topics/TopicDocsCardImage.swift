@@ -9,6 +9,7 @@ struct TopicDocsCardImage: View {
     
     private var image: ImageResource? {
         switch true {
+        case link.contains("human-interface-guidelines"): .appleGuidelines
         case link.contains("developer.apple"): .apple
         default: nil
         }
@@ -18,7 +19,7 @@ struct TopicDocsCardImage: View {
         if let image {
             Image(image)
                 .resizable()
-                .frame(40)
+                .frame(32)
         }
     }
 }

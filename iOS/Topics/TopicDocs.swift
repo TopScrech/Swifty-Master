@@ -8,11 +8,13 @@ struct TopicDocs: View {
     }
     
     var body: some View {
-        if docs.count > 0 {
-            TopicHeading("Documentation")
-            
-            ForEach(Array(docs), id: \.key) { key, value in
-                TopicDocsCard(key, at: value)
+        VStack(spacing: 10) {
+            if docs.count > 0 {
+                TopicHeading("Docs")
+                
+                ForEach(Array(docs), id: \.key) { key, value in
+                    TopicDocsCard(key, at: value)
+                }
             }
         }
     }

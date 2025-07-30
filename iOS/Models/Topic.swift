@@ -218,7 +218,10 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
             
             // Control
         case .toggle:
-            ["Toggle": "https://developer.apple.com/documentation/swiftui/toggle"]
+            [
+                "Toggle": "https://developer.apple.com/documentation/swiftui/toggle",
+                "Toggles": "https://developer.apple.com/design/human-interface-guidelines/toggles"
+            ]
             
             // Layout
         case .spacer:

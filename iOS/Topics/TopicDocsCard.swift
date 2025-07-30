@@ -16,7 +16,8 @@ struct TopicDocsCard: View {
                     TopicDocsCardImage(link)
                     
                     Text(title)
-                        .title2(.bold, design: .rounded)
+                        .bold()
+                        .rounded()
                         .lineLimit(2)
                         .foregroundStyle(.foreground)
                         .frame(maxWidth: .infinity, alignment: .leading)
