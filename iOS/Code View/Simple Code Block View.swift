@@ -18,7 +18,6 @@ struct SimpleCodeBlockView: View {
             Text(attributedCodeString(for: code))
                 .monospaced()
                 .padding(20)
-                .frame(minWidth: UIScreen.main.bounds.width * 0.92)
                 .background(.ultraThinMaterial)
                 .cornerRadius(20)
                 .foregroundColor(.white)
