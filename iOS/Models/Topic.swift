@@ -70,7 +70,8 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          differentiateOS = "Differentiate OS",
          detectScreenSize = "Detect Screen Size",
          detectCompactOrRegular = "Detect Compact or Regular",
-         detectLang = "Detect Language"
+         detectLang = "Detect Language",
+         lowPowerMode = "Low Power Mode"
     
     var id: String {
         rawValue
@@ -103,7 +104,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         case .color, .gradient:
                 .design
             
-        case .detectOSVersion, .detectDarkMode, .detectDeviceUsed, .differentiateOS, .detectScreenSize, .detectCompactOrRegular, .detectLang:
+        case .detectOSVersion, .detectDarkMode, .detectDeviceUsed, .differentiateOS, .detectScreenSize, .detectCompactOrRegular, .detectLang, .lowPowerMode:
                 .system
         }
     }
@@ -194,6 +195,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         case .detectScreenSize: "arrow.down.left.and.arrow.up.right.rectangle"
         case .detectCompactOrRegular: "iphone.sizes"
         case .detectLang: "text.magnifyingglass"
+        case .lowPowerMode: "battery.25percent"
         }
     }
     
