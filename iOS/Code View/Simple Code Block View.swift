@@ -33,7 +33,7 @@ struct SimpleCodeBlockView: View {
                     //                    .background(.ultraThinMaterial, in: .rect(cornerRadius: 8))
                         .padding(8)
                 }
-                .foregroundStyle(.secondary)
+                .secondary()
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
             }
         }

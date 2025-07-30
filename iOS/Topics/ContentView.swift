@@ -15,6 +15,7 @@ struct ContentView: View {
             }
             
             TopicDocs(topic.docs)
+                .scenePadding()
         }
     }
 }

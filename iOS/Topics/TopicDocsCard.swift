@@ -12,7 +12,7 @@ struct TopicDocsCard: View {
     var body: some View {
         if let url = URL(string: link) {
             Link(destination: url) {
-                HStack {
+                HStack(spacing: 12) {
                     TopicDocsCardImage(link)
                     
                     Text(title)
@@ -23,7 +23,7 @@ struct TopicDocsCard: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .multilineTextAlignment(.leading)
                 }
-                .padding(8)
+                .padding(10)
                 .background(.ultraThinMaterial, in: .rect(cornerRadius: 16))
             }
         }
@@ -31,5 +31,7 @@ struct TopicDocsCard: View {
 }
 
 #Preview {
-    TopicDocsCard("Preview", at: "https://bisquit.host")
+    TopicDocsCard("Preview", at: "https://developer.apple.com/documentation/swiftui/toggle")
+        .darkSchemePreferred()
+        .scenePadding()
 }
