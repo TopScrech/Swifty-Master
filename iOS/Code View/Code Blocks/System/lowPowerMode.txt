@@ -1,0 +1,11 @@
+struct ContentView: View {
+    private let lowPowerMode = ProcessInfo.processInfo.isLowPowerModeEnabled
+    
+    var body: some View {
+        if lowPowerMode {
+            Text("Low Power Mode enabled")
+        } else {
+            Text("Low Power Mode disabled")
+        }
+    }
+}

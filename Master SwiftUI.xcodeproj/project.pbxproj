@@ -140,6 +140,10 @@
 		F35199232E2B9F53004E0F02 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E82E2B9F53004E0F02 /* Experience.swift */; };
 		F35199242E2B9F53004E0F02 /* TopicTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198FB2E2B9F53004E0F02 /* TopicTile.swift */; };
 		F37916EE2AF14A7A00B880AF /* Image Picker 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37916ED2AF14A7A00B880AF /* Image Picker 2.swift */; };
+		F388D19C2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */; };
+		F388D19D2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */; };
+		F388D1A02E3AB51C002A1128 /* lowPowerMode.txt in Resources */ = {isa = PBXBuildFile; fileRef = F388D19F2E3AB51C002A1128 /* lowPowerMode.txt */; };
+		F388D1A12E3AB51C002A1128 /* lowPowerMode.txt in Resources */ = {isa = PBXBuildFile; fileRef = F388D19F2E3AB51C002A1128 /* lowPowerMode.txt */; };
 		F3ADA6162D9C03E700F2DAA6 /* Plural Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ADA6152D9C03E700F2DAA6 /* Plural Translation.swift */; };
 		F3ADA6172D9C03E700F2DAA6 /* Plural Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ADA6152D9C03E700F2DAA6 /* Plural Translation.swift */; };
 		F3ADA61A2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */; };
@@ -305,6 +309,8 @@
 		F35198F82E2B9F53004E0F02 /* TopicGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicGrid.swift; sourceTree = "<group>"; };
 		F35198FB2E2B9F53004E0F02 /* TopicTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTile.swift; sourceTree = "<group>"; };
 		F37916ED2AF14A7A00B880AF /* Image Picker 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker 2.swift"; sourceTree = "<group>"; };
+		F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLowPowerMode.swift; sourceTree = "<group>"; };
+		F388D19F2E3AB51C002A1128 /* lowPowerMode.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lowPowerMode.txt; sourceTree = "<group>"; };
 		F3ADA6152D9C03E700F2DAA6 /* Plural Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plural Translation.swift"; sourceTree = "<group>"; };
 		F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F3AE99D82E2F861C00D70249 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
@@ -498,6 +504,7 @@
 			children = (
 				F34480312E2CD41100D18E2E /* TopicDarkMode.swift */,
 				F3378F9C2E2E68DF00A31D7F /* TopicDetectOSVersion.swift */,
+				F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -598,6 +605,17 @@
 			path = Topic;
 			sourceTree = "<group>";
 		};
+		F388D19E2E3AB516002A1128 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				F3CC1DF02E343C3A00611B60 /* darkMode.txt */,
+				F3CC1DF12E343C3A00611B60 /* detectOSVersion.txt */,
+				F3CC1DF22E343C3A00611B60 /* detectOSVersionNewAndOld.txt */,
+				F388D19F2E3AB51C002A1128 /* lowPowerMode.txt */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
 		F3ADA6182D9C03EC00F2DAA6 /* Loc */ = {
 			isa = PBXGroup;
 			children = (
@@ -686,9 +704,6 @@
 				F3CC1DED2E343C3A00611B60 /* buttonCustom.txt */,
 				F3CC1DEE2E343C3A00611B60 /* color.txt */,
 				F3CC1DEF2E343C3A00611B60 /* contextMenu.txt */,
-				F3CC1DF02E343C3A00611B60 /* darkMode.txt */,
-				F3CC1DF12E343C3A00611B60 /* detectOSVersion.txt */,
-				F3CC1DF22E343C3A00611B60 /* detectOSVersionNewAndOld.txt */,
 				F3CC1DF32E343C3A00611B60 /* dismiss.txt */,
 				F3CC1DF42E343C3A00611B60 /* dismissHideBackButton.txt */,
 				F3CC1DF52E343C3A00611B60 /* divider.txt */,
@@ -716,6 +731,7 @@
 				F3CC1E0B2E343C3A00611B60 /* textLineLimit.txt */,
 				F3CC1E0C2E343C3A00611B60 /* toggle.txt */,
 				F3CC1E0D2E343C3A00611B60 /* toggleTint.txt */,
+				F388D19E2E3AB516002A1128 /* System */,
 			);
 			path = "Code Blocks";
 			sourceTree = "<group>";
@@ -830,6 +846,7 @@
 				F3CC1E492E343C3A00611B60 /* popover.txt in Resources */,
 				F3CC1E4A2E343C3A00611B60 /* appStoreOverlay.txt in Resources */,
 				F3CC1E4B2E343C3A00611B60 /* picker.txt in Resources */,
+				F388D1A12E3AB51C002A1128 /* lowPowerMode.txt in Resources */,
 				F3CC1E4C2E343C3A00611B60 /* mdBoldItalic.txt in Resources */,
 				F3CC1E4D2E343C3A00611B60 /* toggleTint.txt in Resources */,
 				F3CC1E4E2E343C3A00611B60 /* buttonCustom.txt in Resources */,
@@ -868,6 +885,7 @@
 				F3CC1E1F2E343C3A00611B60 /* gradient.txt in Resources */,
 				F3CC1E202E343C3A00611B60 /* darkMode.txt in Resources */,
 				F3CC1E212E343C3A00611B60 /* button.txt in Resources */,
+				F388D1A02E3AB51C002A1128 /* lowPowerMode.txt in Resources */,
 				F3CC1E222E343C3A00611B60 /* mdStrikethrough.txt in Resources */,
 				F3CC1E232E343C3A00611B60 /* stepper.txt in Resources */,
 				F3CC1E242E343C3A00611B60 /* dismiss.txt in Resources */,
@@ -918,6 +936,7 @@
 				F35198C42E2B7E56004E0F02 /* Simple Code Block View.swift in Sources */,
 				F314C8002E2E2A9400F63B6A /* FontSizeItem.swift in Sources */,
 				F35198482E2AECAA004E0F02 /* Gauge Card.swift in Sources */,
+				F388D19D2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */,
 				F3202CC72D55977A0030B3CC /* Image Picker View.swift in Sources */,
 				F314C8262E2E52A200F63B6A /* ValueStore.swift in Sources */,
 				F34480482E2D5D1900D18E2E /* SettingsView.swift in Sources */,
@@ -1047,6 +1066,7 @@
 				F3BBD9F92AEED4BC00A9F7E7 /* Image Picker View.swift in Sources */,
 				F35198C12E2B7E34004E0F02 /* Attributed Code String.swift in Sources */,
 				F314C8182E2E4BB600F63B6A /* TopicDivider.swift in Sources */,
+				F388D19C2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */,
 				F34480332E2CD41100D18E2E /* TopicDarkMode.swift in Sources */,
 				F351984B2E2AEDCB004E0F02 /* Code Block View.swift in Sources */,
 			);
