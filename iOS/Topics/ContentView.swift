@@ -17,6 +17,18 @@ struct ContentView: View {
             TopicDocs(topic.docs)
                 .scenePadding()
         }
+        .toolbar {
+            Button {
+#warning("Does nothing")
+            } label: {
+                Image(systemName: "star")
+                    .foregroundStyle(.yellow)
+            }
+            
+            if let url = topic.shareLink {
+                ShareLink(item: url)
+            }
+        }
     }
 }
 

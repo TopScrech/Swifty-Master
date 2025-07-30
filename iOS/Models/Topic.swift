@@ -81,6 +81,14 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         rawValue
     }
     
+    var shareLink: URL? {
+        if let url = URL(string: "https://swift-docs.dev/" + self.rawValue) {
+            url
+        } else {
+            nil
+        }
+    }
+    
     var category: Category {
         switch self {
         case .text, .textField, .textEditor, .image, .sfSymbols, .label, .shape, .divider, .customKeyboard:
