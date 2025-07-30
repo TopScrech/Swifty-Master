@@ -229,6 +229,10 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         case .spacer:
             ["Spacer": "https://developer.apple.com/documentation/swiftui/spacer"]
             
+            // System
+        case .lowPowerMode:
+            ["isLowPowerModeEnabled": "https://developer.apple.com/documentation/foundation/processinfo/islowpowermodeenabled"]
+            
         default: [:]
         }
     }
