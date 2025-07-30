@@ -33,6 +33,14 @@ struct TopicLinkLabel: View {
                     .secondary()
             }
         }
+        .contextMenu {
+            Button {
+#warning("Does nothing")
+            } label: {
+                Label("Favorite", systemImage: "star")
+                    .tint(.yellow)
+            }
+        }
     }
 }
 
