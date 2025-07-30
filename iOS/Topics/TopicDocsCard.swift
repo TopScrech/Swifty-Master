@@ -27,9 +27,11 @@ struct TopicDocsCard: View {
                 .background(.ultraThinMaterial, in: .rect(cornerRadius: 16))
             }
             .contextMenu {
-                Button {
-                    
+                Button("Copy", systemImage: "document.on.document") {
+                    UIPasteboard.general.url = url
                 }
+                
+                ShareLink(item: url)
             }
         }
     }
