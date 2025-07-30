@@ -17,8 +17,10 @@ struct TwoColumnContentView: View {
             }
             .navigationTitle("Categories")
             .toolbar {
-                SFButton("gear") {
-                    sheetSettings = true
+                ToolbarItem(placement: .topBarTrailing) {
+                    SFButton("gear") {
+                        sheetSettings = true
+                    }
                 }
             }
             .sheet($sheetSettings) {

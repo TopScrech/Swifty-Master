@@ -35,8 +35,10 @@ struct StackContentView: View {
                 }
             }
             .toolbar {
-                SFButton("gear") {
-                    sheetSettings = true
+                ToolbarItem(placement: .topBarTrailing) {
+                    SFButton("gear") {
+                        sheetSettings = true
+                    }
                 }
             }
             .sheet($sheetSettings) {
