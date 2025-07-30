@@ -78,6 +78,10 @@
 		F3202CC72D55977A0030B3CC /* Image Picker View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9F82AEED4BC00A9F7E7 /* Image Picker View.swift */; };
 		F3202CC82D55978A0030B3CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */; };
 		F32E88D52AF856E400959D49 /* Journal View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32E88D42AF856E400959D49 /* Journal View.swift */; };
+		F330586C2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */; };
+		F330586D2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */; };
+		F330586F2E3A9B250099CEB7 /* TopicDocsCardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */; };
+		F33058702E3A9B250099CEB7 /* TopicDocsCardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */; };
 		F3378F9D2E2E68DF00A31D7F /* TopicDetectOSVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3378F9C2E2E68DF00A31D7F /* TopicDetectOSVersion.swift */; };
 		F3378F9E2E2E68DF00A31D7F /* TopicDetectOSVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3378F9C2E2E68DF00A31D7F /* TopicDetectOSVersion.swift */; };
 		F34480322E2CD41100D18E2E /* TopicDarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480312E2CD41100D18E2E /* TopicDarkMode.swift */; };
@@ -271,6 +275,8 @@
 		F3202CAF2D5596210030B3CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3202CB22D5596210030B3CC /* visionOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = visionOS.plist; sourceTree = "<group>"; };
 		F32E88D42AF856E400959D49 /* Journal View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journal View.swift"; sourceTree = "<group>"; };
+		F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCard.swift; sourceTree = "<group>"; };
+		F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCardImage.swift; sourceTree = "<group>"; };
 		F3378F9C2E2E68DF00A31D7F /* TopicDetectOSVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectOSVersion.swift; sourceTree = "<group>"; };
 		F34480312E2CD41100D18E2E /* TopicDarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDarkMode.swift; sourceTree = "<group>"; };
 		F34480352E2D218400D18E2E /* TopicEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicEmptyView.swift; sourceTree = "<group>"; };
@@ -652,6 +658,8 @@
 				F3BF16D92E2C76A8005212D1 /* ContentView.swift */,
 				F3BF16E12E2C7D1C005212D1 /* TopicHeading.swift */,
 				F3BF16E52E2CCDEE005212D1 /* TopicDocs.swift */,
+				F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */,
+				F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */,
 				F344803F2E2D4E0500D18E2E /* TopicActionButton.swift */,
 				F314C7F82E2E1F0F00F63B6A /* TopicDisclosureGroup.swift */,
 				F314C7F42E2E1E7200F63B6A /* Content */,
@@ -905,6 +913,7 @@
 				F314C8042E2E2AA800F63B6A /* FontWeightItem.swift in Sources */,
 				F34480372E2D218400D18E2E /* TopicEmptyView.swift in Sources */,
 				F35198C22E2B7E34004E0F02 /* Attributed Code String.swift in Sources */,
+				F33058702E3A9B250099CEB7 /* TopicDocsCardImage.swift in Sources */,
 				F314C7F32E2E1C1800F63B6A /* TopicLinkLabel.swift in Sources */,
 				F314C8542E2E65F000F63B6A /* TopicPopover.swift in Sources */,
 				F314C7FA2E2E1F0F00F63B6A /* TopicDisclosureGroup.swift in Sources */,
@@ -929,6 +938,7 @@
 				F351984C2E2AEDCB004E0F02 /* Code Block View.swift in Sources */,
 				F35198FD2E2B9F53004E0F02 /* Topic.swift in Sources */,
 				F3378F9E2E2E68DF00A31D7F /* TopicDetectOSVersion.swift in Sources */,
+				F330586C2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */,
 				F35198FE2E2B9F53004E0F02 /* ExperienceButton.swift in Sources */,
 				F314C8132E2E4B6A00F63B6A /* TopicSFSymbols.swift in Sources */,
 				F35198FF2E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */,
@@ -1027,7 +1037,9 @@
 				F34480402E2D4E0500D18E2E /* TopicActionButton.swift in Sources */,
 				F3BF16E22E2C7D1C005212D1 /* TopicHeading.swift in Sources */,
 				F35198C52E2B7E56004E0F02 /* Simple Code Block View.swift in Sources */,
+				F330586F2E3A9B250099CEB7 /* TopicDocsCardImage.swift in Sources */,
 				F3D8C11C2B2BB51000C7B0A9 /* Sensory Feedback.swift in Sources */,
+				F330586D2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */,
 				F3BE40BF2D1387FE00B7AD35 /* Gauges View.swift in Sources */,
 				F3BBD9F42AEECD6C00A9F7E7 /* Materials View.swift in Sources */,
 				F3ADA6162D9C03E700F2DAA6 /* Plural Translation.swift in Sources */,

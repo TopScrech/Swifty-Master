@@ -12,9 +12,7 @@ struct TopicDocs: View {
             TopicHeading("Documentation")
             
             ForEach(Array(docs), id: \.key) { key, value in
-                if let url = URL(string: value) {
-                    Link(key, destination: url)
-                }
+                TopicDocsCard(key, at: value)
             }
         }
     }

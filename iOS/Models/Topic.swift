@@ -200,29 +200,29 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
     var docs: [String: String] {
         switch self {
         case .textEditor:
-            ["Apple Developer: Text Editor": "https://developer.apple.com/documentation/swiftui/texteditor"]
+            ["Text Editor": "https://developer.apple.com/documentation/swiftui/texteditor"]
             
         case .appStoreOverlay:
             [
-                "Apple Developer: appstoreoverlay(ispresented:configuration:)": "https://developer.apple.com/documentation/swiftui/view/appstoreoverlay(ispresented:configuration:)",
-                "Apple Developer: SKOverlay": "https://developer.apple.com/documentation/storekit/skoverlay"
+                "appstoreoverlay(ispresented:configuration:)": "https://developer.apple.com/documentation/swiftui/view/appstoreoverlay(ispresented:configuration:)",
+                "SKOverlay": "https://developer.apple.com/documentation/storekit/skoverlay"
             ]
             
             // Content
         case .text:
-            ["Apple Developer: Text": "https://developer.apple.com/documentation/swiftui/text"]
+            ["Text": "https://developer.apple.com/documentation/swiftui/text"]
             
             // Nav
         case .dismiss:
-            ["Apple Developer: dismiss()": "https://developer.apple.com/documentation/swiftui/environmentvalues/dismiss"]
+            ["dismiss()": "https://developer.apple.com/documentation/swiftui/environmentvalues/dismiss"]
             
             // Control
         case .toggle:
-            ["Apple Developer: Toggle": "https://developer.apple.com/documentation/swiftui/toggle"]
+            ["Toggle": "https://developer.apple.com/documentation/swiftui/toggle"]
             
             // Layout
         case .spacer:
-            ["Apple Developer: Spacer": "https://developer.apple.com/documentation/swiftui/spacer"]
+            ["Spacer": "https://developer.apple.com/documentation/swiftui/spacer"]
             
         default: [:]
         }
