@@ -1,0 +1,8 @@
+Button("TextDisplayed") {
+    // What the button does
+}
+.buttonStyle(.borderedProminent)
+.tint(.red)
+.controlSize(.large)
+.buttonBorderShape(.capsule) // Not on macOS
+.disabled(false)

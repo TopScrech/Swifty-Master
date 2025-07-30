@@ -1,0 +1,2 @@
+Toggle("Purple", isOn: $toggle1)
+    .tint(.purple)

@@ -1,0 +1,22 @@
+struct ContentView: View {
+    @State private var showingSheet = false
+
+    var body: some View {
+        Button("Open a sheet") {
+            showingSheet = true
+        }
+        .sheet(isPresented: $showingSheet) {
+            SheetView()
+        }
+    }
+}
+
+struct SheetView: View {
+    @Environment(\.dismiss) var dismiss
+
+    var body: some View {
+        Button("Dismiss the sheet") {
+            dismiss()
+        }
+    }
+}

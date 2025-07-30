@@ -1,0 +1,10 @@
+struct ContentView: View {
+    @State private var hideBackButton = false
+
+    var body: some View {
+        SomeView {...}
+            .navigationBarBackButtonHidden()
+            // or
+            .navigationBarBackButtonHidden(hideBackButton)
+    }
+}

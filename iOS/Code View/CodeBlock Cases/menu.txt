@@ -1,0 +1,9 @@
+Menu {
+    Button {
+        ...
+    } label: {
+        Label("Copy", systemImage: "doc.on.doc")
+    }
+} label: {
+    Image(systemName: "pencil")
+}

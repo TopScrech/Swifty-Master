@@ -1,0 +1,2 @@
+Text("Link: [click](https://topscrech.dev)")
+    .tint(.indigo)

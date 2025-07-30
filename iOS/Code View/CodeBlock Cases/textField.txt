@@ -1,0 +1,7 @@
+struct ContentView: View {
+    @State private var text = ""
+
+    var body: some View {
+        TextField("Placeholder", text: $text)
+    }
+}

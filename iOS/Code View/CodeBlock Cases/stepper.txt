@@ -1,0 +1,14 @@
+struct ContentView: View {
+    @State private var stepperValue = 0
+
+    var body: some View {
+        Stepper(
+            value: $stepperValue,
+            in: 1...10,
+            step: 2
+        ) {
+            // Label
+            Text("Stepper")
+        }
+    }
+}

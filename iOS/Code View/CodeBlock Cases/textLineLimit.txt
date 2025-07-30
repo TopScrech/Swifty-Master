@@ -1,0 +1,3 @@
+Text("GoidaGoida")
+    .frame(width: 16)
+    .lineLimit(2)

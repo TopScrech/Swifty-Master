@@ -1,0 +1,5 @@
+if #available(iOS 15, *) {
+    // Some code here
+} else {
+    // Some other code here
+}

@@ -1,0 +1,6 @@
+Button {
+    // What the button does
+} label: {
+    // How the button looks like
+}
+.buttonStyle(.plain) // Prevents the automatic style

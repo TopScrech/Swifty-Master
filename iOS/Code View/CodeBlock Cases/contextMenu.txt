@@ -1,0 +1,17 @@
+Text("Goida")
+    .contextMenu {
+        Button {
+
+        } label: {
+            Label("Button", systemImage: "hammer")
+
+            // or
+
+            Label {
+                Text("Button")
+                Text("Button Subtitle") // optional
+            } icon: {
+                Image(systemName: "hammer")
+            }
+        }
+    }

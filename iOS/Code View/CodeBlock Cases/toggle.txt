@@ -1,0 +1,7 @@
+struct ContentView: View {
+    @State private var toggleIsOn = true
+
+    var body: some View {
+        Toggle("Toggle", isOn: $isOn)
+    }
+}

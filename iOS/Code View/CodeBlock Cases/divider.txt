@@ -1,0 +1,9 @@
+struct ContentView: View {
+    var body: some View {
+        Text("1")
+
+        Divider()
+
+        Text("2")
+    }
+}

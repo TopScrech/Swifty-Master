@@ -1,0 +1,11 @@
+struct SheetView: View {
+// REPLACE: "@Environment(\.dismiss) var dismiss" BY:
+@Environment (\.presentationMode) var presentationMode
+
+var body: some View {
+    Button("Dismiss the sheet") {
+        // REPLACE: "dismiss()" BY:
+        presentationMode.wrappedValue.dismiss()
+    }
+}
+}
