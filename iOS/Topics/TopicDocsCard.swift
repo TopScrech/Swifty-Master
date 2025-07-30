@@ -26,6 +26,11 @@ struct TopicDocsCard: View {
                 .padding(10)
                 .background(.ultraThinMaterial, in: .rect(cornerRadius: 16))
             }
+            .contextMenu {
+                Button {
+                    
+                }
+            }
         }
     }
 }

@@ -22,7 +22,7 @@ struct StackContentView: View {
                             Button {
 #warning("Does nothing")
                             } label: {
-                                Label("Favorite", systemImage: "star")
+                                Image(systemName: "star")
                                     .tint(.yellow)
                             }
                         }

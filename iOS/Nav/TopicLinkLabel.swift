@@ -34,12 +34,10 @@ struct TopicLinkLabel: View {
             }
         }
         .contextMenu {
-            Button {
+            Button("Favorite", systemImage: "star") {
 #warning("Does nothing")
-            } label: {
-                Label("Favorite", systemImage: "star")
-                    .tint(.yellow)
             }
+            .tint(.yellow)
             
             if let url = topic.shareLink {
                 ShareLink(item: url)
