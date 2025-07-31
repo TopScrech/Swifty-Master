@@ -26,9 +26,19 @@ struct FavoritesList: View {
                         }
                     }
                 }
+                .onMove { here, there in
+                    move(from: here, to: there)
+                }
             }
         }
         .navigationTitle("Favorites")
+        .toolbar {
+            EditButton()
+        }
+    }
+    
+    func move(from: IndexSet, to: Int) {
+        store.favoriteTopics.move(fromOffsets: from, toOffset: to)
     }
 }
 
