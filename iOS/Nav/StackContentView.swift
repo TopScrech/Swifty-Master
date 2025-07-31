@@ -15,7 +15,28 @@ struct StackContentView: View {
         NavigationStack(path: $nav.topicPath) {
             List {
                 ForEach(store.favoriteTopics) { topic in
-                    Text(topic.name)
+                    NavigationLink(value: topic) {
+                        TopicLinkLabel(topic)
+                    }
+                    .swipeActions(edge: .leading) {
+#warning("Used twice")
+                        Button {
+                            store.addOrRemoveFavorite(topic)
+                        } label: {
+                            if store.favoriteTopics.contains(topic) {
+                                Image(systemName: "star.fill")
+                                    .tint(.red)
+                            } else {
+                                Image(systemName: "star")
+                                    .tint(.yellow)
+                            }
+                        }
+                    }
+                    .swipeActions {
+                        if let url = topic.shareLink {
+                            ShareLink(item: url)
+                        }
+                    }
                 }
                 
                 ForEach(categories) { category in
