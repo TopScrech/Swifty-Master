@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct TopicLinkLabel: View {
+    @EnvironmentObject private var store: ValueStore
+    
     private let topic: Topic
     
     init(_ topic: Topic) {
@@ -34,8 +36,14 @@ struct TopicLinkLabel: View {
             }
         }
         .contextMenu {
-            Button("Favorite", systemImage: "star") {
-#warning("Does nothing")
+            Button {
+                store.addOrRemoveFavorite(topic)
+            } label: {
+                if store.favoriteTopics.contains(topic) {
+                    Label("Undo favorite", systemImage: "star.fill")
+                } else {
+                    Label("Favorite", systemImage: "star")
+                }
             }
             .tint(.yellow)
             
@@ -48,4 +56,5 @@ struct TopicLinkLabel: View {
 
 #Preview {
     TopicLinkLabel(.spacer)
+        .environmentObject(ValueStore())
 }

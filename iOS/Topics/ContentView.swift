@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject private var store: ValueStore
+    
     private let topic: Topic
     
     init(_ topic: Topic) {
@@ -19,11 +21,15 @@ struct ContentView: View {
         }
         .toolbar {
             Button {
-#warning("Does nothing")
+                store.addOrRemoveFavorite(topic)
             } label: {
-                Image(systemName: "star")
-                    .foregroundStyle(.yellow)
+                if store.favoriteTopics.contains(topic) {
+                    Image(systemName: "star.fill")
+                } else {
+                    Image(systemName: "star")
+                }
             }
+            .foregroundStyle(.yellow)
             
             if let url = topic.shareLink {
                 ShareLink(item: url)
@@ -80,6 +86,7 @@ func topicView(_ topic: Topic) -> AnyView? {
     }
 }
 
-//#Preview {
-//    ContentView()
-//}
+#Preview {
+    ContentView(.dismiss)
+        .environmentObject(ValueStore())
+}

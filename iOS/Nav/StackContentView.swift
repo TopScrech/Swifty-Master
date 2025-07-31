@@ -3,6 +3,7 @@ import ScrechKit
 struct StackContentView: View {
     @Environment(NavModel.self) private var nav
     @Environment(DataModel.self) private var dataModel
+    @EnvironmentObject private var store: ValueStore
     
     private let categories = Category.allCases
     
@@ -12,29 +13,41 @@ struct StackContentView: View {
         @Bindable var nav = nav
         
         NavigationStack(path: $nav.topicPath) {
-            List(categories) { category in
-                Section(category.localizedName) {
-                    ForEach(dataModel.topics(in: category)) { topic in
-                        NavigationLink(value: topic) {
-                            TopicLinkLabel(topic)
-                        }
-                        .swipeActions(edge: .leading) {
-                            Button {
-#warning("Does nothing")
-                            } label: {
-                                Image(systemName: "star")
-                                    .tint(.yellow)
+            List {
+                ForEach(store.favoriteTopics) { topic in
+                    Text(topic.name)
+                }
+                
+                ForEach(categories) { category in
+                    Section(category.localizedName) {
+                        ForEach(dataModel.topics(in: category)) { topic in
+                            NavigationLink(value: topic) {
+                                TopicLinkLabel(topic)
                             }
-                        }
-                        .swipeActions {
-                            if let url = topic.shareLink {
-                                ShareLink(item: url)
+                            .swipeActions(edge: .leading) {
+                                Button {
+                                    store.addOrRemoveFavorite(topic)
+                                } label: {
+                                    if store.favoriteTopics.contains(topic) {
+                                        Image(systemName: "star.fill")
+                                            .tint(.red)
+                                    } else {
+                                        Image(systemName: "star")
+                                            .tint(.yellow)
+                                    }
+                                }
+                            }
+                            .swipeActions {
+                                if let url = topic.shareLink {
+                                    ShareLink(item: url)
+                                }
                             }
                         }
                     }
                 }
             }
             .navigationTitle("Categories")
+            .animation(.default, value: store.favoriteTopics)
             .experienceToolbar()
             .scrollIndicators(.never)
             .navigationDestination(for: Topic.self) { topic in
@@ -67,4 +80,5 @@ struct StackContentView: View {
     StackContentView()
         .environment(DataModel.shared)
         .environment(NavModel.shared)
+        .environmentObject(ValueStore())
 }
