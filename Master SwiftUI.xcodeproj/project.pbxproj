@@ -554,7 +554,7 @@
 			path = "To be checked";
 			sourceTree = "<group>";
 		};
-		F35198C62E2B7E73004E0F02 /* Code View */ = {
+		F35198C62E2B7E73004E0F02 /* Code Block */ = {
 			isa = PBXGroup;
 			children = (
 				F351984D2E2AF689004E0F02 /* Code Block.swift */,
@@ -562,7 +562,7 @@
 				F35198C02E2B7E34004E0F02 /* Attributed Code String.swift */,
 				F3CC1E0E2E343C3A00611B60 /* Code Blocks */,
 			);
-			path = "Code View";
+			path = "Code Block";
 			sourceTree = "<group>";
 		};
 		F35198EC2E2B9F53004E0F02 /* Models */ = {
@@ -650,7 +650,7 @@
 				F35198EA2E2B9F53004E0F02 /* NavModel.swift */,
 				F35198EC2E2B9F53004E0F02 /* Models */,
 				F3BF16DF2E2C779E005212D1 /* Topics */,
-				F35198C62E2B7E73004E0F02 /* Code View */,
+				F35198C62E2B7E73004E0F02 /* Code Block */,
 				F314C7F02E2E146100F63B6A /* Settings */,
 				F3202CC32D55975E0030B3CC /* Gauges */,
 				F35198492E2AECCF004E0F02 /* To be checked */,
