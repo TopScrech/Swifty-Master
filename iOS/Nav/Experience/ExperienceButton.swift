@@ -7,7 +7,7 @@ struct ExperienceButton: View {
     var body: some View {
         @Bindable var nav = nav
         
-        Button("Experience", systemImage: "wand.and.stars") {
+        Button("Nav mode", systemImage: "wand.and.stars") {
             nav.showExperiencePicker = true
         }
         .help("Choose your navigation experience")
