@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct CodeBlockView: View {
+    @EnvironmentObject private var store: ValueStore
     @Environment(\.colorScheme) private var colorScheme
     
     private let code: String
@@ -16,12 +17,26 @@ struct CodeBlockView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             ZStack {
-                Text(attributedCodeString(for: code))
-                    .monospaced()
-                    .padding(20)
-                    .background(.ultraThinMaterial)
-                    .cornerRadius(20)
-                    .foregroundColor(.white)
+                HStack(alignment: .top) {
+                    if store.showCodeLineNumbers {
+                        // Line numbers
+                        VStack(alignment: .trailing, spacing: 4) {
+                            ForEach(code.components(separatedBy: .newlines).indices, id: \.self) { index in
+                                Text("\(index + 1)")
+                                    .monospaced()
+                                    .foregroundColor(.gray)
+                            }
+                        }
+                        .padding(.trailing, 10)
+                    }
+                    
+                    Text(attributedCodeString(for: code))
+                        .monospaced()
+                        .foregroundColor(.white)
+                }
+                .padding(20)
+                .background(.ultraThinMaterial)
+                .cornerRadius(20)
                 
                 Button {
                     UIPasteboard.general.string = code
@@ -43,4 +58,5 @@ struct CodeBlockView: View {
 #Preview {
     CodeBlockView(.gauges)
         .darkSchemePreferred()
+        .environmentObject(ValueStore())
 }
