@@ -2,97 +2,52 @@ import ScrechKit
 
 struct StackContentView: View {
     @Environment(NavModel.self) private var nav
-    @Environment(DataModel.self) private var dataModel
     @EnvironmentObject private var store: ValueStore
     
-    private let categories = Category.allCases
-    
     @State private var sheetSettings = false
+    
+    @AppStorage("last_tab") private var lastTab = 0
     
     var body: some View {
         @Bindable var nav = nav
         
-        NavigationStack(path: $nav.topicPath) {
-            List {
-                if store.favoriteTopics.count > 0 {
-                    Section {
-                        ForEach(store.favoriteTopics) { topic in
-                            NavigationLink(value: topic) {
-                                TopicLinkLabel(topic)
+        TabView(selection: $lastTab) {
+            Tab("Topics", systemImage: "list.bullet", value: 0) {
+                NavigationStack(path: $nav.topicPath) {
+                    List {
+                        StackTopicList()
+                    }
+                    .navigationTitle("Categories")
+                    .animation(.default, value: store.favoriteTopics)
+                    .scrollIndicators(.never)
+                    .navigationDestination(for: Topic.self) { topic in
+                        TopicDetail(topic) { relatedTopic in
+                            Button {
+                                nav.topicPath.append(relatedTopic)
+                            } label: {
+                                TopicTile(relatedTopic)
                             }
-                            .swipeActions(edge: .leading) {
-                                if store.favoriteTopics.contains(topic) {
-                                    Button {
-                                        store.addOrRemoveFavorite(topic)
-                                    } label: {
-                                        Image(systemName: "star.slash.fill")
-                                            .tint(.red)
-                                    }
-                                }
-                            }
-                            .swipeActions {
-                                if let url = topic.shareLink {
-                                    ShareLink(item: url)
-                                }
+                            .buttonStyle(.plain)
+                        }
+                    }
+                    .toolbar {
+                        ToolbarItem(placement: .topBarTrailing) {
+                            SFButton("gear") {
+                                sheetSettings = true
                             }
                         }
-                    } header: {
-                        Label("Favorites", systemImage: "star.fill")
-                            .labelIconToTitleSpacing(8)
                     }
-                }
-                
-                ForEach(categories) { category in
-                    Section(category.localizedName) {
-                        ForEach(dataModel.topics(in: category)) { topic in
-                            NavigationLink(value: topic) {
-                                TopicLinkLabel(topic)
-                            }
-                            .swipeActions(edge: .leading) {
-                                Button {
-                                    store.addOrRemoveFavorite(topic)
-                                } label: {
-                                    if store.favoriteTopics.contains(topic) {
-                                        Image(systemName: "star.slash.fill")
-                                            .tint(.red)
-                                    } else {
-                                        Image(systemName: "star")
-                                            .tint(.yellow)
-                                    }
-                                }
-                            }
-                            .swipeActions {
-                                if let url = topic.shareLink {
-                                    ShareLink(item: url)
-                                }
-                            }
+                    .sheet($sheetSettings) {
+                        NavigationView {
+                            SettingsView()
                         }
                     }
                 }
             }
-            .navigationTitle("Categories")
-            .animation(.default, value: store.favoriteTopics)
-            .scrollIndicators(.never)
-            .navigationDestination(for: Topic.self) { topic in
-                TopicDetail(topic) { relatedTopic in
-                    Button {
-                        nav.topicPath.append(relatedTopic)
-                    } label: {
-                        TopicTile(relatedTopic)
-                    }
-                    .buttonStyle(.plain)
-                }
-            }
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    SFButton("gear") {
-                        sheetSettings = true
-                    }
-                }
-            }
-            .sheet($sheetSettings) {
-                NavigationView {
-                    SettingsView()
+            
+            Tab("Favorites", systemImage: "star", value: 1) {
+                NavigationStack(path: $nav.topicPath) {
+                    FavoritesList()
                 }
             }
         }
