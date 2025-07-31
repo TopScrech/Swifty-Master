@@ -7,32 +7,31 @@ struct CodeBlockView: View {
     private let code: String
     
     init(_ code: CodeBlock) {
-        self.code = code.code
+        self.code = code.code.removingLastLine
     }
     
     init(_ code: String) {
-        self.code = code
+        self.code = code.removingLastLine
     }
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             ZStack {
-                HStack(alignment: .top) {
-                    if store.showCodeLineNumbers {
-                        // Line numbers
-                        VStack(alignment: .trailing, spacing: 4) {
-                            ForEach(code.components(separatedBy: .newlines).indices, id: \.self) { index in
+                VStack(alignment: .leading, spacing: 4) {
+                    ForEach(Array(code.components(separatedBy: .newlines).enumerated()), id: \.offset) { index, line in
+                        HStack(alignment: .top, spacing: 16) {
+                            if store.showCodeLineNumbers {
                                 Text("\(index + 1)")
                                     .monospaced()
                                     .foregroundColor(.gray)
+                                    .frame(width: 15, alignment: .trailing)
                             }
+                            
+                            Text(attributedCodeString(for: line))
+                                .monospaced()
+                                .foregroundColor(.white)
                         }
-                        .padding(.trailing, 10)
                     }
-                    
-                    Text(attributedCodeString(for: code))
-                        .monospaced()
-                        .foregroundColor(.white)
                 }
                 .padding(20)
                 .background(.ultraThinMaterial)
@@ -52,6 +51,18 @@ struct CodeBlockView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
             }
         }
+    }
+}
+
+extension String {
+    var removingLastLine: String {
+        var lines = self.components(separatedBy: .newlines)
+        
+        if lines.isEmpty == false {
+            lines.removeLast()
+        }
+        
+        return lines.joined(separator: "\n")
     }
 }
 
