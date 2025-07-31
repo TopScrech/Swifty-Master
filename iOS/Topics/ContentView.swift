@@ -24,7 +24,7 @@ struct ContentView: View {
                 store.addOrRemoveFavorite(topic)
             } label: {
                 if store.favoriteTopics.contains(topic) {
-                    Image(systemName: "star.fill")
+                    Image(systemName: "star.slash.fill")
                 } else {
                     Image(systemName: "star")
                 }

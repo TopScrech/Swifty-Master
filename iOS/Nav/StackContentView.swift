@@ -23,7 +23,7 @@ struct StackContentView: View {
                             Button {
                                 store.addOrRemoveFavorite(topic)
                             } label: {
-                                Image(systemName: "star.fill")
+                                Image(systemName: "star.slash.fill")
                                     .tint(.red)
                             }
                         }
@@ -46,7 +46,7 @@ struct StackContentView: View {
                                     store.addOrRemoveFavorite(topic)
                                 } label: {
                                     if store.favoriteTopics.contains(topic) {
-                                        Image(systemName: "star.fill")
+                                        Image(systemName: "star.slash.fill")
                                             .tint(.red)
                                     } else {
                                         Image(systemName: "star")

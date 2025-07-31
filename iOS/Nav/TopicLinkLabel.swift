@@ -40,7 +40,7 @@ struct TopicLinkLabel: View {
                 store.addOrRemoveFavorite(topic)
             } label: {
                 if store.favoriteTopics.contains(topic) {
-                    Label("Undo favorite", systemImage: "star.fill")
+                    Label("Undo favorite", systemImage: "star.slash.fill")
                 } else {
                     Label("Favorite", systemImage: "star")
                 }
