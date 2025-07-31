@@ -5,7 +5,7 @@ struct TopicDivider: View {
         VStack(spacing: 25) {
             Text("TopicDivider")
             
-            SimpleCodeBlockView(.divider)
+            CodeBlockView(.divider)
         }
     }
 }

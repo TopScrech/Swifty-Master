@@ -5,7 +5,7 @@ struct TopicColor: View {
         VStack(spacing: 25) {
             Text("SwiftUI Color is a type that represents a color in a way that is easy to use and integrate into SwiftUI views")
             
-            SimpleCodeBlockView(.color)
+            CodeBlockView(.color)
         }
     }
 }

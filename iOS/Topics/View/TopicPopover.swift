@@ -5,7 +5,7 @@ struct TopicPopover: View {
         VStack(spacing: 25) {
             Text("TopicPopover")
             
-            SimpleCodeBlockView(.popover)
+            CodeBlockView(.popover)
         }
     }
 }

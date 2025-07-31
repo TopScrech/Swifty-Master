@@ -5,12 +5,12 @@ struct TopicSheet: View {
         VStack(spacing: 25) {
             Text("Sheet")
             
-            SimpleCodeBlockView(.sheet)
+            CodeBlockView(.sheet)
             
             TopicDisclosureGroup("Dismiss a sheet (before iOS 15)") {
                 Text("To dismiss a sheet before ios 15, there is a change to make only in the sheet content")
                 
-                SimpleCodeBlockView(.sheetBefore15)
+                CodeBlockView(.sheetBefore15)
             }
         }
     }

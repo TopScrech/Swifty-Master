@@ -9,7 +9,7 @@ struct TopicTextEditor: View {
             
             TextEditor(text: $text)
             
-            SimpleCodeBlockView(.textEditor)
+            CodeBlockView(.textEditor)
         }
     }
 }

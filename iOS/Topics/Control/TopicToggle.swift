@@ -9,7 +9,7 @@ struct TopicToggle: View {
             
             Toggle("Toggle", isOn: $isOn)
             
-            SimpleCodeBlockView(.toggle)
+            CodeBlockView(.toggle)
             
             TopicHeading("Style Details")
             
@@ -25,7 +25,7 @@ struct TopicToggle: View {
                     Toggle("Purple", isOn: $isOn)
                         .tint(.purple)
                     
-                    SimpleCodeBlockView(.toggleTint)
+                    CodeBlockView(.toggleTint)
                 }
             }
         }

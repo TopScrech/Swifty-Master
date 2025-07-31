@@ -7,13 +7,13 @@ struct TopicSpacer: View {
             
             Text("Simple Spacer")
             
-            SimpleCodeBlockView(.spacer)
+            CodeBlockView(.spacer)
             
             TopicHeading("Spacer with a minimum size")
             
             Text("⚠️ Keep in mind that a Spacer has a minimum length \(Text("not").underline()) equal to 0 by default")
             
-            SimpleCodeBlockView("""
+            CodeBlockView("""
 Spacer(minLength: 16)
 
 // or
@@ -23,7 +23,7 @@ Spacer()
 """)
             TopicHeading("Spacer with a fixed size")
             
-            SimpleCodeBlockView("""
+            CodeBlockView("""
 Spacer()
     .frame(width: 6, height: 6)
 """)

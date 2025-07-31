@@ -10,10 +10,10 @@ struct TopicTextField: View {
             TextField("Placeholder", text: $text)
                 .textFieldStyle(.roundedBorder)
             
-            SimpleCodeBlockView(.textField)
+            CodeBlockView(.textField)
             
             TopicDisclosureGroup("Disable Autocorrection") {
-                SimpleCodeBlockView(.textFieldDisableAutocorrection)
+                CodeBlockView(.textFieldDisableAutocorrection)
             }
         }
     }

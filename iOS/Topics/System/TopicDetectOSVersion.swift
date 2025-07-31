@@ -5,9 +5,9 @@ struct TopicDetectOSVersion: View {
         VStack(spacing: 25) {
             Text("Detecting the OS version involves using #available to check if the current version is x or higher, allowing conditional code execution based on the platform's capabilities")
             
-            SimpleCodeBlockView(.detectOSVersion)
+            CodeBlockView(.detectOSVersion)
             
-            SimpleCodeBlockView(.detectOSVersionNewAndOld)
+            CodeBlockView(.detectOSVersionNewAndOld)
         }
     }
 }

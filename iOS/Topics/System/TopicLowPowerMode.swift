@@ -5,7 +5,7 @@ struct TopicLowPowerMode: View {
         VStack(spacing: 25) {
             Text("Detect Low Power Mode")
             
-            SimpleCodeBlockView(.lowPowerMode)
+            CodeBlockView(.lowPowerMode)
         }
     }
 }

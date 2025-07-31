@@ -66,7 +66,7 @@ struct TopicText: View {
                     .frame(width: 64)
                     .lineLimit(1)
                 
-                SimpleCodeBlockView(.textLineLimit)
+                CodeBlockView(.textLineLimit)
             }
         }
         .bold(isBold)

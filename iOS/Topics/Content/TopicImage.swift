@@ -5,7 +5,7 @@ struct TopicImage: View {
         VStack(spacing: 25) {
             Text("Image is used to display visual content such as icons, photo's, or system-provided images")
             
-            SimpleCodeBlockView(.image)
+            CodeBlockView(.image)
         }
     }
 }

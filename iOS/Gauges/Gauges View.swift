@@ -32,9 +32,10 @@ struct GaugesView: View {
                     .gaugeStyle(.accessoryLinearCapacity)
                     .tint(.brown)
             }
+            
+            CodeBlockView(.gauges)
         }
         .padding(.horizontal)
-        .codeBlock(.gauges)
     }
 }
 

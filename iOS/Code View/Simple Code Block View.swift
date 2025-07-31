@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SimpleCodeBlockView: View {
+struct CodeBlockView: View {
     @Environment(\.colorScheme) private var colorScheme
     
     private let code: String
@@ -41,6 +41,6 @@ struct SimpleCodeBlockView: View {
 }
 
 #Preview {
-    SimpleCodeBlockView(.gauges)
+    CodeBlockView(.gauges)
         .darkSchemePreferred()
 }

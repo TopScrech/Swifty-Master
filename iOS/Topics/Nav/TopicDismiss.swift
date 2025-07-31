@@ -17,7 +17,7 @@ struct TopicDismiss: View {
                 dismiss()
             }
             
-            SimpleCodeBlockView(.dismiss)
+            CodeBlockView(.dismiss)
             
             TopicHeading("Hide native back button")
             
@@ -34,7 +34,7 @@ struct TopicDismiss: View {
 #else
                 .glassEffect()
 #endif
-            SimpleCodeBlockView(.dismissHideBackButton)
+            CodeBlockView(.dismissHideBackButton)
         }
         .navigationBarBackButtonHidden(hideBackButton)
     }
