@@ -19,16 +19,12 @@ struct StackContentView: View {
                         TopicLinkLabel(topic)
                     }
                     .swipeActions(edge: .leading) {
-#warning("Used twice")
-                        Button {
-                            store.addOrRemoveFavorite(topic)
-                        } label: {
-                            if store.favoriteTopics.contains(topic) {
+                        if store.favoriteTopics.contains(topic) {
+                            Button {
+                                store.addOrRemoveFavorite(topic)
+                            } label: {
                                 Image(systemName: "star.fill")
                                     .tint(.red)
-                            } else {
-                                Image(systemName: "star")
-                                    .tint(.yellow)
                             }
                         }
                     }
