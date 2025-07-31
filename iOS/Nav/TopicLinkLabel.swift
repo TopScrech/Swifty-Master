@@ -28,11 +28,14 @@ struct TopicLinkLabel: View {
             }
             .labelReservedIconWidth(16)
             
+            Spacer()
+            
             if !isAvailable {
-                Spacer()
-                
                 Image(systemName: "lock")
                     .secondary()
+            } else if store.favoriteTopics.contains(topic) {
+                Image(systemName: "star.fill")
+                    .foregroundStyle(.yellow)
             }
         }
         .contextMenu {
