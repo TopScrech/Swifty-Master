@@ -10,13 +10,11 @@ struct NavContainer: View {
     @Environment(\.appearsActive) private var appearsActive
 #endif
     
-    @AppStorage("experience") private var experience: Experience?
-    
     var body: some View {
         @Bindable var nav = nav
         
         Group {
-            switch experience {
+            switch store.experience {
             case .stack?:
                 StackContentView()
                 
@@ -33,9 +31,6 @@ struct NavContainer: View {
         .environment(nav)
         .environment(dataModel)
         .preferredColorScheme(store.colorTheme.scheme)
-        .sheet(isPresented: $nav.showExperiencePicker) {
-            ExperiencePicker($experience)
-        }
         .task {
             nav.load()
         }

@@ -5,6 +5,10 @@ struct SettingsView: View {
     
     var body: some View {
         Form {
+            Section {
+                ExperienceButton()
+            }
+            
             Picker("Color theme", selection: $store.colorTheme) {
                 ForEach(ColorTheme.allCases) { theme in
                     Text(theme.loc)

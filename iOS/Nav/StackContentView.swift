@@ -65,7 +65,6 @@ struct StackContentView: View {
             }
             .navigationTitle("Categories")
             .animation(.default, value: store.favoriteTopics)
-            .experienceToolbar()
             .scrollIndicators(.never)
             .navigationDestination(for: Topic.self) { topic in
                 TopicDetail(topic) { relatedTopic in

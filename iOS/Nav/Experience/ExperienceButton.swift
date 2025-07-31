@@ -1,19 +1,24 @@
-// An button that presents the navigation experience picker when its action is invoked
-
 import SwiftUI
 
 struct ExperienceButton: View {
     @Environment(NavModel.self) private var nav
+    @EnvironmentObject private var store: ValueStore
     
     var body: some View {
+        @Bindable var nav = nav
+        
         Button("Experience", systemImage: "wand.and.stars") {
             nav.showExperiencePicker = true
         }
         .help("Choose your navigation experience")
+        .sheet($nav.showExperiencePicker) {
+            ExperiencePicker($store.experience)
+        }
     }
 }
 
 #Preview {
     ExperienceButton()
         .environment(NavModel.shared)
+        .environmentObject(ValueStore())
 }

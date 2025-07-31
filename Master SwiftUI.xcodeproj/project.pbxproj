@@ -108,7 +108,6 @@
 		F35198FF2E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F52E2B9F53004E0F02 /* ExperiencePickerRow.swift */; };
 		F35199002E2B9F53004E0F02 /* TopicDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F72E2B9F53004E0F02 /* TopicDetail.swift */; };
 		F35199022E2B9F53004E0F02 /* NavModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EA2E2B9F53004E0F02 /* NavModel.swift */; };
-		F35199032E2B9F53004E0F02 /* ExperienceToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F62E2B9F53004E0F02 /* ExperienceToolbar.swift */; };
 		F35199052E2B9F53004E0F02 /* NavContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198ED2E2B9F53004E0F02 /* NavContainer.swift */; };
 		F35199062E2B9F53004E0F02 /* TwoColumnContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */; };
 		F35199072E2B9F53004E0F02 /* TopicGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F82E2B9F53004E0F02 /* TopicGrid.swift */; };
@@ -124,7 +123,6 @@
 		F35199132E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F52E2B9F53004E0F02 /* ExperiencePickerRow.swift */; };
 		F35199142E2B9F53004E0F02 /* TopicDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F72E2B9F53004E0F02 /* TopicDetail.swift */; };
 		F35199162E2B9F53004E0F02 /* NavModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EA2E2B9F53004E0F02 /* NavModel.swift */; };
-		F35199172E2B9F53004E0F02 /* ExperienceToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F62E2B9F53004E0F02 /* ExperienceToolbar.swift */; };
 		F35199192E2B9F53004E0F02 /* NavContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198ED2E2B9F53004E0F02 /* NavContainer.swift */; };
 		F351991A2E2B9F53004E0F02 /* TwoColumnContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */; };
 		F351991B2E2B9F53004E0F02 /* TopicGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F82E2B9F53004E0F02 /* TopicGrid.swift */; };
@@ -298,7 +296,6 @@
 		F35198F32E2B9F53004E0F02 /* ExperienceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceButton.swift; sourceTree = "<group>"; };
 		F35198F42E2B9F53004E0F02 /* ExperiencePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencePicker.swift; sourceTree = "<group>"; };
 		F35198F52E2B9F53004E0F02 /* ExperiencePickerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencePickerRow.swift; sourceTree = "<group>"; };
-		F35198F62E2B9F53004E0F02 /* ExperienceToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceToolbar.swift; sourceTree = "<group>"; };
 		F35198F72E2B9F53004E0F02 /* TopicDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetail.swift; sourceTree = "<group>"; };
 		F35198F82E2B9F53004E0F02 /* TopicGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicGrid.swift; sourceTree = "<group>"; };
 		F35198FB2E2B9F53004E0F02 /* TopicTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTile.swift; sourceTree = "<group>"; };
@@ -416,7 +413,6 @@
 				F35198F32E2B9F53004E0F02 /* ExperienceButton.swift */,
 				F35198F42E2B9F53004E0F02 /* ExperiencePicker.swift */,
 				F35198F52E2B9F53004E0F02 /* ExperiencePickerRow.swift */,
-				F35198F62E2B9F53004E0F02 /* ExperienceToolbar.swift */,
 				F35198E82E2B9F53004E0F02 /* Experience.swift */,
 			);
 			path = Experience;
@@ -951,7 +947,6 @@
 				F3BF16E32E2C7D1C005212D1 /* TopicHeading.swift in Sources */,
 				F35199022E2B9F53004E0F02 /* NavModel.swift in Sources */,
 				F3AE99DA2E2F861C00D70249 /* ColorTheme.swift in Sources */,
-				F35199032E2B9F53004E0F02 /* ExperienceToolbar.swift in Sources */,
 				F344803A2E2D225A00D18E2E /* TopicSpacer.swift in Sources */,
 				F35199052E2B9F53004E0F02 /* NavContainer.swift in Sources */,
 				F35199062E2B9F53004E0F02 /* TwoColumnContentView.swift in Sources */,
@@ -1007,7 +1002,6 @@
 				F314C8032E2E2AA800F63B6A /* FontWeightItem.swift in Sources */,
 				F35199162E2B9F53004E0F02 /* NavModel.swift in Sources */,
 				F314C8272E2E52A200F63B6A /* ValueStore.swift in Sources */,
-				F35199172E2B9F53004E0F02 /* ExperienceToolbar.swift in Sources */,
 				F35199192E2B9F53004E0F02 /* NavContainer.swift in Sources */,
 				F351991A2E2B9F53004E0F02 /* TwoColumnContentView.swift in Sources */,
 				F314C85A2E2E665600F63B6A /* TopicGradient.swift in Sources */,

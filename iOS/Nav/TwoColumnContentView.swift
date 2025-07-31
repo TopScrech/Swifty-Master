@@ -32,7 +32,6 @@ struct TwoColumnContentView: View {
             NavigationStack(path: $nav.topicPath) {
                 TopicGrid()
             }
-            .experienceToolbar()
         }
     }
 }

@@ -31,7 +31,6 @@ struct TopicGrid: View {
                     }
                     .buttonStyle(.plain)
                 }
-                .experienceToolbar()
             }
         } else {
             Text("Choose a category")
