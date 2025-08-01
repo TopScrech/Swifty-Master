@@ -45,6 +45,7 @@ struct FavoritesList: View {
         }
         .navigationTitle("Favorites")
         .animation(.default, value: isEditing)
+        .animation(.default, value: store.favoriteTopics)
         .toolbar {
             if store.favoriteTopics.count > 0 {
                 if isEditing {
@@ -66,7 +67,7 @@ struct FavoritesList: View {
         }
     }
     
-    func move(from: IndexSet, to: Int) {
+    private func move(from: IndexSet, to: Int) {
         store.favoriteTopics.move(fromOffsets: from, toOffset: to)
     }
 }
