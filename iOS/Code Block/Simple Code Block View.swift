@@ -24,7 +24,7 @@ struct CodeBlockView: View {
                                 Text("\(index + 1)")
                                     .monospaced()
                                     .foregroundColor(.gray)
-                                    .frame(width: 15, alignment: .trailing)
+                                    .frame(width: 30, alignment: .trailing)
                             }
                             
                             Text(attributedCodeString(for: line))
