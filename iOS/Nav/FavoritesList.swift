@@ -46,19 +46,21 @@ struct FavoritesList: View {
         .navigationTitle("Favorites")
         .animation(.default, value: isEditing)
         .toolbar {
-            if isEditing {
-                Button {
-                    isEditing = false
-                } label: {
-                    Image(systemName: "checkmark")
-                }
-                .buttonStyle(.glassProminent)
-                .tint(.blue)
-            } else {
-                Button {
-                    isEditing = true
-                } label: {
-                    Image(systemName: "pencil")
+            if store.favoriteTopics.count > 0 {
+                if isEditing {
+                    Button {
+                        isEditing = false
+                    } label: {
+                        Image(systemName: "checkmark")
+                    }
+                    .buttonStyle(.glassProminent)
+                    .tint(.blue)
+                } else {
+                    Button {
+                        isEditing = true
+                    } label: {
+                        Image(systemName: "pencil")
+                    }
                 }
             }
         }
