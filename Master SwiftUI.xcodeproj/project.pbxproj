@@ -142,6 +142,8 @@
 		F388D19D2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */; };
 		F388D1A02E3AB51C002A1128 /* lowPowerMode.txt in Resources */ = {isa = PBXBuildFile; fileRef = F388D19F2E3AB51C002A1128 /* lowPowerMode.txt */; };
 		F388D1A12E3AB51C002A1128 /* lowPowerMode.txt in Resources */ = {isa = PBXBuildFile; fileRef = F388D19F2E3AB51C002A1128 /* lowPowerMode.txt */; };
+		F399A4AC2E3D52A7008BED17 /* highlightOccurrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */; };
+		F399A4AD2E3D52A7008BED17 /* highlightOccurrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */; };
 		F3ADA6162D9C03E700F2DAA6 /* Plural Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ADA6152D9C03E700F2DAA6 /* Plural Translation.swift */; };
 		F3ADA6172D9C03E700F2DAA6 /* Plural Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ADA6152D9C03E700F2DAA6 /* Plural Translation.swift */; };
 		F3ADA61A2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */; };
@@ -308,6 +310,7 @@
 		F37916ED2AF14A7A00B880AF /* Image Picker 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker 2.swift"; sourceTree = "<group>"; };
 		F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLowPowerMode.swift; sourceTree = "<group>"; };
 		F388D19F2E3AB51C002A1128 /* lowPowerMode.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lowPowerMode.txt; sourceTree = "<group>"; };
+		F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = highlightOccurrences.swift; sourceTree = "<group>"; };
 		F3ADA6152D9C03E700F2DAA6 /* Plural Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plural Translation.swift"; sourceTree = "<group>"; };
 		F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F3AE99D82E2F861C00D70249 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
@@ -666,6 +669,7 @@
 			isa = PBXGroup;
 			children = (
 				F3BF16D92E2C76A8005212D1 /* ContentView.swift */,
+				F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */,
 				F3BF16E12E2C7D1C005212D1 /* TopicHeading.swift */,
 				F3BF16E52E2CCDEE005212D1 /* TopicDocs.swift */,
 				F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */,
@@ -920,6 +924,7 @@
 				F314C7F62E2E1E7900F63B6A /* TopicText.swift in Sources */,
 				F314C8332E2E536F00F63B6A /* TopicMenu.swift in Sources */,
 				F314C8572E2E663500F63B6A /* TopicColor.swift in Sources */,
+				F399A4AC2E3D52A7008BED17 /* highlightOccurrences.swift in Sources */,
 				F314C8042E2E2AA800F63B6A /* FontWeightItem.swift in Sources */,
 				F34480372E2D218400D18E2E /* TopicEmptyView.swift in Sources */,
 				F35198C22E2B7E34004E0F02 /* Attributed Code String.swift in Sources */,
@@ -996,6 +1001,7 @@
 				F314C7F92E2E1F0F00F63B6A /* TopicDisclosureGroup.swift in Sources */,
 				F35198472E2AECAA004E0F02 /* Gauge Card.swift in Sources */,
 				F314C81E2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift in Sources */,
+				F399A4AD2E3D52A7008BED17 /* highlightOccurrences.swift in Sources */,
 				F314C7FE2E2E2A8400F63B6A /* Models.swift in Sources */,
 				F314C81B2E2E4BB900F63B6A /* TopicShape.swift in Sources */,
 				F3BF16E62E2CCDEE005212D1 /* TopicDocs.swift in Sources */,
