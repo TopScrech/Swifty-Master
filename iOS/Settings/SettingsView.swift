@@ -21,8 +21,17 @@ struct SettingsView: View {
             }
 #if DEBUG
             Section("Debug") {
-                Button("Remove all favorites", role: .destructive) {
+                Button(role: .destructive) {
                     store.favoriteTopics = []
+                } label: {
+                    HStack {
+                        Text("Remove all favorites")
+                        
+                        Spacer()
+                        
+                        Image(systemName: "star.slash")
+                            .secondary()
+                    }
                 }
             }
 #endif
