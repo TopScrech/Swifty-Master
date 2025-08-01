@@ -39,6 +39,8 @@ struct FavoritesList: View {
                 .onMove { here, there in
                     move(from: here, to: there)
                 }
+            } else {
+                ContentUnavailableView("No favorites found", systemImage: "star")
             }
         }
         .navigationTitle("Favorites")
