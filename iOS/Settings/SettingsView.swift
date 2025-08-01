@@ -19,6 +19,13 @@ struct SettingsView: View {
                         .tag(theme)
                 }
             }
+#if DEBUG
+            Section("Debug") {
+                Button("Remove all favorites", role: .destructive) {
+                    store.favoriteTopics = []
+                }
+            }
+#endif
         }
         .navigationTitle("Settings")
         .formStyle(.grouped)
