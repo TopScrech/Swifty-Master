@@ -10,6 +10,7 @@ struct FontSizeItem: View {
     var body: some View {
         HStack(alignment: .firstTextBaseline) {
             Text("\(text.size)pt")
+                .footnote()
                 .secondary()
                 .monospacedDigit()
             
