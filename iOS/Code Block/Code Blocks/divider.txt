@@ -1,9 +1,5 @@
-struct ContentView: View {
-    var body: some View {
-        Text("1")
+Text("1")
 
-        Divider()
+Divider()
 
-        Text("2")
-    }
-}
+Text("2")

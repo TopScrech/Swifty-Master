@@ -17,6 +17,8 @@ public extension View {
     }
 }
 
+// Usage
+
 import SwiftUI
 
 struct AppStoreOverlay: View {

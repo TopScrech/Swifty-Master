@@ -1,19 +1,19 @@
 struct ContentView: View {
-    @State private var showingSheet = false
-
+    @State private var showPopover = false
+    
     var body: some View {
         Button("Open a sheet") {
-            showingSheet = true
+            showPopover = true
         }
-        .sheet(isPresented: $showingSheet) {
+        .sheet(isPresented: $showPopover) {
             SheetView()
         }
     }
 }
 
 struct SheetView: View {
-    @Environment(\.dismiss) var dismiss
-
+    @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
         Button("Dismiss the sheet") {
             dismiss()

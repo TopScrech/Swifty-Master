@@ -1,23 +1,19 @@
-// ContentView - Which triggers the popover
-
 struct ContentView: View {
-    @State private var showingPopover = false
-
+    @State private var showPopover = false
+    
     var body: some View {
         Button("Open a popover") {
-            showingPopover.toggle()
+            showPopover = true
         }
-        .popover(isPresented: $showingPopover) {
+        .popover(isPresented: $showPopover) {
             PopoverView()
         }
     }
 }
 
-// PopoverView
-
 struct PopoverView: View {
-    @Environment(\.dismiss) var dismiss
-
+    @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
         Button("Dismiss the popover") {
             dismiss()
