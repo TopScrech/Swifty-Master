@@ -9,6 +9,7 @@ final class NavModel: Codable {
     
     /// The homogenous navigation state used by the app's navigation stacks
     var topicPath: [Topic]
+    var favoriteTopicPath: [Topic]
     
     /// The leading columns' visibility state used by the app's navigation split views
     var columnVisibility: NavigationSplitViewVisibility
@@ -38,11 +39,13 @@ final class NavModel: Codable {
     init(
         columnVisibility: NavigationSplitViewVisibility = .automatic,
         selectedCategory: Category? = nil,
-        topicPath: [Topic] = []
+        topicPath: [Topic] = [],
+        favoriteTopicPath: [Topic] = []
     ) {
         self.columnVisibility = columnVisibility
         self.selectedCategory = selectedCategory
         self.topicPath = topicPath
+        self.favoriteTopicPath = favoriteTopicPath
     }
     
     /// Initialize a `DataModel` with the contents of a `URL`
@@ -56,7 +59,8 @@ final class NavModel: Codable {
         self.init(
             columnVisibility: model.columnVisibility,
             selectedCategory: model.selectedCategory,
-            topicPath: model.topicPath
+            topicPath: model.topicPath,
+            favoriteTopicPath: model.favoriteTopicPath
         )
     }
     
@@ -74,8 +78,9 @@ final class NavModel: Codable {
             let model = try NavModel(contentsOf: Self.dataURL)
             
             selectedCategory = model.selectedCategory
-            topicPath = model.topicPath
             columnVisibility = model.columnVisibility
+            topicPath = model.topicPath
+            favoriteTopicPath = model.favoriteTopicPath
             
             print("Loaded NavModel \(topicPath)")
         } catch {
@@ -111,6 +116,14 @@ final class NavModel: Codable {
         }
     }
     
+    var selectedFavoriteTopic: Set<Topic> {
+        get {
+            Set(favoriteTopicPath)
+        } set {
+            favoriteTopicPath = Array(newValue)
+        }
+    }
+    
     /// The JSON data used to encode and decode the navigation model at its current state
     var jsonData: Data? {
         get {
@@ -124,8 +137,9 @@ final class NavModel: Codable {
             }
             
             selectedCategory = model.selectedCategory
-            topicPath = model.topicPath
             columnVisibility = model.columnVisibility
+            topicPath = model.topicPath
+            favoriteTopicPath = model.favoriteTopicPath
         }
     }
     
@@ -133,25 +147,30 @@ final class NavModel: Codable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
         self.selectedCategory = try container.decodeIfPresent(Category.self, forKey: .selectedCategory)
+        self.columnVisibility = try container.decode(NavigationSplitViewVisibility.self, forKey: .columnVisibility)
         
         let topicIds = try container.decode([Topic.ID].self, forKey: .topicPathIds)
+        let favoriteTopicIds = try container.decode([Topic.ID].self, forKey: .favoriteTopicPathIds)
         
         self.topicPath = topicIds.compactMap {
             Topic(rawValue: $0)
         }
         
-        self.columnVisibility = try container.decode(NavigationSplitViewVisibility.self, forKey: .columnVisibility)
+        self.favoriteTopicPath = favoriteTopicIds.compactMap {
+            Topic(rawValue: $0)
+        }
     }
     
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encodeIfPresent(selectedCategory, forKey: .selectedCategory)
-        try container.encode(topicPath.map(\.id), forKey: .topicPathIds)
         try container.encode(columnVisibility, forKey: .columnVisibility)
+        try container.encode(topicPath.map(\.id), forKey: .topicPathIds)
+        try container.encode(favoriteTopicPath.map(\.id), forKey: .favoriteTopicPathIds)
     }
     
     private enum CodingKeys: String, CodingKey {
-        case selectedCategory, topicPathIds, columnVisibility
+        case selectedCategory, topicPathIds, columnVisibility, favoriteTopicPathIds
     }
 }

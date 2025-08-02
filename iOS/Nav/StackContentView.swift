@@ -46,7 +46,7 @@ struct StackContentView: View {
             }
             
             Tab("Favorites", systemImage: "star", value: 1) {
-                NavigationStack {
+                NavigationStack(path: $nav.favoriteTopicPath) {
                     FavoritesList()
                         .navigationDestination(for: Topic.self) { topic in
                             TopicDetail(topic) { relatedTopic in

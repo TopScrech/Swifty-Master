@@ -52,6 +52,9 @@ struct NavContainer: View {
         .onChange(of: nav.selectedTopic) {
             nav.save()
         }
+        .onChange(of: nav.favoriteTopicPath) {
+            nav.save()
+        }
     }
 }
 
