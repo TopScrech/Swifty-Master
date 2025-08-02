@@ -47,6 +47,9 @@ struct CodeBlockView: View {
                         .glassyBackground(16)
                     //                    .background(.ultraThinMaterial, in: .rect(cornerRadius: 8))
                         .padding(8)
+                        .contextMenu {
+                            ShareLink(item: code)
+                        }
                 }
                 .secondary()
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
