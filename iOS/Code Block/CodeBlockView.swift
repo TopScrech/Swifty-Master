@@ -25,6 +25,7 @@ struct CodeBlockView: View {
                                     .monospaced()
                                     .foregroundColor(.gray)
                                     .frame(width: 30, alignment: .trailing)
+                                    .lineLimit(1)
                             }
                             
                             Text(attributedCodeString(for: line))
