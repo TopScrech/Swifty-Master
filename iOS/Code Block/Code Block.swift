@@ -42,7 +42,8 @@ enum CodeBlock: String {
          // System
          darkMode,
          detectOSVersion, detectOSVersionNewAndOld,
-         lowPowerMode
+         lowPowerMode,
+         detectLanguage
     
     var code: String {
         guard let url = Bundle.main.url(forResource: self.rawValue, withExtension: "txt") else {

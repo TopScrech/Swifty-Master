@@ -68,6 +68,10 @@
 		F31653B72E3C0A1000A0E9D7 /* FavoritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */; };
 		F31653B92E3C0A4E00A0E9D7 /* StackTopicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B82E3C0A4E00A0E9D7 /* StackTopicList.swift */; };
 		F31653BA2E3C0A4E00A0E9D7 /* StackTopicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B82E3C0A4E00A0E9D7 /* StackTopicList.swift */; };
+		F31E14412E3E9C3100D43C1E /* detectLanguage.txt in Resources */ = {isa = PBXBuildFile; fileRef = F31E14402E3E9C3100D43C1E /* detectLanguage.txt */; };
+		F31E14422E3E9C3100D43C1E /* detectLanguage.txt in Resources */ = {isa = PBXBuildFile; fileRef = F31E14402E3E9C3100D43C1E /* detectLanguage.txt */; };
+		F31E14442E3E9C9E00D43C1E /* TopicDetectLaguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31E14432E3E9C9E00D43C1E /* TopicDetectLaguage.swift */; };
+		F31E14452E3E9C9E00D43C1E /* TopicDetectLaguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31E14432E3E9C9E00D43C1E /* TopicDetectLaguage.swift */; };
 		F3202C942D55952F0030B3CC /* AppStoreOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3202C932D55952F0030B3CC /* AppStoreOverlay.swift */; };
 		F3202CB72D5596210030B3CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3202CAF2D5596210030B3CC /* Assets.xcassets */; };
 		F3202CBB2D5596380030B3CC /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3202CBA2D5596380030B3CC /* ScrechKit */; };
@@ -276,6 +280,8 @@
 		F314C8592E2E665600F63B6A /* TopicGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicGradient.swift; sourceTree = "<group>"; };
 		F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesList.swift; sourceTree = "<group>"; };
 		F31653B82E3C0A4E00A0E9D7 /* StackTopicList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTopicList.swift; sourceTree = "<group>"; };
+		F31E14402E3E9C3100D43C1E /* detectLanguage.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectLanguage.txt; sourceTree = "<group>"; };
+		F31E14432E3E9C9E00D43C1E /* TopicDetectLaguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectLaguage.swift; sourceTree = "<group>"; };
 		F3202C932D55952F0030B3CC /* AppStoreOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreOverlay.swift; sourceTree = "<group>"; };
 		F3202C992D5596100030B3CC /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3202CAF2D5596210030B3CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -507,6 +513,7 @@
 				F34480312E2CD41100D18E2E /* TopicDarkMode.swift */,
 				F3378F9C2E2E68DF00A31D7F /* TopicDetectOSVersion.swift */,
 				F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */,
+				F31E14432E3E9C9E00D43C1E /* TopicDetectLaguage.swift */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -613,6 +620,7 @@
 				F3CC1DF02E343C3A00611B60 /* darkMode.txt */,
 				F3CC1DF12E343C3A00611B60 /* detectOSVersion.txt */,
 				F3CC1DF22E343C3A00611B60 /* detectOSVersionNewAndOld.txt */,
+				F31E14402E3E9C3100D43C1E /* detectLanguage.txt */,
 				F388D19F2E3AB51C002A1128 /* lowPowerMode.txt */,
 			);
 			path = System;
@@ -864,6 +872,7 @@
 				F3CC1E4E2E343C3A00611B60 /* buttonCustom.txt in Resources */,
 				F3CC1E4F2E343C3A00611B60 /* menu.txt in Resources */,
 				F3CC1E502E343C3A00611B60 /* mdRegular.txt in Resources */,
+				F31E14422E3E9C3100D43C1E /* detectLanguage.txt in Resources */,
 				F3CC1E512E343C3A00611B60 /* sheet.txt in Resources */,
 				F3CC1E522E343C3A00611B60 /* detectOSVersion.txt in Resources */,
 				F3CC1E532E343C3A00611B60 /* toggle.txt in Resources */,
@@ -897,6 +906,7 @@
 				F3CC1E1F2E343C3A00611B60 /* gradient.txt in Resources */,
 				F3CC1E202E343C3A00611B60 /* darkMode.txt in Resources */,
 				F3CC1E212E343C3A00611B60 /* button.txt in Resources */,
+				F31E14412E3E9C3100D43C1E /* detectLanguage.txt in Resources */,
 				F388D1A02E3AB51C002A1128 /* lowPowerMode.txt in Resources */,
 				F3CC1E222E343C3A00611B60 /* mdStrikethrough.txt in Resources */,
 				F3CC1E232E343C3A00611B60 /* stepper.txt in Resources */,
@@ -942,6 +952,7 @@
 				F34480372E2D218400D18E2E /* TopicEmptyView.swift in Sources */,
 				F35198C22E2B7E34004E0F02 /* AttributedCodeString.swift in Sources */,
 				F33058702E3A9B250099CEB7 /* TopicDocsCardImage.swift in Sources */,
+				F31E14452E3E9C9E00D43C1E /* TopicDetectLaguage.swift in Sources */,
 				F314C7F32E2E1C1800F63B6A /* TopicLinkLabel.swift in Sources */,
 				F314C8542E2E65F000F63B6A /* TopicPopover.swift in Sources */,
 				F314C7FA2E2E1F0F00F63B6A /* TopicDisclosureGroup.swift in Sources */,
@@ -1038,6 +1049,7 @@
 				F351991B2E2B9F53004E0F02 /* TopicGrid.swift in Sources */,
 				F351991C2E2B9F53004E0F02 /* ExperiencePicker.swift in Sources */,
 				F351991E2E2B9F53004E0F02 /* DataModel.swift in Sources */,
+				F31E14442E3E9C9E00D43C1E /* TopicDetectLaguage.swift in Sources */,
 				F31653BA2E3C0A4E00A0E9D7 /* StackTopicList.swift in Sources */,
 				F351991F2E2B9F53004E0F02 /* ContinueButton.swift in Sources */,
 				F314C8152E2E4B8700F63B6A /* TopicLabel.swift in Sources */,
