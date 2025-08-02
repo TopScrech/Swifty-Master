@@ -15,44 +15,47 @@ struct CodeBlockView: View {
     }
     
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            ZStack {
-                VStack(alignment: .leading, spacing: 4) {
-                    ForEach(Array(code.components(separatedBy: .newlines).enumerated()), id: \.offset) { index, line in
-                        HStack(alignment: .top, spacing: 16) {
-                            if store.showCodeLineNumbers {
-                                Text(index + 1)
+        GeometryReader { geo in
+            ScrollView(.horizontal, showsIndicators: false) {
+                ZStack {
+                    VStack(alignment: .leading, spacing: 4) {
+                        ForEach(Array(code.components(separatedBy: .newlines).enumerated()), id: \.offset) { index, line in
+                            HStack(alignment: .top, spacing: 16) {
+                                if store.showCodeLineNumbers {
+                                    Text(index + 1)
+                                        .monospaced()
+                                        .foregroundColor(.gray)
+                                        .frame(width: 30, alignment: .trailing)
+                                        .lineLimit(1)
+                                }
+                                
+                                Text(attributedCodeString(for: line))
                                     .monospaced()
-                                    .foregroundColor(.gray)
-                                    .frame(width: 30, alignment: .trailing)
-                                    .lineLimit(1)
+                                    .foregroundColor(.white)
                             }
-                            
-                            Text(attributedCodeString(for: line))
-                                .monospaced()
-                                .foregroundColor(.white)
                         }
                     }
+                    .padding(20)
+                    .frame(minWidth: geo.size.width, alignment: .leading)
+                    .background(.ultraThinMaterial)
+                    .cornerRadius(20)
+                    
+                    Button {
+                        UIPasteboard.general.string = code
+                    } label: {
+                        Image(systemName: "document.on.document")
+                            .title3(.semibold)
+                            .padding(10)
+                            .glassyBackground(16)
+//                    .background(.ultraThinMaterial, in: .rect(cornerRadius: 8))
+                            .padding(8)
+                            .contextMenu {
+                                ShareLink(item: code)
+                            }
+                    }
+                    .secondary()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
                 }
-                .padding(20)
-                .background(.ultraThinMaterial)
-                .cornerRadius(20)
-                
-                Button {
-                    UIPasteboard.general.string = code
-                } label: {
-                    Image(systemName: "document.on.document")
-                        .title3(.semibold)
-                        .padding(10)
-                        .glassyBackground(16)
-                    //                    .background(.ultraThinMaterial, in: .rect(cornerRadius: 8))
-                        .padding(8)
-                        .contextMenu {
-                            ShareLink(item: code)
-                        }
-                }
-                .secondary()
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
             }
         }
     }

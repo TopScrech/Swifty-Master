@@ -20,7 +20,7 @@ func attributedCodeString(for code: String) -> AttributedString {
     
     // Secondary keywords
     let secondaryKeywords = [
-        "Gauge", "GaugeCard", "Text", "VStack", "Button", "List", "Toggle", "Picker",
+        "Gauge", "GaugeCard", "Text", "VStack", "Button", "List", "Toggle", "Picker", "Divider",
         "SomeView",
         "spacing", "value", "in", " View",
         "@State", "@Environment",
