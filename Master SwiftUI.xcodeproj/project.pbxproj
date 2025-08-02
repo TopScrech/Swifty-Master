@@ -103,10 +103,10 @@
 		F35198482E2AECAA004E0F02 /* Gauge Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198462E2AECAA004E0F02 /* Gauge Card.swift */; };
 		F351984E2E2AF689004E0F02 /* Code Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351984D2E2AF689004E0F02 /* Code Block.swift */; };
 		F351984F2E2AF689004E0F02 /* Code Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351984D2E2AF689004E0F02 /* Code Block.swift */; };
-		F35198C12E2B7E34004E0F02 /* Attributed Code String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198C02E2B7E34004E0F02 /* Attributed Code String.swift */; };
-		F35198C22E2B7E34004E0F02 /* Attributed Code String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198C02E2B7E34004E0F02 /* Attributed Code String.swift */; };
-		F35198C42E2B7E56004E0F02 /* Simple Code Block View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198C32E2B7E56004E0F02 /* Simple Code Block View.swift */; };
-		F35198C52E2B7E56004E0F02 /* Simple Code Block View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198C32E2B7E56004E0F02 /* Simple Code Block View.swift */; };
+		F35198C12E2B7E34004E0F02 /* AttributedCodeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198C02E2B7E34004E0F02 /* AttributedCodeString.swift */; };
+		F35198C22E2B7E34004E0F02 /* AttributedCodeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198C02E2B7E34004E0F02 /* AttributedCodeString.swift */; };
+		F35198C42E2B7E56004E0F02 /* CodeBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198C32E2B7E56004E0F02 /* CodeBlockView.swift */; };
+		F35198C52E2B7E56004E0F02 /* CodeBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198C32E2B7E56004E0F02 /* CodeBlockView.swift */; };
 		F35198FD2E2B9F53004E0F02 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EB2E2B9F53004E0F02 /* Topic.swift */; };
 		F35198FE2E2B9F53004E0F02 /* ExperienceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F32E2B9F53004E0F02 /* ExperienceButton.swift */; };
 		F35198FF2E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F52E2B9F53004E0F02 /* ExperiencePickerRow.swift */; };
@@ -292,8 +292,8 @@
 		F34480462E2D5D1900D18E2E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F35198462E2AECAA004E0F02 /* Gauge Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gauge Card.swift"; sourceTree = "<group>"; };
 		F351984D2E2AF689004E0F02 /* Code Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Code Block.swift"; sourceTree = "<group>"; };
-		F35198C02E2B7E34004E0F02 /* Attributed Code String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Attributed Code String.swift"; sourceTree = "<group>"; };
-		F35198C32E2B7E56004E0F02 /* Simple Code Block View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simple Code Block View.swift"; sourceTree = "<group>"; };
+		F35198C02E2B7E34004E0F02 /* AttributedCodeString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedCodeString.swift; sourceTree = "<group>"; };
+		F35198C32E2B7E56004E0F02 /* CodeBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlockView.swift; sourceTree = "<group>"; };
 		F35198E62E2B9F53004E0F02 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		F35198E72E2B9F53004E0F02 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		F35198E82E2B9F53004E0F02 /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
@@ -566,8 +566,8 @@
 			isa = PBXGroup;
 			children = (
 				F351984D2E2AF689004E0F02 /* Code Block.swift */,
-				F35198C32E2B7E56004E0F02 /* Simple Code Block View.swift */,
-				F35198C02E2B7E34004E0F02 /* Attributed Code String.swift */,
+				F35198C32E2B7E56004E0F02 /* CodeBlockView.swift */,
+				F35198C02E2B7E34004E0F02 /* AttributedCodeString.swift */,
 				F3CC1E0E2E343C3A00611B60 /* Code Blocks */,
 			);
 			path = "Code Block";
@@ -940,14 +940,14 @@
 				F399A4AC2E3D52A7008BED17 /* highlightOccurrences.swift in Sources */,
 				F314C8042E2E2AA800F63B6A /* FontWeightItem.swift in Sources */,
 				F34480372E2D218400D18E2E /* TopicEmptyView.swift in Sources */,
-				F35198C22E2B7E34004E0F02 /* Attributed Code String.swift in Sources */,
+				F35198C22E2B7E34004E0F02 /* AttributedCodeString.swift in Sources */,
 				F33058702E3A9B250099CEB7 /* TopicDocsCardImage.swift in Sources */,
 				F314C7F32E2E1C1800F63B6A /* TopicLinkLabel.swift in Sources */,
 				F314C8542E2E65F000F63B6A /* TopicPopover.swift in Sources */,
 				F314C7FA2E2E1F0F00F63B6A /* TopicDisclosureGroup.swift in Sources */,
 				F3202CC62D55977A0030B3CC /* Image Picker 2.swift in Sources */,
 				F314C81F2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift in Sources */,
-				F35198C42E2B7E56004E0F02 /* Simple Code Block View.swift in Sources */,
+				F35198C42E2B7E56004E0F02 /* CodeBlockView.swift in Sources */,
 				F314C8002E2E2A9400F63B6A /* FontSizeItem.swift in Sources */,
 				F35198482E2AECAA004E0F02 /* Gauge Card.swift in Sources */,
 				F388D19D2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */,
@@ -1062,7 +1062,7 @@
 				F34480362E2D218400D18E2E /* TopicEmptyView.swift in Sources */,
 				F34480402E2D4E0500D18E2E /* TopicActionButton.swift in Sources */,
 				F3BF16E22E2C7D1C005212D1 /* TopicHeading.swift in Sources */,
-				F35198C52E2B7E56004E0F02 /* Simple Code Block View.swift in Sources */,
+				F35198C52E2B7E56004E0F02 /* CodeBlockView.swift in Sources */,
 				F330586F2E3A9B250099CEB7 /* TopicDocsCardImage.swift in Sources */,
 				F3D8C11C2B2BB51000C7B0A9 /* Sensory Feedback.swift in Sources */,
 				F399A4B12E3DC544008BED17 /* iOS 18 support.swift in Sources */,
@@ -1079,7 +1079,7 @@
 				F344803B2E2D225A00D18E2E /* TopicSpacer.swift in Sources */,
 				F351984E2E2AF689004E0F02 /* Code Block.swift in Sources */,
 				F3BBD9F92AEED4BC00A9F7E7 /* Image Picker View.swift in Sources */,
-				F35198C12E2B7E34004E0F02 /* Attributed Code String.swift in Sources */,
+				F35198C12E2B7E34004E0F02 /* AttributedCodeString.swift in Sources */,
 				F314C8182E2E4BB600F63B6A /* TopicDivider.swift in Sources */,
 				F388D19C2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */,
 				F34480332E2CD41100D18E2E /* TopicDarkMode.swift in Sources */,
