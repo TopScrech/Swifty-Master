@@ -1,5 +1,3 @@
-// An observable data model of topics and miscellaneous groupings
-
 import SwiftUI
 
 @Observable
