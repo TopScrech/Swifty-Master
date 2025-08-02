@@ -34,8 +34,8 @@ struct CodeBlockView: View {
                         }
                     }
                 }
-                .padding(20)
-                .frame(minWidth: UIScreen.main.bounds.width, alignment: .leading)
+                .padding(.vertical)
+                .frame(minWidth: UIScreen.main.bounds.width * 0.92, alignment: .leading)
                 .background(.ultraThinMaterial)
                 .cornerRadius(20)
                 
