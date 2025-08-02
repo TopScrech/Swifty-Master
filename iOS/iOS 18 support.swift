@@ -14,7 +14,9 @@ struct NavSubtitle: ViewModifier {
 #else
         if #available(iOS 26, *) {
             content
+#if DEBUG
                 .navigationSubtitle(subtitle)
+#endif
         }
 #endif
     }
@@ -47,7 +49,9 @@ struct GlassyBackground: ViewModifier {
         if #available(iOS 26, *) {
             if let rectRounding {
                 content
+#if DEBUG
                     .glassEffect(in: .rect(cornerRadius: rectRounding))
+#endif
             } else {
                 content
             }
@@ -75,7 +79,9 @@ struct GlassProminentButtonStyle: ViewModifier {
     func body(content: Content) -> some View {
         if #available(iOS 26, *) {
             content
+#if DEBUG
                 .buttonStyle(.glassProminent)
+#endif
         } else {
             content
         }
@@ -99,7 +105,9 @@ struct LabelIconWidth: ViewModifier {
     func body(content: Content) -> some View {
         if #available(iOS 26, *) {
             content
+#if DEBUG
                 .labelReservedIconWidth(width)
+#endif
         } else {
             content
         }
