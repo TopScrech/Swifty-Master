@@ -16,7 +16,7 @@ func attributedCodeString(for code: String) -> AttributedString {
     
     colorWholeLine(#"(?m)^#(if|else|endif).*"#, color: Color(0xFD8F3F))
     
-    colorWholeLine(#"(?m)^//.*"#, color: Color(0x6C7986))
+    colorWholeLine(#"(?m)^\s*//.*"#, color: Color(0x6C7986))
     
     // Secondary keywords
     let secondaryKeywords = [
