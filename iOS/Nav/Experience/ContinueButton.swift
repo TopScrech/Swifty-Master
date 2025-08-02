@@ -15,7 +15,7 @@ struct ContinueButton: View {
     }
 }
 
-#if os(iOS)
+#if !os(macOS)
 struct ContinueButtonStyle: ButtonStyle {
     @Environment(\.isEnabled) private var isEnabled
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass

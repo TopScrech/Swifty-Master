@@ -9,10 +9,14 @@ struct NavSubtitle: ViewModifier {
     }
     
     func body(content: Content) -> some View {
+#if os(visionOS)
+        content
+#else
         if #available(iOS 26, *) {
             content
                 .navigationSubtitle(subtitle)
         }
+#endif
     }
 }
 
@@ -31,6 +35,15 @@ struct GlassyBackground: ViewModifier {
     }
     
     func body(content: Content) -> some View {
+#if os(visionOS)
+        if let rectRounding {
+            content
+                .background(.ultraThinMaterial, in: .rect(cornerRadius: rectRounding))
+        } else {
+            content
+                .background(.ultraThinMaterial)
+        }
+#else
         if #available(iOS 26, *) {
             if let rectRounding {
                 content
@@ -47,6 +60,7 @@ struct GlassyBackground: ViewModifier {
                     .background(.ultraThinMaterial)
             }
         }
+#endif
     }
 }
 
