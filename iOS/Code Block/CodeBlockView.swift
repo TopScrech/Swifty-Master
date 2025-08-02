@@ -21,7 +21,7 @@ struct CodeBlockView: View {
                     ForEach(Array(code.components(separatedBy: .newlines).enumerated()), id: \.offset) { index, line in
                         HStack(alignment: .top, spacing: 16) {
                             if store.showCodeLineNumbers {
-                                Text("\(index + 1)")
+                                Text(index + 1)
                                     .monospaced()
                                     .foregroundColor(.gray)
                                     .frame(width: 30, alignment: .trailing)
