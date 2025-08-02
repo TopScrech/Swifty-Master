@@ -8,7 +8,7 @@ struct TopicActionButton: View {
     init(
         _ name: LocalizedStringKey,
         color: Color,
-        action: @escaping () -> Void
+        action: @escaping () -> Void = {}
     ) {
         self.name = name
         self.color = color
@@ -25,6 +25,7 @@ struct TopicActionButton: View {
                 .padding(.vertical, 10)
         }
         .glassyBackground()
+        .glassProminentButtonStyle()
         .tint(color)
     }
 }
