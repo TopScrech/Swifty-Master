@@ -144,6 +144,8 @@
 		F388D1A12E3AB51C002A1128 /* lowPowerMode.txt in Resources */ = {isa = PBXBuildFile; fileRef = F388D19F2E3AB51C002A1128 /* lowPowerMode.txt */; };
 		F399A4AC2E3D52A7008BED17 /* highlightOccurrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */; };
 		F399A4AD2E3D52A7008BED17 /* highlightOccurrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */; };
+		F399A4B02E3DC544008BED17 /* iOS 18 support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399A4AF2E3DC544008BED17 /* iOS 18 support.swift */; };
+		F399A4B12E3DC544008BED17 /* iOS 18 support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399A4AF2E3DC544008BED17 /* iOS 18 support.swift */; };
 		F3ADA6162D9C03E700F2DAA6 /* Plural Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ADA6152D9C03E700F2DAA6 /* Plural Translation.swift */; };
 		F3ADA6172D9C03E700F2DAA6 /* Plural Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ADA6152D9C03E700F2DAA6 /* Plural Translation.swift */; };
 		F3ADA61A2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */; };
@@ -311,6 +313,7 @@
 		F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLowPowerMode.swift; sourceTree = "<group>"; };
 		F388D19F2E3AB51C002A1128 /* lowPowerMode.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lowPowerMode.txt; sourceTree = "<group>"; };
 		F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = highlightOccurrences.swift; sourceTree = "<group>"; };
+		F399A4AF2E3DC544008BED17 /* iOS 18 support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOS 18 support.swift"; sourceTree = "<group>"; };
 		F3ADA6152D9C03E700F2DAA6 /* Plural Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plural Translation.swift"; sourceTree = "<group>"; };
 		F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F3AE99D82E2F861C00D70249 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
@@ -664,6 +667,7 @@
 				F314C8252E2E52A200F63B6A /* ValueStore.swift */,
 				F35198E72E2B9F53004E0F02 /* DataModel.swift */,
 				F35198EA2E2B9F53004E0F02 /* NavModel.swift */,
+				F399A4AF2E3DC544008BED17 /* iOS 18 support.swift */,
 				F35198EC2E2B9F53004E0F02 /* Models */,
 				F3BF16DF2E2C779E005212D1 /* Topics */,
 				F35198C62E2B7E73004E0F02 /* Code Block */,
@@ -927,6 +931,7 @@
 				F34480322E2CD41100D18E2E /* TopicDarkMode.swift in Sources */,
 				F3202CBD2D5597180030B3CC /* Hover Effects.swift in Sources */,
 				F31653B92E3C0A4E00A0E9D7 /* StackTopicList.swift in Sources */,
+				F399A4B02E3DC544008BED17 /* iOS 18 support.swift in Sources */,
 				F3202CC52D55977A0030B3CC /* Image Picker.swift in Sources */,
 				F314C7FD2E2E2A8400F63B6A /* Models.swift in Sources */,
 				F314C7F62E2E1E7900F63B6A /* TopicText.swift in Sources */,
@@ -1060,6 +1065,7 @@
 				F35198C52E2B7E56004E0F02 /* Simple Code Block View.swift in Sources */,
 				F330586F2E3A9B250099CEB7 /* TopicDocsCardImage.swift in Sources */,
 				F3D8C11C2B2BB51000C7B0A9 /* Sensory Feedback.swift in Sources */,
+				F399A4B12E3DC544008BED17 /* iOS 18 support.swift in Sources */,
 				F330586D2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */,
 				F3BE40BF2D1387FE00B7AD35 /* Gauges View.swift in Sources */,
 				F3BBD9F42AEECD6C00A9F7E7 /* Materials View.swift in Sources */,
@@ -1290,7 +1296,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
@@ -1332,7 +1338,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.0;

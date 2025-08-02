@@ -43,7 +43,7 @@ struct CodeBlockView: View {
                     Image(systemName: "document.on.document")
                         .title3(.semibold)
                         .padding(10)
-                        .glassEffect(in: .rect(cornerRadius: 16))
+                        .glassyBackground(16)
                     //                    .background(.ultraThinMaterial, in: .rect(cornerRadius: 8))
                         .padding(8)
                 }

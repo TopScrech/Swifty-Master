@@ -24,7 +24,7 @@ struct TopicActionButton: View {
                 .semibold()
                 .padding(.vertical, 10)
         }
-        .buttonStyle(.glassProminent)
+        .glassyBackground()
         .tint(color)
     }
 }

@@ -54,7 +54,7 @@ struct FavoritesList: View {
                     } label: {
                         Image(systemName: "checkmark")
                     }
-                    .buttonStyle(.glassProminent)
+                    .glassProminentButtonStyle()
                     .tint(.blue)
                 } else {
                     Button {
