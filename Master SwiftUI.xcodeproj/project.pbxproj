@@ -243,6 +243,14 @@
 		F3CFBD9A2E3F8AE2005F93EA /* alert.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD452E3F8AE2005F93EA /* alert.txt */; };
 		F3CFBD9B2E3F8AE2005F93EA /* picker.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD312E3F8AE2005F93EA /* picker.txt */; };
 		F3CFBD9C2E3F8AE2005F93EA /* color.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD372E3F8AE2005F93EA /* color.txt */; };
+		F3CFBD9E2E3F8B9F005F93EA /* label.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD9D2E3F8B9F005F93EA /* label.txt */; };
+		F3CFBD9F2E3F8B9F005F93EA /* label.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD9D2E3F8B9F005F93EA /* label.txt */; };
+		F3CFBDA12E3F8C09005F93EA /* sfSymbols.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDA02E3F8C09005F93EA /* sfSymbols.txt */; };
+		F3CFBDA22E3F8C09005F93EA /* sfSymbols.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDA02E3F8C09005F93EA /* sfSymbols.txt */; };
+		F3CFBDA42E3F8C43005F93EA /* shape.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDA32E3F8C43005F93EA /* shape.txt */; };
+		F3CFBDA52E3F8C43005F93EA /* shape.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDA32E3F8C43005F93EA /* shape.txt */; };
+		F3CFBDA72E3F8C96005F93EA /* customKeyboard.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDA62E3F8C96005F93EA /* customKeyboard.txt */; };
+		F3CFBDA82E3F8C96005F93EA /* customKeyboard.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDA62E3F8C96005F93EA /* customKeyboard.txt */; };
 		F3D8C11C2B2BB51000C7B0A9 /* Sensory Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */; };
 		F3EB1CB62C58FFE5007E6366 /* Hover Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */; };
 /* End PBXBuildFile section */
@@ -372,6 +380,10 @@
 		F3CFBD4D2E3F8AE2005F93EA /* gauges.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = gauges.txt; sourceTree = "<group>"; };
 		F3CFBD4E2E3F8AE2005F93EA /* mdRegular.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mdRegular.txt; sourceTree = "<group>"; };
 		F3CFBD4F2E3F8AE2005F93EA /* mdStrikethrough.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mdStrikethrough.txt; sourceTree = "<group>"; };
+		F3CFBD9D2E3F8B9F005F93EA /* label.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = label.txt; sourceTree = "<group>"; };
+		F3CFBDA02E3F8C09005F93EA /* sfSymbols.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sfSymbols.txt; sourceTree = "<group>"; };
+		F3CFBDA32E3F8C43005F93EA /* shape.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = shape.txt; sourceTree = "<group>"; };
+		F3CFBDA62E3F8C96005F93EA /* customKeyboard.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = customKeyboard.txt; sourceTree = "<group>"; };
 		F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensory Feedback.swift"; sourceTree = "<group>"; };
 		F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hover Effects.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -716,6 +728,10 @@
 				F3CFBD292E3F8AE2005F93EA /* textField.txt */,
 				F3CFBD2A2E3F8AE2005F93EA /* textFieldDisableAutocorrection.txt */,
 				F3CFBD2B2E3F8AE2005F93EA /* textLineLimit.txt */,
+				F3CFBD9D2E3F8B9F005F93EA /* label.txt */,
+				F3CFBDA02E3F8C09005F93EA /* sfSymbols.txt */,
+				F3CFBDA32E3F8C43005F93EA /* shape.txt */,
+				F3CFBDA62E3F8C96005F93EA /* customKeyboard.txt */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -890,6 +906,8 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F3202CC82D55978A0030B3CC /* Assets.xcassets in Resources */,
+				F3CFBDA52E3F8C43005F93EA /* shape.txt in Resources */,
+				F3CFBDA82E3F8C96005F93EA /* customKeyboard.txt in Resources */,
 				F3202CB72D5596210030B3CC /* Assets.xcassets in Resources */,
 				F3ADA61B2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */,
 				F3CFBD512E3F8AE2005F93EA /* mdMonospaced.txt in Resources */,
@@ -906,6 +924,7 @@
 				F3CFBD5C2E3F8AE2005F93EA /* emptyView.txt in Resources */,
 				F3CFBD5D2E3F8AE2005F93EA /* mdBoldItalic.txt in Resources */,
 				F3CFBD5E2E3F8AE2005F93EA /* contextMenu.txt in Resources */,
+				F3CFBD9F2E3F8B9F005F93EA /* label.txt in Resources */,
 				F3CFBD5F2E3F8AE2005F93EA /* mdLink.txt in Resources */,
 				F3CFBD602E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt in Resources */,
 				F3CFBD612E3F8AE2005F93EA /* gauges.txt in Resources */,
@@ -919,6 +938,7 @@
 				F3CFBD692E3F8AE2005F93EA /* button.txt in Resources */,
 				F3CFBD6A2E3F8AE2005F93EA /* appStoreOverlay.txt in Resources */,
 				F3CFBD6B2E3F8AE2005F93EA /* dismiss.txt in Resources */,
+				F3CFBDA22E3F8C09005F93EA /* sfSymbols.txt in Resources */,
 				F3CFBD6C2E3F8AE2005F93EA /* stepper.txt in Resources */,
 				F3CFBD6D2E3F8AE2005F93EA /* slider.txt in Resources */,
 				F3CFBD6E2E3F8AE2005F93EA /* detectLanguage.txt in Resources */,
@@ -938,6 +958,7 @@
 				F3ADA61A2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */,
 				F3BBD9E82AEECD3500A9F7E7 /* Assets.xcassets in Resources */,
 				F3CFBD772E3F8AE2005F93EA /* mdMonospaced.txt in Resources */,
+				F3CFBDA12E3F8C09005F93EA /* sfSymbols.txt in Resources */,
 				F3CFBD782E3F8AE2005F93EA /* buttonCustom.txt in Resources */,
 				F3CFBD792E3F8AE2005F93EA /* lowPowerMode.txt in Resources */,
 				F3CFBD7A2E3F8AE2005F93EA /* gradient.txt in Resources */,
@@ -950,8 +971,10 @@
 				F3CFBD812E3F8AE2005F93EA /* toggleTint.txt in Resources */,
 				F3CFBD822E3F8AE2005F93EA /* emptyView.txt in Resources */,
 				F3CFBD832E3F8AE2005F93EA /* mdBoldItalic.txt in Resources */,
+				F3CFBDA72E3F8C96005F93EA /* customKeyboard.txt in Resources */,
 				F3CFBD842E3F8AE2005F93EA /* contextMenu.txt in Resources */,
 				F3CFBD852E3F8AE2005F93EA /* mdLink.txt in Resources */,
+				F3CFBD9E2E3F8B9F005F93EA /* label.txt in Resources */,
 				F3CFBD862E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt in Resources */,
 				F3CFBD872E3F8AE2005F93EA /* gauges.txt in Resources */,
 				F3CFBD882E3F8AE2005F93EA /* image.txt in Resources */,
@@ -971,6 +994,7 @@
 				F3CFBD962E3F8AE2005F93EA /* dismissHideBackButton.txt in Resources */,
 				F3CFBD972E3F8AE2005F93EA /* emptyViewAnyView.txt in Resources */,
 				F3CFBD982E3F8AE2005F93EA /* sheet.txt in Resources */,
+				F3CFBDA42E3F8C43005F93EA /* shape.txt in Resources */,
 				F3CFBD992E3F8AE2005F93EA /* textFieldDisableAutocorrection.txt in Resources */,
 				F3CFBD9A2E3F8AE2005F93EA /* alert.txt in Resources */,
 				F3CFBD9B2E3F8AE2005F93EA /* picker.txt in Resources */,

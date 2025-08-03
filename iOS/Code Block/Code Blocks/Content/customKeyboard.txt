@@ -1,0 +1,16 @@
+TextField("Enter a number", text: $myNumber)
+    .keyboardType(.decimalPad)
+
+// Keyboard Types
+.default
+.asciiCapable
+.namePhonePad
+.webSearch
+.emailAddress
+.URL
+.twitter
+.numbersAndPunctuation
+.numberPad
+.asciiCapableNumberPad
+.decimalPad
+.phonePad

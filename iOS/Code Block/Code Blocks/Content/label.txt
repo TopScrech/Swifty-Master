@@ -1,0 +1,18 @@
+// Text and SF Symbol
+Label("User", systemImage: "person.fill")
+
+// Text and Image from assets catalogue
+Label("User", image: "myImage")
+
+// Text and Custom view
+Label {
+    Text("User")
+} icon: {
+    // Your custom view here. Example:
+    Circle()
+        .fill(.secondary)
+}
+
+// Label Style
+Label("User", systemImage: "person.fill")
+    .labelStyle(.iconOnly)

@@ -1,0 +1,8 @@
+Image(systemName: "battery.100.bolt")
+    .symbolRenderingMode(.hierarchical)
+    .foregroundColor(.blue)
+    .font(.largeTitle)
+    .font(.system(size: 22))
+    .font(.body.weight(.semibold))
+    .font(.system(size: 22, weight: .semibold))
+    .imageScale(.large)

@@ -8,6 +8,10 @@ enum CodeBlock: String {
          image,
          textField, textFieldDisableAutocorrection,
          textEditor,
+         label,
+         sfSymbols,
+         shape,
+         customKeyboard,
          
          // Control
          button, buttonCustom,

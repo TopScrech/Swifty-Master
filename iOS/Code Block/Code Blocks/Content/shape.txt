@@ -1,0 +1,11 @@
+Rectangle()
+    .fill(.blue)
+    .stroke(.blue, lineWidth: 1)
+    .frame(width: 80, height: 40)
+    .padding()
+
+Rectangle()
+RoundedRectangle(cornerRadius: 6)
+Circle()
+Ellipse()
+Capsule()

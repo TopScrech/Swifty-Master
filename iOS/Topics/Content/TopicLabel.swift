@@ -5,7 +5,7 @@ struct TopicLabel: View {
         VStack(spacing: 25) {
             Text("TopicLabel")
             
-//            CodeBlockView(.image)
+            CodeBlockView(.label)
         }
     }
 }
