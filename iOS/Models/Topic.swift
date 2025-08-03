@@ -196,8 +196,6 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         case .equalSizeViews: "rectangle.split.3x1"
         case .color: "paintpalette"
         case .gradient: "app.translucent"
-        
-            // System
         case .detectOSVersion: "waveform.path.ecg.magnifyingglass"
         case .detectDarkMode: "circle.righthalf.filled"
         case .detectDeviceUsed: "macbook.and.vision.pro"
