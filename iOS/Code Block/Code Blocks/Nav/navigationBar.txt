@@ -1,0 +1,28 @@
+struct ContentView: View {
+    var body: some View {
+        ScrollView {
+            ...
+        }
+        .navigationTitle("Title here")
+
+        // Back Color - Forces the title color to white
+        .toolbarColorScheme(.dark, for: .navigationBar)
+        
+        // Back Color - Adds a background color to the nav bar
+        .toolbarBackground(Color.blue)
+        
+        // Back Color - iOS and iPadOS only - Makes the backg visible when large title
+        .toolbarBackground(.visible, for: .navigationBar)
+
+        // Toolbar with a single item
+        .toolbar {
+            // Adds an item in the toolbar
+            ToolbarItem {
+                // Example with a button
+                Button("Button") {
+                    ...
+                }
+            }
+        }
+    }
+}

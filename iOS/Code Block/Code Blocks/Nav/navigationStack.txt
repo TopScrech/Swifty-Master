@@ -1,0 +1,5 @@
+var body: some View {
+    NavigationStack {
+        ...
+    }
+}

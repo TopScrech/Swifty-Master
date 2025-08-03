@@ -1,0 +1,7 @@
+var body: some View {
+    NavigationSplitView{
+        // Sidebar
+    } details: {
+        ...
+    }
+}

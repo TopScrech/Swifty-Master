@@ -32,6 +32,13 @@ enum CodeBlock: String {
          
          // Nav
          dismiss, dismissHideBackButton,
+         navigationView,
+         navigationStack,
+         navigationSplitView,
+         navigationBar,
+         navigationLink,
+         passAView,
+         link,
          
          // Collection
          

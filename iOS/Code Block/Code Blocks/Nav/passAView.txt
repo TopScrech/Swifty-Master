@@ -1,0 +1,22 @@
+struct TemplateView: View {
+    // Constant for the view that should be passed
+    let subView: AnyView
+    
+    var body: some View {
+        VStack {
+            /* Some content here */
+
+            // Displays the view that has been passed
+            subView()
+
+            /* Some content here */
+        }
+    }
+}
+
+struct ContentView: View {
+    var body: some View {
+        // Calls the TemplateView and passes a subview
+        TemplateView(subView: SomeSubview())
+    }
+}

@@ -1,0 +1,13 @@
+NavigationLink(destination: /* View of destination */ ) {
+    // How the navigationLink looks
+}
+
+// Navigation destination as a value
+List {
+    NavigationLink(value: /* Data to pass*/) {
+        // How the navigationLink looks
+    }
+}
+.navigationDestination(for: /* Value type */.self) { data in
+    /* ViewOfDestination(data: data) */
+}

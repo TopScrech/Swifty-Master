@@ -68,6 +68,13 @@ func topicView(_ topic: Topic) -> AnyView? {
         
         // Nav
     case .dismiss: AnyView(TopicDismiss())
+    case .navigationView: AnyView(TopicNavigationView())
+    case .navigationStack: AnyView(TopicNavigationStack())
+    case .navigationSplitView: AnyView(TopicNavigationSplitView())
+    case .navigationBar: AnyView(TopicNavigationBar())
+    case .navigationLink: AnyView(TopicNavigationLink())
+    case .passAView: AnyView(TopicPassAView())
+    case .link: AnyView(TopicLink())
         
         // Layout
     case .spacer: AnyView(TopicSpacer())
