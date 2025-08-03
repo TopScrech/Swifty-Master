@@ -14,10 +14,12 @@ func highlightOccurrences(
     
     var currentIndex = attributed.startIndex
     
-    while currentIndex < attributed.endIndex,
-          let range = attributed[currentIndex...].range(of: target) {
+    while
+        currentIndex < attributed.endIndex,
+        let range = attributed[currentIndex...].range(of: target)
+    {
         attributed[range].foregroundColor = color
-        attributed[range].font = .body.weight(.bold).monospaced()
+        attributed[range].font = .body.bold().monospaced()
         currentIndex = range.upperBound
     }
     
