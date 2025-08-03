@@ -35,6 +35,7 @@ struct TopicLinkLabel: View {
                     .secondary()
             } else if store.favoriteTopics.contains(topic) {
                 Image(systemName: "star.fill")
+                    .footnote()
                     .foregroundStyle(.yellow)
             }
         }
