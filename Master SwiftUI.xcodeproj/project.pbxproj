@@ -68,8 +68,6 @@
 		F31653B72E3C0A1000A0E9D7 /* FavoritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */; };
 		F31653B92E3C0A4E00A0E9D7 /* StackTopicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B82E3C0A4E00A0E9D7 /* StackTopicList.swift */; };
 		F31653BA2E3C0A4E00A0E9D7 /* StackTopicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B82E3C0A4E00A0E9D7 /* StackTopicList.swift */; };
-		F31E14412E3E9C3100D43C1E /* detectLanguage.txt in Resources */ = {isa = PBXBuildFile; fileRef = F31E14402E3E9C3100D43C1E /* detectLanguage.txt */; };
-		F31E14422E3E9C3100D43C1E /* detectLanguage.txt in Resources */ = {isa = PBXBuildFile; fileRef = F31E14402E3E9C3100D43C1E /* detectLanguage.txt */; };
 		F31E14442E3E9C9E00D43C1E /* TopicDetectLaguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31E14432E3E9C9E00D43C1E /* TopicDetectLaguage.swift */; };
 		F31E14452E3E9C9E00D43C1E /* TopicDetectLaguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31E14432E3E9C9E00D43C1E /* TopicDetectLaguage.swift */; };
 		F3202C942D55952F0030B3CC /* AppStoreOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3202C932D55952F0030B3CC /* AppStoreOverlay.swift */; };
@@ -144,8 +142,6 @@
 		F37916EE2AF14A7A00B880AF /* Image Picker 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37916ED2AF14A7A00B880AF /* Image Picker 2.swift */; };
 		F388D19C2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */; };
 		F388D19D2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */; };
-		F388D1A02E3AB51C002A1128 /* lowPowerMode.txt in Resources */ = {isa = PBXBuildFile; fileRef = F388D19F2E3AB51C002A1128 /* lowPowerMode.txt */; };
-		F388D1A12E3AB51C002A1128 /* lowPowerMode.txt in Resources */ = {isa = PBXBuildFile; fileRef = F388D19F2E3AB51C002A1128 /* lowPowerMode.txt */; };
 		F399A4AC2E3D52A7008BED17 /* highlightOccurrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */; };
 		F399A4AD2E3D52A7008BED17 /* highlightOccurrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */; };
 		F399A4B02E3DC544008BED17 /* iOS 18 support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399A4AF2E3DC544008BED17 /* iOS 18 support.swift */; };
@@ -171,78 +167,82 @@
 		F3BF16E32E2C7D1C005212D1 /* TopicHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF16E12E2C7D1C005212D1 /* TopicHeading.swift */; };
 		F3BF16E62E2CCDEE005212D1 /* TopicDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF16E52E2CCDEE005212D1 /* TopicDocs.swift */; };
 		F3BF16E72E2CCDEE005212D1 /* TopicDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF16E52E2CCDEE005212D1 /* TopicDocs.swift */; };
-		F3CC1E0F2E343C3A00611B60 /* detectOSVersionNewAndOld.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DF22E343C3A00611B60 /* detectOSVersionNewAndOld.txt */; };
-		F3CC1E102E343C3A00611B60 /* slider.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E052E343C3A00611B60 /* slider.txt */; };
-		F3CC1E112E343C3A00611B60 /* textFieldDisableAutocorrection.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E0A2E343C3A00611B60 /* textFieldDisableAutocorrection.txt */; };
-		F3CC1E122E343C3A00611B60 /* color.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DEE2E343C3A00611B60 /* color.txt */; };
-		F3CC1E132E343C3A00611B60 /* mdMonospaced.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DFD2E343C3A00611B60 /* mdMonospaced.txt */; };
-		F3CC1E142E343C3A00611B60 /* image.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DFA2E343C3A00611B60 /* image.txt */; };
-		F3CC1E152E343C3A00611B60 /* textLineLimit.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E0B2E343C3A00611B60 /* textLineLimit.txt */; };
-		F3CC1E162E343C3A00611B60 /* alert.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DEA2E343C3A00611B60 /* alert.txt */; };
-		F3CC1E172E343C3A00611B60 /* spacer.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E062E343C3A00611B60 /* spacer.txt */; };
-		F3CC1E182E343C3A00611B60 /* sheetBefore15.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E042E343C3A00611B60 /* sheetBefore15.txt */; };
-		F3CC1E192E343C3A00611B60 /* dismissHideBackButton.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DF42E343C3A00611B60 /* dismissHideBackButton.txt */; };
-		F3CC1E1A2E343C3A00611B60 /* emptyViewAnyView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DF72E343C3A00611B60 /* emptyViewAnyView.txt */; };
-		F3CC1E1B2E343C3A00611B60 /* emptyView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DF62E343C3A00611B60 /* emptyView.txt */; };
-		F3CC1E1C2E343C3A00611B60 /* contextMenu.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DEF2E343C3A00611B60 /* contextMenu.txt */; };
-		F3CC1E1D2E343C3A00611B60 /* textEditor.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E082E343C3A00611B60 /* textEditor.txt */; };
-		F3CC1E1E2E343C3A00611B60 /* divider.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DF52E343C3A00611B60 /* divider.txt */; };
-		F3CC1E1F2E343C3A00611B60 /* gradient.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DF92E343C3A00611B60 /* gradient.txt */; };
-		F3CC1E202E343C3A00611B60 /* darkMode.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DF02E343C3A00611B60 /* darkMode.txt */; };
-		F3CC1E212E343C3A00611B60 /* button.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DEC2E343C3A00611B60 /* button.txt */; };
-		F3CC1E222E343C3A00611B60 /* mdStrikethrough.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DFF2E343C3A00611B60 /* mdStrikethrough.txt */; };
-		F3CC1E232E343C3A00611B60 /* stepper.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E072E343C3A00611B60 /* stepper.txt */; };
-		F3CC1E242E343C3A00611B60 /* dismiss.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DF32E343C3A00611B60 /* dismiss.txt */; };
-		F3CC1E252E343C3A00611B60 /* popover.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E022E343C3A00611B60 /* popover.txt */; };
-		F3CC1E262E343C3A00611B60 /* appStoreOverlay.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DEB2E343C3A00611B60 /* appStoreOverlay.txt */; };
-		F3CC1E272E343C3A00611B60 /* picker.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E012E343C3A00611B60 /* picker.txt */; };
-		F3CC1E282E343C3A00611B60 /* mdBoldItalic.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DFB2E343C3A00611B60 /* mdBoldItalic.txt */; };
-		F3CC1E292E343C3A00611B60 /* toggleTint.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E0D2E343C3A00611B60 /* toggleTint.txt */; };
-		F3CC1E2A2E343C3A00611B60 /* buttonCustom.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DED2E343C3A00611B60 /* buttonCustom.txt */; };
-		F3CC1E2B2E343C3A00611B60 /* menu.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E002E343C3A00611B60 /* menu.txt */; };
-		F3CC1E2C2E343C3A00611B60 /* mdRegular.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DFE2E343C3A00611B60 /* mdRegular.txt */; };
-		F3CC1E2D2E343C3A00611B60 /* sheet.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E032E343C3A00611B60 /* sheet.txt */; };
-		F3CC1E2E2E343C3A00611B60 /* detectOSVersion.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DF12E343C3A00611B60 /* detectOSVersion.txt */; };
-		F3CC1E2F2E343C3A00611B60 /* toggle.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E0C2E343C3A00611B60 /* toggle.txt */; };
-		F3CC1E302E343C3A00611B60 /* gauges.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DF82E343C3A00611B60 /* gauges.txt */; };
-		F3CC1E312E343C3A00611B60 /* mdLink.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DFC2E343C3A00611B60 /* mdLink.txt */; };
-		F3CC1E322E343C3A00611B60 /* textField.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E092E343C3A00611B60 /* textField.txt */; };
-		F3CC1E332E343C3A00611B60 /* detectOSVersionNewAndOld.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DF22E343C3A00611B60 /* detectOSVersionNewAndOld.txt */; };
-		F3CC1E342E343C3A00611B60 /* slider.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E052E343C3A00611B60 /* slider.txt */; };
-		F3CC1E352E343C3A00611B60 /* textFieldDisableAutocorrection.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E0A2E343C3A00611B60 /* textFieldDisableAutocorrection.txt */; };
-		F3CC1E362E343C3A00611B60 /* color.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DEE2E343C3A00611B60 /* color.txt */; };
-		F3CC1E372E343C3A00611B60 /* mdMonospaced.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DFD2E343C3A00611B60 /* mdMonospaced.txt */; };
-		F3CC1E382E343C3A00611B60 /* image.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DFA2E343C3A00611B60 /* image.txt */; };
-		F3CC1E392E343C3A00611B60 /* textLineLimit.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E0B2E343C3A00611B60 /* textLineLimit.txt */; };
-		F3CC1E3A2E343C3A00611B60 /* alert.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DEA2E343C3A00611B60 /* alert.txt */; };
-		F3CC1E3B2E343C3A00611B60 /* spacer.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E062E343C3A00611B60 /* spacer.txt */; };
-		F3CC1E3C2E343C3A00611B60 /* sheetBefore15.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E042E343C3A00611B60 /* sheetBefore15.txt */; };
-		F3CC1E3D2E343C3A00611B60 /* dismissHideBackButton.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DF42E343C3A00611B60 /* dismissHideBackButton.txt */; };
-		F3CC1E3E2E343C3A00611B60 /* emptyViewAnyView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DF72E343C3A00611B60 /* emptyViewAnyView.txt */; };
-		F3CC1E3F2E343C3A00611B60 /* emptyView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DF62E343C3A00611B60 /* emptyView.txt */; };
-		F3CC1E402E343C3A00611B60 /* contextMenu.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DEF2E343C3A00611B60 /* contextMenu.txt */; };
-		F3CC1E412E343C3A00611B60 /* textEditor.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E082E343C3A00611B60 /* textEditor.txt */; };
-		F3CC1E422E343C3A00611B60 /* divider.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DF52E343C3A00611B60 /* divider.txt */; };
-		F3CC1E432E343C3A00611B60 /* gradient.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DF92E343C3A00611B60 /* gradient.txt */; };
-		F3CC1E442E343C3A00611B60 /* darkMode.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DF02E343C3A00611B60 /* darkMode.txt */; };
-		F3CC1E452E343C3A00611B60 /* button.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DEC2E343C3A00611B60 /* button.txt */; };
-		F3CC1E462E343C3A00611B60 /* mdStrikethrough.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DFF2E343C3A00611B60 /* mdStrikethrough.txt */; };
-		F3CC1E472E343C3A00611B60 /* stepper.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E072E343C3A00611B60 /* stepper.txt */; };
-		F3CC1E482E343C3A00611B60 /* dismiss.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DF32E343C3A00611B60 /* dismiss.txt */; };
-		F3CC1E492E343C3A00611B60 /* popover.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E022E343C3A00611B60 /* popover.txt */; };
-		F3CC1E4A2E343C3A00611B60 /* appStoreOverlay.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DEB2E343C3A00611B60 /* appStoreOverlay.txt */; };
-		F3CC1E4B2E343C3A00611B60 /* picker.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E012E343C3A00611B60 /* picker.txt */; };
-		F3CC1E4C2E343C3A00611B60 /* mdBoldItalic.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DFB2E343C3A00611B60 /* mdBoldItalic.txt */; };
-		F3CC1E4D2E343C3A00611B60 /* toggleTint.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E0D2E343C3A00611B60 /* toggleTint.txt */; };
-		F3CC1E4E2E343C3A00611B60 /* buttonCustom.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DED2E343C3A00611B60 /* buttonCustom.txt */; };
-		F3CC1E4F2E343C3A00611B60 /* menu.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E002E343C3A00611B60 /* menu.txt */; };
-		F3CC1E502E343C3A00611B60 /* mdRegular.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DFE2E343C3A00611B60 /* mdRegular.txt */; };
-		F3CC1E512E343C3A00611B60 /* sheet.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E032E343C3A00611B60 /* sheet.txt */; };
-		F3CC1E522E343C3A00611B60 /* detectOSVersion.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DF12E343C3A00611B60 /* detectOSVersion.txt */; };
-		F3CC1E532E343C3A00611B60 /* toggle.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E0C2E343C3A00611B60 /* toggle.txt */; };
-		F3CC1E542E343C3A00611B60 /* gauges.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DF82E343C3A00611B60 /* gauges.txt */; };
-		F3CC1E552E343C3A00611B60 /* mdLink.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1DFC2E343C3A00611B60 /* mdLink.txt */; };
-		F3CC1E562E343C3A00611B60 /* textField.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CC1E092E343C3A00611B60 /* textField.txt */; };
+		F3CFBD512E3F8AE2005F93EA /* mdMonospaced.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD272E3F8AE2005F93EA /* mdMonospaced.txt */; };
+		F3CFBD522E3F8AE2005F93EA /* buttonCustom.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD2E2E3F8AE2005F93EA /* buttonCustom.txt */; };
+		F3CFBD532E3F8AE2005F93EA /* lowPowerMode.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD432E3F8AE2005F93EA /* lowPowerMode.txt */; };
+		F3CFBD542E3F8AE2005F93EA /* gradient.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD382E3F8AE2005F93EA /* gradient.txt */; };
+		F3CFBD552E3F8AE2005F93EA /* textEditor.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD282E3F8AE2005F93EA /* textEditor.txt */; };
+		F3CFBD562E3F8AE2005F93EA /* spacer.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD3A2E3F8AE2005F93EA /* spacer.txt */; };
+		F3CFBD572E3F8AE2005F93EA /* textField.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD292E3F8AE2005F93EA /* textField.txt */; };
+		F3CFBD582E3F8AE2005F93EA /* detectOSVersion.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD412E3F8AE2005F93EA /* detectOSVersion.txt */; };
+		F3CFBD592E3F8AE2005F93EA /* toggle.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD342E3F8AE2005F93EA /* toggle.txt */; };
+		F3CFBD5A2E3F8AE2005F93EA /* mdRegular.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD4E2E3F8AE2005F93EA /* mdRegular.txt */; };
+		F3CFBD5B2E3F8AE2005F93EA /* toggleTint.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD352E3F8AE2005F93EA /* toggleTint.txt */; };
+		F3CFBD5C2E3F8AE2005F93EA /* emptyView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD472E3F8AE2005F93EA /* emptyView.txt */; };
+		F3CFBD5D2E3F8AE2005F93EA /* mdBoldItalic.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD252E3F8AE2005F93EA /* mdBoldItalic.txt */; };
+		F3CFBD5E2E3F8AE2005F93EA /* contextMenu.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD2F2E3F8AE2005F93EA /* contextMenu.txt */; };
+		F3CFBD5F2E3F8AE2005F93EA /* mdLink.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD262E3F8AE2005F93EA /* mdLink.txt */; };
+		F3CFBD602E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD422E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt */; };
+		F3CFBD612E3F8AE2005F93EA /* gauges.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD4D2E3F8AE2005F93EA /* gauges.txt */; };
+		F3CFBD622E3F8AE2005F93EA /* image.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD242E3F8AE2005F93EA /* image.txt */; };
+		F3CFBD632E3F8AE2005F93EA /* mdStrikethrough.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD4F2E3F8AE2005F93EA /* mdStrikethrough.txt */; };
+		F3CFBD642E3F8AE2005F93EA /* sheetBefore15.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD4B2E3F8AE2005F93EA /* sheetBefore15.txt */; };
+		F3CFBD652E3F8AE2005F93EA /* divider.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD232E3F8AE2005F93EA /* divider.txt */; };
+		F3CFBD662E3F8AE2005F93EA /* textLineLimit.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD2B2E3F8AE2005F93EA /* textLineLimit.txt */; };
+		F3CFBD672E3F8AE2005F93EA /* popover.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD492E3F8AE2005F93EA /* popover.txt */; };
+		F3CFBD682E3F8AE2005F93EA /* menu.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD302E3F8AE2005F93EA /* menu.txt */; };
+		F3CFBD692E3F8AE2005F93EA /* button.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD2D2E3F8AE2005F93EA /* button.txt */; };
+		F3CFBD6A2E3F8AE2005F93EA /* appStoreOverlay.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD462E3F8AE2005F93EA /* appStoreOverlay.txt */; };
+		F3CFBD6B2E3F8AE2005F93EA /* dismiss.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD3C2E3F8AE2005F93EA /* dismiss.txt */; };
+		F3CFBD6C2E3F8AE2005F93EA /* stepper.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD332E3F8AE2005F93EA /* stepper.txt */; };
+		F3CFBD6D2E3F8AE2005F93EA /* slider.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD322E3F8AE2005F93EA /* slider.txt */; };
+		F3CFBD6E2E3F8AE2005F93EA /* detectLanguage.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD402E3F8AE2005F93EA /* detectLanguage.txt */; };
+		F3CFBD6F2E3F8AE2005F93EA /* darkMode.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD3F2E3F8AE2005F93EA /* darkMode.txt */; };
+		F3CFBD702E3F8AE2005F93EA /* dismissHideBackButton.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD3D2E3F8AE2005F93EA /* dismissHideBackButton.txt */; };
+		F3CFBD712E3F8AE2005F93EA /* emptyViewAnyView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD482E3F8AE2005F93EA /* emptyViewAnyView.txt */; };
+		F3CFBD722E3F8AE2005F93EA /* sheet.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD4A2E3F8AE2005F93EA /* sheet.txt */; };
+		F3CFBD732E3F8AE2005F93EA /* textFieldDisableAutocorrection.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD2A2E3F8AE2005F93EA /* textFieldDisableAutocorrection.txt */; };
+		F3CFBD742E3F8AE2005F93EA /* alert.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD452E3F8AE2005F93EA /* alert.txt */; };
+		F3CFBD752E3F8AE2005F93EA /* picker.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD312E3F8AE2005F93EA /* picker.txt */; };
+		F3CFBD762E3F8AE2005F93EA /* color.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD372E3F8AE2005F93EA /* color.txt */; };
+		F3CFBD772E3F8AE2005F93EA /* mdMonospaced.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD272E3F8AE2005F93EA /* mdMonospaced.txt */; };
+		F3CFBD782E3F8AE2005F93EA /* buttonCustom.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD2E2E3F8AE2005F93EA /* buttonCustom.txt */; };
+		F3CFBD792E3F8AE2005F93EA /* lowPowerMode.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD432E3F8AE2005F93EA /* lowPowerMode.txt */; };
+		F3CFBD7A2E3F8AE2005F93EA /* gradient.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD382E3F8AE2005F93EA /* gradient.txt */; };
+		F3CFBD7B2E3F8AE2005F93EA /* textEditor.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD282E3F8AE2005F93EA /* textEditor.txt */; };
+		F3CFBD7C2E3F8AE2005F93EA /* spacer.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD3A2E3F8AE2005F93EA /* spacer.txt */; };
+		F3CFBD7D2E3F8AE2005F93EA /* textField.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD292E3F8AE2005F93EA /* textField.txt */; };
+		F3CFBD7E2E3F8AE2005F93EA /* detectOSVersion.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD412E3F8AE2005F93EA /* detectOSVersion.txt */; };
+		F3CFBD7F2E3F8AE2005F93EA /* toggle.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD342E3F8AE2005F93EA /* toggle.txt */; };
+		F3CFBD802E3F8AE2005F93EA /* mdRegular.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD4E2E3F8AE2005F93EA /* mdRegular.txt */; };
+		F3CFBD812E3F8AE2005F93EA /* toggleTint.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD352E3F8AE2005F93EA /* toggleTint.txt */; };
+		F3CFBD822E3F8AE2005F93EA /* emptyView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD472E3F8AE2005F93EA /* emptyView.txt */; };
+		F3CFBD832E3F8AE2005F93EA /* mdBoldItalic.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD252E3F8AE2005F93EA /* mdBoldItalic.txt */; };
+		F3CFBD842E3F8AE2005F93EA /* contextMenu.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD2F2E3F8AE2005F93EA /* contextMenu.txt */; };
+		F3CFBD852E3F8AE2005F93EA /* mdLink.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD262E3F8AE2005F93EA /* mdLink.txt */; };
+		F3CFBD862E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD422E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt */; };
+		F3CFBD872E3F8AE2005F93EA /* gauges.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD4D2E3F8AE2005F93EA /* gauges.txt */; };
+		F3CFBD882E3F8AE2005F93EA /* image.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD242E3F8AE2005F93EA /* image.txt */; };
+		F3CFBD892E3F8AE2005F93EA /* mdStrikethrough.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD4F2E3F8AE2005F93EA /* mdStrikethrough.txt */; };
+		F3CFBD8A2E3F8AE2005F93EA /* sheetBefore15.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD4B2E3F8AE2005F93EA /* sheetBefore15.txt */; };
+		F3CFBD8B2E3F8AE2005F93EA /* divider.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD232E3F8AE2005F93EA /* divider.txt */; };
+		F3CFBD8C2E3F8AE2005F93EA /* textLineLimit.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD2B2E3F8AE2005F93EA /* textLineLimit.txt */; };
+		F3CFBD8D2E3F8AE2005F93EA /* popover.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD492E3F8AE2005F93EA /* popover.txt */; };
+		F3CFBD8E2E3F8AE2005F93EA /* menu.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD302E3F8AE2005F93EA /* menu.txt */; };
+		F3CFBD8F2E3F8AE2005F93EA /* button.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD2D2E3F8AE2005F93EA /* button.txt */; };
+		F3CFBD902E3F8AE2005F93EA /* appStoreOverlay.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD462E3F8AE2005F93EA /* appStoreOverlay.txt */; };
+		F3CFBD912E3F8AE2005F93EA /* dismiss.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD3C2E3F8AE2005F93EA /* dismiss.txt */; };
+		F3CFBD922E3F8AE2005F93EA /* stepper.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD332E3F8AE2005F93EA /* stepper.txt */; };
+		F3CFBD932E3F8AE2005F93EA /* slider.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD322E3F8AE2005F93EA /* slider.txt */; };
+		F3CFBD942E3F8AE2005F93EA /* detectLanguage.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD402E3F8AE2005F93EA /* detectLanguage.txt */; };
+		F3CFBD952E3F8AE2005F93EA /* darkMode.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD3F2E3F8AE2005F93EA /* darkMode.txt */; };
+		F3CFBD962E3F8AE2005F93EA /* dismissHideBackButton.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD3D2E3F8AE2005F93EA /* dismissHideBackButton.txt */; };
+		F3CFBD972E3F8AE2005F93EA /* emptyViewAnyView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD482E3F8AE2005F93EA /* emptyViewAnyView.txt */; };
+		F3CFBD982E3F8AE2005F93EA /* sheet.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD4A2E3F8AE2005F93EA /* sheet.txt */; };
+		F3CFBD992E3F8AE2005F93EA /* textFieldDisableAutocorrection.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD2A2E3F8AE2005F93EA /* textFieldDisableAutocorrection.txt */; };
+		F3CFBD9A2E3F8AE2005F93EA /* alert.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD452E3F8AE2005F93EA /* alert.txt */; };
+		F3CFBD9B2E3F8AE2005F93EA /* picker.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD312E3F8AE2005F93EA /* picker.txt */; };
+		F3CFBD9C2E3F8AE2005F93EA /* color.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD372E3F8AE2005F93EA /* color.txt */; };
 		F3D8C11C2B2BB51000C7B0A9 /* Sensory Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */; };
 		F3EB1CB62C58FFE5007E6366 /* Hover Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */; };
 /* End PBXBuildFile section */
@@ -280,7 +280,6 @@
 		F314C8592E2E665600F63B6A /* TopicGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicGradient.swift; sourceTree = "<group>"; };
 		F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesList.swift; sourceTree = "<group>"; };
 		F31653B82E3C0A4E00A0E9D7 /* StackTopicList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTopicList.swift; sourceTree = "<group>"; };
-		F31E14402E3E9C3100D43C1E /* detectLanguage.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectLanguage.txt; sourceTree = "<group>"; };
 		F31E14432E3E9C9E00D43C1E /* TopicDetectLaguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectLaguage.swift; sourceTree = "<group>"; };
 		F3202C932D55952F0030B3CC /* AppStoreOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreOverlay.swift; sourceTree = "<group>"; };
 		F3202C992D5596100030B3CC /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -317,7 +316,6 @@
 		F35198FB2E2B9F53004E0F02 /* TopicTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTile.swift; sourceTree = "<group>"; };
 		F37916ED2AF14A7A00B880AF /* Image Picker 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker 2.swift"; sourceTree = "<group>"; };
 		F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLowPowerMode.swift; sourceTree = "<group>"; };
-		F388D19F2E3AB51C002A1128 /* lowPowerMode.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lowPowerMode.txt; sourceTree = "<group>"; };
 		F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = highlightOccurrences.swift; sourceTree = "<group>"; };
 		F399A4AF2E3DC544008BED17 /* iOS 18 support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOS 18 support.swift"; sourceTree = "<group>"; };
 		F3ADA6152D9C03E700F2DAA6 /* Plural Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plural Translation.swift"; sourceTree = "<group>"; };
@@ -336,42 +334,44 @@
 		F3BF16DC2E2C7717005212D1 /* TopicDismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDismiss.swift; sourceTree = "<group>"; };
 		F3BF16E12E2C7D1C005212D1 /* TopicHeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicHeading.swift; sourceTree = "<group>"; };
 		F3BF16E52E2CCDEE005212D1 /* TopicDocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocs.swift; sourceTree = "<group>"; };
-		F3CC1DEA2E343C3A00611B60 /* alert.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = alert.txt; sourceTree = "<group>"; };
-		F3CC1DEB2E343C3A00611B60 /* appStoreOverlay.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = appStoreOverlay.txt; sourceTree = "<group>"; };
-		F3CC1DEC2E343C3A00611B60 /* button.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = button.txt; sourceTree = "<group>"; };
-		F3CC1DED2E343C3A00611B60 /* buttonCustom.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = buttonCustom.txt; sourceTree = "<group>"; };
-		F3CC1DEE2E343C3A00611B60 /* color.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = color.txt; sourceTree = "<group>"; };
-		F3CC1DEF2E343C3A00611B60 /* contextMenu.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = contextMenu.txt; sourceTree = "<group>"; };
-		F3CC1DF02E343C3A00611B60 /* darkMode.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = darkMode.txt; sourceTree = "<group>"; };
-		F3CC1DF12E343C3A00611B60 /* detectOSVersion.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectOSVersion.txt; sourceTree = "<group>"; };
-		F3CC1DF22E343C3A00611B60 /* detectOSVersionNewAndOld.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectOSVersionNewAndOld.txt; sourceTree = "<group>"; };
-		F3CC1DF32E343C3A00611B60 /* dismiss.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = dismiss.txt; sourceTree = "<group>"; };
-		F3CC1DF42E343C3A00611B60 /* dismissHideBackButton.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = dismissHideBackButton.txt; sourceTree = "<group>"; };
-		F3CC1DF52E343C3A00611B60 /* divider.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = divider.txt; sourceTree = "<group>"; };
-		F3CC1DF62E343C3A00611B60 /* emptyView.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = emptyView.txt; sourceTree = "<group>"; };
-		F3CC1DF72E343C3A00611B60 /* emptyViewAnyView.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = emptyViewAnyView.txt; sourceTree = "<group>"; };
-		F3CC1DF82E343C3A00611B60 /* gauges.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = gauges.txt; sourceTree = "<group>"; };
-		F3CC1DF92E343C3A00611B60 /* gradient.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = gradient.txt; sourceTree = "<group>"; };
-		F3CC1DFA2E343C3A00611B60 /* image.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = image.txt; sourceTree = "<group>"; };
-		F3CC1DFB2E343C3A00611B60 /* mdBoldItalic.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mdBoldItalic.txt; sourceTree = "<group>"; };
-		F3CC1DFC2E343C3A00611B60 /* mdLink.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mdLink.txt; sourceTree = "<group>"; };
-		F3CC1DFD2E343C3A00611B60 /* mdMonospaced.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mdMonospaced.txt; sourceTree = "<group>"; };
-		F3CC1DFE2E343C3A00611B60 /* mdRegular.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mdRegular.txt; sourceTree = "<group>"; };
-		F3CC1DFF2E343C3A00611B60 /* mdStrikethrough.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mdStrikethrough.txt; sourceTree = "<group>"; };
-		F3CC1E002E343C3A00611B60 /* menu.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = menu.txt; sourceTree = "<group>"; };
-		F3CC1E012E343C3A00611B60 /* picker.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = picker.txt; sourceTree = "<group>"; };
-		F3CC1E022E343C3A00611B60 /* popover.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = popover.txt; sourceTree = "<group>"; };
-		F3CC1E032E343C3A00611B60 /* sheet.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sheet.txt; sourceTree = "<group>"; };
-		F3CC1E042E343C3A00611B60 /* sheetBefore15.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sheetBefore15.txt; sourceTree = "<group>"; };
-		F3CC1E052E343C3A00611B60 /* slider.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = slider.txt; sourceTree = "<group>"; };
-		F3CC1E062E343C3A00611B60 /* spacer.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = spacer.txt; sourceTree = "<group>"; };
-		F3CC1E072E343C3A00611B60 /* stepper.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = stepper.txt; sourceTree = "<group>"; };
-		F3CC1E082E343C3A00611B60 /* textEditor.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = textEditor.txt; sourceTree = "<group>"; };
-		F3CC1E092E343C3A00611B60 /* textField.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = textField.txt; sourceTree = "<group>"; };
-		F3CC1E0A2E343C3A00611B60 /* textFieldDisableAutocorrection.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = textFieldDisableAutocorrection.txt; sourceTree = "<group>"; };
-		F3CC1E0B2E343C3A00611B60 /* textLineLimit.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = textLineLimit.txt; sourceTree = "<group>"; };
-		F3CC1E0C2E343C3A00611B60 /* toggle.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = toggle.txt; sourceTree = "<group>"; };
-		F3CC1E0D2E343C3A00611B60 /* toggleTint.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = toggleTint.txt; sourceTree = "<group>"; };
+		F3CFBD232E3F8AE2005F93EA /* divider.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = divider.txt; sourceTree = "<group>"; };
+		F3CFBD242E3F8AE2005F93EA /* image.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = image.txt; sourceTree = "<group>"; };
+		F3CFBD252E3F8AE2005F93EA /* mdBoldItalic.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mdBoldItalic.txt; sourceTree = "<group>"; };
+		F3CFBD262E3F8AE2005F93EA /* mdLink.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mdLink.txt; sourceTree = "<group>"; };
+		F3CFBD272E3F8AE2005F93EA /* mdMonospaced.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mdMonospaced.txt; sourceTree = "<group>"; };
+		F3CFBD282E3F8AE2005F93EA /* textEditor.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = textEditor.txt; sourceTree = "<group>"; };
+		F3CFBD292E3F8AE2005F93EA /* textField.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = textField.txt; sourceTree = "<group>"; };
+		F3CFBD2A2E3F8AE2005F93EA /* textFieldDisableAutocorrection.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = textFieldDisableAutocorrection.txt; sourceTree = "<group>"; };
+		F3CFBD2B2E3F8AE2005F93EA /* textLineLimit.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = textLineLimit.txt; sourceTree = "<group>"; };
+		F3CFBD2D2E3F8AE2005F93EA /* button.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = button.txt; sourceTree = "<group>"; };
+		F3CFBD2E2E3F8AE2005F93EA /* buttonCustom.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = buttonCustom.txt; sourceTree = "<group>"; };
+		F3CFBD2F2E3F8AE2005F93EA /* contextMenu.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = contextMenu.txt; sourceTree = "<group>"; };
+		F3CFBD302E3F8AE2005F93EA /* menu.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = menu.txt; sourceTree = "<group>"; };
+		F3CFBD312E3F8AE2005F93EA /* picker.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = picker.txt; sourceTree = "<group>"; };
+		F3CFBD322E3F8AE2005F93EA /* slider.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = slider.txt; sourceTree = "<group>"; };
+		F3CFBD332E3F8AE2005F93EA /* stepper.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = stepper.txt; sourceTree = "<group>"; };
+		F3CFBD342E3F8AE2005F93EA /* toggle.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = toggle.txt; sourceTree = "<group>"; };
+		F3CFBD352E3F8AE2005F93EA /* toggleTint.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = toggleTint.txt; sourceTree = "<group>"; };
+		F3CFBD372E3F8AE2005F93EA /* color.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = color.txt; sourceTree = "<group>"; };
+		F3CFBD382E3F8AE2005F93EA /* gradient.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = gradient.txt; sourceTree = "<group>"; };
+		F3CFBD3A2E3F8AE2005F93EA /* spacer.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = spacer.txt; sourceTree = "<group>"; };
+		F3CFBD3C2E3F8AE2005F93EA /* dismiss.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = dismiss.txt; sourceTree = "<group>"; };
+		F3CFBD3D2E3F8AE2005F93EA /* dismissHideBackButton.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = dismissHideBackButton.txt; sourceTree = "<group>"; };
+		F3CFBD3F2E3F8AE2005F93EA /* darkMode.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = darkMode.txt; sourceTree = "<group>"; };
+		F3CFBD402E3F8AE2005F93EA /* detectLanguage.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectLanguage.txt; sourceTree = "<group>"; };
+		F3CFBD412E3F8AE2005F93EA /* detectOSVersion.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectOSVersion.txt; sourceTree = "<group>"; };
+		F3CFBD422E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectOSVersionNewAndOld.txt; sourceTree = "<group>"; };
+		F3CFBD432E3F8AE2005F93EA /* lowPowerMode.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lowPowerMode.txt; sourceTree = "<group>"; };
+		F3CFBD452E3F8AE2005F93EA /* alert.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = alert.txt; sourceTree = "<group>"; };
+		F3CFBD462E3F8AE2005F93EA /* appStoreOverlay.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = appStoreOverlay.txt; sourceTree = "<group>"; };
+		F3CFBD472E3F8AE2005F93EA /* emptyView.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = emptyView.txt; sourceTree = "<group>"; };
+		F3CFBD482E3F8AE2005F93EA /* emptyViewAnyView.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = emptyViewAnyView.txt; sourceTree = "<group>"; };
+		F3CFBD492E3F8AE2005F93EA /* popover.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = popover.txt; sourceTree = "<group>"; };
+		F3CFBD4A2E3F8AE2005F93EA /* sheet.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sheet.txt; sourceTree = "<group>"; };
+		F3CFBD4B2E3F8AE2005F93EA /* sheetBefore15.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sheetBefore15.txt; sourceTree = "<group>"; };
+		F3CFBD4D2E3F8AE2005F93EA /* gauges.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = gauges.txt; sourceTree = "<group>"; };
+		F3CFBD4E2E3F8AE2005F93EA /* mdRegular.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mdRegular.txt; sourceTree = "<group>"; };
+		F3CFBD4F2E3F8AE2005F93EA /* mdStrikethrough.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mdStrikethrough.txt; sourceTree = "<group>"; };
 		F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensory Feedback.swift"; sourceTree = "<group>"; };
 		F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hover Effects.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -575,7 +575,7 @@
 				F351984D2E2AF689004E0F02 /* Code Block.swift */,
 				F35198C32E2B7E56004E0F02 /* CodeBlockView.swift */,
 				F35198C02E2B7E34004E0F02 /* AttributedCodeString.swift */,
-				F3CC1E0E2E343C3A00611B60 /* Code Blocks */,
+				F3CFBD502E3F8AE2005F93EA /* Code Blocks */,
 			);
 			path = "Code Block";
 			sourceTree = "<group>";
@@ -612,27 +612,6 @@
 				F35198FB2E2B9F53004E0F02 /* TopicTile.swift */,
 			);
 			path = Topic;
-			sourceTree = "<group>";
-		};
-		F388D19E2E3AB516002A1128 /* System */ = {
-			isa = PBXGroup;
-			children = (
-				F3CC1DF02E343C3A00611B60 /* darkMode.txt */,
-				F3CC1DF12E343C3A00611B60 /* detectOSVersion.txt */,
-				F3CC1DF22E343C3A00611B60 /* detectOSVersionNewAndOld.txt */,
-				F31E14402E3E9C3100D43C1E /* detectLanguage.txt */,
-				F388D19F2E3AB51C002A1128 /* lowPowerMode.txt */,
-			);
-			path = System;
-			sourceTree = "<group>";
-		};
-		F399A4AE2E3D6097008BED17 /* Design */ = {
-			isa = PBXGroup;
-			children = (
-				F3CC1DEE2E343C3A00611B60 /* color.txt */,
-				F3CC1DF92E343C3A00611B60 /* gradient.txt */,
-			);
-			path = Design;
 			sourceTree = "<group>";
 		};
 		F3ADA6182D9C03EC00F2DAA6 /* Loc */ = {
@@ -716,92 +695,113 @@
 			path = Nav;
 			sourceTree = "<group>";
 		};
-		F3CC1E0E2E343C3A00611B60 /* Code Blocks */ = {
-			isa = PBXGroup;
-			children = (
-				F3CFBD1B2E3F864B005F93EA /* Content */,
-				F3CFBD1C2E3F864F005F93EA /* Control */,
-				F3CFBD1D2E3F8668005F93EA /* View */,
-				F3CFBD1E2E3F8674005F93EA /* Nav */,
-				F3CFBD1F2E3F8681005F93EA /* Collections */,
-				F3CFBD212E3F89A6005F93EA /* Layout */,
-				F399A4AE2E3D6097008BED17 /* Design */,
-				F388D19E2E3AB516002A1128 /* System */,
-				F3CC1DEB2E343C3A00611B60 /* appStoreOverlay.txt */,
-				F3CC1DED2E343C3A00611B60 /* buttonCustom.txt */,
-				F3CC1DEF2E343C3A00611B60 /* contextMenu.txt */,
-				F3CC1DF32E343C3A00611B60 /* dismiss.txt */,
-				F3CC1DF42E343C3A00611B60 /* dismissHideBackButton.txt */,
-				F3CC1DF52E343C3A00611B60 /* divider.txt */,
-				F3CC1DF62E343C3A00611B60 /* emptyView.txt */,
-				F3CC1DF72E343C3A00611B60 /* emptyViewAnyView.txt */,
-				F3CC1DF82E343C3A00611B60 /* gauges.txt */,
-				F3CC1DFB2E343C3A00611B60 /* mdBoldItalic.txt */,
-				F3CC1DFC2E343C3A00611B60 /* mdLink.txt */,
-				F3CC1DFD2E343C3A00611B60 /* mdMonospaced.txt */,
-				F3CC1DFE2E343C3A00611B60 /* mdRegular.txt */,
-				F3CC1DFF2E343C3A00611B60 /* mdStrikethrough.txt */,
-				F3CC1E002E343C3A00611B60 /* menu.txt */,
-				F3CC1E012E343C3A00611B60 /* picker.txt */,
-				F3CC1E052E343C3A00611B60 /* slider.txt */,
-				F3CC1E072E343C3A00611B60 /* stepper.txt */,
-				F3CC1E0C2E343C3A00611B60 /* toggle.txt */,
-				F3CC1E0D2E343C3A00611B60 /* toggleTint.txt */,
-			);
-			path = "Code Blocks";
-			sourceTree = "<group>";
-		};
-		F3CFBD1B2E3F864B005F93EA /* Content */ = {
-			isa = PBXGroup;
-			children = (
-				F3CC1E082E343C3A00611B60 /* textEditor.txt */,
-				F3CC1E092E343C3A00611B60 /* textField.txt */,
-				F3CC1E0A2E343C3A00611B60 /* textFieldDisableAutocorrection.txt */,
-				F3CC1E0B2E343C3A00611B60 /* textLineLimit.txt */,
-				F3CC1DFA2E343C3A00611B60 /* image.txt */,
-			);
-			path = Content;
-			sourceTree = "<group>";
-		};
-		F3CFBD1C2E3F864F005F93EA /* Control */ = {
-			isa = PBXGroup;
-			children = (
-				F3CC1DEC2E343C3A00611B60 /* button.txt */,
-			);
-			path = Control;
-			sourceTree = "<group>";
-		};
-		F3CFBD1D2E3F8668005F93EA /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F3CC1DEA2E343C3A00611B60 /* alert.txt */,
-				F3CC1E022E343C3A00611B60 /* popover.txt */,
-				F3CC1E032E343C3A00611B60 /* sheet.txt */,
-				F3CC1E042E343C3A00611B60 /* sheetBefore15.txt */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F3CFBD1E2E3F8674005F93EA /* Nav */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Nav;
-			sourceTree = "<group>";
-		};
-		F3CFBD1F2E3F8681005F93EA /* Collections */ = {
+		F3CFBD222E3F8AE2005F93EA /* Collections */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Collections;
 			sourceTree = "<group>";
 		};
-		F3CFBD212E3F89A6005F93EA /* Layout */ = {
+		F3CFBD2C2E3F8AE2005F93EA /* Content */ = {
 			isa = PBXGroup;
 			children = (
-				F3CC1E062E343C3A00611B60 /* spacer.txt */,
+				F3CFBD232E3F8AE2005F93EA /* divider.txt */,
+				F3CFBD242E3F8AE2005F93EA /* image.txt */,
+				F3CFBD252E3F8AE2005F93EA /* mdBoldItalic.txt */,
+				F3CFBD262E3F8AE2005F93EA /* mdLink.txt */,
+				F3CFBD272E3F8AE2005F93EA /* mdMonospaced.txt */,
+				F3CFBD4E2E3F8AE2005F93EA /* mdRegular.txt */,
+				F3CFBD4F2E3F8AE2005F93EA /* mdStrikethrough.txt */,
+				F3CFBD282E3F8AE2005F93EA /* textEditor.txt */,
+				F3CFBD292E3F8AE2005F93EA /* textField.txt */,
+				F3CFBD2A2E3F8AE2005F93EA /* textFieldDisableAutocorrection.txt */,
+				F3CFBD2B2E3F8AE2005F93EA /* textLineLimit.txt */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		F3CFBD362E3F8AE2005F93EA /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBD2D2E3F8AE2005F93EA /* button.txt */,
+				F3CFBD2E2E3F8AE2005F93EA /* buttonCustom.txt */,
+				F3CFBD2F2E3F8AE2005F93EA /* contextMenu.txt */,
+				F3CFBD302E3F8AE2005F93EA /* menu.txt */,
+				F3CFBD312E3F8AE2005F93EA /* picker.txt */,
+				F3CFBD322E3F8AE2005F93EA /* slider.txt */,
+				F3CFBD332E3F8AE2005F93EA /* stepper.txt */,
+				F3CFBD342E3F8AE2005F93EA /* toggle.txt */,
+				F3CFBD352E3F8AE2005F93EA /* toggleTint.txt */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		F3CFBD392E3F8AE2005F93EA /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBD372E3F8AE2005F93EA /* color.txt */,
+				F3CFBD382E3F8AE2005F93EA /* gradient.txt */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		F3CFBD3B2E3F8AE2005F93EA /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBD3A2E3F8AE2005F93EA /* spacer.txt */,
 			);
 			path = Layout;
+			sourceTree = "<group>";
+		};
+		F3CFBD3E2E3F8AE2005F93EA /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBD3C2E3F8AE2005F93EA /* dismiss.txt */,
+				F3CFBD3D2E3F8AE2005F93EA /* dismissHideBackButton.txt */,
+			);
+			path = Nav;
+			sourceTree = "<group>";
+		};
+		F3CFBD442E3F8AE2005F93EA /* System */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBD3F2E3F8AE2005F93EA /* darkMode.txt */,
+				F3CFBD402E3F8AE2005F93EA /* detectLanguage.txt */,
+				F3CFBD412E3F8AE2005F93EA /* detectOSVersion.txt */,
+				F3CFBD422E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt */,
+				F3CFBD432E3F8AE2005F93EA /* lowPowerMode.txt */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		F3CFBD4C2E3F8AE2005F93EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBD452E3F8AE2005F93EA /* alert.txt */,
+				F3CFBD462E3F8AE2005F93EA /* appStoreOverlay.txt */,
+				F3CFBD472E3F8AE2005F93EA /* emptyView.txt */,
+				F3CFBD482E3F8AE2005F93EA /* emptyViewAnyView.txt */,
+				F3CFBD492E3F8AE2005F93EA /* popover.txt */,
+				F3CFBD4A2E3F8AE2005F93EA /* sheet.txt */,
+				F3CFBD4B2E3F8AE2005F93EA /* sheetBefore15.txt */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3CFBD502E3F8AE2005F93EA /* Code Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBD4D2E3F8AE2005F93EA /* gauges.txt */,
+				F3CFBD222E3F8AE2005F93EA /* Collections */,
+				F3CFBD2C2E3F8AE2005F93EA /* Content */,
+				F3CFBD362E3F8AE2005F93EA /* Control */,
+				F3CFBD392E3F8AE2005F93EA /* Design */,
+				F3CFBD3B2E3F8AE2005F93EA /* Layout */,
+				F3CFBD3E2E3F8AE2005F93EA /* Nav */,
+				F3CFBD442E3F8AE2005F93EA /* System */,
+				F3CFBD4C2E3F8AE2005F93EA /* View */,
+			);
+			path = "Code Blocks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -889,92 +889,92 @@
 		F3202C972D5596100030B3CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
-				F3CC1E332E343C3A00611B60 /* detectOSVersionNewAndOld.txt in Resources */,
-				F3CC1E342E343C3A00611B60 /* slider.txt in Resources */,
-				F3CC1E352E343C3A00611B60 /* textFieldDisableAutocorrection.txt in Resources */,
-				F3CC1E362E343C3A00611B60 /* color.txt in Resources */,
-				F3CC1E372E343C3A00611B60 /* mdMonospaced.txt in Resources */,
-				F3CC1E382E343C3A00611B60 /* image.txt in Resources */,
-				F3CC1E392E343C3A00611B60 /* textLineLimit.txt in Resources */,
-				F3CC1E3A2E343C3A00611B60 /* alert.txt in Resources */,
-				F3CC1E3B2E343C3A00611B60 /* spacer.txt in Resources */,
-				F3CC1E3C2E343C3A00611B60 /* sheetBefore15.txt in Resources */,
-				F3CC1E3D2E343C3A00611B60 /* dismissHideBackButton.txt in Resources */,
-				F3CC1E3E2E343C3A00611B60 /* emptyViewAnyView.txt in Resources */,
-				F3CC1E3F2E343C3A00611B60 /* emptyView.txt in Resources */,
-				F3CC1E402E343C3A00611B60 /* contextMenu.txt in Resources */,
-				F3CC1E412E343C3A00611B60 /* textEditor.txt in Resources */,
-				F3CC1E422E343C3A00611B60 /* divider.txt in Resources */,
-				F3CC1E432E343C3A00611B60 /* gradient.txt in Resources */,
-				F3CC1E442E343C3A00611B60 /* darkMode.txt in Resources */,
-				F3CC1E452E343C3A00611B60 /* button.txt in Resources */,
-				F3CC1E462E343C3A00611B60 /* mdStrikethrough.txt in Resources */,
-				F3CC1E472E343C3A00611B60 /* stepper.txt in Resources */,
-				F3CC1E482E343C3A00611B60 /* dismiss.txt in Resources */,
-				F3CC1E492E343C3A00611B60 /* popover.txt in Resources */,
-				F3CC1E4A2E343C3A00611B60 /* appStoreOverlay.txt in Resources */,
-				F3CC1E4B2E343C3A00611B60 /* picker.txt in Resources */,
-				F388D1A12E3AB51C002A1128 /* lowPowerMode.txt in Resources */,
-				F3CC1E4C2E343C3A00611B60 /* mdBoldItalic.txt in Resources */,
-				F3CC1E4D2E343C3A00611B60 /* toggleTint.txt in Resources */,
-				F3CC1E4E2E343C3A00611B60 /* buttonCustom.txt in Resources */,
-				F3CC1E4F2E343C3A00611B60 /* menu.txt in Resources */,
-				F3CC1E502E343C3A00611B60 /* mdRegular.txt in Resources */,
-				F31E14422E3E9C3100D43C1E /* detectLanguage.txt in Resources */,
-				F3CC1E512E343C3A00611B60 /* sheet.txt in Resources */,
-				F3CC1E522E343C3A00611B60 /* detectOSVersion.txt in Resources */,
-				F3CC1E532E343C3A00611B60 /* toggle.txt in Resources */,
-				F3CC1E542E343C3A00611B60 /* gauges.txt in Resources */,
-				F3CC1E552E343C3A00611B60 /* mdLink.txt in Resources */,
-				F3CC1E562E343C3A00611B60 /* textField.txt in Resources */,
 				F3202CC82D55978A0030B3CC /* Assets.xcassets in Resources */,
 				F3202CB72D5596210030B3CC /* Assets.xcassets in Resources */,
 				F3ADA61B2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */,
+				F3CFBD512E3F8AE2005F93EA /* mdMonospaced.txt in Resources */,
+				F3CFBD522E3F8AE2005F93EA /* buttonCustom.txt in Resources */,
+				F3CFBD532E3F8AE2005F93EA /* lowPowerMode.txt in Resources */,
+				F3CFBD542E3F8AE2005F93EA /* gradient.txt in Resources */,
+				F3CFBD552E3F8AE2005F93EA /* textEditor.txt in Resources */,
+				F3CFBD562E3F8AE2005F93EA /* spacer.txt in Resources */,
+				F3CFBD572E3F8AE2005F93EA /* textField.txt in Resources */,
+				F3CFBD582E3F8AE2005F93EA /* detectOSVersion.txt in Resources */,
+				F3CFBD592E3F8AE2005F93EA /* toggle.txt in Resources */,
+				F3CFBD5A2E3F8AE2005F93EA /* mdRegular.txt in Resources */,
+				F3CFBD5B2E3F8AE2005F93EA /* toggleTint.txt in Resources */,
+				F3CFBD5C2E3F8AE2005F93EA /* emptyView.txt in Resources */,
+				F3CFBD5D2E3F8AE2005F93EA /* mdBoldItalic.txt in Resources */,
+				F3CFBD5E2E3F8AE2005F93EA /* contextMenu.txt in Resources */,
+				F3CFBD5F2E3F8AE2005F93EA /* mdLink.txt in Resources */,
+				F3CFBD602E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt in Resources */,
+				F3CFBD612E3F8AE2005F93EA /* gauges.txt in Resources */,
+				F3CFBD622E3F8AE2005F93EA /* image.txt in Resources */,
+				F3CFBD632E3F8AE2005F93EA /* mdStrikethrough.txt in Resources */,
+				F3CFBD642E3F8AE2005F93EA /* sheetBefore15.txt in Resources */,
+				F3CFBD652E3F8AE2005F93EA /* divider.txt in Resources */,
+				F3CFBD662E3F8AE2005F93EA /* textLineLimit.txt in Resources */,
+				F3CFBD672E3F8AE2005F93EA /* popover.txt in Resources */,
+				F3CFBD682E3F8AE2005F93EA /* menu.txt in Resources */,
+				F3CFBD692E3F8AE2005F93EA /* button.txt in Resources */,
+				F3CFBD6A2E3F8AE2005F93EA /* appStoreOverlay.txt in Resources */,
+				F3CFBD6B2E3F8AE2005F93EA /* dismiss.txt in Resources */,
+				F3CFBD6C2E3F8AE2005F93EA /* stepper.txt in Resources */,
+				F3CFBD6D2E3F8AE2005F93EA /* slider.txt in Resources */,
+				F3CFBD6E2E3F8AE2005F93EA /* detectLanguage.txt in Resources */,
+				F3CFBD6F2E3F8AE2005F93EA /* darkMode.txt in Resources */,
+				F3CFBD702E3F8AE2005F93EA /* dismissHideBackButton.txt in Resources */,
+				F3CFBD712E3F8AE2005F93EA /* emptyViewAnyView.txt in Resources */,
+				F3CFBD722E3F8AE2005F93EA /* sheet.txt in Resources */,
+				F3CFBD732E3F8AE2005F93EA /* textFieldDisableAutocorrection.txt in Resources */,
+				F3CFBD742E3F8AE2005F93EA /* alert.txt in Resources */,
+				F3CFBD752E3F8AE2005F93EA /* picker.txt in Resources */,
+				F3CFBD762E3F8AE2005F93EA /* color.txt in Resources */,
 			);
 		};
 		F3BBD9DC2AEECD3400A9F7E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
-				F3CC1E0F2E343C3A00611B60 /* detectOSVersionNewAndOld.txt in Resources */,
-				F3CC1E102E343C3A00611B60 /* slider.txt in Resources */,
-				F3CC1E112E343C3A00611B60 /* textFieldDisableAutocorrection.txt in Resources */,
-				F3CC1E122E343C3A00611B60 /* color.txt in Resources */,
-				F3CC1E132E343C3A00611B60 /* mdMonospaced.txt in Resources */,
-				F3CC1E142E343C3A00611B60 /* image.txt in Resources */,
-				F3CC1E152E343C3A00611B60 /* textLineLimit.txt in Resources */,
-				F3CC1E162E343C3A00611B60 /* alert.txt in Resources */,
-				F3CC1E172E343C3A00611B60 /* spacer.txt in Resources */,
-				F3CC1E182E343C3A00611B60 /* sheetBefore15.txt in Resources */,
-				F3CC1E192E343C3A00611B60 /* dismissHideBackButton.txt in Resources */,
-				F3CC1E1A2E343C3A00611B60 /* emptyViewAnyView.txt in Resources */,
-				F3CC1E1B2E343C3A00611B60 /* emptyView.txt in Resources */,
-				F3CC1E1C2E343C3A00611B60 /* contextMenu.txt in Resources */,
-				F3CC1E1D2E343C3A00611B60 /* textEditor.txt in Resources */,
-				F3CC1E1E2E343C3A00611B60 /* divider.txt in Resources */,
-				F3CC1E1F2E343C3A00611B60 /* gradient.txt in Resources */,
-				F3CC1E202E343C3A00611B60 /* darkMode.txt in Resources */,
-				F3CC1E212E343C3A00611B60 /* button.txt in Resources */,
-				F31E14412E3E9C3100D43C1E /* detectLanguage.txt in Resources */,
-				F388D1A02E3AB51C002A1128 /* lowPowerMode.txt in Resources */,
-				F3CC1E222E343C3A00611B60 /* mdStrikethrough.txt in Resources */,
-				F3CC1E232E343C3A00611B60 /* stepper.txt in Resources */,
-				F3CC1E242E343C3A00611B60 /* dismiss.txt in Resources */,
-				F3CC1E252E343C3A00611B60 /* popover.txt in Resources */,
-				F3CC1E262E343C3A00611B60 /* appStoreOverlay.txt in Resources */,
-				F3CC1E272E343C3A00611B60 /* picker.txt in Resources */,
-				F3CC1E282E343C3A00611B60 /* mdBoldItalic.txt in Resources */,
-				F3CC1E292E343C3A00611B60 /* toggleTint.txt in Resources */,
-				F3CC1E2A2E343C3A00611B60 /* buttonCustom.txt in Resources */,
-				F3CC1E2B2E343C3A00611B60 /* menu.txt in Resources */,
-				F3CC1E2C2E343C3A00611B60 /* mdRegular.txt in Resources */,
-				F3CC1E2D2E343C3A00611B60 /* sheet.txt in Resources */,
-				F3CC1E2E2E343C3A00611B60 /* detectOSVersion.txt in Resources */,
-				F3CC1E2F2E343C3A00611B60 /* toggle.txt in Resources */,
-				F3CC1E302E343C3A00611B60 /* gauges.txt in Resources */,
-				F3CC1E312E343C3A00611B60 /* mdLink.txt in Resources */,
-				F3CC1E322E343C3A00611B60 /* textField.txt in Resources */,
 				F3ADA61A2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */,
 				F3BBD9E82AEECD3500A9F7E7 /* Assets.xcassets in Resources */,
+				F3CFBD772E3F8AE2005F93EA /* mdMonospaced.txt in Resources */,
+				F3CFBD782E3F8AE2005F93EA /* buttonCustom.txt in Resources */,
+				F3CFBD792E3F8AE2005F93EA /* lowPowerMode.txt in Resources */,
+				F3CFBD7A2E3F8AE2005F93EA /* gradient.txt in Resources */,
+				F3CFBD7B2E3F8AE2005F93EA /* textEditor.txt in Resources */,
+				F3CFBD7C2E3F8AE2005F93EA /* spacer.txt in Resources */,
+				F3CFBD7D2E3F8AE2005F93EA /* textField.txt in Resources */,
+				F3CFBD7E2E3F8AE2005F93EA /* detectOSVersion.txt in Resources */,
+				F3CFBD7F2E3F8AE2005F93EA /* toggle.txt in Resources */,
+				F3CFBD802E3F8AE2005F93EA /* mdRegular.txt in Resources */,
+				F3CFBD812E3F8AE2005F93EA /* toggleTint.txt in Resources */,
+				F3CFBD822E3F8AE2005F93EA /* emptyView.txt in Resources */,
+				F3CFBD832E3F8AE2005F93EA /* mdBoldItalic.txt in Resources */,
+				F3CFBD842E3F8AE2005F93EA /* contextMenu.txt in Resources */,
+				F3CFBD852E3F8AE2005F93EA /* mdLink.txt in Resources */,
+				F3CFBD862E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt in Resources */,
+				F3CFBD872E3F8AE2005F93EA /* gauges.txt in Resources */,
+				F3CFBD882E3F8AE2005F93EA /* image.txt in Resources */,
+				F3CFBD892E3F8AE2005F93EA /* mdStrikethrough.txt in Resources */,
+				F3CFBD8A2E3F8AE2005F93EA /* sheetBefore15.txt in Resources */,
+				F3CFBD8B2E3F8AE2005F93EA /* divider.txt in Resources */,
+				F3CFBD8C2E3F8AE2005F93EA /* textLineLimit.txt in Resources */,
+				F3CFBD8D2E3F8AE2005F93EA /* popover.txt in Resources */,
+				F3CFBD8E2E3F8AE2005F93EA /* menu.txt in Resources */,
+				F3CFBD8F2E3F8AE2005F93EA /* button.txt in Resources */,
+				F3CFBD902E3F8AE2005F93EA /* appStoreOverlay.txt in Resources */,
+				F3CFBD912E3F8AE2005F93EA /* dismiss.txt in Resources */,
+				F3CFBD922E3F8AE2005F93EA /* stepper.txt in Resources */,
+				F3CFBD932E3F8AE2005F93EA /* slider.txt in Resources */,
+				F3CFBD942E3F8AE2005F93EA /* detectLanguage.txt in Resources */,
+				F3CFBD952E3F8AE2005F93EA /* darkMode.txt in Resources */,
+				F3CFBD962E3F8AE2005F93EA /* dismissHideBackButton.txt in Resources */,
+				F3CFBD972E3F8AE2005F93EA /* emptyViewAnyView.txt in Resources */,
+				F3CFBD982E3F8AE2005F93EA /* sheet.txt in Resources */,
+				F3CFBD992E3F8AE2005F93EA /* textFieldDisableAutocorrection.txt in Resources */,
+				F3CFBD9A2E3F8AE2005F93EA /* alert.txt in Resources */,
+				F3CFBD9B2E3F8AE2005F93EA /* picker.txt in Resources */,
+				F3CFBD9C2E3F8AE2005F93EA /* color.txt in Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
