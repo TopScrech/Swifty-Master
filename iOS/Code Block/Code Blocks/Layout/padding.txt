@@ -1,0 +1,15 @@
+Text("Hello")
+    // Default padding
+    .padding()
+    
+    // Custom size padding
+    .padding(8)
+    
+    // Custom edge padding
+    .padding(.top)
+    .padding([.top, .leading]) // Not on macOS
+    
+    // Fully custom padding
+    .padding(.top, 8)
+    .padding(.vertical, 8) // Not on macOS
+    .padding([.top, .leading], 8) // Not on macOS

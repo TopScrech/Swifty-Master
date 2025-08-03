@@ -55,7 +55,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          spacer = "Spacer",
          padding = "Padding",
          frame = "Frame",
-         positionPoint = "Position Point",
+//         positionPoint = "Position Point",
          geometryReader = "Geometry Reader",
          equalSizeViews = "Equal Size Views",
          
@@ -106,7 +106,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         case .vStack, .hStack, .zStack, .list, .scrollView, .grid, .lazyVGrid, .lazyHGrid, .tabView:
                 .collections
             
-        case .spacer, .padding, .frame, .positionPoint, .geometryReader, .equalSizeViews:
+        case .spacer, .padding, .frame, /*.positionPoint, */.geometryReader, .equalSizeViews:
                 .layout
             
         case .color, .gradient:
@@ -191,7 +191,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         case .spacer: "space"
         case .padding: "arrowtriangle.left.and.line.vertical.and.arrowtriangle.right"
         case .frame: "photo.artframe"
-        case .positionPoint: "mappin.and.ellipse"
+//        case .positionPoint: "mappin.and.ellipse"
         case .geometryReader: "arrow.up.and.down.and.arrow.left.and.right"
         case .equalSizeViews: "rectangle.split.3x1"
         case .color: "paintpalette"

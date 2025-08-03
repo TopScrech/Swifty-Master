@@ -1,0 +1,10 @@
+HStack(spacing:0) {
+    View1()
+        .frame(maxWidth: .infinity)
+    
+    View2()
+        .frame(maxWidth: .infinity)
+    
+    View3()
+        .frame(maxWidth: .infinity)
+}

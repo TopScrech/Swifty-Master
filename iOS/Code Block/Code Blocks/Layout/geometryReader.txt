@@ -1,0 +1,4 @@
+GeometryReader { geo in
+    Text("Hello, World!")
+        .frame(width: geo.size.width * 0.8)
+}

@@ -315,6 +315,22 @@
 		F3CFBE0F2E3F994E005F93EA /* TopicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE0D2E3F994E005F93EA /* TopicList.swift */; };
 		F3CFBE112E3F994F005F93EA /* TopicScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE102E3F994F005F93EA /* TopicScrollView.swift */; };
 		F3CFBE122E3F994F005F93EA /* TopicScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE102E3F994F005F93EA /* TopicScrollView.swift */; };
+		F3CFBE142E3F99B2005F93EA /* padding.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE132E3F99B2005F93EA /* padding.txt */; };
+		F3CFBE152E3F99B2005F93EA /* padding.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE132E3F99B2005F93EA /* padding.txt */; };
+		F3CFBE172E3F99B8005F93EA /* frame.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE162E3F99B8005F93EA /* frame.txt */; };
+		F3CFBE182E3F99B8005F93EA /* frame.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE162E3F99B8005F93EA /* frame.txt */; };
+		F3CFBE1D2E3F99BA005F93EA /* geometryReader.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE1C2E3F99BA005F93EA /* geometryReader.txt */; };
+		F3CFBE1E2E3F99BA005F93EA /* geometryReader.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE1C2E3F99BA005F93EA /* geometryReader.txt */; };
+		F3CFBE202E3F99BB005F93EA /* equalSizeViews.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE1F2E3F99BB005F93EA /* equalSizeViews.txt */; };
+		F3CFBE212E3F99BB005F93EA /* equalSizeViews.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE1F2E3F99BB005F93EA /* equalSizeViews.txt */; };
+		F3CFBE232E3F9AFD005F93EA /* TopicPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE222E3F9AFD005F93EA /* TopicPadding.swift */; };
+		F3CFBE242E3F9AFD005F93EA /* TopicPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE222E3F9AFD005F93EA /* TopicPadding.swift */; };
+		F3CFBE262E3F9B16005F93EA /* TopicFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE252E3F9B16005F93EA /* TopicFrame.swift */; };
+		F3CFBE272E3F9B16005F93EA /* TopicFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE252E3F9B16005F93EA /* TopicFrame.swift */; };
+		F3CFBE292E3F9B17005F93EA /* TopicGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE282E3F9B17005F93EA /* TopicGeometryReader.swift */; };
+		F3CFBE2A2E3F9B17005F93EA /* TopicGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE282E3F9B17005F93EA /* TopicGeometryReader.swift */; };
+		F3CFBE2C2E3F9B18005F93EA /* TopicEqualSizeViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE2B2E3F9B18005F93EA /* TopicEqualSizeViews.swift */; };
+		F3CFBE2D2E3F9B18005F93EA /* TopicEqualSizeViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE2B2E3F9B18005F93EA /* TopicEqualSizeViews.swift */; };
 		F3D8C11C2B2BB51000C7B0A9 /* Sensory Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */; };
 		F3EB1CB62C58FFE5007E6366 /* Hover Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */; };
 /* End PBXBuildFile section */
@@ -480,6 +496,14 @@
 		F3CFBE0A2E3F985C005F93EA /* TopicLazyHGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLazyHGrid.swift; sourceTree = "<group>"; };
 		F3CFBE0D2E3F994E005F93EA /* TopicList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicList.swift; sourceTree = "<group>"; };
 		F3CFBE102E3F994F005F93EA /* TopicScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicScrollView.swift; sourceTree = "<group>"; };
+		F3CFBE132E3F99B2005F93EA /* padding.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = padding.txt; sourceTree = "<group>"; };
+		F3CFBE162E3F99B8005F93EA /* frame.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = frame.txt; sourceTree = "<group>"; };
+		F3CFBE1C2E3F99BA005F93EA /* geometryReader.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = geometryReader.txt; sourceTree = "<group>"; };
+		F3CFBE1F2E3F99BB005F93EA /* equalSizeViews.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = equalSizeViews.txt; sourceTree = "<group>"; };
+		F3CFBE222E3F9AFD005F93EA /* TopicPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicPadding.swift; sourceTree = "<group>"; };
+		F3CFBE252E3F9B16005F93EA /* TopicFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicFrame.swift; sourceTree = "<group>"; };
+		F3CFBE282E3F9B17005F93EA /* TopicGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicGeometryReader.swift; sourceTree = "<group>"; };
+		F3CFBE2B2E3F9B18005F93EA /* TopicEqualSizeViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicEqualSizeViews.swift; sourceTree = "<group>"; };
 		F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensory Feedback.swift"; sourceTree = "<group>"; };
 		F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hover Effects.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -642,6 +666,10 @@
 			isa = PBXGroup;
 			children = (
 				F34480392E2D225A00D18E2E /* TopicSpacer.swift */,
+				F3CFBE222E3F9AFD005F93EA /* TopicPadding.swift */,
+				F3CFBE252E3F9B16005F93EA /* TopicFrame.swift */,
+				F3CFBE282E3F9B17005F93EA /* TopicGeometryReader.swift */,
+				F3CFBE2B2E3F9B18005F93EA /* TopicEqualSizeViews.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -878,6 +906,10 @@
 			isa = PBXGroup;
 			children = (
 				F3CFBD3A2E3F8AE2005F93EA /* spacer.txt */,
+				F3CFBE132E3F99B2005F93EA /* padding.txt */,
+				F3CFBE162E3F99B8005F93EA /* frame.txt */,
+				F3CFBE1C2E3F99BA005F93EA /* geometryReader.txt */,
+				F3CFBE1F2E3F99BB005F93EA /* equalSizeViews.txt */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -1056,12 +1088,14 @@
 				F3CFBD552E3F8AE2005F93EA /* textEditor.txt in Resources */,
 				F3CFBD562E3F8AE2005F93EA /* spacer.txt in Resources */,
 				F3CFBD572E3F8AE2005F93EA /* textField.txt in Resources */,
+				F3CFBE1E2E3F99BA005F93EA /* geometryReader.txt in Resources */,
 				F3CFBDAB2E3F8E57005F93EA /* navigationView.txt in Resources */,
 				F3CFBD582E3F8AE2005F93EA /* detectOSVersion.txt in Resources */,
 				F3CFBD592E3F8AE2005F93EA /* toggle.txt in Resources */,
 				F3CFBD5A2E3F8AE2005F93EA /* mdRegular.txt in Resources */,
 				F3CFBD5B2E3F8AE2005F93EA /* toggleTint.txt in Resources */,
 				F3CFBD5C2E3F8AE2005F93EA /* emptyView.txt in Resources */,
+				F3CFBE182E3F99B8005F93EA /* frame.txt in Resources */,
 				F3CFBD5D2E3F8AE2005F93EA /* mdBoldItalic.txt in Resources */,
 				F3CFBE002E3F9741005F93EA /* tabView.txt in Resources */,
 				F3CFBD5E2E3F8AE2005F93EA /* contextMenu.txt in Resources */,
@@ -1071,6 +1105,7 @@
 				F3CFBD602E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt in Resources */,
 				F3CFBDDB2E3F9473005F93EA /* vHtack.txt in Resources */,
 				F3CFBD612E3F8AE2005F93EA /* gauges.txt in Resources */,
+				F3CFBE212E3F99BB005F93EA /* equalSizeViews.txt in Resources */,
 				F3CFBDDE2E3F947A005F93EA /* zHtack.txt in Resources */,
 				F3CFBD622E3F8AE2005F93EA /* image.txt in Resources */,
 				F3CFBD632E3F8AE2005F93EA /* mdStrikethrough.txt in Resources */,
@@ -1087,6 +1122,7 @@
 				F3CFBDA22E3F8C09005F93EA /* sfSymbols.txt in Resources */,
 				F3CFBD6C2E3F8AE2005F93EA /* stepper.txt in Resources */,
 				F3CFBD6D2E3F8AE2005F93EA /* slider.txt in Resources */,
+				F3CFBE152E3F99B2005F93EA /* padding.txt in Resources */,
 				F3CFBD6E2E3F8AE2005F93EA /* detectLanguage.txt in Resources */,
 				F3CFBD6F2E3F8AE2005F93EA /* darkMode.txt in Resources */,
 				F3CFBD702E3F8AE2005F93EA /* dismissHideBackButton.txt in Resources */,
@@ -1132,6 +1168,7 @@
 				F3CFBD852E3F8AE2005F93EA /* mdLink.txt in Resources */,
 				F3CFBDDD2E3F947A005F93EA /* zHtack.txt in Resources */,
 				F3CFBD9E2E3F8B9F005F93EA /* label.txt in Resources */,
+				F3CFBE1D2E3F99BA005F93EA /* geometryReader.txt in Resources */,
 				F3CFBD862E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt in Resources */,
 				F3CFBD872E3F8AE2005F93EA /* gauges.txt in Resources */,
 				F3CFBDAD2E3F8E5C005F93EA /* navigationStack.txt in Resources */,
@@ -1152,12 +1189,14 @@
 				F3CFBDF92E3F973B005F93EA /* lazyVStack.txt in Resources */,
 				F3CFBD912E3F8AE2005F93EA /* dismiss.txt in Resources */,
 				F3CFBD922E3F8AE2005F93EA /* stepper.txt in Resources */,
+				F3CFBE142E3F99B2005F93EA /* padding.txt in Resources */,
 				F3CFBD932E3F8AE2005F93EA /* slider.txt in Resources */,
 				F3CFBD942E3F8AE2005F93EA /* detectLanguage.txt in Resources */,
 				F3CFBD952E3F8AE2005F93EA /* darkMode.txt in Resources */,
 				F3CFBD962E3F8AE2005F93EA /* dismissHideBackButton.txt in Resources */,
 				F3CFBD972E3F8AE2005F93EA /* emptyViewAnyView.txt in Resources */,
 				F3CFBD982E3F8AE2005F93EA /* sheet.txt in Resources */,
+				F3CFBE172E3F99B8005F93EA /* frame.txt in Resources */,
 				F3CFBDD72E3F945C005F93EA /* vStack.txt in Resources */,
 				F3CFBDDA2E3F9473005F93EA /* vHtack.txt in Resources */,
 				F3CFBDA42E3F8C43005F93EA /* shape.txt in Resources */,
@@ -1167,6 +1206,7 @@
 				F3CFBDB02E3F8E5D005F93EA /* navigationSplitView.txt in Resources */,
 				F3CFBD9B2E3F8AE2005F93EA /* picker.txt in Resources */,
 				F3CFBD9C2E3F8AE2005F93EA /* color.txt in Resources */,
+				F3CFBE202E3F99BB005F93EA /* equalSizeViews.txt in Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
@@ -1200,10 +1240,12 @@
 				F314C7F32E2E1C1800F63B6A /* TopicLinkLabel.swift in Sources */,
 				F314C8542E2E65F000F63B6A /* TopicPopover.swift in Sources */,
 				F314C7FA2E2E1F0F00F63B6A /* TopicDisclosureGroup.swift in Sources */,
+				F3CFBE2D2E3F9B18005F93EA /* TopicEqualSizeViews.swift in Sources */,
 				F3202CC62D55977A0030B3CC /* Image Picker 2.swift in Sources */,
 				F314C81F2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift in Sources */,
 				F3CFBDF12E3F95B8005F93EA /* TopicGrid.swift in Sources */,
 				F35198C42E2B7E56004E0F02 /* CodeBlockView.swift in Sources */,
+				F3CFBE2A2E3F9B17005F93EA /* TopicGeometryReader.swift in Sources */,
 				F3CFBDC32E3F8FA5005F93EA /* TopicNavigationView.swift in Sources */,
 				F314C8002E2E2A9400F63B6A /* FontSizeItem.swift in Sources */,
 				F35198482E2AECAA004E0F02 /* Gauge Card.swift in Sources */,
@@ -1215,10 +1257,12 @@
 				F30207CE2D8B001300C26008 /* Markdown.swift in Sources */,
 				F351984F2E2AF689004E0F02 /* Code Block.swift in Sources */,
 				F3202CC42D5597640030B3CC /* Gauges View.swift in Sources */,
+				F3CFBE242E3F9AFD005F93EA /* TopicPadding.swift in Sources */,
 				F314C8192E2E4BB600F63B6A /* TopicDivider.swift in Sources */,
 				F314C8162E2E4B8700F63B6A /* TopicLabel.swift in Sources */,
 				F314C8362E2E538200F63B6A /* TopicButton.swift in Sources */,
 				F3ADA6172D9C03E700F2DAA6 /* Plural Translation.swift in Sources */,
+				F3CFBE272E3F9B16005F93EA /* TopicFrame.swift in Sources */,
 				F314C83C2E2E540800F63B6A /* TopicSheet.swift in Sources */,
 				F35198FD2E2B9F53004E0F02 /* Topic.swift in Sources */,
 				F3378F9E2E2E68DF00A31D7F /* TopicDetectOSVersion.swift in Sources */,
@@ -1292,6 +1336,7 @@
 				F35199122E2B9F53004E0F02 /* ExperienceButton.swift in Sources */,
 				F35199132E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */,
 				F35199142E2B9F53004E0F02 /* TopicDetail.swift in Sources */,
+				F3CFBE262E3F9B16005F93EA /* TopicFrame.swift in Sources */,
 				F314C83B2E2E540800F63B6A /* TopicSheet.swift in Sources */,
 				F3CFBE022E3F981C005F93EA /* TopicLazyVGrid.swift in Sources */,
 				F3AE99D92E2F861C00D70249 /* ColorTheme.swift in Sources */,
@@ -1314,6 +1359,7 @@
 				F31653BA2E3C0A4E00A0E9D7 /* StackTopicList.swift in Sources */,
 				F351991F2E2B9F53004E0F02 /* ContinueButton.swift in Sources */,
 				F3CFBE082E3F981E005F93EA /* TopicTabView.swift in Sources */,
+				F3CFBE2C2E3F9B18005F93EA /* TopicEqualSizeViews.swift in Sources */,
 				F314C8152E2E4B8700F63B6A /* TopicLabel.swift in Sources */,
 				F314C8062E2E2D4A00F63B6A /* FontDesignItem.swift in Sources */,
 				F3CFBDCB2E3F900F005F93EA /* TopicNavigationBar.swift in Sources */,
@@ -1321,6 +1367,7 @@
 				F35199212E2B9F53004E0F02 /* StackContentView.swift in Sources */,
 				F3CFBDD12E3F901C005F93EA /* TopicPassAView.swift in Sources */,
 				F3CFBDED2E3F95B7005F93EA /* TopicZStack.swift in Sources */,
+				F3CFBE292E3F9B17005F93EA /* TopicGeometryReader.swift in Sources */,
 				F3CFBDD42E3F901E005F93EA /* TopicLink.swift in Sources */,
 				F35199222E2B9F53004E0F02 /* Category.swift in Sources */,
 				F314C8502E2E657400F63B6A /* TopicPicker.swift in Sources */,
@@ -1333,6 +1380,7 @@
 				F35199242E2B9F53004E0F02 /* TopicTile.swift in Sources */,
 				F3202C942D55952F0030B3CC /* AppStoreOverlay.swift in Sources */,
 				F3146C4E2CF7382C005D58B3 /* Font List.swift in Sources */,
+				F3CFBE232E3F9AFD005F93EA /* TopicPadding.swift in Sources */,
 				F3378F9D2E2E68DF00A31D7F /* TopicDetectOSVersion.swift in Sources */,
 				F3BBD9E22AEECD3400A9F7E7 /* Master SwiftUI.swift in Sources */,
 				F314C80C2E2E486200F63B6A /* TopicTextEditor.swift in Sources */,

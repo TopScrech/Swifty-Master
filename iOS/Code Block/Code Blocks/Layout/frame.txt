@@ -1,0 +1,5 @@
+Image("MyImage")
+    .frame(width: 200, height: 100, alignment: .leading)
+    
+Image("MyImage")
+    .frame(minWidth: 200, idealWidth: 300, maxWidth: 400, minHeight: 200, idealHeight: 300, maxHeight: 400, alignment: .leading)

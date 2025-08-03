@@ -54,6 +54,10 @@ enum CodeBlock: String {
          // Layout
          spacer,
          divider,
+         padding,
+         frame,
+         geometryReader,
+         equalSizeViews,
          
          // Design
          color,

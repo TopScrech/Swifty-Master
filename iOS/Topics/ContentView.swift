@@ -89,6 +89,10 @@ func topicView(_ topic: Topic) -> AnyView? {
         
         // Layout
     case .spacer: AnyView(TopicSpacer())
+    case .padding: AnyView(TopicPadding())
+    case .frame: AnyView(TopicFrame())
+    case .geometryReader: AnyView(TopicGeometryReader())
+    case .equalSizeViews: AnyView(TopicEqualSizeViews())
         
         // Design
     case .color: AnyView(TopicColor())
