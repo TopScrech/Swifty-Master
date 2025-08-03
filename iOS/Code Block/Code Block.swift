@@ -41,6 +41,10 @@ enum CodeBlock: String {
          link,
          
          // Collection
+         vStack,
+         hStack,
+         zStack,
+         grid,
          
          // Layout
          spacer,

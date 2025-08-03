@@ -1,0 +1,7 @@
+ZStack {
+    // Farthest element
+    Rectangle()
+    
+    // Closest element
+    Circle()
+}

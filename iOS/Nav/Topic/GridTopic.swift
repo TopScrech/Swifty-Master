@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct TopicGrid: View {
+struct GridTopic: View {
     @Environment(NavModel.self) private var navigationModel
     @Environment(DataModel.self) private var dataModel
     
@@ -40,13 +40,13 @@ struct TopicGrid: View {
 }
 
 #Preview {
-    TopicGrid()
+    GridTopic()
         .environment(DataModel.shared)
         .environment(NavModel(selectedCategory: .content))
 }
 
 #Preview {
-    TopicGrid()
+    GridTopic()
         .environment(DataModel.shared)
         .environment(NavModel(selectedCategory: nil))
 }

@@ -1,0 +1,44 @@
+Grid(
+    // Grid parameters
+    alignment: .leading,
+    horizontalSpacing: 10,
+    verticalSpacing: 0
+) {
+    GridRow {
+        Text("Geography")
+            .gridCellColumns(2) // Expands the cell on multiple columns
+    }
+    
+    // Row with special alignment
+    GridRow(alignment: .trailing) {
+        Text("Country")
+        Text("Capital")
+    }
+    
+    // View on an entire row
+    Divider()
+        // Prevents the grid to be resized by the view
+        .gridCellUnsizedAxes(.horizontal)
+    
+    GridRow {
+        Text("United States")
+            .gridColumnAlignment(.trailing) // Column alignment
+            
+        Text("Washinghton")
+    }
+    
+    GridRow {
+        Text("France")
+        
+        Text("Paris")
+            // Cell alignment
+            .gridCellAnchor(.topTrailing)
+    }
+    
+    GridRow {
+        // Clear cell
+        Color.clear.gridCellUnsizedAxes([.horizontal, .vertical])
+        
+        Text("Total: 2")
+    }
+}

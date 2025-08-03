@@ -1,0 +1,24 @@
+VStack {
+    // Element above
+    View1()
+    // Element below
+    ViewN()
+}
+
+VStack (alignment: .leading, spacing: 0) {
+    // Element above
+    View1()
+    // Element below
+    ViewN()
+}
+
+// Data to display
+let myValues = [/* Some values */]
+
+var body: some View {
+    VStack {
+        ForEach(myValues, id: \.self) { value in
+            Text(value.name)
+        }
+    }
+}

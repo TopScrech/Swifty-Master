@@ -1,0 +1,13 @@
+HStack {
+    // From the left...
+    View1()
+    // ... to the right
+    ViewN()
+}
+
+HStack (alignment: .top, spacing: 0) {
+    // From the left...
+    View1()
+    // ... to the right
+    ViewN()
+}

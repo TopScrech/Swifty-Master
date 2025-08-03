@@ -30,7 +30,7 @@ struct TwoColumnContentView: View {
             }
         } detail: {
             NavigationStack(path: $nav.topicPath) {
-                TopicGrid()
+                GridTopic()
             }
         }
     }
