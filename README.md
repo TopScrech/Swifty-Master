@@ -1,3 +1,3 @@
-# Everything SwiftUI
+# Master SwiftUI
 
 Feel free to contribute!
