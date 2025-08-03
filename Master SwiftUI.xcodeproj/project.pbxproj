@@ -792,14 +792,14 @@
 			isa = PBXGroup;
 			children = (
 				F3CFBD4D2E3F8AE2005F93EA /* gauges.txt */,
-				F3CFBD222E3F8AE2005F93EA /* Collections */,
 				F3CFBD2C2E3F8AE2005F93EA /* Content */,
 				F3CFBD362E3F8AE2005F93EA /* Control */,
-				F3CFBD392E3F8AE2005F93EA /* Design */,
-				F3CFBD3B2E3F8AE2005F93EA /* Layout */,
-				F3CFBD3E2E3F8AE2005F93EA /* Nav */,
-				F3CFBD442E3F8AE2005F93EA /* System */,
 				F3CFBD4C2E3F8AE2005F93EA /* View */,
+				F3CFBD3E2E3F8AE2005F93EA /* Nav */,
+				F3CFBD222E3F8AE2005F93EA /* Collections */,
+				F3CFBD3B2E3F8AE2005F93EA /* Layout */,
+				F3CFBD392E3F8AE2005F93EA /* Design */,
+				F3CFBD442E3F8AE2005F93EA /* System */,
 			);
 			path = "Code Blocks";
 			sourceTree = "<group>";
