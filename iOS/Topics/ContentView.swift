@@ -103,8 +103,12 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .detectOSVersion: AnyView(TopicDetectOSVersion())
     case .lowPowerMode: AnyView(TopicLowPowerMode())
     case .detectLang: AnyView(TopicDetectLaguage())
+    case .differentiateOS: AnyView(TopicDifferentiateOS())
+    case .detectDeviceUsed: AnyView(TopicDetectDeviceUsed())
+    case .detectScreenSize: AnyView(TopicDetectScreenSize())
+    case .detectCompactOrRegular: AnyView(TopicDetectCompactOrRegular())
         
-    default: nil
+    @unknown default: nil
     }
 }
 

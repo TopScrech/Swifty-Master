@@ -1,0 +1,34 @@
+struct ContentView: View {
+    // Returns device used
+    let idiom = UIDevice.current.userInterfaceIdiom
+
+    var body: some View {
+        if idiom == .pad {
+            Text("User is on an iPad")
+        }
+        
+        if idiom == .phone {
+            Text("User is on an iPhone")
+        }
+        
+        if idiom == .mac {
+            Text("User is on a Mac")
+        }
+        
+        if idiom == .tv {
+            Text("User is on an AppleTV")
+        }
+        
+        if idiom == .carplay {
+            Text("User is using CarPlay")
+        }
+        
+        if idiom == .watch {
+            Text("User is using Apple Watch")
+        }
+        
+        if idiom == .vision {
+            Text("User is using Apple Vision")
+        }
+    }
+}

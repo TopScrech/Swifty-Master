@@ -331,6 +331,22 @@
 		F3CFBE2A2E3F9B17005F93EA /* TopicGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE282E3F9B17005F93EA /* TopicGeometryReader.swift */; };
 		F3CFBE2C2E3F9B18005F93EA /* TopicEqualSizeViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE2B2E3F9B18005F93EA /* TopicEqualSizeViews.swift */; };
 		F3CFBE2D2E3F9B18005F93EA /* TopicEqualSizeViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE2B2E3F9B18005F93EA /* TopicEqualSizeViews.swift */; };
+		F3CFBE2F2E3F9C09005F93EA /* detectDeviceUsed.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE2E2E3F9C09005F93EA /* detectDeviceUsed.txt */; };
+		F3CFBE302E3F9C09005F93EA /* detectDeviceUsed.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE2E2E3F9C09005F93EA /* detectDeviceUsed.txt */; };
+		F3CFBE322E3F9C20005F93EA /* differentiateOS.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE312E3F9C20005F93EA /* differentiateOS.txt */; };
+		F3CFBE332E3F9C20005F93EA /* differentiateOS.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE312E3F9C20005F93EA /* differentiateOS.txt */; };
+		F3CFBE352E3F9C21005F93EA /* detectScreenSize.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE342E3F9C21005F93EA /* detectScreenSize.txt */; };
+		F3CFBE362E3F9C21005F93EA /* detectScreenSize.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE342E3F9C21005F93EA /* detectScreenSize.txt */; };
+		F3CFBE382E3F9C22005F93EA /* detectCompactOrRegularSize.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE372E3F9C22005F93EA /* detectCompactOrRegularSize.txt */; };
+		F3CFBE392E3F9C22005F93EA /* detectCompactOrRegularSize.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE372E3F9C22005F93EA /* detectCompactOrRegularSize.txt */; };
+		F3CFBE3B2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE3A2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift */; };
+		F3CFBE3C2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE3A2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift */; };
+		F3CFBE3E2E3F9D2D005F93EA /* TopicDifferentiateOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE3D2E3F9D2D005F93EA /* TopicDifferentiateOS.swift */; };
+		F3CFBE3F2E3F9D2D005F93EA /* TopicDifferentiateOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE3D2E3F9D2D005F93EA /* TopicDifferentiateOS.swift */; };
+		F3CFBE412E3F9D2E005F93EA /* TopicDetectScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE402E3F9D2E005F93EA /* TopicDetectScreenSize.swift */; };
+		F3CFBE422E3F9D2E005F93EA /* TopicDetectScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE402E3F9D2E005F93EA /* TopicDetectScreenSize.swift */; };
+		F3CFBE442E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */; };
+		F3CFBE452E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */; };
 		F3D8C11C2B2BB51000C7B0A9 /* Sensory Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */; };
 		F3EB1CB62C58FFE5007E6366 /* Hover Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */; };
 /* End PBXBuildFile section */
@@ -504,6 +520,14 @@
 		F3CFBE252E3F9B16005F93EA /* TopicFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicFrame.swift; sourceTree = "<group>"; };
 		F3CFBE282E3F9B17005F93EA /* TopicGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicGeometryReader.swift; sourceTree = "<group>"; };
 		F3CFBE2B2E3F9B18005F93EA /* TopicEqualSizeViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicEqualSizeViews.swift; sourceTree = "<group>"; };
+		F3CFBE2E2E3F9C09005F93EA /* detectDeviceUsed.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectDeviceUsed.txt; sourceTree = "<group>"; };
+		F3CFBE312E3F9C20005F93EA /* differentiateOS.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = differentiateOS.txt; sourceTree = "<group>"; };
+		F3CFBE342E3F9C21005F93EA /* detectScreenSize.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectScreenSize.txt; sourceTree = "<group>"; };
+		F3CFBE372E3F9C22005F93EA /* detectCompactOrRegularSize.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectCompactOrRegularSize.txt; sourceTree = "<group>"; };
+		F3CFBE3A2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectDeviceUsed.swift; sourceTree = "<group>"; };
+		F3CFBE3D2E3F9D2D005F93EA /* TopicDifferentiateOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDifferentiateOS.swift; sourceTree = "<group>"; };
+		F3CFBE402E3F9D2E005F93EA /* TopicDetectScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectScreenSize.swift; sourceTree = "<group>"; };
+		F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectCompactOrRegular.swift; sourceTree = "<group>"; };
 		F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensory Feedback.swift"; sourceTree = "<group>"; };
 		F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hover Effects.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -642,8 +666,12 @@
 		F34480302E2CD3FF00D18E2E /* System */ = {
 			isa = PBXGroup;
 			children = (
-				F34480312E2CD41100D18E2E /* TopicDarkMode.swift */,
 				F3378F9C2E2E68DF00A31D7F /* TopicDetectOSVersion.swift */,
+				F34480312E2CD41100D18E2E /* TopicDarkMode.swift */,
+				F3CFBE3A2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift */,
+				F3CFBE3D2E3F9D2D005F93EA /* TopicDifferentiateOS.swift */,
+				F3CFBE402E3F9D2E005F93EA /* TopicDetectScreenSize.swift */,
+				F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */,
 				F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */,
 				F31E14432E3E9C9E00D43C1E /* TopicDetectLaguage.swift */,
 			);
@@ -933,9 +961,13 @@
 		F3CFBD442E3F8AE2005F93EA /* System */ = {
 			isa = PBXGroup;
 			children = (
-				F3CFBD3F2E3F8AE2005F93EA /* darkMode.txt */,
-				F3CFBD402E3F8AE2005F93EA /* detectLanguage.txt */,
 				F3CFBD412E3F8AE2005F93EA /* detectOSVersion.txt */,
+				F3CFBD3F2E3F8AE2005F93EA /* darkMode.txt */,
+				F3CFBE2E2E3F9C09005F93EA /* detectDeviceUsed.txt */,
+				F3CFBE312E3F9C20005F93EA /* differentiateOS.txt */,
+				F3CFBE342E3F9C21005F93EA /* detectScreenSize.txt */,
+				F3CFBE372E3F9C22005F93EA /* detectCompactOrRegularSize.txt */,
+				F3CFBD402E3F8AE2005F93EA /* detectLanguage.txt */,
 				F3CFBD422E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt */,
 				F3CFBD432E3F8AE2005F93EA /* lowPowerMode.txt */,
 			);
@@ -1090,12 +1122,15 @@
 				F3CFBD572E3F8AE2005F93EA /* textField.txt in Resources */,
 				F3CFBE1E2E3F99BA005F93EA /* geometryReader.txt in Resources */,
 				F3CFBDAB2E3F8E57005F93EA /* navigationView.txt in Resources */,
+				F3CFBE362E3F9C21005F93EA /* detectScreenSize.txt in Resources */,
 				F3CFBD582E3F8AE2005F93EA /* detectOSVersion.txt in Resources */,
 				F3CFBD592E3F8AE2005F93EA /* toggle.txt in Resources */,
 				F3CFBD5A2E3F8AE2005F93EA /* mdRegular.txt in Resources */,
+				F3CFBE332E3F9C20005F93EA /* differentiateOS.txt in Resources */,
 				F3CFBD5B2E3F8AE2005F93EA /* toggleTint.txt in Resources */,
 				F3CFBD5C2E3F8AE2005F93EA /* emptyView.txt in Resources */,
 				F3CFBE182E3F99B8005F93EA /* frame.txt in Resources */,
+				F3CFBE302E3F9C09005F93EA /* detectDeviceUsed.txt in Resources */,
 				F3CFBD5D2E3F8AE2005F93EA /* mdBoldItalic.txt in Resources */,
 				F3CFBE002E3F9741005F93EA /* tabView.txt in Resources */,
 				F3CFBD5E2E3F8AE2005F93EA /* contextMenu.txt in Resources */,
@@ -1132,6 +1167,7 @@
 				F3CFBD732E3F8AE2005F93EA /* textFieldDisableAutocorrection.txt in Resources */,
 				F3CFBD742E3F8AE2005F93EA /* alert.txt in Resources */,
 				F3CFBDC02E3F8E87005F93EA /* link in Resources */,
+				F3CFBE392E3F9C22005F93EA /* detectCompactOrRegularSize.txt in Resources */,
 				F3CFBD752E3F8AE2005F93EA /* picker.txt in Resources */,
 				F3CFBDF42E3F96EA005F93EA /* list.txt in Resources */,
 				F3CFBD762E3F8AE2005F93EA /* color.txt in Resources */,
@@ -1153,6 +1189,7 @@
 				F3CFBD782E3F8AE2005F93EA /* buttonCustom.txt in Resources */,
 				F3CFBD792E3F8AE2005F93EA /* lowPowerMode.txt in Resources */,
 				F3CFBDF62E3F96F1005F93EA /* scrollView.txt in Resources */,
+				F3CFBE352E3F9C21005F93EA /* detectScreenSize.txt in Resources */,
 				F3CFBD7A2E3F8AE2005F93EA /* gradient.txt in Resources */,
 				F3CFBD7B2E3F8AE2005F93EA /* textEditor.txt in Resources */,
 				F3CFBD7C2E3F8AE2005F93EA /* spacer.txt in Resources */,
@@ -1194,6 +1231,9 @@
 				F3CFBD942E3F8AE2005F93EA /* detectLanguage.txt in Resources */,
 				F3CFBD952E3F8AE2005F93EA /* darkMode.txt in Resources */,
 				F3CFBD962E3F8AE2005F93EA /* dismissHideBackButton.txt in Resources */,
+				F3CFBE2F2E3F9C09005F93EA /* detectDeviceUsed.txt in Resources */,
+				F3CFBE322E3F9C20005F93EA /* differentiateOS.txt in Resources */,
+				F3CFBE382E3F9C22005F93EA /* detectCompactOrRegularSize.txt in Resources */,
 				F3CFBD972E3F8AE2005F93EA /* emptyViewAnyView.txt in Resources */,
 				F3CFBD982E3F8AE2005F93EA /* sheet.txt in Resources */,
 				F3CFBE172E3F99B8005F93EA /* frame.txt in Resources */,
@@ -1250,6 +1290,7 @@
 				F314C8002E2E2A9400F63B6A /* FontSizeItem.swift in Sources */,
 				F35198482E2AECAA004E0F02 /* Gauge Card.swift in Sources */,
 				F388D19D2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */,
+				F3CFBE422E3F9D2E005F93EA /* TopicDetectScreenSize.swift in Sources */,
 				F3202CC72D55977A0030B3CC /* Image Picker View.swift in Sources */,
 				F314C8262E2E52A200F63B6A /* ValueStore.swift in Sources */,
 				F34480482E2D5D1900D18E2E /* SettingsView.swift in Sources */,
@@ -1270,6 +1311,7 @@
 				F35198FE2E2B9F53004E0F02 /* ExperienceButton.swift in Sources */,
 				F314C8132E2E4B6A00F63B6A /* TopicSFSymbols.swift in Sources */,
 				F35198FF2E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */,
+				F3CFBE3F2E3F9D2D005F93EA /* TopicDifferentiateOS.swift in Sources */,
 				F35199002E2B9F53004E0F02 /* TopicDetail.swift in Sources */,
 				F314C81C2E2E4BB900F63B6A /* TopicShape.swift in Sources */,
 				F3CFBE0C2E3F985C005F93EA /* TopicLazyHGrid.swift in Sources */,
@@ -1279,12 +1321,14 @@
 				F3CFBDEE2E3F95B7005F93EA /* TopicZStack.swift in Sources */,
 				F3AE99DA2E2F861C00D70249 /* ColorTheme.swift in Sources */,
 				F344803A2E2D225A00D18E2E /* TopicSpacer.swift in Sources */,
+				F3CFBE3C2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift in Sources */,
 				F35199052E2B9F53004E0F02 /* NavContainer.swift in Sources */,
 				F35199062E2B9F53004E0F02 /* TwoColumnContentView.swift in Sources */,
 				F314C83F2E2E555600F63B6A /* TopicAlert.swift in Sources */,
 				F314C80A2E2E458B00F63B6A /* TopicTextField.swift in Sources */,
 				F3CFBDC62E3F900D005F93EA /* TopicNavigationStack.swift in Sources */,
 				F3BF16DE2E2C7717005212D1 /* TopicDismiss.swift in Sources */,
+				F3CFBE452E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift in Sources */,
 				F3BF16DB2E2C76A8005212D1 /* ContentView.swift in Sources */,
 				F31653B72E3C0A1000A0E9D7 /* FavoritesList.swift in Sources */,
 				F314C8392E2E53A100F63B6A /* TopicContextMenu.swift in Sources */,
@@ -1353,6 +1397,7 @@
 				F3CFBE112E3F994F005F93EA /* TopicScrollView.swift in Sources */,
 				F314C8382E2E53A100F63B6A /* TopicContextMenu.swift in Sources */,
 				F351991B2E2B9F53004E0F02 /* GridTopic.swift in Sources */,
+				F3CFBE442E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift in Sources */,
 				F351991C2E2B9F53004E0F02 /* ExperiencePicker.swift in Sources */,
 				F351991E2E2B9F53004E0F02 /* DataModel.swift in Sources */,
 				F31E14442E3E9C9E00D43C1E /* TopicDetectLaguage.swift in Sources */,
@@ -1366,6 +1411,7 @@
 				F34480452E2D548F00D18E2E /* TopicToggle.swift in Sources */,
 				F35199212E2B9F53004E0F02 /* StackContentView.swift in Sources */,
 				F3CFBDD12E3F901C005F93EA /* TopicPassAView.swift in Sources */,
+				F3CFBE412E3F9D2E005F93EA /* TopicDetectScreenSize.swift in Sources */,
 				F3CFBDED2E3F95B7005F93EA /* TopicZStack.swift in Sources */,
 				F3CFBE292E3F9B17005F93EA /* TopicGeometryReader.swift in Sources */,
 				F3CFBDD42E3F901E005F93EA /* TopicLink.swift in Sources */,
@@ -1404,6 +1450,7 @@
 				F314C7F22E2E1C1800F63B6A /* TopicLinkLabel.swift in Sources */,
 				F3CFBE0B2E3F985C005F93EA /* TopicLazyHGrid.swift in Sources */,
 				F31653B62E3C0A1000A0E9D7 /* FavoritesList.swift in Sources */,
+				F3CFBE3B2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift in Sources */,
 				F314C8092E2E458B00F63B6A /* TopicTextField.swift in Sources */,
 				F314C84D2E2E657300F63B6A /* TopicStepper.swift in Sources */,
 				F344803B2E2D225A00D18E2E /* TopicSpacer.swift in Sources */,
@@ -1411,6 +1458,7 @@
 				F351984E2E2AF689004E0F02 /* Code Block.swift in Sources */,
 				F3BBD9F92AEED4BC00A9F7E7 /* Image Picker View.swift in Sources */,
 				F35198C12E2B7E34004E0F02 /* AttributedCodeString.swift in Sources */,
+				F3CFBE3E2E3F9D2D005F93EA /* TopicDifferentiateOS.swift in Sources */,
 				F314C8182E2E4BB600F63B6A /* TopicDivider.swift in Sources */,
 				F3CFBDC82E3F900E005F93EA /* TopicNavigationSplitView.swift in Sources */,
 				F388D19C2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */,

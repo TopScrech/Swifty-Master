@@ -1,0 +1,10 @@
+// Width
+UIScreen.main.bounds.width
+
+// Height
+UIScreen.main.bounds.height
+
+// Usage Example
+Rectangle()
+    .fill(.blue)
+    .frame(maxWidth: UIScreen.main.bounds.width * 0.9)

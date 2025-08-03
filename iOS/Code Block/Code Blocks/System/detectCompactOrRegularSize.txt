@@ -1,0 +1,11 @@
+struct ContentView: View {
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+    
+    var body: some View {
+        if horizontalSizeClass == .compact {
+            Text("Compact space")
+        } else if horizontalSizeClass == .regular {
+            Text("Regular space")
+        }
+    }
+}
