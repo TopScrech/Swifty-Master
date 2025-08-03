@@ -1,0 +1,9 @@
+ScrollView {
+    ...
+}
+
+// 1 - Set scrolling direction
+// 2 - Disable scrollbar
+ScrollView(.horizontal, showsIndicators: false) {
+    ...
+}

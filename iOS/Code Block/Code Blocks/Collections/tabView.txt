@@ -1,0 +1,30 @@
+struct ContentView: View {
+    // Var that stores the selected tab tag
+    @State private var selectedTab = 1
+    
+    var body: some View {
+        // Creates a tab bar
+        TabView(selection: $selectedTab) {
+            // 1st tab
+            TabBarDetailOne(selectedTab: $selectedTab)
+                .tag(1)
+                .tabItem {
+                    Label("Baseball", systemImage: "baseball")
+                }
+            
+            // 2nd tab
+            TabBarDetailTwo()
+                .tag(2)
+                .tabItem {
+                    Label("Basketball", systemImage: "basketball")
+                }
+            
+            // 3rd tab
+            TabBarDetailThree()
+                .tag(3)
+                .tabItem {
+                    Label("Football", systemImage: "football")
+                }
+        }
+    }
+}

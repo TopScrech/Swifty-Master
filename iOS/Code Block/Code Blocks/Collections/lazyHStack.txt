@@ -1,0 +1,29 @@
+struct ContentView: View {
+    // We define our values
+    private let values = /* ... */
+    
+    // We define our rows
+    private let rows = [ /* ... */]
+    
+    var body: some View {
+        ScrollView {
+            LazyHGrid(rows: rows, alignment: .leading, spacing: 10) {
+                ForEach(values, id: \.self) {item in
+                    Text("\(item)")
+                }
+            }
+        }
+    }
+}
+
+// Variable numbers of rows
+private let rows = [
+    GridItem(.adaptive(minimum: 50))
+]
+
+// Fixed numbers of rows
+private let rows = [
+    GridItem(.flexible()),
+    GridItem(.fixed(25)),
+    GridItem(.fixed(50), spacing: 10, alignment: .top)
+]

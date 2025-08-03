@@ -44,7 +44,12 @@ enum CodeBlock: String {
          vStack,
          hStack,
          zStack,
+         list,
+         scrollView,
          grid,
+         lazyVGrid,
+         lazyHGrid,
+         tabView,
          
          // Layout
          spacer,

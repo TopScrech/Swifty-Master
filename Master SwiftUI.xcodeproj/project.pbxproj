@@ -295,6 +295,22 @@
 		F3CFBDEE2E3F95B7005F93EA /* TopicZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDEC2E3F95B7005F93EA /* TopicZStack.swift */; };
 		F3CFBDF02E3F95B8005F93EA /* TopicGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDEF2E3F95B8005F93EA /* TopicGrid.swift */; };
 		F3CFBDF12E3F95B8005F93EA /* TopicGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDEF2E3F95B8005F93EA /* TopicGrid.swift */; };
+		F3CFBDF32E3F96EA005F93EA /* list.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDF22E3F96EA005F93EA /* list.txt */; };
+		F3CFBDF42E3F96EA005F93EA /* list.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDF22E3F96EA005F93EA /* list.txt */; };
+		F3CFBDF62E3F96F1005F93EA /* scrollView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDF52E3F96F1005F93EA /* scrollView.txt */; };
+		F3CFBDF72E3F96F1005F93EA /* scrollView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDF52E3F96F1005F93EA /* scrollView.txt */; };
+		F3CFBDF92E3F973B005F93EA /* lazyVStack.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDF82E3F973B005F93EA /* lazyVStack.txt */; };
+		F3CFBDFA2E3F973B005F93EA /* lazyVStack.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDF82E3F973B005F93EA /* lazyVStack.txt */; };
+		F3CFBDFC2E3F9740005F93EA /* lazyHStack.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDFB2E3F9740005F93EA /* lazyHStack.txt */; };
+		F3CFBDFD2E3F9740005F93EA /* lazyHStack.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDFB2E3F9740005F93EA /* lazyHStack.txt */; };
+		F3CFBDFF2E3F9741005F93EA /* tabView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDFE2E3F9741005F93EA /* tabView.txt */; };
+		F3CFBE002E3F9741005F93EA /* tabView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDFE2E3F9741005F93EA /* tabView.txt */; };
+		F3CFBE022E3F981C005F93EA /* TopicLazyVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE012E3F981C005F93EA /* TopicLazyVGrid.swift */; };
+		F3CFBE032E3F981C005F93EA /* TopicLazyVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE012E3F981C005F93EA /* TopicLazyVGrid.swift */; };
+		F3CFBE082E3F981E005F93EA /* TopicTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE072E3F981E005F93EA /* TopicTabView.swift */; };
+		F3CFBE092E3F981E005F93EA /* TopicTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE072E3F981E005F93EA /* TopicTabView.swift */; };
+		F3CFBE0B2E3F985C005F93EA /* TopicLazyHGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE0A2E3F985C005F93EA /* TopicLazyHGrid.swift */; };
+		F3CFBE0C2E3F985C005F93EA /* TopicLazyHGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE0A2E3F985C005F93EA /* TopicLazyHGrid.swift */; };
 		F3D8C11C2B2BB51000C7B0A9 /* Sensory Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */; };
 		F3EB1CB62C58FFE5007E6366 /* Hover Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */; };
 /* End PBXBuildFile section */
@@ -450,6 +466,14 @@
 		F3CFBDE92E3F95B6005F93EA /* TopicHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicHStack.swift; sourceTree = "<group>"; };
 		F3CFBDEC2E3F95B7005F93EA /* TopicZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicZStack.swift; sourceTree = "<group>"; };
 		F3CFBDEF2E3F95B8005F93EA /* TopicGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicGrid.swift; sourceTree = "<group>"; };
+		F3CFBDF22E3F96EA005F93EA /* list.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = list.txt; sourceTree = "<group>"; };
+		F3CFBDF52E3F96F1005F93EA /* scrollView.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = scrollView.txt; sourceTree = "<group>"; };
+		F3CFBDF82E3F973B005F93EA /* lazyVStack.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lazyVStack.txt; sourceTree = "<group>"; };
+		F3CFBDFB2E3F9740005F93EA /* lazyHStack.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lazyHStack.txt; sourceTree = "<group>"; };
+		F3CFBDFE2E3F9741005F93EA /* tabView.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = tabView.txt; sourceTree = "<group>"; };
+		F3CFBE012E3F981C005F93EA /* TopicLazyVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLazyVGrid.swift; sourceTree = "<group>"; };
+		F3CFBE072E3F981E005F93EA /* TopicTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTabView.swift; sourceTree = "<group>"; };
+		F3CFBE0A2E3F985C005F93EA /* TopicLazyHGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLazyHGrid.swift; sourceTree = "<group>"; };
 		F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensory Feedback.swift"; sourceTree = "<group>"; };
 		F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hover Effects.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -787,7 +811,12 @@
 				F3CFBDD62E3F945C005F93EA /* vStack.txt */,
 				F3CFBDD92E3F9473005F93EA /* vHtack.txt */,
 				F3CFBDDC2E3F947A005F93EA /* zHtack.txt */,
+				F3CFBDF22E3F96EA005F93EA /* list.txt */,
+				F3CFBDF52E3F96F1005F93EA /* scrollView.txt */,
 				F3CFBDE22E3F94D8005F93EA /* grid.txt */,
+				F3CFBDF82E3F973B005F93EA /* lazyVStack.txt */,
+				F3CFBDFB2E3F9740005F93EA /* lazyHStack.txt */,
+				F3CFBDFE2E3F9741005F93EA /* tabView.txt */,
 			);
 			path = Collections;
 			sourceTree = "<group>";
@@ -912,6 +941,9 @@
 				F3CFBDE92E3F95B6005F93EA /* TopicHStack.swift */,
 				F3CFBDEC2E3F95B7005F93EA /* TopicZStack.swift */,
 				F3CFBDEF2E3F95B8005F93EA /* TopicGrid.swift */,
+				F3CFBE012E3F981C005F93EA /* TopicLazyVGrid.swift */,
+				F3CFBE0A2E3F985C005F93EA /* TopicLazyHGrid.swift */,
+				F3CFBE072E3F981E005F93EA /* TopicTabView.swift */,
 			);
 			path = Collections;
 			sourceTree = "<group>";
@@ -1003,6 +1035,7 @@
 			files = (
 				F3202CC82D55978A0030B3CC /* Assets.xcassets in Resources */,
 				F3CFBDE42E3F94D8005F93EA /* grid.txt in Resources */,
+				F3CFBDF72E3F96F1005F93EA /* scrollView.txt in Resources */,
 				F3CFBDA52E3F8C43005F93EA /* shape.txt in Resources */,
 				F3CFBDA82E3F8C96005F93EA /* customKeyboard.txt in Resources */,
 				F3202CB72D5596210030B3CC /* Assets.xcassets in Resources */,
@@ -1022,9 +1055,11 @@
 				F3CFBD5B2E3F8AE2005F93EA /* toggleTint.txt in Resources */,
 				F3CFBD5C2E3F8AE2005F93EA /* emptyView.txt in Resources */,
 				F3CFBD5D2E3F8AE2005F93EA /* mdBoldItalic.txt in Resources */,
+				F3CFBE002E3F9741005F93EA /* tabView.txt in Resources */,
 				F3CFBD5E2E3F8AE2005F93EA /* contextMenu.txt in Resources */,
 				F3CFBD9F2E3F8B9F005F93EA /* label.txt in Resources */,
 				F3CFBD5F2E3F8AE2005F93EA /* mdLink.txt in Resources */,
+				F3CFBDFD2E3F9740005F93EA /* lazyHStack.txt in Resources */,
 				F3CFBD602E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt in Resources */,
 				F3CFBDDB2E3F9473005F93EA /* vHtack.txt in Resources */,
 				F3CFBD612E3F8AE2005F93EA /* gauges.txt in Resources */,
@@ -1040,6 +1075,7 @@
 				F3CFBD692E3F8AE2005F93EA /* button.txt in Resources */,
 				F3CFBD6A2E3F8AE2005F93EA /* appStoreOverlay.txt in Resources */,
 				F3CFBD6B2E3F8AE2005F93EA /* dismiss.txt in Resources */,
+				F3CFBDFA2E3F973B005F93EA /* lazyVStack.txt in Resources */,
 				F3CFBDA22E3F8C09005F93EA /* sfSymbols.txt in Resources */,
 				F3CFBD6C2E3F8AE2005F93EA /* stepper.txt in Resources */,
 				F3CFBD6D2E3F8AE2005F93EA /* slider.txt in Resources */,
@@ -1053,6 +1089,7 @@
 				F3CFBD742E3F8AE2005F93EA /* alert.txt in Resources */,
 				F3CFBDC02E3F8E87005F93EA /* link in Resources */,
 				F3CFBD752E3F8AE2005F93EA /* picker.txt in Resources */,
+				F3CFBDF42E3F96EA005F93EA /* list.txt in Resources */,
 				F3CFBD762E3F8AE2005F93EA /* color.txt in Resources */,
 				F3CFBDBD2E3F8E79005F93EA /* passAView.txt in Resources */,
 				F3CFBDB42E3F8E5E005F93EA /* navigationLink.txt in Resources */,
@@ -1063,12 +1100,15 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F3CFBDE32E3F94D8005F93EA /* grid.txt in Resources */,
+				F3CFBDFC2E3F9740005F93EA /* lazyHStack.txt in Resources */,
+				F3CFBDF32E3F96EA005F93EA /* list.txt in Resources */,
 				F3ADA61A2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */,
 				F3BBD9E82AEECD3500A9F7E7 /* Assets.xcassets in Resources */,
 				F3CFBD772E3F8AE2005F93EA /* mdMonospaced.txt in Resources */,
 				F3CFBDA12E3F8C09005F93EA /* sfSymbols.txt in Resources */,
 				F3CFBD782E3F8AE2005F93EA /* buttonCustom.txt in Resources */,
 				F3CFBD792E3F8AE2005F93EA /* lowPowerMode.txt in Resources */,
+				F3CFBDF62E3F96F1005F93EA /* scrollView.txt in Resources */,
 				F3CFBD7A2E3F8AE2005F93EA /* gradient.txt in Resources */,
 				F3CFBD7B2E3F8AE2005F93EA /* textEditor.txt in Resources */,
 				F3CFBD7C2E3F8AE2005F93EA /* spacer.txt in Resources */,
@@ -1089,6 +1129,7 @@
 				F3CFBDAD2E3F8E5C005F93EA /* navigationStack.txt in Resources */,
 				F3CFBD882E3F8AE2005F93EA /* image.txt in Resources */,
 				F3CFBD892E3F8AE2005F93EA /* mdStrikethrough.txt in Resources */,
+				F3CFBDFF2E3F9741005F93EA /* tabView.txt in Resources */,
 				F3CFBD8A2E3F8AE2005F93EA /* sheetBefore15.txt in Resources */,
 				F3CFBD8B2E3F8AE2005F93EA /* divider.txt in Resources */,
 				F3CFBD8C2E3F8AE2005F93EA /* textLineLimit.txt in Resources */,
@@ -1100,6 +1141,7 @@
 				F3CFBD8F2E3F8AE2005F93EA /* button.txt in Resources */,
 				F3CFBDB62E3F8E5E005F93EA /* navigationBar.txt in Resources */,
 				F3CFBD902E3F8AE2005F93EA /* appStoreOverlay.txt in Resources */,
+				F3CFBDF92E3F973B005F93EA /* lazyVStack.txt in Resources */,
 				F3CFBD912E3F8AE2005F93EA /* dismiss.txt in Resources */,
 				F3CFBD922E3F8AE2005F93EA /* stepper.txt in Resources */,
 				F3CFBD932E3F8AE2005F93EA /* slider.txt in Resources */,
@@ -1128,11 +1170,13 @@
 				F3202CC22D5597490030B3CC /* Master SwiftUI.swift in Sources */,
 				F3202CBE2D5597310030B3CC /* Font List.swift in Sources */,
 				F314C8452E2E654C00F63B6A /* TopicSlider.swift in Sources */,
+				F3CFBE032E3F981C005F93EA /* TopicLazyVGrid.swift in Sources */,
 				F34480322E2CD41100D18E2E /* TopicDarkMode.swift in Sources */,
 				F3202CBD2D5597180030B3CC /* Hover Effects.swift in Sources */,
 				F31653B92E3C0A4E00A0E9D7 /* StackTopicList.swift in Sources */,
 				F399A4B02E3DC544008BED17 /* iOS 18 support.swift in Sources */,
 				F3202CC52D55977A0030B3CC /* Image Picker.swift in Sources */,
+				F3CFBE092E3F981E005F93EA /* TopicTabView.swift in Sources */,
 				F314C7FD2E2E2A8400F63B6A /* Models.swift in Sources */,
 				F314C7F62E2E1E7900F63B6A /* TopicText.swift in Sources */,
 				F314C8332E2E536F00F63B6A /* TopicMenu.swift in Sources */,
@@ -1175,6 +1219,7 @@
 				F35198FF2E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */,
 				F35199002E2B9F53004E0F02 /* TopicDetail.swift in Sources */,
 				F314C81C2E2E4BB900F63B6A /* TopicShape.swift in Sources */,
+				F3CFBE0C2E3F985C005F93EA /* TopicLazyHGrid.swift in Sources */,
 				F3CFBDD22E3F901C005F93EA /* TopicPassAView.swift in Sources */,
 				F3BF16E32E2C7D1C005212D1 /* TopicHeading.swift in Sources */,
 				F35199022E2B9F53004E0F02 /* NavModel.swift in Sources */,
@@ -1238,6 +1283,7 @@
 				F35199132E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */,
 				F35199142E2B9F53004E0F02 /* TopicDetail.swift in Sources */,
 				F314C83B2E2E540800F63B6A /* TopicSheet.swift in Sources */,
+				F3CFBE022E3F981C005F93EA /* TopicLazyVGrid.swift in Sources */,
 				F3AE99D92E2F861C00D70249 /* ColorTheme.swift in Sources */,
 				F314C7F72E2E1E7900F63B6A /* TopicText.swift in Sources */,
 				F3BF16DA2E2C76A8005212D1 /* ContentView.swift in Sources */,
@@ -1255,6 +1301,7 @@
 				F31E14442E3E9C9E00D43C1E /* TopicDetectLaguage.swift in Sources */,
 				F31653BA2E3C0A4E00A0E9D7 /* StackTopicList.swift in Sources */,
 				F351991F2E2B9F53004E0F02 /* ContinueButton.swift in Sources */,
+				F3CFBE082E3F981E005F93EA /* TopicTabView.swift in Sources */,
 				F314C8152E2E4B8700F63B6A /* TopicLabel.swift in Sources */,
 				F314C8062E2E2D4A00F63B6A /* FontDesignItem.swift in Sources */,
 				F3CFBDCB2E3F900F005F93EA /* TopicNavigationBar.swift in Sources */,
@@ -1295,6 +1342,7 @@
 				F314C8442E2E654C00F63B6A /* TopicSlider.swift in Sources */,
 				F314C8532E2E65F000F63B6A /* TopicPopover.swift in Sources */,
 				F314C7F22E2E1C1800F63B6A /* TopicLinkLabel.swift in Sources */,
+				F3CFBE0B2E3F985C005F93EA /* TopicLazyHGrid.swift in Sources */,
 				F31653B62E3C0A1000A0E9D7 /* FavoritesList.swift in Sources */,
 				F314C8092E2E458B00F63B6A /* TopicTextField.swift in Sources */,
 				F314C84D2E2E657300F63B6A /* TopicStepper.swift in Sources */,

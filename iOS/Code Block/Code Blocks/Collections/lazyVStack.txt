@@ -1,0 +1,59 @@
+struct ContentView: View {
+    // We define our values
+    private let values = /* ... */
+    
+    // We define our columns
+    private let columns = [ /* ... */]
+    
+    var body: some View {
+        ScrollView {
+            LazyVGrid(columns: columns) {
+                ForEach(values, id: \.self) {item in
+                    Text("\(item)")
+                }
+            }
+        }
+    }
+ }
+
+struct ContentView: View {
+    // We define our values and columns
+    private let values1 = /* ... */
+    private let values2 = /* ... */
+    private let columns = [ /* ... */]
+    
+    var body: some View {
+        ScrollView {
+            LazyVGrid(
+                columns: columns,
+                alignment: .leading,
+                spacing: 10,
+                pinnedViews: .sectionHeaders
+            ) {
+
+            Section(header: Text("Section 1").font(.title2)) {
+                ForEach(values1, id: \.self) {item in
+                    Text("\(item)")
+                }
+            }
+            
+            Section(header: Text("Section 2").font(.title2)) {
+                ForEach(values2, id: \.self) {item in
+                    Text("\(item)")
+                }
+            }
+        }
+    }
+ }
+
+// Variable numbers of columns
+private let columns = [
+    GridItem(.adaptive(minimum: 50))
+]
+
+// Fixed numbers of columns
+private let columns = [
+    GridItem(.flexible()),
+    GridItem(.fixed(25)),
+    GridItem(.fixed(50), spacing: 10, alignment: .top)
+]
