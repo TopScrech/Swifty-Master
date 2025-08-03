@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct FavoritesList: View {
     @EnvironmentObject private var store: ValueStore
@@ -49,18 +49,14 @@ struct FavoritesList: View {
         .toolbar {
             if store.favoriteTopics.count > 0 {
                 if isEditing {
-                    Button {
+                    SFButton("checkmark") {
                         isEditing = false
-                    } label: {
-                        Image(systemName: "checkmark")
                     }
                     .glassProminentButtonStyle()
                     .tint(.blue)
                 } else {
-                    Button {
+                    SFButton("pencil") {
                         isEditing = true
-                    } label: {
-                        Image(systemName: "pencil")
                     }
                 }
             }
