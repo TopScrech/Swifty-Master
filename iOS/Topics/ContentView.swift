@@ -13,12 +13,11 @@ struct ContentView: View {
         VStack(spacing: 25) {
             if let view = topicView(topic) {
                 view
-                    .padding(.horizontal)
             }
             
             TopicDocs(topic.docs)
-                .scenePadding()
         }
+        .scenePadding()
         .toolbar {
             Button {
                 store.addOrRemoveFavorite(topic)
