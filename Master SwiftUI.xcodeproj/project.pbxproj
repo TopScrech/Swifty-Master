@@ -720,6 +720,13 @@
 			isa = PBXGroup;
 			children = (
 				F3CC1DEA2E343C3A00611B60 /* alert.txt */,
+				F3CFBD1B2E3F864B005F93EA /* Content */,
+				F3CFBD1C2E3F864F005F93EA /* Control */,
+				F3CFBD1D2E3F8668005F93EA /* View */,
+				F3CFBD1E2E3F8674005F93EA /* Nav */,
+				F3CFBD1F2E3F8681005F93EA /* Collections */,
+				F399A4AE2E3D6097008BED17 /* Design */,
+				F388D19E2E3AB516002A1128 /* System */,
 				F3CC1DEB2E343C3A00611B60 /* appStoreOverlay.txt */,
 				F3CC1DEC2E343C3A00611B60 /* button.txt */,
 				F3CC1DED2E343C3A00611B60 /* buttonCustom.txt */,
@@ -750,10 +757,43 @@
 				F3CC1E0B2E343C3A00611B60 /* textLineLimit.txt */,
 				F3CC1E0C2E343C3A00611B60 /* toggle.txt */,
 				F3CC1E0D2E343C3A00611B60 /* toggleTint.txt */,
-				F399A4AE2E3D6097008BED17 /* Design */,
-				F388D19E2E3AB516002A1128 /* System */,
 			);
 			path = "Code Blocks";
+			sourceTree = "<group>";
+		};
+		F3CFBD1B2E3F864B005F93EA /* Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		F3CFBD1C2E3F864F005F93EA /* Control */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		F3CFBD1D2E3F8668005F93EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3CFBD1E2E3F8674005F93EA /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Nav;
+			sourceTree = "<group>";
+		};
+		F3CFBD1F2E3F8681005F93EA /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Collections;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

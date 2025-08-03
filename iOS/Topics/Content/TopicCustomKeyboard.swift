@@ -5,7 +5,7 @@ struct TopicCustomKeyboard: View {
         VStack(spacing: 25) {
             Text("TopicCustomKeyboard")
             
-//            SimpleCodeBlockView(.image)
+//            SimpleCodeBlockView(.customKeyboard)
         }
     }
 }

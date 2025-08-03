@@ -5,7 +5,7 @@ struct TopicSFSymbols: View {
         VStack(spacing: 25) {
             Text("TopicSFSymbols")
             
-//            SimpleCodeBlockView(.image)
+//            SimpleCodeBlockView(.sfSymbols)
         }
     }
 }

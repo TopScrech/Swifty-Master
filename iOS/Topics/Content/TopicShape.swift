@@ -5,7 +5,7 @@ struct TopicShape: View {
         VStack(spacing: 25) {
             Text("TopicShape")
             
-//            SimpleCodeBlockView(.image)
+//            SimpleCodeBlockView(.shape)
         }
     }
 }
