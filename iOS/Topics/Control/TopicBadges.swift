@@ -8,7 +8,7 @@ struct TopicBadges: View {
     
     var body: some View {
         VStack(spacing: 25) {
-            Stepper(value: $number) {
+            Stepper(value: $number, in: 0...100) {
                 Text("Change badge number to \(number)")
                 
                 Text("Check the app icon on the home screen")
