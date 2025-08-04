@@ -128,7 +128,7 @@ struct ImagePicker: View {
         }
     }
     
-    func generateImageThumbnail(
+    private func generateImageThumbnail(
         _ image: UIImage,
         _ size: CGSize
     ) {
@@ -145,8 +145,8 @@ struct ImagePicker: View {
     }
 }
 
-extension View {
-    @ViewBuilder func optionalViewModifier<Content: View> (
+fileprivate extension View {
+    func optionalViewModifier<Content: View> (
         @ViewBuilder content: @escaping (Self) -> Content
     ) -> some View {
         content(self)

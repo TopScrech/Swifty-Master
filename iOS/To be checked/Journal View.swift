@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct JournalView: View {
-    //    @State var suggestionPhotos = [JournalingSuggestion.Photo]()
-    //    @State var suggestionTitle: String? = nil
+//    @State var suggestionPhotos = [JournalingSuggestion.Photo]()
+//    @State var suggestionTitle: String? = nil
     
     var body: some View {
         VStack {
