@@ -4,6 +4,7 @@ final class ValueStore: ObservableObject {
     @AppStorage("color_theme") var colorTheme: ColorTheme = .system
     @AppStorage("favorite_topics") var favoriteTopics: [Topic] = []
     @AppStorage("experience") var experience: Experience?
+    @AppStorage("last_tab") var lastTab = 0
     
     // Debug
     @AppStorage("show_code_line_numbers") var showCodeLineNumbers = false

@@ -86,6 +86,8 @@
 		F33058702E3A9B250099CEB7 /* TopicDocsCardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */; };
 		F3378F9D2E2E68DF00A31D7F /* TopicDetectOSVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3378F9C2E2E68DF00A31D7F /* TopicDetectOSVersion.swift */; };
 		F3378F9E2E2E68DF00A31D7F /* TopicDetectOSVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3378F9C2E2E68DF00A31D7F /* TopicDetectOSVersion.swift */; };
+		F33E8B192E41495100B05370 /* ContentViewNavButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B182E41495100B05370 /* ContentViewNavButtons.swift */; };
+		F33E8B1A2E41495100B05370 /* ContentViewNavButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B182E41495100B05370 /* ContentViewNavButtons.swift */; };
 		F34480322E2CD41100D18E2E /* TopicDarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480312E2CD41100D18E2E /* TopicDarkMode.swift */; };
 		F34480332E2CD41100D18E2E /* TopicDarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480312E2CD41100D18E2E /* TopicDarkMode.swift */; };
 		F34480362E2D218400D18E2E /* TopicEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480352E2D218400D18E2E /* TopicEmptyView.swift */; };
@@ -398,6 +400,7 @@
 		F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCard.swift; sourceTree = "<group>"; };
 		F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCardImage.swift; sourceTree = "<group>"; };
 		F3378F9C2E2E68DF00A31D7F /* TopicDetectOSVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectOSVersion.swift; sourceTree = "<group>"; };
+		F33E8B182E41495100B05370 /* ContentViewNavButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewNavButtons.swift; sourceTree = "<group>"; };
 		F34480312E2CD41100D18E2E /* TopicDarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDarkMode.swift; sourceTree = "<group>"; };
 		F34480352E2D218400D18E2E /* TopicEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicEmptyView.swift; sourceTree = "<group>"; };
 		F34480392E2D225A00D18E2E /* TopicSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicSpacer.swift; sourceTree = "<group>"; };
@@ -827,6 +830,7 @@
 			isa = PBXGroup;
 			children = (
 				F3BF16D92E2C76A8005212D1 /* ContentView.swift */,
+				F33E8B182E41495100B05370 /* ContentViewNavButtons.swift */,
 				F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */,
 				F3BF16E12E2C7D1C005212D1 /* TopicHeading.swift */,
 				F3BF16E52E2CCDEE005212D1 /* TopicDocs.swift */,
@@ -1319,6 +1323,7 @@
 				F3BF16E32E2C7D1C005212D1 /* TopicHeading.swift in Sources */,
 				F35199022E2B9F53004E0F02 /* NavModel.swift in Sources */,
 				F3CFBDEE2E3F95B7005F93EA /* TopicZStack.swift in Sources */,
+				F33E8B192E41495100B05370 /* ContentViewNavButtons.swift in Sources */,
 				F3AE99DA2E2F861C00D70249 /* ColorTheme.swift in Sources */,
 				F344803A2E2D225A00D18E2E /* TopicSpacer.swift in Sources */,
 				F3CFBE3C2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift in Sources */,
@@ -1431,6 +1436,7 @@
 				F3202C942D55952F0030B3CC /* AppStoreOverlay.swift in Sources */,
 				F3CFBE232E3F9AFD005F93EA /* TopicPadding.swift in Sources */,
 				F3378F9D2E2E68DF00A31D7F /* TopicDetectOSVersion.swift in Sources */,
+				F33E8B1A2E41495100B05370 /* ContentViewNavButtons.swift in Sources */,
 				F3BBD9E22AEECD3400A9F7E7 /* Master SwiftUI.swift in Sources */,
 				F314C80C2E2E486200F63B6A /* TopicTextEditor.swift in Sources */,
 				F314C8582E2E663500F63B6A /* TopicColor.swift in Sources */,

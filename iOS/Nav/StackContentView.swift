@@ -6,12 +6,10 @@ struct StackContentView: View {
     
     @State private var sheetSettings = false
     
-    @AppStorage("last_tab") private var lastTab = 0
-    
     var body: some View {
         @Bindable var nav = nav
         
-        TabView(selection: $lastTab) {
+        TabView(selection: $store.lastTab) {
             Tab("Topics", systemImage: "list.bullet", value: 0) {
                 NavigationStack(path: $nav.topicPath) {
                     List {

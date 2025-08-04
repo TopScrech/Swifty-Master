@@ -16,6 +16,8 @@ struct ContentView: View {
             }
             
             TopicDocs(topic.docs)
+            
+            ContentViewNavButtons(topic)
         }
         .scenePadding()
         .toolbar {
