@@ -14,11 +14,15 @@ struct CodeBlockView: View {
         self.code = code.removingLastLine
     }
     
+    private var codeLines: Array<(offset: Int, element: String)> {
+        Array(code.components(separatedBy: .newlines).enumerated())
+    }
+    
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
+        ScrollView(.horizontal) {
             ZStack {
                 VStack(alignment: .leading, spacing: 4) {
-                    ForEach(Array(code.components(separatedBy: .newlines).enumerated()), id: \.offset) { index, line in
+                    ForEach(codeLines, id: \.offset) { index, line in
                         HStack(alignment: .top, spacing: 16) {
                             if store.showCodeLineNumbers {
                                 Text(index + 1)
@@ -34,7 +38,7 @@ struct CodeBlockView: View {
                         }
                     }
                 }
-                .padding(.vertical)
+                .padding()
                 .frame(minWidth: UIScreen.main.bounds.width * 0.92, alignment: .leading)
                 .background(.ultraThinMaterial)
                 .cornerRadius(20)
@@ -56,6 +60,7 @@ struct CodeBlockView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
             }
         }
+        .scrollIndicators(.never)
     }
 }
 

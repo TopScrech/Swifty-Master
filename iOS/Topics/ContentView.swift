@@ -58,6 +58,9 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .slider: AnyView(TopicSlider())
     case .stepper: AnyView(TopicStepper())
     case .picker: AnyView(TopicPicker())
+    case .gauges: AnyView(TopicGauge())
+    case .progressView: AnyView(TopicProgressView())
+    case .badges: AnyView(TopicBadges())
         
         // View
     case .emptyView: AnyView(TopicEmptyView())

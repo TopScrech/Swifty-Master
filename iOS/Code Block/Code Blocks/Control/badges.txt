@@ -1,0 +1,6 @@
+.toolbar {
+    ToolbarItem {
+        Button("") {...}
+            .badge(3)
+    }
+}

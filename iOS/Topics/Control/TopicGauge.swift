@@ -1,8 +1,10 @@
-import ScrechKit
+import SwiftUI
 
-struct GaugesView: View {
+struct TopicGauge: View {
+    @State private var isOn = true
+    
     var body: some View {
-        VStack(spacing: 64) {
+        VStack(spacing: 25) {
             GaugeCard("accessoryCircular") {
                 Gauge(value: 50, in: 0...100) {
                     Text("C")
@@ -35,13 +37,10 @@ struct GaugesView: View {
             
             CodeBlockView(.gauges)
         }
-        .padding(.horizontal)
     }
 }
 
 #Preview {
-    NavigationView {
-        GaugesView()
-    }
-    .darkSchemePreferred()
+    TopicGauge()
+        .darkSchemePreferred()
 }

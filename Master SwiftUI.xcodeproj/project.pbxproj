@@ -77,7 +77,6 @@
 		F3202CBE2D5597310030B3CC /* Font List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3146C4D2CF7382C005D58B3 /* Font List.swift */; };
 		F3202CC02D5597400030B3CC /* AppStoreOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3202C932D55952F0030B3CC /* AppStoreOverlay.swift */; };
 		F3202CC22D5597490030B3CC /* Master SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E12AEECD3400A9F7E7 /* Master SwiftUI.swift */; };
-		F3202CC42D5597640030B3CC /* Gauges View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE40BE2D1387FE00B7AD35 /* Gauges View.swift */; };
 		F3202CC52D55977A0030B3CC /* Image Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9FA2AEED4CE00A9F7E7 /* Image Picker.swift */; };
 		F3202CC62D55977A0030B3CC /* Image Picker 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37916ED2AF14A7A00B880AF /* Image Picker 2.swift */; };
 		F3202CC72D55977A0030B3CC /* Image Picker View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9F82AEED4BC00A9F7E7 /* Image Picker View.swift */; };
@@ -158,7 +157,6 @@
 		F3BBD9F72AEECE4000A9F7E7 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3BBD9F62AEECE4000A9F7E7 /* ScrechKit */; };
 		F3BBD9F92AEED4BC00A9F7E7 /* Image Picker View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9F82AEED4BC00A9F7E7 /* Image Picker View.swift */; };
 		F3BBD9FB2AEED4CE00A9F7E7 /* Image Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9FA2AEED4CE00A9F7E7 /* Image Picker.swift */; };
-		F3BE40BF2D1387FE00B7AD35 /* Gauges View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE40BE2D1387FE00B7AD35 /* Gauges View.swift */; };
 		F3BF16DA2E2C76A8005212D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF16D92E2C76A8005212D1 /* ContentView.swift */; };
 		F3BF16DB2E2C76A8005212D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF16D92E2C76A8005212D1 /* ContentView.swift */; };
 		F3BF16DD2E2C7717005212D1 /* TopicDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF16DC2E2C7717005212D1 /* TopicDismiss.swift */; };
@@ -167,6 +165,16 @@
 		F3BF16E32E2C7D1C005212D1 /* TopicHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF16E12E2C7D1C005212D1 /* TopicHeading.swift */; };
 		F3BF16E62E2CCDEE005212D1 /* TopicDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF16E52E2CCDEE005212D1 /* TopicDocs.swift */; };
 		F3BF16E72E2CCDEE005212D1 /* TopicDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF16E52E2CCDEE005212D1 /* TopicDocs.swift */; };
+		F3C6F66C2E40E46800E94540 /* badges.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3C6F66B2E40E46800E94540 /* badges.txt */; };
+		F3C6F66D2E40E46800E94540 /* badges.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3C6F66B2E40E46800E94540 /* badges.txt */; };
+		F3C6F66F2E40E46900E94540 /* progressView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3C6F66E2E40E46900E94540 /* progressView.txt */; };
+		F3C6F6702E40E46900E94540 /* progressView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3C6F66E2E40E46900E94540 /* progressView.txt */; };
+		F3C6F6722E40E57A00E94540 /* TopicGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6F6712E40E57A00E94540 /* TopicGauge.swift */; };
+		F3C6F6732E40E57A00E94540 /* TopicGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6F6712E40E57A00E94540 /* TopicGauge.swift */; };
+		F3C6F6752E40E57B00E94540 /* TopicProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6F6742E40E57B00E94540 /* TopicProgressView.swift */; };
+		F3C6F6762E40E57B00E94540 /* TopicProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6F6742E40E57B00E94540 /* TopicProgressView.swift */; };
+		F3C6F6912E40E58000E94540 /* TopicBadges.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6F6902E40E58000E94540 /* TopicBadges.swift */; };
+		F3C6F6922E40E58000E94540 /* TopicBadges.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6F6902E40E58000E94540 /* TopicBadges.swift */; };
 		F3CFBD512E3F8AE2005F93EA /* mdMonospaced.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD272E3F8AE2005F93EA /* mdMonospaced.txt */; };
 		F3CFBD522E3F8AE2005F93EA /* buttonCustom.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD2E2E3F8AE2005F93EA /* buttonCustom.txt */; };
 		F3CFBD532E3F8AE2005F93EA /* lowPowerMode.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD432E3F8AE2005F93EA /* lowPowerMode.txt */; };
@@ -433,11 +441,15 @@
 		F3BBD9F32AEECD6C00A9F7E7 /* Materials View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Materials View.swift"; sourceTree = "<group>"; };
 		F3BBD9F82AEED4BC00A9F7E7 /* Image Picker View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker View.swift"; sourceTree = "<group>"; };
 		F3BBD9FA2AEED4CE00A9F7E7 /* Image Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker.swift"; sourceTree = "<group>"; };
-		F3BE40BE2D1387FE00B7AD35 /* Gauges View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gauges View.swift"; sourceTree = "<group>"; };
 		F3BF16D92E2C76A8005212D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F3BF16DC2E2C7717005212D1 /* TopicDismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDismiss.swift; sourceTree = "<group>"; };
 		F3BF16E12E2C7D1C005212D1 /* TopicHeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicHeading.swift; sourceTree = "<group>"; };
 		F3BF16E52E2CCDEE005212D1 /* TopicDocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocs.swift; sourceTree = "<group>"; };
+		F3C6F66B2E40E46800E94540 /* badges.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = badges.txt; sourceTree = "<group>"; };
+		F3C6F66E2E40E46900E94540 /* progressView.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = progressView.txt; sourceTree = "<group>"; };
+		F3C6F6712E40E57A00E94540 /* TopicGauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicGauge.swift; sourceTree = "<group>"; };
+		F3C6F6742E40E57B00E94540 /* TopicProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicProgressView.swift; sourceTree = "<group>"; };
+		F3C6F6902E40E58000E94540 /* TopicBadges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicBadges.swift; sourceTree = "<group>"; };
 		F3CFBD232E3F8AE2005F93EA /* divider.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = divider.txt; sourceTree = "<group>"; };
 		F3CFBD242E3F8AE2005F93EA /* image.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = image.txt; sourceTree = "<group>"; };
 		F3CFBD252E3F8AE2005F93EA /* mdBoldItalic.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mdBoldItalic.txt; sourceTree = "<group>"; };
@@ -654,15 +666,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F3202CC32D55975E0030B3CC /* Gauges */ = {
-			isa = PBXGroup;
-			children = (
-				F3BE40BE2D1387FE00B7AD35 /* Gauges View.swift */,
-				F35198462E2AECAA004E0F02 /* Gauge Card.swift */,
-			);
-			path = Gauges;
-			sourceTree = "<group>";
-		};
 		F34480302E2CD3FF00D18E2E /* System */ = {
 			isa = PBXGroup;
 			children = (
@@ -712,6 +715,10 @@
 				F314C8432E2E654C00F63B6A /* TopicSlider.swift */,
 				F314C84C2E2E657300F63B6A /* TopicStepper.swift */,
 				F314C84F2E2E657400F63B6A /* TopicPicker.swift */,
+				F3C6F6712E40E57A00E94540 /* TopicGauge.swift */,
+				F35198462E2AECAA004E0F02 /* Gauge Card.swift */,
+				F3C6F6742E40E57B00E94540 /* TopicProgressView.swift */,
+				F3C6F6902E40E58000E94540 /* TopicBadges.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -823,7 +830,6 @@
 				F3BF16DF2E2C779E005212D1 /* Topics */,
 				F35198C62E2B7E73004E0F02 /* Code Block */,
 				F314C7F02E2E146100F63B6A /* Settings */,
-				F3202CC32D55975E0030B3CC /* Gauges */,
 				F35198492E2AECCF004E0F02 /* To be checked */,
 			);
 			path = iOS;
@@ -917,6 +923,9 @@
 				F3CFBD332E3F8AE2005F93EA /* stepper.txt */,
 				F3CFBD342E3F8AE2005F93EA /* toggle.txt */,
 				F3CFBD352E3F8AE2005F93EA /* toggleTint.txt */,
+				F3CFBD4D2E3F8AE2005F93EA /* gauges.txt */,
+				F3C6F66E2E40E46900E94540 /* progressView.txt */,
+				F3C6F66B2E40E46800E94540 /* badges.txt */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -991,7 +1000,6 @@
 		F3CFBD502E3F8AE2005F93EA /* Code Blocks */ = {
 			isa = PBXGroup;
 			children = (
-				F3CFBD4D2E3F8AE2005F93EA /* gauges.txt */,
 				F3CFBD2C2E3F8AE2005F93EA /* Content */,
 				F3CFBD362E3F8AE2005F93EA /* Control */,
 				F3CFBD3E2E3F8AE2005F93EA /* Nav */,
@@ -1109,6 +1117,7 @@
 				F3CFBDE42E3F94D8005F93EA /* grid.txt in Resources */,
 				F3CFBDF72E3F96F1005F93EA /* scrollView.txt in Resources */,
 				F3CFBDA52E3F8C43005F93EA /* shape.txt in Resources */,
+				F3C6F66D2E40E46800E94540 /* badges.txt in Resources */,
 				F3CFBDA82E3F8C96005F93EA /* customKeyboard.txt in Resources */,
 				F3202CB72D5596210030B3CC /* Assets.xcassets in Resources */,
 				F3ADA61B2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */,
@@ -1138,6 +1147,7 @@
 				F3CFBD5F2E3F8AE2005F93EA /* mdLink.txt in Resources */,
 				F3CFBDFD2E3F9740005F93EA /* lazyHStack.txt in Resources */,
 				F3CFBD602E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt in Resources */,
+				F3C6F6702E40E46900E94540 /* progressView.txt in Resources */,
 				F3CFBDDB2E3F9473005F93EA /* vHtack.txt in Resources */,
 				F3CFBD612E3F8AE2005F93EA /* gauges.txt in Resources */,
 				F3CFBE212E3F99BB005F93EA /* equalSizeViews.txt in Resources */,
@@ -1212,6 +1222,7 @@
 				F3CFBD882E3F8AE2005F93EA /* image.txt in Resources */,
 				F3CFBD892E3F8AE2005F93EA /* mdStrikethrough.txt in Resources */,
 				F3CFBDFF2E3F9741005F93EA /* tabView.txt in Resources */,
+				F3C6F66C2E40E46800E94540 /* badges.txt in Resources */,
 				F3CFBD8A2E3F8AE2005F93EA /* sheetBefore15.txt in Resources */,
 				F3CFBD8B2E3F8AE2005F93EA /* divider.txt in Resources */,
 				F3CFBD8C2E3F8AE2005F93EA /* textLineLimit.txt in Resources */,
@@ -1227,6 +1238,7 @@
 				F3CFBD912E3F8AE2005F93EA /* dismiss.txt in Resources */,
 				F3CFBD922E3F8AE2005F93EA /* stepper.txt in Resources */,
 				F3CFBE142E3F99B2005F93EA /* padding.txt in Resources */,
+				F3C6F66F2E40E46900E94540 /* progressView.txt in Resources */,
 				F3CFBD932E3F8AE2005F93EA /* slider.txt in Resources */,
 				F3CFBD942E3F8AE2005F93EA /* detectLanguage.txt in Resources */,
 				F3CFBD952E3F8AE2005F93EA /* darkMode.txt in Resources */,
@@ -1267,6 +1279,7 @@
 				F3202CC52D55977A0030B3CC /* Image Picker.swift in Sources */,
 				F3CFBE092E3F981E005F93EA /* TopicTabView.swift in Sources */,
 				F314C7FD2E2E2A8400F63B6A /* Models.swift in Sources */,
+				F3C6F6732E40E57A00E94540 /* TopicGauge.swift in Sources */,
 				F314C7F62E2E1E7900F63B6A /* TopicText.swift in Sources */,
 				F314C8332E2E536F00F63B6A /* TopicMenu.swift in Sources */,
 				F314C8572E2E663500F63B6A /* TopicColor.swift in Sources */,
@@ -1297,7 +1310,6 @@
 				F314C85B2E2E665600F63B6A /* TopicGradient.swift in Sources */,
 				F30207CE2D8B001300C26008 /* Markdown.swift in Sources */,
 				F351984F2E2AF689004E0F02 /* Code Block.swift in Sources */,
-				F3202CC42D5597640030B3CC /* Gauges View.swift in Sources */,
 				F3CFBE242E3F9AFD005F93EA /* TopicPadding.swift in Sources */,
 				F314C8192E2E4BB600F63B6A /* TopicDivider.swift in Sources */,
 				F314C8162E2E4B8700F63B6A /* TopicLabel.swift in Sources */,
@@ -1310,6 +1322,7 @@
 				F330586C2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */,
 				F35198FE2E2B9F53004E0F02 /* ExperienceButton.swift in Sources */,
 				F314C8132E2E4B6A00F63B6A /* TopicSFSymbols.swift in Sources */,
+				F3C6F6762E40E57B00E94540 /* TopicProgressView.swift in Sources */,
 				F35198FF2E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */,
 				F3CFBE3F2E3F9D2D005F93EA /* TopicDifferentiateOS.swift in Sources */,
 				F35199002E2B9F53004E0F02 /* TopicDetail.swift in Sources */,
@@ -1329,6 +1342,7 @@
 				F3CFBDC62E3F900D005F93EA /* TopicNavigationStack.swift in Sources */,
 				F3BF16DE2E2C7717005212D1 /* TopicDismiss.swift in Sources */,
 				F3CFBE452E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift in Sources */,
+				F3C6F6922E40E58000E94540 /* TopicBadges.swift in Sources */,
 				F3BF16DB2E2C76A8005212D1 /* ContentView.swift in Sources */,
 				F31653B72E3C0A1000A0E9D7 /* FavoritesList.swift in Sources */,
 				F314C8392E2E53A100F63B6A /* TopicContextMenu.swift in Sources */,
@@ -1361,10 +1375,12 @@
 			isa = PBXSourcesBuildPhase;
 			files = (
 				F30207CF2D8B001300C26008 /* Markdown.swift in Sources */,
+				F3C6F6912E40E58000E94540 /* TopicBadges.swift in Sources */,
 				F34480472E2D5D1900D18E2E /* SettingsView.swift in Sources */,
 				F3EB1CB62C58FFE5007E6366 /* Hover Effects.swift in Sources */,
 				F37916EE2AF14A7A00B880AF /* Image Picker 2.swift in Sources */,
 				F32E88D52AF856E400959D49 /* Journal View.swift in Sources */,
+				F3C6F6722E40E57A00E94540 /* TopicGauge.swift in Sources */,
 				F3BF16DD2E2C7717005212D1 /* TopicDismiss.swift in Sources */,
 				F314C7F92E2E1F0F00F63B6A /* TopicDisclosureGroup.swift in Sources */,
 				F35198472E2AECAA004E0F02 /* Gauge Card.swift in Sources */,
@@ -1385,6 +1401,7 @@
 				F3CFBE022E3F981C005F93EA /* TopicLazyVGrid.swift in Sources */,
 				F3AE99D92E2F861C00D70249 /* ColorTheme.swift in Sources */,
 				F314C7F72E2E1E7900F63B6A /* TopicText.swift in Sources */,
+				F3C6F6752E40E57B00E94540 /* TopicProgressView.swift in Sources */,
 				F3BF16DA2E2C76A8005212D1 /* ContentView.swift in Sources */,
 				F314C8032E2E2AA800F63B6A /* FontWeightItem.swift in Sources */,
 				F35199162E2B9F53004E0F02 /* NavModel.swift in Sources */,
@@ -1441,7 +1458,6 @@
 				F3D8C11C2B2BB51000C7B0A9 /* Sensory Feedback.swift in Sources */,
 				F399A4B12E3DC544008BED17 /* iOS 18 support.swift in Sources */,
 				F330586D2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */,
-				F3BE40BF2D1387FE00B7AD35 /* Gauges View.swift in Sources */,
 				F3CFBDE72E3F959D005F93EA /* TopicVStack.swift in Sources */,
 				F3BBD9F42AEECD6C00A9F7E7 /* Materials View.swift in Sources */,
 				F3ADA6162D9C03E700F2DAA6 /* Plural Translation.swift in Sources */,

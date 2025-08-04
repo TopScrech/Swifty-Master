@@ -13,6 +13,9 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          shape = "Shape",
          divider = "Divider",
          customKeyboard = "Custom Keyboard",
+         gauges = "Gauges",
+         progressView = "ProgressView",
+         badges = "Badges",
          
          // Control
          button = "Button",
@@ -55,7 +58,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          spacer = "Spacer",
          padding = "Padding",
          frame = "Frame",
-//         positionPoint = "Position Point",
+         //         positionPoint = "Position Point",
          geometryReader = "Geometry Reader",
          equalSizeViews = "Equal Size Views",
          
@@ -94,7 +97,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         case .text, .textField, .textEditor, .image, .sfSymbols, .label, .shape, .divider, .customKeyboard:
                 .content
             
-        case .button, .menu, .contextMenu, .toggle, .slider, .stepper, .picker:
+        case .button, .menu, .contextMenu, .toggle, .slider, .stepper, .picker, .gauges, .progressView, .badges:
                 .control
             
         case .sheet, .popover, .alert, .emptyView, .appStoreOverlay:
@@ -150,6 +153,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
     
     var icon: String {
         switch self {
+            // Content
         case .text: "textformat"
         case .textField: "character.cursor.ibeam"
         case .textEditor: "square.and.pencil"
@@ -159,6 +163,8 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         case .shape: "circle.on.square"
         case .divider: "square.and.line.vertical.and.square"
         case .customKeyboard: "keyboard"
+            
+            // Control
         case .button: "digitalcrown.press"
         case .menu: "filemenu.and.pointer.arrow"
         case .contextMenu: "contextualmenu.and.pointer.arrow"
@@ -166,11 +172,18 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         case .slider: "slider.horizontal.3"
         case .stepper: "plus.minus.capsule"
         case .picker: "checklist"
+        case .gauges : "gauge.open"
+        case .progressView : "progress.indicator"
+        case .badges : "app.badge"
+            
+            // View
         case .sheet: "square.stack"
         case .popover: "questionmark.bubble"
         case .alert: "exclamationmark.bubble"
         case .emptyView: "rectangle.dashed"
         case .appStoreOverlay: "apple.logo"
+            
+            // Nav
         case .dismiss: "chevron.backward.chevron.backward.dotted"
         case .navigationView: "macwindow"
         case .navigationStack: "macwindow.on.rectangle"
@@ -179,6 +192,8 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         case .navigationLink: "point.topright.arrow.triangle.backward.to.point.bottomleft.scurvepath"
         case .passAView: "inset.filled.trailinghalf.arrow.trailing.rectangle"
         case .link: "link"
+            
+            // Collections
         case .vStack: "square.split.1x2"
         case .hStack: "square.split.2x1"
         case .zStack: "square.stack.3d.up"
@@ -188,14 +203,20 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         case .lazyVGrid: "square.grid.3x2"
         case .lazyHGrid: "square.grid.3x2"
         case .tabView: "platter.filled.bottom.iphone"
+            
+            // Layout
         case .spacer: "space"
         case .padding: "arrowtriangle.left.and.line.vertical.and.arrowtriangle.right"
         case .frame: "photo.artframe"
-//        case .positionPoint: "mappin.and.ellipse"
+            //        case .positionPoint: "mappin.and.ellipse"
         case .geometryReader: "arrow.up.and.down.and.arrow.left.and.right"
         case .equalSizeViews: "rectangle.split.3x1"
+            
+            // Design
         case .color: "paintpalette"
         case .gradient: "app.translucent"
+            
+            // System
         case .detectOSVersion: "waveform.path.ecg.magnifyingglass"
         case .detectDarkMode: "circle.righthalf.filled"
         case .detectDeviceUsed: "macbook.and.vision.pro"

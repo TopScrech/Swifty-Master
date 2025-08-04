@@ -29,4 +29,3 @@ VStack(spacing: 64) {
             .tint(.brown)
     }
 }
-.padding(.horizontal)

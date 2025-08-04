@@ -21,14 +21,16 @@ enum CodeBlock: String {
          toggle, toggleTint,
          menu,
          contextMenu,
+         gauges,
+         progressView,
+         badges,
          
          // View
-         appStoreOverlay,
-         emptyView, emptyViewAnyView,
          sheet, sheetBefore15,
+         emptyView, emptyViewAnyView,
          popover,
          alert,
-         gauges,
+         appStoreOverlay,
          
          // Nav
          dismiss, dismissHideBackButton,
