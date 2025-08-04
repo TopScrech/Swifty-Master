@@ -16,7 +16,9 @@ func attributedCodeString(for code: String) -> AttributedString {
     
     let secondaryKeywords = [
         "Gauge", "GaugeCard", "Text", "VStack", "Button", "List", "Toggle", "Picker", "Divider",
-        "Menu", "Label", "Image", "TextField", "TextEditor",
+        "Menu", "Label", "Image", "TextField", "TextEditor", "ProgressView", "TabView", "Tab", "Task", "UIApplication", "Slider", "Stepper",
+        "NavigationView", "NavigationStack", "NavigationSplitView", "ScrollView", "ToolbarItem", "ToolbarItemGroup", "NavigationLink", "ForEach",
+        "Grid", "GridRow", "LazyVGrid", "LazyHGrid", "Spacer", "GeometryReader", "HStack", "Color", "Rectangle", "UIDevice", "",
         "SomeView",
         "spacing", "value", "in", " View",
         "@State", "@Environment",
@@ -57,7 +59,8 @@ func attributedCodeString(for code: String) -> AttributedString {
                 continue
             }
             
-            let fullRange = match.range(at: 0) // Includes the quotes
+            // Includes the quotes
+            let fullRange = match.range(at: 0)
             
             if let stringRange = Range(fullRange, in: code),
                let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
@@ -82,6 +85,26 @@ func attributedCodeString(for code: String) -> AttributedString {
             if let stringRange = Range(innerRange, in: code),
                let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
                 attributedString[attributedRange].foregroundColor = Color(0xA167E6)
+            }
+        }
+    }
+    
+    // View Modifiers
+    let modifierPattern = #"(?:\s*,\s*|\s+)\.(\w+)\s*\("#
+    
+    if let regex = try? NSRegularExpression(pattern: modifierPattern) {
+        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+        
+        for match in matches {
+            guard match.numberOfRanges >= 2 else {
+                continue
+            }
+            
+            let nameRange = match.range(at: 1)
+            
+            if let stringRange = Range(nameRange, in: code),
+               let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
+                attributedString[attributedRange].foregroundColor = Color(0xD0A8FF)
             }
         }
     }
