@@ -1,48 +1,48 @@
 import SwiftUI
 
 struct MaterialsView: View {
-    private let materials: [(String, Material)] = [
-        ("Ultra Thick", .ultraThick),
-        ("Thick", .thick),
-        ("Regular", .regular),
-        ("Thin", .thin),
+    private let materials: [(String, Material?)] = [
+        ("None", nil),
         ("Ultra Thin", .ultraThin),
+        ("Thin", .thin),
+        ("Regular", .regular),
+        ("Thick", .thick),
+        ("Ultra Thick", .ultraThick),
         ("Bar", .bar)
     ]
     
     var body: some View {
-        TabView {
+        VStack {
             ForEach(0..<materials.count, id: \.self) { index in
                 let (key, value) = materials[index]
                 
                 ZStack {
                     Image(.vodka)
                         .resizable()
-                        .ignoresSafeArea()
-                        .scaledToFill()
+                        .scaledToFit()
                     
-                    Rectangle()
-                        .fill(value)
-                        .ignoresSafeArea()
-                    
-                    ZStack {
-                        Text(key)
-                            .rounded()
-                            .title3(.semibold)
-                            .padding(.horizontal)
-                            .padding(.vertical, 8)
-                            .background(.ultraThinMaterial, in: .capsule)
+                    if let value {
+                        RoundedRectangle(cornerRadius: 16)
+                            .fill(value)
+                        
+                        ZStack {
+                            Text(key)
+                                .rounded()
+                                .title3(.semibold)
+                                .padding(.horizontal)
+                                .padding(.vertical, 8)
+                                .background(value, in: .capsule)
+                        }
                     }
                 }
+                .frame(300)
             }
         }
-        .tabViewStyle(.page)
-        .ignoresSafeArea()
     }
 }
 
 #Preview {
-    NavigationView {
+    ScrollView(showsIndicators: false) {
         MaterialsView()
     }
     .darkSchemePreferred()
