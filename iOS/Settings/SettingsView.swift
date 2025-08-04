@@ -21,6 +21,8 @@ struct SettingsView: View {
             }
 #if DEBUG
             Section("Debug") {
+                Toggle("Show status bar", isOn: $store.showStatusBar)
+                
                 Button(role: .destructive) {
                     store.favoriteTopics = []
                 } label: {

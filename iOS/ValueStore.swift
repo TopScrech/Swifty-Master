@@ -3,8 +3,11 @@ import SwiftUI
 final class ValueStore: ObservableObject {
     @AppStorage("color_theme") var colorTheme: ColorTheme = .system
     @AppStorage("favorite_topics") var favoriteTopics: [Topic] = []
-    @AppStorage("show_code_line_numbers") var showCodeLineNumbers = false
     @AppStorage("experience") var experience: Experience?
+    
+    // Debug
+    @AppStorage("show_code_line_numbers") var showCodeLineNumbers = false
+    @AppStorage("show_status_bar") var showStatusBar = true
     
     func addOrRemoveFavorite(_ item: Topic) {
         if favoriteTopics.contains(item) {

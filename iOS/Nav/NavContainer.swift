@@ -31,6 +31,7 @@ struct NavContainer: View {
         .environment(nav)
         .environment(dataModel)
         .preferredColorScheme(store.colorTheme.scheme)
+        .statusBarHidden(!store.showStatusBar)
         .task {
             nav.load()
         }
