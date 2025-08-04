@@ -88,6 +88,12 @@
 		F3378F9E2E2E68DF00A31D7F /* TopicDetectOSVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3378F9C2E2E68DF00A31D7F /* TopicDetectOSVersion.swift */; };
 		F33E8B192E41495100B05370 /* ContentViewNavButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B182E41495100B05370 /* ContentViewNavButtons.swift */; };
 		F33E8B1A2E41495100B05370 /* ContentViewNavButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B182E41495100B05370 /* ContentViewNavButtons.swift */; };
+		F33E8B1C2E4162C100B05370 /* TopicDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B1B2E4162C100B05370 /* TopicDoc.swift */; };
+		F33E8B1D2E4162C100B05370 /* TopicDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B1B2E4162C100B05370 /* TopicDoc.swift */; };
+		F33E8B1F2E4162DF00B05370 /* TopicIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B1E2E4162DF00B05370 /* TopicIcon.swift */; };
+		F33E8B202E4162DF00B05370 /* TopicIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B1E2E4162DF00B05370 /* TopicIcon.swift */; };
+		F33E8B222E4162EF00B05370 /* TopicRelated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B212E4162EF00B05370 /* TopicRelated.swift */; };
+		F33E8B232E4162EF00B05370 /* TopicRelated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B212E4162EF00B05370 /* TopicRelated.swift */; };
 		F34480322E2CD41100D18E2E /* TopicDarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480312E2CD41100D18E2E /* TopicDarkMode.swift */; };
 		F34480332E2CD41100D18E2E /* TopicDarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480312E2CD41100D18E2E /* TopicDarkMode.swift */; };
 		F34480362E2D218400D18E2E /* TopicEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480352E2D218400D18E2E /* TopicEmptyView.swift */; };
@@ -401,6 +407,9 @@
 		F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCardImage.swift; sourceTree = "<group>"; };
 		F3378F9C2E2E68DF00A31D7F /* TopicDetectOSVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectOSVersion.swift; sourceTree = "<group>"; };
 		F33E8B182E41495100B05370 /* ContentViewNavButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewNavButtons.swift; sourceTree = "<group>"; };
+		F33E8B1B2E4162C100B05370 /* TopicDoc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDoc.swift; sourceTree = "<group>"; };
+		F33E8B1E2E4162DF00B05370 /* TopicIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicIcon.swift; sourceTree = "<group>"; };
+		F33E8B212E4162EF00B05370 /* TopicRelated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicRelated.swift; sourceTree = "<group>"; };
 		F34480312E2CD41100D18E2E /* TopicDarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDarkMode.swift; sourceTree = "<group>"; };
 		F34480352E2D218400D18E2E /* TopicEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicEmptyView.swift; sourceTree = "<group>"; };
 		F34480392E2D225A00D18E2E /* TopicSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicSpacer.swift; sourceTree = "<group>"; };
@@ -747,6 +756,9 @@
 			children = (
 				F35198E62E2B9F53004E0F02 /* Category.swift */,
 				F35198EB2E2B9F53004E0F02 /* Topic.swift */,
+				F33E8B1B2E4162C100B05370 /* TopicDoc.swift */,
+				F33E8B212E4162EF00B05370 /* TopicRelated.swift */,
+				F33E8B1E2E4162DF00B05370 /* TopicIcon.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1289,6 +1301,7 @@
 				F314C81F2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift in Sources */,
 				F3CFBDF12E3F95B8005F93EA /* TopicGrid.swift in Sources */,
 				F35198C42E2B7E56004E0F02 /* CodeBlockView.swift in Sources */,
+				F33E8B202E4162DF00B05370 /* TopicIcon.swift in Sources */,
 				F3CFBE2A2E3F9B17005F93EA /* TopicGeometryReader.swift in Sources */,
 				F3CFBDC32E3F8FA5005F93EA /* TopicNavigationView.swift in Sources */,
 				F314C8002E2E2A9400F63B6A /* FontSizeItem.swift in Sources */,
@@ -1299,6 +1312,7 @@
 				F314C8262E2E52A200F63B6A /* ValueStore.swift in Sources */,
 				F34480482E2D5D1900D18E2E /* SettingsView.swift in Sources */,
 				F314C85B2E2E665600F63B6A /* TopicGradient.swift in Sources */,
+				F33E8B232E4162EF00B05370 /* TopicRelated.swift in Sources */,
 				F30207CE2D8B001300C26008 /* Markdown.swift in Sources */,
 				F351984F2E2AF689004E0F02 /* Code Block.swift in Sources */,
 				F3CFBE242E3F9AFD005F93EA /* TopicPadding.swift in Sources */,
@@ -1326,6 +1340,7 @@
 				F33E8B192E41495100B05370 /* ContentViewNavButtons.swift in Sources */,
 				F3AE99DA2E2F861C00D70249 /* ColorTheme.swift in Sources */,
 				F344803A2E2D225A00D18E2E /* TopicSpacer.swift in Sources */,
+				F33E8B1D2E4162C100B05370 /* TopicDoc.swift in Sources */,
 				F3CFBE3C2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift in Sources */,
 				F35199052E2B9F53004E0F02 /* NavContainer.swift in Sources */,
 				F35199062E2B9F53004E0F02 /* TwoColumnContentView.swift in Sources */,
@@ -1407,6 +1422,7 @@
 				F314C8382E2E53A100F63B6A /* TopicContextMenu.swift in Sources */,
 				F351991B2E2B9F53004E0F02 /* GridTopic.swift in Sources */,
 				F3CFBE442E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift in Sources */,
+				F33E8B1F2E4162DF00B05370 /* TopicIcon.swift in Sources */,
 				F351991C2E2B9F53004E0F02 /* ExperiencePicker.swift in Sources */,
 				F351991E2E2B9F53004E0F02 /* DataModel.swift in Sources */,
 				F31E14442E3E9C9E00D43C1E /* TopicDetectLaguage.swift in Sources */,
@@ -1439,8 +1455,10 @@
 				F33E8B1A2E41495100B05370 /* ContentViewNavButtons.swift in Sources */,
 				F3BBD9E22AEECD3400A9F7E7 /* Master SwiftUI.swift in Sources */,
 				F314C80C2E2E486200F63B6A /* TopicTextEditor.swift in Sources */,
+				F33E8B222E4162EF00B05370 /* TopicRelated.swift in Sources */,
 				F314C8582E2E663500F63B6A /* TopicColor.swift in Sources */,
 				F314C8122E2E4B6A00F63B6A /* TopicSFSymbols.swift in Sources */,
+				F33E8B1C2E4162C100B05370 /* TopicDoc.swift in Sources */,
 				F3BBD9FB2AEED4CE00A9F7E7 /* Image Picker.swift in Sources */,
 				F34480362E2D218400D18E2E /* TopicEmptyView.swift in Sources */,
 				F34480402E2D4E0500D18E2E /* TopicActionButton.swift in Sources */,

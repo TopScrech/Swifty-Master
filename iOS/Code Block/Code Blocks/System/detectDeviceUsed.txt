@@ -23,10 +23,6 @@ struct ContentView: View {
             Text("User is using CarPlay")
         }
         
-        if idiom == .watch {
-            Text("User is using Apple Watch")
-        }
-        
         if idiom == .vision {
             Text("User is using Apple Vision")
         }
