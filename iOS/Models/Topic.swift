@@ -254,6 +254,12 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
                 "Toggles": "https://developer.apple.com/design/human-interface-guidelines/toggles"
             ]
             
+        case .badges:
+            [
+                "applicationIconBadgeNumber (Deprecated, iOS 2.0 - 16.0)": "https://developer.apple.com/documentation/uikit/uiapplication/applicationiconbadgenumber",
+                "setBadgeCount(_:withCompletionHandler:)": "https://developer.apple.com/documentation/UserNotifications/UNUserNotificationCenter/setBadgeCount(_:withCompletionHandler:)"
+            ]
+            
             // Layout
         case .spacer:
             ["Spacer": "https://developer.apple.com/documentation/swiftui/spacer"]

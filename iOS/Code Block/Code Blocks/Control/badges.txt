@@ -40,16 +40,35 @@ List {
 }
 
 // Badge over the app icon
-// Firstly, request the permission
+// Requested permission is required
 
-UNUserNotificationCenter.current().requestAuthorization(options: .badge) { granted, error in
-    if error != nil {
-        ...
+// iOS 16.0+
+// iPadOS 16.0+
+// Mac Catalyst 16.0+
+// macOS 13.0+
+// tvOS 16.0+
+// visionOS 1.0+
+
+private let center = UNUserNotificationCenter.current()
+
+private func changeBadgeNumber(_ new: Int) {
+    requestPermission()
+    
+    Task {
+        do {
+            try await center.setBadgeCount(new)
+        } catch {
+            print(error)
+        }
     }
 }
 
-// Secondly, change the number
-UIApplication.shared.applicationIconBadgeNumber = 1
+private func requestPermission() {
+    center.requestAuthorization(options: .badge) { _, _ in }
+}
 
-// Alternatively, it can be reset
-UIApplication.shared.applicationIconBadgeNumber = nil
+// iOS 2.0–17.0
+// iPadOS 2.0–17.0
+// Mac Catalyst 13.1–17.0
+// visionOS 1.0–1.0
+UIApplication.shared.applicationIconBadgeNumber = 1

@@ -4,6 +4,9 @@ import ScrechKit
 func attributedCodeString(for code: String) -> AttributedString {
     var attributedString = AttributedString(code)
     
+    // String
+    let quotedStringPattern = #""([^"]*?)""#
+    
     // Primary keywords
     let keywords = [
         "let", "var",
@@ -12,13 +15,6 @@ func attributedCodeString(for code: String) -> AttributedString {
         "true", "false"
     ]
     
-    colorKeywords(keywords, color: Color(0xFC5FA3))
-    
-    colorWholeLine(#"(?m)^#(if|else|endif).*"#, color: Color(0xFD8F3F))
-    
-    colorWholeLine(#"(?m)^\s*//.*"#, color: Color(0x6C7986))
-    
-    // Secondary keywords
     let secondaryKeywords = [
         "Gauge", "GaugeCard", "Text", "VStack", "Button", "List", "Toggle", "Picker", "Divider",
         "SomeView",
@@ -27,9 +23,6 @@ func attributedCodeString(for code: String) -> AttributedString {
         "SKOverlay", "Binding", "Bool", "AppConfiguration", "appIdentifier", "position"
     ]
     
-    colorKeywords(secondaryKeywords, color: Color(0xD0A8FF))
-    
-    // Modifiers
     let modifiers = [
         "brown", "red", "indigo", "tint", "green",
         "accessoryCircular", "accessoryCircularCapacity", "accessoryLinear", "accessoryLinearCapacity", "linearCapacity",
@@ -37,11 +30,20 @@ func attributedCodeString(for code: String) -> AttributedString {
         "navigationBarBackButtonHidden", "appStoreOverlay"
     ]
     
+    colorKeywords(keywords, color: Color(0xFC5FA3))
+    
+    colorWholeLine(#"(?m)^#(if|else|endif).*"#, color: Color(0xFD8F3F))
+    
+    // Secondary keywords
+    colorKeywords(secondaryKeywords, color: Color(0xD0A8FF))
+    
+    // Modifiers
     colorKeywords(modifiers, color: Color(0xA167E6))
     
-    // String
-    let quotedStringPattern = #""([^"]*?)""#
+    // Comments
+    colorWholeLine(#"(?m)^\s*//.*"#, color: Color(0x6C7986))
     
+    // String
     if let regex = try? NSRegularExpression(pattern: quotedStringPattern) {
         let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
         
