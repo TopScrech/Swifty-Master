@@ -633,6 +633,7 @@
 			isa = PBXGroup;
 			children = (
 				F314C7F52E2E1E7900F63B6A /* TopicText.swift */,
+				F30207CD2D8B001300C26008 /* Markdown.swift */,
 				F314C7FF2E2E2A9400F63B6A /* FontSizeItem.swift */,
 				F314C8022E2E2AA800F63B6A /* FontWeightItem.swift */,
 				F314C8052E2E2D4A00F63B6A /* FontDesignItem.swift */,
@@ -726,7 +727,6 @@
 		F35198492E2AECCF004E0F02 /* To be checked */ = {
 			isa = PBXGroup;
 			children = (
-				F30207CD2D8B001300C26008 /* Markdown.swift */,
 				F3ADA6182D9C03EC00F2DAA6 /* Loc */,
 				F3146C502CF73BA5005D58B3 /* Fonts */,
 				F3146C4F2CF73B9E005D58B3 /* Hover */,
