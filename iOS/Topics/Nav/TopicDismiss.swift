@@ -32,7 +32,7 @@ struct TopicDismiss: View {
 #if os(visionOS)
                 .background(.ultraThinMaterial, in: .capsule)
 #else
-                .glassyBackground()
+                .glassyBackground(16)
 #endif
             CodeBlockView(.dismissHideBackButton)
         }
