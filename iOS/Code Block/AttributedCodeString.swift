@@ -7,8 +7,7 @@ func attributedCodeString(for code: String) -> AttributedString {
     // String
     let quotedStringPattern = #""([^"]*?)""#
     
-    // Primary keywords
-    let keywords = [
+    let primaryKeywords = [
         "let", "var",
         "if ", "else", "elseif", "@available",
         "struct", "func", "return", "import", "public", "extension", "private", "some",
@@ -30,7 +29,7 @@ func attributedCodeString(for code: String) -> AttributedString {
         "navigationBarBackButtonHidden", "appStoreOverlay"
     ]
     
-    colorKeywords(keywords, color: Color(0xFC5FA3))
+    colorKeywords(primaryKeywords, color: Color(0xFC5FA3))
     
     colorWholeLine(#"(?m)^#(if|else|endif).*"#, color: Color(0xFD8F3F))
     
