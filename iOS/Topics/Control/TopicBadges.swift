@@ -2,27 +2,27 @@ import SwiftUI
 
 struct TopicBadges: View {
     @State private var isOn = true
-    @State private var number = 16
+    @State private var number = 0
     
     private let center = UNUserNotificationCenter.current()
     
     var body: some View {
         VStack(spacing: 25) {
-            Stepper("Change badge number to \(number)", value: $number)
-                .numericTransition()
-                .animation(.default, value: number)
-            
-            HStack {
-                Button("Change") {
-                    changeBadgeNumber(number)
-                }
+            Stepper(value: $number) {
+                Text("Change badge number to \(number)")
                 
-                Button("Reset") {
-                    changeBadgeNumber(0)
-                }
+                Text("Check the app icon on the home screen")
+                    .footnote()
             }
+            .numericTransition(number)
+            .animation(.default, value: number)
+            .padding(10)
+            .glassyBackground(16)
             
             CodeBlockView(.badges)
+        }
+        .onChange(of: number) { _, new in
+            changeBadgeNumber(new)
         }
     }
     
@@ -44,6 +44,9 @@ struct TopicBadges: View {
 }
 
 #Preview {
-    TopicBadges()
-        .darkSchemePreferred()
+    ScrollView {
+        ContentView(.badges)
+    }
+    .darkSchemePreferred()
+    .environmentObject(ValueStore())
 }
