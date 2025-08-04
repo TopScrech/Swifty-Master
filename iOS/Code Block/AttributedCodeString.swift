@@ -16,6 +16,7 @@ func attributedCodeString(for code: String) -> AttributedString {
     
     let secondaryKeywords = [
         "Gauge", "GaugeCard", "Text", "VStack", "Button", "List", "Toggle", "Picker", "Divider",
+        "Menu", "Label", "Image", "TextField", "TextEditor",
         "SomeView",
         "spacing", "value", "in", " View",
         "@State", "@Environment",
@@ -24,10 +25,15 @@ func attributedCodeString(for code: String) -> AttributedString {
     
     let modifiers = [
         "brown", "red", "indigo", "tint", "green",
+        "label",
         "accessoryCircular", "accessoryCircularCapacity", "accessoryLinear", "accessoryLinearCapacity", "linearCapacity",
         "gaugeStyle", "dismiss", "opacity", "padding", "horizontal",
         "navigationBarBackButtonHidden", "appStoreOverlay"
     ]
+    
+    // Int & Double
+    let numberPattern = #"(?<!\w)(?:\d+\.\d+|\d+)(?!\w)"#
+    colorBasedOnPattern(numberPattern, color: Color(0xD0BF69))
     
     colorKeywords(primaryKeywords, color: Color(0xFC5FA3))
     
@@ -79,10 +85,6 @@ func attributedCodeString(for code: String) -> AttributedString {
             }
         }
     }
-    
-    // Int & Double
-    let numberPattern = #"(?<!\w)(?:\d+\.\d+|\d+)(?!\w)"#
-    colorBasedOnPattern(numberPattern, color: Color(0xD0BF69))
     
     return attributedString
     

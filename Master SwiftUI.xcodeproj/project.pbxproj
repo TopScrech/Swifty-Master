@@ -668,8 +668,8 @@
 				F3CFBE3D2E3F9D2D005F93EA /* TopicDifferentiateOS.swift */,
 				F3CFBE402E3F9D2E005F93EA /* TopicDetectScreenSize.swift */,
 				F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */,
-				F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */,
 				F31E14432E3E9C9E00D43C1E /* TopicDetectLaguage.swift */,
+				F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */,
 			);
 			path = System;
 			sourceTree = "<group>";
