@@ -94,6 +94,9 @@
 		F33E8B202E4162DF00B05370 /* TopicIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B1E2E4162DF00B05370 /* TopicIcon.swift */; };
 		F33E8B222E4162EF00B05370 /* TopicRelated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B212E4162EF00B05370 /* TopicRelated.swift */; };
 		F33E8B232E4162EF00B05370 /* TopicRelated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B212E4162EF00B05370 /* TopicRelated.swift */; };
+		F33E8B262E416BD700B05370 /* CodeEditorView in Frameworks */ = {isa = PBXBuildFile; productRef = F33E8B252E416BD700B05370 /* CodeEditorView */; };
+		F33E8B282E416BEF00B05370 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B272E416BEF00B05370 /* TestView.swift */; };
+		F33E8B292E416BEF00B05370 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B272E416BEF00B05370 /* TestView.swift */; };
 		F34480322E2CD41100D18E2E /* TopicDarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480312E2CD41100D18E2E /* TopicDarkMode.swift */; };
 		F34480332E2CD41100D18E2E /* TopicDarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480312E2CD41100D18E2E /* TopicDarkMode.swift */; };
 		F34480362E2D218400D18E2E /* TopicEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480352E2D218400D18E2E /* TopicEmptyView.swift */; };
@@ -410,6 +413,7 @@
 		F33E8B1B2E4162C100B05370 /* TopicDoc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDoc.swift; sourceTree = "<group>"; };
 		F33E8B1E2E4162DF00B05370 /* TopicIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicIcon.swift; sourceTree = "<group>"; };
 		F33E8B212E4162EF00B05370 /* TopicRelated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicRelated.swift; sourceTree = "<group>"; };
+		F33E8B272E416BEF00B05370 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		F34480312E2CD41100D18E2E /* TopicDarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDarkMode.swift; sourceTree = "<group>"; };
 		F34480352E2D218400D18E2E /* TopicEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicEmptyView.swift; sourceTree = "<group>"; };
 		F34480392E2D225A00D18E2E /* TopicSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicSpacer.swift; sourceTree = "<group>"; };
@@ -564,6 +568,7 @@
 			isa = PBXFrameworksBuildPhase;
 			files = (
 				F3BBD9F72AEECE4000A9F7E7 /* ScrechKit in Frameworks */,
+				F33E8B262E416BD700B05370 /* CodeEditorView in Frameworks */,
 			);
 		};
 /* End PBXFrameworksBuildPhase section */
@@ -728,6 +733,7 @@
 		F35198492E2AECCF004E0F02 /* To be checked */ = {
 			isa = PBXGroup;
 			children = (
+				F33E8B272E416BEF00B05370 /* TestView.swift */,
 				F3ADA6182D9C03EC00F2DAA6 /* Loc */,
 				F3146C4F2CF73B9E005D58B3 /* Hover */,
 				F3146C6C2CF73DD6005D58B3 /* Materials */,
@@ -1066,6 +1072,7 @@
 			name = iOS;
 			packageProductDependencies = (
 				F3BBD9F62AEECE4000A9F7E7 /* ScrechKit */,
+				F33E8B252E416BD700B05370 /* CodeEditorView */,
 			);
 			productName = "Everything SwiftUI";
 			productReference = F3BBD9DE2AEECD3400A9F7E7 /* iOS.app */;
@@ -1101,6 +1108,7 @@
 			mainGroup = F3BBD9D52AEECD3400A9F7E7;
 			packageReferences = (
 				F3BBD9F52AEECE4000A9F7E7 /* XCRemoteSwiftPackageReference "ScrechKit" */,
+				F33E8B242E416BD700B05370 /* XCRemoteSwiftPackageReference "CodeEditorView" */,
 			);
 			preferredProjectObjectVersion = 90;
 			productRefGroup = F3BBD9DF2AEECD3400A9F7E7 /* Products */;
@@ -1361,6 +1369,7 @@
 				F314C80F2E2E4A0100F63B6A /* TopicImage.swift in Sources */,
 				F35199072E2B9F53004E0F02 /* GridTopic.swift in Sources */,
 				F35199082E2B9F53004E0F02 /* ExperiencePicker.swift in Sources */,
+				F33E8B292E416BEF00B05370 /* TestView.swift in Sources */,
 				F351990A2E2B9F53004E0F02 /* DataModel.swift in Sources */,
 				F3CFBDCC2E3F900F005F93EA /* TopicNavigationBar.swift in Sources */,
 				F314C8512E2E657400F63B6A /* TopicPicker.swift in Sources */,
@@ -1383,6 +1392,7 @@
 			files = (
 				F30207CF2D8B001300C26008 /* Markdown.swift in Sources */,
 				F3C6F6912E40E58000E94540 /* TopicBadges.swift in Sources */,
+				F33E8B282E416BEF00B05370 /* TestView.swift in Sources */,
 				F34480472E2D5D1900D18E2E /* SettingsView.swift in Sources */,
 				F3EB1CB62C58FFE5007E6366 /* Hover Effects.swift in Sources */,
 				F37916EE2AF14A7A00B880AF /* Image Picker 2.swift in Sources */,
@@ -1789,6 +1799,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F33E8B242E416BD700B05370 /* XCRemoteSwiftPackageReference "CodeEditorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mchakravarty/CodeEditorView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.4;
+			};
+		};
 		F3BBD9F52AEECE4000A9F7E7 /* XCRemoteSwiftPackageReference "ScrechKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/ScrechKit";
@@ -1804,6 +1822,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F3BBD9F52AEECE4000A9F7E7 /* XCRemoteSwiftPackageReference "ScrechKit" */;
 			productName = ScrechKit;
+		};
+		F33E8B252E416BD700B05370 /* CodeEditorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F33E8B242E416BD700B05370 /* XCRemoteSwiftPackageReference "CodeEditorView" */;
+			productName = CodeEditorView;
 		};
 		F3BBD9F62AEECE4000A9F7E7 /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;
