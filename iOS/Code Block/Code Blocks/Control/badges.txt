@@ -38,3 +38,18 @@ List {
                 .font(.headline)
         )
 }
+
+// Badge over the app icon
+// Firstly, request the permission
+
+UNUserNotificationCenter.current().requestAuthorization(options: .badge) { granted, error in
+    if error != nil {
+        ...
+    }
+}
+
+// Secondly, change the number
+UIApplication.shared.applicationIconBadgeNumber = 1
+
+// Alternatively, it can be reset
+UIApplication.shared.applicationIconBadgeNumber = nil
