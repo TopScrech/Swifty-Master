@@ -42,6 +42,8 @@ struct MaterialsView: View {
 }
 
 #Preview {
-    MaterialsView()
-        .darkSchemePreferred()
+    NavigationView {
+        MaterialsView()
+    }
+    .darkSchemePreferred()
 }
