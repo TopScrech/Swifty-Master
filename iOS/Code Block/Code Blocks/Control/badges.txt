@@ -1,6 +1,40 @@
+// Toolbar
 .toolbar {
     ToolbarItem {
         Button("") {...}
-            .badge(3)
+            .badge(1)
     }
+}
+
+// List
+List {
+    Text("Bisquit.Host")
+        .badge(2)
+    
+    Text("Best Minecraft hosting")
+}
+
+// TabView
+TabView {
+    Text("Hi there!")
+        .badge(16)
+        .tabItem {
+            Label("Favorites", systemImage: "star")
+        }
+}
+
+// Custom Badge in a List
+List {
+    Text("Group 1")
+        .badge(12)
+    
+    Text("Group 2")
+        .badge(20)
+    
+    Text("Group 3")
+        .badge(
+            Text("31 \(Image(systemName: "star"))")
+                .foregroundColor(.red)
+                .font(.headline)
+        )
 }

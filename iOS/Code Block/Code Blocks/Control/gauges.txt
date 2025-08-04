@@ -1,31 +1,26 @@
 VStack(spacing: 64) {
-    GaugeCard("accessoryCircular") {
-        Gauge(value: 50, in: 0...100) {
-            Text("C")
-        }
-        .gaugeStyle(.accessoryCircular)
-        .tint(.red)
+    // accessoryCircular
+    Gauge(value: 50, in: 0...100) {
+        Text("C")
     }
-
-    GaugeCard("accessoryCircularCapacity") {
-        Gauge(value: 50, in: 0...100) {}
-            .gaugeStyle(.accessoryCircularCapacity)
-            .tint(.green)
-    }
-
-    GaugeCard("linearCapacity") {
-        Gauge(value: 90, in: 0...100) {}
-            .gaugeStyle(.linearCapacity)
-    }
-
-    GaugeCard("accessoryLinear") {
-        Gauge(value: 10, in: 0...100) {}
-            .gaugeStyle(.accessoryLinear)
-    }
-
-    GaugeCard("accessoryLinearCapacity") {
-        Gauge(value: 10, in: 0...100) {}
-            .gaugeStyle(.accessoryLinearCapacity)
-            .tint(.brown)
-    }
+    .gaugeStyle(.accessoryCircular)
+    .tint(.red)
+    
+    // accessoryCircularCapacity
+    Gauge(value: 50, in: 0...100) {}
+        .gaugeStyle(.accessoryCircularCapacity)
+        .tint(.green)
+    
+    // linearCapacity
+    Gauge(value: 90, in: 0...100) {}
+        .gaugeStyle(.linearCapacity)
+    
+    // accessoryLinear
+    Gauge(value: 10, in: 0...100) {}
+        .gaugeStyle(.accessoryLinear)
+    
+    // accessoryLinearCapacity
+    Gauge(value: 10, in: 0...100) {}
+        .gaugeStyle(.accessoryLinearCapacity)
+        .tint(.brown)
 }

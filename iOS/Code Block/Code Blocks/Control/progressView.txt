@@ -1,1 +1,7 @@
-ProgressView()
+struct ContentView: View {
+    @State private var progress = 0.0
+
+    var body: some View {
+        ProgressView("Downloading...", value: progress, total: 100)
+    }
+}
