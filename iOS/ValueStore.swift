@@ -5,6 +5,7 @@ final class ValueStore: ObservableObject {
     @AppStorage("favorite_topics") var favoriteTopics: [Topic] = []
     @AppStorage("experience") var experience: Experience?
     @AppStorage("last_tab") var lastTab = 0
+    @AppStorage("built_in_browser") var builtInBrowser = true
     
     // Debug
     @AppStorage("show_code_line_numbers") var showCodeLineNumbers = false

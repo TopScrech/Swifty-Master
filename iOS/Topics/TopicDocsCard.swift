@@ -1,6 +1,9 @@
 import SwiftUI
 
 struct TopicDocsCard: View {
+    @EnvironmentObject private var store: ValueStore
+    @Environment(\.openURL) private var openURL
+    
     private let title: String
     private let link: String
     
@@ -13,7 +16,7 @@ struct TopicDocsCard: View {
     
     var body: some View {
         Button {
-            safariCover = true
+            openLink()
         } label: {
             HStack(spacing: 12) {
                 TopicDocsCardImage(link)
@@ -37,6 +40,16 @@ struct TopicDocsCard: View {
                 }
                 
                 ShareLink(item: url)
+            }
+        }
+    }
+    
+    private func openLink() {
+        if store.builtInBrowser {
+            safariCover = true
+        } else {
+            if let url = URL(string: link) {
+                openURL(url)
             }
         }
     }

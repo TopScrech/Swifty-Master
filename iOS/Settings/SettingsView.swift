@@ -19,6 +19,8 @@ struct SettingsView: View {
                         .tag(theme)
                 }
             }
+            
+            Toggle("Use built-in Safari", isOn: $store.builtInBrowser)
 #if DEBUG
             Section("Debug") {
                 Toggle("Show status bar", isOn: $store.showStatusBar)
