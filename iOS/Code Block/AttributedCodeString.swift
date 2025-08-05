@@ -19,7 +19,7 @@ func attributedCodeString(for code: String) -> AttributedString {
         "Menu", "Label", "Image", "TextField", "TextEditor", "ProgressView", "TabView", "Tab", "Task", "UIApplication", "Slider", "Stepper",
         "NavigationView", "NavigationStack", "NavigationSplitView", "ScrollView", "ToolbarItem", "ToolbarItemGroup", "NavigationLink", "ForEach",
         "Grid", "GridRow", "LazyVGrid", "LazyHGrid", "Spacer", "GeometryReader", "HStack", "Color", "Rectangle", "UIDevice", "",
-        "SomeView", "EmptyView", "UIScreen",
+        "SomeView", "EmptyView", "UIScreen", "Circle",
         "spacing", "value", "in", " View", "SecureField",
         "@State", "@Environment",
         "SKOverlay", "Binding", "Bool", "AppConfiguration", "appIdentifier", "position"
