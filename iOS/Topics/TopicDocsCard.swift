@@ -9,24 +9,29 @@ struct TopicDocsCard: View {
         self.link = link
     }
     
+    @State private var safariCover = false
+    
     var body: some View {
-        if let url = URL(string: link) {
-            Link(destination: url) {
-                HStack(spacing: 12) {
-                    TopicDocsCardImage(link)
-                    
-                    Text(title)
-                        .bold()
-                        .rounded()
-                        .lineLimit(2)
-                        .foregroundStyle(.foreground)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .multilineTextAlignment(.leading)
-                }
-                .padding(10)
-                .background(.ultraThinMaterial, in: .rect(cornerRadius: 16))
+        Button {
+            safariCover = true
+        } label: {
+            HStack(spacing: 12) {
+                TopicDocsCardImage(link)
+                
+                Text(title)
+                    .bold()
+                    .rounded()
+                    .lineLimit(2)
+                    .foregroundStyle(.foreground)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .multilineTextAlignment(.leading)
             }
-            .contextMenu {
+        }
+        .padding(10)
+        .background(.ultraThinMaterial, in: .rect(cornerRadius: 16))
+        .safariCover($safariCover, url: link)
+        .contextMenu {
+            if let url = URL(string: link) {
                 Button("Copy", systemImage: "document.on.document") {
                     UIPasteboard.general.url = url
                 }

@@ -63,6 +63,7 @@
 		F314C8582E2E663500F63B6A /* TopicColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8562E2E663500F63B6A /* TopicColor.swift */; };
 		F314C85A2E2E665600F63B6A /* TopicGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8592E2E665600F63B6A /* TopicGradient.swift */; };
 		F314C85B2E2E665600F63B6A /* TopicGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8592E2E665600F63B6A /* TopicGradient.swift */; };
+		F31617CA2E41D87A00131D26 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = F31617C92E41D87A00131D26 /* SafariCover */; };
 		F31653B62E3C0A1000A0E9D7 /* FavoritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */; };
 		F31653B72E3C0A1000A0E9D7 /* FavoritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */; };
 		F31653B92E3C0A4E00A0E9D7 /* StackTopicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B82E3C0A4E00A0E9D7 /* StackTopicList.swift */; };
@@ -574,6 +575,7 @@
 			isa = PBXFrameworksBuildPhase;
 			files = (
 				F3BBD9F72AEECE4000A9F7E7 /* ScrechKit in Frameworks */,
+				F31617CA2E41D87A00131D26 /* SafariCover in Frameworks */,
 				F33E8B262E416BD700B05370 /* CodeEditorView in Frameworks */,
 			);
 		};
@@ -1081,6 +1083,7 @@
 			packageProductDependencies = (
 				F3BBD9F62AEECE4000A9F7E7 /* ScrechKit */,
 				F33E8B252E416BD700B05370 /* CodeEditorView */,
+				F31617C92E41D87A00131D26 /* SafariCover */,
 			);
 			productName = "Everything SwiftUI";
 			productReference = F3BBD9DE2AEECD3400A9F7E7 /* iOS.app */;
@@ -1117,6 +1120,7 @@
 			packageReferences = (
 				F3BBD9F52AEECE4000A9F7E7 /* XCRemoteSwiftPackageReference "ScrechKit" */,
 				F33E8B242E416BD700B05370 /* XCRemoteSwiftPackageReference "CodeEditorView" */,
+				F31617C82E41D87A00131D26 /* XCRemoteSwiftPackageReference "SafariCover" */,
 			);
 			preferredProjectObjectVersion = 90;
 			productRefGroup = F3BBD9DF2AEECD3400A9F7E7 /* Products */;
@@ -1811,6 +1815,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F31617C82E41D87A00131D26 /* XCRemoteSwiftPackageReference "SafariCover" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/SafariCover";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		F33E8B242E416BD700B05370 /* XCRemoteSwiftPackageReference "CodeEditorView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mchakravarty/CodeEditorView";
@@ -1830,6 +1842,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F31617C92E41D87A00131D26 /* SafariCover */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F31617C82E41D87A00131D26 /* XCRemoteSwiftPackageReference "SafariCover" */;
+			productName = SafariCover;
+		};
 		F3202CBA2D5596380030B3CC /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F3BBD9F52AEECE4000A9F7E7 /* XCRemoteSwiftPackageReference "ScrechKit" */;

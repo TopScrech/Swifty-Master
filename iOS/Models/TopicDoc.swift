@@ -5,7 +5,13 @@ extension Topic {
         switch self {
             // MARK: - Content
         case .text:
-            ["Text": "https://developer.apple.com/documentation/swiftui/text"]
+            [
+                "Text": "https://developer.apple.com/documentation/swiftui/text",
+                "font(_:)": "https://developer.apple.com/documentation/swiftui/text/font(_:)",
+                "fontDesign(_:)": "https://developer.apple.com/documentation/swiftui/text/fontdesign(_:)",
+                "fontWeight(_:)": "https://developer.apple.com/documentation/swiftui/text/fontweight(_:)",
+                "fontwidth(_:)": "https://developer.apple.com/documentation/swiftui/text/fontwidth(_:)"
+            ]
             
         case .textField:
             [
