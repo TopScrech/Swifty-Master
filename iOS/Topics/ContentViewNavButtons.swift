@@ -12,49 +12,52 @@ struct ContentViewNavButtons: View {
     
     var body: some View {
 #if DEBUG
-        if store.lastTab == 0 {
-            let topics = Topic.allCases
-            let index = topics.firstIndex(of: topic)
-            
-            if let index, topics.count > index + 1 {
-                Button {
-                    let nextTopic = topics[index + 1]
-                    navModel.topicPath = [nextTopic]
-                } label: {
-                    Image(systemName: "arrow.forward")
+        HStack {
+            if store.lastTab == 0 {
+                let topics = Topic.allCases
+                let index = topics.firstIndex(of: topic)
+                
+                if let index, index != 0 {
+                    Button {
+                        let nextTopic = topics[index - 1]
+                        navModel.topicPath = [nextTopic]
+                    } label: {
+                        Image(systemName: "arrow.backward")
+                    }
                 }
-            }
-            
-            if let index, index != 0 {
-                Button {
-                    let nextTopic = topics[index - 1]
-                    navModel.topicPath = [nextTopic]
-                } label: {
-                    Image(systemName: "arrow.backward")
+                
+                if let index, topics.count > index + 1 {
+                    Button {
+                        let nextTopic = topics[index + 1]
+                        navModel.topicPath = [nextTopic]
+                    } label: {
+                        Image(systemName: "arrow.forward")
+                    }
                 }
-            }
-        } else {
-            let topics = store.favoriteTopics
-            let index = topics.firstIndex(of: topic)
-            
-            if let index, store.favoriteTopics.count > index + 1 {
-                Button {
-                    let nextTopic = topics[index + 1]
-                    navModel.favoriteTopicPath = [nextTopic]
-                } label: {
-                    Image(systemName: "arrow.forward")
+            } else {
+                let topics = store.favoriteTopics
+                let index = topics.firstIndex(of: topic)
+                
+                if let index, index != 0 {
+                    Button {
+                        let nextTopic = topics[index - 1]
+                        navModel.favoriteTopicPath = [nextTopic]
+                    } label: {
+                        Image(systemName: "arrow.backward")
+                    }
                 }
-            }
-            
-            if let index, index != 0 {
-                Button {
-                    let nextTopic = topics[index - 1]
-                    navModel.favoriteTopicPath = [nextTopic]
-                } label: {
-                    Image(systemName: "arrow.backward")
+                
+                if let index, store.favoriteTopics.count > index + 1 {
+                    Button {
+                        let nextTopic = topics[index + 1]
+                        navModel.favoriteTopicPath = [nextTopic]
+                    } label: {
+                        Image(systemName: "arrow.forward")
+                    }
                 }
             }
         }
+        .buttonStyle(.bordered)
 #endif
     }
 }
