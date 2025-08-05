@@ -11,7 +11,10 @@ extension Topic {
             ["Text Field": "https://developer.apple.com/documentation/swiftui/textfield"]
             
         case .textEditor:
-            ["Text Editor": "https://developer.apple.com/documentation/swiftui/texteditor"]
+            [
+                "Text Editor": "https://developer.apple.com/documentation/swiftui/texteditor",
+                "init(text:selection:) (iOS 26)": "https://developer.apple.com/documentation/swiftui/texteditor/init(text:selection:)"
+            ]
             
         case .image:
             ["Image": "https://developer.apple.com/documentation/swiftui/image"]
