@@ -1,10 +1,12 @@
 struct ContentView: View {
     var body: some View {
         Image("Image Name")
-
+        
         // or
-
-        // Requires iOS/iPadOS/tvOS 17+, macOS 14+ or watchOS 10+
+        
+        // iOS/iPadOS/tvOS 17+
+        // macOS 14+
+        // watchOS 10+
         Image(.imageName)
     }
 }
