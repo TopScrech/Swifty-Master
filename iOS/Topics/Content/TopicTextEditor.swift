@@ -10,6 +10,15 @@ struct TopicTextEditor: View {
             TextEditor(text: $text)
             
             CodeBlockView(.textEditor)
+            
+            TopicDisclosureGroup("Formatting & Selection") {
+                CodeBlockView(.textEditorFormat)
+                
+                Image(.textEditorFormat)
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(.rect(cornerRadius: 16))
+            }
         }
     }
 }

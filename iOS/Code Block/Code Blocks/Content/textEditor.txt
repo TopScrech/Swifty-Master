@@ -3,13 +3,3 @@
 var body: some View {
     TextEditor(text: $text)
 }
-
-// With formatting & selection
-// iOS 26 required
-
-@State private var attributedText: AttributedString
-@State private var selection: AttributedTextSelection? = nil
-
-var body: some View {
-    TextEditor(text: $attributedText, selection: $selection)
-}

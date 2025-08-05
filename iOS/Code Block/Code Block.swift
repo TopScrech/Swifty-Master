@@ -7,7 +7,7 @@ enum CodeBlock: String {
          textLineLimit,
          image,
          textField, textFieldDisableAutocorrection,
-         textEditor,
+         textEditor, textEditorFormat,
          label,
          sfSymbols,
          shape,
