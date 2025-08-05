@@ -8,7 +8,11 @@ extension Topic {
             ["Text": "https://developer.apple.com/documentation/swiftui/text"]
             
         case .textField:
-            ["Text Field": "https://developer.apple.com/documentation/swiftui/textfield"]
+            [
+                "Text Field": "https://developer.apple.com/documentation/swiftui/textfield",
+                "textfieldstyle(_:)": "https://developer.apple.com/documentation/swiftui/view/textfieldstyle(_:)",
+                "Building rich SwiftUI text experiences (iOS 26)": "https://developer.apple.com/documentation/swiftui/building-rich-swiftui-text-experiences"
+            ]
             
         case .textEditor:
             [
