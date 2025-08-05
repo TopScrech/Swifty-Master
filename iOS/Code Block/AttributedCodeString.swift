@@ -20,7 +20,7 @@ func attributedCodeString(for code: String) -> AttributedString {
         "NavigationView", "NavigationStack", "NavigationSplitView", "ScrollView", "ToolbarItem", "ToolbarItemGroup", "NavigationLink", "ForEach",
         "Grid", "GridRow", "LazyVGrid", "LazyHGrid", "Spacer", "GeometryReader", "HStack", "Color", "Rectangle", "UIDevice", "",
         "SomeView", "EmptyView", "UIScreen",
-        "spacing", "value", "in", " View",
+        "spacing", "value", "in", " View", "SecureField",
         "@State", "@Environment",
         "SKOverlay", "Binding", "Bool", "AppConfiguration", "appIdentifier", "position"
     ]

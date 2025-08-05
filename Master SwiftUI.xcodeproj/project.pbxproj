@@ -69,6 +69,8 @@
 		F31653BA2E3C0A4E00A0E9D7 /* StackTopicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B82E3C0A4E00A0E9D7 /* StackTopicList.swift */; };
 		F31B90BE2E41D29B003A2AA2 /* textEditorFormat.txt in Resources */ = {isa = PBXBuildFile; fileRef = F31B90BD2E41D29B003A2AA2 /* textEditorFormat.txt */; };
 		F31B90BF2E41D29B003A2AA2 /* textEditorFormat.txt in Resources */ = {isa = PBXBuildFile; fileRef = F31B90BD2E41D29B003A2AA2 /* textEditorFormat.txt */; };
+		F31B90C12E41D384003A2AA2 /* textFieldSecured.txt in Resources */ = {isa = PBXBuildFile; fileRef = F31B90C02E41D384003A2AA2 /* textFieldSecured.txt */; };
+		F31B90C22E41D384003A2AA2 /* textFieldSecured.txt in Resources */ = {isa = PBXBuildFile; fileRef = F31B90C02E41D384003A2AA2 /* textFieldSecured.txt */; };
 		F31E14442E3E9C9E00D43C1E /* TopicDetectLaguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31E14432E3E9C9E00D43C1E /* TopicDetectLaguage.swift */; };
 		F31E14452E3E9C9E00D43C1E /* TopicDetectLaguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31E14432E3E9C9E00D43C1E /* TopicDetectLaguage.swift */; };
 		F3202C942D55952F0030B3CC /* AppStoreOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3202C932D55952F0030B3CC /* AppStoreOverlay.swift */; };
@@ -403,6 +405,7 @@
 		F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesList.swift; sourceTree = "<group>"; };
 		F31653B82E3C0A4E00A0E9D7 /* StackTopicList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTopicList.swift; sourceTree = "<group>"; };
 		F31B90BD2E41D29B003A2AA2 /* textEditorFormat.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = textEditorFormat.txt; sourceTree = "<group>"; };
+		F31B90C02E41D384003A2AA2 /* textFieldSecured.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = textFieldSecured.txt; sourceTree = "<group>"; };
 		F31E14432E3E9C9E00D43C1E /* TopicDetectLaguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectLaguage.swift; sourceTree = "<group>"; };
 		F3202C932D55952F0030B3CC /* AppStoreOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreOverlay.swift; sourceTree = "<group>"; };
 		F3202C992D5596100030B3CC /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -915,6 +918,7 @@
 				F3CFBD282E3F8AE2005F93EA /* textEditor.txt */,
 				F31B90BD2E41D29B003A2AA2 /* textEditorFormat.txt */,
 				F3CFBD292E3F8AE2005F93EA /* textField.txt */,
+				F31B90C02E41D384003A2AA2 /* textFieldSecured.txt */,
 				F3CFBD2A2E3F8AE2005F93EA /* textFieldDisableAutocorrection.txt */,
 				F3CFBD2B2E3F8AE2005F93EA /* textLineLimit.txt */,
 				F3CFBD9D2E3F8B9F005F93EA /* label.txt */,
@@ -1133,6 +1137,7 @@
 				F3CFBDE42E3F94D8005F93EA /* grid.txt in Resources */,
 				F3CFBDF72E3F96F1005F93EA /* scrollView.txt in Resources */,
 				F3CFBDA52E3F8C43005F93EA /* shape.txt in Resources */,
+				F31B90C22E41D384003A2AA2 /* textFieldSecured.txt in Resources */,
 				F3C6F66D2E40E46800E94540 /* badges.txt in Resources */,
 				F3CFBDA82E3F8C96005F93EA /* customKeyboard.txt in Resources */,
 				F3202CB72D5596210030B3CC /* Assets.xcassets in Resources */,
@@ -1222,6 +1227,7 @@
 				F3CFBD7C2E3F8AE2005F93EA /* spacer.txt in Resources */,
 				F3CFBD7D2E3F8AE2005F93EA /* textField.txt in Resources */,
 				F3CFBD7E2E3F8AE2005F93EA /* detectOSVersion.txt in Resources */,
+				F31B90C12E41D384003A2AA2 /* textFieldSecured.txt in Resources */,
 				F3CFBD7F2E3F8AE2005F93EA /* toggle.txt in Resources */,
 				F3CFBD802E3F8AE2005F93EA /* mdRegular.txt in Resources */,
 				F3CFBD812E3F8AE2005F93EA /* toggleTint.txt in Resources */,

@@ -12,6 +12,10 @@ struct TopicTextField: View {
             
             CodeBlockView(.textField)
             
+            TopicDisclosureGroup("Secured TextField") {
+                CodeBlockView(.textFieldSecured)
+            }
+            
             TopicDisclosureGroup("Disable Autocorrection") {
                 CodeBlockView(.textFieldDisableAutocorrection)
             }

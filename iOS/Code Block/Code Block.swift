@@ -6,7 +6,7 @@ enum CodeBlock: String {
     case mdRegular, mdBoldItalic, mdStrikethrough, mdMonospaced, mdLink,
          textLineLimit,
          image,
-         textField, textFieldDisableAutocorrection,
+         textField, textFieldSecured, textFieldDisableAutocorrection,
          textEditor, textEditorFormat,
          label,
          sfSymbols,
