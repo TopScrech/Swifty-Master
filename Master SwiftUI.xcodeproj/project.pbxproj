@@ -154,6 +154,10 @@
 		F35199222E2B9F53004E0F02 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E62E2B9F53004E0F02 /* Category.swift */; };
 		F35199232E2B9F53004E0F02 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E82E2B9F53004E0F02 /* Experience.swift */; };
 		F35199242E2B9F53004E0F02 /* TopicTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198FB2E2B9F53004E0F02 /* TopicTile.swift */; };
+		F35C358C2E440FD900622147 /* TopicTextShortenedNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35C358B2E440FD900622147 /* TopicTextShortenedNumbers.swift */; };
+		F35C358D2E440FD900622147 /* TopicTextShortenedNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35C358B2E440FD900622147 /* TopicTextShortenedNumbers.swift */; };
+		F35C35902E44125100622147 /* textShortenedNumbers.txt in Resources */ = {isa = PBXBuildFile; fileRef = F35C358F2E44125100622147 /* textShortenedNumbers.txt */; };
+		F35C35912E44125100622147 /* textShortenedNumbers.txt in Resources */ = {isa = PBXBuildFile; fileRef = F35C358F2E44125100622147 /* textShortenedNumbers.txt */; };
 		F37916EE2AF14A7A00B880AF /* Image Picker 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37916ED2AF14A7A00B880AF /* Image Picker 2.swift */; };
 		F388D19C2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */; };
 		F388D19D2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */; };
@@ -449,6 +453,8 @@
 		F35198F72E2B9F53004E0F02 /* TopicDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetail.swift; sourceTree = "<group>"; };
 		F35198F82E2B9F53004E0F02 /* GridTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTopic.swift; sourceTree = "<group>"; };
 		F35198FB2E2B9F53004E0F02 /* TopicTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTile.swift; sourceTree = "<group>"; };
+		F35C358B2E440FD900622147 /* TopicTextShortenedNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTextShortenedNumbers.swift; sourceTree = "<group>"; };
+		F35C358F2E44125100622147 /* textShortenedNumbers.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = textShortenedNumbers.txt; sourceTree = "<group>"; };
 		F37916ED2AF14A7A00B880AF /* Image Picker 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker 2.swift"; sourceTree = "<group>"; };
 		F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLowPowerMode.swift; sourceTree = "<group>"; };
 		F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = highlightOccurrences.swift; sourceTree = "<group>"; };
@@ -650,6 +656,7 @@
 			isa = PBXGroup;
 			children = (
 				F314C7F52E2E1E7900F63B6A /* TopicText.swift */,
+				F35C358B2E440FD900622147 /* TopicTextShortenedNumbers.swift */,
 				F30207CD2D8B001300C26008 /* Markdown.swift */,
 				F314C7FF2E2E2A9400F63B6A /* FontSizeItem.swift */,
 				F314C8022E2E2AA800F63B6A /* FontWeightItem.swift */,
@@ -806,6 +813,19 @@
 			path = Topic;
 			sourceTree = "<group>";
 		};
+		F35C358E2E44124A00622147 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				F35C358F2E44125100622147 /* textShortenedNumbers.txt */,
+				F3CFBD252E3F8AE2005F93EA /* mdBoldItalic.txt */,
+				F3CFBD262E3F8AE2005F93EA /* mdLink.txt */,
+				F3CFBD272E3F8AE2005F93EA /* mdMonospaced.txt */,
+				F3CFBD4E2E3F8AE2005F93EA /* mdRegular.txt */,
+				F3CFBD4F2E3F8AE2005F93EA /* mdStrikethrough.txt */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
 		F3ADA6182D9C03EC00F2DAA6 /* Loc */ = {
 			isa = PBXGroup;
 			children = (
@@ -914,13 +934,9 @@
 		F3CFBD2C2E3F8AE2005F93EA /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				F35C358E2E44124A00622147 /* Text */,
 				F3CFBD232E3F8AE2005F93EA /* divider.txt */,
 				F3CFBD242E3F8AE2005F93EA /* image.txt */,
-				F3CFBD252E3F8AE2005F93EA /* mdBoldItalic.txt */,
-				F3CFBD262E3F8AE2005F93EA /* mdLink.txt */,
-				F3CFBD272E3F8AE2005F93EA /* mdMonospaced.txt */,
-				F3CFBD4E2E3F8AE2005F93EA /* mdRegular.txt */,
-				F3CFBD4F2E3F8AE2005F93EA /* mdStrikethrough.txt */,
 				F3CFBD282E3F8AE2005F93EA /* textEditor.txt */,
 				F31B90BD2E41D29B003A2AA2 /* textEditorFormat.txt */,
 				F3CFBD292E3F8AE2005F93EA /* textField.txt */,
@@ -1181,6 +1197,7 @@
 				F3CFBD612E3F8AE2005F93EA /* gauges.txt in Resources */,
 				F3CFBE212E3F99BB005F93EA /* equalSizeViews.txt in Resources */,
 				F3CFBDDE2E3F947A005F93EA /* zHtack.txt in Resources */,
+				F35C35912E44125100622147 /* textShortenedNumbers.txt in Resources */,
 				F3CFBD622E3F8AE2005F93EA /* image.txt in Resources */,
 				F3CFBD632E3F8AE2005F93EA /* mdStrikethrough.txt in Resources */,
 				F3CFBD642E3F8AE2005F93EA /* sheetBefore15.txt in Resources */,
@@ -1271,6 +1288,7 @@
 				F3CFBD922E3F8AE2005F93EA /* stepper.txt in Resources */,
 				F3CFBE142E3F99B2005F93EA /* padding.txt in Resources */,
 				F3C6F66F2E40E46900E94540 /* progressView.txt in Resources */,
+				F35C35902E44125100622147 /* textShortenedNumbers.txt in Resources */,
 				F3CFBD932E3F8AE2005F93EA /* slider.txt in Resources */,
 				F3CFBD942E3F8AE2005F93EA /* detectLanguage.txt in Resources */,
 				F3CFBD952E3F8AE2005F93EA /* darkMode.txt in Resources */,
@@ -1365,6 +1383,7 @@
 				F3BF16E32E2C7D1C005212D1 /* TopicHeading.swift in Sources */,
 				F35199022E2B9F53004E0F02 /* NavModel.swift in Sources */,
 				F3CFBDEE2E3F95B7005F93EA /* TopicZStack.swift in Sources */,
+				F35C358D2E440FD900622147 /* TopicTextShortenedNumbers.swift in Sources */,
 				F33E8B192E41495100B05370 /* ContentViewNavButtons.swift in Sources */,
 				F3AE99DA2E2F861C00D70249 /* ColorTheme.swift in Sources */,
 				F344803A2E2D225A00D18E2E /* TopicSpacer.swift in Sources */,
@@ -1513,6 +1532,7 @@
 				F314C84D2E2E657300F63B6A /* TopicStepper.swift in Sources */,
 				F344803B2E2D225A00D18E2E /* TopicSpacer.swift in Sources */,
 				F3CFBDC52E3F900D005F93EA /* TopicNavigationStack.swift in Sources */,
+				F35C358C2E440FD900622147 /* TopicTextShortenedNumbers.swift in Sources */,
 				F351984E2E2AF689004E0F02 /* Code Block.swift in Sources */,
 				F3BBD9F92AEED4BC00A9F7E7 /* Image Picker View.swift in Sources */,
 				F35198C12E2B7E34004E0F02 /* AttributedCodeString.swift in Sources */,

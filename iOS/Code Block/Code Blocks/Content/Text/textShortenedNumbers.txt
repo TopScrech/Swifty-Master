@@ -1,0 +1,3 @@
+Text(number, format: .number.notation(.scientific))
+
+Text(16000, format: .number.notation(.compactName))

@@ -62,6 +62,8 @@ struct TopicText: View {
                 }
             }
             
+            TopicTextShortenedNumbers()
+            
             TopicDisclosureGroup("Limit the number of lines") {
                 Text("GoidaGoida")
                     .frame(width: 64)
