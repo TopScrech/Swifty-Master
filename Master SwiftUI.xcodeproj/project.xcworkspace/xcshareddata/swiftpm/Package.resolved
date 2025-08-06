@@ -1,5 +1,5 @@
 {
-  "originHash" : "91c44800da5fa51af5f75a7583fbe2abf83a11f68511bf3eef5b664d5c1ccb78",
+  "originHash" : "b5562ee4e21f2dc451ae3e61439b1f7f7b50bdc9030ad0209392c6d2baecc527",
   "pins" : [
     {
       "identity" : "codeeditorview",
@@ -25,7 +25,7 @@
       "location" : "https://github.com/TopScrech/SafariCover",
       "state" : {
         "branch" : "main",
-        "revision" : "6846539c6cf560373fa357fc8df82896705d390c"
+        "revision" : "cb3a2f019c90cc85cf6602f051de03e2a2177f2e"
       }
     },
     {
@@ -34,7 +34,7 @@
       "location" : "https://github.com/TopScrech/ScrechKit",
       "state" : {
         "branch" : "main",
-        "revision" : "aa84840af632ebdcdbaca4e460575b92c62c4953"
+        "revision" : "4a2e6a8992e544f6d2da5a4e9cecb7a402f0e66f"
       }
     }
   ],

@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicDocsCard: View {
     @EnvironmentObject private var store: ValueStore
@@ -36,7 +36,7 @@ struct TopicDocsCard: View {
         .contextMenu {
             if let url = URL(string: link) {
                 Button("Copy", systemImage: "document.on.document") {
-                    UIPasteboard.general.url = url
+                    Pasteboard.copy(url)
                 }
                 
                 ShareLink(item: url)

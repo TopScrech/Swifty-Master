@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct CodeBlockView: View {
     @EnvironmentObject private var store: ValueStore
@@ -44,7 +44,7 @@ struct CodeBlockView: View {
                 .cornerRadius(20)
                 
                 Button {
-                    UIPasteboard.general.string = code
+                    Pasteboard.copy(code)
                 } label: {
                     Image(systemName: "document.on.document")
                         .title3(.semibold)
