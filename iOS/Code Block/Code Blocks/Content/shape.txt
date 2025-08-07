@@ -5,7 +5,11 @@ Rectangle()
     .padding()
 
 Rectangle()
+
 RoundedRectangle(cornerRadius: 6)
+
 Circle()
+
 Ellipse()
+
 Capsule()
