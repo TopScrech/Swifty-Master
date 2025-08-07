@@ -1,6 +1,7 @@
 import Foundation
 
 extension Topic {
+#warning("Remove id and/or Topic")
     var related: [Topic.ID] {
         switch self {
         case .textField: [Topic.textEditor.id]
@@ -27,6 +28,9 @@ extension Topic {
             
         case .slider: [Topic.stepper.id]
         case .stepper: [Topic.slider.id]
+            
+        case .spacer: [Topic.divider.id]
+        case .divider: [Topic.spacer.id]
             
         default: []
         }

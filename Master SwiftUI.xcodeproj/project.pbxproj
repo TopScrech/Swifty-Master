@@ -934,9 +934,8 @@
 				F35C358E2E44124A00622147 /* Text */,
 				F3CFBD232E3F8AE2005F93EA /* divider.txt */,
 				F3CFBD242E3F8AE2005F93EA /* image.txt */,
-				F3CFBD282E3F8AE2005F93EA /* textEditor.txt */,
-				F31B90BD2E41D29B003A2AA2 /* textEditorFormat.txt */,
 				F3FCB9402E4499AE00ACBF44 /* TextField */,
+				F3FCB9412E44D0F400ACBF44 /* TextEditor */,
 				F3CFBD9D2E3F8B9F005F93EA /* label.txt */,
 				F3CFBDA02E3F8C09005F93EA /* sfSymbols.txt */,
 				F3CFBDA32E3F8C43005F93EA /* shape.txt */,
@@ -1070,6 +1069,15 @@
 				F3CFBDA62E3F8C96005F93EA /* customKeyboard.txt */,
 			);
 			path = TextField;
+			sourceTree = "<group>";
+		};
+		F3FCB9412E44D0F400ACBF44 /* TextEditor */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBD282E3F8AE2005F93EA /* textEditor.txt */,
+				F31B90BD2E41D29B003A2AA2 /* textEditorFormat.txt */,
+			);
+			path = TextEditor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
