@@ -3,7 +3,7 @@ import Foundation
 extension Topic {
     var category: Category {
         switch self {
-        case .text, .textField, .textEditor, .image, .sfSymbols, .label, .shape, .divider, .customKeyboard:
+        case .text, .textField, .textEditor, .image, .sfSymbols, .label, .shape, .divider:
                 .content
             
         case .button, .menu, .contextMenu, .toggle, .slider, .stepper, .picker, .gauges, .progressView, .badges:

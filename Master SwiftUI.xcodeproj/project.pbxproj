@@ -37,8 +37,6 @@
 		F314C8192E2E4BB600F63B6A /* TopicDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8172E2E4BB600F63B6A /* TopicDivider.swift */; };
 		F314C81B2E2E4BB900F63B6A /* TopicShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C81A2E2E4BB900F63B6A /* TopicShape.swift */; };
 		F314C81C2E2E4BB900F63B6A /* TopicShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C81A2E2E4BB900F63B6A /* TopicShape.swift */; };
-		F314C81E2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C81D2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift */; };
-		F314C81F2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C81D2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift */; };
 		F314C8262E2E52A200F63B6A /* ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8252E2E52A200F63B6A /* ValueStore.swift */; };
 		F314C8272E2E52A200F63B6A /* ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8252E2E52A200F63B6A /* ValueStore.swift */; };
 		F314C8322E2E536F00F63B6A /* TopicMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8312E2E536F00F63B6A /* TopicMenu.swift */; };
@@ -396,7 +394,6 @@
 		F314C8142E2E4B8700F63B6A /* TopicLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLabel.swift; sourceTree = "<group>"; };
 		F314C8172E2E4BB600F63B6A /* TopicDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDivider.swift; sourceTree = "<group>"; };
 		F314C81A2E2E4BB900F63B6A /* TopicShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicShape.swift; sourceTree = "<group>"; };
-		F314C81D2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCustomKeyboard.swift; sourceTree = "<group>"; };
 		F314C8252E2E52A200F63B6A /* ValueStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueStore.swift; sourceTree = "<group>"; };
 		F314C8312E2E536F00F63B6A /* TopicMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicMenu.swift; sourceTree = "<group>"; };
 		F314C8342E2E538200F63B6A /* TopicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicButton.swift; sourceTree = "<group>"; };
@@ -647,7 +644,6 @@
 				F314C8142E2E4B8700F63B6A /* TopicLabel.swift */,
 				F314C81A2E2E4BB900F63B6A /* TopicShape.swift */,
 				F314C8172E2E4BB600F63B6A /* TopicDivider.swift */,
-				F314C81D2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -944,7 +940,6 @@
 				F3CFBD9D2E3F8B9F005F93EA /* label.txt */,
 				F3CFBDA02E3F8C09005F93EA /* sfSymbols.txt */,
 				F3CFBDA32E3F8C43005F93EA /* shape.txt */,
-				F3CFBDA62E3F8C96005F93EA /* customKeyboard.txt */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -1072,6 +1067,7 @@
 				F3CFBD292E3F8AE2005F93EA /* textField.txt */,
 				F31B90C02E41D384003A2AA2 /* textFieldSecured.txt */,
 				F3CFBD2A2E3F8AE2005F93EA /* textFieldDisableAutocorrection.txt */,
+				F3CFBDA62E3F8C96005F93EA /* customKeyboard.txt */,
 			);
 			path = TextField;
 			sourceTree = "<group>";
@@ -1352,7 +1348,6 @@
 				F314C7FA2E2E1F0F00F63B6A /* TopicDisclosureGroup.swift in Sources */,
 				F3CFBE2D2E3F9B18005F93EA /* TopicEqualSizeViews.swift in Sources */,
 				F3202CC62D55977A0030B3CC /* Image Picker 2.swift in Sources */,
-				F314C81F2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift in Sources */,
 				F3CFBDF12E3F95B8005F93EA /* TopicGrid.swift in Sources */,
 				F35198C42E2B7E56004E0F02 /* CodeBlockView.swift in Sources */,
 				F33E8B202E4162DF00B05370 /* TopicIcon.swift in Sources */,
@@ -1450,7 +1445,6 @@
 				F31617CC2E42256700131D26 /* TopiicCategory.swift in Sources */,
 				F314C7F92E2E1F0F00F63B6A /* TopicDisclosureGroup.swift in Sources */,
 				F35198472E2AECAA004E0F02 /* Gauge Card.swift in Sources */,
-				F314C81E2E2E4BBA00F63B6A /* TopicCustomKeyboard.swift in Sources */,
 				F399A4AD2E3D52A7008BED17 /* highlightOccurrences.swift in Sources */,
 				F314C7FE2E2E2A8400F63B6A /* Models.swift in Sources */,
 				F3CFBDEA2E3F95B6005F93EA /* TopicHStack.swift in Sources */,

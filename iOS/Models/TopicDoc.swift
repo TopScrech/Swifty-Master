@@ -17,7 +17,8 @@ extension Topic {
             [
                 "Text Field": "https://developer.apple.com/documentation/swiftui/textfield",
                 "textfieldstyle(_:)": "https://developer.apple.com/documentation/swiftui/view/textfieldstyle(_:)",
-                "Building rich SwiftUI text experiences (iOS 26)": "https://developer.apple.com/documentation/swiftui/building-rich-swiftui-text-experiences"
+                "Building rich SwiftUI text experiences (iOS 26)": "https://developer.apple.com/documentation/swiftui/building-rich-swiftui-text-experiences",
+                "keyboardtype(_:)": "https://developer.apple.com/documentation/swiftui/view/keyboardtype(_:)"
             ]
             
         case .textEditor:
@@ -31,9 +32,6 @@ extension Topic {
             
         case .divider:
             ["Divider": "https://developer.apple.com/documentation/swiftui/divider"]
-            
-        case .customKeyboard:
-            ["keyboardtype(_:)": "https://developer.apple.com/documentation/swiftui/view/keyboardtype(_:)"]
             
             // MARK: - Control
         case .gauges:

@@ -12,7 +12,6 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          label = "Label",
          shape = "Shape",
          divider = "Divider",
-         customKeyboard = "Custom Keyboard",
          gauges = "Gauges",
          progressView = "ProgressView",
          badges = "Badges",

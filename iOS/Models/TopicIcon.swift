@@ -5,14 +5,13 @@ extension Topic {
         switch self {
             // Content
         case .text: "textformat"
-        case .textField: "character.cursor.ibeam"
+        case .textField: "keyboard"
         case .textEditor: "square.and.pencil"
         case .image: "photo"
         case .sfSymbols: "environments"
         case .label: "character.textbox"
         case .shape: "circle.on.square"
         case .divider: "square.and.line.vertical.and.square"
-        case .customKeyboard: "keyboard"
             
             // Control
         case .button: "digitalcrown.press"

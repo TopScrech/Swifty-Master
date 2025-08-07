@@ -50,7 +50,6 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .label: AnyView(TopicLabel())
     case .shape: AnyView(TopicShape())
     case .divider: AnyView(TopicDivider())
-    case .customKeyboard: AnyView(TopicCustomKeyboard())
         
         // Control
     case .toggle: AnyView(TopicToggle())
