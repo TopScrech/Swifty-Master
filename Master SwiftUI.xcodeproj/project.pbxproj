@@ -822,6 +822,7 @@
 				F3CFBD272E3F8AE2005F93EA /* mdMonospaced.txt */,
 				F3CFBD4E2E3F8AE2005F93EA /* mdRegular.txt */,
 				F3CFBD4F2E3F8AE2005F93EA /* mdStrikethrough.txt */,
+				F3CFBD2B2E3F8AE2005F93EA /* textLineLimit.txt */,
 			);
 			path = Text;
 			sourceTree = "<group>";
@@ -939,10 +940,7 @@
 				F3CFBD242E3F8AE2005F93EA /* image.txt */,
 				F3CFBD282E3F8AE2005F93EA /* textEditor.txt */,
 				F31B90BD2E41D29B003A2AA2 /* textEditorFormat.txt */,
-				F3CFBD292E3F8AE2005F93EA /* textField.txt */,
-				F31B90C02E41D384003A2AA2 /* textFieldSecured.txt */,
-				F3CFBD2A2E3F8AE2005F93EA /* textFieldDisableAutocorrection.txt */,
-				F3CFBD2B2E3F8AE2005F93EA /* textLineLimit.txt */,
+				F3FCB9402E4499AE00ACBF44 /* TextField */,
 				F3CFBD9D2E3F8B9F005F93EA /* label.txt */,
 				F3CFBDA02E3F8C09005F93EA /* sfSymbols.txt */,
 				F3CFBDA32E3F8C43005F93EA /* shape.txt */,
@@ -1066,6 +1064,16 @@
 				F3CFBE072E3F981E005F93EA /* TopicTabView.swift */,
 			);
 			path = Collections;
+			sourceTree = "<group>";
+		};
+		F3FCB9402E4499AE00ACBF44 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBD292E3F8AE2005F93EA /* textField.txt */,
+				F31B90C02E41D384003A2AA2 /* textFieldSecured.txt */,
+				F3CFBD2A2E3F8AE2005F93EA /* textFieldDisableAutocorrection.txt */,
+			);
+			path = TextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
