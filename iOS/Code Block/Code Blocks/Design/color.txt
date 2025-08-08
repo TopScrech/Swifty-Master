@@ -3,4 +3,4 @@ Text("Hello")
     .foregroundColor(Color(uiColor: .systemBlue))  // UIColor - Not on macOS
     .foregroundColor(Color(nsColor: .systemBlue)) // NSColor - macOS-only
     .foregroundColor(Color("customColorName"))   // Custom color
-    .foregroundColor(.customColorName)  // Custom color
+    .foregroundColor(.customColorName)          // Custom color
