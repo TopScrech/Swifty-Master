@@ -26,6 +26,7 @@ Spacer()
             CodeBlockView("""
 Spacer()
     .frame(width: 6, height: 6)
+
 """)
         }
     }
