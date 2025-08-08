@@ -13,3 +13,13 @@ Circle()
 Ellipse()
 
 Capsule()
+
+// ConventricRectangle() will match
+// rounding of the container
+VStack {
+    ConventricRectangle()
+        .fill(.indigo)
+}
+.padding()
+.background(.gray)
+.containerShape(.rect(cornerRadius: 16))
