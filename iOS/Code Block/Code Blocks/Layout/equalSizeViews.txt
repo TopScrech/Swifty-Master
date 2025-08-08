@@ -1,4 +1,4 @@
-HStack(spacing:0) {
+HStack(spacing: 0) {
     View1()
         .frame(maxWidth: .infinity)
     
@@ -8,3 +8,14 @@ HStack(spacing:0) {
     View3()
         .frame(maxWidth: .infinity)
 }
+
+// or
+
+Group {
+    View1()
+    
+    View2()
+    
+    View3()
+}
+.frame(maxWidth: .infinity)
