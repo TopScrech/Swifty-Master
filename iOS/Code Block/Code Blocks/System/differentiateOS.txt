@@ -11,6 +11,8 @@
 #endif
 
 // Mac Catalyst
-#if !targetEnvironment(macCatalyst)
+#if targetEnvironment(macCatalyst)
+    ...
+#elseif targetEnvironment(simulator)
     ...
 #endif

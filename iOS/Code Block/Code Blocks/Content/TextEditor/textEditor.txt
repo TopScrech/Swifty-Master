@@ -2,4 +2,6 @@
 
 var body: some View {
     TextEditor(text: $text)
+        .foregroundStyle(.secondary)
+        .lineSpacing(5)
 }
