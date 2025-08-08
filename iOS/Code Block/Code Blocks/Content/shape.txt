@@ -17,7 +17,7 @@ Capsule()
 // ConventricRectangle() will match
 // rounding of the container
 VStack {
-    ConventricRectangle()
+    ConcentricRectangle()
         .fill(.indigo)
 }
 .padding()
