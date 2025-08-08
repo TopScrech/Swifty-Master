@@ -1,18 +1,17 @@
-Link(/*Text Here (String)*/, destination: URL(string: /*URL Here (String)*/)!)
-    // Potential modifiers below
+let link = "https://bisquit.host/en"
+
+Link("Title", destination: URL(string: link)!)
     .font(.title2)
     .fontWeight(.bold)
     .foregroundColor(.orange)
 
 // Custom label
-let link = "https://bisquit.host/en"
-
-Link(destination: URL(string: https://bisquit.host/en)!) {
+Link(destination: URL(string: link)!) {
     ...
 }
 
 // Safe unwrapping
-if let url = URL(string: https://bisquit.host/en)! {
+if let url = URL(string: link) {
     Link(destination: url) {
         ...
     }
