@@ -22,6 +22,7 @@ func attributedCodeString(for code: String) -> AttributedString {
         "SomeView", "EmptyView", "UIScreen", "Circle", "String", "AnyView",
         "spacing", "value", "in", " View", "SecureField", "Ellipse", "RoundedRectangle", "Capsule",
         "@State", "@Environment",
+        "Gradient", "LinearGradient", "AngularGradient", "RadialGradient", "EllipticalGradient",
         "SKOverlay", "Binding", "Bool", "AppConfiguration", "appIdentifier", "position"
     ]
     

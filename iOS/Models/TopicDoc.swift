@@ -30,6 +30,9 @@ extension Topic {
         case .image:
             ["Image": "https://developer.apple.com/documentation/swiftui/image"]
             
+        case .sfSymbols:
+            ["Image(systemName:)": "https://developer.apple.com/documentation/swiftui/image/init(systemname:)"]
+            
         case .divider:
             ["Divider": "https://developer.apple.com/documentation/swiftui/divider"]
             
@@ -129,7 +132,7 @@ extension Topic {
         case .link:
             ["Link": "https://developer.apple.com/documentation/swiftui/link"]
             
-            // Collections
+            // MARK: - Collections
         case .vStack:
             ["VStack": "https://developer.apple.com/documentation/swiftui/vstack"]
             
@@ -176,6 +179,7 @@ extension Topic {
             
         case .gradient:
             [
+                "Gradient": "https://developer.apple.com/documentation/swiftui/gradient",
                 "LinearGradient": "https://developer.apple.com/documentation/swiftui/lineargradient",
                 "RadialGradient": "https://developer.apple.com/documentation/swiftui/radialgradient",
                 "AngularGradient": "https://developer.apple.com/documentation/swiftui/angulargradient",
