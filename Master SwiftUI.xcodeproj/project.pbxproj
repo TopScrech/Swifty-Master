@@ -689,6 +689,80 @@
 			path = Docs;
 			sourceTree = "<group>";
 		};
+		F339042C2E49634400A22EE1 /* Grids */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBDE22E3F94D8005F93EA /* grid.txt */,
+				F3CFBDF82E3F973B005F93EA /* lazyVGrid.txt */,
+				F3CFBDFB2E3F9740005F93EA /* lazyHGrid.txt */,
+			);
+			path = Grids;
+			sourceTree = "<group>";
+		};
+		F339042D2E49636800A22EE1 /* Dismiss */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBD3C2E3F8AE2005F93EA /* dismiss.txt */,
+				F3CFBD3D2E3F8AE2005F93EA /* dismissHideBackButton.txt */,
+			);
+			path = Dismiss;
+			sourceTree = "<group>";
+		};
+		F339042E2E49637400A22EE1 /* Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBD4A2E3F8AE2005F93EA /* sheet.txt */,
+				F3CFBD4B2E3F8AE2005F93EA /* sheetBefore15.txt */,
+			);
+			path = Sheet;
+			sourceTree = "<group>";
+		};
+		F339042F2E49637C00A22EE1 /* EmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBD472E3F8AE2005F93EA /* emptyView.txt */,
+				F3CFBD482E3F8AE2005F93EA /* emptyViewAnyView.txt */,
+			);
+			path = EmptyView;
+			sourceTree = "<group>";
+		};
+		F33904302E49638700A22EE1 /* Stacks */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBDD62E3F945C005F93EA /* vStack.txt */,
+				F3CFBDD92E3F9473005F93EA /* hStack.txt */,
+				F3CFBDDC2E3F947A005F93EA /* zStack.txt */,
+			);
+			path = Stacks;
+			sourceTree = "<group>";
+		};
+		F33904312E49639E00A22EE1 /* Detect OS */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBE2E2E3F9C09005F93EA /* detectDeviceUsed.txt */,
+				F3CFBE312E3F9C20005F93EA /* differentiateOS.txt */,
+			);
+			path = "Detect OS";
+			sourceTree = "<group>";
+		};
+		F33904322E4963AF00A22EE1 /* Detect OS Version */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBD412E3F8AE2005F93EA /* detectOSVersion.txt */,
+				F3CFBD422E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt */,
+			);
+			path = "Detect OS Version";
+			sourceTree = "<group>";
+		};
+		F33904332E4963C300A22EE1 /* Dark Mode */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBD3F2E3F8AE2005F93EA /* darkMode.txt */,
+				F3C92B182E48B7A600203691 /* darkModeLock.txt */,
+			);
+			path = "Dark Mode";
+			sourceTree = "<group>";
+		};
 		F34480302E2CD3FF00D18E2E /* System */ = {
 			isa = PBXGroup;
 			children = (
@@ -907,15 +981,11 @@
 		F3CFBD222E3F8AE2005F93EA /* Collections */ = {
 			isa = PBXGroup;
 			children = (
-				F3CFBDD62E3F945C005F93EA /* vStack.txt */,
-				F3CFBDD92E3F9473005F93EA /* hStack.txt */,
-				F3CFBDDC2E3F947A005F93EA /* zStack.txt */,
 				F3CFBDF22E3F96EA005F93EA /* list.txt */,
 				F3CFBDF52E3F96F1005F93EA /* scrollView.txt */,
-				F3CFBDE22E3F94D8005F93EA /* grid.txt */,
-				F3CFBDF82E3F973B005F93EA /* lazyVGrid.txt */,
-				F3CFBDFB2E3F9740005F93EA /* lazyHGrid.txt */,
 				F3CFBDFE2E3F9741005F93EA /* tabView.txt */,
+				F33904302E49638700A22EE1 /* Stacks */,
+				F339042C2E49634400A22EE1 /* Grids */,
 			);
 			path = Collections;
 			sourceTree = "<group>";
@@ -923,14 +993,14 @@
 		F3CFBD2C2E3F8AE2005F93EA /* Content */ = {
 			isa = PBXGroup;
 			children = (
-				F35C358E2E44124A00622147 /* Text */,
 				F3CFBD232E3F8AE2005F93EA /* divider.txt */,
 				F3CFBD242E3F8AE2005F93EA /* image.txt */,
-				F3FCB9402E4499AE00ACBF44 /* TextField */,
-				F3FCB9412E44D0F400ACBF44 /* TextEditor */,
 				F3CFBD9D2E3F8B9F005F93EA /* label.txt */,
 				F3CFBDA02E3F8C09005F93EA /* sfSymbols.txt */,
 				F3CFBDA32E3F8C43005F93EA /* shape.txt */,
+				F35C358E2E44124A00622147 /* Text */,
+				F3FCB9402E4499AE00ACBF44 /* TextField */,
+				F3FCB9412E44D0F400ACBF44 /* TextEditor */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -979,8 +1049,6 @@
 		F3CFBD3E2E3F8AE2005F93EA /* Nav */ = {
 			isa = PBXGroup;
 			children = (
-				F3CFBD3C2E3F8AE2005F93EA /* dismiss.txt */,
-				F3CFBD3D2E3F8AE2005F93EA /* dismissHideBackButton.txt */,
 				F3CFBDA92E3F8E57005F93EA /* navigationView.txt */,
 				F3CFBDAC2E3F8E5C005F93EA /* navigationStack.txt */,
 				F3CFBDAF2E3F8E5D005F93EA /* navigationSplitView.txt */,
@@ -988,6 +1056,7 @@
 				F3CFBDB22E3F8E5E005F93EA /* navigationLink.txt */,
 				F3CFBDBB2E3F8E79005F93EA /* passAView.txt */,
 				F3CFBDBE2E3F8E87005F93EA /* link.txt */,
+				F339042D2E49636800A22EE1 /* Dismiss */,
 			);
 			path = Nav;
 			sourceTree = "<group>";
@@ -995,16 +1064,13 @@
 		F3CFBD442E3F8AE2005F93EA /* System */ = {
 			isa = PBXGroup;
 			children = (
-				F3CFBD412E3F8AE2005F93EA /* detectOSVersion.txt */,
-				F3CFBD3F2E3F8AE2005F93EA /* darkMode.txt */,
-				F3C92B182E48B7A600203691 /* darkModeLock.txt */,
-				F3CFBE2E2E3F9C09005F93EA /* detectDeviceUsed.txt */,
-				F3CFBE312E3F9C20005F93EA /* differentiateOS.txt */,
 				F3CFBE342E3F9C21005F93EA /* detectScreenSize.txt */,
 				F3CFBE372E3F9C22005F93EA /* detectCompactOrRegular.txt */,
 				F3CFBD402E3F8AE2005F93EA /* detectLanguage.txt */,
-				F3CFBD422E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt */,
 				F3CFBD432E3F8AE2005F93EA /* lowPowerMode.txt */,
+				F33904332E4963C300A22EE1 /* Dark Mode */,
+				F33904322E4963AF00A22EE1 /* Detect OS Version */,
+				F33904312E49639E00A22EE1 /* Detect OS */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -1012,13 +1078,11 @@
 		F3CFBD4C2E3F8AE2005F93EA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F3CFBD4A2E3F8AE2005F93EA /* sheet.txt */,
-				F3CFBD4B2E3F8AE2005F93EA /* sheetBefore15.txt */,
 				F3CFBD452E3F8AE2005F93EA /* alert.txt */,
 				F3CFBD462E3F8AE2005F93EA /* appStoreOverlay.txt */,
-				F3CFBD472E3F8AE2005F93EA /* emptyView.txt */,
-				F3CFBD482E3F8AE2005F93EA /* emptyViewAnyView.txt */,
 				F3CFBD492E3F8AE2005F93EA /* popover.txt */,
+				F339042F2E49637C00A22EE1 /* EmptyView */,
+				F339042E2E49637400A22EE1 /* Sheet */,
 			);
 			path = View;
 			sourceTree = "<group>";
