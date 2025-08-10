@@ -70,5 +70,5 @@ private func requestPermission() {
 // iOS 2.0–17.0
 // iPadOS 2.0–17.0
 // Mac Catalyst 13.1–17.0
-// visionOS 1.0–1.0
+// visionOS 1.0
 UIApplication.shared.applicationIconBadgeNumber = 1
