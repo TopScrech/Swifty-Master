@@ -77,7 +77,6 @@
 		F3202C942D55952F0030B3CC /* AppStoreOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3202C932D55952F0030B3CC /* AppStoreOverlay.swift */; };
 		F3202CB72D5596210030B3CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3202CAF2D5596210030B3CC /* Assets.xcassets */; };
 		F3202CBB2D5596380030B3CC /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3202CBA2D5596380030B3CC /* ScrechKit */; };
-		F3202CBD2D5597180030B3CC /* Hover Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */; };
 		F3202CC02D5597400030B3CC /* AppStoreOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3202C932D55952F0030B3CC /* AppStoreOverlay.swift */; };
 		F3202CC22D5597490030B3CC /* Master SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E12AEECD3400A9F7E7 /* Master SwiftUI.swift */; };
 		F3202CC52D55977A0030B3CC /* Image Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9FA2AEED4CE00A9F7E7 /* Image Picker.swift */; };
@@ -165,8 +164,6 @@
 		F399A4AD2E3D52A7008BED17 /* highlightOccurrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */; };
 		F399A4B02E3DC544008BED17 /* iOS 18 support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399A4AF2E3DC544008BED17 /* iOS 18 support.swift */; };
 		F399A4B12E3DC544008BED17 /* iOS 18 support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399A4AF2E3DC544008BED17 /* iOS 18 support.swift */; };
-		F3ADA6162D9C03E700F2DAA6 /* Plural Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ADA6152D9C03E700F2DAA6 /* Plural Translation.swift */; };
-		F3ADA6172D9C03E700F2DAA6 /* Plural Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ADA6152D9C03E700F2DAA6 /* Plural Translation.swift */; };
 		F3ADA61A2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */; };
 		F3ADA61B2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */; };
 		F3AE99D92E2F861C00D70249 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE99D82E2F861C00D70249 /* ColorTheme.swift */; };
@@ -380,7 +377,6 @@
 		F3CFBE442E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */; };
 		F3CFBE452E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */; };
 		F3D8C11C2B2BB51000C7B0A9 /* Sensory Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */; };
-		F3EB1CB62C58FFE5007E6366 /* Hover Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -463,7 +459,6 @@
 		F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLowPowerMode.swift; sourceTree = "<group>"; };
 		F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = highlightOccurrences.swift; sourceTree = "<group>"; };
 		F399A4AF2E3DC544008BED17 /* iOS 18 support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOS 18 support.swift"; sourceTree = "<group>"; };
-		F3ADA6152D9C03E700F2DAA6 /* Plural Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plural Translation.swift"; sourceTree = "<group>"; };
 		F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F3AE99D82E2F861C00D70249 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
 		F3BBD9DE2AEECD3400A9F7E7 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -576,7 +571,6 @@
 		F3CFBE402E3F9D2E005F93EA /* TopicDetectScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectScreenSize.swift; sourceTree = "<group>"; };
 		F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectCompactOrRegular.swift; sourceTree = "<group>"; };
 		F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensory Feedback.swift"; sourceTree = "<group>"; };
-		F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hover Effects.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -597,14 +591,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F3146C4F2CF73B9E005D58B3 /* Hover */ = {
-			isa = PBXGroup;
-			children = (
-				F3EB1CB52C58FFE5007E6366 /* Hover Effects.swift */,
-			);
-			path = Hover;
-			sourceTree = "<group>";
-		};
 		F3146C6C2CF73DD6005D58B3 /* Materials */ = {
 			isa = PBXGroup;
 			children = (
@@ -759,8 +745,6 @@
 			isa = PBXGroup;
 			children = (
 				F33E8B272E416BEF00B05370 /* TestView.swift */,
-				F3ADA6182D9C03EC00F2DAA6 /* Loc */,
-				F3146C4F2CF73B9E005D58B3 /* Hover */,
 				F3146C6C2CF73DD6005D58B3 /* Materials */,
 				F3146C6D2CF73DE2005D58B3 /* Haptic */,
 				F32E88D42AF856E400959D49 /* Journal View.swift */,
@@ -832,14 +816,6 @@
 				F3CFBD4F2E3F8AE2005F93EA /* mdStrikethrough.txt */,
 			);
 			path = Text;
-			sourceTree = "<group>";
-		};
-		F3ADA6182D9C03EC00F2DAA6 /* Loc */ = {
-			isa = PBXGroup;
-			children = (
-				F3ADA6152D9C03E700F2DAA6 /* Plural Translation.swift */,
-			);
-			path = Loc;
 			sourceTree = "<group>";
 		};
 		F3BBD9D52AEECD3400A9F7E7 = {
@@ -1348,7 +1324,6 @@
 				F3CFBE0F2E3F994E005F93EA /* TopicList.swift in Sources */,
 				F3CFBE032E3F981C005F93EA /* TopicLazyVGrid.swift in Sources */,
 				F34480322E2CD41100D18E2E /* TopicDarkMode.swift in Sources */,
-				F3202CBD2D5597180030B3CC /* Hover Effects.swift in Sources */,
 				F31653B92E3C0A4E00A0E9D7 /* StackTopicList.swift in Sources */,
 				F399A4B02E3DC544008BED17 /* iOS 18 support.swift in Sources */,
 				F3202CC52D55977A0030B3CC /* Image Picker.swift in Sources */,
@@ -1390,7 +1365,6 @@
 				F314C8192E2E4BB600F63B6A /* TopicDivider.swift in Sources */,
 				F314C8162E2E4B8700F63B6A /* TopicLabel.swift in Sources */,
 				F314C8362E2E538200F63B6A /* TopicButton.swift in Sources */,
-				F3ADA6172D9C03E700F2DAA6 /* Plural Translation.swift in Sources */,
 				F3CFBE272E3F9B16005F93EA /* TopicFrame.swift in Sources */,
 				F314C83C2E2E540800F63B6A /* TopicSheet.swift in Sources */,
 				F35198FD2E2B9F53004E0F02 /* Topic.swift in Sources */,
@@ -1462,7 +1436,6 @@
 				F3C92B1D2E48BC4600203691 /* ExampleSheet.swift in Sources */,
 				F33E8B282E416BEF00B05370 /* TestView.swift in Sources */,
 				F34480472E2D5D1900D18E2E /* SettingsView.swift in Sources */,
-				F3EB1CB62C58FFE5007E6366 /* Hover Effects.swift in Sources */,
 				F37916EE2AF14A7A00B880AF /* Image Picker 2.swift in Sources */,
 				F32E88D52AF856E400959D49 /* Journal View.swift in Sources */,
 				F3C6F6722E40E57A00E94540 /* TopicGauge.swift in Sources */,
@@ -1549,7 +1522,6 @@
 				F330586D2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */,
 				F3CFBDE72E3F959D005F93EA /* TopicVStack.swift in Sources */,
 				F3BBD9F42AEECD6C00A9F7E7 /* Materials View.swift in Sources */,
-				F3ADA6162D9C03E700F2DAA6 /* Plural Translation.swift in Sources */,
 				F314C8442E2E654C00F63B6A /* TopicSlider.swift in Sources */,
 				F314C8532E2E65F000F63B6A /* TopicPopover.swift in Sources */,
 				F314C7F22E2E1C1800F63B6A /* TopicLinkLabel.swift in Sources */,
