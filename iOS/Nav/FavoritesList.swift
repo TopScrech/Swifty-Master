@@ -22,12 +22,10 @@ struct FavoritesList: View {
                     }
                     .swipeActions(edge: .leading) {
                         if store.favoriteTopics.contains(topic) {
-                            Button {
+                            SFButton("star.slash.fill") {
                                 store.addOrRemoveFavorite(topic)
-                            } label: {
-                                Image(systemName: "star.slash.fill")
-                                    .tint(.red)
                             }
+                            .tint(.red)
                         }
                     }
                     .swipeActions {
