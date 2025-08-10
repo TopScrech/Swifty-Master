@@ -5,8 +5,6 @@ struct TopicSpacer: View {
         VStack(spacing: 25) {
             Text("Spacer() is an element that takes up as much space as it can in a layout")
             
-            Text("Simple Spacer")
-            
             CodeBlockView(.spacer)
             
             TopicHeading("Spacer with a minimum size")
