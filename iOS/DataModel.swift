@@ -20,7 +20,7 @@ final class DataModel {
     /// The related topics for a given topic, sorted by name
     func topics(relatedTo topic: Topic) -> [Topic] {
         topics.filter {
-            topic.related.contains($0.id)
+            topic.related.contains($0)
         }
     }
     

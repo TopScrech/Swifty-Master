@@ -1,36 +1,35 @@
 import Foundation
 
 extension Topic {
-#warning("Remove id and/or Topic")
-    var related: [Topic.ID] {
+    var related: [Topic] {
         switch self {
-        case .textField: [Topic.textEditor.id]
-        case .textEditor: [Topic.textField.id]
+        case .textField: [.textEditor]
+        case .textEditor: [.textField]
             
-        case .image: [Topic.sfSymbols.id]
-        case .sfSymbols: [Topic.image.id]
+        case .image: [.sfSymbols]
+        case .sfSymbols: [.image]
             
-        case .contextMenu: [Topic.menu.id]
-        case .menu: [Topic.contextMenu.id]
+        case .contextMenu: [.menu]
+        case .menu: [.contextMenu]
             
-        case .vStack: [Topic.hStack.id]
-        case .hStack: [Topic.vStack.id]
+        case .vStack: [.hStack]
+        case .hStack: [.vStack]
             
-        case .color: [Topic.gradient.id]
-        case .gradient: [Topic.color.id]
+        case .color: [.gradient]
+        case .gradient: [.color]
             
-        case .grid: [Topic.lazyVGrid.id, Topic.lazyHGrid.id]
-        case .lazyHGrid: [Topic.grid.id, Topic.lazyVGrid.id]
-        case .lazyVGrid: [Topic.grid.id, Topic.lazyHGrid.id]
+        case .grid: [.lazyVGrid, .lazyHGrid]
+        case .lazyHGrid: [.grid, .lazyVGrid]
+        case .lazyVGrid: [.grid, .lazyHGrid]
             
-        case .scrollView: [Topic.list.id]
-        case .list: [Topic.scrollView.id]
+        case .scrollView: [.list]
+        case .list: [.scrollView]
             
-        case .slider: [Topic.stepper.id]
-        case .stepper: [Topic.slider.id]
+        case .slider: [.stepper]
+        case .stepper: [.slider]
             
-        case .spacer: [Topic.divider.id]
-        case .divider: [Topic.spacer.id]
+        case .spacer: [.divider]
+        case .divider: [.spacer]
             
         default: []
         }
