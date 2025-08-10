@@ -2,7 +2,7 @@ NavigationLink(destination: DestinationView()) {
     // label
 }
 
-// Navigation destination as a value
+// Nav destination as a value
 List {
     NavigationLink(value: /* Data to pass*/) {
         // label
