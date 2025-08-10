@@ -48,8 +48,59 @@ func attributedCodeString(for code: String) -> AttributedString {
     // Modifiers
     colorKeywords(modifiers, color: Color(0xA167E6))
     
-    // Comments
-    colorWholeLine(#"(?m)^\s*//.*"#, color: Color(0x6C7986))
+    // Comments (inline)
+    // Keep track of string ranges to avoid coloring comments inside strings
+    var stringRanges: [Range<String.Index>] = []
+    
+    if let regex = try? NSRegularExpression(pattern: quotedStringPattern) {
+        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+        
+        for match in matches {
+            guard match.numberOfRanges >= 1 else {
+                continue
+            }
+            
+            let fullRange = match.range(at: 0)
+            
+            if let stringRange = Range(fullRange, in: code),
+               let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
+                stringRanges.append(stringRange) // <-- collect for later
+                attributedString[attributedRange].foregroundColor = Color(0xFC6A5D)
+            }
+        }
+    }
+    
+    // Now color only the `// ...` part (not whole line), anywhere on the line
+    // Avoid URLs like http:// with a simple negative-lookbehind for ':'
+    let inlineCommentPattern = #"(?m)(?<!:)//.*$"#
+    
+    if let regex = try? NSRegularExpression(pattern: inlineCommentPattern) {
+        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+        
+        for match in matches {
+            guard match.numberOfRanges >= 1 else {
+                continue
+            }
+            
+            let fullRange = match.range(at: 0)
+            
+            if let commentRange = Range(fullRange, in: code) {
+                // Skip if the comment start sits inside any string literal
+                let start = commentRange.lowerBound
+                let isInsideString = stringRanges.contains {
+                    $0.contains(start)
+                }
+                
+                if isInsideString {
+                    continue
+                }
+                
+                if let attributedRange = Range(NSRange(commentRange, in: code), in: attributedString) {
+                    attributedString[attributedRange].foregroundColor = Color(0x6C7986)
+                }
+            }
+        }
+    }
     
     // String
     if let regex = try? NSRegularExpression(pattern: quotedStringPattern) {
@@ -106,6 +157,40 @@ func attributedCodeString(for code: String) -> AttributedString {
             if let stringRange = Range(nameRange, in: code),
                let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
                 attributedString[attributedRange].foregroundColor = Color(0xD0A8FF)
+            }
+        }
+    }
+    
+    // Identifiers in `} anyTextHere: {`
+    let betweenBracesPattern = #"\}\s*([A-Za-z_]\w*)\s*:\s*\{"#
+    
+    if let regex = try? NSRegularExpression(pattern: betweenBracesPattern) {
+        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+        
+        for match in matches where match.numberOfRanges >= 2 {
+            let nameRange = match.range(at: 1)
+            
+            if let stringRange = Range(nameRange, in: code),
+               let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
+                attributedString[attributedRange].foregroundColor = Color(0xA167E6)
+                attributedString[attributedRange].font = .body.bold()
+            }
+        }
+    }
+    
+    // Identifiers in `.anyTextHere {`
+    let dotBlockPattern = #"(?m)^\s*\.\s*([A-Za-z_]\w*)\s*\{"#
+    
+    if let regex = try? NSRegularExpression(pattern: dotBlockPattern) {
+        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+        
+        for match in matches where match.numberOfRanges >= 2 {
+            let nameRange = match.range(at: 1)
+            
+            if let stringRange = Range(nameRange, in: code),
+               let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
+                attributedString[attributedRange].foregroundColor = Color(0xD0A8FF)
+                attributedString[attributedRange].font = .body.bold()
             }
         }
     }
