@@ -1,5 +1,3 @@
-// An enumeration of navigation experiences used to define the app architecture
-
 import SwiftUI
 
 enum Experience: Int, Identifiable, CaseIterable, Codable {

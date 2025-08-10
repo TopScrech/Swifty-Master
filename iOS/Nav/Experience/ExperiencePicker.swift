@@ -1,5 +1,3 @@
-// A navigation experience picker used to select the navigation architecture for the app
-
 import SwiftUI
 
 struct ExperiencePicker: View {

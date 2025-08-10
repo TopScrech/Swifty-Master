@@ -1,5 +1,3 @@
-// A navigation experience picker row that displays the icon, name, and description for each experience
-
 import SwiftUI
 
 struct ExperiencePickerItem: View {

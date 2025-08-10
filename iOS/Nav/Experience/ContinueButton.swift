@@ -1,5 +1,3 @@
-// A confirmation button, custom styled for iOS
-
 import SwiftUI
 
 struct ContinueButton: View {
