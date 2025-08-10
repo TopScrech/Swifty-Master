@@ -10,15 +10,15 @@ extension Topic {
                 "font(_:)": "https://developer.apple.com/documentation/swiftui/text/font(_:)",
                 "fontDesign(_:)": "https://developer.apple.com/documentation/swiftui/text/fontdesign(_:)",
                 "fontWeight(_:)": "https://developer.apple.com/documentation/swiftui/text/fontweight(_:)",
-                "fontwidth(_:)": "https://developer.apple.com/documentation/swiftui/text/fontwidth(_:)"
+                "fontWidth(_:)": "https://developer.apple.com/documentation/swiftui/text/fontwidth(_:)"
             ]
             
         case .textField:
             [
                 "Text Field": "https://developer.apple.com/documentation/swiftui/textfield",
-                "textfieldstyle(_:)": "https://developer.apple.com/documentation/swiftui/view/textfieldstyle(_:)",
-                "Building rich SwiftUI text experiences (iOS 26)": "https://developer.apple.com/documentation/swiftui/building-rich-swiftui-text-experiences",
-                "keyboardtype(_:)": "https://developer.apple.com/documentation/swiftui/view/keyboardtype(_:)"
+                "textFieldStyle(_:)": "https://developer.apple.com/documentation/swiftui/view/textfieldstyle(_:)",
+                "keyboardType(_:)": "https://developer.apple.com/documentation/swiftui/view/keyboardtype(_:)",
+                "Building rich SwiftUI text experiences (iOS 26)": "https://developer.apple.com/documentation/swiftui/building-rich-swiftui-text-experiences"
             ]
             
         case .textEditor:
@@ -40,20 +40,20 @@ extension Topic {
         case .gauges:
             [
                 "Gauge": "https://developer.apple.com/documentation/swiftui/gauge",
-                "gaugestyle(_:)": "https://developer.apple.com/documentation/swiftui/view/gaugestyle(_:)"
+                "gaugeStyle(_:)": "https://developer.apple.com/documentation/swiftui/view/gaugestyle(_:)"
             ]
             
         case .progressView:
             [
                 "ProgressView": "https://developer.apple.com/documentation/swiftui/progressview",
-                "progressviewstyle(_:)": "https://developer.apple.com/documentation/swiftui/view/progressviewstyle(_:)"
+                "progressViewStyle(_:)": "https://developer.apple.com/documentation/swiftui/view/progressviewstyle(_:)"
             ]
             
         case .button:
             [
                 "Button": "https://developer.apple.com/documentation/swiftui/button",
-                "buttonstyle(_:)": "https://developer.apple.com/documentation/swiftui/view/buttonstyle(_:)",
-                "buttonbordershape(_:)": "https://developer.apple.com/documentation/swiftui/view/buttonbordershape(_:)"
+                "buttonStyle(_:)": "https://developer.apple.com/documentation/swiftui/view/buttonstyle(_:)",
+                "buttonBorderShape(_:)": "https://developer.apple.com/documentation/swiftui/view/buttonbordershape(_:)"
             ]
             
         case .toggle:
@@ -64,7 +64,7 @@ extension Topic {
             
         case .menu: [
             "Menu": "https://developer.apple.com/documentation/swiftui/menu",
-            "menustyle(_:)": "https://developer.apple.com/documentation/swiftui/view/menustyle(_:)"
+            "menuStyle(_:)": "https://developer.apple.com/documentation/swiftui/view/menustyle(_:)"
         ]
             
         case .slider:
@@ -76,7 +76,7 @@ extension Topic {
         case .picker:
             [
                 "Picker": "https://developer.apple.com/documentation/swiftui/picker",
-                "pickerstyle(_:)": "https://developer.apple.com/documentation/swiftui/view/pickerstyle(_:)"
+                "pickerStyle(_:)": "https://developer.apple.com/documentation/swiftui/view/pickerstyle(_:)"
             ]
             
         case .contextMenu:
@@ -97,7 +97,7 @@ extension Topic {
             
         case .appStoreOverlay:
             [
-                "appstoreoverlay(ispresented:configuration:)": "https://developer.apple.com/documentation/swiftui/view/appstoreoverlay(ispresented:configuration:)",
+                "appStoreOverlay(ispresented:configuration:)": "https://developer.apple.com/documentation/swiftui/view/appstoreoverlay(ispresented:configuration:)",
                 "SKOverlay": "https://developer.apple.com/documentation/storekit/skoverlay"
             ]
             
