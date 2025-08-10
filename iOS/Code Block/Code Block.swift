@@ -1,6 +1,9 @@
 import Foundation
 
-enum CodeBlock: String {
+enum CodeBlock: String, Identifiable, CaseIterable {
+    var id: String {
+        self.rawValue
+    }
     
     // Content
     case text, mdRegular, mdBoldItalic, mdStrikethrough, mdMonospaced, mdLink, textShortenedNumbers,

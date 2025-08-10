@@ -195,6 +195,8 @@
 		F3C6F6762E40E57B00E94540 /* TopicProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6F6742E40E57B00E94540 /* TopicProgressView.swift */; };
 		F3C6F6912E40E58000E94540 /* TopicBadges.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6F6902E40E58000E94540 /* TopicBadges.swift */; };
 		F3C6F6922E40E58000E94540 /* TopicBadges.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6F6902E40E58000E94540 /* TopicBadges.swift */; };
+		F3C92B162E48AF4300203691 /* DebugSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C92B152E48AF4300203691 /* DebugSettings.swift */; };
+		F3C92B172E48AF4300203691 /* DebugSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C92B152E48AF4300203691 /* DebugSettings.swift */; };
 		F3CFBD512E3F8AE2005F93EA /* mdMonospaced.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD272E3F8AE2005F93EA /* mdMonospaced.txt */; };
 		F3CFBD522E3F8AE2005F93EA /* buttonCustom.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD2E2E3F8AE2005F93EA /* buttonCustom.txt */; };
 		F3CFBD532E3F8AE2005F93EA /* lowPowerMode.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD432E3F8AE2005F93EA /* lowPowerMode.txt */; };
@@ -477,6 +479,7 @@
 		F3C6F6712E40E57A00E94540 /* TopicGauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicGauge.swift; sourceTree = "<group>"; };
 		F3C6F6742E40E57B00E94540 /* TopicProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicProgressView.swift; sourceTree = "<group>"; };
 		F3C6F6902E40E58000E94540 /* TopicBadges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicBadges.swift; sourceTree = "<group>"; };
+		F3C92B152E48AF4300203691 /* DebugSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSettings.swift; sourceTree = "<group>"; };
 		F3CFBD232E3F8AE2005F93EA /* divider.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = divider.txt; sourceTree = "<group>"; };
 		F3CFBD242E3F8AE2005F93EA /* image.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = image.txt; sourceTree = "<group>"; };
 		F3CFBD252E3F8AE2005F93EA /* mdBoldItalic.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mdBoldItalic.txt; sourceTree = "<group>"; };
@@ -628,6 +631,7 @@
 			isa = PBXGroup;
 			children = (
 				F34480462E2D5D1900D18E2E /* SettingsView.swift */,
+				F3C92B152E48AF4300203691 /* DebugSettings.swift */,
 				F3AE99D82E2F861C00D70249 /* ColorTheme.swift */,
 			);
 			path = Settings;
@@ -1391,6 +1395,7 @@
 				F314C81C2E2E4BB900F63B6A /* TopicShape.swift in Sources */,
 				F3CFBE0C2E3F985C005F93EA /* TopicLazyHGrid.swift in Sources */,
 				F3CFBDD22E3F901C005F93EA /* TopicPassAView.swift in Sources */,
+				F3C92B162E48AF4300203691 /* DebugSettings.swift in Sources */,
 				F3BF16E32E2C7D1C005212D1 /* TopicHeading.swift in Sources */,
 				F35199022E2B9F53004E0F02 /* NavModel.swift in Sources */,
 				F3CFBDEE2E3F95B7005F93EA /* TopicZStack.swift in Sources */,
@@ -1473,6 +1478,7 @@
 				F3BF16DA2E2C76A8005212D1 /* ContentView.swift in Sources */,
 				F314C8032E2E2AA800F63B6A /* FontWeightItem.swift in Sources */,
 				F35199162E2B9F53004E0F02 /* NavModel.swift in Sources */,
+				F3C92B172E48AF4300203691 /* DebugSettings.swift in Sources */,
 				F314C8272E2E52A200F63B6A /* ValueStore.swift in Sources */,
 				F35199192E2B9F53004E0F02 /* NavContainer.swift in Sources */,
 				F3CFBE0E2E3F994E005F93EA /* TopicList.swift in Sources */,

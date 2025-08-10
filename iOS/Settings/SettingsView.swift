@@ -21,37 +21,8 @@ struct SettingsView: View {
             }
             
             Toggle("Use built-in Safari", isOn: $store.builtInBrowser)
-#if DEBUG
-            Section("Debug") {
-                Toggle("Show status bar", isOn: $store.showStatusBar)
-                
-                Button {
-                    store.favoriteTopics = Topic.allCases
-                } label: {
-                    HStack {
-                        Text("Add all to favorites")
-                        
-                        Spacer()
-                        
-                        Image(systemName: "star")
-                            .foregroundStyle(.yellow)
-                    }
-                }
-                
-                Button(role: .destructive) {
-                    store.favoriteTopics = []
-                } label: {
-                    HStack {
-                        Text("Remove all favorites")
-                        
-                        Spacer()
-                        
-                        Image(systemName: "star.slash")
-                            .secondary()
-                    }
-                }
-            }
-#endif
+            
+            DebugSettings()
         }
         .navigationTitle("Settings")
         .formStyle(.grouped)
