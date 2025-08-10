@@ -79,7 +79,7 @@ struct GlassProminentButtonStyle: ViewModifier {
     func body(content: Content) -> some View {
         if #available(iOS 26, macOS 26, *) {
             content
-#if DEBUG
+#if DEBUG && !os(visionOS)
                 .buttonStyle(.glassProminent)
 #endif
         } else {

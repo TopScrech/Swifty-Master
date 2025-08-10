@@ -39,7 +39,9 @@ struct CodeBlockView: View {
                     }
                 }
                 .padding()
+#if !os(visionOS)
                 .frame(minWidth: UIScreen.main.bounds.width * 0.92, alignment: .leading)
+#endif
                 .background(.ultraThinMaterial)
                 .cornerRadius(20)
                 
