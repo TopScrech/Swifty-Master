@@ -7,6 +7,11 @@ struct SettingsView: View {
         Form {
             Section {
                 Toggle("Code line numbers", isOn: $store.showCodeLineNumbers)
+                
+                Toggle(isOn: $store.favoriteArticlesBadge) {
+                    Text("Favorite articles badge")
+                    Text("Displayed on top of the tab bar")
+                }
             }
             
             Section {

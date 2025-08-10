@@ -6,6 +6,7 @@ final class ValueStore: ObservableObject {
     @AppStorage("nav_mode") var navMode: NavMode?
     @AppStorage("last_tab") var lastTab = 0
     @AppStorage("built_in_browser") var builtInBrowser = true
+    @AppStorage("favorite_articles_badge") var favoriteArticlesBadge = false
     
     // Debug
     @AppStorage("show_code_line_numbers") var showCodeLineNumbers = false
