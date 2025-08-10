@@ -11,7 +11,7 @@ struct TopicSpacer: View {
             
             TopicHeading("Spacer with a minimum size")
             
-            Text("⚠️ Keep in mind that a Spacer has a minimum length \(Text("not").underline()) equal to 0 by default")
+            TopicWarning("Keep in mind that a Spacer has a minimum length \(Text("not").underline()) equal to 0 by default")
             
             CodeBlockView("""
 Spacer(minLength: 16)

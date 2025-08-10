@@ -94,6 +94,8 @@
 		F33904212E49341000A22EE1 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = F33904202E49341000A22EE1 /* SafariCover */; };
 		F33904262E49548500A22EE1 /* badgeOverAppIcon.txt in Resources */ = {isa = PBXBuildFile; fileRef = F33904252E49548500A22EE1 /* badgeOverAppIcon.txt */; };
 		F33904272E49548500A22EE1 /* badgeOverAppIcon.txt in Resources */ = {isa = PBXBuildFile; fileRef = F33904252E49548500A22EE1 /* badgeOverAppIcon.txt */; };
+		F339042A2E495C2A00A22EE1 /* TopicWarning.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33904292E495C2A00A22EE1 /* TopicWarning.swift */; };
+		F339042B2E495C2A00A22EE1 /* TopicWarning.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33904292E495C2A00A22EE1 /* TopicWarning.swift */; };
 		F33E8B192E41495100B05370 /* ContentViewNavButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B182E41495100B05370 /* ContentViewNavButtons.swift */; };
 		F33E8B1A2E41495100B05370 /* ContentViewNavButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B182E41495100B05370 /* ContentViewNavButtons.swift */; };
 		F33E8B1C2E4162C100B05370 /* TopicDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B1B2E4162C100B05370 /* TopicDoc.swift */; };
@@ -419,6 +421,7 @@
 		F3378F9C2E2E68DF00A31D7F /* TopicDetectOSVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectOSVersion.swift; sourceTree = "<group>"; };
 		F339041D2E4932A200A22EE1 /* BrightnessSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessSlider.swift; sourceTree = "<group>"; };
 		F33904252E49548500A22EE1 /* badgeOverAppIcon.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = badgeOverAppIcon.txt; sourceTree = "<group>"; };
+		F33904292E495C2A00A22EE1 /* TopicWarning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicWarning.swift; sourceTree = "<group>"; };
 		F33E8B182E41495100B05370 /* ContentViewNavButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewNavButtons.swift; sourceTree = "<group>"; };
 		F33E8B1B2E4162C100B05370 /* TopicDoc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDoc.swift; sourceTree = "<group>"; };
 		F33E8B1E2E4162DF00B05370 /* TopicIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicIcon.swift; sourceTree = "<group>"; };
@@ -873,6 +876,7 @@
 				F3BF16E12E2C7D1C005212D1 /* TopicHeading.swift */,
 				F344803F2E2D4E0500D18E2E /* TopicActionButton.swift */,
 				F314C7F82E2E1F0F00F63B6A /* TopicDisclosureGroup.swift */,
+				F33904292E495C2A00A22EE1 /* TopicWarning.swift */,
 				F314C7F42E2E1E7200F63B6A /* Content */,
 				F34480422E2D548500D18E2E /* Control */,
 				F3BF16E42E2CCDE8005212D1 /* Nav */,
@@ -1366,6 +1370,7 @@
 				F3CFBE242E3F9AFD005F93EA /* TopicPadding.swift in Sources */,
 				F314C8192E2E4BB600F63B6A /* TopicDivider.swift in Sources */,
 				F314C8162E2E4B8700F63B6A /* TopicLabel.swift in Sources */,
+				F339042B2E495C2A00A22EE1 /* TopicWarning.swift in Sources */,
 				F314C8362E2E538200F63B6A /* TopicButton.swift in Sources */,
 				F3CFBE272E3F9B16005F93EA /* TopicFrame.swift in Sources */,
 				F314C83C2E2E540800F63B6A /* TopicSheet.swift in Sources */,
@@ -1483,6 +1488,7 @@
 				F3CFBDCB2E3F900F005F93EA /* TopicNavigationBar.swift in Sources */,
 				F34480452E2D548F00D18E2E /* TopicToggle.swift in Sources */,
 				F35199212E2B9F53004E0F02 /* StackContentView.swift in Sources */,
+				F339042A2E495C2A00A22EE1 /* TopicWarning.swift in Sources */,
 				F3CFBDD12E3F901C005F93EA /* TopicPassAView.swift in Sources */,
 				F3CFBE412E3F9D2E005F93EA /* TopicDetectScreenSize.swift in Sources */,
 				F3CFBDED2E3F95B7005F93EA /* TopicZStack.swift in Sources */,
