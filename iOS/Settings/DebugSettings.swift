@@ -6,7 +6,7 @@ struct DebugSettings: View {
     var body: some View {
 #if DEBUG
         Section("Debug") {
-            Toggle("Show status bar", isOn: $store.showStatusBar)
+            Toggle("Status bar", isOn: $store.showStatusBar)
             
             Button {
                 store.favoriteTopics = Topic.allCases
@@ -17,6 +17,7 @@ struct DebugSettings: View {
                     Spacer()
                     
                     Image(systemName: "star")
+                        .title3()
                         .foregroundStyle(.yellow)
                 }
             }
@@ -30,7 +31,9 @@ struct DebugSettings: View {
                     Spacer()
                     
                     Image(systemName: "star.slash")
+                        .title3()
                         .secondary()
+                        .foregroundStyle(.red)
                 }
             }
             

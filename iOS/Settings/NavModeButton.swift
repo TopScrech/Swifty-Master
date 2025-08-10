@@ -1,14 +1,24 @@
 import SwiftUI
 
-struct ExperienceButton: View {
+struct NavModeButton: View {
     @Environment(NavModel.self) private var nav
     @EnvironmentObject private var store: ValueStore
     
     var body: some View {
         @Bindable var nav = nav
         
-        Button("Nav mode") {
+        Button {
             nav.showExperiencePicker = true
+        } label: {
+            HStack {
+                Text("Navigation mode")
+                
+                Spacer()
+                
+                Image(systemName: "sidebar.left")
+                    .title3()
+                    .secondary()
+            }
         }
         .help("Choose your navigation experience")
         .sheet($nav.showExperiencePicker) {
@@ -18,7 +28,7 @@ struct ExperienceButton: View {
 }
 
 #Preview {
-    ExperienceButton()
+    NavModeButton()
         .environment(NavModel.shared)
         .environmentObject(ValueStore())
 }

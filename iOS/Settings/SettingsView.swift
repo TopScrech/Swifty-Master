@@ -6,11 +6,11 @@ struct SettingsView: View {
     var body: some View {
         Form {
             Section {
-                Toggle("Show code line numbers", isOn: $store.showCodeLineNumbers)
+                Toggle("Code line numbers", isOn: $store.showCodeLineNumbers)
             }
             
             Section {
-                ExperienceButton()
+                NavModeButton()
             }
             
             Picker("Color theme", selection: $store.colorTheme) {

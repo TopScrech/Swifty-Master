@@ -22,7 +22,7 @@ struct NavContainer: View {
                 TwoColumnContentView()
                 
             case nil:
-                ExperienceButton()
+                NavModeButton()
                     .onAppear {
                         nav.showExperiencePicker = true
                     }
