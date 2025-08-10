@@ -49,8 +49,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          list = "List",
          scrollView = "ScrollView",
          grid = "Grid",
-         lazyVGrid = "LazyVGrid",
-         lazyHGrid = "LazyHGrid",
+         lazyGrids = "Lazy Grids",
          tabView = "TabView",
          
          // Layout

@@ -87,8 +87,7 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .list: AnyView(TopicList())
     case .scrollView: AnyView(TopicScrollView())
     case .grid: AnyView(TopicGrid())
-    case .lazyVGrid: AnyView(TopicLazyVGrid())
-    case .lazyHGrid: AnyView(TopicLazyHGrid())
+    case .lazyGrids: AnyView(TopicLazyGrids())
     case .tabView: AnyView(TopicTabView())
         
         // Layout

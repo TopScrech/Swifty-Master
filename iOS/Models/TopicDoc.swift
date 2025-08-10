@@ -160,11 +160,11 @@ extension Topic {
         case .grid:
             [.init("Grid", url: "https://developer.apple.com/documentation/swiftui/grid")]
             
-        case .lazyVGrid:
-            [.init("LazyVGrid", url: "https://developer.apple.com/documentation/swiftui/lazyvgrid")]
-            
-        case .lazyHGrid:
-            [.init("LazyHGrid", url: "https://developer.apple.com/documentation/swiftui/lazyhgrid")]
+        case .lazyGrids:
+            [
+                .init("LazyVGrid", url: "https://developer.apple.com/documentation/swiftui/lazyvgrid"),
+                .init("LazyHGrid", url: "https://developer.apple.com/documentation/swiftui/lazyhgrid")
+            ]
             
         case .list:
             [.init("List", url: "https://developer.apple.com/documentation/swiftui/list")]

@@ -49,8 +49,7 @@ extension Topic {
         case .list: "list.bullet.clipboard"
         case .scrollView: "scroll"
         case .grid: "square.grid.3x3"
-        case .lazyVGrid: "square.grid.3x2"
-        case .lazyHGrid: "square.grid.3x2"
+        case .lazyGrids: "square.grid.3x2"
         case .tabView: "platter.filled.bottom.iphone"
             
             // Layout
