@@ -1,10 +1,8 @@
-// Width
-UIScreen.main.bounds.width
+// Width & Height
+let bounds = UIScreen.main.bounds
+let width  = bounds.width
+let height = bounds.height
 
-// Height
-UIScreen.main.bounds.height
-
-// Usage Example
 Rectangle()
     .fill(.blue)
-    .frame(maxWidth: UIScreen.main.bounds.width * 0.9)
+    .frame(maxWidth: width * 0.9)

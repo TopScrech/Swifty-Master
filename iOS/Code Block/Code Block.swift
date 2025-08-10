@@ -68,7 +68,7 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          gradient,
          
          // System
-         darkMode,
+         darkMode, darkModeLock,
          detectOSVersion, detectOSVersionNewAndOld,
          lowPowerMode,
          detectLanguage,

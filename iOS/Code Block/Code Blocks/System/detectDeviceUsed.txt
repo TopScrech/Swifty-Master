@@ -1,7 +1,6 @@
 struct ContentView: View {
-    // Returns device used
-    let idiom = UIDevice.current.userInterfaceIdiom
-
+    private let idiom = UIDevice.current.userInterfaceIdiom
+    
     var body: some View {
         if idiom == .pad {
             Text("User is on an iPad")

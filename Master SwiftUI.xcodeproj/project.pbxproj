@@ -197,6 +197,8 @@
 		F3C6F6922E40E58000E94540 /* TopicBadges.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6F6902E40E58000E94540 /* TopicBadges.swift */; };
 		F3C92B162E48AF4300203691 /* DebugSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C92B152E48AF4300203691 /* DebugSettings.swift */; };
 		F3C92B172E48AF4300203691 /* DebugSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C92B152E48AF4300203691 /* DebugSettings.swift */; };
+		F3C92B192E48B7A600203691 /* darkModeLock.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3C92B182E48B7A600203691 /* darkModeLock.txt */; };
+		F3C92B1A2E48B7A600203691 /* darkModeLock.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3C92B182E48B7A600203691 /* darkModeLock.txt */; };
 		F3CFBD512E3F8AE2005F93EA /* mdMonospaced.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD272E3F8AE2005F93EA /* mdMonospaced.txt */; };
 		F3CFBD522E3F8AE2005F93EA /* buttonCustom.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD2E2E3F8AE2005F93EA /* buttonCustom.txt */; };
 		F3CFBD532E3F8AE2005F93EA /* lowPowerMode.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD432E3F8AE2005F93EA /* lowPowerMode.txt */; };
@@ -327,10 +329,10 @@
 		F3CFBDF42E3F96EA005F93EA /* list.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDF22E3F96EA005F93EA /* list.txt */; };
 		F3CFBDF62E3F96F1005F93EA /* scrollView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDF52E3F96F1005F93EA /* scrollView.txt */; };
 		F3CFBDF72E3F96F1005F93EA /* scrollView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDF52E3F96F1005F93EA /* scrollView.txt */; };
-		F3CFBDF92E3F973B005F93EA /* lazyVStack.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDF82E3F973B005F93EA /* lazyVStack.txt */; };
-		F3CFBDFA2E3F973B005F93EA /* lazyVStack.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDF82E3F973B005F93EA /* lazyVStack.txt */; };
-		F3CFBDFC2E3F9740005F93EA /* lazyHStack.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDFB2E3F9740005F93EA /* lazyHStack.txt */; };
-		F3CFBDFD2E3F9740005F93EA /* lazyHStack.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDFB2E3F9740005F93EA /* lazyHStack.txt */; };
+		F3CFBDF92E3F973B005F93EA /* lazyVGrid.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDF82E3F973B005F93EA /* lazyVGrid.txt */; };
+		F3CFBDFA2E3F973B005F93EA /* lazyVGrid.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDF82E3F973B005F93EA /* lazyVGrid.txt */; };
+		F3CFBDFC2E3F9740005F93EA /* lazyHGrid.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDFB2E3F9740005F93EA /* lazyHGrid.txt */; };
+		F3CFBDFD2E3F9740005F93EA /* lazyHGrid.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDFB2E3F9740005F93EA /* lazyHGrid.txt */; };
 		F3CFBDFF2E3F9741005F93EA /* tabView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDFE2E3F9741005F93EA /* tabView.txt */; };
 		F3CFBE002E3F9741005F93EA /* tabView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDFE2E3F9741005F93EA /* tabView.txt */; };
 		F3CFBE022E3F981C005F93EA /* TopicLazyVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE012E3F981C005F93EA /* TopicLazyVGrid.swift */; };
@@ -365,8 +367,8 @@
 		F3CFBE332E3F9C20005F93EA /* differentiateOS.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE312E3F9C20005F93EA /* differentiateOS.txt */; };
 		F3CFBE352E3F9C21005F93EA /* detectScreenSize.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE342E3F9C21005F93EA /* detectScreenSize.txt */; };
 		F3CFBE362E3F9C21005F93EA /* detectScreenSize.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE342E3F9C21005F93EA /* detectScreenSize.txt */; };
-		F3CFBE382E3F9C22005F93EA /* detectCompactOrRegularSize.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE372E3F9C22005F93EA /* detectCompactOrRegularSize.txt */; };
-		F3CFBE392E3F9C22005F93EA /* detectCompactOrRegularSize.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE372E3F9C22005F93EA /* detectCompactOrRegularSize.txt */; };
+		F3CFBE382E3F9C22005F93EA /* detectCompactOrRegular.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE372E3F9C22005F93EA /* detectCompactOrRegular.txt */; };
+		F3CFBE392E3F9C22005F93EA /* detectCompactOrRegular.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE372E3F9C22005F93EA /* detectCompactOrRegular.txt */; };
 		F3CFBE3B2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE3A2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift */; };
 		F3CFBE3C2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE3A2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift */; };
 		F3CFBE3E2E3F9D2D005F93EA /* TopicDifferentiateOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE3D2E3F9D2D005F93EA /* TopicDifferentiateOS.swift */; };
@@ -480,6 +482,7 @@
 		F3C6F6742E40E57B00E94540 /* TopicProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicProgressView.swift; sourceTree = "<group>"; };
 		F3C6F6902E40E58000E94540 /* TopicBadges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicBadges.swift; sourceTree = "<group>"; };
 		F3C92B152E48AF4300203691 /* DebugSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSettings.swift; sourceTree = "<group>"; };
+		F3C92B182E48B7A600203691 /* darkModeLock.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = darkModeLock.txt; sourceTree = "<group>"; };
 		F3CFBD232E3F8AE2005F93EA /* divider.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = divider.txt; sourceTree = "<group>"; };
 		F3CFBD242E3F8AE2005F93EA /* image.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = image.txt; sourceTree = "<group>"; };
 		F3CFBD252E3F8AE2005F93EA /* mdBoldItalic.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mdBoldItalic.txt; sourceTree = "<group>"; };
@@ -545,8 +548,8 @@
 		F3CFBDEF2E3F95B8005F93EA /* TopicGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicGrid.swift; sourceTree = "<group>"; };
 		F3CFBDF22E3F96EA005F93EA /* list.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = list.txt; sourceTree = "<group>"; };
 		F3CFBDF52E3F96F1005F93EA /* scrollView.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = scrollView.txt; sourceTree = "<group>"; };
-		F3CFBDF82E3F973B005F93EA /* lazyVStack.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lazyVStack.txt; sourceTree = "<group>"; };
-		F3CFBDFB2E3F9740005F93EA /* lazyHStack.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lazyHStack.txt; sourceTree = "<group>"; };
+		F3CFBDF82E3F973B005F93EA /* lazyVGrid.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lazyVGrid.txt; sourceTree = "<group>"; };
+		F3CFBDFB2E3F9740005F93EA /* lazyHGrid.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lazyHGrid.txt; sourceTree = "<group>"; };
 		F3CFBDFE2E3F9741005F93EA /* tabView.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = tabView.txt; sourceTree = "<group>"; };
 		F3CFBE012E3F981C005F93EA /* TopicLazyVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLazyVGrid.swift; sourceTree = "<group>"; };
 		F3CFBE072E3F981E005F93EA /* TopicTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTabView.swift; sourceTree = "<group>"; };
@@ -564,7 +567,7 @@
 		F3CFBE2E2E3F9C09005F93EA /* detectDeviceUsed.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectDeviceUsed.txt; sourceTree = "<group>"; };
 		F3CFBE312E3F9C20005F93EA /* differentiateOS.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = differentiateOS.txt; sourceTree = "<group>"; };
 		F3CFBE342E3F9C21005F93EA /* detectScreenSize.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectScreenSize.txt; sourceTree = "<group>"; };
-		F3CFBE372E3F9C22005F93EA /* detectCompactOrRegularSize.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectCompactOrRegularSize.txt; sourceTree = "<group>"; };
+		F3CFBE372E3F9C22005F93EA /* detectCompactOrRegular.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectCompactOrRegular.txt; sourceTree = "<group>"; };
 		F3CFBE3A2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectDeviceUsed.swift; sourceTree = "<group>"; };
 		F3CFBE3D2E3F9D2D005F93EA /* TopicDifferentiateOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDifferentiateOS.swift; sourceTree = "<group>"; };
 		F3CFBE402E3F9D2E005F93EA /* TopicDetectScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectScreenSize.swift; sourceTree = "<group>"; };
@@ -925,8 +928,8 @@
 				F3CFBDF22E3F96EA005F93EA /* list.txt */,
 				F3CFBDF52E3F96F1005F93EA /* scrollView.txt */,
 				F3CFBDE22E3F94D8005F93EA /* grid.txt */,
-				F3CFBDF82E3F973B005F93EA /* lazyVStack.txt */,
-				F3CFBDFB2E3F9740005F93EA /* lazyHStack.txt */,
+				F3CFBDF82E3F973B005F93EA /* lazyVGrid.txt */,
+				F3CFBDFB2E3F9740005F93EA /* lazyHGrid.txt */,
 				F3CFBDFE2E3F9741005F93EA /* tabView.txt */,
 			);
 			path = Collections;
@@ -1008,10 +1011,11 @@
 			children = (
 				F3CFBD412E3F8AE2005F93EA /* detectOSVersion.txt */,
 				F3CFBD3F2E3F8AE2005F93EA /* darkMode.txt */,
+				F3C92B182E48B7A600203691 /* darkModeLock.txt */,
 				F3CFBE2E2E3F9C09005F93EA /* detectDeviceUsed.txt */,
 				F3CFBE312E3F9C20005F93EA /* differentiateOS.txt */,
 				F3CFBE342E3F9C21005F93EA /* detectScreenSize.txt */,
-				F3CFBE372E3F9C22005F93EA /* detectCompactOrRegularSize.txt */,
+				F3CFBE372E3F9C22005F93EA /* detectCompactOrRegular.txt */,
 				F3CFBD402E3F8AE2005F93EA /* detectLanguage.txt */,
 				F3CFBD422E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt */,
 				F3CFBD432E3F8AE2005F93EA /* lowPowerMode.txt */,
@@ -1184,6 +1188,7 @@
 				F3ADA61B2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */,
 				F3CFBD512E3F8AE2005F93EA /* mdMonospaced.txt in Resources */,
 				F3CFBD522E3F8AE2005F93EA /* buttonCustom.txt in Resources */,
+				F3C92B1A2E48B7A600203691 /* darkModeLock.txt in Resources */,
 				F3CFBD532E3F8AE2005F93EA /* lowPowerMode.txt in Resources */,
 				F3CFBD542E3F8AE2005F93EA /* gradient.txt in Resources */,
 				F3CFBDB12E3F8E5D005F93EA /* navigationSplitView.txt in Resources */,
@@ -1206,7 +1211,7 @@
 				F3CFBD5E2E3F8AE2005F93EA /* contextMenu.txt in Resources */,
 				F3CFBD9F2E3F8B9F005F93EA /* label.txt in Resources */,
 				F3CFBD5F2E3F8AE2005F93EA /* mdLink.txt in Resources */,
-				F3CFBDFD2E3F9740005F93EA /* lazyHStack.txt in Resources */,
+				F3CFBDFD2E3F9740005F93EA /* lazyHGrid.txt in Resources */,
 				F3CFBD602E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt in Resources */,
 				F3C6F6702E40E46900E94540 /* progressView.txt in Resources */,
 				F3CFBDDB2E3F9473005F93EA /* hStack.txt in Resources */,
@@ -1224,7 +1229,7 @@
 				F3CFBD692E3F8AE2005F93EA /* button.txt in Resources */,
 				F3CFBD6A2E3F8AE2005F93EA /* appStoreOverlay.txt in Resources */,
 				F3CFBD6B2E3F8AE2005F93EA /* dismiss.txt in Resources */,
-				F3CFBDFA2E3F973B005F93EA /* lazyVStack.txt in Resources */,
+				F3CFBDFA2E3F973B005F93EA /* lazyVGrid.txt in Resources */,
 				F3CFBDA22E3F8C09005F93EA /* sfSymbols.txt in Resources */,
 				F3CFBD6C2E3F8AE2005F93EA /* stepper.txt in Resources */,
 				F3CFBD6D2E3F8AE2005F93EA /* slider.txt in Resources */,
@@ -1239,7 +1244,7 @@
 				F37D9DA82E488D6D008ECB6D /* text.txt in Resources */,
 				F3CFBD742E3F8AE2005F93EA /* alert.txt in Resources */,
 				F3CFBDC02E3F8E87005F93EA /* link.txt in Resources */,
-				F3CFBE392E3F9C22005F93EA /* detectCompactOrRegularSize.txt in Resources */,
+				F3CFBE392E3F9C22005F93EA /* detectCompactOrRegular.txt in Resources */,
 				F3CFBD752E3F8AE2005F93EA /* picker.txt in Resources */,
 				F3CFBDF42E3F96EA005F93EA /* list.txt in Resources */,
 				F3CFBD762E3F8AE2005F93EA /* color.txt in Resources */,
@@ -1253,7 +1258,7 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F3CFBDE32E3F94D8005F93EA /* grid.txt in Resources */,
-				F3CFBDFC2E3F9740005F93EA /* lazyHStack.txt in Resources */,
+				F3CFBDFC2E3F9740005F93EA /* lazyHGrid.txt in Resources */,
 				F3CFBDF32E3F96EA005F93EA /* list.txt in Resources */,
 				F3ADA61A2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */,
 				F3BBD9E82AEECD3500A9F7E7 /* Assets.xcassets in Resources */,
@@ -1277,6 +1282,7 @@
 				F3CFBDA72E3F8C96005F93EA /* customKeyboard.txt in Resources */,
 				F3CFBD842E3F8AE2005F93EA /* contextMenu.txt in Resources */,
 				F3CFBD852E3F8AE2005F93EA /* mdLink.txt in Resources */,
+				F3C92B192E48B7A600203691 /* darkModeLock.txt in Resources */,
 				F3CFBDDD2E3F947A005F93EA /* zStack.txt in Resources */,
 				F31B90BE2E41D29B003A2AA2 /* textEditorFormat.txt in Resources */,
 				F3CFBD9E2E3F8B9F005F93EA /* label.txt in Resources */,
@@ -1299,7 +1305,7 @@
 				F3CFBD8F2E3F8AE2005F93EA /* button.txt in Resources */,
 				F3CFBDB62E3F8E5E005F93EA /* navigationBar.txt in Resources */,
 				F3CFBD902E3F8AE2005F93EA /* appStoreOverlay.txt in Resources */,
-				F3CFBDF92E3F973B005F93EA /* lazyVStack.txt in Resources */,
+				F3CFBDF92E3F973B005F93EA /* lazyVGrid.txt in Resources */,
 				F3CFBD912E3F8AE2005F93EA /* dismiss.txt in Resources */,
 				F3CFBD922E3F8AE2005F93EA /* stepper.txt in Resources */,
 				F3CFBE142E3F99B2005F93EA /* padding.txt in Resources */,
@@ -1311,7 +1317,7 @@
 				F3CFBD962E3F8AE2005F93EA /* dismissHideBackButton.txt in Resources */,
 				F3CFBE2F2E3F9C09005F93EA /* detectDeviceUsed.txt in Resources */,
 				F3CFBE322E3F9C20005F93EA /* differentiateOS.txt in Resources */,
-				F3CFBE382E3F9C22005F93EA /* detectCompactOrRegularSize.txt in Resources */,
+				F3CFBE382E3F9C22005F93EA /* detectCompactOrRegular.txt in Resources */,
 				F3CFBD972E3F8AE2005F93EA /* emptyViewAnyView.txt in Resources */,
 				F3CFBD982E3F8AE2005F93EA /* sheet.txt in Resources */,
 				F3CFBE172E3F99B8005F93EA /* frame.txt in Resources */,
