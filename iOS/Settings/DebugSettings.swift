@@ -32,10 +32,10 @@ struct DebugSettings: View {
                     
                     Image(systemName: "star.slash")
                         .title3()
-                        .secondary()
                         .foregroundStyle(.red)
                 }
             }
+            .disabled(store.favoriteTopics.isEmpty)
             
             NavigationLink("All code blocks") {
                 ScrollView {
