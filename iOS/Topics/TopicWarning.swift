@@ -17,6 +17,7 @@ struct TopicWarning: View {
             
             Text(warning)
                 .padding(.vertical)
+                .padding(.horizontal, 5)
             
             Spacer()
         }
