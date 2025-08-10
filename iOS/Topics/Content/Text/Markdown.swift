@@ -4,25 +4,25 @@ struct Markdown: View {
     var body: some View {
         VStack(spacing: 25) {
             VStack {
-                Text("This is regular text")
+                Text("Regular text")
                 
                 CodeBlockView(.mdRegular)
             }
             
             VStack {
-                Text("This is **bold** text, this is *italic* text, and this is ***bold, italic*** text")
+                Text("**Bold** ***bold italic***")
                 
                 CodeBlockView(.mdBoldItalic)
             }
             
             VStack {
-                Text("~~A strikethrough example~~")
+                Text("~~Strikethrough~~")
                 
                 CodeBlockView(.mdStrikethrough)
             }
             
             VStack {
-                Text("`Monospaced works too`")
+                Text("`Monospaced`")
                 
                 CodeBlockView(.mdMonospaced)
             }
