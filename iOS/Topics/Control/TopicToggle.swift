@@ -5,9 +5,11 @@ struct TopicToggle: View {
     
     var body: some View {
         VStack(spacing: 25) {
-            Text("Toggle")
+            Text("Toggle lets users switch a value on or off, and can be bound to a state property to update your UI automatically")
             
             Toggle("Toggle", isOn: $isOn)
+                .padding()
+                .glassyBackground(16)
             
             CodeBlockView(.toggle)
             
