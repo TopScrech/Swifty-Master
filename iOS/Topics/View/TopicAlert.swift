@@ -1,5 +1,4 @@
 import SwiftUI
-import MapKit
 
 struct TopicAlert: View {
     @State private var alertExample = false
