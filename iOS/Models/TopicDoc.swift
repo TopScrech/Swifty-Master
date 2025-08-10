@@ -90,7 +90,7 @@ extension Topic {
             ["popover(isPresented:attachmentAnchor:arrowEdge:content:)": "https://developer.apple.com/documentation/swiftui/view/popover(ispresented:attachmentanchor:arrowedge:content:)"]
             
         case .alert:
-            ["alert(_:ispresented:actions:message:)-6awwp": "https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:actions:message:)-6awwp"]
+            ["alert(_:ispresented:actions:message:)": "https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:actions:message:)-6awwp"]
             
         case .emptyView:
             ["EmptyView": "https://developer.apple.com/documentation/swiftui/emptyview"]
