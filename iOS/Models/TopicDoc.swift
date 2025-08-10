@@ -205,8 +205,10 @@ extension Topic {
         case .detectDarkMode:
             [.init("colorScheme", url: "https://developer.apple.com/documentation/swiftui/environmentvalues/colorscheme")]
             
-        case .detectDeviceUsed:
-            [.init("UIUserInterfaceIdiom", url: "https://developer.apple.com/documentation/uikit/uiuserinterfaceidiom")]
+#warning("Add more")
+        case .detectOSVersion: [
+            .init("UIUserInterfaceIdiom", url: "https://developer.apple.com/documentation/uikit/uiuserinterfaceidiom")
+        ]
             
         case .detectLang:
             [.init("preferredLocalizations", url: "https://developer.apple.com/documentation/foundation/bundle/preferredlocalizations")]

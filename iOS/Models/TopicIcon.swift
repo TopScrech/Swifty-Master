@@ -68,8 +68,7 @@ extension Topic {
             // System
         case .detectOSVersion: "waveform.path.ecg.magnifyingglass"
         case .detectDarkMode: "circle.righthalf.filled"
-        case .detectDeviceUsed: "macbook.and.vision.pro"
-        case .differentiateOS: "macbook.sizes"
+        case .differentiateOS: "macbook.and.vision.pro"
         case .detectScreenSize: "arrow.down.left.and.arrow.up.right.rectangle"
         case .detectCompactOrRegular: "iphone.sizes"
         case .detectLang: "globe"

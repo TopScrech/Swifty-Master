@@ -367,8 +367,6 @@
 		F3CFBE362E3F9C21005F93EA /* detectScreenSize.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE342E3F9C21005F93EA /* detectScreenSize.txt */; };
 		F3CFBE382E3F9C22005F93EA /* detectCompactOrRegular.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE372E3F9C22005F93EA /* detectCompactOrRegular.txt */; };
 		F3CFBE392E3F9C22005F93EA /* detectCompactOrRegular.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE372E3F9C22005F93EA /* detectCompactOrRegular.txt */; };
-		F3CFBE3B2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE3A2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift */; };
-		F3CFBE3C2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE3A2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift */; };
 		F3CFBE3E2E3F9D2D005F93EA /* TopicDifferentiateOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE3D2E3F9D2D005F93EA /* TopicDifferentiateOS.swift */; };
 		F3CFBE3F2E3F9D2D005F93EA /* TopicDifferentiateOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE3D2E3F9D2D005F93EA /* TopicDifferentiateOS.swift */; };
 		F3CFBE412E3F9D2E005F93EA /* TopicDetectScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE402E3F9D2E005F93EA /* TopicDetectScreenSize.swift */; };
@@ -565,7 +563,6 @@
 		F3CFBE312E3F9C20005F93EA /* differentiateOS.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = differentiateOS.txt; sourceTree = "<group>"; };
 		F3CFBE342E3F9C21005F93EA /* detectScreenSize.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectScreenSize.txt; sourceTree = "<group>"; };
 		F3CFBE372E3F9C22005F93EA /* detectCompactOrRegular.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectCompactOrRegular.txt; sourceTree = "<group>"; };
-		F3CFBE3A2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectDeviceUsed.swift; sourceTree = "<group>"; };
 		F3CFBE3D2E3F9D2D005F93EA /* TopicDifferentiateOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDifferentiateOS.swift; sourceTree = "<group>"; };
 		F3CFBE402E3F9D2E005F93EA /* TopicDetectScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectScreenSize.swift; sourceTree = "<group>"; };
 		F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectCompactOrRegular.swift; sourceTree = "<group>"; };
@@ -687,7 +684,6 @@
 			children = (
 				F3378F9C2E2E68DF00A31D7F /* TopicDetectOSVersion.swift */,
 				F34480312E2CD41100D18E2E /* TopicDarkMode.swift */,
-				F3CFBE3A2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift */,
 				F3CFBE3D2E3F9D2D005F93EA /* TopicDifferentiateOS.swift */,
 				F3CFBE402E3F9D2E005F93EA /* TopicDetectScreenSize.swift */,
 				F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */,
@@ -1389,7 +1385,6 @@
 				F3AE99DA2E2F861C00D70249 /* ColorTheme.swift in Sources */,
 				F344803A2E2D225A00D18E2E /* TopicSpacer.swift in Sources */,
 				F33E8B1D2E4162C100B05370 /* TopicDoc.swift in Sources */,
-				F3CFBE3C2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift in Sources */,
 				F35199052E2B9F53004E0F02 /* NavContainer.swift in Sources */,
 				F35199062E2B9F53004E0F02 /* TwoColumnContentView.swift in Sources */,
 				F314C83F2E2E555600F63B6A /* TopicAlert.swift in Sources */,
@@ -1525,7 +1520,6 @@
 				F314C7F22E2E1C1800F63B6A /* TopicLinkLabel.swift in Sources */,
 				F3CFBE0B2E3F985C005F93EA /* TopicLazyHGrid.swift in Sources */,
 				F31653B62E3C0A1000A0E9D7 /* FavoritesList.swift in Sources */,
-				F3CFBE3B2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift in Sources */,
 				F314C8092E2E458B00F63B6A /* TopicTextField.swift in Sources */,
 				F314C84D2E2E657300F63B6A /* TopicStepper.swift in Sources */,
 				F344803B2E2D225A00D18E2E /* TopicSpacer.swift in Sources */,

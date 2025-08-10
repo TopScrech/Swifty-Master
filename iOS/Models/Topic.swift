@@ -68,7 +68,6 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          // System
          detectOSVersion = "Detect OS Version",
          detectDarkMode = "Detect Dark Mode",
-         detectDeviceUsed = "Detect Device Used",
          differentiateOS = "Differentiate OS",
          detectScreenSize = "Detect Screen Size",
          detectCompactOrRegular = "Detect Compact or Regular",
