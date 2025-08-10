@@ -199,6 +199,8 @@
 		F3C92B172E48AF4300203691 /* DebugSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C92B152E48AF4300203691 /* DebugSettings.swift */; };
 		F3C92B192E48B7A600203691 /* darkModeLock.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3C92B182E48B7A600203691 /* darkModeLock.txt */; };
 		F3C92B1A2E48B7A600203691 /* darkModeLock.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3C92B182E48B7A600203691 /* darkModeLock.txt */; };
+		F3C92B1C2E48BC4600203691 /* ExampleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C92B1B2E48BC4600203691 /* ExampleSheet.swift */; };
+		F3C92B1D2E48BC4600203691 /* ExampleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C92B1B2E48BC4600203691 /* ExampleSheet.swift */; };
 		F3CFBD512E3F8AE2005F93EA /* mdMonospaced.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD272E3F8AE2005F93EA /* mdMonospaced.txt */; };
 		F3CFBD522E3F8AE2005F93EA /* buttonCustom.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD2E2E3F8AE2005F93EA /* buttonCustom.txt */; };
 		F3CFBD532E3F8AE2005F93EA /* lowPowerMode.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBD432E3F8AE2005F93EA /* lowPowerMode.txt */; };
@@ -483,6 +485,7 @@
 		F3C6F6902E40E58000E94540 /* TopicBadges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicBadges.swift; sourceTree = "<group>"; };
 		F3C92B152E48AF4300203691 /* DebugSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSettings.swift; sourceTree = "<group>"; };
 		F3C92B182E48B7A600203691 /* darkModeLock.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = darkModeLock.txt; sourceTree = "<group>"; };
+		F3C92B1B2E48BC4600203691 /* ExampleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSheet.swift; sourceTree = "<group>"; };
 		F3CFBD232E3F8AE2005F93EA /* divider.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = divider.txt; sourceTree = "<group>"; };
 		F3CFBD242E3F8AE2005F93EA /* image.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = image.txt; sourceTree = "<group>"; };
 		F3CFBD252E3F8AE2005F93EA /* mdBoldItalic.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mdBoldItalic.txt; sourceTree = "<group>"; };
@@ -713,6 +716,7 @@
 			isa = PBXGroup;
 			children = (
 				F314C83A2E2E540800F63B6A /* TopicSheet.swift */,
+				F3C92B1B2E48BC4600203691 /* ExampleSheet.swift */,
 				F314C83D2E2E555600F63B6A /* TopicAlert.swift */,
 				F314C8522E2E65F000F63B6A /* TopicPopover.swift */,
 				F34480352E2D218400D18E2E /* TopicEmptyView.swift */,
@@ -1026,13 +1030,13 @@
 		F3CFBD4C2E3F8AE2005F93EA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F3CFBD4A2E3F8AE2005F93EA /* sheet.txt */,
+				F3CFBD4B2E3F8AE2005F93EA /* sheetBefore15.txt */,
 				F3CFBD452E3F8AE2005F93EA /* alert.txt */,
 				F3CFBD462E3F8AE2005F93EA /* appStoreOverlay.txt */,
 				F3CFBD472E3F8AE2005F93EA /* emptyView.txt */,
 				F3CFBD482E3F8AE2005F93EA /* emptyViewAnyView.txt */,
 				F3CFBD492E3F8AE2005F93EA /* popover.txt */,
-				F3CFBD4A2E3F8AE2005F93EA /* sheet.txt */,
-				F3CFBD4B2E3F8AE2005F93EA /* sheetBefore15.txt */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1425,6 +1429,7 @@
 				F314C8392E2E53A100F63B6A /* TopicContextMenu.swift in Sources */,
 				F34480412E2D4E0500D18E2E /* TopicActionButton.swift in Sources */,
 				F3CFBDE82E3F959D005F93EA /* TopicVStack.swift in Sources */,
+				F3C92B1C2E48BC4600203691 /* ExampleSheet.swift in Sources */,
 				F314C80D2E2E486200F63B6A /* TopicTextEditor.swift in Sources */,
 				F3CFBDC92E3F900E005F93EA /* TopicNavigationSplitView.swift in Sources */,
 				F3CFBDD52E3F901E005F93EA /* TopicLink.swift in Sources */,
@@ -1454,6 +1459,7 @@
 			files = (
 				F30207CF2D8B001300C26008 /* Markdown.swift in Sources */,
 				F3C6F6912E40E58000E94540 /* TopicBadges.swift in Sources */,
+				F3C92B1D2E48BC4600203691 /* ExampleSheet.swift in Sources */,
 				F33E8B282E416BEF00B05370 /* TestView.swift in Sources */,
 				F34480472E2D5D1900D18E2E /* SettingsView.swift in Sources */,
 				F3EB1CB62C58FFE5007E6366 /* Hover Effects.swift in Sources */,
