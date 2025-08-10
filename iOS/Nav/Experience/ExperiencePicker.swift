@@ -13,6 +13,10 @@ struct ExperiencePicker: View {
         _experience = experience
     }
     
+    private let columns = [
+        GridItem(.adaptive(minimum: 250))
+    ]
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -67,10 +71,6 @@ struct ExperiencePicker: View {
 #endif
         .interactiveDismissDisabled(selection == nil)
     }
-    
-    private var columns: [GridItem] {[
-        GridItem(.adaptive(minimum: 250))
-    ]}
     
     private func continueAction() {
         experience = selection
