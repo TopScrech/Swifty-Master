@@ -18,7 +18,7 @@ struct SettingsView: View {
                 NavModeButton()
             }
             
-            Picker("Color theme", selection: $store.colorTheme) {
+            Picker("Appearance", selection: $store.colorTheme) {
                 ForEach(ColorTheme.allCases) { theme in
                     Text(theme.loc)
                         .tag(theme)
