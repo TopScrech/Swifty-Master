@@ -2,7 +2,7 @@ import SwiftUI
 
 struct NavModePickerItem: View {
     @EnvironmentObject private var store: ValueStore
-    @Environment(\.dismiss) private var dismiss
+    @Environment(NavModel.self) private var nav
     
     private let navMode: NavMode
     
@@ -13,7 +13,7 @@ struct NavModePickerItem: View {
     var body: some View {
         Button {
             store.navMode = navMode
-            dismiss()
+            nav.showNavModePicker = false
         } label: {
             Label(selection: $store.navMode, navMode: navMode)
         }

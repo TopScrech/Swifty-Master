@@ -6,6 +6,10 @@ struct DebugSettings: View {
     var body: some View {
 #if DEBUG
         Section("Debug") {
+            Button("Reset nav mode") {
+                store.navMode = nil
+            }
+            
             Toggle("Status bar", isOn: $store.showStatusBar)
             
             Button {
