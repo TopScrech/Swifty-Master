@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct TopicBadges: View {
-    @State private var isOn = true
     @State private var number = 0
     
     private let center = UNUserNotificationCenter.current()

@@ -1,8 +1,6 @@
 import SwiftUI
 
 struct TopicGauge: View {
-    @State private var isOn = true
-    
     var body: some View {
         VStack(spacing: 25) {
             GaugeCard("accessoryCircular") {

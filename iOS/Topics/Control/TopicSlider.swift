@@ -5,7 +5,6 @@ struct TopicSlider: View {
         _brightness = State(initialValue: Double(UIScreen.main.brightness))
     }
     
-    @State private var isOn = true
     @State private var brightness = 0.0
     
     var body: some View {
