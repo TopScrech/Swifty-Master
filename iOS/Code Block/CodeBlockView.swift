@@ -58,6 +58,7 @@ struct CodeBlockView: View {
                             ShareLink(item: code)
                         }
                 }
+                .buttonStyle(.plain)
                 .secondary()
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
             }
