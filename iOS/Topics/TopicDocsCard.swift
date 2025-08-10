@@ -4,12 +4,10 @@ struct TopicDocsCard: View {
     @EnvironmentObject private var store: ValueStore
     @Environment(\.openURL) private var openURL
     
-    private let title: String
-    private let link: String
+    private let doc: TopicDocType
     
-    init(_ title: String, at link: String) {
-        self.title = title
-        self.link = link
+    init(_ doc: TopicDocType) {
+        self.doc = doc
     }
     
     @State private var safariCover = false
@@ -19,9 +17,9 @@ struct TopicDocsCard: View {
             openLink()
         } label: {
             HStack(spacing: 12) {
-                TopicDocsCardImage(link)
+                TopicDocsCardImage(doc.url)
                 
-                Text(title)
+                Text(doc.name)
                     .bold()
                     .rounded()
                     .lineLimit(2)
@@ -32,9 +30,9 @@ struct TopicDocsCard: View {
         }
         .padding(10)
         .background(.ultraThinMaterial, in: .rect(cornerRadius: 16))
-        .safariCover($safariCover, url: link)
+        .safariCover($safariCover, url: doc.url)
         .contextMenu {
-            if let url = URL(string: link) {
+            if let url = URL(string: doc.url) {
                 Button("Copy", systemImage: "document.on.document") {
                     Pasteboard.copy(url)
                 }
@@ -48,7 +46,7 @@ struct TopicDocsCard: View {
         if store.builtInBrowser {
             safariCover = true
         } else {
-            if let url = URL(string: link) {
+            if let url = URL(string: doc.url) {
                 openURL(url)
             }
         }
@@ -56,7 +54,7 @@ struct TopicDocsCard: View {
 }
 
 #Preview {
-    TopicDocsCard("Preview", at: "https://developer.apple.com/documentation/swiftui/toggle")
+    TopicDocsCard(.init("Preview", url: "https://developer.apple.com/documentation/swiftui/toggle"))
         .darkSchemePreferred()
         .scenePadding()
 }

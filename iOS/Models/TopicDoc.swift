@@ -1,205 +1,221 @@
 import Foundation
 
+struct TopicDocType: Identifiable {
+    var id: String {
+        name
+    }
+    
+    let name: String
+    let url: String
+    
+    init(_ name: String, url: String) {
+        self.name = name
+        self.url = url
+    }
+}
+
 extension Topic {
-    var docs: [String: String] {
+    var docs: [TopicDocType] {
         switch self {
             // MARK: - Content
         case .text:
             [
-                "Text": "https://developer.apple.com/documentation/swiftui/text",
-                "font(_:)": "https://developer.apple.com/documentation/swiftui/text/font(_:)",
-                "fontDesign(_:)": "https://developer.apple.com/documentation/swiftui/text/fontdesign(_:)",
-                "fontWeight(_:)": "https://developer.apple.com/documentation/swiftui/text/fontweight(_:)",
-                "fontWidth(_:)": "https://developer.apple.com/documentation/swiftui/text/fontwidth(_:)"
+                TopicDocType("Text", url: "https://developer.apple.com/documentation/swiftui/text"),
+                .init("font(_:)", url: "https://developer.apple.com/documentation/swiftui/text/font(_:)"),
+                .init("fontDesign(_:)", url: "https://developer.apple.com/documentation/swiftui/text/fontdesign(_:)"),
+                .init("fontWeight(_:)", url: "https://developer.apple.com/documentation/swiftui/text/fontweight(_:)"),
+                .init("fontWidth(_:)", url: "https://developer.apple.com/documentation/swiftui/text/fontwidth(_:)")
             ]
             
         case .textField:
             [
-                "Text Field": "https://developer.apple.com/documentation/swiftui/textfield",
-                "textFieldStyle(_:)": "https://developer.apple.com/documentation/swiftui/view/textfieldstyle(_:)",
-                "keyboardType(_:)": "https://developer.apple.com/documentation/swiftui/view/keyboardtype(_:)",
-                "Building rich SwiftUI text experiences (iOS 26)": "https://developer.apple.com/documentation/swiftui/building-rich-swiftui-text-experiences"
+                .init("Text Field", url: "https://developer.apple.com/documentation/swiftui/textfield"),
+                .init("textFieldStyle(_:)", url: "https://developer.apple.com/documentation/swiftui/view/textfieldstyle(_:)"),
+                .init("keyboardType(_:)", url: "https://developer.apple.com/documentation/swiftui/view/keyboardtype(_:)"),
+                .init("Building rich SwiftUI text experiences (iOS 26)", url: "https://developer.apple.com/documentation/swiftui/building-rich-swiftui-text-experiences")
             ]
             
         case .textEditor:
             [
-                "Text Editor": "https://developer.apple.com/documentation/swiftui/texteditor",
-                "init(text:selection:) (iOS 26)": "https://developer.apple.com/documentation/swiftui/texteditor/init(text:selection:)"
+                .init("Text Editor", url: "https://developer.apple.com/documentation/swiftui/texteditor"),
+                .init("init(text:selection:) (iOS 26)", url: "https://developer.apple.com/documentation/swiftui/texteditor/init(text:selection:)")
             ]
             
+            // MARK: - Image & Symbols
         case .image:
-            ["Image": "https://developer.apple.com/documentation/swiftui/image"]
+            [.init("Image", url: "https://developer.apple.com/documentation/swiftui/image")]
             
         case .sfSymbols:
-            ["Image(systemName:)": "https://developer.apple.com/documentation/swiftui/image/init(systemname:)"]
+            [.init("Image(systemName:)", url: "https://developer.apple.com/documentation/swiftui/image/init(systemname:)")]
             
         case .divider:
-            ["Divider": "https://developer.apple.com/documentation/swiftui/divider"]
+            [.init("Divider", url: "https://developer.apple.com/documentation/swiftui/divider")]
             
             // MARK: - Control
         case .gauges:
             [
-                "Gauge": "https://developer.apple.com/documentation/swiftui/gauge",
-                "gaugeStyle(_:)": "https://developer.apple.com/documentation/swiftui/view/gaugestyle(_:)"
+                .init("Gauge", url: "https://developer.apple.com/documentation/swiftui/gauge"),
+                .init("gaugeStyle(_:)", url: "https://developer.apple.com/documentation/swiftui/view/gaugestyle(_:)")
             ]
             
         case .progressView:
             [
-                "ProgressView": "https://developer.apple.com/documentation/swiftui/progressview",
-                "progressViewStyle(_:)": "https://developer.apple.com/documentation/swiftui/view/progressviewstyle(_:)"
+                .init("ProgressView", url: "https://developer.apple.com/documentation/swiftui/progressview"),
+                .init("progressViewStyle(_:)", url: "https://developer.apple.com/documentation/swiftui/view/progressviewstyle(_:)")
             ]
             
         case .button:
             [
-                "Button": "https://developer.apple.com/documentation/swiftui/button",
-                "buttonStyle(_:)": "https://developer.apple.com/documentation/swiftui/view/buttonstyle(_:)",
-                "buttonBorderShape(_:)": "https://developer.apple.com/documentation/swiftui/view/buttonbordershape(_:)"
+                .init("Button", url: "https://developer.apple.com/documentation/swiftui/button"),
+                .init("buttonStyle(_:)", url: "https://developer.apple.com/documentation/swiftui/view/buttonstyle(_:)")
             ]
             
         case .toggle:
             [
-                "Toggle": "https://developer.apple.com/documentation/swiftui/toggle",
-                "Toggles": "https://developer.apple.com/design/human-interface-guidelines/toggles"
+                .init("Toggle", url: "https://developer.apple.com/documentation/swiftui/toggle"),
+                .init("Toggles", url: "https://developer.apple.com/design/human-interface-guidelines/toggles")
             ]
             
-        case .menu: [
-            "Menu": "https://developer.apple.com/documentation/swiftui/menu",
-            "menuStyle(_:)": "https://developer.apple.com/documentation/swiftui/view/menustyle(_:)"
-        ]
+        case .menu:
+            [
+                .init("Menu", url: "https://developer.apple.com/documentation/swiftui/menu"),
+                .init("menuStyle(_:)", url: "https://developer.apple.com/documentation/swiftui/view/menustyle(_:)")
+            ]
             
         case .slider:
-            ["Slider": "https://developer.apple.com/documentation/swiftui/slider"]
+            [.init("Slider", url: "https://developer.apple.com/documentation/swiftui/slider")]
             
         case .stepper:
-            ["Stepper": "https://developer.apple.com/documentation/swiftui/stepper"]
+            [.init("Stepper", url: "https://developer.apple.com/documentation/swiftui/stepper")]
             
         case .picker:
             [
-                "Picker": "https://developer.apple.com/documentation/swiftui/picker",
-                "pickerStyle(_:)": "https://developer.apple.com/documentation/swiftui/view/pickerstyle(_:)"
+                .init("Picker", url: "https://developer.apple.com/documentation/swiftui/picker"),
+                .init("pickerStyle(_:)", url: "https://developer.apple.com/documentation/swiftui/view/pickerstyle(_:)")
             ]
             
         case .contextMenu:
-            ["ContextMenu": "https://developer.apple.com/documentation/swiftui/view/contextmenu(menuitems:)"]
+            [.init("ContextMenu", url: "https://developer.apple.com/documentation/swiftui/view/contextmenu(menuitems:)")]
             
             // MARK: - View
         case .sheet:
-            ["sheet(item:onDismiss:content:)": "https://developer.apple.com/documentation/swiftui/view/sheet(item:onDismiss:content:)"]
+            [.init("sheet(item:onDismiss:content:)", url: "https://developer.apple.com/documentation/swiftui/view/sheet(item:onDismiss:content:)")]
             
         case .popover:
-            ["popover(isPresented:attachmentAnchor:arrowEdge:content:)": "https://developer.apple.com/documentation/swiftui/view/popover(ispresented:attachmentanchor:arrowedge:content:)"]
+            [.init("popover(isPresented:attachmentAnchor:arrowEdge:content:)", url: "https://developer.apple.com/documentation/swiftui/view/popover(ispresented:attachmentanchor:arrowedge:content:)")]
             
         case .alert:
-            ["alert(_:ispresented:actions:message:)": "https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:actions:message:)-6awwp"]
+            [.init("alert(_:ispresented:actions:message:)", url: "https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:actions:message:)-6awwp")]
             
         case .emptyView:
-            ["EmptyView": "https://developer.apple.com/documentation/swiftui/emptyview"]
+            [.init("EmptyView", url: "https://developer.apple.com/documentation/swiftui/emptyview")]
             
         case .appStoreOverlay:
             [
-                "appStoreOverlay(ispresented:configuration:)": "https://developer.apple.com/documentation/swiftui/view/appstoreoverlay(ispresented:configuration:)",
-                "SKOverlay": "https://developer.apple.com/documentation/storekit/skoverlay"
+                .init("appStoreOverlay(ispresented:configuration:)", url: "https://developer.apple.com/documentation/swiftui/view/appstoreoverlay(ispresented:configuration:)"),
+                .init("SKOverlay", url: "https://developer.apple.com/documentation/storekit/skoverlay")
             ]
             
         case .badges:
             [
-                "applicationIconBadgeNumber (Deprecated, iOS 2.0 - 16.0)": "https://developer.apple.com/documentation/uikit/uiapplication/applicationiconbadgenumber",
-                "setBadgeCount(_:withCompletionHandler:)": "https://developer.apple.com/documentation/UserNotifications/UNUserNotificationCenter/setBadgeCount(_:withCompletionHandler:)"
+                .init("applicationIconBadgeNumber (Deprecated, iOS 2.0 - 16.0)", url: "https://developer.apple.com/documentation/uikit/uiapplication/applicationiconbadgenumber"),
+                .init("setBadgeCount(_:withCompletionHandler:)", url: "https://developer.apple.com/documentation/UserNotifications/UNUserNotificationCenter/setBadgeCount(_:withCompletionHandler:)")
             ]
             
-            // MARK: - Nav
+            // MARK: - Navigation
         case .dismiss:
-            ["dismiss()": "https://developer.apple.com/documentation/swiftui/environmentvalues/dismiss"]
+            [.init("dismiss()", url: "https://developer.apple.com/documentation/swiftui/environmentvalues/dismiss")]
             
         case .navigationView:
-            ["NavigationView (Deprecated)": "https://developer.apple.com/documentation/swiftui/navigationview"]
+            [.init("NavigationView (Deprecated)", url: "https://developer.apple.com/documentation/swiftui/navigationview")]
             
         case .navigationStack:
-            ["NavigationStack": "https://developer.apple.com/documentation/swiftui/navigationstack"]
+            [.init("NavigationStack", url: "https://developer.apple.com/documentation/swiftui/navigationstack")]
             
         case .navigationSplitView:
-            ["NavigationSplitView": "https://developer.apple.com/documentation/swiftui/navigationsplitview"]
+            [.init("NavigationSplitView", url: "https://developer.apple.com/documentation/swiftui/navigationsplitview")]
             
         case .navigationLink:
-            ["NavigationLink": "https://developer.apple.com/documentation/swiftui/navigationlink"]
+            [.init("NavigationLink", url: "https://developer.apple.com/documentation/swiftui/navigationlink")]
             
         case .navigationBar:
-            ["toolbar(content:)": "https://developer.apple.com/documentation/swiftui/view/toolbar(content:)"]
+            [.init("toolbar(content:)", url: "https://developer.apple.com/documentation/swiftui/view/toolbar(content:)")]
             
         case .passAView:
-            ["AnyView": "https://developer.apple.com/documentation/swiftui/anyview"]
+            [.init("AnyView", url: "https://developer.apple.com/documentation/swiftui/anyview")]
             
         case .link:
-            ["Link": "https://developer.apple.com/documentation/swiftui/link"]
+            [.init("Link", url: "https://developer.apple.com/documentation/swiftui/link")]
             
             // MARK: - Collections
         case .vStack:
-            ["VStack": "https://developer.apple.com/documentation/swiftui/vstack"]
+            [.init("VStack", url: "https://developer.apple.com/documentation/swiftui/vstack")]
             
         case .hStack:
-            ["HStack": "https://developer.apple.com/documentation/swiftui/hstack"]
+            [.init("HStack", url: "https://developer.apple.com/documentation/swiftui/hstack")]
             
         case .zStack:
-            ["ZStack": "https://developer.apple.com/documentation/swiftui/zstack"]
+            [.init("ZStack", url: "https://developer.apple.com/documentation/swiftui/zstack")]
             
         case .grid:
-            ["Grid": "https://developer.apple.com/documentation/swiftui/grid"]
+            [.init("Grid", url: "https://developer.apple.com/documentation/swiftui/grid")]
             
         case .lazyVGrid:
-            ["LazyVGrid": "https://developer.apple.com/documentation/swiftui/lazyvgrid"]
+            [.init("LazyVGrid", url: "https://developer.apple.com/documentation/swiftui/lazyvgrid")]
             
         case .lazyHGrid:
-            ["LazyHGrid": "https://developer.apple.com/documentation/swiftui/lazyhgrid"]
+            [.init("LazyHGrid", url: "https://developer.apple.com/documentation/swiftui/lazyhgrid")]
             
         case .list:
-            ["List": "https://developer.apple.com/documentation/swiftui/list"]
+            [.init("List", url: "https://developer.apple.com/documentation/swiftui/list")]
             
         case .scrollView:
-            ["ScrollView": "https://developer.apple.com/documentation/swiftui/scrollview"]
+            [.init("ScrollView", url: "https://developer.apple.com/documentation/swiftui/scrollview")]
             
         case .tabView:
-            ["TabView": "https://developer.apple.com/documentation/swiftui/tabview"]
+            [.init("TabView", url: "https://developer.apple.com/documentation/swiftui/tabview")]
             
             // MARK: - Layout
         case .padding:
-            ["padding(_:_:)": "https://developer.apple.com/documentation/swiftui/view/padding(_:_:)"]
+            [.init("padding(_:_:)", url: "https://developer.apple.com/documentation/swiftui/view/padding(_:_:)")]
             
         case .frame:
-            ["frame(width:height:alignment:)": "https://developer.apple.com/documentation/swiftui/view/frame(width:height:alignment:)"]
+            [.init("frame(width:height:alignment:)", url: "https://developer.apple.com/documentation/swiftui/view/frame(width:height:alignment:)")]
             
         case .geometryReader:
-            ["GeometryReader": "https://developer.apple.com/documentation/swiftui/geometryreader"]
+            [.init("GeometryReader", url: "https://developer.apple.com/documentation/swiftui/geometryreader")]
             
         case .spacer:
-            ["Spacer": "https://developer.apple.com/documentation/swiftui/spacer"]
+            [.init("Spacer", url: "https://developer.apple.com/documentation/swiftui/spacer")]
             
             // MARK: - Color
         case .color:
-            ["Color": "https://developer.apple.com/documentation/swiftui/color"]
+            [.init("Color", url: "https://developer.apple.com/documentation/swiftui/color")]
             
         case .gradient:
             [
-                "Gradient": "https://developer.apple.com/documentation/swiftui/gradient",
-                "LinearGradient": "https://developer.apple.com/documentation/swiftui/lineargradient",
-                "RadialGradient": "https://developer.apple.com/documentation/swiftui/radialgradient",
-                "AngularGradient": "https://developer.apple.com/documentation/swiftui/angulargradient",
-                "EllipticGradient": "https://developer.apple.com/documentation/swiftui/ellipticalgradient"
+                .init("Gradient", url: "https://developer.apple.com/documentation/swiftui/gradient"),
+                .init("LinearGradient", url: "https://developer.apple.com/documentation/swiftui/lineargradient"),
+                .init("RadialGradient", url: "https://developer.apple.com/documentation/swiftui/radialgradient"),
+                .init("AngularGradient", url: "https://developer.apple.com/documentation/swiftui/angulargradient"),
+                .init("EllipticGradient", url: "https://developer.apple.com/documentation/swiftui/ellipticalgradient")
             ]
             
             // MARK: - System
         case .detectDarkMode:
-            ["colorScheme": "https://developer.apple.com/documentation/swiftui/environmentvalues/colorscheme"]
+            [.init("colorScheme", url: "https://developer.apple.com/documentation/swiftui/environmentvalues/colorscheme")]
             
         case .detectDeviceUsed:
-            ["UIUserInterfaceIdiom": "https://developer.apple.com/documentation/uikit/uiuserinterfaceidiom"]
+            [.init("UIUserInterfaceIdiom", url: "https://developer.apple.com/documentation/uikit/uiuserinterfaceidiom")]
             
         case .detectLang:
-            ["preferredLocalizations": "https://developer.apple.com/documentation/foundation/bundle/preferredlocalizations"]
+            [.init("preferredLocalizations", url: "https://developer.apple.com/documentation/foundation/bundle/preferredlocalizations")]
             
         case .lowPowerMode:
-            ["isLowPowerModeEnabled": "https://developer.apple.com/documentation/foundation/processinfo/islowpowermodeenabled"]
+            [.init("isLowPowerModeEnabled", url: "https://developer.apple.com/documentation/foundation/processinfo/islowpowermodeenabled")]
             
-        default: [:]
+        default:
+            []
         }
     }
 }
