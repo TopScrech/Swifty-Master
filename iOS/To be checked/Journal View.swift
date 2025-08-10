@@ -1,3 +1,4 @@
+#if canImport(JournalingSuggestions)
 import SwiftUI
 import JournalingSuggestions
 
@@ -38,3 +39,4 @@ struct JournalView: View {
 #Preview {
     JournalView()
 }
+#endif
