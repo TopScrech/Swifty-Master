@@ -1,5 +1,3 @@
-var body: some View {
-    NavigationView {
-        ...
-    }
+NavigationView {
+    Text("Hello, world!")
 }

@@ -3,7 +3,7 @@ struct ContentView: View {
         ScrollView {
             ...
         }
-        .navigationTitle("Title here")
+        .navigationTitle("Title")
 
         // Back Color - Forces the title color to white
         .toolbarColorScheme(.dark, for: .navigationBar)
