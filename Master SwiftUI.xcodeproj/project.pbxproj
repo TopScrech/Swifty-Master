@@ -291,8 +291,8 @@
 		F3CFBDB72E3F8E5E005F93EA /* navigationBar.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDB52E3F8E5E005F93EA /* navigationBar.txt */; };
 		F3CFBDBC2E3F8E79005F93EA /* passAView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDBB2E3F8E79005F93EA /* passAView.txt */; };
 		F3CFBDBD2E3F8E79005F93EA /* passAView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDBB2E3F8E79005F93EA /* passAView.txt */; };
-		F3CFBDBF2E3F8E87005F93EA /* link in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDBE2E3F8E87005F93EA /* link */; };
-		F3CFBDC02E3F8E87005F93EA /* link in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDBE2E3F8E87005F93EA /* link */; };
+		F3CFBDBF2E3F8E87005F93EA /* link.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDBE2E3F8E87005F93EA /* link.txt */; };
+		F3CFBDC02E3F8E87005F93EA /* link.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDBE2E3F8E87005F93EA /* link.txt */; };
 		F3CFBDC22E3F8FA5005F93EA /* TopicNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDC12E3F8FA5005F93EA /* TopicNavigationView.swift */; };
 		F3CFBDC32E3F8FA5005F93EA /* TopicNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDC12E3F8FA5005F93EA /* TopicNavigationView.swift */; };
 		F3CFBDC52E3F900D005F93EA /* TopicNavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDC42E3F900D005F93EA /* TopicNavigationStack.swift */; };
@@ -527,7 +527,7 @@
 		F3CFBDB22E3F8E5E005F93EA /* navigationLink.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = navigationLink.txt; sourceTree = "<group>"; };
 		F3CFBDB52E3F8E5E005F93EA /* navigationBar.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = navigationBar.txt; sourceTree = "<group>"; };
 		F3CFBDBB2E3F8E79005F93EA /* passAView.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = passAView.txt; sourceTree = "<group>"; };
-		F3CFBDBE2E3F8E87005F93EA /* link */ = {isa = PBXFileReference; lastKnownFileType = text; path = link; sourceTree = "<group>"; };
+		F3CFBDBE2E3F8E87005F93EA /* link.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = link.txt; sourceTree = "<group>"; };
 		F3CFBDC12E3F8FA5005F93EA /* TopicNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicNavigationView.swift; sourceTree = "<group>"; };
 		F3CFBDC42E3F900D005F93EA /* TopicNavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicNavigationStack.swift; sourceTree = "<group>"; };
 		F3CFBDC72E3F900E005F93EA /* TopicNavigationSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicNavigationSplitView.swift; sourceTree = "<group>"; };
@@ -998,7 +998,7 @@
 				F3CFBDB52E3F8E5E005F93EA /* navigationBar.txt */,
 				F3CFBDB22E3F8E5E005F93EA /* navigationLink.txt */,
 				F3CFBDBB2E3F8E79005F93EA /* passAView.txt */,
-				F3CFBDBE2E3F8E87005F93EA /* link */,
+				F3CFBDBE2E3F8E87005F93EA /* link.txt */,
 			);
 			path = Nav;
 			sourceTree = "<group>";
@@ -1238,7 +1238,7 @@
 				F3CFBD732E3F8AE2005F93EA /* textFieldDisableAutocorrection.txt in Resources */,
 				F37D9DA82E488D6D008ECB6D /* text.txt in Resources */,
 				F3CFBD742E3F8AE2005F93EA /* alert.txt in Resources */,
-				F3CFBDC02E3F8E87005F93EA /* link in Resources */,
+				F3CFBDC02E3F8E87005F93EA /* link.txt in Resources */,
 				F3CFBE392E3F9C22005F93EA /* detectCompactOrRegularSize.txt in Resources */,
 				F3CFBD752E3F8AE2005F93EA /* picker.txt in Resources */,
 				F3CFBDF42E3F96EA005F93EA /* list.txt in Resources */,
@@ -1291,7 +1291,7 @@
 				F3CFBD8A2E3F8AE2005F93EA /* sheetBefore15.txt in Resources */,
 				F3CFBD8B2E3F8AE2005F93EA /* divider.txt in Resources */,
 				F3CFBD8D2E3F8AE2005F93EA /* popover.txt in Resources */,
-				F3CFBDBF2E3F8E87005F93EA /* link in Resources */,
+				F3CFBDBF2E3F8E87005F93EA /* link.txt in Resources */,
 				F37D9DA72E488D6D008ECB6D /* text.txt in Resources */,
 				F3CFBDBC2E3F8E79005F93EA /* passAView.txt in Resources */,
 				F3CFBD8E2E3F8AE2005F93EA /* menu.txt in Resources */,

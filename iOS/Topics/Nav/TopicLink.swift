@@ -3,9 +3,8 @@ import SwiftUI
 struct TopicLink: View {
     var body: some View {
         VStack(spacing: 25) {
-            Text("Link")
+            Text("A Link opens a specified URL in the user’s default browser or associated app")
             
-#warning("This code block doesn't work")
             CodeBlockView(.link)
         }
     }
