@@ -42,11 +42,12 @@ extension Topic {
             ]
             
             // MARK: - Image & Symbols
+#warning("Link to download SF Symbols")
         case .image:
-            [.init("Image", url: "https://developer.apple.com/documentation/swiftui/image")]
-            
-        case .sfSymbols:
-            [.init("Image(systemName:)", url: "https://developer.apple.com/documentation/swiftui/image/init(systemname:)")]
+            [
+                .init("Image", url: "https://developer.apple.com/documentation/swiftui/image"),
+                .init("Image(systemName:)", url: "https://developer.apple.com/documentation/swiftui/image/init(systemname:)")
+            ]
             
         case .divider:
             [.init("Divider", url: "https://developer.apple.com/documentation/swiftui/divider")]

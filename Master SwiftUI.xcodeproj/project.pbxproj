@@ -29,8 +29,6 @@
 		F314C80D2E2E486200F63B6A /* TopicTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C80B2E2E486200F63B6A /* TopicTextEditor.swift */; };
 		F314C80F2E2E4A0100F63B6A /* TopicImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C80E2E2E4A0100F63B6A /* TopicImage.swift */; };
 		F314C8102E2E4A0100F63B6A /* TopicImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C80E2E2E4A0100F63B6A /* TopicImage.swift */; };
-		F314C8122E2E4B6A00F63B6A /* TopicSFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8112E2E4B6A00F63B6A /* TopicSFSymbols.swift */; };
-		F314C8132E2E4B6A00F63B6A /* TopicSFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8112E2E4B6A00F63B6A /* TopicSFSymbols.swift */; };
 		F314C8152E2E4B8700F63B6A /* TopicLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8142E2E4B8700F63B6A /* TopicLabel.swift */; };
 		F314C8162E2E4B8700F63B6A /* TopicLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8142E2E4B8700F63B6A /* TopicLabel.swift */; };
 		F314C8182E2E4BB600F63B6A /* TopicDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8172E2E4BB600F63B6A /* TopicDivider.swift */; };
@@ -389,7 +387,6 @@
 		F314C8082E2E458B00F63B6A /* TopicTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTextField.swift; sourceTree = "<group>"; };
 		F314C80B2E2E486200F63B6A /* TopicTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTextEditor.swift; sourceTree = "<group>"; };
 		F314C80E2E2E4A0100F63B6A /* TopicImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicImage.swift; sourceTree = "<group>"; };
-		F314C8112E2E4B6A00F63B6A /* TopicSFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicSFSymbols.swift; sourceTree = "<group>"; };
 		F314C8142E2E4B8700F63B6A /* TopicLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLabel.swift; sourceTree = "<group>"; };
 		F314C8172E2E4BB600F63B6A /* TopicDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDivider.swift; sourceTree = "<group>"; };
 		F314C81A2E2E4BB900F63B6A /* TopicShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicShape.swift; sourceTree = "<group>"; };
@@ -632,7 +629,6 @@
 				F314C8082E2E458B00F63B6A /* TopicTextField.swift */,
 				F314C80B2E2E486200F63B6A /* TopicTextEditor.swift */,
 				F314C80E2E2E4A0100F63B6A /* TopicImage.swift */,
-				F314C8112E2E4B6A00F63B6A /* TopicSFSymbols.swift */,
 				F314C8142E2E4B8700F63B6A /* TopicLabel.swift */,
 				F314C81A2E2E4BB900F63B6A /* TopicShape.swift */,
 				F314C8172E2E4BB600F63B6A /* TopicDivider.swift */,
@@ -1442,7 +1438,6 @@
 				F3378F9E2E2E68DF00A31D7F /* TopicDetectOSVersion.swift in Sources */,
 				F330586C2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */,
 				F35198FE2E2B9F53004E0F02 /* NavModeButton.swift in Sources */,
-				F314C8132E2E4B6A00F63B6A /* TopicSFSymbols.swift in Sources */,
 				F3C6F6762E40E57B00E94540 /* TopicProgressView.swift in Sources */,
 				F35198FF2E2B9F53004E0F02 /* NavModePickerItem.swift in Sources */,
 				F3CFBE3F2E3F9D2D005F93EA /* TopicDifferentiateOS.swift in Sources */,
@@ -1575,7 +1570,6 @@
 				F314C80C2E2E486200F63B6A /* TopicTextEditor.swift in Sources */,
 				F33E8B222E4162EF00B05370 /* TopicRelated.swift in Sources */,
 				F314C8582E2E663500F63B6A /* TopicColor.swift in Sources */,
-				F314C8122E2E4B6A00F63B6A /* TopicSFSymbols.swift in Sources */,
 				F33E8B1C2E4162C100B05370 /* TopicDoc.swift in Sources */,
 				F3BBD9FB2AEED4CE00A9F7E7 /* Image Picker.swift in Sources */,
 				F34480362E2D218400D18E2E /* TopicEmptyView.swift in Sources */,

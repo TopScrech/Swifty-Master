@@ -46,7 +46,6 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .textField: AnyView(TopicTextField())
     case .textEditor: AnyView(TopicTextEditor())
     case .image: AnyView(TopicImage())
-    case .sfSymbols: AnyView(TopicSFSymbols())
     case .label: AnyView(TopicLabel())
     case .shape: AnyView(TopicShape())
     case .divider: AnyView(TopicDivider())

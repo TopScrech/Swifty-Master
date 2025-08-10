@@ -8,7 +8,6 @@ extension Topic {
         case .textField: "keyboard"
         case .textEditor: "square.and.pencil"
         case .image: "photo"
-        case .sfSymbols: "environments"
         case .label: "character.textbox"
         case .shape: "circle.on.square"
         case .divider: "square.and.line.vertical.and.square"

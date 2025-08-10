@@ -8,7 +8,6 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          textField = "Text Field",
          textEditor = "Text Editor",
          image = "Image",
-         sfSymbols = "SF Symbols",
          label = "Label",
          shape = "Shape",
          divider = "Divider",
