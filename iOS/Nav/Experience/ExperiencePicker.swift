@@ -1,8 +1,6 @@
 import SwiftUI
 
 struct ExperiencePicker: View {
-    @Environment(\.dismiss) private var dismiss
-    
     @Binding var experience: Experience?
     
     @State private var selection: Experience?
@@ -31,25 +29,13 @@ struct ExperiencePicker: View {
                 
                 LazyVGrid(columns: columns) {
                     ForEach(Experience.allCases) { experience in
-                        ExperiencePickerItem(
-                            selection: $selection,
-                            experience: experience
-                        )
+                        ExperiencePickerItem($selection, experience: experience)
                     }
                 }
                 
                 Spacer()
             }
             .scenePadding()
-#if os(iOS)
-            .safeAreaInset(edge: .bottom) {
-                ContinueButton {
-                    continueAction()
-                }
-                .disabled(selection == nil)
-                .scenePadding()
-            }
-#endif
         }
 #if os(macOS)
         .toolbar {
@@ -58,21 +44,10 @@ struct ExperiencePicker: View {
                     dismiss()
                 }
             }
-            ToolbarItem(placement: .confirmationAction) {
-                ContinueButton {
-                    continueAction()
-                }
-                .disabled(selection == nil)
-            }
         }
         .frame(width: 600, height: 350)
 #endif
         .interactiveDismissDisabled(selection == nil)
-    }
-    
-    private func continueAction() {
-        experience = selection
-        dismiss()
     }
 }
 

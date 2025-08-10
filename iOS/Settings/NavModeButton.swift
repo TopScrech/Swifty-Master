@@ -4,6 +4,14 @@ struct NavModeButton: View {
     @Environment(NavModel.self) private var nav
     @EnvironmentObject private var store: ValueStore
     
+    private var icon: String {
+        if store.experience == .stack {
+            "list.bullet.rectangle.portrait"
+        } else {
+            "sidebar.left"
+        }
+    }
+    
     var body: some View {
         @Bindable var nav = nav
         
@@ -15,7 +23,7 @@ struct NavModeButton: View {
                 
                 Spacer()
                 
-                Image(systemName: "sidebar.left")
+                Image(systemName: icon)
                     .title3()
                     .secondary()
             }

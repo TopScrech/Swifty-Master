@@ -1,13 +1,20 @@
 import SwiftUI
 
 struct ExperiencePickerItem: View {
-    @Binding var selection: Experience?
+    @Environment(\.dismiss) private var dismiss
     
+    @Binding var selection: Experience?
     var experience: Experience
+    
+    init(_ selection: Binding<Experience?>, experience: Experience) {
+        _selection = selection
+        self.experience = experience
+    }
     
     var body: some View {
         Button {
             selection = experience
+            dismiss()
         } label: {
             Label(selection: $selection, experience: experience)
         }
@@ -29,7 +36,7 @@ private struct Label: View {
             
             Text(experience.name)
                 .bold()
-                .foregroundStyle(shapeStyle(Color.primary))
+                .foregroundStyle(shapeStyle(.primary))
         }
         .shadow(radius: selection == experience ? 4 : 0)
         .padding()
@@ -61,9 +68,6 @@ private struct Label: View {
 
 #Preview {
     ForEach(Experience.allCases) {
-        ExperiencePickerItem(
-            selection: .constant($0),
-            experience: $0
-        )
+        ExperiencePickerItem(.constant($0), experience: $0)
     }
 }

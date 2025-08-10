@@ -132,7 +132,6 @@
 		F35199072E2B9F53004E0F02 /* GridTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F82E2B9F53004E0F02 /* GridTopic.swift */; };
 		F35199082E2B9F53004E0F02 /* ExperiencePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F42E2B9F53004E0F02 /* ExperiencePicker.swift */; };
 		F351990A2E2B9F53004E0F02 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E72E2B9F53004E0F02 /* DataModel.swift */; };
-		F351990B2E2B9F53004E0F02 /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F22E2B9F53004E0F02 /* ContinueButton.swift */; };
 		F351990D2E2B9F53004E0F02 /* StackContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EE2E2B9F53004E0F02 /* StackContentView.swift */; };
 		F351990E2E2B9F53004E0F02 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E62E2B9F53004E0F02 /* Category.swift */; };
 		F351990F2E2B9F53004E0F02 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E82E2B9F53004E0F02 /* Experience.swift */; };
@@ -147,7 +146,6 @@
 		F351991B2E2B9F53004E0F02 /* GridTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F82E2B9F53004E0F02 /* GridTopic.swift */; };
 		F351991C2E2B9F53004E0F02 /* ExperiencePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F42E2B9F53004E0F02 /* ExperiencePicker.swift */; };
 		F351991E2E2B9F53004E0F02 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E72E2B9F53004E0F02 /* DataModel.swift */; };
-		F351991F2E2B9F53004E0F02 /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F22E2B9F53004E0F02 /* ContinueButton.swift */; };
 		F35199212E2B9F53004E0F02 /* StackContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EE2E2B9F53004E0F02 /* StackContentView.swift */; };
 		F35199222E2B9F53004E0F02 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E62E2B9F53004E0F02 /* Category.swift */; };
 		F35199232E2B9F53004E0F02 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E82E2B9F53004E0F02 /* Experience.swift */; };
@@ -447,7 +445,6 @@
 		F35198ED2E2B9F53004E0F02 /* NavContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavContainer.swift; sourceTree = "<group>"; };
 		F35198EE2E2B9F53004E0F02 /* StackContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackContentView.swift; sourceTree = "<group>"; };
 		F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnContentView.swift; sourceTree = "<group>"; };
-		F35198F22E2B9F53004E0F02 /* ContinueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
 		F35198F32E2B9F53004E0F02 /* NavModeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModeButton.swift; sourceTree = "<group>"; };
 		F35198F42E2B9F53004E0F02 /* ExperiencePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencePicker.swift; sourceTree = "<group>"; };
 		F35198F52E2B9F53004E0F02 /* ExperiencePickerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencePickerRow.swift; sourceTree = "<group>"; };
@@ -613,7 +610,6 @@
 		F314C7EF2E2E143F00F63B6A /* Experience */ = {
 			isa = PBXGroup;
 			children = (
-				F35198F22E2B9F53004E0F02 /* ContinueButton.swift */,
 				F35198F42E2B9F53004E0F02 /* ExperiencePicker.swift */,
 				F35198F52E2B9F53004E0F02 /* ExperiencePickerRow.swift */,
 				F35198E82E2B9F53004E0F02 /* Experience.swift */,
@@ -1423,7 +1419,6 @@
 				F3CFBDCF2E3F9015005F93EA /* TopicNavigationLink.swift in Sources */,
 				F314C84E2E2E657300F63B6A /* TopicStepper.swift in Sources */,
 				F3CFBE122E3F994F005F93EA /* TopicScrollView.swift in Sources */,
-				F351990B2E2B9F53004E0F02 /* ContinueButton.swift in Sources */,
 				F351990D2E2B9F53004E0F02 /* StackContentView.swift in Sources */,
 				F34480442E2D548F00D18E2E /* TopicToggle.swift in Sources */,
 				F351990E2E2B9F53004E0F02 /* Category.swift in Sources */,
@@ -1483,7 +1478,6 @@
 				F351991E2E2B9F53004E0F02 /* DataModel.swift in Sources */,
 				F31E14442E3E9C9E00D43C1E /* TopicDetectLaguage.swift in Sources */,
 				F31653BA2E3C0A4E00A0E9D7 /* StackTopicList.swift in Sources */,
-				F351991F2E2B9F53004E0F02 /* ContinueButton.swift in Sources */,
 				F3CFBE082E3F981E005F93EA /* TopicTabView.swift in Sources */,
 				F3CFBE2C2E3F9B18005F93EA /* TopicEqualSizeViews.swift in Sources */,
 				F314C8152E2E4B8700F63B6A /* TopicLabel.swift in Sources */,
