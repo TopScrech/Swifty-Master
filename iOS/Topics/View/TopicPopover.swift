@@ -15,6 +15,7 @@ struct TopicPopover: View {
         }
         .popover($popoverExample) {
             ExampleSheet()
+                .presentationDetents([.height(320)])
         }
     }
 }

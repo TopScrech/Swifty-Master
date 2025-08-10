@@ -21,6 +21,7 @@ struct TopicSheet: View {
         }
         .sheet($sheetExample) {
             ExampleSheet()
+                .presentationDetents([.height(320)])
         }
     }
 }
