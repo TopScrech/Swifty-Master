@@ -38,37 +38,3 @@ List {
                 .font(.headline)
         )
 }
-
-// Badge over the app icon
-// Requested permission is required
-
-// iOS 16.0+
-// iPadOS 16.0+
-// Mac Catalyst 16.0+
-// macOS 13.0+
-// tvOS 16.0+
-// visionOS 1.0+
-
-private let center = UNUserNotificationCenter.current()
-
-private func changeBadgeNumber(_ new: Int) {
-    requestPermission()
-    
-    Task {
-        do {
-            try await center.setBadgeCount(new)
-        } catch {
-            print(error)
-        }
-    }
-}
-
-private func requestPermission() {
-    center.requestAuthorization(options: .badge) { _, _ in }
-}
-
-// iOS 2.0–17.0
-// iPadOS 2.0–17.0
-// Mac Catalyst 13.1–17.0
-// visionOS 1.0
-UIApplication.shared.applicationIconBadgeNumber = 1

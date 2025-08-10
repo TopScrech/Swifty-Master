@@ -25,7 +25,7 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          contextMenu,
          gauges,
          progressView,
-         badges,
+         badges, badgeOverAppIcon,
          
          // View
          sheet, sheetBefore15,

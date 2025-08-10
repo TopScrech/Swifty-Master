@@ -92,6 +92,8 @@
 		F3378F9E2E2E68DF00A31D7F /* TopicDetectOSVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3378F9C2E2E68DF00A31D7F /* TopicDetectOSVersion.swift */; };
 		F339041F2E4932A200A22EE1 /* BrightnessSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F339041D2E4932A200A22EE1 /* BrightnessSlider.swift */; };
 		F33904212E49341000A22EE1 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = F33904202E49341000A22EE1 /* SafariCover */; };
+		F33904262E49548500A22EE1 /* badgeOverAppIcon.txt in Resources */ = {isa = PBXBuildFile; fileRef = F33904252E49548500A22EE1 /* badgeOverAppIcon.txt */; };
+		F33904272E49548500A22EE1 /* badgeOverAppIcon.txt in Resources */ = {isa = PBXBuildFile; fileRef = F33904252E49548500A22EE1 /* badgeOverAppIcon.txt */; };
 		F33E8B192E41495100B05370 /* ContentViewNavButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B182E41495100B05370 /* ContentViewNavButtons.swift */; };
 		F33E8B1A2E41495100B05370 /* ContentViewNavButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B182E41495100B05370 /* ContentViewNavButtons.swift */; };
 		F33E8B1C2E4162C100B05370 /* TopicDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B1B2E4162C100B05370 /* TopicDoc.swift */; };
@@ -418,6 +420,7 @@
 		F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCardImage.swift; sourceTree = "<group>"; };
 		F3378F9C2E2E68DF00A31D7F /* TopicDetectOSVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectOSVersion.swift; sourceTree = "<group>"; };
 		F339041D2E4932A200A22EE1 /* BrightnessSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessSlider.swift; sourceTree = "<group>"; };
+		F33904252E49548500A22EE1 /* badgeOverAppIcon.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = badgeOverAppIcon.txt; sourceTree = "<group>"; };
 		F33E8B182E41495100B05370 /* ContentViewNavButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewNavButtons.swift; sourceTree = "<group>"; };
 		F33E8B1B2E4162C100B05370 /* TopicDoc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDoc.swift; sourceTree = "<group>"; };
 		F33E8B1E2E4162DF00B05370 /* TopicIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicIcon.swift; sourceTree = "<group>"; };
@@ -938,6 +941,7 @@
 				F3CFBD4D2E3F8AE2005F93EA /* gauges.txt */,
 				F3C6F66E2E40E46900E94540 /* progressView.txt */,
 				F3C6F66B2E40E46800E94540 /* badges.txt */,
+				F33904252E49548500A22EE1 /* badgeOverAppIcon.txt */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -1172,6 +1176,7 @@
 				F3CFBDAB2E3F8E57005F93EA /* navigationView.txt in Resources */,
 				F3CFBE362E3F9C21005F93EA /* detectScreenSize.txt in Resources */,
 				F3CFBD582E3F8AE2005F93EA /* detectOSVersion.txt in Resources */,
+				F33904272E49548500A22EE1 /* badgeOverAppIcon.txt in Resources */,
 				F3CFBD592E3F8AE2005F93EA /* toggle.txt in Resources */,
 				F3CFBD5A2E3F8AE2005F93EA /* mdRegular.txt in Resources */,
 				F3CFBE332E3F9C20005F93EA /* differentiateOS.txt in Resources */,
@@ -1288,6 +1293,7 @@
 				F3CFBD942E3F8AE2005F93EA /* detectLanguage.txt in Resources */,
 				F3CFBD952E3F8AE2005F93EA /* darkMode.txt in Resources */,
 				F3CFBD962E3F8AE2005F93EA /* dismissHideBackButton.txt in Resources */,
+				F33904262E49548500A22EE1 /* badgeOverAppIcon.txt in Resources */,
 				F3CFBE2F2E3F9C09005F93EA /* detectDeviceUsed.txt in Resources */,
 				F3CFBE322E3F9C20005F93EA /* differentiateOS.txt in Resources */,
 				F3CFBE382E3F9C22005F93EA /* detectCompactOrRegular.txt in Resources */,
