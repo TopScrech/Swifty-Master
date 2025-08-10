@@ -1,14 +1,19 @@
 struct ContentView: View {
     @State private var presentAlert = false
-
+    
     var body: some View {
         Button("Show alert") {
             showingSheet = true
         }
         .alert(isPresented: $showingSheet) {
-            Button("Done") {...}
-        } message: {
-            // optional
+            Button("Save") {
+                
+            }
+            
+            Button("Delete", role: .destructive) {
+                
+            }
+        } message: { // optional
             Text("Message")
         }
 }
