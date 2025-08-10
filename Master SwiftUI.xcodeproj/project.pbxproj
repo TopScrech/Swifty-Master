@@ -323,8 +323,8 @@
 		F3CFBDEB2E3F95B6005F93EA /* TopicHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDE92E3F95B6005F93EA /* TopicHStack.swift */; };
 		F3CFBDED2E3F95B7005F93EA /* TopicZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDEC2E3F95B7005F93EA /* TopicZStack.swift */; };
 		F3CFBDEE2E3F95B7005F93EA /* TopicZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDEC2E3F95B7005F93EA /* TopicZStack.swift */; };
-		F3CFBDF02E3F95B8005F93EA /* TopicGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDEF2E3F95B8005F93EA /* TopicGrid.swift */; };
-		F3CFBDF12E3F95B8005F93EA /* TopicGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDEF2E3F95B8005F93EA /* TopicGrid.swift */; };
+		F3CFBDF02E3F95B8005F93EA /* TopicGrids.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDEF2E3F95B8005F93EA /* TopicGrids.swift */; };
+		F3CFBDF12E3F95B8005F93EA /* TopicGrids.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDEF2E3F95B8005F93EA /* TopicGrids.swift */; };
 		F3CFBDF32E3F96EA005F93EA /* list.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDF22E3F96EA005F93EA /* list.txt */; };
 		F3CFBDF42E3F96EA005F93EA /* list.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDF22E3F96EA005F93EA /* list.txt */; };
 		F3CFBDF62E3F96F1005F93EA /* scrollView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDF52E3F96F1005F93EA /* scrollView.txt */; };
@@ -335,8 +335,6 @@
 		F3CFBDFD2E3F9740005F93EA /* lazyHGrid.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDFB2E3F9740005F93EA /* lazyHGrid.txt */; };
 		F3CFBDFF2E3F9741005F93EA /* tabView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDFE2E3F9741005F93EA /* tabView.txt */; };
 		F3CFBE002E3F9741005F93EA /* tabView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDFE2E3F9741005F93EA /* tabView.txt */; };
-		F3CFBE022E3F981C005F93EA /* TopicLazyGrids.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE012E3F981C005F93EA /* TopicLazyGrids.swift */; };
-		F3CFBE032E3F981C005F93EA /* TopicLazyGrids.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE012E3F981C005F93EA /* TopicLazyGrids.swift */; };
 		F3CFBE082E3F981E005F93EA /* TopicTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE072E3F981E005F93EA /* TopicTabView.swift */; };
 		F3CFBE092E3F981E005F93EA /* TopicTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE072E3F981E005F93EA /* TopicTabView.swift */; };
 		F3CFBE0E2E3F994E005F93EA /* TopicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE0D2E3F994E005F93EA /* TopicList.swift */; };
@@ -541,13 +539,12 @@
 		F3CFBDE62E3F959D005F93EA /* TopicVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicVStack.swift; sourceTree = "<group>"; };
 		F3CFBDE92E3F95B6005F93EA /* TopicHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicHStack.swift; sourceTree = "<group>"; };
 		F3CFBDEC2E3F95B7005F93EA /* TopicZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicZStack.swift; sourceTree = "<group>"; };
-		F3CFBDEF2E3F95B8005F93EA /* TopicGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicGrid.swift; sourceTree = "<group>"; };
+		F3CFBDEF2E3F95B8005F93EA /* TopicGrids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicGrids.swift; sourceTree = "<group>"; };
 		F3CFBDF22E3F96EA005F93EA /* list.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = list.txt; sourceTree = "<group>"; };
 		F3CFBDF52E3F96F1005F93EA /* scrollView.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = scrollView.txt; sourceTree = "<group>"; };
 		F3CFBDF82E3F973B005F93EA /* lazyVGrid.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lazyVGrid.txt; sourceTree = "<group>"; };
 		F3CFBDFB2E3F9740005F93EA /* lazyHGrid.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lazyHGrid.txt; sourceTree = "<group>"; };
 		F3CFBDFE2E3F9741005F93EA /* tabView.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = tabView.txt; sourceTree = "<group>"; };
-		F3CFBE012E3F981C005F93EA /* TopicLazyGrids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLazyGrids.swift; sourceTree = "<group>"; };
 		F3CFBE072E3F981E005F93EA /* TopicTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTabView.swift; sourceTree = "<group>"; };
 		F3CFBE0D2E3F994E005F93EA /* TopicList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicList.swift; sourceTree = "<group>"; };
 		F3CFBE102E3F994F005F93EA /* TopicScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicScrollView.swift; sourceTree = "<group>"; };
@@ -677,6 +674,16 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F33904282E49593700A22EE1 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				F3BF16E52E2CCDEE005212D1 /* TopicDocs.swift */,
+				F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */,
+				F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */,
+			);
+			path = Docs;
 			sourceTree = "<group>";
 		};
 		F34480302E2CD3FF00D18E2E /* System */ = {
@@ -859,13 +866,11 @@
 		F3BF16DF2E2C779E005212D1 /* Topics */ = {
 			isa = PBXGroup;
 			children = (
+				F33904282E49593700A22EE1 /* Docs */,
 				F3BF16D92E2C76A8005212D1 /* ContentView.swift */,
 				F33E8B182E41495100B05370 /* ContentViewNavButtons.swift */,
 				F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */,
 				F3BF16E12E2C7D1C005212D1 /* TopicHeading.swift */,
-				F3BF16E52E2CCDEE005212D1 /* TopicDocs.swift */,
-				F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */,
-				F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */,
 				F344803F2E2D4E0500D18E2E /* TopicActionButton.swift */,
 				F314C7F82E2E1F0F00F63B6A /* TopicDisclosureGroup.swift */,
 				F314C7F42E2E1E7200F63B6A /* Content */,
@@ -1037,8 +1042,7 @@
 				F3CFBDEC2E3F95B7005F93EA /* TopicZStack.swift */,
 				F3CFBE0D2E3F994E005F93EA /* TopicList.swift */,
 				F3CFBE102E3F994F005F93EA /* TopicScrollView.swift */,
-				F3CFBDEF2E3F95B8005F93EA /* TopicGrid.swift */,
-				F3CFBE012E3F981C005F93EA /* TopicLazyGrids.swift */,
+				F3CFBDEF2E3F95B8005F93EA /* TopicGrids.swift */,
 				F3CFBE072E3F981E005F93EA /* TopicTabView.swift */,
 			);
 			path = Collections;
@@ -1321,7 +1325,6 @@
 				F3202CC22D5597490030B3CC /* Master SwiftUI.swift in Sources */,
 				F314C8452E2E654C00F63B6A /* TopicSlider.swift in Sources */,
 				F3CFBE0F2E3F994E005F93EA /* TopicList.swift in Sources */,
-				F3CFBE032E3F981C005F93EA /* TopicLazyGrids.swift in Sources */,
 				F34480322E2CD41100D18E2E /* TopicDarkMode.swift in Sources */,
 				F31653B92E3C0A4E00A0E9D7 /* StackTopicList.swift in Sources */,
 				F399A4B02E3DC544008BED17 /* iOS 18 support.swift in Sources */,
@@ -1344,7 +1347,7 @@
 				F314C7FA2E2E1F0F00F63B6A /* TopicDisclosureGroup.swift in Sources */,
 				F3CFBE2D2E3F9B18005F93EA /* TopicEqualSizeViews.swift in Sources */,
 				F3202CC62D55977A0030B3CC /* Image Picker 2.swift in Sources */,
-				F3CFBDF12E3F95B8005F93EA /* TopicGrid.swift in Sources */,
+				F3CFBDF12E3F95B8005F93EA /* TopicGrids.swift in Sources */,
 				F35198C42E2B7E56004E0F02 /* CodeBlockView.swift in Sources */,
 				F33E8B202E4162DF00B05370 /* TopicIcon.swift in Sources */,
 				F3CFBE2A2E3F9B17005F93EA /* TopicGeometryReader.swift in Sources */,
@@ -1451,7 +1454,6 @@
 				F35199142E2B9F53004E0F02 /* TopicDetail.swift in Sources */,
 				F3CFBE262E3F9B16005F93EA /* TopicFrame.swift in Sources */,
 				F314C83B2E2E540800F63B6A /* TopicSheet.swift in Sources */,
-				F3CFBE022E3F981C005F93EA /* TopicLazyGrids.swift in Sources */,
 				F3AE99D92E2F861C00D70249 /* ColorTheme.swift in Sources */,
 				F314C7F72E2E1E7900F63B6A /* TopicText.swift in Sources */,
 				F3C6F6752E40E57B00E94540 /* TopicProgressView.swift in Sources */,
@@ -1491,7 +1493,7 @@
 				F314C8012E2E2A9400F63B6A /* FontSizeItem.swift in Sources */,
 				F3CFBDCE2E3F9015005F93EA /* TopicNavigationLink.swift in Sources */,
 				F314C83E2E2E555600F63B6A /* TopicAlert.swift in Sources */,
-				F3CFBDF02E3F95B8005F93EA /* TopicGrid.swift in Sources */,
+				F3CFBDF02E3F95B8005F93EA /* TopicGrids.swift in Sources */,
 				F314C8352E2E538200F63B6A /* TopicButton.swift in Sources */,
 				F35199232E2B9F53004E0F02 /* NavMode.swift in Sources */,
 				F35199242E2B9F53004E0F02 /* TopicTile.swift in Sources */,

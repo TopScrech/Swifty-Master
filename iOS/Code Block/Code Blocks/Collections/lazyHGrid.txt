@@ -1,14 +1,12 @@
 struct ContentView: View {
-    // We define our values
+    // Define the values and columns
     private let values = /* ... */
-    
-    // We define our rows
     private let rows = [ /* ... */]
     
     var body: some View {
         ScrollView {
             LazyHGrid(rows: rows, alignment: .leading, spacing: 10) {
-                ForEach(values, id: \.self) {item in
+                ForEach(values, id: \.self) { item in
                     Text("\(item)")
                 }
             }

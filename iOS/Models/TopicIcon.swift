@@ -48,8 +48,7 @@ extension Topic {
         case .zStack: "square.stack.3d.up"
         case .list: "list.bullet.clipboard"
         case .scrollView: "scroll"
-        case .grid: "square.grid.3x3"
-        case .lazyGrids: "square.grid.3x2"
+        case .grids: "square.grid.3x3"
         case .tabView: "platter.filled.bottom.iphone"
             
             // Layout

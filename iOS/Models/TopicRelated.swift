@@ -18,9 +18,6 @@ extension Topic {
         case .color:       [.gradient]
         case .gradient:    [.color]
             
-        case .grid:        [.lazyGrids]
-        case .lazyGrids:   [.grid]
-            
         case .scrollView:  [.list]
         case .list:        [.scrollView]
             

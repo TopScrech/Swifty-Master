@@ -157,11 +157,9 @@ extension Topic {
         case .zStack:
             [.init("ZStack", url: "https://developer.apple.com/documentation/swiftui/zstack")]
             
-        case .grid:
-            [.init("Grid", url: "https://developer.apple.com/documentation/swiftui/grid")]
-            
-        case .lazyGrids:
+        case .grids:
             [
+                .init("Grid", url: "https://developer.apple.com/documentation/swiftui/grid"),
                 .init("LazyVGrid", url: "https://developer.apple.com/documentation/swiftui/lazyvgrid"),
                 .init("LazyHGrid", url: "https://developer.apple.com/documentation/swiftui/lazyhgrid")
             ]

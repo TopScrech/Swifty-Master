@@ -48,8 +48,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          zStack = "ZStack",
          list = "List",
          scrollView = "ScrollView",
-         grid = "Grid",
-         lazyGrids = "Lazy Grids",
+         grids = "Grids",
          tabView = "TabView",
          
          // Layout
