@@ -1,24 +1,23 @@
 VStack {
-    // Element above
-    View1()
-    // Element below
-    ViewN()
+    Text("Text above")
+    
+    Text("Text below")
 }
 
 VStack (alignment: .leading, spacing: 0) {
-    // Element above
-    View1()
-    // Element below
-    ViewN()
+    Text("Text above")
+    
+    Text("Text below")
 }
 
-// Data to display
-let myValues = [/* Some values */]
-
-var body: some View {
-    VStack {
-        ForEach(myValues, id: \.self) { value in
-            Text(value.name)
+struct ContentView: View {
+    let numbers = [4, 16, 64]
+    
+    var body: some View {
+        VStack {
+            ForEach(numbers, id: \.self) { number in
+                Text(number.description)
+            }
         }
     }
 }

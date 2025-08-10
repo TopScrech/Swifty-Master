@@ -1,0 +1,11 @@
+HStack {
+    Text("From the left")
+    
+    Text("To the right")
+}
+
+HStack(alignment: .top, spacing: 0) {
+    Text("From the left")
+    
+    Text("To the right")
+}

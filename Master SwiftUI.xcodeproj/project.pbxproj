@@ -307,10 +307,10 @@
 		F3CFBDD52E3F901E005F93EA /* TopicLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDD32E3F901E005F93EA /* TopicLink.swift */; };
 		F3CFBDD72E3F945C005F93EA /* vStack.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDD62E3F945C005F93EA /* vStack.txt */; };
 		F3CFBDD82E3F945C005F93EA /* vStack.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDD62E3F945C005F93EA /* vStack.txt */; };
-		F3CFBDDA2E3F9473005F93EA /* vHtack.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDD92E3F9473005F93EA /* vHtack.txt */; };
-		F3CFBDDB2E3F9473005F93EA /* vHtack.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDD92E3F9473005F93EA /* vHtack.txt */; };
-		F3CFBDDD2E3F947A005F93EA /* zHtack.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDDC2E3F947A005F93EA /* zHtack.txt */; };
-		F3CFBDDE2E3F947A005F93EA /* zHtack.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDDC2E3F947A005F93EA /* zHtack.txt */; };
+		F3CFBDDA2E3F9473005F93EA /* hStack.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDD92E3F9473005F93EA /* hStack.txt */; };
+		F3CFBDDB2E3F9473005F93EA /* hStack.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDD92E3F9473005F93EA /* hStack.txt */; };
+		F3CFBDDD2E3F947A005F93EA /* zStack.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDDC2E3F947A005F93EA /* zStack.txt */; };
+		F3CFBDDE2E3F947A005F93EA /* zStack.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDDC2E3F947A005F93EA /* zStack.txt */; };
 		F3CFBDE32E3F94D8005F93EA /* grid.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDE22E3F94D8005F93EA /* grid.txt */; };
 		F3CFBDE42E3F94D8005F93EA /* grid.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDE22E3F94D8005F93EA /* grid.txt */; };
 		F3CFBDE72E3F959D005F93EA /* TopicVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDE62E3F959D005F93EA /* TopicVStack.swift */; };
@@ -533,8 +533,8 @@
 		F3CFBDD02E3F901C005F93EA /* TopicPassAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicPassAView.swift; sourceTree = "<group>"; };
 		F3CFBDD32E3F901E005F93EA /* TopicLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLink.swift; sourceTree = "<group>"; };
 		F3CFBDD62E3F945C005F93EA /* vStack.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = vStack.txt; sourceTree = "<group>"; };
-		F3CFBDD92E3F9473005F93EA /* vHtack.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = vHtack.txt; sourceTree = "<group>"; };
-		F3CFBDDC2E3F947A005F93EA /* zHtack.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = zHtack.txt; sourceTree = "<group>"; };
+		F3CFBDD92E3F9473005F93EA /* hStack.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = hStack.txt; sourceTree = "<group>"; };
+		F3CFBDDC2E3F947A005F93EA /* zStack.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = zStack.txt; sourceTree = "<group>"; };
 		F3CFBDE22E3F94D8005F93EA /* grid.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = grid.txt; sourceTree = "<group>"; };
 		F3CFBDE62E3F959D005F93EA /* TopicVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicVStack.swift; sourceTree = "<group>"; };
 		F3CFBDE92E3F95B6005F93EA /* TopicHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicHStack.swift; sourceTree = "<group>"; };
@@ -916,8 +916,8 @@
 			isa = PBXGroup;
 			children = (
 				F3CFBDD62E3F945C005F93EA /* vStack.txt */,
-				F3CFBDD92E3F9473005F93EA /* vHtack.txt */,
-				F3CFBDDC2E3F947A005F93EA /* zHtack.txt */,
+				F3CFBDD92E3F9473005F93EA /* hStack.txt */,
+				F3CFBDDC2E3F947A005F93EA /* zStack.txt */,
 				F3CFBDF22E3F96EA005F93EA /* list.txt */,
 				F3CFBDF52E3F96F1005F93EA /* scrollView.txt */,
 				F3CFBDE22E3F94D8005F93EA /* grid.txt */,
@@ -1205,10 +1205,10 @@
 				F3CFBDFD2E3F9740005F93EA /* lazyHStack.txt in Resources */,
 				F3CFBD602E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt in Resources */,
 				F3C6F6702E40E46900E94540 /* progressView.txt in Resources */,
-				F3CFBDDB2E3F9473005F93EA /* vHtack.txt in Resources */,
+				F3CFBDDB2E3F9473005F93EA /* hStack.txt in Resources */,
 				F3CFBD612E3F8AE2005F93EA /* gauges.txt in Resources */,
 				F3CFBE212E3F99BB005F93EA /* equalSizeViews.txt in Resources */,
-				F3CFBDDE2E3F947A005F93EA /* zHtack.txt in Resources */,
+				F3CFBDDE2E3F947A005F93EA /* zStack.txt in Resources */,
 				F35C35912E44125100622147 /* textShortenedNumbers.txt in Resources */,
 				F3CFBD622E3F8AE2005F93EA /* image.txt in Resources */,
 				F3CFBD632E3F8AE2005F93EA /* mdStrikethrough.txt in Resources */,
@@ -1273,7 +1273,7 @@
 				F3CFBDA72E3F8C96005F93EA /* customKeyboard.txt in Resources */,
 				F3CFBD842E3F8AE2005F93EA /* contextMenu.txt in Resources */,
 				F3CFBD852E3F8AE2005F93EA /* mdLink.txt in Resources */,
-				F3CFBDDD2E3F947A005F93EA /* zHtack.txt in Resources */,
+				F3CFBDDD2E3F947A005F93EA /* zStack.txt in Resources */,
 				F31B90BE2E41D29B003A2AA2 /* textEditorFormat.txt in Resources */,
 				F3CFBD9E2E3F8B9F005F93EA /* label.txt in Resources */,
 				F3CFBE1D2E3F99BA005F93EA /* geometryReader.txt in Resources */,
@@ -1312,7 +1312,7 @@
 				F3CFBD982E3F8AE2005F93EA /* sheet.txt in Resources */,
 				F3CFBE172E3F99B8005F93EA /* frame.txt in Resources */,
 				F3CFBDD72E3F945C005F93EA /* vStack.txt in Resources */,
-				F3CFBDDA2E3F9473005F93EA /* vHtack.txt in Resources */,
+				F3CFBDDA2E3F9473005F93EA /* hStack.txt in Resources */,
 				F3CFBDA42E3F8C43005F93EA /* shape.txt in Resources */,
 				F3CFBDB32E3F8E5E005F93EA /* navigationLink.txt in Resources */,
 				F3CFBD992E3F8AE2005F93EA /* textFieldDisableAutocorrection.txt in Resources */,
