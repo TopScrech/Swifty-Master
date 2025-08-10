@@ -157,6 +157,8 @@
 		F35C35902E44125100622147 /* textShortenedNumbers.txt in Resources */ = {isa = PBXBuildFile; fileRef = F35C358F2E44125100622147 /* textShortenedNumbers.txt */; };
 		F35C35912E44125100622147 /* textShortenedNumbers.txt in Resources */ = {isa = PBXBuildFile; fileRef = F35C358F2E44125100622147 /* textShortenedNumbers.txt */; };
 		F37916EE2AF14A7A00B880AF /* Image Picker 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37916ED2AF14A7A00B880AF /* Image Picker 2.swift */; };
+		F37D9DA72E488D6D008ECB6D /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = F37D9DA62E488D6D008ECB6D /* text.txt */; };
+		F37D9DA82E488D6D008ECB6D /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = F37D9DA62E488D6D008ECB6D /* text.txt */; };
 		F388D19C2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */; };
 		F388D19D2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */; };
 		F399A4AC2E3D52A7008BED17 /* highlightOccurrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */; };
@@ -453,6 +455,7 @@
 		F35C358B2E440FD900622147 /* TopicTextShortenedNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTextShortenedNumbers.swift; sourceTree = "<group>"; };
 		F35C358F2E44125100622147 /* textShortenedNumbers.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = textShortenedNumbers.txt; sourceTree = "<group>"; };
 		F37916ED2AF14A7A00B880AF /* Image Picker 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker 2.swift"; sourceTree = "<group>"; };
+		F37D9DA62E488D6D008ECB6D /* text.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = text.txt; sourceTree = "<group>"; };
 		F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLowPowerMode.swift; sourceTree = "<group>"; };
 		F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = highlightOccurrences.swift; sourceTree = "<group>"; };
 		F399A4AF2E3DC544008BED17 /* iOS 18 support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOS 18 support.swift"; sourceTree = "<group>"; };
@@ -812,6 +815,7 @@
 		F35C358E2E44124A00622147 /* Text */ = {
 			isa = PBXGroup;
 			children = (
+				F37D9DA62E488D6D008ECB6D /* text.txt */,
 				F35C358F2E44125100622147 /* textShortenedNumbers.txt */,
 				F3CFBD252E3F8AE2005F93EA /* mdBoldItalic.txt */,
 				F3CFBD262E3F8AE2005F93EA /* mdLink.txt */,
@@ -1233,6 +1237,7 @@
 				F3CFBDD82E3F945C005F93EA /* vStack.txt in Resources */,
 				F3CFBD722E3F8AE2005F93EA /* sheet.txt in Resources */,
 				F3CFBD732E3F8AE2005F93EA /* textFieldDisableAutocorrection.txt in Resources */,
+				F37D9DA82E488D6D008ECB6D /* text.txt in Resources */,
 				F3CFBD742E3F8AE2005F93EA /* alert.txt in Resources */,
 				F3CFBDC02E3F8E87005F93EA /* link in Resources */,
 				F3CFBE392E3F9C22005F93EA /* detectCompactOrRegularSize.txt in Resources */,
@@ -1289,6 +1294,7 @@
 				F3CFBD8C2E3F8AE2005F93EA /* textLineLimit.txt in Resources */,
 				F3CFBD8D2E3F8AE2005F93EA /* popover.txt in Resources */,
 				F3CFBDBF2E3F8E87005F93EA /* link in Resources */,
+				F37D9DA72E488D6D008ECB6D /* text.txt in Resources */,
 				F3CFBDBC2E3F8E79005F93EA /* passAView.txt in Resources */,
 				F3CFBD8E2E3F8AE2005F93EA /* menu.txt in Resources */,
 				F3CFBDAA2E3F8E57005F93EA /* navigationView.txt in Resources */,

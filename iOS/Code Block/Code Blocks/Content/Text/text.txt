@@ -1,0 +1,5 @@
+Text("Hello, world!")
+    .font(.largeTitle)
+    .padding(10)
+    .foregroundStyle(.red)
+    .lineLimit(1)

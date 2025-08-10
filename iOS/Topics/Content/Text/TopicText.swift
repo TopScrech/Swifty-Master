@@ -40,6 +40,8 @@ struct TopicText: View {
         VStack(spacing: 25) {
             Text("Text is a SwiftUI element used to display static or dynamic strings in the interface. It supports rich formatting, localization, and adapts to system-wide accessibility settings")
             
+            CodeBlockView(.text)
+            
             TopicDisclosureGroup("Markdown") {
                 Markdown()
             }

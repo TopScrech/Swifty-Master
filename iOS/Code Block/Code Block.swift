@@ -3,7 +3,7 @@ import Foundation
 enum CodeBlock: String {
     
     // Content
-    case mdRegular, mdBoldItalic, mdStrikethrough, mdMonospaced, mdLink, textLineLimit, textShortenedNumbers,
+    case text, mdRegular, mdBoldItalic, mdStrikethrough, mdMonospaced, mdLink, textLineLimit, textShortenedNumbers,
          image,
          textField, textFieldSecured, textFieldDisableAutocorrection,
          textEditor, textEditorFormat,
