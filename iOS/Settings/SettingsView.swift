@@ -6,6 +6,13 @@ struct SettingsView: View {
     var body: some View {
         Form {
             Section {
+                Picker("Appearance", selection: $store.colorTheme) {
+                    ForEach(ColorTheme.allCases) { theme in
+                        Text(theme.loc)
+                            .tag(theme)
+                    }
+                }
+                
                 Toggle("Code line numbers", isOn: $store.showCodeLineNumbers)
                 
                 Toggle(isOn: $store.favoriteArticlesBadge) {
@@ -16,16 +23,9 @@ struct SettingsView: View {
             
             Section {
                 NavModeButton()
+                
+                Toggle("Use built-in Safari", isOn: $store.builtInBrowser)
             }
-            
-            Picker("Appearance", selection: $store.colorTheme) {
-                ForEach(ColorTheme.allCases) { theme in
-                    Text(theme.loc)
-                        .tag(theme)
-                }
-            }
-            
-            Toggle("Use built-in Safari", isOn: $store.builtInBrowser)
             
             DebugSettings()
         }
