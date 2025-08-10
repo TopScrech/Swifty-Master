@@ -1,22 +1,21 @@
 import SwiftUI
 
 struct NavModePickerItem: View {
+    @EnvironmentObject private var store: ValueStore
     @Environment(\.dismiss) private var dismiss
     
-    @Binding var selection: NavMode?
-    var navMode: NavMode
+    private let navMode: NavMode
     
-    init(_ selection: Binding<NavMode?>, navMode: NavMode) {
-        _selection = selection
+    init(_ navMode: NavMode) {
         self.navMode = navMode
     }
     
     var body: some View {
         Button {
-            selection = navMode
+            store.navMode = navMode
             dismiss()
         } label: {
-            Label(selection: $selection, navMode: navMode)
+            Label(selection: $store.navMode, navMode: navMode)
         }
         .buttonStyle(.plain)
     }
@@ -68,6 +67,7 @@ private struct Label: View {
 
 #Preview {
     ForEach(NavMode.allCases) {
-        NavModePickerItem(.constant($0), navMode: $0)
+        NavModePickerItem($0)
     }
+    .environmentObject(ValueStore())
 }

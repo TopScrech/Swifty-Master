@@ -1,13 +1,7 @@
 import SwiftUI
 
 struct NavModePicker: View {
-    @Binding private var navMode: NavMode?
-    
-    init(_ navMode: Binding<NavMode?>) {
-        _navMode = navMode
-    }
-    
-    @State private var selection: NavMode?
+    @EnvironmentObject private var store: ValueStore
     
     private let columns = [
         GridItem(.adaptive(minimum: 250))
@@ -29,7 +23,7 @@ struct NavModePicker: View {
                 
                 LazyVGrid(columns: columns) {
                     ForEach(NavMode.allCases) { navMode in
-                        NavModePickerItem($selection, navMode: navMode)
+                        NavModePickerItem(navMode)
                     }
                 }
                 
@@ -47,12 +41,11 @@ struct NavModePicker: View {
         }
         .frame(width: 600, height: 350)
 #endif
-        .interactiveDismissDisabled(selection == nil)
+        .interactiveDismissDisabled(store.navMode == nil)
     }
 }
 
 #Preview {
-    @Previewable @State var selectedNavMode: NavMode? = .stack
-    
-    NavModePicker($selectedNavMode)
+    NavModePicker()
+        .environmentObject(ValueStore())
 }

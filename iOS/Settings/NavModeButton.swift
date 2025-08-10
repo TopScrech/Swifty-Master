@@ -30,7 +30,7 @@ struct NavModeButton: View {
         }
         .help("Choose your navigation experience")
         .sheet($nav.showNavModePicker) {
-            NavModePicker($store.navMode)
+            NavModePicker()
         }
     }
 }
