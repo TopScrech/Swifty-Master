@@ -50,9 +50,7 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          zStack,
          list,
          scrollView,
-         grid,
-         lazyVGrid,
-         lazyHGrid,
+         grid, lazyVGrid, lazyHGrid,
          tabView,
          
          // Layout
