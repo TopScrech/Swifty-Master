@@ -67,7 +67,9 @@ extension Topic {
         case .button:
             [
                 .init("Button", url: "https://developer.apple.com/documentation/swiftui/button"),
-                .init("buttonStyle(_:)", url: "https://developer.apple.com/documentation/swiftui/view/buttonstyle(_:)")
+                .init("buttonStyle(_:)", url: "https://developer.apple.com/documentation/swiftui/view/buttonstyle(_:)"),
+                .init("buttonBorderShape(_:)", url: "https://developer.apple.com/documentation/swiftui/view/buttonbordershape(_:)"),
+                .init("controlSize(_:) (iOS 26+)", url: "https://developer.apple.com/documentation/swiftui/view/controlsize(_:)-rvbn")
             ]
             
         case .toggle:
