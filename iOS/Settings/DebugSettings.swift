@@ -50,6 +50,10 @@ struct DebugSettings: View {
                     }
                 }
                 .scrollIndicators(.never)
+                .scenePadding()
+                .navigationTitle("All code blocks")
+                .navSubtitle(CodeBlock.allCases.count)
+                .toolbarTitleDisplayMode(.inline)
             }
         }
 #endif
