@@ -33,6 +33,7 @@ struct SettingsView: View {
         .formStyle(.grouped)
         .buttonStyle(.plain)
         .scrollIndicators(.never)
+        .ornamentDismissButton()
     }
 }
 
