@@ -1,13 +1,13 @@
 import SwiftUI
 
-struct ExperiencePicker: View {
-    @Binding var experience: Experience?
+struct NavModePicker: View {
+    @Binding private var navMode: NavMode?
     
-    @State private var selection: Experience?
-    
-    init(_ experience: Binding<Experience?>) {
-        _experience = experience
+    init(_ navMode: Binding<NavMode?>) {
+        _navMode = navMode
     }
+    
+    @State private var selection: NavMode?
     
     private let columns = [
         GridItem(.adaptive(minimum: 250))
@@ -18,7 +18,7 @@ struct ExperiencePicker: View {
             VStack {
                 Spacer()
                 
-                Text("Choose your navigation experience")
+                Text("Choose your navigation mode")
                     .largeTitle(.bold)
                     .lineLimit(2, reservesSpace: true)
                     .multilineTextAlignment(.center)
@@ -28,8 +28,8 @@ struct ExperiencePicker: View {
                 Spacer()
                 
                 LazyVGrid(columns: columns) {
-                    ForEach(Experience.allCases) { experience in
-                        ExperiencePickerItem($selection, experience: experience)
+                    ForEach(NavMode.allCases) { navMode in
+                        NavModePickerItem($selection, navMode: navMode)
                     }
                 }
                 
@@ -52,7 +52,7 @@ struct ExperiencePicker: View {
 }
 
 #Preview {
-    @Previewable @State var selectedExperience: Experience? = .stack
+    @Previewable @State var selectedNavMode: NavMode? = .stack
     
-    ExperiencePicker($selectedExperience)
+    NavModePicker($selectedNavMode)
 }

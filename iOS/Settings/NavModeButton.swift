@@ -5,7 +5,7 @@ struct NavModeButton: View {
     @EnvironmentObject private var store: ValueStore
     
     private var icon: String {
-        if store.experience == .stack {
+        if store.navMode == .stack {
             "list.bullet.rectangle.portrait"
         } else {
             "sidebar.left"
@@ -16,7 +16,7 @@ struct NavModeButton: View {
         @Bindable var nav = nav
         
         Button {
-            nav.showExperiencePicker = true
+            nav.showNavModePicker = true
         } label: {
             HStack {
                 Text("Navigation mode")
@@ -29,8 +29,8 @@ struct NavModeButton: View {
             }
         }
         .help("Choose your navigation experience")
-        .sheet($nav.showExperiencePicker) {
-            ExperiencePicker($store.experience)
+        .sheet($nav.showNavModePicker) {
+            NavModePicker($store.navMode)
         }
     }
 }

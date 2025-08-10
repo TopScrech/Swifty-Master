@@ -14,7 +14,7 @@ struct NavContainer: View {
         @Bindable var nav = nav
         
         Group {
-            switch store.experience {
+            switch store.navMode {
             case .stack?:
                 StackContentView()
                 
@@ -24,7 +24,7 @@ struct NavContainer: View {
             case nil:
                 NavModeButton()
                     .onAppear {
-                        nav.showExperiencePicker = true
+                        nav.showNavModePicker = true
                     }
             }
         }
