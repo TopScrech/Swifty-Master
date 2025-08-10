@@ -64,18 +64,7 @@ struct TopicText: View {
                 }
             }
             
-            TopicTextShortenedNumbers()
-            
-            TopicDisclosureGroup("Limit the number of lines") {
-                Text("GoidaGoida")
-                    .frame(width: 64)
-                
-                Text("GoidaGoida")
-                    .frame(width: 64)
-                    .lineLimit(1)
-                
-                CodeBlockView(.textLineLimit)
-            }
+            ShortenedNumbers()
         }
         .bold(isBold)
         .toolbar {

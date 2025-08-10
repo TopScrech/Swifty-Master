@@ -1,5 +1,6 @@
 Text("Hello, world!")
     .font(.largeTitle)
-    .padding(10)
     .foregroundStyle(.red)
     .lineLimit(1)
+    .frame(width: 200, alignment: .leading)
+    .padding(10)
