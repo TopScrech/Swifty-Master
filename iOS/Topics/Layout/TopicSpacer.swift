@@ -20,6 +20,7 @@ Spacer(minLength: 16)
 
 Spacer()
     .minLength(16)
+
 """)
             TopicHeading("Spacer with a fixed size")
             
