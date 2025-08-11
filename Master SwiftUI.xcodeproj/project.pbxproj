@@ -164,8 +164,6 @@
 		F37D9DA72E488D6D008ECB6D /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = F37D9DA62E488D6D008ECB6D /* text.txt */; };
 		F37D9DA82E488D6D008ECB6D /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = F37D9DA62E488D6D008ECB6D /* text.txt */; };
 		F380A1712E4AA1EE00157F67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F380A16D2E4AA1EE00157F67 /* Assets.xcassets */; };
-		F380A1722E4AA1EE00157F67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F380A16E2E4AA1EE00157F67 /* ContentView.swift */; };
-		F380A1732E4AA1EE00157F67 /* Swifty_MasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F380A16F2E4AA1EE00157F67 /* Swifty_MasterApp.swift */; };
 		F380A1752E4AA1FA00157F67 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F380A1742E4AA1FA00157F67 /* ScrechKit */; };
 		F388D19C2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */; };
 		F388D19D2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */; };
@@ -464,8 +462,7 @@
 		F37D9DA62E488D6D008ECB6D /* text.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = text.txt; sourceTree = "<group>"; };
 		F380A1622E4AA1BF00157F67 /* Swifty Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F380A16D2E4AA1EE00157F67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F380A16E2E4AA1EE00157F67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F380A16F2E4AA1EE00157F67 /* Swifty_MasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swifty_MasterApp.swift; sourceTree = "<group>"; };
+		F380A1762E4AA2C700157F67 /* Swifty-Master-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Swifty-Master-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLowPowerMode.swift; sourceTree = "<group>"; };
 		F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = highlightOccurrences.swift; sourceTree = "<group>"; };
 		F399A4AF2E3DC544008BED17 /* iOS 18 support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOS 18 support.swift"; sourceTree = "<group>"; };
@@ -927,9 +924,8 @@
 		F380A1702E4AA1EE00157F67 /* Swifty Master */ = {
 			isa = PBXGroup;
 			children = (
+				F380A1762E4AA2C700157F67 /* Swifty-Master-Info.plist */,
 				F380A16D2E4AA1EE00157F67 /* Assets.xcassets */,
-				F380A16E2E4AA1EE00157F67 /* ContentView.swift */,
-				F380A16F2E4AA1EE00157F67 /* Swifty_MasterApp.swift */,
 			);
 			path = "Swifty Master";
 			sourceTree = "<group>";
@@ -1567,8 +1563,6 @@
 		F380A15E2E4AA1BE00157F67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				F380A1722E4AA1EE00157F67 /* ContentView.swift in Sources */,
-				F380A1732E4AA1EE00157F67 /* Swifty_MasterApp.swift in Sources */,
 			);
 		};
 		F3BBD9DA2AEECD3400A9F7E7 /* Sources */ = {
@@ -1747,7 +1741,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Swifty-Master-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Swifty Master";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
@@ -1777,7 +1773,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Swifty-Master-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Swifty Master";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
