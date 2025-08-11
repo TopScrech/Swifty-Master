@@ -42,6 +42,16 @@ extension Topic {
                 TopicDocType("init(text:selection:) (iOS 26)", url: "https://developer.apple.com/documentation/swiftui/texteditor/init(text:selection:)")
             ]
             
+        case .shape:
+            return [
+                TopicDocType("Rectangle", url: "https://developer.apple.com/documentation/swiftui/rectangle"),
+                TopicDocType("RoundedRectangle", url: "https://developer.apple.com/documentation/swiftui/roundedrectangle"),
+                TopicDocType("Circle", url: "https://developer.apple.com/documentation/swiftui/circle"),
+                TopicDocType("Ellipse", url: "https://developer.apple.com/documentation/swiftui/ellipse"),
+                TopicDocType("ConcentricRectangle (iOS 26+)", url: "https://developer.apple.com/documentation/swiftui/concentricrectangle"),
+                TopicDocType("fill(_:style:)", url: "https://developer.apple.com/documentation/swiftui/shapeview/fill(_:style:)")
+            ]
+            
             // MARK: - Image & Symbols
 #warning("Link to download SF Symbols")
         case .image:
