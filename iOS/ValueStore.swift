@@ -1,7 +1,9 @@
 import SwiftUI
 
 final class ValueStore: ObservableObject {
-    @AppStorage("color_theme") var colorTheme: ColorTheme = .system
+#if !os(visionOS)
+    @AppStorage("appearance") var appearance: ColorTheme = .system
+#endif
     @AppStorage("favorite_topics") var favoriteTopics: [Topic] = []
     @AppStorage("nav_mode") var navMode: NavMode?
     @AppStorage("last_tab") var lastTab = 0

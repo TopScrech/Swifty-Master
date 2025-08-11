@@ -6,13 +6,14 @@ struct SettingsView: View {
     var body: some View {
         Form {
             Section {
-                Picker("Appearance", selection: $store.colorTheme) {
+#if !os(visionOS)
+                Picker("Appearance", selection: $store.appearance) {
                     ForEach(ColorTheme.allCases) { theme in
                         Text(theme.loc)
                             .tag(theme)
                     }
                 }
-                
+#endif
                 Toggle("Code line numbers", isOn: $store.showCodeLineNumbers)
                 
                 Toggle(isOn: $store.favoriteArticlesBadge) {
