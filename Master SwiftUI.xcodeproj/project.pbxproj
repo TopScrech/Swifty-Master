@@ -900,12 +900,12 @@
 			isa = PBXGroup;
 			children = (
 				F37D9DA62E488D6D008ECB6D /* text.txt */,
-				F35C358F2E44125100622147 /* textShortenedNumbers.txt */,
 				F3CFBD252E3F8AE2005F93EA /* mdBoldItalic.txt */,
 				F3CFBD262E3F8AE2005F93EA /* mdLink.txt */,
 				F3CFBD272E3F8AE2005F93EA /* mdMonospaced.txt */,
 				F3CFBD4E2E3F8AE2005F93EA /* mdRegular.txt */,
 				F3CFBD4F2E3F8AE2005F93EA /* mdStrikethrough.txt */,
+				F35C358F2E44125100622147 /* textShortenedNumbers.txt */,
 			);
 			path = Text;
 			sourceTree = "<group>";
