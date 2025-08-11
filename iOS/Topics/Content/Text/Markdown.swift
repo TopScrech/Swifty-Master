@@ -10,7 +10,7 @@ struct Markdown: View {
             }
             
             VStack {
-                Text("**Bold** ***bold italic***")
+                Text("**Bold**, ***bold italic***")
                 
                 CodeBlockView(.mdBoldItalic)
             }

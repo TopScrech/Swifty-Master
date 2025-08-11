@@ -1,9 +1,9 @@
 import SwiftUI
 
 struct TopicDocs: View {
-    private let docs: [String: String]
+    private let docs: [TopicDocType]
     
-    init(_ docs: [String: String]) {
+    init(_ docs: [TopicDocType]) {
         self.docs = docs
     }
     
@@ -12,8 +12,8 @@ struct TopicDocs: View {
             if docs.count > 0 {
                 TopicHeading("Docs")
                 
-                ForEach(Array(docs), id: \.key) { key, value in
-                    TopicDocsCard(key, at: value)
+                ForEach(docs) { doc in
+                    TopicDocsCard(doc)
                 }
             }
         }

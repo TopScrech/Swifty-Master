@@ -19,6 +19,12 @@ struct TopicBadges: View {
             .glassyBackground(16)
             
             CodeBlockView(.badges)
+            
+            TopicHeading("Badge over app icon")
+            
+            TopicWarning("Note that the notifications permission is required")
+            
+            CodeBlockView(.badgeOverAppIcon)
         }
         .onChange(of: number) { _, new in
             changeBadgeNumber(new)

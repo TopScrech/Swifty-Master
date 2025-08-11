@@ -27,10 +27,8 @@ func attributedCodeString(for code: String) -> AttributedString {
     ]
     
     let modifiers = [
-        "brown", "red", "indigo", "tint", "green",
         "label",
-        "accessoryCircular", "accessoryCircularCapacity", "accessoryLinear", "accessoryLinearCapacity", "linearCapacity",
-        "gaugeStyle", "dismiss", "opacity", "padding", "horizontal",
+        "dismiss", "opacity",
         "navigationBarBackButtonHidden", "appStoreOverlay"
     ]
     
@@ -156,7 +154,35 @@ func attributedCodeString(for code: String) -> AttributedString {
             
             if let stringRange = Range(nameRange, in: code),
                let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
-                attributedString[attributedRange].foregroundColor = Color(0xD0A8FF)
+                attributedString[attributedRange].foregroundColor = Color(0xA167E6)
+                attributedString[attributedRange].font = .body.bold()
+            }
+        }
+    }
+    
+    // View Modifiers with a single enum-style parameter
+    // e.g. .padding(.vertical)
+    let singleParamModifierPattern = #"\.(\w+)\s*\(\s*\.(\w+)\s*\)"#
+    
+    if let regex = try? NSRegularExpression(pattern: singleParamModifierPattern) {
+        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+        
+        for match in matches where match.numberOfRanges >= 3 {
+            // Group 1: modifier name (e.g. "padding")
+            let modifierNameRange = match.range(at: 1)
+            // Group 2: single parameter (e.g. "vertical")
+            let paramNameRange = match.range(at: 2)
+            
+            if let r1 = Range(modifierNameRange, in: code),
+               let a1 = Range(NSRange(r1, in: code), in: attributedString) {
+                attributedString[a1].foregroundColor = Color(0xA167E6)
+                attributedString[a1].font = .body.bold()
+            }
+            
+            if let r2 = Range(paramNameRange, in: code),
+               let a2 = Range(NSRange(r2, in: code), in: attributedString) {
+                attributedString[a2].foregroundColor = Color(0xA167E6)
+                attributedString[a2].font = .body.bold()
             }
         }
     }
@@ -190,6 +216,23 @@ func attributedCodeString(for code: String) -> AttributedString {
             if let stringRange = Range(nameRange, in: code),
                let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
                 attributedString[attributedRange].foregroundColor = Color(0xD0A8FF)
+                attributedString[attributedRange].font = .body.bold()
+            }
+        }
+    }
+    
+    // Color SwiftUI bindings `$property`
+    let bindingPattern = #"\$[A-Za-z_]\w*"#
+    
+    if let regex = try? NSRegularExpression(pattern: bindingPattern) {
+        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+        
+        for match in matches {
+            let nameRange = match.range(at: 0)
+            
+            if let stringRange = Range(nameRange, in: code),
+               let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
+                attributedString[attributedRange].foregroundColor = Color(0x67B7A4)
                 attributedString[attributedRange].font = .body.bold()
             }
         }

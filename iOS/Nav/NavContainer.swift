@@ -14,7 +14,7 @@ struct NavContainer: View {
         @Bindable var nav = nav
         
         Group {
-            switch store.experience {
+            switch store.navMode {
             case .stack?:
                 StackContentView()
                 
@@ -22,9 +22,9 @@ struct NavContainer: View {
                 TwoColumnContentView()
                 
             case nil:
-                ExperienceButton()
+                NavModeButton()
                     .onAppear {
-                        nav.showExperiencePicker = true
+                        nav.showNavModePicker = true
                     }
             }
         }

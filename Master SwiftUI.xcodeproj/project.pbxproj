@@ -29,8 +29,6 @@
 		F314C80D2E2E486200F63B6A /* TopicTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C80B2E2E486200F63B6A /* TopicTextEditor.swift */; };
 		F314C80F2E2E4A0100F63B6A /* TopicImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C80E2E2E4A0100F63B6A /* TopicImage.swift */; };
 		F314C8102E2E4A0100F63B6A /* TopicImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C80E2E2E4A0100F63B6A /* TopicImage.swift */; };
-		F314C8122E2E4B6A00F63B6A /* TopicSFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8112E2E4B6A00F63B6A /* TopicSFSymbols.swift */; };
-		F314C8132E2E4B6A00F63B6A /* TopicSFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8112E2E4B6A00F63B6A /* TopicSFSymbols.swift */; };
 		F314C8152E2E4B8700F63B6A /* TopicLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8142E2E4B8700F63B6A /* TopicLabel.swift */; };
 		F314C8162E2E4B8700F63B6A /* TopicLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8142E2E4B8700F63B6A /* TopicLabel.swift */; };
 		F314C8182E2E4BB600F63B6A /* TopicDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8172E2E4BB600F63B6A /* TopicDivider.swift */; };
@@ -62,8 +60,8 @@
 		F314C85A2E2E665600F63B6A /* TopicGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8592E2E665600F63B6A /* TopicGradient.swift */; };
 		F314C85B2E2E665600F63B6A /* TopicGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8592E2E665600F63B6A /* TopicGradient.swift */; };
 		F31617CA2E41D87A00131D26 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = F31617C92E41D87A00131D26 /* SafariCover */; };
-		F31617CC2E42256700131D26 /* TopiicCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31617CB2E42256700131D26 /* TopiicCategory.swift */; };
-		F31617CD2E42256700131D26 /* TopiicCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31617CB2E42256700131D26 /* TopiicCategory.swift */; };
+		F31617CC2E42256700131D26 /* TopicCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31617CB2E42256700131D26 /* TopicCategory.swift */; };
+		F31617CD2E42256700131D26 /* TopicCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31617CB2E42256700131D26 /* TopicCategory.swift */; };
 		F31653B62E3C0A1000A0E9D7 /* FavoritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */; };
 		F31653B72E3C0A1000A0E9D7 /* FavoritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */; };
 		F31653B92E3C0A4E00A0E9D7 /* StackTopicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B82E3C0A4E00A0E9D7 /* StackTopicList.swift */; };
@@ -90,6 +88,16 @@
 		F33058702E3A9B250099CEB7 /* TopicDocsCardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */; };
 		F3378F9D2E2E68DF00A31D7F /* TopicDetectOSVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3378F9C2E2E68DF00A31D7F /* TopicDetectOSVersion.swift */; };
 		F3378F9E2E2E68DF00A31D7F /* TopicDetectOSVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3378F9C2E2E68DF00A31D7F /* TopicDetectOSVersion.swift */; };
+		F339041F2E4932A200A22EE1 /* BrightnessSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F339041D2E4932A200A22EE1 /* BrightnessSlider.swift */; };
+		F33904212E49341000A22EE1 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = F33904202E49341000A22EE1 /* SafariCover */; };
+		F33904262E49548500A22EE1 /* badgeOverAppIcon.txt in Resources */ = {isa = PBXBuildFile; fileRef = F33904252E49548500A22EE1 /* badgeOverAppIcon.txt */; };
+		F33904272E49548500A22EE1 /* badgeOverAppIcon.txt in Resources */ = {isa = PBXBuildFile; fileRef = F33904252E49548500A22EE1 /* badgeOverAppIcon.txt */; };
+		F339042A2E495C2A00A22EE1 /* TopicWarning.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33904292E495C2A00A22EE1 /* TopicWarning.swift */; };
+		F339042B2E495C2A00A22EE1 /* TopicWarning.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33904292E495C2A00A22EE1 /* TopicWarning.swift */; };
+		F33904362E49696B00A22EE1 /* spacerMinLenght.txt in Resources */ = {isa = PBXBuildFile; fileRef = F33904352E49696B00A22EE1 /* spacerMinLenght.txt */; };
+		F33904372E49696B00A22EE1 /* spacerMinLenght.txt in Resources */ = {isa = PBXBuildFile; fileRef = F33904352E49696B00A22EE1 /* spacerMinLenght.txt */; };
+		F33904392E49696C00A22EE1 /* spacerFixedSize.txt in Resources */ = {isa = PBXBuildFile; fileRef = F33904382E49696C00A22EE1 /* spacerFixedSize.txt */; };
+		F339043A2E49696C00A22EE1 /* spacerFixedSize.txt in Resources */ = {isa = PBXBuildFile; fileRef = F33904382E49696C00A22EE1 /* spacerFixedSize.txt */; };
 		F33E8B192E41495100B05370 /* ContentViewNavButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B182E41495100B05370 /* ContentViewNavButtons.swift */; };
 		F33E8B1A2E41495100B05370 /* ContentViewNavButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B182E41495100B05370 /* ContentViewNavButtons.swift */; };
 		F33E8B1C2E4162C100B05370 /* TopicDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B1B2E4162C100B05370 /* TopicDoc.swift */; };
@@ -100,7 +108,6 @@
 		F33E8B232E4162EF00B05370 /* TopicRelated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B212E4162EF00B05370 /* TopicRelated.swift */; };
 		F33E8B262E416BD700B05370 /* CodeEditorView in Frameworks */ = {isa = PBXBuildFile; productRef = F33E8B252E416BD700B05370 /* CodeEditorView */; };
 		F33E8B282E416BEF00B05370 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B272E416BEF00B05370 /* TestView.swift */; };
-		F33E8B292E416BEF00B05370 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B272E416BEF00B05370 /* TestView.swift */; };
 		F34480322E2CD41100D18E2E /* TopicDarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480312E2CD41100D18E2E /* TopicDarkMode.swift */; };
 		F34480332E2CD41100D18E2E /* TopicDarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480312E2CD41100D18E2E /* TopicDarkMode.swift */; };
 		F34480362E2D218400D18E2E /* TopicEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480352E2D218400D18E2E /* TopicEmptyView.swift */; };
@@ -115,41 +122,39 @@
 		F34480482E2D5D1900D18E2E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480462E2D5D1900D18E2E /* SettingsView.swift */; };
 		F35198472E2AECAA004E0F02 /* Gauge Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198462E2AECAA004E0F02 /* Gauge Card.swift */; };
 		F35198482E2AECAA004E0F02 /* Gauge Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198462E2AECAA004E0F02 /* Gauge Card.swift */; };
-		F351984E2E2AF689004E0F02 /* Code Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351984D2E2AF689004E0F02 /* Code Block.swift */; };
-		F351984F2E2AF689004E0F02 /* Code Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351984D2E2AF689004E0F02 /* Code Block.swift */; };
+		F351984E2E2AF689004E0F02 /* CodeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351984D2E2AF689004E0F02 /* CodeBlock.swift */; };
+		F351984F2E2AF689004E0F02 /* CodeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351984D2E2AF689004E0F02 /* CodeBlock.swift */; };
 		F35198C12E2B7E34004E0F02 /* AttributedCodeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198C02E2B7E34004E0F02 /* AttributedCodeString.swift */; };
 		F35198C22E2B7E34004E0F02 /* AttributedCodeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198C02E2B7E34004E0F02 /* AttributedCodeString.swift */; };
 		F35198C42E2B7E56004E0F02 /* CodeBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198C32E2B7E56004E0F02 /* CodeBlockView.swift */; };
 		F35198C52E2B7E56004E0F02 /* CodeBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198C32E2B7E56004E0F02 /* CodeBlockView.swift */; };
 		F35198FD2E2B9F53004E0F02 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EB2E2B9F53004E0F02 /* Topic.swift */; };
-		F35198FE2E2B9F53004E0F02 /* ExperienceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F32E2B9F53004E0F02 /* ExperienceButton.swift */; };
-		F35198FF2E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F52E2B9F53004E0F02 /* ExperiencePickerRow.swift */; };
+		F35198FE2E2B9F53004E0F02 /* NavModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F32E2B9F53004E0F02 /* NavModeButton.swift */; };
+		F35198FF2E2B9F53004E0F02 /* NavModePickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F52E2B9F53004E0F02 /* NavModePickerItem.swift */; };
 		F35199002E2B9F53004E0F02 /* TopicDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F72E2B9F53004E0F02 /* TopicDetail.swift */; };
 		F35199022E2B9F53004E0F02 /* NavModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EA2E2B9F53004E0F02 /* NavModel.swift */; };
 		F35199052E2B9F53004E0F02 /* NavContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198ED2E2B9F53004E0F02 /* NavContainer.swift */; };
 		F35199062E2B9F53004E0F02 /* TwoColumnContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */; };
 		F35199072E2B9F53004E0F02 /* GridTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F82E2B9F53004E0F02 /* GridTopic.swift */; };
-		F35199082E2B9F53004E0F02 /* ExperiencePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F42E2B9F53004E0F02 /* ExperiencePicker.swift */; };
+		F35199082E2B9F53004E0F02 /* NavModePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F42E2B9F53004E0F02 /* NavModePicker.swift */; };
 		F351990A2E2B9F53004E0F02 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E72E2B9F53004E0F02 /* DataModel.swift */; };
-		F351990B2E2B9F53004E0F02 /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F22E2B9F53004E0F02 /* ContinueButton.swift */; };
 		F351990D2E2B9F53004E0F02 /* StackContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EE2E2B9F53004E0F02 /* StackContentView.swift */; };
 		F351990E2E2B9F53004E0F02 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E62E2B9F53004E0F02 /* Category.swift */; };
-		F351990F2E2B9F53004E0F02 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E82E2B9F53004E0F02 /* Experience.swift */; };
+		F351990F2E2B9F53004E0F02 /* NavMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E82E2B9F53004E0F02 /* NavMode.swift */; };
 		F35199102E2B9F53004E0F02 /* TopicTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198FB2E2B9F53004E0F02 /* TopicTile.swift */; };
 		F35199112E2B9F53004E0F02 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EB2E2B9F53004E0F02 /* Topic.swift */; };
-		F35199122E2B9F53004E0F02 /* ExperienceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F32E2B9F53004E0F02 /* ExperienceButton.swift */; };
-		F35199132E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F52E2B9F53004E0F02 /* ExperiencePickerRow.swift */; };
+		F35199122E2B9F53004E0F02 /* NavModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F32E2B9F53004E0F02 /* NavModeButton.swift */; };
+		F35199132E2B9F53004E0F02 /* NavModePickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F52E2B9F53004E0F02 /* NavModePickerItem.swift */; };
 		F35199142E2B9F53004E0F02 /* TopicDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F72E2B9F53004E0F02 /* TopicDetail.swift */; };
 		F35199162E2B9F53004E0F02 /* NavModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EA2E2B9F53004E0F02 /* NavModel.swift */; };
 		F35199192E2B9F53004E0F02 /* NavContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198ED2E2B9F53004E0F02 /* NavContainer.swift */; };
 		F351991A2E2B9F53004E0F02 /* TwoColumnContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */; };
 		F351991B2E2B9F53004E0F02 /* GridTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F82E2B9F53004E0F02 /* GridTopic.swift */; };
-		F351991C2E2B9F53004E0F02 /* ExperiencePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F42E2B9F53004E0F02 /* ExperiencePicker.swift */; };
+		F351991C2E2B9F53004E0F02 /* NavModePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F42E2B9F53004E0F02 /* NavModePicker.swift */; };
 		F351991E2E2B9F53004E0F02 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E72E2B9F53004E0F02 /* DataModel.swift */; };
-		F351991F2E2B9F53004E0F02 /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F22E2B9F53004E0F02 /* ContinueButton.swift */; };
 		F35199212E2B9F53004E0F02 /* StackContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EE2E2B9F53004E0F02 /* StackContentView.swift */; };
 		F35199222E2B9F53004E0F02 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E62E2B9F53004E0F02 /* Category.swift */; };
-		F35199232E2B9F53004E0F02 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E82E2B9F53004E0F02 /* Experience.swift */; };
+		F35199232E2B9F53004E0F02 /* NavMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E82E2B9F53004E0F02 /* NavMode.swift */; };
 		F35199242E2B9F53004E0F02 /* TopicTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198FB2E2B9F53004E0F02 /* TopicTile.swift */; };
 		F35C358C2E440FD900622147 /* ShortenedNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35C358B2E440FD900622147 /* ShortenedNumbers.swift */; };
 		F35C358D2E440FD900622147 /* ShortenedNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35C358B2E440FD900622147 /* ShortenedNumbers.swift */; };
@@ -322,8 +327,8 @@
 		F3CFBDEB2E3F95B6005F93EA /* TopicHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDE92E3F95B6005F93EA /* TopicHStack.swift */; };
 		F3CFBDED2E3F95B7005F93EA /* TopicZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDEC2E3F95B7005F93EA /* TopicZStack.swift */; };
 		F3CFBDEE2E3F95B7005F93EA /* TopicZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDEC2E3F95B7005F93EA /* TopicZStack.swift */; };
-		F3CFBDF02E3F95B8005F93EA /* TopicGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDEF2E3F95B8005F93EA /* TopicGrid.swift */; };
-		F3CFBDF12E3F95B8005F93EA /* TopicGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDEF2E3F95B8005F93EA /* TopicGrid.swift */; };
+		F3CFBDF02E3F95B8005F93EA /* TopicGrids.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDEF2E3F95B8005F93EA /* TopicGrids.swift */; };
+		F3CFBDF12E3F95B8005F93EA /* TopicGrids.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDEF2E3F95B8005F93EA /* TopicGrids.swift */; };
 		F3CFBDF32E3F96EA005F93EA /* list.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDF22E3F96EA005F93EA /* list.txt */; };
 		F3CFBDF42E3F96EA005F93EA /* list.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDF22E3F96EA005F93EA /* list.txt */; };
 		F3CFBDF62E3F96F1005F93EA /* scrollView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDF52E3F96F1005F93EA /* scrollView.txt */; };
@@ -334,12 +339,8 @@
 		F3CFBDFD2E3F9740005F93EA /* lazyHGrid.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDFB2E3F9740005F93EA /* lazyHGrid.txt */; };
 		F3CFBDFF2E3F9741005F93EA /* tabView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDFE2E3F9741005F93EA /* tabView.txt */; };
 		F3CFBE002E3F9741005F93EA /* tabView.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBDFE2E3F9741005F93EA /* tabView.txt */; };
-		F3CFBE022E3F981C005F93EA /* TopicLazyVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE012E3F981C005F93EA /* TopicLazyVGrid.swift */; };
-		F3CFBE032E3F981C005F93EA /* TopicLazyVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE012E3F981C005F93EA /* TopicLazyVGrid.swift */; };
 		F3CFBE082E3F981E005F93EA /* TopicTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE072E3F981E005F93EA /* TopicTabView.swift */; };
 		F3CFBE092E3F981E005F93EA /* TopicTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE072E3F981E005F93EA /* TopicTabView.swift */; };
-		F3CFBE0B2E3F985C005F93EA /* TopicLazyHGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE0A2E3F985C005F93EA /* TopicLazyHGrid.swift */; };
-		F3CFBE0C2E3F985C005F93EA /* TopicLazyHGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE0A2E3F985C005F93EA /* TopicLazyHGrid.swift */; };
 		F3CFBE0E2E3F994E005F93EA /* TopicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE0D2E3F994E005F93EA /* TopicList.swift */; };
 		F3CFBE0F2E3F994E005F93EA /* TopicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE0D2E3F994E005F93EA /* TopicList.swift */; };
 		F3CFBE112E3F994F005F93EA /* TopicScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE102E3F994F005F93EA /* TopicScrollView.swift */; };
@@ -368,8 +369,6 @@
 		F3CFBE362E3F9C21005F93EA /* detectScreenSize.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE342E3F9C21005F93EA /* detectScreenSize.txt */; };
 		F3CFBE382E3F9C22005F93EA /* detectCompactOrRegular.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE372E3F9C22005F93EA /* detectCompactOrRegular.txt */; };
 		F3CFBE392E3F9C22005F93EA /* detectCompactOrRegular.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE372E3F9C22005F93EA /* detectCompactOrRegular.txt */; };
-		F3CFBE3B2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE3A2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift */; };
-		F3CFBE3C2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE3A2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift */; };
 		F3CFBE3E2E3F9D2D005F93EA /* TopicDifferentiateOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE3D2E3F9D2D005F93EA /* TopicDifferentiateOS.swift */; };
 		F3CFBE3F2E3F9D2D005F93EA /* TopicDifferentiateOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE3D2E3F9D2D005F93EA /* TopicDifferentiateOS.swift */; };
 		F3CFBE412E3F9D2E005F93EA /* TopicDetectScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE402E3F9D2E005F93EA /* TopicDetectScreenSize.swift */; };
@@ -392,7 +391,6 @@
 		F314C8082E2E458B00F63B6A /* TopicTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTextField.swift; sourceTree = "<group>"; };
 		F314C80B2E2E486200F63B6A /* TopicTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTextEditor.swift; sourceTree = "<group>"; };
 		F314C80E2E2E4A0100F63B6A /* TopicImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicImage.swift; sourceTree = "<group>"; };
-		F314C8112E2E4B6A00F63B6A /* TopicSFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicSFSymbols.swift; sourceTree = "<group>"; };
 		F314C8142E2E4B8700F63B6A /* TopicLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLabel.swift; sourceTree = "<group>"; };
 		F314C8172E2E4BB600F63B6A /* TopicDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDivider.swift; sourceTree = "<group>"; };
 		F314C81A2E2E4BB900F63B6A /* TopicShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicShape.swift; sourceTree = "<group>"; };
@@ -408,7 +406,7 @@
 		F314C8522E2E65F000F63B6A /* TopicPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicPopover.swift; sourceTree = "<group>"; };
 		F314C8562E2E663500F63B6A /* TopicColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicColor.swift; sourceTree = "<group>"; };
 		F314C8592E2E665600F63B6A /* TopicGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicGradient.swift; sourceTree = "<group>"; };
-		F31617CB2E42256700131D26 /* TopiicCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopiicCategory.swift; sourceTree = "<group>"; };
+		F31617CB2E42256700131D26 /* TopicCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCategory.swift; sourceTree = "<group>"; };
 		F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesList.swift; sourceTree = "<group>"; };
 		F31653B82E3C0A4E00A0E9D7 /* StackTopicList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTopicList.swift; sourceTree = "<group>"; };
 		F31B90BD2E41D29B003A2AA2 /* textEditorFormat.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = textEditorFormat.txt; sourceTree = "<group>"; };
@@ -422,6 +420,11 @@
 		F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCard.swift; sourceTree = "<group>"; };
 		F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCardImage.swift; sourceTree = "<group>"; };
 		F3378F9C2E2E68DF00A31D7F /* TopicDetectOSVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectOSVersion.swift; sourceTree = "<group>"; };
+		F339041D2E4932A200A22EE1 /* BrightnessSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessSlider.swift; sourceTree = "<group>"; };
+		F33904252E49548500A22EE1 /* badgeOverAppIcon.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = badgeOverAppIcon.txt; sourceTree = "<group>"; };
+		F33904292E495C2A00A22EE1 /* TopicWarning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicWarning.swift; sourceTree = "<group>"; };
+		F33904352E49696B00A22EE1 /* spacerMinLenght.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = spacerMinLenght.txt; sourceTree = "<group>"; };
+		F33904382E49696C00A22EE1 /* spacerFixedSize.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = spacerFixedSize.txt; sourceTree = "<group>"; };
 		F33E8B182E41495100B05370 /* ContentViewNavButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewNavButtons.swift; sourceTree = "<group>"; };
 		F33E8B1B2E4162C100B05370 /* TopicDoc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDoc.swift; sourceTree = "<group>"; };
 		F33E8B1E2E4162DF00B05370 /* TopicIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicIcon.swift; sourceTree = "<group>"; };
@@ -434,21 +437,20 @@
 		F34480432E2D548F00D18E2E /* TopicToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicToggle.swift; sourceTree = "<group>"; };
 		F34480462E2D5D1900D18E2E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F35198462E2AECAA004E0F02 /* Gauge Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gauge Card.swift"; sourceTree = "<group>"; };
-		F351984D2E2AF689004E0F02 /* Code Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Code Block.swift"; sourceTree = "<group>"; };
+		F351984D2E2AF689004E0F02 /* CodeBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlock.swift; sourceTree = "<group>"; };
 		F35198C02E2B7E34004E0F02 /* AttributedCodeString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedCodeString.swift; sourceTree = "<group>"; };
 		F35198C32E2B7E56004E0F02 /* CodeBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlockView.swift; sourceTree = "<group>"; };
 		F35198E62E2B9F53004E0F02 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		F35198E72E2B9F53004E0F02 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		F35198E82E2B9F53004E0F02 /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
+		F35198E82E2B9F53004E0F02 /* NavMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavMode.swift; sourceTree = "<group>"; };
 		F35198EA2E2B9F53004E0F02 /* NavModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModel.swift; sourceTree = "<group>"; };
 		F35198EB2E2B9F53004E0F02 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		F35198ED2E2B9F53004E0F02 /* NavContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavContainer.swift; sourceTree = "<group>"; };
 		F35198EE2E2B9F53004E0F02 /* StackContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackContentView.swift; sourceTree = "<group>"; };
 		F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnContentView.swift; sourceTree = "<group>"; };
-		F35198F22E2B9F53004E0F02 /* ContinueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
-		F35198F32E2B9F53004E0F02 /* ExperienceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceButton.swift; sourceTree = "<group>"; };
-		F35198F42E2B9F53004E0F02 /* ExperiencePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencePicker.swift; sourceTree = "<group>"; };
-		F35198F52E2B9F53004E0F02 /* ExperiencePickerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencePickerRow.swift; sourceTree = "<group>"; };
+		F35198F32E2B9F53004E0F02 /* NavModeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModeButton.swift; sourceTree = "<group>"; };
+		F35198F42E2B9F53004E0F02 /* NavModePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModePicker.swift; sourceTree = "<group>"; };
+		F35198F52E2B9F53004E0F02 /* NavModePickerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModePickerItem.swift; sourceTree = "<group>"; };
 		F35198F72E2B9F53004E0F02 /* TopicDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetail.swift; sourceTree = "<group>"; };
 		F35198F82E2B9F53004E0F02 /* GridTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTopic.swift; sourceTree = "<group>"; };
 		F35198FB2E2B9F53004E0F02 /* TopicTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTile.swift; sourceTree = "<group>"; };
@@ -543,15 +545,13 @@
 		F3CFBDE62E3F959D005F93EA /* TopicVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicVStack.swift; sourceTree = "<group>"; };
 		F3CFBDE92E3F95B6005F93EA /* TopicHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicHStack.swift; sourceTree = "<group>"; };
 		F3CFBDEC2E3F95B7005F93EA /* TopicZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicZStack.swift; sourceTree = "<group>"; };
-		F3CFBDEF2E3F95B8005F93EA /* TopicGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicGrid.swift; sourceTree = "<group>"; };
+		F3CFBDEF2E3F95B8005F93EA /* TopicGrids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicGrids.swift; sourceTree = "<group>"; };
 		F3CFBDF22E3F96EA005F93EA /* list.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = list.txt; sourceTree = "<group>"; };
 		F3CFBDF52E3F96F1005F93EA /* scrollView.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = scrollView.txt; sourceTree = "<group>"; };
 		F3CFBDF82E3F973B005F93EA /* lazyVGrid.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lazyVGrid.txt; sourceTree = "<group>"; };
 		F3CFBDFB2E3F9740005F93EA /* lazyHGrid.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lazyHGrid.txt; sourceTree = "<group>"; };
 		F3CFBDFE2E3F9741005F93EA /* tabView.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = tabView.txt; sourceTree = "<group>"; };
-		F3CFBE012E3F981C005F93EA /* TopicLazyVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLazyVGrid.swift; sourceTree = "<group>"; };
 		F3CFBE072E3F981E005F93EA /* TopicTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTabView.swift; sourceTree = "<group>"; };
-		F3CFBE0A2E3F985C005F93EA /* TopicLazyHGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLazyHGrid.swift; sourceTree = "<group>"; };
 		F3CFBE0D2E3F994E005F93EA /* TopicList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicList.swift; sourceTree = "<group>"; };
 		F3CFBE102E3F994F005F93EA /* TopicScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicScrollView.swift; sourceTree = "<group>"; };
 		F3CFBE132E3F99B2005F93EA /* padding.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = padding.txt; sourceTree = "<group>"; };
@@ -566,7 +566,6 @@
 		F3CFBE312E3F9C20005F93EA /* differentiateOS.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = differentiateOS.txt; sourceTree = "<group>"; };
 		F3CFBE342E3F9C21005F93EA /* detectScreenSize.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectScreenSize.txt; sourceTree = "<group>"; };
 		F3CFBE372E3F9C22005F93EA /* detectCompactOrRegular.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectCompactOrRegular.txt; sourceTree = "<group>"; };
-		F3CFBE3A2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectDeviceUsed.swift; sourceTree = "<group>"; };
 		F3CFBE3D2E3F9D2D005F93EA /* TopicDifferentiateOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDifferentiateOS.swift; sourceTree = "<group>"; };
 		F3CFBE402E3F9D2E005F93EA /* TopicDetectScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectScreenSize.swift; sourceTree = "<group>"; };
 		F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectCompactOrRegular.swift; sourceTree = "<group>"; };
@@ -577,6 +576,7 @@
 		F3202C962D5596100030B3CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				F33904212E49341000A22EE1 /* SafariCover in Frameworks */,
 				F3202CBB2D5596380030B3CC /* ScrechKit in Frameworks */,
 			);
 		};
@@ -607,22 +607,21 @@
 			path = Haptic;
 			sourceTree = "<group>";
 		};
-		F314C7EF2E2E143F00F63B6A /* Experience */ = {
+		F314C7EF2E2E143F00F63B6A /* NavMode */ = {
 			isa = PBXGroup;
 			children = (
-				F35198F22E2B9F53004E0F02 /* ContinueButton.swift */,
-				F35198F32E2B9F53004E0F02 /* ExperienceButton.swift */,
-				F35198F42E2B9F53004E0F02 /* ExperiencePicker.swift */,
-				F35198F52E2B9F53004E0F02 /* ExperiencePickerRow.swift */,
-				F35198E82E2B9F53004E0F02 /* Experience.swift */,
+				F35198F42E2B9F53004E0F02 /* NavModePicker.swift */,
+				F35198F52E2B9F53004E0F02 /* NavModePickerItem.swift */,
+				F35198E82E2B9F53004E0F02 /* NavMode.swift */,
 			);
-			path = Experience;
+			path = NavMode;
 			sourceTree = "<group>";
 		};
 		F314C7F02E2E146100F63B6A /* Settings */ = {
 			isa = PBXGroup;
 			children = (
 				F34480462E2D5D1900D18E2E /* SettingsView.swift */,
+				F35198F32E2B9F53004E0F02 /* NavModeButton.swift */,
 				F3C92B152E48AF4300203691 /* DebugSettings.swift */,
 				F3AE99D82E2F861C00D70249 /* ColorTheme.swift */,
 			);
@@ -636,7 +635,6 @@
 				F314C8082E2E458B00F63B6A /* TopicTextField.swift */,
 				F314C80B2E2E486200F63B6A /* TopicTextEditor.swift */,
 				F314C80E2E2E4A0100F63B6A /* TopicImage.swift */,
-				F314C8112E2E4B6A00F63B6A /* TopicSFSymbols.swift */,
 				F314C8142E2E4B8700F63B6A /* TopicLabel.swift */,
 				F314C81A2E2E4BB900F63B6A /* TopicShape.swift */,
 				F314C8172E2E4BB600F63B6A /* TopicDivider.swift */,
@@ -683,12 +681,105 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F33904282E49593700A22EE1 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				F3BF16E52E2CCDEE005212D1 /* TopicDocs.swift */,
+				F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */,
+				F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */,
+			);
+			path = Docs;
+			sourceTree = "<group>";
+		};
+		F339042C2E49634400A22EE1 /* Grids */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBDE22E3F94D8005F93EA /* grid.txt */,
+				F3CFBDF82E3F973B005F93EA /* lazyVGrid.txt */,
+				F3CFBDFB2E3F9740005F93EA /* lazyHGrid.txt */,
+			);
+			path = Grids;
+			sourceTree = "<group>";
+		};
+		F339042D2E49636800A22EE1 /* Dismiss */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBD3C2E3F8AE2005F93EA /* dismiss.txt */,
+				F3CFBD3D2E3F8AE2005F93EA /* dismissHideBackButton.txt */,
+			);
+			path = Dismiss;
+			sourceTree = "<group>";
+		};
+		F339042E2E49637400A22EE1 /* Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBD4A2E3F8AE2005F93EA /* sheet.txt */,
+				F3CFBD4B2E3F8AE2005F93EA /* sheetBefore15.txt */,
+			);
+			path = Sheet;
+			sourceTree = "<group>";
+		};
+		F339042F2E49637C00A22EE1 /* EmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBD472E3F8AE2005F93EA /* emptyView.txt */,
+				F3CFBD482E3F8AE2005F93EA /* emptyViewAnyView.txt */,
+			);
+			path = EmptyView;
+			sourceTree = "<group>";
+		};
+		F33904302E49638700A22EE1 /* Stacks */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBDD62E3F945C005F93EA /* vStack.txt */,
+				F3CFBDD92E3F9473005F93EA /* hStack.txt */,
+				F3CFBDDC2E3F947A005F93EA /* zStack.txt */,
+			);
+			path = Stacks;
+			sourceTree = "<group>";
+		};
+		F33904312E49639E00A22EE1 /* Detect OS */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBE2E2E3F9C09005F93EA /* detectDeviceUsed.txt */,
+				F3CFBE312E3F9C20005F93EA /* differentiateOS.txt */,
+			);
+			path = "Detect OS";
+			sourceTree = "<group>";
+		};
+		F33904322E4963AF00A22EE1 /* Detect OS Version */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBD412E3F8AE2005F93EA /* detectOSVersion.txt */,
+				F3CFBD422E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt */,
+			);
+			path = "Detect OS Version";
+			sourceTree = "<group>";
+		};
+		F33904332E4963C300A22EE1 /* Dark Mode */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBD3F2E3F8AE2005F93EA /* darkMode.txt */,
+				F3C92B182E48B7A600203691 /* darkModeLock.txt */,
+			);
+			path = "Dark Mode";
+			sourceTree = "<group>";
+		};
+		F33904342E49696300A22EE1 /* Spacer */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBD3A2E3F8AE2005F93EA /* spacer.txt */,
+				F33904352E49696B00A22EE1 /* spacerMinLenght.txt */,
+				F33904382E49696C00A22EE1 /* spacerFixedSize.txt */,
+			);
+			path = Spacer;
+			sourceTree = "<group>";
+		};
 		F34480302E2CD3FF00D18E2E /* System */ = {
 			isa = PBXGroup;
 			children = (
 				F3378F9C2E2E68DF00A31D7F /* TopicDetectOSVersion.swift */,
 				F34480312E2CD41100D18E2E /* TopicDarkMode.swift */,
-				F3CFBE3A2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift */,
 				F3CFBE3D2E3F9D2D005F93EA /* TopicDifferentiateOS.swift */,
 				F3CFBE402E3F9D2E005F93EA /* TopicDetectScreenSize.swift */,
 				F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */,
@@ -731,6 +822,7 @@
 				F314C8372E2E53A100F63B6A /* TopicContextMenu.swift */,
 				F34480432E2D548F00D18E2E /* TopicToggle.swift */,
 				F314C8432E2E654C00F63B6A /* TopicSlider.swift */,
+				F339041D2E4932A200A22EE1 /* BrightnessSlider.swift */,
 				F314C84C2E2E657300F63B6A /* TopicStepper.swift */,
 				F314C84F2E2E657400F63B6A /* TopicPicker.swift */,
 				F3C6F6712E40E57A00E94540 /* TopicGauge.swift */,
@@ -758,7 +850,7 @@
 		F35198C62E2B7E73004E0F02 /* Code Block */ = {
 			isa = PBXGroup;
 			children = (
-				F351984D2E2AF689004E0F02 /* Code Block.swift */,
+				F351984D2E2AF689004E0F02 /* CodeBlock.swift */,
 				F35198C32E2B7E56004E0F02 /* CodeBlockView.swift */,
 				F35198C02E2B7E34004E0F02 /* AttributedCodeString.swift */,
 				F3CFBD502E3F8AE2005F93EA /* Code Blocks */,
@@ -771,7 +863,7 @@
 			children = (
 				F35198E62E2B9F53004E0F02 /* Category.swift */,
 				F35198EB2E2B9F53004E0F02 /* Topic.swift */,
-				F31617CB2E42256700131D26 /* TopiicCategory.swift */,
+				F31617CB2E42256700131D26 /* TopicCategory.swift */,
 				F33E8B1B2E4162C100B05370 /* TopicDoc.swift */,
 				F33E8B212E4162EF00B05370 /* TopicRelated.swift */,
 				F33E8B1E2E4162DF00B05370 /* TopicIcon.swift */,
@@ -789,7 +881,7 @@
 				F314C7F12E2E1C1800F63B6A /* TopicLinkLabel.swift */,
 				F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */,
 				F35198FC2E2B9F53004E0F02 /* Topic */,
-				F314C7EF2E2E143F00F63B6A /* Experience */,
+				F314C7EF2E2E143F00F63B6A /* NavMode */,
 			);
 			path = Nav;
 			sourceTree = "<group>";
@@ -808,12 +900,12 @@
 			isa = PBXGroup;
 			children = (
 				F37D9DA62E488D6D008ECB6D /* text.txt */,
-				F35C358F2E44125100622147 /* textShortenedNumbers.txt */,
 				F3CFBD252E3F8AE2005F93EA /* mdBoldItalic.txt */,
 				F3CFBD262E3F8AE2005F93EA /* mdLink.txt */,
 				F3CFBD272E3F8AE2005F93EA /* mdMonospaced.txt */,
 				F3CFBD4E2E3F8AE2005F93EA /* mdRegular.txt */,
 				F3CFBD4F2E3F8AE2005F93EA /* mdStrikethrough.txt */,
+				F35C358F2E44125100622147 /* textShortenedNumbers.txt */,
 			);
 			path = Text;
 			sourceTree = "<group>";
@@ -863,15 +955,14 @@
 		F3BF16DF2E2C779E005212D1 /* Topics */ = {
 			isa = PBXGroup;
 			children = (
+				F33904282E49593700A22EE1 /* Docs */,
 				F3BF16D92E2C76A8005212D1 /* ContentView.swift */,
 				F33E8B182E41495100B05370 /* ContentViewNavButtons.swift */,
 				F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */,
 				F3BF16E12E2C7D1C005212D1 /* TopicHeading.swift */,
-				F3BF16E52E2CCDEE005212D1 /* TopicDocs.swift */,
-				F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */,
-				F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */,
 				F344803F2E2D4E0500D18E2E /* TopicActionButton.swift */,
 				F314C7F82E2E1F0F00F63B6A /* TopicDisclosureGroup.swift */,
+				F33904292E495C2A00A22EE1 /* TopicWarning.swift */,
 				F314C7F42E2E1E7200F63B6A /* Content */,
 				F34480422E2D548500D18E2E /* Control */,
 				F3BF16E42E2CCDE8005212D1 /* Nav */,
@@ -902,15 +993,11 @@
 		F3CFBD222E3F8AE2005F93EA /* Collections */ = {
 			isa = PBXGroup;
 			children = (
-				F3CFBDD62E3F945C005F93EA /* vStack.txt */,
-				F3CFBDD92E3F9473005F93EA /* hStack.txt */,
-				F3CFBDDC2E3F947A005F93EA /* zStack.txt */,
 				F3CFBDF22E3F96EA005F93EA /* list.txt */,
 				F3CFBDF52E3F96F1005F93EA /* scrollView.txt */,
-				F3CFBDE22E3F94D8005F93EA /* grid.txt */,
-				F3CFBDF82E3F973B005F93EA /* lazyVGrid.txt */,
-				F3CFBDFB2E3F9740005F93EA /* lazyHGrid.txt */,
 				F3CFBDFE2E3F9741005F93EA /* tabView.txt */,
+				F33904302E49638700A22EE1 /* Stacks */,
+				F339042C2E49634400A22EE1 /* Grids */,
 			);
 			path = Collections;
 			sourceTree = "<group>";
@@ -918,14 +1005,14 @@
 		F3CFBD2C2E3F8AE2005F93EA /* Content */ = {
 			isa = PBXGroup;
 			children = (
-				F35C358E2E44124A00622147 /* Text */,
 				F3CFBD232E3F8AE2005F93EA /* divider.txt */,
 				F3CFBD242E3F8AE2005F93EA /* image.txt */,
-				F3FCB9402E4499AE00ACBF44 /* TextField */,
-				F3FCB9412E44D0F400ACBF44 /* TextEditor */,
 				F3CFBD9D2E3F8B9F005F93EA /* label.txt */,
 				F3CFBDA02E3F8C09005F93EA /* sfSymbols.txt */,
 				F3CFBDA32E3F8C43005F93EA /* shape.txt */,
+				F35C358E2E44124A00622147 /* Text */,
+				F3FCB9402E4499AE00ACBF44 /* TextField */,
+				F3FCB9412E44D0F400ACBF44 /* TextEditor */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -945,6 +1032,7 @@
 				F3CFBD4D2E3F8AE2005F93EA /* gauges.txt */,
 				F3C6F66E2E40E46900E94540 /* progressView.txt */,
 				F3C6F66B2E40E46800E94540 /* badges.txt */,
+				F33904252E49548500A22EE1 /* badgeOverAppIcon.txt */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -961,11 +1049,11 @@
 		F3CFBD3B2E3F8AE2005F93EA /* Layout */ = {
 			isa = PBXGroup;
 			children = (
-				F3CFBD3A2E3F8AE2005F93EA /* spacer.txt */,
 				F3CFBE132E3F99B2005F93EA /* padding.txt */,
 				F3CFBE162E3F99B8005F93EA /* frame.txt */,
 				F3CFBE1C2E3F99BA005F93EA /* geometryReader.txt */,
 				F3CFBE1F2E3F99BB005F93EA /* equalSizeViews.txt */,
+				F33904342E49696300A22EE1 /* Spacer */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -973,8 +1061,6 @@
 		F3CFBD3E2E3F8AE2005F93EA /* Nav */ = {
 			isa = PBXGroup;
 			children = (
-				F3CFBD3C2E3F8AE2005F93EA /* dismiss.txt */,
-				F3CFBD3D2E3F8AE2005F93EA /* dismissHideBackButton.txt */,
 				F3CFBDA92E3F8E57005F93EA /* navigationView.txt */,
 				F3CFBDAC2E3F8E5C005F93EA /* navigationStack.txt */,
 				F3CFBDAF2E3F8E5D005F93EA /* navigationSplitView.txt */,
@@ -982,6 +1068,7 @@
 				F3CFBDB22E3F8E5E005F93EA /* navigationLink.txt */,
 				F3CFBDBB2E3F8E79005F93EA /* passAView.txt */,
 				F3CFBDBE2E3F8E87005F93EA /* link.txt */,
+				F339042D2E49636800A22EE1 /* Dismiss */,
 			);
 			path = Nav;
 			sourceTree = "<group>";
@@ -989,16 +1076,13 @@
 		F3CFBD442E3F8AE2005F93EA /* System */ = {
 			isa = PBXGroup;
 			children = (
-				F3CFBD412E3F8AE2005F93EA /* detectOSVersion.txt */,
-				F3CFBD3F2E3F8AE2005F93EA /* darkMode.txt */,
-				F3C92B182E48B7A600203691 /* darkModeLock.txt */,
-				F3CFBE2E2E3F9C09005F93EA /* detectDeviceUsed.txt */,
-				F3CFBE312E3F9C20005F93EA /* differentiateOS.txt */,
 				F3CFBE342E3F9C21005F93EA /* detectScreenSize.txt */,
 				F3CFBE372E3F9C22005F93EA /* detectCompactOrRegular.txt */,
 				F3CFBD402E3F8AE2005F93EA /* detectLanguage.txt */,
-				F3CFBD422E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt */,
 				F3CFBD432E3F8AE2005F93EA /* lowPowerMode.txt */,
+				F33904332E4963C300A22EE1 /* Dark Mode */,
+				F33904322E4963AF00A22EE1 /* Detect OS Version */,
+				F33904312E49639E00A22EE1 /* Detect OS */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -1006,13 +1090,11 @@
 		F3CFBD4C2E3F8AE2005F93EA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F3CFBD4A2E3F8AE2005F93EA /* sheet.txt */,
-				F3CFBD4B2E3F8AE2005F93EA /* sheetBefore15.txt */,
 				F3CFBD452E3F8AE2005F93EA /* alert.txt */,
 				F3CFBD462E3F8AE2005F93EA /* appStoreOverlay.txt */,
-				F3CFBD472E3F8AE2005F93EA /* emptyView.txt */,
-				F3CFBD482E3F8AE2005F93EA /* emptyViewAnyView.txt */,
 				F3CFBD492E3F8AE2005F93EA /* popover.txt */,
+				F339042F2E49637C00A22EE1 /* EmptyView */,
+				F339042E2E49637400A22EE1 /* Sheet */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1040,9 +1122,7 @@
 				F3CFBDEC2E3F95B7005F93EA /* TopicZStack.swift */,
 				F3CFBE0D2E3F994E005F93EA /* TopicList.swift */,
 				F3CFBE102E3F994F005F93EA /* TopicScrollView.swift */,
-				F3CFBDEF2E3F95B8005F93EA /* TopicGrid.swift */,
-				F3CFBE012E3F981C005F93EA /* TopicLazyVGrid.swift */,
-				F3CFBE0A2E3F985C005F93EA /* TopicLazyHGrid.swift */,
+				F3CFBDEF2E3F95B8005F93EA /* TopicGrids.swift */,
 				F3CFBE072E3F981E005F93EA /* TopicTabView.swift */,
 			);
 			path = Collections;
@@ -1084,6 +1164,7 @@
 			name = visionOS;
 			packageProductDependencies = (
 				F3202CBA2D5596380030B3CC /* ScrechKit */,
+				F33904202E49341000A22EE1 /* SafariCover */,
 			);
 			productName = "Everything SwiftUI visionOS";
 			productReference = F3202C992D5596100030B3CC /* visionOS.app */;
@@ -1162,6 +1243,7 @@
 				F3CFBDF72E3F96F1005F93EA /* scrollView.txt in Resources */,
 				F3CFBDA52E3F8C43005F93EA /* shape.txt in Resources */,
 				F31B90C22E41D384003A2AA2 /* textFieldSecured.txt in Resources */,
+				F33904372E49696B00A22EE1 /* spacerMinLenght.txt in Resources */,
 				F3C6F66D2E40E46800E94540 /* badges.txt in Resources */,
 				F3CFBDA82E3F8C96005F93EA /* customKeyboard.txt in Resources */,
 				F3202CB72D5596210030B3CC /* Assets.xcassets in Resources */,
@@ -1179,6 +1261,7 @@
 				F3CFBDAB2E3F8E57005F93EA /* navigationView.txt in Resources */,
 				F3CFBE362E3F9C21005F93EA /* detectScreenSize.txt in Resources */,
 				F3CFBD582E3F8AE2005F93EA /* detectOSVersion.txt in Resources */,
+				F33904272E49548500A22EE1 /* badgeOverAppIcon.txt in Resources */,
 				F3CFBD592E3F8AE2005F93EA /* toggle.txt in Resources */,
 				F3CFBD5A2E3F8AE2005F93EA /* mdRegular.txt in Resources */,
 				F3CFBE332E3F9C20005F93EA /* differentiateOS.txt in Resources */,
@@ -1190,6 +1273,7 @@
 				F3CFBE002E3F9741005F93EA /* tabView.txt in Resources */,
 				F3CFBD5E2E3F8AE2005F93EA /* contextMenu.txt in Resources */,
 				F3CFBD9F2E3F8B9F005F93EA /* label.txt in Resources */,
+				F339043A2E49696C00A22EE1 /* spacerFixedSize.txt in Resources */,
 				F3CFBD5F2E3F8AE2005F93EA /* mdLink.txt in Resources */,
 				F3CFBDFD2E3F9740005F93EA /* lazyHGrid.txt in Resources */,
 				F3CFBD602E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt in Resources */,
@@ -1239,6 +1323,7 @@
 			files = (
 				F3CFBDE32E3F94D8005F93EA /* grid.txt in Resources */,
 				F3CFBDFC2E3F9740005F93EA /* lazyHGrid.txt in Resources */,
+				F33904362E49696B00A22EE1 /* spacerMinLenght.txt in Resources */,
 				F3CFBDF32E3F96EA005F93EA /* list.txt in Resources */,
 				F3ADA61A2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */,
 				F3BBD9E82AEECD3500A9F7E7 /* Assets.xcassets in Resources */,
@@ -1258,6 +1343,7 @@
 				F3CFBD802E3F8AE2005F93EA /* mdRegular.txt in Resources */,
 				F3CFBD812E3F8AE2005F93EA /* toggleTint.txt in Resources */,
 				F3CFBD822E3F8AE2005F93EA /* emptyView.txt in Resources */,
+				F33904392E49696C00A22EE1 /* spacerFixedSize.txt in Resources */,
 				F3CFBD832E3F8AE2005F93EA /* mdBoldItalic.txt in Resources */,
 				F3CFBDA72E3F8C96005F93EA /* customKeyboard.txt in Resources */,
 				F3CFBD842E3F8AE2005F93EA /* contextMenu.txt in Resources */,
@@ -1295,6 +1381,7 @@
 				F3CFBD942E3F8AE2005F93EA /* detectLanguage.txt in Resources */,
 				F3CFBD952E3F8AE2005F93EA /* darkMode.txt in Resources */,
 				F3CFBD962E3F8AE2005F93EA /* dismissHideBackButton.txt in Resources */,
+				F33904262E49548500A22EE1 /* badgeOverAppIcon.txt in Resources */,
 				F3CFBE2F2E3F9C09005F93EA /* detectDeviceUsed.txt in Resources */,
 				F3CFBE322E3F9C20005F93EA /* differentiateOS.txt in Resources */,
 				F3CFBE382E3F9C22005F93EA /* detectCompactOrRegular.txt in Resources */,
@@ -1322,7 +1409,6 @@
 				F3202CC22D5597490030B3CC /* Master SwiftUI.swift in Sources */,
 				F314C8452E2E654C00F63B6A /* TopicSlider.swift in Sources */,
 				F3CFBE0F2E3F994E005F93EA /* TopicList.swift in Sources */,
-				F3CFBE032E3F981C005F93EA /* TopicLazyVGrid.swift in Sources */,
 				F34480322E2CD41100D18E2E /* TopicDarkMode.swift in Sources */,
 				F31653B92E3C0A4E00A0E9D7 /* StackTopicList.swift in Sources */,
 				F399A4B02E3DC544008BED17 /* iOS 18 support.swift in Sources */,
@@ -1345,7 +1431,7 @@
 				F314C7FA2E2E1F0F00F63B6A /* TopicDisclosureGroup.swift in Sources */,
 				F3CFBE2D2E3F9B18005F93EA /* TopicEqualSizeViews.swift in Sources */,
 				F3202CC62D55977A0030B3CC /* Image Picker 2.swift in Sources */,
-				F3CFBDF12E3F95B8005F93EA /* TopicGrid.swift in Sources */,
+				F3CFBDF12E3F95B8005F93EA /* TopicGrids.swift in Sources */,
 				F35198C42E2B7E56004E0F02 /* CodeBlockView.swift in Sources */,
 				F33E8B202E4162DF00B05370 /* TopicIcon.swift in Sources */,
 				F3CFBE2A2E3F9B17005F93EA /* TopicGeometryReader.swift in Sources */,
@@ -1360,24 +1446,23 @@
 				F314C85B2E2E665600F63B6A /* TopicGradient.swift in Sources */,
 				F33E8B232E4162EF00B05370 /* TopicRelated.swift in Sources */,
 				F30207CE2D8B001300C26008 /* Markdown.swift in Sources */,
-				F351984F2E2AF689004E0F02 /* Code Block.swift in Sources */,
+				F351984F2E2AF689004E0F02 /* CodeBlock.swift in Sources */,
 				F3CFBE242E3F9AFD005F93EA /* TopicPadding.swift in Sources */,
 				F314C8192E2E4BB600F63B6A /* TopicDivider.swift in Sources */,
 				F314C8162E2E4B8700F63B6A /* TopicLabel.swift in Sources */,
+				F339042B2E495C2A00A22EE1 /* TopicWarning.swift in Sources */,
 				F314C8362E2E538200F63B6A /* TopicButton.swift in Sources */,
 				F3CFBE272E3F9B16005F93EA /* TopicFrame.swift in Sources */,
 				F314C83C2E2E540800F63B6A /* TopicSheet.swift in Sources */,
 				F35198FD2E2B9F53004E0F02 /* Topic.swift in Sources */,
 				F3378F9E2E2E68DF00A31D7F /* TopicDetectOSVersion.swift in Sources */,
 				F330586C2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */,
-				F35198FE2E2B9F53004E0F02 /* ExperienceButton.swift in Sources */,
-				F314C8132E2E4B6A00F63B6A /* TopicSFSymbols.swift in Sources */,
+				F35198FE2E2B9F53004E0F02 /* NavModeButton.swift in Sources */,
 				F3C6F6762E40E57B00E94540 /* TopicProgressView.swift in Sources */,
-				F35198FF2E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */,
+				F35198FF2E2B9F53004E0F02 /* NavModePickerItem.swift in Sources */,
 				F3CFBE3F2E3F9D2D005F93EA /* TopicDifferentiateOS.swift in Sources */,
 				F35199002E2B9F53004E0F02 /* TopicDetail.swift in Sources */,
 				F314C81C2E2E4BB900F63B6A /* TopicShape.swift in Sources */,
-				F3CFBE0C2E3F985C005F93EA /* TopicLazyHGrid.swift in Sources */,
 				F3CFBDD22E3F901C005F93EA /* TopicPassAView.swift in Sources */,
 				F3C92B162E48AF4300203691 /* DebugSettings.swift in Sources */,
 				F3BF16E32E2C7D1C005212D1 /* TopicHeading.swift in Sources */,
@@ -1388,11 +1473,10 @@
 				F3AE99DA2E2F861C00D70249 /* ColorTheme.swift in Sources */,
 				F344803A2E2D225A00D18E2E /* TopicSpacer.swift in Sources */,
 				F33E8B1D2E4162C100B05370 /* TopicDoc.swift in Sources */,
-				F3CFBE3C2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift in Sources */,
 				F35199052E2B9F53004E0F02 /* NavContainer.swift in Sources */,
 				F35199062E2B9F53004E0F02 /* TwoColumnContentView.swift in Sources */,
 				F314C83F2E2E555600F63B6A /* TopicAlert.swift in Sources */,
-				F31617CD2E42256700131D26 /* TopiicCategory.swift in Sources */,
+				F31617CD2E42256700131D26 /* TopicCategory.swift in Sources */,
 				F314C80A2E2E458B00F63B6A /* TopicTextField.swift in Sources */,
 				F3CFBDC62E3F900D005F93EA /* TopicNavigationStack.swift in Sources */,
 				F3BF16DE2E2C7717005212D1 /* TopicDismiss.swift in Sources */,
@@ -1409,8 +1493,7 @@
 				F3CFBDD52E3F901E005F93EA /* TopicLink.swift in Sources */,
 				F314C80F2E2E4A0100F63B6A /* TopicImage.swift in Sources */,
 				F35199072E2B9F53004E0F02 /* GridTopic.swift in Sources */,
-				F35199082E2B9F53004E0F02 /* ExperiencePicker.swift in Sources */,
-				F33E8B292E416BEF00B05370 /* TestView.swift in Sources */,
+				F35199082E2B9F53004E0F02 /* NavModePicker.swift in Sources */,
 				F351990A2E2B9F53004E0F02 /* DataModel.swift in Sources */,
 				F3CFBDCC2E3F900F005F93EA /* TopicNavigationBar.swift in Sources */,
 				F314C8512E2E657400F63B6A /* TopicPicker.swift in Sources */,
@@ -1419,11 +1502,10 @@
 				F3CFBDCF2E3F9015005F93EA /* TopicNavigationLink.swift in Sources */,
 				F314C84E2E2E657300F63B6A /* TopicStepper.swift in Sources */,
 				F3CFBE122E3F994F005F93EA /* TopicScrollView.swift in Sources */,
-				F351990B2E2B9F53004E0F02 /* ContinueButton.swift in Sources */,
 				F351990D2E2B9F53004E0F02 /* StackContentView.swift in Sources */,
 				F34480442E2D548F00D18E2E /* TopicToggle.swift in Sources */,
 				F351990E2E2B9F53004E0F02 /* Category.swift in Sources */,
-				F351990F2E2B9F53004E0F02 /* Experience.swift in Sources */,
+				F351990F2E2B9F53004E0F02 /* NavMode.swift in Sources */,
 				F35199102E2B9F53004E0F02 /* TopicTile.swift in Sources */,
 				F3202CC02D5597400030B3CC /* AppStoreOverlay.swift in Sources */,
 			);
@@ -1440,7 +1522,7 @@
 				F32E88D52AF856E400959D49 /* Journal View.swift in Sources */,
 				F3C6F6722E40E57A00E94540 /* TopicGauge.swift in Sources */,
 				F3BF16DD2E2C7717005212D1 /* TopicDismiss.swift in Sources */,
-				F31617CC2E42256700131D26 /* TopiicCategory.swift in Sources */,
+				F31617CC2E42256700131D26 /* TopicCategory.swift in Sources */,
 				F314C7F92E2E1F0F00F63B6A /* TopicDisclosureGroup.swift in Sources */,
 				F35198472E2AECAA004E0F02 /* Gauge Card.swift in Sources */,
 				F399A4AD2E3D52A7008BED17 /* highlightOccurrences.swift in Sources */,
@@ -1451,12 +1533,11 @@
 				F35199112E2B9F53004E0F02 /* Topic.swift in Sources */,
 				F314C8102E2E4A0100F63B6A /* TopicImage.swift in Sources */,
 				F314C8322E2E536F00F63B6A /* TopicMenu.swift in Sources */,
-				F35199122E2B9F53004E0F02 /* ExperienceButton.swift in Sources */,
-				F35199132E2B9F53004E0F02 /* ExperiencePickerRow.swift in Sources */,
+				F35199122E2B9F53004E0F02 /* NavModeButton.swift in Sources */,
+				F35199132E2B9F53004E0F02 /* NavModePickerItem.swift in Sources */,
 				F35199142E2B9F53004E0F02 /* TopicDetail.swift in Sources */,
 				F3CFBE262E3F9B16005F93EA /* TopicFrame.swift in Sources */,
 				F314C83B2E2E540800F63B6A /* TopicSheet.swift in Sources */,
-				F3CFBE022E3F981C005F93EA /* TopicLazyVGrid.swift in Sources */,
 				F3AE99D92E2F861C00D70249 /* ColorTheme.swift in Sources */,
 				F314C7F72E2E1E7900F63B6A /* TopicText.swift in Sources */,
 				F3C6F6752E40E57B00E94540 /* TopicProgressView.swift in Sources */,
@@ -1475,11 +1556,10 @@
 				F351991B2E2B9F53004E0F02 /* GridTopic.swift in Sources */,
 				F3CFBE442E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift in Sources */,
 				F33E8B1F2E4162DF00B05370 /* TopicIcon.swift in Sources */,
-				F351991C2E2B9F53004E0F02 /* ExperiencePicker.swift in Sources */,
+				F351991C2E2B9F53004E0F02 /* NavModePicker.swift in Sources */,
 				F351991E2E2B9F53004E0F02 /* DataModel.swift in Sources */,
 				F31E14442E3E9C9E00D43C1E /* TopicDetectLaguage.swift in Sources */,
 				F31653BA2E3C0A4E00A0E9D7 /* StackTopicList.swift in Sources */,
-				F351991F2E2B9F53004E0F02 /* ContinueButton.swift in Sources */,
 				F3CFBE082E3F981E005F93EA /* TopicTabView.swift in Sources */,
 				F3CFBE2C2E3F9B18005F93EA /* TopicEqualSizeViews.swift in Sources */,
 				F314C8152E2E4B8700F63B6A /* TopicLabel.swift in Sources */,
@@ -1487,6 +1567,7 @@
 				F3CFBDCB2E3F900F005F93EA /* TopicNavigationBar.swift in Sources */,
 				F34480452E2D548F00D18E2E /* TopicToggle.swift in Sources */,
 				F35199212E2B9F53004E0F02 /* StackContentView.swift in Sources */,
+				F339042A2E495C2A00A22EE1 /* TopicWarning.swift in Sources */,
 				F3CFBDD12E3F901C005F93EA /* TopicPassAView.swift in Sources */,
 				F3CFBE412E3F9D2E005F93EA /* TopicDetectScreenSize.swift in Sources */,
 				F3CFBDED2E3F95B7005F93EA /* TopicZStack.swift in Sources */,
@@ -1497,9 +1578,9 @@
 				F314C8012E2E2A9400F63B6A /* FontSizeItem.swift in Sources */,
 				F3CFBDCE2E3F9015005F93EA /* TopicNavigationLink.swift in Sources */,
 				F314C83E2E2E555600F63B6A /* TopicAlert.swift in Sources */,
-				F3CFBDF02E3F95B8005F93EA /* TopicGrid.swift in Sources */,
+				F3CFBDF02E3F95B8005F93EA /* TopicGrids.swift in Sources */,
 				F314C8352E2E538200F63B6A /* TopicButton.swift in Sources */,
-				F35199232E2B9F53004E0F02 /* Experience.swift in Sources */,
+				F35199232E2B9F53004E0F02 /* NavMode.swift in Sources */,
 				F35199242E2B9F53004E0F02 /* TopicTile.swift in Sources */,
 				F3202C942D55952F0030B3CC /* AppStoreOverlay.swift in Sources */,
 				F3CFBE232E3F9AFD005F93EA /* TopicPadding.swift in Sources */,
@@ -1509,7 +1590,6 @@
 				F314C80C2E2E486200F63B6A /* TopicTextEditor.swift in Sources */,
 				F33E8B222E4162EF00B05370 /* TopicRelated.swift in Sources */,
 				F314C8582E2E663500F63B6A /* TopicColor.swift in Sources */,
-				F314C8122E2E4B6A00F63B6A /* TopicSFSymbols.swift in Sources */,
 				F33E8B1C2E4162C100B05370 /* TopicDoc.swift in Sources */,
 				F3BBD9FB2AEED4CE00A9F7E7 /* Image Picker.swift in Sources */,
 				F34480362E2D218400D18E2E /* TopicEmptyView.swift in Sources */,
@@ -1525,16 +1605,15 @@
 				F314C8442E2E654C00F63B6A /* TopicSlider.swift in Sources */,
 				F314C8532E2E65F000F63B6A /* TopicPopover.swift in Sources */,
 				F314C7F22E2E1C1800F63B6A /* TopicLinkLabel.swift in Sources */,
-				F3CFBE0B2E3F985C005F93EA /* TopicLazyHGrid.swift in Sources */,
 				F31653B62E3C0A1000A0E9D7 /* FavoritesList.swift in Sources */,
-				F3CFBE3B2E3F9D17005F93EA /* TopicDetectDeviceUsed.swift in Sources */,
 				F314C8092E2E458B00F63B6A /* TopicTextField.swift in Sources */,
 				F314C84D2E2E657300F63B6A /* TopicStepper.swift in Sources */,
 				F344803B2E2D225A00D18E2E /* TopicSpacer.swift in Sources */,
 				F3CFBDC52E3F900D005F93EA /* TopicNavigationStack.swift in Sources */,
 				F35C358C2E440FD900622147 /* ShortenedNumbers.swift in Sources */,
-				F351984E2E2AF689004E0F02 /* Code Block.swift in Sources */,
+				F351984E2E2AF689004E0F02 /* CodeBlock.swift in Sources */,
 				F3BBD9F92AEED4BC00A9F7E7 /* Image Picker View.swift in Sources */,
+				F339041F2E4932A200A22EE1 /* BrightnessSlider.swift in Sources */,
 				F35198C12E2B7E34004E0F02 /* AttributedCodeString.swift in Sources */,
 				F3CFBE3E2E3F9D2D005F93EA /* TopicDifferentiateOS.swift in Sources */,
 				F314C8182E2E4BB600F63B6A /* TopicDivider.swift in Sources */,
@@ -1656,7 +1735,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1718,7 +1797,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -1877,6 +1956,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F3BBD9F52AEECE4000A9F7E7 /* XCRemoteSwiftPackageReference "ScrechKit" */;
 			productName = ScrechKit;
+		};
+		F33904202E49341000A22EE1 /* SafariCover */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F31617C82E41D87A00131D26 /* XCRemoteSwiftPackageReference "SafariCover" */;
+			productName = SafariCover;
 		};
 		F33E8B252E416BD700B05370 /* CodeEditorView */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -3,7 +3,7 @@ import Foundation
 extension Topic {
     var category: Category {
         switch self {
-        case .text, .textField, .textEditor, .image, .sfSymbols, .label, .shape, .divider:
+        case .text, .textField, .textEditor, .image, .label, .shape, .divider:
                 .content
             
         case .button, .menu, .contextMenu, .toggle, .slider, .stepper, .picker, .gauges, .progressView, .badges:
@@ -15,7 +15,7 @@ extension Topic {
         case .dismiss, .navigationView, .navigationStack, .navigationSplitView, .navigationBar, .navigationLink, .passAView, .link:
                 .navigation
             
-        case .vStack, .hStack, .zStack, .list, .scrollView, .grid, .lazyVGrid, .lazyHGrid, .tabView:
+        case .vStack, .hStack, .zStack, .list, .scrollView, .grids, .tabView:
                 .collections
             
         case .spacer, .padding, .frame, /*.positionPoint, */.geometryReader, .equalSizeViews:
@@ -24,7 +24,7 @@ extension Topic {
         case .color, .gradient:
                 .design
             
-        case .detectOSVersion, .detectDarkMode, .detectDeviceUsed, .differentiateOS, .detectScreenSize, .detectCompactOrRegular, .detectLang, .lowPowerMode:
+        case .detectOSVersion, .detectDarkMode, .differentiateOS, .detectScreenSize, .detectCompactOrRegular, .detectLang, .lowPowerMode:
                 .system
         }
     }

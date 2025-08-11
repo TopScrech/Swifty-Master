@@ -8,7 +8,6 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          textField = "Text Field",
          textEditor = "Text Editor",
          image = "Image",
-         sfSymbols = "SF Symbols",
          label = "Label",
          shape = "Shape",
          divider = "Divider",
@@ -48,9 +47,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          zStack = "ZStack",
          list = "List",
          scrollView = "ScrollView",
-         grid = "Grid",
-         lazyVGrid = "LazyVGrid",
-         lazyHGrid = "LazyHGrid",
+         grids = "Grids",
          tabView = "TabView",
          
          // Layout
@@ -68,7 +65,6 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          // System
          detectOSVersion = "Detect OS Version",
          detectDarkMode = "Detect Dark Mode",
-         detectDeviceUsed = "Detect Device Used",
          differentiateOS = "Differentiate OS",
          detectScreenSize = "Detect Screen Size",
          detectCompactOrRegular = "Detect Compact or Regular",

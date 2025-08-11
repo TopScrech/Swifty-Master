@@ -1,1 +1,1 @@
-Text("~~A strikethrough example~~")
+Text("~~Strikethrough~~")

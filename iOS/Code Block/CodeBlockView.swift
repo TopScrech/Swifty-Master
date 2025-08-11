@@ -39,7 +39,9 @@ struct CodeBlockView: View {
                     }
                 }
                 .padding()
+#if !os(visionOS)
                 .frame(minWidth: UIScreen.main.bounds.width * 0.92, alignment: .leading)
+#endif
                 .background(.ultraThinMaterial)
                 .cornerRadius(20)
                 
@@ -56,6 +58,7 @@ struct CodeBlockView: View {
                             ShareLink(item: code)
                         }
                 }
+                .buttonStyle(.plain)
                 .secondary()
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
             }

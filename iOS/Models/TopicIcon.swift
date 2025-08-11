@@ -8,7 +8,6 @@ extension Topic {
         case .textField: "keyboard"
         case .textEditor: "square.and.pencil"
         case .image: "photo"
-        case .sfSymbols: "environments"
         case .label: "character.textbox"
         case .shape: "circle.on.square"
         case .divider: "square.and.line.vertical.and.square"
@@ -48,9 +47,7 @@ extension Topic {
         case .zStack: "square.stack.3d.up"
         case .list: "list.bullet.clipboard"
         case .scrollView: "scroll"
-        case .grid: "square.grid.3x3"
-        case .lazyVGrid: "square.grid.3x2"
-        case .lazyHGrid: "square.grid.3x2"
+        case .grids: "square.grid.3x3"
         case .tabView: "platter.filled.bottom.iphone"
             
             // Layout
@@ -68,8 +65,7 @@ extension Topic {
             // System
         case .detectOSVersion: "waveform.path.ecg.magnifyingglass"
         case .detectDarkMode: "circle.righthalf.filled"
-        case .detectDeviceUsed: "macbook.and.vision.pro"
-        case .differentiateOS: "macbook.sizes"
+        case .differentiateOS: "macbook.and.vision.pro"
         case .detectScreenSize: "arrow.down.left.and.arrow.up.right.rectangle"
         case .detectCompactOrRegular: "iphone.sizes"
         case .detectLang: "globe"

@@ -8,6 +8,10 @@ struct NavSubtitle: ViewModifier {
         self.subtitle = subtitle
     }
     
+    init(_ subtitle: String) {
+        self.subtitle = LocalizedStringKey(subtitle)
+    }
+    
     func body(content: Content) -> some View {
 #if os(visionOS)
         content
@@ -25,6 +29,10 @@ struct NavSubtitle: ViewModifier {
 extension View {
     func navSubtitle(_ subtitle: LocalizedStringKey) -> some View {
         modifier(NavSubtitle(subtitle))
+    }
+    
+    func navSubtitle<T: CustomStringConvertible>(_ subtitle: T) -> some View {
+        modifier(NavSubtitle(subtitle.description))
     }
 }
 
@@ -79,7 +87,7 @@ struct GlassProminentButtonStyle: ViewModifier {
     func body(content: Content) -> some View {
         if #available(iOS 26, macOS 26, *) {
             content
-#if DEBUG
+#if DEBUG && !os(visionOS)
                 .buttonStyle(.glassProminent)
 #endif
         } else {

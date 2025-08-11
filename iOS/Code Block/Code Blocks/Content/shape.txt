@@ -4,9 +4,7 @@ Rectangle()
     .frame(width: 80, height: 40)
     .padding()
 
-Rectangle()
-
-RoundedRectangle(cornerRadius: 6)
+RoundedRectangle(cornerRadius: 16)
 
 Circle()
 

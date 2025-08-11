@@ -25,7 +25,7 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          contextMenu,
          gauges,
          progressView,
-         badges,
+         badges, badgeOverAppIcon,
          
          // View
          sheet, sheetBefore15,
@@ -50,13 +50,11 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          zStack,
          list,
          scrollView,
-         grid,
-         lazyVGrid,
-         lazyHGrid,
+         grid, lazyVGrid, lazyHGrid,
          tabView,
          
          // Layout
-         spacer,
+         spacer, spacerMinLenght, spacerFixedSize,
          divider,
          padding,
          frame,
@@ -69,10 +67,9 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          
          // System
          darkMode, darkModeLock,
-         detectOSVersion, detectOSVersionNewAndOld,
+         detectOSVersion, detectOSVersionNewAndOld, detectDeviceUsed,
          lowPowerMode,
          detectLanguage,
-         detectDeviceUsed,
          differentiateOS,
          detectScreenSize,
          detectCompactOrRegular

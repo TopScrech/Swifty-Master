@@ -46,7 +46,6 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .textField: AnyView(TopicTextField())
     case .textEditor: AnyView(TopicTextEditor())
     case .image: AnyView(TopicImage())
-    case .sfSymbols: AnyView(TopicSFSymbols())
     case .label: AnyView(TopicLabel())
     case .shape: AnyView(TopicShape())
     case .divider: AnyView(TopicDivider())
@@ -86,9 +85,7 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .zStack: AnyView(TopicZStack())
     case .list: AnyView(TopicList())
     case .scrollView: AnyView(TopicScrollView())
-    case .grid: AnyView(TopicGrid())
-    case .lazyVGrid: AnyView(TopicLazyVGrid())
-    case .lazyHGrid: AnyView(TopicLazyHGrid())
+    case .grids: AnyView(TopicGrids())
     case .tabView: AnyView(TopicTabView())
         
         // Layout
@@ -108,7 +105,6 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .lowPowerMode: AnyView(TopicLowPowerMode())
     case .detectLang: AnyView(TopicDetectLaguage())
     case .differentiateOS: AnyView(TopicDifferentiateOS())
-    case .detectDeviceUsed: AnyView(TopicDetectDeviceUsed())
     case .detectScreenSize: AnyView(TopicDetectScreenSize())
     case .detectCompactOrRegular: AnyView(TopicDetectCompactOrRegular())
         

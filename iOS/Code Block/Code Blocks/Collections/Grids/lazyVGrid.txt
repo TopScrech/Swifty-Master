@@ -1,23 +1,21 @@
 struct ContentView: View {
-    // We define our values
+    // Define the values and columns
     private let values = /* ... */
-    
-    // We define our columns
     private let columns = [ /* ... */]
     
     var body: some View {
         ScrollView {
             LazyVGrid(columns: columns) {
-                ForEach(values, id: \.self) {item in
+                ForEach(values, id: \.self) { item in
                     Text("\(item)")
                 }
             }
         }
     }
- }
+}
 
 struct ContentView: View {
-    // We define our values and columns
+    // Define the values and columns
     private let values1 = /* ... */
     private let values2 = /* ... */
     private let columns = [ /* ... */]
@@ -30,15 +28,15 @@ struct ContentView: View {
                 spacing: 10,
                 pinnedViews: .sectionHeaders
             ) {
-
-            Section(header: Text("Section 1").font(.title2)) {
-                ForEach(values1, id: \.self) {item in
+            
+            Section("Section 1") {
+                ForEach(values1, id: \.self) { item in
                     Text("\(item)")
                 }
             }
             
-            Section(header: Text("Section 2").font(.title2)) {
-                ForEach(values2, id: \.self) {item in
+            Section("Section 2") {
+                ForEach(values2, id: \.self) { item in
                     Text("\(item)")
                 }
             }

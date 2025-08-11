@@ -6,21 +6,26 @@ struct SettingsView: View {
     var body: some View {
         Form {
             Section {
-                Toggle("Show code line numbers", isOn: $store.showCodeLineNumbers)
-            }
-            
-            Section {
-                ExperienceButton()
-            }
-            
-            Picker("Color theme", selection: $store.colorTheme) {
-                ForEach(ColorTheme.allCases) { theme in
-                    Text(theme.loc)
-                        .tag(theme)
+                Picker("Appearance", selection: $store.colorTheme) {
+                    ForEach(ColorTheme.allCases) { theme in
+                        Text(theme.loc)
+                            .tag(theme)
+                    }
+                }
+                
+                Toggle("Code line numbers", isOn: $store.showCodeLineNumbers)
+                
+                Toggle(isOn: $store.favoriteArticlesBadge) {
+                    Text("Favorite articles badge")
+                    Text("Displayed on top of the tab bar")
                 }
             }
             
-            Toggle("Use built-in Safari", isOn: $store.builtInBrowser)
+            Section {
+                NavModeButton()
+                
+                Toggle("Use built-in Safari", isOn: $store.builtInBrowser)
+            }
             
             DebugSettings()
         }
@@ -28,6 +33,7 @@ struct SettingsView: View {
         .formStyle(.grouped)
         .buttonStyle(.plain)
         .scrollIndicators(.never)
+        .ornamentDismissButton()
     }
 }
 

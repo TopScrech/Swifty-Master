@@ -5,29 +5,17 @@ struct TopicSpacer: View {
         VStack(spacing: 25) {
             Text("Spacer() is an element that takes up as much space as it can in a layout")
             
-            Text("Simple Spacer")
-            
             CodeBlockView(.spacer)
             
             TopicHeading("Spacer with a minimum size")
             
-            Text("⚠️ Keep in mind that a Spacer has a minimum length \(Text("not").underline()) equal to 0 by default")
+            TopicWarning("Keep in mind that a Spacer has a minimum length \(Text("not").underline()) equal to 0 by default")
             
-            CodeBlockView("""
-Spacer(minLength: 16)
-
-// or
-
-Spacer()
-    .minLength(16)
-""")
+            CodeBlockView(.spacerMinLenght)
+            
             TopicHeading("Spacer with a fixed size")
             
-            CodeBlockView("""
-Spacer()
-    .frame(width: 6, height: 6)
-
-""")
+            CodeBlockView(.spacerFixedSize)
         }
     }
 }

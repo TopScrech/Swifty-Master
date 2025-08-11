@@ -1,1 +1,1 @@
-Text("This is regular text")
+Text("Regular text")

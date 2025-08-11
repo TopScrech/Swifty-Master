@@ -1,1 +1,1 @@
-Text("This is **bold** text, this is *italic* text, and this is ***bold, italic*** text")
+Text("**Bold**, *italic*, ***bold, italic***")

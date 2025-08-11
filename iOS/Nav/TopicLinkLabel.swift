@@ -24,7 +24,6 @@ struct TopicLinkLabel: View {
             } icon: {
                 Image(systemName: topic.icon)
                     .opacity(isAvailable ? 1 : 0.25)
-                    .rotationEffect(.degrees(topic == .lazyVGrid ? 90 : 0))
             }
             .labelIconWidth(16)
             

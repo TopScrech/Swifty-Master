@@ -58,6 +58,7 @@ struct StackContentView: View {
                         }
                 }
             }
+            .badge(store.favoriteArticlesBadge ? store.favoriteTopics.count : 0)
         }
     }
 }

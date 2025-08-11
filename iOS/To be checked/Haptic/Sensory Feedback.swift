@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct FeedbackView: View {
-    let feedbacks: [String: SensoryFeedback] = [
+    private let feedbacks: [String: SensoryFeedback] = [
         "alignment":    .alignment,
         "decrease":     .decrease,
         "error":        .error,
