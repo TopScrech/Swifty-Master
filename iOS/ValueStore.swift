@@ -3,11 +3,11 @@ import SwiftUI
 final class ValueStore: ObservableObject {
 #if !os(visionOS)
     @AppStorage("appearance") var appearance: ColorTheme = .system
+    @AppStorage("built_in_browser") var builtInBrowser = true
 #endif
     @AppStorage("favorite_topics") var favoriteTopics: [Topic] = []
     @AppStorage("nav_mode") var navMode: NavMode?
     @AppStorage("last_tab") var lastTab = 0
-    @AppStorage("built_in_browser") var builtInBrowser = true
     @AppStorage("favorite_articles_badge") var favoriteArticlesBadge = false
     
     // Debug

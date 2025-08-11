@@ -24,8 +24,9 @@ struct SettingsView: View {
             
             Section {
                 NavModeButton()
-                
+#if !os(visionOS)
                 Toggle("Use built-in Safari", isOn: $store.builtInBrowser)
+#endif
             }
             
             DebugSettings()

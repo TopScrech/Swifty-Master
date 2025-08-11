@@ -43,12 +43,20 @@ struct TopicDocsCard: View {
     }
     
     private func openLink() {
+#if os(visionOS)
+        openURLExternally()
+#else
         if store.builtInBrowser {
             safariCover = true
         } else {
-            if let url = URL(string: doc.url) {
-                openURL(url)
-            }
+            openURLExternally()
+        }
+#endif
+    }
+    
+    private func openURLExternally() {
+        if let url = URL(string: doc.url) {
+            openURL(url)
         }
     }
 }
