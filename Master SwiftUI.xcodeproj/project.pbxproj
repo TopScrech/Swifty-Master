@@ -163,6 +163,10 @@
 		F37916EE2AF14A7A00B880AF /* Image Picker 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37916ED2AF14A7A00B880AF /* Image Picker 2.swift */; };
 		F37D9DA72E488D6D008ECB6D /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = F37D9DA62E488D6D008ECB6D /* text.txt */; };
 		F37D9DA82E488D6D008ECB6D /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = F37D9DA62E488D6D008ECB6D /* text.txt */; };
+		F380A1712E4AA1EE00157F67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F380A16D2E4AA1EE00157F67 /* Assets.xcassets */; };
+		F380A1722E4AA1EE00157F67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F380A16E2E4AA1EE00157F67 /* ContentView.swift */; };
+		F380A1732E4AA1EE00157F67 /* Swifty_MasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F380A16F2E4AA1EE00157F67 /* Swifty_MasterApp.swift */; };
+		F380A1752E4AA1FA00157F67 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F380A1742E4AA1FA00157F67 /* ScrechKit */; };
 		F388D19C2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */; };
 		F388D19D2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */; };
 		F399A4AC2E3D52A7008BED17 /* highlightOccurrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */; };
@@ -458,6 +462,10 @@
 		F35C358F2E44125100622147 /* textShortenedNumbers.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = textShortenedNumbers.txt; sourceTree = "<group>"; };
 		F37916ED2AF14A7A00B880AF /* Image Picker 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker 2.swift"; sourceTree = "<group>"; };
 		F37D9DA62E488D6D008ECB6D /* text.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = text.txt; sourceTree = "<group>"; };
+		F380A1622E4AA1BF00157F67 /* Swifty Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F380A16D2E4AA1EE00157F67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F380A16E2E4AA1EE00157F67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F380A16F2E4AA1EE00157F67 /* Swifty_MasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swifty_MasterApp.swift; sourceTree = "<group>"; };
 		F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLowPowerMode.swift; sourceTree = "<group>"; };
 		F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = highlightOccurrences.swift; sourceTree = "<group>"; };
 		F399A4AF2E3DC544008BED17 /* iOS 18 support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOS 18 support.swift"; sourceTree = "<group>"; };
@@ -578,6 +586,12 @@
 			files = (
 				F33904212E49341000A22EE1 /* SafariCover in Frameworks */,
 				F3202CBB2D5596380030B3CC /* ScrechKit in Frameworks */,
+			);
+		};
+		F380A15F2E4AA1BE00157F67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				F380A1752E4AA1FA00157F67 /* ScrechKit in Frameworks */,
 			);
 		};
 		F3BBD9DB2AEECD3400A9F7E7 /* Frameworks */ = {
@@ -910,12 +924,23 @@
 			path = Text;
 			sourceTree = "<group>";
 		};
+		F380A1702E4AA1EE00157F67 /* Swifty Master */ = {
+			isa = PBXGroup;
+			children = (
+				F380A16D2E4AA1EE00157F67 /* Assets.xcassets */,
+				F380A16E2E4AA1EE00157F67 /* ContentView.swift */,
+				F380A16F2E4AA1EE00157F67 /* Swifty_MasterApp.swift */,
+			);
+			path = "Swifty Master";
+			sourceTree = "<group>";
+		};
 		F3BBD9D52AEECD3400A9F7E7 = {
 			isa = PBXGroup;
 			children = (
 				F30070012E2F0B9A00E76725 /* README.md */,
 				F3BBD9E02AEECD3400A9F7E7 /* iOS */,
 				F3202CB32D5596210030B3CC /* visionOS */,
+				F380A1702E4AA1EE00157F67 /* Swifty Master */,
 				F3202CB92D5596380030B3CC /* Frameworks */,
 				F3BBD9DF2AEECD3400A9F7E7 /* Products */,
 			);
@@ -926,6 +951,7 @@
 			children = (
 				F3BBD9DE2AEECD3400A9F7E7 /* iOS.app */,
 				F3202C992D5596100030B3CC /* visionOS.app */,
+				F380A1622E4AA1BF00157F67 /* Swifty Master.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1170,6 +1196,24 @@
 			productReference = F3202C992D5596100030B3CC /* visionOS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F380A1612E4AA1BE00157F67 /* Swifty Master */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F380A16C2E4AA1C000157F67 /* Build configuration list for PBXNativeTarget "Swifty Master" */;
+			buildPhases = (
+				F380A15E2E4AA1BE00157F67 /* Sources */,
+				F380A15F2E4AA1BE00157F67 /* Frameworks */,
+				F380A1602E4AA1BE00157F67 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "Swifty Master";
+			packageProductDependencies = (
+				F380A1742E4AA1FA00157F67 /* ScrechKit */,
+			);
+			productName = "Swifty Master";
+			productReference = F380A1622E4AA1BF00157F67 /* Swifty Master.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F3BBD9DD2AEECD3400A9F7E7 /* iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3BBD9F02AEECD3500A9F7E7 /* Build configuration list for PBXNativeTarget "iOS" */;
@@ -1197,11 +1241,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1620;
+				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					F3202C982D5596100030B3CC = {
 						CreatedOnToolsVersion = 16.2;
+					};
+					F380A1612E4AA1BE00157F67 = {
+						CreatedOnToolsVersion = 26.0;
 					};
 					F3BBD9DD2AEECD3400A9F7E7 = {
 						CreatedOnToolsVersion = 15.1;
@@ -1230,6 +1277,7 @@
 			targets = (
 				F3BBD9DD2AEECD3400A9F7E7 /* iOS */,
 				F3202C982D5596100030B3CC /* visionOS */,
+				F380A1612E4AA1BE00157F67 /* Swifty Master */,
 			);
 		};
 /* End PBXProject section */
@@ -1316,6 +1364,12 @@
 				F3CFBDBD2E3F8E79005F93EA /* passAView.txt in Resources */,
 				F3CFBDB42E3F8E5E005F93EA /* navigationLink.txt in Resources */,
 				F3CFBDAE2E3F8E5C005F93EA /* navigationStack.txt in Resources */,
+			);
+		};
+		F380A1602E4AA1BE00157F67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				F380A1712E4AA1EE00157F67 /* Assets.xcassets in Resources */,
 			);
 		};
 		F3BBD9DC2AEECD3400A9F7E7 /* Resources */ = {
@@ -1510,6 +1564,13 @@
 				F3202CC02D5597400030B3CC /* AppStoreOverlay.swift in Sources */,
 			);
 		};
+		F380A15E2E4AA1BE00157F67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				F380A1722E4AA1EE00157F67 /* ContentView.swift in Sources */,
+				F380A1732E4AA1EE00157F67 /* Swifty_MasterApp.swift in Sources */,
+			);
+		};
 		F3BBD9DA2AEECD3400A9F7E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
@@ -1675,6 +1736,67 @@
 				TARGETED_DEVICE_FAMILY = 7;
 				VALIDATE_PRODUCT = YES;
 				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		F380A16A2E4AA1C000157F67 /* Debug configuration for PBXNativeTarget "Swifty Master" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Swifty Master";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Everything-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		F380A16B2E4AA1C000157F67 /* Release configuration for PBXNativeTarget "Swifty Master" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Swifty Master";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Everything-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 26.0;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -1901,6 +2023,14 @@
 			);
 			defaultConfigurationName = Release;
 		};
+		F380A16C2E4AA1C000157F67 /* Build configuration list for PBXNativeTarget "Swifty Master" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F380A16A2E4AA1C000157F67 /* Debug configuration for PBXNativeTarget "Swifty Master" */,
+				F380A16B2E4AA1C000157F67 /* Release configuration for PBXNativeTarget "Swifty Master" */,
+			);
+			defaultConfigurationName = Release;
+		};
 		F3BBD9D92AEECD3400A9F7E7 /* Build configuration list for PBXProject "Master SwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1966,6 +2096,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F33E8B242E416BD700B05370 /* XCRemoteSwiftPackageReference "CodeEditorView" */;
 			productName = CodeEditorView;
+		};
+		F380A1742E4AA1FA00157F67 /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3BBD9F52AEECE4000A9F7E7 /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
 		};
 		F3BBD9F62AEECE4000A9F7E7 /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;
