@@ -161,6 +161,33 @@ func attributedCodeString(for code: String) -> AttributedString {
         }
     }
     
+    // View Modifiers with a single enum-style parameter
+    // e.g. .padding(.vertical)
+    let singleParamModifierPattern = #"\.(\w+)\s*\(\s*\.(\w+)\s*\)"#
+    
+    if let regex = try? NSRegularExpression(pattern: singleParamModifierPattern) {
+        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+        
+        for match in matches where match.numberOfRanges >= 3 {
+            // Group 1: modifier name (e.g. "padding")
+            let modifierNameRange = match.range(at: 1)
+            // Group 2: single parameter (e.g. "vertical")
+            let paramNameRange = match.range(at: 2)
+            
+            if let r1 = Range(modifierNameRange, in: code),
+               let a1 = Range(NSRange(r1, in: code), in: attributedString) {
+                attributedString[a1].foregroundColor = Color(0xA167E6)
+                attributedString[a1].font = .body.bold()
+            }
+            
+            if let r2 = Range(paramNameRange, in: code),
+               let a2 = Range(NSRange(r2, in: code), in: attributedString) {
+                attributedString[a2].foregroundColor = Color(0xA167E6)
+                attributedString[a2].font = .body.bold()
+            }
+        }
+    }
+    
     // Identifiers in `} anyTextHere: {`
     let betweenBracesPattern = #"\}\s*([A-Za-z_]\w*)\s*:\s*\{"#
     
