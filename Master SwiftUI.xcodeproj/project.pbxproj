@@ -165,6 +165,7 @@
 		F37D9DA82E488D6D008ECB6D /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = F37D9DA62E488D6D008ECB6D /* text.txt */; };
 		F380A1712E4AA1EE00157F67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F380A16D2E4AA1EE00157F67 /* Assets.xcassets */; };
 		F380A1752E4AA1FA00157F67 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F380A1742E4AA1FA00157F67 /* ScrechKit */; };
+		F380A1772E4AA9C400157F67 /* Master SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E12AEECD3400A9F7E7 /* Master SwiftUI.swift */; };
 		F388D19C2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */; };
 		F388D19D2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */; };
 		F399A4AC2E3D52A7008BED17 /* highlightOccurrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */; };
@@ -460,7 +461,7 @@
 		F35C358F2E44125100622147 /* textShortenedNumbers.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = textShortenedNumbers.txt; sourceTree = "<group>"; };
 		F37916ED2AF14A7A00B880AF /* Image Picker 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker 2.swift"; sourceTree = "<group>"; };
 		F37D9DA62E488D6D008ECB6D /* text.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = text.txt; sourceTree = "<group>"; };
-		F380A1622E4AA1BF00157F67 /* Swifty Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F380A1622E4AA1BF00157F67 /* tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F380A16D2E4AA1EE00157F67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F380A1762E4AA2C700157F67 /* Swifty-Master-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Swifty-Master-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLowPowerMode.swift; sourceTree = "<group>"; };
@@ -947,7 +948,7 @@
 			children = (
 				F3BBD9DE2AEECD3400A9F7E7 /* iOS.app */,
 				F3202C992D5596100030B3CC /* visionOS.app */,
-				F380A1622E4AA1BF00157F67 /* Swifty Master.app */,
+				F380A1622E4AA1BF00157F67 /* tvOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1192,9 +1193,9 @@
 			productReference = F3202C992D5596100030B3CC /* visionOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F380A1612E4AA1BE00157F67 /* Swifty Master */ = {
+		F380A1612E4AA1BE00157F67 /* tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F380A16C2E4AA1C000157F67 /* Build configuration list for PBXNativeTarget "Swifty Master" */;
+			buildConfigurationList = F380A16C2E4AA1C000157F67 /* Build configuration list for PBXNativeTarget "tvOS" */;
 			buildPhases = (
 				F380A15E2E4AA1BE00157F67 /* Sources */,
 				F380A15F2E4AA1BE00157F67 /* Frameworks */,
@@ -1202,12 +1203,12 @@
 			);
 			buildRules = (
 			);
-			name = "Swifty Master";
+			name = tvOS;
 			packageProductDependencies = (
 				F380A1742E4AA1FA00157F67 /* ScrechKit */,
 			);
 			productName = "Swifty Master";
-			productReference = F380A1622E4AA1BF00157F67 /* Swifty Master.app */;
+			productReference = F380A1622E4AA1BF00157F67 /* tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F3BBD9DD2AEECD3400A9F7E7 /* iOS */ = {
@@ -1273,7 +1274,7 @@
 			targets = (
 				F3BBD9DD2AEECD3400A9F7E7 /* iOS */,
 				F3202C982D5596100030B3CC /* visionOS */,
-				F380A1612E4AA1BE00157F67 /* Swifty Master */,
+				F380A1612E4AA1BE00157F67 /* tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -1563,6 +1564,7 @@
 		F380A15E2E4AA1BE00157F67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
+				F380A1772E4AA9C400157F67 /* Master SwiftUI.swift in Sources */,
 			);
 		};
 		F3BBD9DA2AEECD3400A9F7E7 /* Sources */ = {
@@ -1733,7 +1735,7 @@
 			};
 			name = Release;
 		};
-		F380A16A2E4AA1C000157F67 /* Debug configuration for PBXNativeTarget "Swifty Master" */ = {
+		F380A16A2E4AA1C000157F67 /* Debug configuration for PBXNativeTarget "tvOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
@@ -1765,7 +1767,7 @@
 			};
 			name = Debug;
 		};
-		F380A16B2E4AA1C000157F67 /* Release configuration for PBXNativeTarget "Swifty Master" */ = {
+		F380A16B2E4AA1C000157F67 /* Release configuration for PBXNativeTarget "tvOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
@@ -2021,11 +2023,11 @@
 			);
 			defaultConfigurationName = Release;
 		};
-		F380A16C2E4AA1C000157F67 /* Build configuration list for PBXNativeTarget "Swifty Master" */ = {
+		F380A16C2E4AA1C000157F67 /* Build configuration list for PBXNativeTarget "tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F380A16A2E4AA1C000157F67 /* Debug configuration for PBXNativeTarget "Swifty Master" */,
-				F380A16B2E4AA1C000157F67 /* Release configuration for PBXNativeTarget "Swifty Master" */,
+				F380A16A2E4AA1C000157F67 /* Debug configuration for PBXNativeTarget "tvOS" */,
+				F380A16B2E4AA1C000157F67 /* Release configuration for PBXNativeTarget "tvOS" */,
 			);
 			defaultConfigurationName = Release;
 		};

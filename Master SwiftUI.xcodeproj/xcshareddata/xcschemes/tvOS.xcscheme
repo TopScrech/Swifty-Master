@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F380A1612E4AA1BE00157F67"
-               BuildableName = "Swifty Master.app"
-               BlueprintName = "Swifty Master"
+               BuildableName = "tvOS.app"
+               BlueprintName = "tvOS"
                ReferencedContainer = "container:Master SwiftUI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F380A1612E4AA1BE00157F67"
-            BuildableName = "Swifty Master.app"
-            BlueprintName = "Swifty Master"
+            BuildableName = "tvOS.app"
+            BlueprintName = "tvOS"
             ReferencedContainer = "container:Master SwiftUI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F380A1612E4AA1BE00157F67"
-            BuildableName = "Swifty Master.app"
-            BlueprintName = "Swifty Master"
+            BuildableName = "tvOS.app"
+            BlueprintName = "tvOS"
             ReferencedContainer = "container:Master SwiftUI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
