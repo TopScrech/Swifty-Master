@@ -27,10 +27,8 @@ func attributedCodeString(for code: String) -> AttributedString {
     ]
     
     let modifiers = [
-        "brown", "red", "indigo", "tint", "green",
         "label",
-        "accessoryCircular", "accessoryCircularCapacity", "accessoryLinear", "accessoryLinearCapacity", "linearCapacity",
-        "gaugeStyle", "dismiss", "opacity", "padding", "horizontal",
+        "dismiss", "opacity",
         "navigationBarBackButtonHidden", "appStoreOverlay"
     ]
     
@@ -156,7 +154,8 @@ func attributedCodeString(for code: String) -> AttributedString {
             
             if let stringRange = Range(nameRange, in: code),
                let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
-                attributedString[attributedRange].foregroundColor = Color(0xD0A8FF)
+                attributedString[attributedRange].foregroundColor = Color(0xA167E6)
+                attributedString[attributedRange].font = .body.bold()
             }
         }
     }
@@ -217,6 +216,23 @@ func attributedCodeString(for code: String) -> AttributedString {
             if let stringRange = Range(nameRange, in: code),
                let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
                 attributedString[attributedRange].foregroundColor = Color(0xD0A8FF)
+                attributedString[attributedRange].font = .body.bold()
+            }
+        }
+    }
+    
+    // Color SwiftUI bindings `$property`
+    let bindingPattern = #"\$[A-Za-z_]\w*"#
+    
+    if let regex = try? NSRegularExpression(pattern: bindingPattern) {
+        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+        
+        for match in matches {
+            let nameRange = match.range(at: 0)
+            
+            if let stringRange = Range(nameRange, in: code),
+               let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
+                attributedString[attributedRange].foregroundColor = Color(0x67B7A4)
                 attributedString[attributedRange].font = .body.bold()
             }
         }
