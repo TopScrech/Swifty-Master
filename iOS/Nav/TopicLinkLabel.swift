@@ -13,6 +13,14 @@ struct TopicLinkLabel: View {
         topicView(topic) != nil
     }
     
+    private var iconWidth: CGFloat {
+#if os(visionOS)
+        16
+#else
+        320
+#endif
+    }
+    
     var body: some View {
         HStack {
             Label {
@@ -24,8 +32,11 @@ struct TopicLinkLabel: View {
             } icon: {
                 Image(systemName: topic.icon)
                     .opacity(isAvailable ? 1 : 0.25)
+                    .frame(width: iconWidth)
+#if os(visionOS)
+                    .foregroundStyle(.primary)
+#endif
             }
-            .labelIconWidth(16)
             
             Spacer()
             
