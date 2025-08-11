@@ -30,7 +30,9 @@ struct NavContainer: View {
         }
         .environment(nav)
         .environment(dataModel)
+#if !os(visionOS)
         .preferredColorScheme(store.appearance.scheme)
+#endif
         .statusBarHidden(!store.showStatusBar)
         .task {
             nav.load()
