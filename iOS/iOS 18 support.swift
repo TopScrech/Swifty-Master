@@ -13,7 +13,7 @@ struct NavSubtitle: ViewModifier {
     }
     
     func body(content: Content) -> some View {
-#if os(visionOS)
+#if os(visionOS) || os(tvOS)
         content
 #else
         if #available(iOS 26, *) {
