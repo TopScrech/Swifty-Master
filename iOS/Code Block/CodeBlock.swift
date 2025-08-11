@@ -54,7 +54,7 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          tabView,
          
          // Layout
-         spacer,
+         spacer, spacerMinLenght, spacerFixedSize,
          divider,
          padding,
          frame,

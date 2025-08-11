@@ -94,6 +94,10 @@
 		F33904272E49548500A22EE1 /* badgeOverAppIcon.txt in Resources */ = {isa = PBXBuildFile; fileRef = F33904252E49548500A22EE1 /* badgeOverAppIcon.txt */; };
 		F339042A2E495C2A00A22EE1 /* TopicWarning.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33904292E495C2A00A22EE1 /* TopicWarning.swift */; };
 		F339042B2E495C2A00A22EE1 /* TopicWarning.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33904292E495C2A00A22EE1 /* TopicWarning.swift */; };
+		F33904362E49696B00A22EE1 /* spacerMinLenght.txt in Resources */ = {isa = PBXBuildFile; fileRef = F33904352E49696B00A22EE1 /* spacerMinLenght.txt */; };
+		F33904372E49696B00A22EE1 /* spacerMinLenght.txt in Resources */ = {isa = PBXBuildFile; fileRef = F33904352E49696B00A22EE1 /* spacerMinLenght.txt */; };
+		F33904392E49696C00A22EE1 /* spacerFixedSize.txt in Resources */ = {isa = PBXBuildFile; fileRef = F33904382E49696C00A22EE1 /* spacerFixedSize.txt */; };
+		F339043A2E49696C00A22EE1 /* spacerFixedSize.txt in Resources */ = {isa = PBXBuildFile; fileRef = F33904382E49696C00A22EE1 /* spacerFixedSize.txt */; };
 		F33E8B192E41495100B05370 /* ContentViewNavButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B182E41495100B05370 /* ContentViewNavButtons.swift */; };
 		F33E8B1A2E41495100B05370 /* ContentViewNavButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B182E41495100B05370 /* ContentViewNavButtons.swift */; };
 		F33E8B1C2E4162C100B05370 /* TopicDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B1B2E4162C100B05370 /* TopicDoc.swift */; };
@@ -419,6 +423,8 @@
 		F339041D2E4932A200A22EE1 /* BrightnessSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessSlider.swift; sourceTree = "<group>"; };
 		F33904252E49548500A22EE1 /* badgeOverAppIcon.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = badgeOverAppIcon.txt; sourceTree = "<group>"; };
 		F33904292E495C2A00A22EE1 /* TopicWarning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicWarning.swift; sourceTree = "<group>"; };
+		F33904352E49696B00A22EE1 /* spacerMinLenght.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = spacerMinLenght.txt; sourceTree = "<group>"; };
+		F33904382E49696C00A22EE1 /* spacerFixedSize.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = spacerFixedSize.txt; sourceTree = "<group>"; };
 		F33E8B182E41495100B05370 /* ContentViewNavButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewNavButtons.swift; sourceTree = "<group>"; };
 		F33E8B1B2E4162C100B05370 /* TopicDoc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDoc.swift; sourceTree = "<group>"; };
 		F33E8B1E2E4162DF00B05370 /* TopicIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicIcon.swift; sourceTree = "<group>"; };
@@ -759,6 +765,16 @@
 			path = "Dark Mode";
 			sourceTree = "<group>";
 		};
+		F33904342E49696300A22EE1 /* Spacer */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFBD3A2E3F8AE2005F93EA /* spacer.txt */,
+				F33904352E49696B00A22EE1 /* spacerMinLenght.txt */,
+				F33904382E49696C00A22EE1 /* spacerFixedSize.txt */,
+			);
+			path = Spacer;
+			sourceTree = "<group>";
+		};
 		F34480302E2CD3FF00D18E2E /* System */ = {
 			isa = PBXGroup;
 			children = (
@@ -1033,11 +1049,11 @@
 		F3CFBD3B2E3F8AE2005F93EA /* Layout */ = {
 			isa = PBXGroup;
 			children = (
-				F3CFBD3A2E3F8AE2005F93EA /* spacer.txt */,
 				F3CFBE132E3F99B2005F93EA /* padding.txt */,
 				F3CFBE162E3F99B8005F93EA /* frame.txt */,
 				F3CFBE1C2E3F99BA005F93EA /* geometryReader.txt */,
 				F3CFBE1F2E3F99BB005F93EA /* equalSizeViews.txt */,
+				F33904342E49696300A22EE1 /* Spacer */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -1227,6 +1243,7 @@
 				F3CFBDF72E3F96F1005F93EA /* scrollView.txt in Resources */,
 				F3CFBDA52E3F8C43005F93EA /* shape.txt in Resources */,
 				F31B90C22E41D384003A2AA2 /* textFieldSecured.txt in Resources */,
+				F33904372E49696B00A22EE1 /* spacerMinLenght.txt in Resources */,
 				F3C6F66D2E40E46800E94540 /* badges.txt in Resources */,
 				F3CFBDA82E3F8C96005F93EA /* customKeyboard.txt in Resources */,
 				F3202CB72D5596210030B3CC /* Assets.xcassets in Resources */,
@@ -1256,6 +1273,7 @@
 				F3CFBE002E3F9741005F93EA /* tabView.txt in Resources */,
 				F3CFBD5E2E3F8AE2005F93EA /* contextMenu.txt in Resources */,
 				F3CFBD9F2E3F8B9F005F93EA /* label.txt in Resources */,
+				F339043A2E49696C00A22EE1 /* spacerFixedSize.txt in Resources */,
 				F3CFBD5F2E3F8AE2005F93EA /* mdLink.txt in Resources */,
 				F3CFBDFD2E3F9740005F93EA /* lazyHGrid.txt in Resources */,
 				F3CFBD602E3F8AE2005F93EA /* detectOSVersionNewAndOld.txt in Resources */,
@@ -1305,6 +1323,7 @@
 			files = (
 				F3CFBDE32E3F94D8005F93EA /* grid.txt in Resources */,
 				F3CFBDFC2E3F9740005F93EA /* lazyHGrid.txt in Resources */,
+				F33904362E49696B00A22EE1 /* spacerMinLenght.txt in Resources */,
 				F3CFBDF32E3F96EA005F93EA /* list.txt in Resources */,
 				F3ADA61A2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */,
 				F3BBD9E82AEECD3500A9F7E7 /* Assets.xcassets in Resources */,
@@ -1324,6 +1343,7 @@
 				F3CFBD802E3F8AE2005F93EA /* mdRegular.txt in Resources */,
 				F3CFBD812E3F8AE2005F93EA /* toggleTint.txt in Resources */,
 				F3CFBD822E3F8AE2005F93EA /* emptyView.txt in Resources */,
+				F33904392E49696C00A22EE1 /* spacerFixedSize.txt in Resources */,
 				F3CFBD832E3F8AE2005F93EA /* mdBoldItalic.txt in Resources */,
 				F3CFBDA72E3F8C96005F93EA /* customKeyboard.txt in Resources */,
 				F3CFBD842E3F8AE2005F93EA /* contextMenu.txt in Resources */,
