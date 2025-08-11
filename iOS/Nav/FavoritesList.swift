@@ -39,6 +39,7 @@ struct FavoritesList: View {
                 }
             } else {
                 ContentUnavailableView("No favorites found", systemImage: "star")
+                    .frame(maxWidth: .infinity, alignment: .center)
             }
         }
         .navigationTitle("Favorites")
