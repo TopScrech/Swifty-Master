@@ -57,7 +57,8 @@ extension Topic {
         case .image:
             return [
                 TopicDocType("Image", url: "https://developer.apple.com/documentation/swiftui/image"),
-                TopicDocType("Image(systemName:)", url: "https://developer.apple.com/documentation/swiftui/image/init(systemname:)")
+                TopicDocType("Image(systemName:)", url: "https://developer.apple.com/documentation/swiftui/image/init(systemname:)"),
+                TopicDocType("SF Symbols macOS app", url: "https://developer.apple.com/sf-symbols")
             ]
             
         case .divider:
