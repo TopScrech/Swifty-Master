@@ -111,7 +111,7 @@ struct LabelIconWidth: ViewModifier {
     }
     
     func body(content: Content) -> some View {
-        if #available(iOS 26, macOS 26, *) {
+        if #available(iOS 26, macOS 26, visionOS 26, *) {
             content
 #if DEBUG
                 .labelReservedIconWidth(width)
