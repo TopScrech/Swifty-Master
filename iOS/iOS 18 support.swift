@@ -59,9 +59,17 @@ struct GlassyBackground: ViewModifier {
                 content
 #if DEBUG
                     .glassEffect(in: .rect(cornerRadius: rectRounding))
+#else
+                    .background(.ultraThinMaterial, in: .rect(cornerRadius: rectRounding))
 #endif
             } else {
+#if DEBUG
                 content
+                    .glassEffect()
+#else
+                content
+                    .background(.ultraThinMaterial)
+#endif
             }
         } else {
             if let rectRounding {

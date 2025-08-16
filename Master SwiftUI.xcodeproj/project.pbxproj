@@ -130,7 +130,6 @@
 		F35198C52E2B7E56004E0F02 /* CodeBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198C32E2B7E56004E0F02 /* CodeBlockView.swift */; };
 		F35198FD2E2B9F53004E0F02 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EB2E2B9F53004E0F02 /* Topic.swift */; };
 		F35198FE2E2B9F53004E0F02 /* NavModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F32E2B9F53004E0F02 /* NavModeButton.swift */; };
-		F35198FF2E2B9F53004E0F02 /* NavModePickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F52E2B9F53004E0F02 /* NavModePickerItem.swift */; };
 		F35199002E2B9F53004E0F02 /* TopicDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F72E2B9F53004E0F02 /* TopicDetail.swift */; };
 		F35199022E2B9F53004E0F02 /* NavModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EA2E2B9F53004E0F02 /* NavModel.swift */; };
 		F35199052E2B9F53004E0F02 /* NavContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198ED2E2B9F53004E0F02 /* NavContainer.swift */; };
@@ -144,7 +143,6 @@
 		F35199102E2B9F53004E0F02 /* TopicTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198FB2E2B9F53004E0F02 /* TopicTile.swift */; };
 		F35199112E2B9F53004E0F02 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EB2E2B9F53004E0F02 /* Topic.swift */; };
 		F35199122E2B9F53004E0F02 /* NavModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F32E2B9F53004E0F02 /* NavModeButton.swift */; };
-		F35199132E2B9F53004E0F02 /* NavModePickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F52E2B9F53004E0F02 /* NavModePickerItem.swift */; };
 		F35199142E2B9F53004E0F02 /* TopicDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F72E2B9F53004E0F02 /* TopicDetail.swift */; };
 		F35199162E2B9F53004E0F02 /* NavModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EA2E2B9F53004E0F02 /* NavModel.swift */; };
 		F35199192E2B9F53004E0F02 /* NavContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198ED2E2B9F53004E0F02 /* NavContainer.swift */; };
@@ -330,7 +328,6 @@
 		F380A21D2E4AAAF900157F67 /* DebugSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C92B152E48AF4300203691 /* DebugSettings.swift */; };
 		F380A21E2E4AAAF900157F67 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE99D82E2F861C00D70249 /* ColorTheme.swift */; };
 		F380A2202E4AAB5A00157F67 /* NavMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E82E2B9F53004E0F02 /* NavMode.swift */; };
-		F380A2212E4AAB5A00157F67 /* NavModePickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F52E2B9F53004E0F02 /* NavModePickerItem.swift */; };
 		F380A2222E4AAB5A00157F67 /* NavModePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F42E2B9F53004E0F02 /* NavModePicker.swift */; };
 		F380A2232E4AAB6100157F67 /* TopicTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198FB2E2B9F53004E0F02 /* TopicTile.swift */; };
 		F380A2242E4AAB6100157F67 /* GridTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F82E2B9F53004E0F02 /* GridTopic.swift */; };
@@ -554,6 +551,9 @@
 		F3CFBE442E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */; };
 		F3CFBE452E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */; };
 		F3D8C11C2B2BB51000C7B0A9 /* Sensory Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */; };
+		F3FCD1E12E51217B003BDE5E /* NavModeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */; };
+		F3FCD1E22E51217B003BDE5E /* NavModeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */; };
+		F3FCD1E32E51217B003BDE5E /* NavModeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -628,7 +628,6 @@
 		F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnContentView.swift; sourceTree = "<group>"; };
 		F35198F32E2B9F53004E0F02 /* NavModeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModeButton.swift; sourceTree = "<group>"; };
 		F35198F42E2B9F53004E0F02 /* NavModePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModePicker.swift; sourceTree = "<group>"; };
-		F35198F52E2B9F53004E0F02 /* NavModePickerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModePickerItem.swift; sourceTree = "<group>"; };
 		F35198F72E2B9F53004E0F02 /* TopicDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetail.swift; sourceTree = "<group>"; };
 		F35198F82E2B9F53004E0F02 /* GridTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTopic.swift; sourceTree = "<group>"; };
 		F35198FB2E2B9F53004E0F02 /* TopicTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTile.swift; sourceTree = "<group>"; };
@@ -751,6 +750,7 @@
 		F3CFBE402E3F9D2E005F93EA /* TopicDetectScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectScreenSize.swift; sourceTree = "<group>"; };
 		F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectCompactOrRegular.swift; sourceTree = "<group>"; };
 		F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensory Feedback.swift"; sourceTree = "<group>"; };
+		F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModeTile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -799,7 +799,7 @@
 			isa = PBXGroup;
 			children = (
 				F35198F42E2B9F53004E0F02 /* NavModePicker.swift */,
-				F35198F52E2B9F53004E0F02 /* NavModePickerItem.swift */,
+				F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */,
 				F35198E82E2B9F53004E0F02 /* NavMode.swift */,
 			);
 			path = NavMode;
@@ -1786,7 +1786,6 @@
 				F330586C2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */,
 				F35198FE2E2B9F53004E0F02 /* NavModeButton.swift in Sources */,
 				F3C6F6762E40E57B00E94540 /* TopicProgressView.swift in Sources */,
-				F35198FF2E2B9F53004E0F02 /* NavModePickerItem.swift in Sources */,
 				F3CFBE3F2E3F9D2D005F93EA /* TopicDifferentiateOS.swift in Sources */,
 				F35199002E2B9F53004E0F02 /* TopicDetail.swift in Sources */,
 				F314C81C2E2E4BB900F63B6A /* TopicShape.swift in Sources */,
@@ -1826,6 +1825,7 @@
 				F314C8512E2E657400F63B6A /* TopicPicker.swift in Sources */,
 				F314C8072E2E2D4A00F63B6A /* FontDesignItem.swift in Sources */,
 				F3BF16E72E2CCDEE005212D1 /* TopicDocs.swift in Sources */,
+				F3FCD1E32E51217B003BDE5E /* NavModeTile.swift in Sources */,
 				F3CFBDCF2E3F9015005F93EA /* TopicNavigationLink.swift in Sources */,
 				F314C84E2E2E657300F63B6A /* TopicStepper.swift in Sources */,
 				F3CFBE122E3F994F005F93EA /* TopicScrollView.swift in Sources */,
@@ -1884,6 +1884,7 @@
 				F380A1A82E4AAA2D00157F67 /* TopicNavigationSplitView.swift in Sources */,
 				F380A1A92E4AAA2D00157F67 /* TopicNavigationStack.swift in Sources */,
 				F380A1AA2E4AAA2D00157F67 /* TopicPassAView.swift in Sources */,
+				F3FCD1E12E51217B003BDE5E /* NavModeTile.swift in Sources */,
 				F380A1AB2E4AAA2D00157F67 /* TopicLink.swift in Sources */,
 				F380A1AC2E4AAA2D00157F67 /* TopicNavigationLink.swift in Sources */,
 				F380A1AD2E4AAA2D00157F67 /* TopicDismiss.swift in Sources */,
@@ -1922,7 +1923,6 @@
 				F380A18C2E4AAA1A00157F67 /* ContentView.swift in Sources */,
 				F380A1C32E4AAA4B00157F67 /* TopicDifferentiateOS.swift in Sources */,
 				F380A2202E4AAB5A00157F67 /* NavMode.swift in Sources */,
-				F380A2212E4AAB5A00157F67 /* NavModePickerItem.swift in Sources */,
 				F380A2222E4AAB5A00157F67 /* NavModePicker.swift in Sources */,
 				F380A1C42E4AAA4B00157F67 /* TopicLowPowerMode.swift in Sources */,
 				F380A1C52E4AAA4B00157F67 /* TopicDarkMode.swift in Sources */,
@@ -1966,7 +1966,6 @@
 				F314C8102E2E4A0100F63B6A /* TopicImage.swift in Sources */,
 				F314C8322E2E536F00F63B6A /* TopicMenu.swift in Sources */,
 				F35199122E2B9F53004E0F02 /* NavModeButton.swift in Sources */,
-				F35199132E2B9F53004E0F02 /* NavModePickerItem.swift in Sources */,
 				F35199142E2B9F53004E0F02 /* TopicDetail.swift in Sources */,
 				F3CFBE262E3F9B16005F93EA /* TopicFrame.swift in Sources */,
 				F314C83B2E2E540800F63B6A /* TopicSheet.swift in Sources */,
@@ -1979,6 +1978,7 @@
 				F3C92B172E48AF4300203691 /* DebugSettings.swift in Sources */,
 				F314C8272E2E52A200F63B6A /* ValueStore.swift in Sources */,
 				F35199192E2B9F53004E0F02 /* NavContainer.swift in Sources */,
+				F3FCD1E22E51217B003BDE5E /* NavModeTile.swift in Sources */,
 				F3CFBE0E2E3F994E005F93EA /* TopicList.swift in Sources */,
 				F351991A2E2B9F53004E0F02 /* TwoColumnContentView.swift in Sources */,
 				F3CFBDC22E3F8FA5005F93EA /* TopicNavigationView.swift in Sources */,
