@@ -17,10 +17,11 @@ struct NavModeTile: View {
             }
             .frame(160)
             .background {
-                Image(systemName: mode.icon)
-                    .secondary()
+                Image(mode == .stack ? .stack : .twoColumns)
+                    .resizable()
+                    .scaledToFit()
+                    .offset(y: 50)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
-                    .fontSize(mode == .stack ? 100 : 116)
             }
             .background(.ultraThinMaterial)
             .clipShape(.rect(cornerRadius: 16))
@@ -35,4 +36,11 @@ struct NavModeTile: View {
         .buttonStyle(.plain)
         .contentShape(.rect)
     }
+}
+
+#Preview {
+    NavModePicker()
+        .darkSchemePreferred()
+        .environment(NavModel())
+        .environmentObject(ValueStore())
 }

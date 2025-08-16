@@ -34,33 +34,6 @@ struct NavModePicker: View {
                             selection: $newNavMode,
                             mode: mode
                         )
-//                        Button {
-//                            newNavMode = mode
-//                        } label: {
-//                            VStack {
-//                                Text(mode.name)
-//                                    .rounded()
-//                                    .semibold()
-//                                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-//                                    .padding()
-//                            }
-//                            .frame(160)
-//                            .background {
-//                                Image(systemName: mode.icon)
-//                                    .secondary()
-//                                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
-//                                    .fontSize(mode == .stack ? 100 : 116)
-//                            }
-//                            .background(.ultraThinMaterial)
-//                            .clipShape(.rect(cornerRadius: 16))
-//                            .overlay {
-//                                if newNavMode == mode {
-//                                    RoundedRectangle(cornerRadius: 16)
-//                                        .stroke(Color.white, lineWidth: 2)
-//                                }
-//                            }
-//                            .foregroundStyle(.foreground)
-//                        }
                     }
                 }
                 .padding(.top)
