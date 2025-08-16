@@ -28,8 +28,9 @@ struct SettingsView: View {
                 Toggle("Use built-in Safari", isOn: $store.builtInBrowser)
 #endif
             }
-            
+#if DEBUG
             DebugSettings()
+#endif
         }
         .navigationTitle("Settings")
         .formStyle(.grouped)

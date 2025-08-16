@@ -4,8 +4,7 @@ struct DebugSettings: View {
     @EnvironmentObject private var store: ValueStore
     
     var body: some View {
-#if DEBUG
-        Section("Debug") {
+        DisclosureGroup("Debug") {
             Button("Reset nav mode") {
                 store.navMode = nil
             }
@@ -64,7 +63,6 @@ struct DebugSettings: View {
                 .toolbarTitleDisplayMode(.inline)
             }
         }
-#endif
     }
 }
 
