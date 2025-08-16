@@ -5,6 +5,11 @@ struct SettingsView: View {
     
     var body: some View {
         Form {
+            Text("Settings")
+                .largeTitle(.bold, design: .rounded)
+                .listRowBackground(Color.clear)
+                .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
+            
             Section {
 #if !os(visionOS)
                 Picker("Appearance", selection: $store.appearance) {
@@ -32,7 +37,6 @@ struct SettingsView: View {
             DebugSettings()
 #endif
         }
-        .navigationTitle("Settings")
         .formStyle(.grouped)
         .buttonStyle(.plain)
         .scrollIndicators(.never)
@@ -41,5 +45,10 @@ struct SettingsView: View {
 }
 
 #Preview {
-    SettingsView()
+    NavigationStack {
+        SettingsView()
+    }
+    .darkSchemePreferred()
+    .environment(NavModel())
+    .environmentObject(ValueStore())
 }
