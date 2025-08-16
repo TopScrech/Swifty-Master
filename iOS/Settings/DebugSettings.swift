@@ -15,7 +15,7 @@ struct DebugSettings: View {
                 UIApplication.shared.setAlternateIconName("Liquid Glass")
             }
             
-            Button("Rest icon") {
+            Button("Reset icon") {
                 UIApplication.shared.setAlternateIconName(nil)
             }
             

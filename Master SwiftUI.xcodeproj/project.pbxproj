@@ -637,7 +637,6 @@
 		F37D9DA62E488D6D008ECB6D /* text.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = text.txt; sourceTree = "<group>"; };
 		F380A1622E4AA1BF00157F67 /* tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F380A16D2E4AA1EE00157F67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F380A1762E4AA2C700157F67 /* Swifty-Master-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Swifty-Master-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLowPowerMode.swift; sourceTree = "<group>"; };
 		F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = highlightOccurrences.swift; sourceTree = "<group>"; };
 		F399A4AF2E3DC544008BED17 /* iOS 18 support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOS 18 support.swift"; sourceTree = "<group>"; };
@@ -751,6 +750,7 @@
 		F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectCompactOrRegular.swift; sourceTree = "<group>"; };
 		F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensory Feedback.swift"; sourceTree = "<group>"; };
 		F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModeTile.swift; sourceTree = "<group>"; };
+		F3FCD1E42E5137E7003BDE5E /* tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = tvOS.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1098,13 +1098,13 @@
 			path = Text;
 			sourceTree = "<group>";
 		};
-		F380A1702E4AA1EE00157F67 /* Swifty Master */ = {
+		F380A1702E4AA1EE00157F67 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				F380A1762E4AA2C700157F67 /* Swifty-Master-Info.plist */,
+				F3FCD1E42E5137E7003BDE5E /* tvOS.plist */,
 				F380A16D2E4AA1EE00157F67 /* Assets.xcassets */,
 			);
-			path = "Swifty Master";
+			path = tvOS;
 			sourceTree = "<group>";
 		};
 		F380A1EC2E4AAA8D00157F67 /* Badges */ = {
@@ -1140,7 +1140,7 @@
 				F30070012E2F0B9A00E76725 /* README.md */,
 				F3BBD9E02AEECD3400A9F7E7 /* iOS */,
 				F3202CB32D5596210030B3CC /* visionOS */,
-				F380A1702E4AA1EE00157F67 /* Swifty Master */,
+				F380A1702E4AA1EE00157F67 /* tvOS */,
 				F3202CB92D5596380030B3CC /* Frameworks */,
 				F3BBD9DF2AEECD3400A9F7E7 /* Products */,
 			);
@@ -2118,7 +2118,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Swifty-Master-Info.plist";
+				INFOPLIST_FILE = tvOS/tvOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Swifty Master";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
@@ -2150,7 +2150,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Swifty-Master-Info.plist";
+				INFOPLIST_FILE = tvOS/tvOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Swifty Master";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
