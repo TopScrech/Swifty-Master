@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct GridTopic: View {
-    @Environment(NavModel.self) private var navigationModel
+    @Environment(NavModel.self) private var nav
     @Environment(DataModel.self) private var dataModel
     
     private let columns = [
@@ -9,7 +9,7 @@ struct GridTopic: View {
     ]
     
     var body: some View {
-        if let category = navigationModel.selectedCategory {
+        if let category = nav.selectedCategory {
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(dataModel.topics(in: category)) { topic in
@@ -25,7 +25,7 @@ struct GridTopic: View {
             .navigationDestination(for: Topic.self) { topic in
                 TopicDetail(topic) { relatedTopic in
                     Button {
-                        navigationModel.topicPath.append(relatedTopic)
+                        nav.topicPath.append(relatedTopic)
                     } label: {
                         TopicTile(relatedTopic)
                     }

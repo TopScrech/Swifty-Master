@@ -34,7 +34,7 @@ final class NavModel: Codable {
         }
     }()
     
-    /// Initialize a `NavigationModel` that enables programmatic control of leading columns’ visibility,
+    /// Initialize a `NavModel` that enables programmatic control of leading columns’ visibility,
     /// selected topic category, and navigation state based on topic data
     init(
         columnVisibility: NavigationSplitViewVisibility = .automatic,
@@ -136,9 +136,9 @@ final class NavModel: Codable {
                 return
             }
             
-            selectedCategory = model.selectedCategory
-            columnVisibility = model.columnVisibility
-            topicPath = model.topicPath
+            selectedCategory  = model.selectedCategory
+            columnVisibility  = model.columnVisibility
+            topicPath         = model.topicPath
             favoriteTopicPath = model.favoriteTopicPath
         }
     }
