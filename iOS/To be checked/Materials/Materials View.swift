@@ -1,14 +1,14 @@
 import SwiftUI
 
 struct MaterialsView: View {
-    private let materials: [(String, Material?)] = [
+    private let materials = [
         ("None", nil),
         ("Ultra Thin", .ultraThin),
         ("Thin", .thin),
         ("Regular", .regular),
         ("Thick", .thick),
         ("Ultra Thick", .ultraThick),
-        ("Bar", .bar)
+        ("Bar", Material.bar)
     ]
     
     var body: some View {
