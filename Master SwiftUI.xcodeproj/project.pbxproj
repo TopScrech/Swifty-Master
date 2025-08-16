@@ -1063,25 +1063,21 @@
 			isa = PBXGroup;
 			children = (
 				F35198ED2E2B9F53004E0F02 /* NavContainer.swift */,
-				F35198EE2E2B9F53004E0F02 /* StackContentView.swift */,
-				F31653B82E3C0A4E00A0E9D7 /* StackTopicList.swift */,
-				F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */,
-				F314C7F12E2E1C1800F63B6A /* TopicLinkLabel.swift */,
-				F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */,
-				F35198FC2E2B9F53004E0F02 /* Topic */,
+				F3FCD1E62E513C28003BDE5E /* Stack */,
+				F3FCD1E72E513C3B003BDE5E /* 2 Columns */,
+				F35198FC2E2B9F53004E0F02 /* Shared */,
 				F314C7EF2E2E143F00F63B6A /* NavMode */,
 			);
 			path = Nav;
 			sourceTree = "<group>";
 		};
-		F35198FC2E2B9F53004E0F02 /* Topic */ = {
+		F35198FC2E2B9F53004E0F02 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				F35198F82E2B9F53004E0F02 /* GridTopic.swift */,
 				F35198F72E2B9F53004E0F02 /* TopicDetail.swift */,
 				F35198FB2E2B9F53004E0F02 /* TopicTile.swift */,
 			);
-			path = Topic;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		F35C358E2E44124A00622147 /* Text */ = {
@@ -1369,6 +1365,26 @@
 				F31B90BD2E41D29B003A2AA2 /* textEditorFormat.txt */,
 			);
 			path = TextEditor;
+			sourceTree = "<group>";
+		};
+		F3FCD1E62E513C28003BDE5E /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				F35198EE2E2B9F53004E0F02 /* StackContentView.swift */,
+				F31653B82E3C0A4E00A0E9D7 /* StackTopicList.swift */,
+				F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */,
+				F314C7F12E2E1C1800F63B6A /* TopicLinkLabel.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		F3FCD1E72E513C3B003BDE5E /* 2 Columns */ = {
+			isa = PBXGroup;
+			children = (
+				F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */,
+				F35198F82E2B9F53004E0F02 /* GridTopic.swift */,
+			);
+			path = "2 Columns";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
