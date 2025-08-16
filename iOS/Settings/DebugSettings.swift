@@ -12,6 +12,14 @@ struct DebugSettings: View {
             
             Toggle("Status bar", isOn: $store.showStatusBar)
             
+            Button("Alt icon") {
+                UIApplication.shared.setAlternateIconName("Liquid Glass")
+            }
+            
+            Button("Rest icon") {
+                UIApplication.shared.setAlternateIconName(nil)
+            }
+            
             Button {
                 store.favoriteTopics = Topic.allCases
             } label: {
