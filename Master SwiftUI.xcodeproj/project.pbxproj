@@ -555,7 +555,6 @@
 		F3FCD1E22E51217B003BDE5E /* NavModeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */; };
 		F3FCD1E32E51217B003BDE5E /* NavModeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */; };
 		F3FCD1E92E51B69B003BDE5E /* SettingsAppearancePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */; };
-		F3FCD1EA2E51B69B003BDE5E /* SettingsAppearancePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */; };
 		F3FCD1EB2E51B69B003BDE5E /* SettingsAppearancePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */; };
 /* End PBXBuildFile section */
 
@@ -1798,7 +1797,6 @@
 				F3CFBE242E3F9AFD005F93EA /* TopicPadding.swift in Sources */,
 				F314C8192E2E4BB600F63B6A /* TopicDivider.swift in Sources */,
 				F314C8162E2E4B8700F63B6A /* TopicLabel.swift in Sources */,
-				F3FCD1EA2E51B69B003BDE5E /* SettingsAppearancePicker.swift in Sources */,
 				F339042B2E495C2A00A22EE1 /* TopicWarning.swift in Sources */,
 				F314C8362E2E538200F63B6A /* TopicButton.swift in Sources */,
 				F3CFBE272E3F9B16005F93EA /* TopicFrame.swift in Sources */,
