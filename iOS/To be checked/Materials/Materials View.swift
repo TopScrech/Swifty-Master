@@ -8,7 +8,7 @@ struct MaterialsView: View {
         ("Thick", .thick),
         ("Ultra Thick", .ultraThick),
         ("Bar", .bar),
-        ("None", nil),
+        ("None", nil)
     ]
     
     private let columns = [
