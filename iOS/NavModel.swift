@@ -4,17 +4,14 @@ import SwiftUI
 
 @Observable
 final class NavModel: Codable {
-    /// The selected topic category; otherwise returns `nil`
     var selectedCategory: Category?
     
-    /// The homogenous navigation state used by the app's navigation stacks
+    /// The homogenous nav state used by the app's nav stacks
     var topicPath: [Topic]
     var favoriteTopicPath: [Topic]
     
-    /// The leading columns' visibility state used by the app's navigation split views
     var columnVisibility: NavigationSplitViewVisibility
     
-    /// The leading columns' visibility state used by the app's navigation split views
     var showNavModePicker = false
     
     private static let decoder = JSONDecoder()
@@ -25,7 +22,7 @@ final class NavModel: Codable {
         .cachesDirectory.appending(path: "NavigationData.json")
     }
     
-    /// The shared singleton navigation model object
+    /// The shared singleton nav model object
     static let shared = {
         if let model = try? NavModel(contentsOf: dataURL) {
             model
@@ -34,7 +31,7 @@ final class NavModel: Codable {
         }
     }()
     
-    /// Initialize a `NavigationModel` that enables programmatic control of leading columns’ visibility,
+    /// Initialize a `NavModel` that enables programmatic control of leading columns’ visibility,
     /// selected topic category, and navigation state based on topic data
     init(
         columnVisibility: NavigationSplitViewVisibility = .automatic,
@@ -136,9 +133,9 @@ final class NavModel: Codable {
                 return
             }
             
-            selectedCategory = model.selectedCategory
-            columnVisibility = model.columnVisibility
-            topicPath = model.topicPath
+            selectedCategory  = model.selectedCategory
+            columnVisibility  = model.columnVisibility
+            topicPath         = model.topicPath
             favoriteTopicPath = model.favoriteTopicPath
         }
     }

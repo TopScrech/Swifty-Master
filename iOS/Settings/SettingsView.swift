@@ -5,14 +5,14 @@ struct SettingsView: View {
     
     var body: some View {
         Form {
+            Text("Settings")
+                .largeTitle(.bold, design: .rounded)
+                .listRowBackground(Color.clear)
+                .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
+            
             Section {
 #if !os(visionOS)
-                Picker("Appearance", selection: $store.appearance) {
-                    ForEach(ColorTheme.allCases) { theme in
-                        Text(theme.loc)
-                            .tag(theme)
-                    }
-                }
+                SettingsAppearancePicker()
 #endif
                 Toggle("Code line numbers", isOn: $store.showCodeLineNumbers)
                 
@@ -28,10 +28,10 @@ struct SettingsView: View {
                 Toggle("Use built-in Safari", isOn: $store.builtInBrowser)
 #endif
             }
-            
+#if DEBUG
             DebugSettings()
+#endif
         }
-        .navigationTitle("Settings")
         .formStyle(.grouped)
         .buttonStyle(.plain)
         .scrollIndicators(.never)
@@ -40,5 +40,10 @@ struct SettingsView: View {
 }
 
 #Preview {
-    SettingsView()
+    NavigationStack {
+        SettingsView()
+    }
+    .darkSchemePreferred()
+    .environment(NavModel())
+    .environmentObject(ValueStore())
 }

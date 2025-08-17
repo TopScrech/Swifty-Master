@@ -130,7 +130,6 @@
 		F35198C52E2B7E56004E0F02 /* CodeBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198C32E2B7E56004E0F02 /* CodeBlockView.swift */; };
 		F35198FD2E2B9F53004E0F02 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EB2E2B9F53004E0F02 /* Topic.swift */; };
 		F35198FE2E2B9F53004E0F02 /* NavModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F32E2B9F53004E0F02 /* NavModeButton.swift */; };
-		F35198FF2E2B9F53004E0F02 /* NavModePickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F52E2B9F53004E0F02 /* NavModePickerItem.swift */; };
 		F35199002E2B9F53004E0F02 /* TopicDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F72E2B9F53004E0F02 /* TopicDetail.swift */; };
 		F35199022E2B9F53004E0F02 /* NavModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EA2E2B9F53004E0F02 /* NavModel.swift */; };
 		F35199052E2B9F53004E0F02 /* NavContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198ED2E2B9F53004E0F02 /* NavContainer.swift */; };
@@ -144,7 +143,6 @@
 		F35199102E2B9F53004E0F02 /* TopicTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198FB2E2B9F53004E0F02 /* TopicTile.swift */; };
 		F35199112E2B9F53004E0F02 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EB2E2B9F53004E0F02 /* Topic.swift */; };
 		F35199122E2B9F53004E0F02 /* NavModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F32E2B9F53004E0F02 /* NavModeButton.swift */; };
-		F35199132E2B9F53004E0F02 /* NavModePickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F52E2B9F53004E0F02 /* NavModePickerItem.swift */; };
 		F35199142E2B9F53004E0F02 /* TopicDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F72E2B9F53004E0F02 /* TopicDetail.swift */; };
 		F35199162E2B9F53004E0F02 /* NavModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EA2E2B9F53004E0F02 /* NavModel.swift */; };
 		F35199192E2B9F53004E0F02 /* NavContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198ED2E2B9F53004E0F02 /* NavContainer.swift */; };
@@ -330,7 +328,6 @@
 		F380A21D2E4AAAF900157F67 /* DebugSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C92B152E48AF4300203691 /* DebugSettings.swift */; };
 		F380A21E2E4AAAF900157F67 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE99D82E2F861C00D70249 /* ColorTheme.swift */; };
 		F380A2202E4AAB5A00157F67 /* NavMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E82E2B9F53004E0F02 /* NavMode.swift */; };
-		F380A2212E4AAB5A00157F67 /* NavModePickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F52E2B9F53004E0F02 /* NavModePickerItem.swift */; };
 		F380A2222E4AAB5A00157F67 /* NavModePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F42E2B9F53004E0F02 /* NavModePicker.swift */; };
 		F380A2232E4AAB6100157F67 /* TopicTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198FB2E2B9F53004E0F02 /* TopicTile.swift */; };
 		F380A2242E4AAB6100157F67 /* GridTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F82E2B9F53004E0F02 /* GridTopic.swift */; };
@@ -554,6 +551,12 @@
 		F3CFBE442E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */; };
 		F3CFBE452E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */; };
 		F3D8C11C2B2BB51000C7B0A9 /* Sensory Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */; };
+		F3FCD1E12E51217B003BDE5E /* NavModeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */; };
+		F3FCD1E22E51217B003BDE5E /* NavModeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */; };
+		F3FCD1E32E51217B003BDE5E /* NavModeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */; };
+		F3FCD1E92E51B69B003BDE5E /* SettingsAppearancePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */; };
+		F3FCD1EA2E51B69B003BDE5E /* SettingsAppearancePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */; };
+		F3FCD1EB2E51B69B003BDE5E /* SettingsAppearancePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -628,7 +631,6 @@
 		F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnContentView.swift; sourceTree = "<group>"; };
 		F35198F32E2B9F53004E0F02 /* NavModeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModeButton.swift; sourceTree = "<group>"; };
 		F35198F42E2B9F53004E0F02 /* NavModePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModePicker.swift; sourceTree = "<group>"; };
-		F35198F52E2B9F53004E0F02 /* NavModePickerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModePickerItem.swift; sourceTree = "<group>"; };
 		F35198F72E2B9F53004E0F02 /* TopicDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetail.swift; sourceTree = "<group>"; };
 		F35198F82E2B9F53004E0F02 /* GridTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTopic.swift; sourceTree = "<group>"; };
 		F35198FB2E2B9F53004E0F02 /* TopicTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTile.swift; sourceTree = "<group>"; };
@@ -638,7 +640,6 @@
 		F37D9DA62E488D6D008ECB6D /* text.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = text.txt; sourceTree = "<group>"; };
 		F380A1622E4AA1BF00157F67 /* tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F380A16D2E4AA1EE00157F67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F380A1762E4AA2C700157F67 /* Swifty-Master-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Swifty-Master-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLowPowerMode.swift; sourceTree = "<group>"; };
 		F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = highlightOccurrences.swift; sourceTree = "<group>"; };
 		F399A4AF2E3DC544008BED17 /* iOS 18 support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOS 18 support.swift"; sourceTree = "<group>"; };
@@ -751,6 +752,9 @@
 		F3CFBE402E3F9D2E005F93EA /* TopicDetectScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectScreenSize.swift; sourceTree = "<group>"; };
 		F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectCompactOrRegular.swift; sourceTree = "<group>"; };
 		F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensory Feedback.swift"; sourceTree = "<group>"; };
+		F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModeTile.swift; sourceTree = "<group>"; };
+		F3FCD1E42E5137E7003BDE5E /* tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = tvOS.plist; sourceTree = "<group>"; };
+		F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAppearancePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -799,7 +803,7 @@
 			isa = PBXGroup;
 			children = (
 				F35198F42E2B9F53004E0F02 /* NavModePicker.swift */,
-				F35198F52E2B9F53004E0F02 /* NavModePickerItem.swift */,
+				F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */,
 				F35198E82E2B9F53004E0F02 /* NavMode.swift */,
 			);
 			path = NavMode;
@@ -809,6 +813,7 @@
 			isa = PBXGroup;
 			children = (
 				F34480462E2D5D1900D18E2E /* SettingsView.swift */,
+				F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */,
 				F35198F32E2B9F53004E0F02 /* NavModeButton.swift */,
 				F3C92B152E48AF4300203691 /* DebugSettings.swift */,
 				F3AE99D82E2F861C00D70249 /* ColorTheme.swift */,
@@ -1063,25 +1068,21 @@
 			isa = PBXGroup;
 			children = (
 				F35198ED2E2B9F53004E0F02 /* NavContainer.swift */,
-				F35198EE2E2B9F53004E0F02 /* StackContentView.swift */,
-				F31653B82E3C0A4E00A0E9D7 /* StackTopicList.swift */,
-				F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */,
-				F314C7F12E2E1C1800F63B6A /* TopicLinkLabel.swift */,
-				F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */,
-				F35198FC2E2B9F53004E0F02 /* Topic */,
+				F3FCD1E62E513C28003BDE5E /* Stack */,
+				F3FCD1E72E513C3B003BDE5E /* 2 Columns */,
+				F35198FC2E2B9F53004E0F02 /* Shared */,
 				F314C7EF2E2E143F00F63B6A /* NavMode */,
 			);
 			path = Nav;
 			sourceTree = "<group>";
 		};
-		F35198FC2E2B9F53004E0F02 /* Topic */ = {
+		F35198FC2E2B9F53004E0F02 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				F35198F82E2B9F53004E0F02 /* GridTopic.swift */,
 				F35198F72E2B9F53004E0F02 /* TopicDetail.swift */,
 				F35198FB2E2B9F53004E0F02 /* TopicTile.swift */,
 			);
-			path = Topic;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		F35C358E2E44124A00622147 /* Text */ = {
@@ -1098,13 +1099,13 @@
 			path = Text;
 			sourceTree = "<group>";
 		};
-		F380A1702E4AA1EE00157F67 /* Swifty Master */ = {
+		F380A1702E4AA1EE00157F67 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				F380A1762E4AA2C700157F67 /* Swifty-Master-Info.plist */,
+				F3FCD1E42E5137E7003BDE5E /* tvOS.plist */,
 				F380A16D2E4AA1EE00157F67 /* Assets.xcassets */,
 			);
-			path = "Swifty Master";
+			path = tvOS;
 			sourceTree = "<group>";
 		};
 		F380A1EC2E4AAA8D00157F67 /* Badges */ = {
@@ -1140,7 +1141,7 @@
 				F30070012E2F0B9A00E76725 /* README.md */,
 				F3BBD9E02AEECD3400A9F7E7 /* iOS */,
 				F3202CB32D5596210030B3CC /* visionOS */,
-				F380A1702E4AA1EE00157F67 /* Swifty Master */,
+				F380A1702E4AA1EE00157F67 /* tvOS */,
 				F3202CB92D5596380030B3CC /* Frameworks */,
 				F3BBD9DF2AEECD3400A9F7E7 /* Products */,
 			);
@@ -1369,6 +1370,26 @@
 				F31B90BD2E41D29B003A2AA2 /* textEditorFormat.txt */,
 			);
 			path = TextEditor;
+			sourceTree = "<group>";
+		};
+		F3FCD1E62E513C28003BDE5E /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				F35198EE2E2B9F53004E0F02 /* StackContentView.swift */,
+				F31653B82E3C0A4E00A0E9D7 /* StackTopicList.swift */,
+				F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */,
+				F314C7F12E2E1C1800F63B6A /* TopicLinkLabel.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		F3FCD1E72E513C3B003BDE5E /* 2 Columns */ = {
+			isa = PBXGroup;
+			children = (
+				F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */,
+				F35198F82E2B9F53004E0F02 /* GridTopic.swift */,
+			);
+			path = "2 Columns";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1777,6 +1798,7 @@
 				F3CFBE242E3F9AFD005F93EA /* TopicPadding.swift in Sources */,
 				F314C8192E2E4BB600F63B6A /* TopicDivider.swift in Sources */,
 				F314C8162E2E4B8700F63B6A /* TopicLabel.swift in Sources */,
+				F3FCD1EA2E51B69B003BDE5E /* SettingsAppearancePicker.swift in Sources */,
 				F339042B2E495C2A00A22EE1 /* TopicWarning.swift in Sources */,
 				F314C8362E2E538200F63B6A /* TopicButton.swift in Sources */,
 				F3CFBE272E3F9B16005F93EA /* TopicFrame.swift in Sources */,
@@ -1786,7 +1808,6 @@
 				F330586C2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */,
 				F35198FE2E2B9F53004E0F02 /* NavModeButton.swift in Sources */,
 				F3C6F6762E40E57B00E94540 /* TopicProgressView.swift in Sources */,
-				F35198FF2E2B9F53004E0F02 /* NavModePickerItem.swift in Sources */,
 				F3CFBE3F2E3F9D2D005F93EA /* TopicDifferentiateOS.swift in Sources */,
 				F35199002E2B9F53004E0F02 /* TopicDetail.swift in Sources */,
 				F314C81C2E2E4BB900F63B6A /* TopicShape.swift in Sources */,
@@ -1826,6 +1847,7 @@
 				F314C8512E2E657400F63B6A /* TopicPicker.swift in Sources */,
 				F314C8072E2E2D4A00F63B6A /* FontDesignItem.swift in Sources */,
 				F3BF16E72E2CCDEE005212D1 /* TopicDocs.swift in Sources */,
+				F3FCD1E32E51217B003BDE5E /* NavModeTile.swift in Sources */,
 				F3CFBDCF2E3F9015005F93EA /* TopicNavigationLink.swift in Sources */,
 				F314C84E2E2E657300F63B6A /* TopicStepper.swift in Sources */,
 				F3CFBE122E3F994F005F93EA /* TopicScrollView.swift in Sources */,
@@ -1884,6 +1906,7 @@
 				F380A1A82E4AAA2D00157F67 /* TopicNavigationSplitView.swift in Sources */,
 				F380A1A92E4AAA2D00157F67 /* TopicNavigationStack.swift in Sources */,
 				F380A1AA2E4AAA2D00157F67 /* TopicPassAView.swift in Sources */,
+				F3FCD1E12E51217B003BDE5E /* NavModeTile.swift in Sources */,
 				F380A1AB2E4AAA2D00157F67 /* TopicLink.swift in Sources */,
 				F380A1AC2E4AAA2D00157F67 /* TopicNavigationLink.swift in Sources */,
 				F380A1AD2E4AAA2D00157F67 /* TopicDismiss.swift in Sources */,
@@ -1922,7 +1945,6 @@
 				F380A18C2E4AAA1A00157F67 /* ContentView.swift in Sources */,
 				F380A1C32E4AAA4B00157F67 /* TopicDifferentiateOS.swift in Sources */,
 				F380A2202E4AAB5A00157F67 /* NavMode.swift in Sources */,
-				F380A2212E4AAB5A00157F67 /* NavModePickerItem.swift in Sources */,
 				F380A2222E4AAB5A00157F67 /* NavModePicker.swift in Sources */,
 				F380A1C42E4AAA4B00157F67 /* TopicLowPowerMode.swift in Sources */,
 				F380A1C52E4AAA4B00157F67 /* TopicDarkMode.swift in Sources */,
@@ -1930,6 +1952,7 @@
 				F380A1C72E4AAA4B00157F67 /* TopicDetectOSVersion.swift in Sources */,
 				F380A1C82E4AAA4B00157F67 /* TopicDetectLaguage.swift in Sources */,
 				F380A1C92E4AAA4B00157F67 /* TopicDetectScreenSize.swift in Sources */,
+				F3FCD1EB2E51B69B003BDE5E /* SettingsAppearancePicker.swift in Sources */,
 				F380A18D2E4AAA1A00157F67 /* TopicHeading.swift in Sources */,
 				F380A1802E4AAA1500157F67 /* TopicDoc.swift in Sources */,
 				F380A1C12E4AAA4400157F67 /* TopicColor.swift in Sources */,
@@ -1966,7 +1989,6 @@
 				F314C8102E2E4A0100F63B6A /* TopicImage.swift in Sources */,
 				F314C8322E2E536F00F63B6A /* TopicMenu.swift in Sources */,
 				F35199122E2B9F53004E0F02 /* NavModeButton.swift in Sources */,
-				F35199132E2B9F53004E0F02 /* NavModePickerItem.swift in Sources */,
 				F35199142E2B9F53004E0F02 /* TopicDetail.swift in Sources */,
 				F3CFBE262E3F9B16005F93EA /* TopicFrame.swift in Sources */,
 				F314C83B2E2E540800F63B6A /* TopicSheet.swift in Sources */,
@@ -1979,6 +2001,7 @@
 				F3C92B172E48AF4300203691 /* DebugSettings.swift in Sources */,
 				F314C8272E2E52A200F63B6A /* ValueStore.swift in Sources */,
 				F35199192E2B9F53004E0F02 /* NavContainer.swift in Sources */,
+				F3FCD1E22E51217B003BDE5E /* NavModeTile.swift in Sources */,
 				F3CFBE0E2E3F994E005F93EA /* TopicList.swift in Sources */,
 				F351991A2E2B9F53004E0F02 /* TwoColumnContentView.swift in Sources */,
 				F3CFBDC22E3F8FA5005F93EA /* TopicNavigationView.swift in Sources */,
@@ -1997,6 +2020,7 @@
 				F314C8152E2E4B8700F63B6A /* TopicLabel.swift in Sources */,
 				F314C8062E2E2D4A00F63B6A /* FontDesignItem.swift in Sources */,
 				F3CFBDCB2E3F900F005F93EA /* TopicNavigationBar.swift in Sources */,
+				F3FCD1E92E51B69B003BDE5E /* SettingsAppearancePicker.swift in Sources */,
 				F34480452E2D548F00D18E2E /* TopicToggle.swift in Sources */,
 				F35199212E2B9F53004E0F02 /* StackContentView.swift in Sources */,
 				F339042A2E495C2A00A22EE1 /* TopicWarning.swift in Sources */,
@@ -2118,7 +2142,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Swifty-Master-Info.plist";
+				INFOPLIST_FILE = tvOS/tvOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Swifty Master";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
@@ -2150,7 +2174,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Swifty-Master-Info.plist";
+				INFOPLIST_FILE = tvOS/tvOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Swifty Master";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
@@ -2232,7 +2256,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 26.0.1;
+				MARKETING_VERSION = 26.0.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2294,7 +2318,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 26.0.1;
+				MARKETING_VERSION = 26.0.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -2308,6 +2332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = iOS/iOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
@@ -2330,7 +2355,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
@@ -2350,6 +2375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = iOS/iOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
@@ -2372,7 +2398,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.0;

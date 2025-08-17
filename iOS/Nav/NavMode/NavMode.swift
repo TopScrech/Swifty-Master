@@ -1,8 +1,7 @@
 import SwiftUI
 
 enum NavMode: Int, Identifiable, CaseIterable, Codable {
-    case stack,
-         twoColumn
+    case stack, twoColumn
     
     var id: Int {
         rawValue

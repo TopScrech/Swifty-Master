@@ -15,7 +15,7 @@ struct TopicTile: View {
                 .lineLimit(2, reservesSpace: true)
         }
         .tint(.primary)
-        .scaleEffect(CGSize(width: scale, height: scale))
+        .scaleEffect(scale)
         .onHover {
             isHovering = $0
         }

@@ -4,13 +4,20 @@ struct DebugSettings: View {
     @EnvironmentObject private var store: ValueStore
     
     var body: some View {
-#if DEBUG
-        Section("Debug") {
+        DisclosureGroup("Debug") {
             Button("Reset nav mode") {
                 store.navMode = nil
             }
             
             Toggle("Status bar", isOn: $store.showStatusBar)
+            
+            Button("Alt icon") {
+                UIApplication.shared.setAlternateIconName("Liquid Glass")
+            }
+            
+            Button("Reset icon") {
+                UIApplication.shared.setAlternateIconName(nil)
+            }
             
             Button {
                 store.favoriteTopics = Topic.allCases
@@ -49,14 +56,13 @@ struct DebugSettings: View {
                         }
                     }
                 }
+                .navigationTitle("All code blocks")
                 .scrollIndicators(.never)
                 .scenePadding()
-                .navigationTitle("All code blocks")
                 .navSubtitle(CodeBlock.allCases.count)
                 .toolbarTitleDisplayMode(.inline)
             }
         }
-#endif
     }
 }
 

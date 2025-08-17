@@ -1,18 +1,23 @@
 import SwiftUI
 
 struct MaterialsView: View {
-    private let materials: [(String, Material?)] = [
-        ("None", nil),
-        ("Ultra Thin", .ultraThin),
+    private let materials = [
+        ("Ultra Thin", Material.ultraThin),
         ("Thin", .thin),
         ("Regular", .regular),
         ("Thick", .thick),
         ("Ultra Thick", .ultraThick),
-        ("Bar", .bar)
+        ("Bar", .bar),
+        ("None", nil)
+    ]
+    
+    private let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible())
     ]
     
     var body: some View {
-        VStack {
+        LazyVGrid(columns: columns, spacing: 32) {
             ForEach(0..<materials.count, id: \.self) { index in
                 let (key, value) = materials[index]
                 
@@ -35,7 +40,7 @@ struct MaterialsView: View {
                         }
                     }
                 }
-                .frame(300)
+                .frame(160)
             }
         }
     }

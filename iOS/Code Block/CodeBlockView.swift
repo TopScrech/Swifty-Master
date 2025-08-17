@@ -54,7 +54,6 @@ struct CodeBlockView: View {
                         .title3(.semibold)
                         .padding(10)
                         .glassyBackground(16)
-                    //                    .background(.ultraThinMaterial, in: .rect(cornerRadius: 8))
                         .padding(8)
                         .contextMenu {
                             ShareLink(item: code)
