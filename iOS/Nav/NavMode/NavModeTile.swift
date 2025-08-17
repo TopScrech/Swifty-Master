@@ -35,6 +35,7 @@ struct NavModeTile: View {
         }
         .buttonStyle(.plain)
         .contentShape(.rect)
+        .buttonBorderShape(.roundedRectangle(radius: 16))
     }
 }
 

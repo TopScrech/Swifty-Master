@@ -49,7 +49,8 @@ struct NavModePicker: View {
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 10)
                 .background(.white, in: .rect(cornerRadius: 16))
-                .disabled(store.navMode == nil)
+                .disabled(newNavMode == nil)
+                .buttonStyle(.plain)
             }
             .scenePadding()
             .background {
