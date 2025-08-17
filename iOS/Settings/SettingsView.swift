@@ -12,12 +12,7 @@ struct SettingsView: View {
             
             Section {
 #if !os(visionOS)
-                Picker("Appearance", selection: $store.appearance) {
-                    ForEach(ColorTheme.allCases) { theme in
-                        Text(theme.loc)
-                            .tag(theme)
-                    }
-                }
+                SettingsAppearancePicker()
 #endif
                 Toggle("Code line numbers", isOn: $store.showCodeLineNumbers)
                 

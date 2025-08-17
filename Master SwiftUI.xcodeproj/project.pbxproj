@@ -554,6 +554,9 @@
 		F3FCD1E12E51217B003BDE5E /* NavModeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */; };
 		F3FCD1E22E51217B003BDE5E /* NavModeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */; };
 		F3FCD1E32E51217B003BDE5E /* NavModeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */; };
+		F3FCD1E92E51B69B003BDE5E /* SettingsAppearancePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */; };
+		F3FCD1EA2E51B69B003BDE5E /* SettingsAppearancePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */; };
+		F3FCD1EB2E51B69B003BDE5E /* SettingsAppearancePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -751,6 +754,7 @@
 		F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensory Feedback.swift"; sourceTree = "<group>"; };
 		F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModeTile.swift; sourceTree = "<group>"; };
 		F3FCD1E42E5137E7003BDE5E /* tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = tvOS.plist; sourceTree = "<group>"; };
+		F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAppearancePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -809,6 +813,7 @@
 			isa = PBXGroup;
 			children = (
 				F34480462E2D5D1900D18E2E /* SettingsView.swift */,
+				F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */,
 				F35198F32E2B9F53004E0F02 /* NavModeButton.swift */,
 				F3C92B152E48AF4300203691 /* DebugSettings.swift */,
 				F3AE99D82E2F861C00D70249 /* ColorTheme.swift */,
@@ -1793,6 +1798,7 @@
 				F3CFBE242E3F9AFD005F93EA /* TopicPadding.swift in Sources */,
 				F314C8192E2E4BB600F63B6A /* TopicDivider.swift in Sources */,
 				F314C8162E2E4B8700F63B6A /* TopicLabel.swift in Sources */,
+				F3FCD1EA2E51B69B003BDE5E /* SettingsAppearancePicker.swift in Sources */,
 				F339042B2E495C2A00A22EE1 /* TopicWarning.swift in Sources */,
 				F314C8362E2E538200F63B6A /* TopicButton.swift in Sources */,
 				F3CFBE272E3F9B16005F93EA /* TopicFrame.swift in Sources */,
@@ -1946,6 +1952,7 @@
 				F380A1C72E4AAA4B00157F67 /* TopicDetectOSVersion.swift in Sources */,
 				F380A1C82E4AAA4B00157F67 /* TopicDetectLaguage.swift in Sources */,
 				F380A1C92E4AAA4B00157F67 /* TopicDetectScreenSize.swift in Sources */,
+				F3FCD1EB2E51B69B003BDE5E /* SettingsAppearancePicker.swift in Sources */,
 				F380A18D2E4AAA1A00157F67 /* TopicHeading.swift in Sources */,
 				F380A1802E4AAA1500157F67 /* TopicDoc.swift in Sources */,
 				F380A1C12E4AAA4400157F67 /* TopicColor.swift in Sources */,
@@ -2013,6 +2020,7 @@
 				F314C8152E2E4B8700F63B6A /* TopicLabel.swift in Sources */,
 				F314C8062E2E2D4A00F63B6A /* FontDesignItem.swift in Sources */,
 				F3CFBDCB2E3F900F005F93EA /* TopicNavigationBar.swift in Sources */,
+				F3FCD1E92E51B69B003BDE5E /* SettingsAppearancePicker.swift in Sources */,
 				F34480452E2D548F00D18E2E /* TopicToggle.swift in Sources */,
 				F35199212E2B9F53004E0F02 /* StackContentView.swift in Sources */,
 				F339042A2E495C2A00A22EE1 /* TopicWarning.swift in Sources */,
