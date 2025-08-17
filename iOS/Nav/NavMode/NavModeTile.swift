@@ -28,13 +28,14 @@ struct NavModeTile: View {
             .overlay {
                 if selection == mode {
                     RoundedRectangle(cornerRadius: 16)
-                        .stroke(.white, lineWidth: 2)
+                        .stroke(.primary, lineWidth: 2)
                 }
             }
             .foregroundStyle(.foreground)
         }
         .buttonStyle(.plain)
         .contentShape(.rect)
+        .buttonBorderShape(.roundedRectangle(radius: 16))
     }
 }
 
