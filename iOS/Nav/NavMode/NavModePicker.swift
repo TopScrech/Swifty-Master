@@ -3,6 +3,7 @@ import SwiftUI
 struct NavModePicker: View {
     @EnvironmentObject private var store: ValueStore
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.colorScheme) private var appearance
     
     @State private var newNavMode: NavMode?
     
@@ -15,11 +16,11 @@ struct NavModePicker: View {
                         .scaledToFit()
                     
                     Text("Hi, I'm Pyzh. Let's dive into the world of SwiftUI!")
+                        .foregroundStyle(appearance == .dark ? .white : .black)
                         .title2(.semibold, design: .rounded)
                         .multilineTextAlignment(.center)
                         .padding(8)
                         .glassyBackground(16)
-                        .foregroundStyle(.white)
                 }
                 
                 Text("but first, choose the interface that's comfortable for you")
@@ -45,10 +46,10 @@ struct NavModePicker: View {
                     store.navMode = newNavMode
                 }
                 .title2(.semibold, design: .rounded)
-                .foregroundStyle(.black)
+                .foregroundStyle(.background)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 10)
-                .background(.white, in: .rect(cornerRadius: 16))
+                .background(.primary, in: .rect(cornerRadius: 16))
                 .disabled(newNavMode == nil)
                 .buttonStyle(.plain)
             }
