@@ -2,6 +2,7 @@
 import SwiftUI
 import JournalingSuggestions
 
+@available(iOS 17.2, *)
 struct JournalView: View {
     @State var suggestionPhotos = [JournalingSuggestion.Photo]()
     @State var suggestionTitle: String? = nil
