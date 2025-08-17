@@ -37,6 +37,7 @@ struct JournalView: View {
     }
 }
 
+@available(iOS 17.2, *)
 #Preview {
     JournalView()
 }
