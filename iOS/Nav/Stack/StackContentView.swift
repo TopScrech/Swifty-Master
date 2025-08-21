@@ -36,7 +36,7 @@ struct StackContentView: View {
                 }
                 .sheet($sheetSettings) {
                     NavigationView {
-                        SettingsView()
+                        AppSettings()
                     }
                 }
             }

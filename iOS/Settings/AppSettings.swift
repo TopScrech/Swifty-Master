@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SettingsView: View {
+struct AppSettings: View {
     @EnvironmentObject private var store: ValueStore
     
     var body: some View {
@@ -41,7 +41,7 @@ struct SettingsView: View {
 
 #Preview {
     NavigationStack {
-        SettingsView()
+        AppSettings()
     }
     .environment(NavModel())
     .environmentObject(ValueStore())
