@@ -1,11 +1,11 @@
 import SwiftUI
 
 struct NavModePicker: View {
+    @State private var navMode: NavMode?
     @EnvironmentObject private var store: ValueStore
+    
     @Environment(\.dismiss) private var dismiss
     @Environment(\.colorScheme) private var appearance
-    
-    @State private var newNavMode: NavMode?
     
     var body: some View {
         NavigationStack {
@@ -32,7 +32,7 @@ struct NavModePicker: View {
                 HStack(spacing: 25) {
                     ForEach(NavMode.allCases) { mode in
                         NavModeTile(
-                            selection: $newNavMode,
+                            selection: $navMode,
                             mode: mode
                         )
                     }
@@ -43,14 +43,14 @@ struct NavModePicker: View {
                 
                 Button("Save") {
                     dismiss()
-                    store.navMode = newNavMode
+                    store.navMode = navMode
                 }
                 .title2(.semibold, design: .rounded)
                 .foregroundStyle(.background)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 10)
                 .background(.primary, in: .rect(cornerRadius: 16))
-                .disabled(newNavMode == nil)
+                .disabled(navMode == nil)
                 .buttonStyle(.plain)
             }
             .scenePadding()
@@ -83,7 +83,5 @@ struct NavModePicker: View {
 
 #Preview {
     NavModePicker()
-        .darkSchemePreferred()
-        .environment(NavModel())
         .environmentObject(ValueStore())
 }

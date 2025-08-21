@@ -43,7 +43,6 @@ struct SettingsView: View {
     NavigationStack {
         SettingsView()
     }
-    .darkSchemePreferred()
     .environment(NavModel())
     .environmentObject(ValueStore())
 }

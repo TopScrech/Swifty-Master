@@ -14,5 +14,4 @@ struct TopicSlider: View {
 
 #Preview {
     TopicSlider()
-        .darkSchemePreferred()
 }

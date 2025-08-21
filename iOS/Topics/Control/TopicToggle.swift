@@ -40,5 +40,5 @@ struct TopicToggle: View {
     }
     .environment(NavModel())
     .environment(DataModel())
-    .darkSchemePreferred()
+    .environmentObject(ValueStore())
 }

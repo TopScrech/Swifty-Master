@@ -42,5 +42,4 @@ struct TopicDismiss: View {
 
 #Preview {
     TopicDismiss()
-        .darkSchemePreferred()
 }

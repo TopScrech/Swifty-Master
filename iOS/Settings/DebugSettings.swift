@@ -68,6 +68,5 @@ struct DebugSettings: View {
 
 #Preview {
     DebugSettings()
-        .darkSchemePreferred()
         .environmentObject(ValueStore())
 }

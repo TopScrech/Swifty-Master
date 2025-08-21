@@ -63,6 +63,6 @@ struct TopicDocsCard: View {
 
 #Preview {
     TopicDocsCard(.init("Preview", url: "https://developer.apple.com/documentation/swiftui/toggle"))
-        .darkSchemePreferred()
         .scenePadding()
+        .environmentObject(ValueStore())
 }

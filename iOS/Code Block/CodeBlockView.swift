@@ -82,6 +82,5 @@ extension String {
 
 #Preview {
     CodeBlockView(.gauges)
-        .darkSchemePreferred()
         .environmentObject(ValueStore())
 }

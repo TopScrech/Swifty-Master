@@ -26,5 +26,4 @@ struct TopicDocsCardImage: View {
 
 #Preview {
     TopicDocsCardImage("apple")
-        .darkSchemePreferred()
 }

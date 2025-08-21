@@ -12,5 +12,4 @@ struct TopicNavigationSplitView: View {
 
 #Preview {
     TopicNavigationSplitView()
-        .darkSchemePreferred()
 }
