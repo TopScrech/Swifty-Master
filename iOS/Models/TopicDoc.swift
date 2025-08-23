@@ -53,7 +53,6 @@ extension Topic {
             ]
             
             // MARK: - Image & Symbols
-#warning("Link to download SF Symbols")
         case .image:
             return [
                 TopicDocType("Image", url: "https://developer.apple.com/documentation/swiftui/image"),
