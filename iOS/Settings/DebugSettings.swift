@@ -14,7 +14,7 @@ struct DebugSettings: View {
             }
             
             Section {
-                Button("Alt icon") {
+                Button("Glassy icon") {
                     UIApplication.shared.setAlternateIconName("Liquid Glass")
                 }
                 
