@@ -217,9 +217,9 @@ extension Topic {
         case .detectDarkMode:
             return [TopicDocType("colorScheme", url: "https://developer.apple.com/documentation/swiftui/environmentvalues/colorscheme")]
             
-#warning("Add more")
         case .detectOSVersion: return [
-            TopicDocType("UIUserInterfaceIdiom", url: "https://developer.apple.com/documentation/uikit/uiuserinterfaceidiom")
+            TopicDocType("UIUserInterfaceIdiom", url: "https://developer.apple.com/documentation/uikit/uiuserinterfaceidiom"),
+            TopicDocType("Running code on a specific platform or OS version", url: "https://developer.apple.com/documentation/xcode/running-code-on-a-specific-version")
         ]
             
         case .detectLang:
