@@ -15,6 +15,5 @@ struct SettingsAppearancePicker: View {
 
 #Preview {
     SettingsAppearancePicker()
-        .darkSchemePreferred()
         .environmentObject(ValueStore())
 }

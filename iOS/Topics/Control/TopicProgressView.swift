@@ -19,6 +19,5 @@ struct TopicProgressView: View {
     ScrollView {
         ContentView(.progressView)
     }
-    .darkSchemePreferred()
     .environmentObject(ValueStore())
 }

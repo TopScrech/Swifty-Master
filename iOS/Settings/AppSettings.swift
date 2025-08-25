@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SettingsView: View {
+struct AppSettings: View {
     @EnvironmentObject private var store: ValueStore
     
     var body: some View {
@@ -28,9 +28,10 @@ struct SettingsView: View {
                 Toggle("Use built-in Safari", isOn: $store.builtInBrowser)
 #endif
             }
-#if DEBUG
-            DebugSettings()
-#endif
+            
+            NavigationLink("Debug") {
+                DebugSettings()
+            }
         }
         .formStyle(.grouped)
         .buttonStyle(.plain)
@@ -41,9 +42,8 @@ struct SettingsView: View {
 
 #Preview {
     NavigationStack {
-        SettingsView()
+        AppSettings()
     }
-    .darkSchemePreferred()
     .environment(NavModel())
     .environmentObject(ValueStore())
 }

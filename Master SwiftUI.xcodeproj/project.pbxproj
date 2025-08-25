@@ -118,8 +118,8 @@
 		F34480412E2D4E0500D18E2E /* TopicActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F344803F2E2D4E0500D18E2E /* TopicActionButton.swift */; };
 		F34480442E2D548F00D18E2E /* TopicToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480432E2D548F00D18E2E /* TopicToggle.swift */; };
 		F34480452E2D548F00D18E2E /* TopicToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480432E2D548F00D18E2E /* TopicToggle.swift */; };
-		F34480472E2D5D1900D18E2E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480462E2D5D1900D18E2E /* SettingsView.swift */; };
-		F34480482E2D5D1900D18E2E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480462E2D5D1900D18E2E /* SettingsView.swift */; };
+		F34480472E2D5D1900D18E2E /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480462E2D5D1900D18E2E /* AppSettings.swift */; };
+		F34480482E2D5D1900D18E2E /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480462E2D5D1900D18E2E /* AppSettings.swift */; };
 		F35198472E2AECAA004E0F02 /* Gauge Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198462E2AECAA004E0F02 /* Gauge Card.swift */; };
 		F35198482E2AECAA004E0F02 /* Gauge Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198462E2AECAA004E0F02 /* Gauge Card.swift */; };
 		F351984E2E2AF689004E0F02 /* CodeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351984D2E2AF689004E0F02 /* CodeBlock.swift */; };
@@ -324,7 +324,7 @@
 		F380A2192E4AAAF100157F67 /* differentiateOS.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE312E3F9C20005F93EA /* differentiateOS.txt */; };
 		F380A21A2E4AAAF100157F67 /* detectDeviceUsed.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3CFBE2E2E3F9C09005F93EA /* detectDeviceUsed.txt */; };
 		F380A21B2E4AAAF900157F67 /* NavModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F32E2B9F53004E0F02 /* NavModeButton.swift */; };
-		F380A21C2E4AAAF900157F67 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480462E2D5D1900D18E2E /* SettingsView.swift */; };
+		F380A21C2E4AAAF900157F67 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480462E2D5D1900D18E2E /* AppSettings.swift */; };
 		F380A21D2E4AAAF900157F67 /* DebugSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C92B152E48AF4300203691 /* DebugSettings.swift */; };
 		F380A21E2E4AAAF900157F67 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE99D82E2F861C00D70249 /* ColorTheme.swift */; };
 		F380A2202E4AAB5A00157F67 /* NavMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E82E2B9F53004E0F02 /* NavMode.swift */; };
@@ -615,7 +615,7 @@
 		F34480392E2D225A00D18E2E /* TopicSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicSpacer.swift; sourceTree = "<group>"; };
 		F344803F2E2D4E0500D18E2E /* TopicActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicActionButton.swift; sourceTree = "<group>"; };
 		F34480432E2D548F00D18E2E /* TopicToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicToggle.swift; sourceTree = "<group>"; };
-		F34480462E2D5D1900D18E2E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F34480462E2D5D1900D18E2E /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		F35198462E2AECAA004E0F02 /* Gauge Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gauge Card.swift"; sourceTree = "<group>"; };
 		F351984D2E2AF689004E0F02 /* CodeBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlock.swift; sourceTree = "<group>"; };
 		F35198C02E2B7E34004E0F02 /* AttributedCodeString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedCodeString.swift; sourceTree = "<group>"; };
@@ -811,7 +811,7 @@
 		F314C7F02E2E146100F63B6A /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				F34480462E2D5D1900D18E2E /* SettingsView.swift */,
+				F34480462E2D5D1900D18E2E /* AppSettings.swift */,
 				F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */,
 				F35198F32E2B9F53004E0F02 /* NavModeButton.swift */,
 				F3C92B152E48AF4300203691 /* DebugSettings.swift */,
@@ -1789,7 +1789,7 @@
 				F3CFBE422E3F9D2E005F93EA /* TopicDetectScreenSize.swift in Sources */,
 				F3202CC72D55977A0030B3CC /* Image Picker View.swift in Sources */,
 				F314C8262E2E52A200F63B6A /* ValueStore.swift in Sources */,
-				F34480482E2D5D1900D18E2E /* SettingsView.swift in Sources */,
+				F34480482E2D5D1900D18E2E /* AppSettings.swift in Sources */,
 				F314C85B2E2E665600F63B6A /* TopicGradient.swift in Sources */,
 				F33E8B232E4162EF00B05370 /* TopicRelated.swift in Sources */,
 				F30207CE2D8B001300C26008 /* Markdown.swift in Sources */,
@@ -1873,7 +1873,7 @@
 				F380A1A12E4AAA2700157F67 /* TopicToggle.swift in Sources */,
 				F380A1A22E4AAA2700157F67 /* BrightnessSlider.swift in Sources */,
 				F380A21B2E4AAAF900157F67 /* NavModeButton.swift in Sources */,
-				F380A21C2E4AAAF900157F67 /* SettingsView.swift in Sources */,
+				F380A21C2E4AAAF900157F67 /* AppSettings.swift in Sources */,
 				F380A21D2E4AAAF900157F67 /* DebugSettings.swift in Sources */,
 				F380A21E2E4AAAF900157F67 /* ColorTheme.swift in Sources */,
 				F380A1A32E4AAA2700157F67 /* Gauge Card.swift in Sources */,
@@ -1970,7 +1970,7 @@
 				F3C6F6912E40E58000E94540 /* TopicBadges.swift in Sources */,
 				F3C92B1D2E48BC4600203691 /* ExampleSheet.swift in Sources */,
 				F33E8B282E416BEF00B05370 /* TestView.swift in Sources */,
-				F34480472E2D5D1900D18E2E /* SettingsView.swift in Sources */,
+				F34480472E2D5D1900D18E2E /* AppSettings.swift in Sources */,
 				F37916EE2AF14A7A00B880AF /* Image Picker 2.swift in Sources */,
 				F32E88D52AF856E400959D49 /* Journal View.swift in Sources */,
 				F3C6F6722E40E57A00E94540 /* TopicGauge.swift in Sources */,
@@ -2254,7 +2254,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 26.0.3;
+				MARKETING_VERSION = 26.0.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2316,7 +2316,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 26.0.3;
+				MARKETING_VERSION = 26.0.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;

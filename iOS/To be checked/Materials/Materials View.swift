@@ -50,5 +50,4 @@ struct MaterialsView: View {
     ScrollView(showsIndicators: false) {
         MaterialsView()
     }
-    .darkSchemePreferred()
 }

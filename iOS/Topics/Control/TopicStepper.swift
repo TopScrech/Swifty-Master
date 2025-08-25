@@ -20,5 +20,4 @@ struct TopicStepper: View {
 
 #Preview {
     TopicStepper()
-        .darkSchemePreferred()
 }

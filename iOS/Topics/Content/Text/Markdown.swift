@@ -40,8 +40,7 @@ struct Markdown: View {
 }
 
 #Preview {
-    NavigationView {
+    NavigationStack {
         Markdown()
     }
-    .darkSchemePreferred()
 }

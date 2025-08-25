@@ -1,10 +1,11 @@
 import SwiftUI
 
 struct NavContainer: View {
-    @EnvironmentObject private var store: ValueStore
-    @Environment(\.scenePhase) private var scenePhase
     private var nav: NavModel = .shared
     private var dataModel: DataModel = .shared
+    
+    @EnvironmentObject private var store: ValueStore
+    @Environment(\.scenePhase) private var scenePhase
     
 #if os(macOS)
     @Environment(\.appearsActive) private var appearsActive

@@ -25,5 +25,4 @@ struct TopicPicker: View {
 
 #Preview {
     TopicPicker()
-        .darkSchemePreferred()
 }

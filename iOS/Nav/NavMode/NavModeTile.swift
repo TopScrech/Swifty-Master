@@ -41,7 +41,6 @@ struct NavModeTile: View {
 
 #Preview {
     NavModePicker()
-        .darkSchemePreferred()
         .environment(NavModel())
         .environmentObject(ValueStore())
 }

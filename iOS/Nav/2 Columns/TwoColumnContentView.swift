@@ -25,7 +25,7 @@ struct TwoColumnContentView: View {
             }
             .sheet($sheetSettings) {
                 NavigationView {
-                    SettingsView()
+                    AppSettings()
                 }
             }
         } detail: {
