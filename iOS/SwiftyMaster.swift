@@ -1,8 +1,11 @@
 import ScrechKit
+
+#if canImport(SafariCover)
 import SafariCover
+#endif
 
 @main
-struct MasterSwiftUI: App {
+struct SwiftyMaster: App {
     @StateObject private var store = ValueStore()
     
     var body: some Scene {
