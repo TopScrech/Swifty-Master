@@ -126,6 +126,8 @@
 		F325E3EF2E5EC0550008928E /* ContentViewToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E3EC2E5EC0550008928E /* ContentViewToolbar.swift */; };
 		F325E3F02E5EC0550008928E /* ContentViewToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E3EC2E5EC0550008928E /* ContentViewToolbar.swift */; };
 		F325E3F12E5EC0E40008928E /* DebugSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C92B152E48AF4300203691 /* DebugSettings.swift */; };
+		F325E3F22E5EC1260008928E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */; };
+		F325E3F32E5EC1260008928E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */; };
 		F32E88D52AF856E400959D49 /* Journal View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32E88D42AF856E400959D49 /* Journal View.swift */; };
 		F330586C2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */; };
 		F330586D2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */; };
@@ -1684,6 +1686,7 @@
 		F325E3B12E5EBC760008928E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				F325E3F32E5EC1260008928E /* Localizable.xcstrings in Resources */,
 				F325E3EB2E5EBF790008928E /* Assets.xcassets in Resources */,
 			);
 		};
@@ -1695,6 +1698,7 @@
 				F380A1D92E4AAA6200157F67 /* textField.txt in Resources */,
 				F380A1DA2E4AAA6200157F67 /* customKeyboard.txt in Resources */,
 				F380A1FF2E4AAAC700157F67 /* tabView.txt in Resources */,
+				F325E3F22E5EC1260008928E /* Localizable.xcstrings in Resources */,
 				F380A2002E4AAAC700157F67 /* list.txt in Resources */,
 				F380A2192E4AAAF100157F67 /* differentiateOS.txt in Resources */,
 				F380A21A2E4AAAF100157F67 /* detectDeviceUsed.txt in Resources */,
