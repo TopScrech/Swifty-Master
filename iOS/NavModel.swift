@@ -39,9 +39,9 @@ final class NavModel: Codable {
         topicPath: [Topic] = [],
         favoriteTopicPath: [Topic] = []
     ) {
-        self.columnVisibility = columnVisibility
-        self.selectedCategory = selectedCategory
-        self.topicPath = topicPath
+        self.columnVisibility  = columnVisibility
+        self.selectedCategory  = selectedCategory
+        self.topicPath         = topicPath
         self.favoriteTopicPath = favoriteTopicPath
     }
     
@@ -54,9 +54,9 @@ final class NavModel: Codable {
         let model = try Self.decoder.decode(Self.self, from: data)
         
         self.init(
-            columnVisibility: model.columnVisibility,
-            selectedCategory: model.selectedCategory,
-            topicPath: model.topicPath,
+            columnVisibility:  model.columnVisibility,
+            selectedCategory:  model.selectedCategory,
+            topicPath:         model.topicPath,
             favoriteTopicPath: model.favoriteTopicPath
         )
     }
@@ -74,9 +74,9 @@ final class NavModel: Codable {
         do {
             let model = try NavModel(contentsOf: Self.dataURL)
             
-            selectedCategory = model.selectedCategory
-            columnVisibility = model.columnVisibility
-            topicPath = model.topicPath
+            selectedCategory  = model.selectedCategory
+            columnVisibility  = model.columnVisibility
+            topicPath         = model.topicPath
             favoriteTopicPath = model.favoriteTopicPath
             
             print("Loaded NavModel:", topicPath)
