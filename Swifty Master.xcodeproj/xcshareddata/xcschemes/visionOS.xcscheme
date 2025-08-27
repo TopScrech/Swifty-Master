@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F3BBD9DD2AEECD3400A9F7E7"
-               BuildableName = "iOS.app"
-               BlueprintName = "iOS"
-               ReferencedContainer = "container:Master SwiftUI.xcodeproj">
+               BlueprintIdentifier = "F3202C982D5596100030B3CC"
+               BuildableName = "visionOS.app"
+               BlueprintName = "visionOS"
+               ReferencedContainer = "container:Swifty Master.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,10 +44,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F3BBD9DD2AEECD3400A9F7E7"
-            BuildableName = "iOS.app"
-            BlueprintName = "iOS"
-            ReferencedContainer = "container:Master SwiftUI.xcodeproj">
+            BlueprintIdentifier = "F3202C982D5596100030B3CC"
+            BuildableName = "visionOS.app"
+            BlueprintName = "visionOS"
+            ReferencedContainer = "container:Swifty Master.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,10 +61,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F3BBD9DD2AEECD3400A9F7E7"
-            BuildableName = "iOS.app"
-            BlueprintName = "iOS"
-            ReferencedContainer = "container:Master SwiftUI.xcodeproj">
+            BlueprintIdentifier = "F3202C982D5596100030B3CC"
+            BuildableName = "visionOS.app"
+            BlueprintName = "visionOS"
+            ReferencedContainer = "container:Swifty Master.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

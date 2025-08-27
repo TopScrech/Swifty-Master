@@ -1491,7 +1491,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F3BBD9D92AEECD3400A9F7E7 /* Build configuration list for PBXProject "Master SwiftUI" */;
+			buildConfigurationList = F3BBD9D92AEECD3400A9F7E7 /* Build configuration list for PBXProject "Swifty Master" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -2221,7 +2221,7 @@
 			};
 			name = Release;
 		};
-		F3BBD9EE2AEECD3500A9F7E7 /* Debug configuration for PBXProject "Master SwiftUI" */ = {
+		F3BBD9EE2AEECD3500A9F7E7 /* Debug configuration for PBXProject "Swifty Master" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2289,7 +2289,7 @@
 			};
 			name = Debug;
 		};
-		F3BBD9EF2AEECD3500A9F7E7 /* Release configuration for PBXProject "Master SwiftUI" */ = {
+		F3BBD9EF2AEECD3500A9F7E7 /* Release configuration for PBXProject "Swifty Master" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2454,11 +2454,11 @@
 			);
 			defaultConfigurationName = Release;
 		};
-		F3BBD9D92AEECD3400A9F7E7 /* Build configuration list for PBXProject "Master SwiftUI" */ = {
+		F3BBD9D92AEECD3400A9F7E7 /* Build configuration list for PBXProject "Swifty Master" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3BBD9EE2AEECD3500A9F7E7 /* Debug configuration for PBXProject "Master SwiftUI" */,
-				F3BBD9EF2AEECD3500A9F7E7 /* Release configuration for PBXProject "Master SwiftUI" */,
+				F3BBD9EE2AEECD3500A9F7E7 /* Debug configuration for PBXProject "Swifty Master" */,
+				F3BBD9EF2AEECD3500A9F7E7 /* Release configuration for PBXProject "Swifty Master" */,
 			);
 			defaultConfigurationName = Release;
 		};
