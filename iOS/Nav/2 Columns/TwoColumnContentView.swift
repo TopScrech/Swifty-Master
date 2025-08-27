@@ -6,8 +6,6 @@ struct TwoColumnContentView: View {
     
     private let categories = Category.allCases
     
-    @State private var sheetSettings = false
-    
     var body: some View {
         @Bindable var nav = nav
         
@@ -18,14 +16,9 @@ struct TwoColumnContentView: View {
             .navigationTitle("Categories")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    SFButton("gear") {
-                        sheetSettings = true
+                    NavigationLink(destination: AppSettings()) {
+                        Image(systemName: "gear")
                     }
-                }
-            }
-            .sheet($sheetSettings) {
-                NavigationView {
-                    AppSettings()
                 }
             }
         } detail: {

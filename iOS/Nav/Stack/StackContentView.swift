@@ -4,8 +4,6 @@ struct StackContentView: View {
     @Environment(NavModel.self) private var nav
     @EnvironmentObject private var store: ValueStore
     
-    @State private var sheetSettings = false
-    
     var body: some View {
         @Bindable var nav = nav
         
@@ -29,14 +27,9 @@ struct StackContentView: View {
                 }
                 .toolbar {
                     ToolbarItem(placement: .topBarTrailing) {
-                        SFButton("gear") {
-                            sheetSettings = true
+                        NavigationLink(destination: AppSettings()) {
+                            Image(systemName: "gear")
                         }
-                    }
-                }
-                .sheet($sheetSettings) {
-                    NavigationView {
-                        AppSettings()
                     }
                 }
             }
