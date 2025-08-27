@@ -19,7 +19,7 @@ func attributedCodeString(for code: String) -> AttributedString {
         "Menu", "Label", "Image", "TextField", "TextEditor", "ProgressView", "TabView", "Tab", "Task", "UIApplication", "Slider", "Stepper",
         "NavigationView", "NavigationStack", "NavigationSplitView", "ScrollView", "ToolbarItem", "ToolbarItemGroup", "NavigationLink", "ForEach",
         "Grid", "GridRow", "LazyVGrid", "LazyHGrid", "Spacer", "GeometryReader", "HStack", "Color", "Rectangle", "UIDevice", "ZStack",
-        "SomeView", "EmptyView", "UIScreen", "Circle", "String", "AnyView", "Link",
+        "EmptyView", "UIScreen", "Circle", "String", "AnyView", "Link",
         "spacing", "value", "in", " View", "SecureField", "Ellipse", "RoundedRectangle", "Capsule", "ConcentricRectangle",
         "@State", "@Environment",
         "Gradient", "LinearGradient", "AngularGradient", "RadialGradient", "EllipticalGradient",
@@ -233,6 +233,24 @@ func attributedCodeString(for code: String) -> AttributedString {
             if let stringRange = Range(nameRange, in: code),
                let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
                 attributedString[attributedRange].foregroundColor = Color(0x67B7A4)
+                attributedString[attributedRange].font = .body.bold()
+            }
+        }
+    }
+    
+    // Match "struct SomeName: View"
+    let structPattern = #"struct\s+([A-Za-z_]\w*)\s*:\s*View"#
+    
+    if let regex = try? NSRegularExpression(pattern: structPattern) {
+        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+        
+        for match in matches where match.numberOfRanges >= 2 {
+            // Capture group 1 = the struct name
+            let nameRange = match.range(at: 1)
+            
+            if let stringRange = Range(nameRange, in: code),
+               let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
+                attributedString[attributedRange].foregroundColor = Color(0x5DD8FF)
                 attributedString[attributedRange].font = .body.bold()
             }
         }
