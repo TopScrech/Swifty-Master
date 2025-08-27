@@ -81,6 +81,12 @@
 		F3202CC62D55977A0030B3CC /* Image Picker 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37916ED2AF14A7A00B880AF /* Image Picker 2.swift */; };
 		F3202CC72D55977A0030B3CC /* Image Picker View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9F82AEED4BC00A9F7E7 /* Image Picker View.swift */; };
 		F3202CC82D55978A0030B3CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */; };
+		F325E2DE2E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E2DD2E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift */; };
+		F325E2DF2E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E2DD2E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift */; };
+		F325E2E02E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E2DD2E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift */; };
+		F325E2E22E5EA5A70008928E /* DebugSettingsFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E2E12E5EA5A70008928E /* DebugSettingsFavorites.swift */; };
+		F325E2E32E5EA5A70008928E /* DebugSettingsFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E2E12E5EA5A70008928E /* DebugSettingsFavorites.swift */; };
+		F325E2E42E5EA5A70008928E /* DebugSettingsFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E2E12E5EA5A70008928E /* DebugSettingsFavorites.swift */; };
 		F32E88D52AF856E400959D49 /* Journal View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32E88D42AF856E400959D49 /* Journal View.swift */; };
 		F330586C2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */; };
 		F330586D2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */; };
@@ -596,6 +602,8 @@
 		F3202C992D5596100030B3CC /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3202CAF2D5596210030B3CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3202CB22D5596210030B3CC /* visionOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = visionOS.plist; sourceTree = "<group>"; };
+		F325E2DD2E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSettingsAllCodeBlocks.swift; sourceTree = "<group>"; };
+		F325E2E12E5EA5A70008928E /* DebugSettingsFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSettingsFavorites.swift; sourceTree = "<group>"; };
 		F32E88D42AF856E400959D49 /* Journal View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journal View.swift"; sourceTree = "<group>"; };
 		F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCard.swift; sourceTree = "<group>"; };
 		F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCardImage.swift; sourceTree = "<group>"; };
@@ -814,8 +822,8 @@
 				F34480462E2D5D1900D18E2E /* AppSettings.swift */,
 				F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */,
 				F35198F32E2B9F53004E0F02 /* NavModeButton.swift */,
-				F3C92B152E48AF4300203691 /* DebugSettings.swift */,
 				F3AE99D82E2F861C00D70249 /* ColorTheme.swift */,
+				F325E2DC2E5EA5680008928E /* Debug */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -871,6 +879,16 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F325E2DC2E5EA5680008928E /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				F3C92B152E48AF4300203691 /* DebugSettings.swift */,
+				F325E2E12E5EA5A70008928E /* DebugSettingsFavorites.swift */,
+				F325E2DD2E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift */,
+			);
+			path = Debug;
 			sourceTree = "<group>";
 		};
 		F33904282E49593700A22EE1 /* Docs */ = {
@@ -1827,6 +1845,7 @@
 				F3CFBDC62E3F900D005F93EA /* TopicNavigationStack.swift in Sources */,
 				F3BF16DE2E2C7717005212D1 /* TopicDismiss.swift in Sources */,
 				F3CFBE452E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift in Sources */,
+				F325E2E22E5EA5A70008928E /* DebugSettingsFavorites.swift in Sources */,
 				F3C6F6922E40E58000E94540 /* TopicBadges.swift in Sources */,
 				F3BF16DB2E2C76A8005212D1 /* ContentView.swift in Sources */,
 				F31653B72E3C0A1000A0E9D7 /* FavoritesList.swift in Sources */,
@@ -1845,6 +1864,7 @@
 				F314C8512E2E657400F63B6A /* TopicPicker.swift in Sources */,
 				F314C8072E2E2D4A00F63B6A /* FontDesignItem.swift in Sources */,
 				F3BF16E72E2CCDEE005212D1 /* TopicDocs.swift in Sources */,
+				F325E2E02E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift in Sources */,
 				F3FCD1E32E51217B003BDE5E /* NavModeTile.swift in Sources */,
 				F3CFBDCF2E3F9015005F93EA /* TopicNavigationLink.swift in Sources */,
 				F314C84E2E2E657300F63B6A /* TopicStepper.swift in Sources */,
@@ -1865,6 +1885,7 @@
 				F380A19C2E4AAA2700157F67 /* TopicMenu.swift in Sources */,
 				F380A19D2E4AAA2700157F67 /* TopicSlider.swift in Sources */,
 				F380A2232E4AAB6100157F67 /* TopicTile.swift in Sources */,
+				F325E2E42E5EA5A70008928E /* DebugSettingsFavorites.swift in Sources */,
 				F380A2242E4AAB6100157F67 /* GridTopic.swift in Sources */,
 				F380A2252E4AAB6100157F67 /* TopicDetail.swift in Sources */,
 				F380A19E2E4AAA2700157F67 /* TopicContextMenu.swift in Sources */,
@@ -1932,6 +1953,7 @@
 				F380A1B32E4AAA3200157F67 /* ExampleSheet.swift in Sources */,
 				F380A1B42E4AAA3200157F67 /* TopicPopover.swift in Sources */,
 				F380A18A2E4AAA1A00157F67 /* TopicActionButton.swift in Sources */,
+				F325E2DE2E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift in Sources */,
 				F380A18B2E4AAA1A00157F67 /* ContentViewNavButtons.swift in Sources */,
 				F380A1B52E4AAA3700157F67 /* TopicList.swift in Sources */,
 				F380A1B62E4AAA3700157F67 /* TopicZStack.swift in Sources */,
@@ -1980,6 +2002,7 @@
 				F35198472E2AECAA004E0F02 /* Gauge Card.swift in Sources */,
 				F399A4AD2E3D52A7008BED17 /* highlightOccurrences.swift in Sources */,
 				F314C7FE2E2E2A8400F63B6A /* Models.swift in Sources */,
+				F325E2DF2E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift in Sources */,
 				F3CFBDEA2E3F95B6005F93EA /* TopicHStack.swift in Sources */,
 				F314C81B2E2E4BB900F63B6A /* TopicShape.swift in Sources */,
 				F3BF16E62E2CCDEE005212D1 /* TopicDocs.swift in Sources */,
@@ -1991,6 +2014,7 @@
 				F3CFBE262E3F9B16005F93EA /* TopicFrame.swift in Sources */,
 				F314C83B2E2E540800F63B6A /* TopicSheet.swift in Sources */,
 				F3AE99D92E2F861C00D70249 /* ColorTheme.swift in Sources */,
+				F325E2E32E5EA5A70008928E /* DebugSettingsFavorites.swift in Sources */,
 				F314C7F72E2E1E7900F63B6A /* TopicText.swift in Sources */,
 				F3C6F6752E40E57B00E94540 /* TopicProgressView.swift in Sources */,
 				F3BF16DA2E2C76A8005212D1 /* ContentView.swift in Sources */,
