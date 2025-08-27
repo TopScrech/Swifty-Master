@@ -79,7 +79,7 @@ final class NavModel: Codable {
             topicPath = model.topicPath
             favoriteTopicPath = model.favoriteTopicPath
             
-            print("Loaded NavModel \(topicPath)")
+            print("Loaded NavModel:", topicPath)
         } catch {
             print(error)
         }
@@ -90,7 +90,7 @@ final class NavModel: Codable {
         do {
             try jsonData?.write(to: Self.dataURL)
             
-            print("Saved nav path \(topicPath)")
+            print("Saved nav path:", topicPath)
         } catch {
             print(error)
         }
