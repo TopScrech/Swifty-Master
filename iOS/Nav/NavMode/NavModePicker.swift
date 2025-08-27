@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct NavModePicker: View {
     @State private var navMode: NavMode?

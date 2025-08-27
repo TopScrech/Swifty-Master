@@ -15,11 +15,7 @@ struct TwoColumnContentView: View {
             }
             .navigationTitle("Categories")
             .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    NavigationLink(destination: AppSettings()) {
-                        Image(systemName: "gear")
-                    }
-                }
+                ContentViewToolbar()
             }
         } detail: {
             NavigationStack(path: $nav.topicPath) {

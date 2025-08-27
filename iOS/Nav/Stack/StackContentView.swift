@@ -26,11 +26,7 @@ struct StackContentView: View {
                     }
                 }
                 .toolbar {
-                    ToolbarItem(placement: .topBarTrailing) {
-                        NavigationLink(destination: AppSettings()) {
-                            Image(systemName: "gear")
-                        }
-                    }
+                    ContentViewToolbar()
                 }
             }
             .tag(0)

@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct NavModeButton: View {
     @Environment(NavModel.self) private var nav

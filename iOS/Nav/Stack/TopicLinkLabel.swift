@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicLinkLabel: View {
     @EnvironmentObject private var store: ValueStore
@@ -10,7 +10,12 @@ struct TopicLinkLabel: View {
     }
     
     private var isAvailable: Bool {
+#warning("Remove")
+#if os(macOS)
+        false
+#else
         topicView(topic) != nil
+#endif
     }
     
     private var iconWidth: CGFloat {

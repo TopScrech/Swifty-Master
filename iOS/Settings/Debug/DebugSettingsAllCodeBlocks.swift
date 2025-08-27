@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct DebugSettingsAllCodeBlocks: View {
     var body: some View {

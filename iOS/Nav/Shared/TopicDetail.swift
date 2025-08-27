@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicDetail<Link: View>: View {
     private let topic: Topic?
@@ -40,8 +40,10 @@ private struct Content<Link: View>: View {
     
     var body: some View {
         ScrollView(showsIndicators: false) {
+#warning("macOS")
+#if !os(macOS)
             ContentView(topic)
-            
+#endif
             ViewThatFits(in: .horizontal) {
                 wideDetails
                 narrowDetails

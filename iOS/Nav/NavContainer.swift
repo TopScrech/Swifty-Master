@@ -34,7 +34,9 @@ struct NavContainer: View {
 #if !os(visionOS)
         .preferredColorScheme(store.appearance.scheme)
 #endif
+#if !os(macOS)
         .statusBarHidden(!store.showStatusBar)
+#endif
         .task {
             nav.load()
         }

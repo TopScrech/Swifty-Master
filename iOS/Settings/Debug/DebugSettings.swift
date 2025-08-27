@@ -12,7 +12,7 @@ struct DebugSettings: View {
                 
                 Toggle("Status bar", isOn: $store.showStatusBar)
             }
-            
+#if !os(macOS)
             Section {
                 Button("Glassy icon") {
                     UIApplication.shared.setAlternateIconName("Liquid Glass")
@@ -22,7 +22,7 @@ struct DebugSettings: View {
                     UIApplication.shared.setAlternateIconName(nil)
                 }
             }
-            
+#endif
             DebugSettingsFavorites()
             
             DebugSettingsAllCodeBlocks()
