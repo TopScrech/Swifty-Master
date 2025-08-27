@@ -36,7 +36,6 @@ struct AppSettings: View {
         .formStyle(.grouped)
         .buttonStyle(.plain)
         .scrollIndicators(.never)
-        .ornamentDismissButton()
     }
 }
 
