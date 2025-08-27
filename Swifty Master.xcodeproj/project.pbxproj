@@ -87,6 +87,20 @@
 		F325E2E22E5EA5A70008928E /* DebugSettingsFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E2E12E5EA5A70008928E /* DebugSettingsFavorites.swift */; };
 		F325E2E32E5EA5A70008928E /* DebugSettingsFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E2E12E5EA5A70008928E /* DebugSettingsFavorites.swift */; };
 		F325E2E42E5EA5A70008928E /* DebugSettingsFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E2E12E5EA5A70008928E /* DebugSettingsFavorites.swift */; };
+		F325E3BF2E5EBC8B0008928E /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F325E3BE2E5EBC8B0008928E /* ScrechKit */; };
+		F325E3C42E5EBCA50008928E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F325E3C02E5EBCA50008928E /* Assets.xcassets */; };
+		F325E3C52E5EBCA50008928E /* NavContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E3C12E5EBCA50008928E /* NavContainer.swift */; };
+		F325E3C72E5EBCDE0008928E /* SwiftyMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E12AEECD3400A9F7E7 /* SwiftyMaster.swift */; };
+		F325E3C82E5EBD120008928E /* ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8252E2E52A200F63B6A /* ValueStore.swift */; };
+		F325E3CA2E5EBD270008928E /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E3C92E5EBD270008928E /* AppSettings.swift */; };
+		F325E3CB2E5EBD3C0008928E /* TopicDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B1B2E4162C100B05370 /* TopicDoc.swift */; };
+		F325E3CC2E5EBD3C0008928E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E62E2B9F53004E0F02 /* Category.swift */; };
+		F325E3CD2E5EBD3C0008928E /* TopicIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B1E2E4162DF00B05370 /* TopicIcon.swift */; };
+		F325E3CE2E5EBD3C0008928E /* TopicCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31617CB2E42256700131D26 /* TopicCategory.swift */; };
+		F325E3CF2E5EBD3C0008928E /* TopicRelated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B212E4162EF00B05370 /* TopicRelated.swift */; };
+		F325E3D02E5EBD3C0008928E /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EB2E2B9F53004E0F02 /* Topic.swift */; };
+		F325E3D12E5EBD480008928E /* NavMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E82E2B9F53004E0F02 /* NavMode.swift */; };
+		F325E3D22E5EBD5F0008928E /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE99D82E2F861C00D70249 /* ColorTheme.swift */; };
 		F32E88D52AF856E400959D49 /* Journal View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32E88D42AF856E400959D49 /* Journal View.swift */; };
 		F330586C2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */; };
 		F330586D2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */; };
@@ -604,6 +618,10 @@
 		F3202CB22D5596210030B3CC /* visionOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = visionOS.plist; sourceTree = "<group>"; };
 		F325E2DD2E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSettingsAllCodeBlocks.swift; sourceTree = "<group>"; };
 		F325E2E12E5EA5A70008928E /* DebugSettingsFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSettingsFavorites.swift; sourceTree = "<group>"; };
+		F325E3B32E5EBC760008928E /* macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F325E3C02E5EBCA50008928E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F325E3C12E5EBCA50008928E /* NavContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavContainer.swift; sourceTree = "<group>"; };
+		F325E3C92E5EBD270008928E /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		F32E88D42AF856E400959D49 /* Journal View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journal View.swift"; sourceTree = "<group>"; };
 		F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCard.swift; sourceTree = "<group>"; };
 		F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCardImage.swift; sourceTree = "<group>"; };
@@ -772,6 +790,12 @@
 				F3202CBB2D5596380030B3CC /* ScrechKit in Frameworks */,
 			);
 		};
+		F325E3B02E5EBC760008928E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				F325E3BF2E5EBC8B0008928E /* ScrechKit in Frameworks */,
+			);
+		};
 		F380A15F2E4AA1BE00157F67 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
@@ -889,6 +913,16 @@
 				F325E2DD2E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift */,
 			);
 			path = Debug;
+			sourceTree = "<group>";
+		};
+		F325E3C32E5EBCA50008928E /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				F325E3C12E5EBCA50008928E /* NavContainer.swift */,
+				F325E3C02E5EBCA50008928E /* Assets.xcassets */,
+				F325E3C92E5EBD270008928E /* AppSettings.swift */,
+			);
+			path = macOS;
 			sourceTree = "<group>";
 		};
 		F33904282E49593700A22EE1 /* Docs */ = {
@@ -1159,6 +1193,7 @@
 				F3BBD9E02AEECD3400A9F7E7 /* iOS */,
 				F3202CB32D5596210030B3CC /* visionOS */,
 				F380A1702E4AA1EE00157F67 /* tvOS */,
+				F325E3C32E5EBCA50008928E /* macOS */,
 				F3202CB92D5596380030B3CC /* Frameworks */,
 				F3BBD9DF2AEECD3400A9F7E7 /* Products */,
 			);
@@ -1170,6 +1205,7 @@
 				F3BBD9DE2AEECD3400A9F7E7 /* iOS.app */,
 				F3202C992D5596100030B3CC /* visionOS.app */,
 				F380A1622E4AA1BF00157F67 /* tvOS.app */,
+				F325E3B32E5EBC760008928E /* macOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1431,6 +1467,24 @@
 			productReference = F3202C992D5596100030B3CC /* visionOS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F325E3B22E5EBC760008928E /* macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F325E3BD2E5EBC770008928E /* Build configuration list for PBXNativeTarget "macOS" */;
+			buildPhases = (
+				F325E3AF2E5EBC760008928E /* Sources */,
+				F325E3B02E5EBC760008928E /* Frameworks */,
+				F325E3B12E5EBC760008928E /* Resources */,
+			);
+			buildRules = (
+			);
+			name = macOS;
+			packageProductDependencies = (
+				F325E3BE2E5EBC8B0008928E /* ScrechKit */,
+			);
+			productName = "Master SwiftUI";
+			productReference = F325E3B32E5EBC760008928E /* macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F380A1612E4AA1BE00157F67 /* tvOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F380A16C2E4AA1C000157F67 /* Build configuration list for PBXNativeTarget "tvOS" */;
@@ -1483,6 +1537,9 @@
 					F3202C982D5596100030B3CC = {
 						CreatedOnToolsVersion = 16.2;
 					};
+					F325E3B22E5EBC760008928E = {
+						CreatedOnToolsVersion = 26.0;
+					};
 					F380A1612E4AA1BE00157F67 = {
 						CreatedOnToolsVersion = 26.0;
 					};
@@ -1514,6 +1571,7 @@
 				F3BBD9DD2AEECD3400A9F7E7 /* iOS */,
 				F3202C982D5596100030B3CC /* visionOS */,
 				F380A1612E4AA1BE00157F67 /* tvOS */,
+				F325E3B22E5EBC760008928E /* macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -1600,6 +1658,12 @@
 				F3CFBDBD2E3F8E79005F93EA /* passAView.txt in Resources */,
 				F3CFBDB42E3F8E5E005F93EA /* navigationLink.txt in Resources */,
 				F3CFBDAE2E3F8E5C005F93EA /* navigationStack.txt in Resources */,
+			);
+		};
+		F325E3B12E5EBC760008928E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				F325E3C42E5EBCA50008928E /* Assets.xcassets in Resources */,
 			);
 		};
 		F380A1602E4AA1BE00157F67 /* Resources */ = {
@@ -1875,6 +1939,23 @@
 				F351990F2E2B9F53004E0F02 /* NavMode.swift in Sources */,
 				F35199102E2B9F53004E0F02 /* TopicTile.swift in Sources */,
 				F3202CC02D5597400030B3CC /* AppStoreOverlay.swift in Sources */,
+			);
+		};
+		F325E3AF2E5EBC760008928E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				F325E3C52E5EBCA50008928E /* NavContainer.swift in Sources */,
+				F325E3C82E5EBD120008928E /* ValueStore.swift in Sources */,
+				F325E3CB2E5EBD3C0008928E /* TopicDoc.swift in Sources */,
+				F325E3CC2E5EBD3C0008928E /* Category.swift in Sources */,
+				F325E3CD2E5EBD3C0008928E /* TopicIcon.swift in Sources */,
+				F325E3CE2E5EBD3C0008928E /* TopicCategory.swift in Sources */,
+				F325E3CF2E5EBD3C0008928E /* TopicRelated.swift in Sources */,
+				F325E3D02E5EBD3C0008928E /* Topic.swift in Sources */,
+				F325E3CA2E5EBD270008928E /* AppSettings.swift in Sources */,
+				F325E3D22E5EBD5F0008928E /* ColorTheme.swift in Sources */,
+				F325E3D12E5EBD480008928E /* NavMode.swift in Sources */,
+				F325E3C72E5EBCDE0008928E /* SwiftyMaster.swift in Sources */,
 			);
 		};
 		F380A15E2E4AA1BE00157F67 /* Sources */ = {
@@ -2156,6 +2237,92 @@
 			};
 			name = Release;
 		};
+		F325E3BB2E5EBC770008928E /* Debug configuration for PBXNativeTarget "macOS" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Swifty Master";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Everything-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F325E3BC2E5EBC770008928E /* Release configuration for PBXNativeTarget "macOS" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Swifty Master";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Everything-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		F380A16A2E4AA1C000157F67 /* Debug configuration for PBXNativeTarget "tvOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2380,7 +2547,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Everything-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -2423,7 +2590,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Everything-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -2443,6 +2610,14 @@
 			buildConfigurations = (
 				F3202CAB2D5596100030B3CC /* Debug configuration for PBXNativeTarget "visionOS" */,
 				F3202CAC2D5596100030B3CC /* Release configuration for PBXNativeTarget "visionOS" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		F325E3BD2E5EBC770008928E /* Build configuration list for PBXNativeTarget "macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F325E3BB2E5EBC770008928E /* Debug configuration for PBXNativeTarget "macOS" */,
+				F325E3BC2E5EBC770008928E /* Release configuration for PBXNativeTarget "macOS" */,
 			);
 			defaultConfigurationName = Release;
 		};
@@ -2506,6 +2681,11 @@
 			productName = SafariCover;
 		};
 		F3202CBA2D5596380030B3CC /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3BBD9F52AEECE4000A9F7E7 /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+		F325E3BE2E5EBC8B0008928E /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F3BBD9F52AEECE4000A9F7E7 /* XCRemoteSwiftPackageReference "ScrechKit" */;
 			productName = ScrechKit;

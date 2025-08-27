@@ -15,7 +15,7 @@ struct SwiftyMaster: App {
         }
 #if os(macOS)
         Settings {
-            SettingsView()
+            AppSettings()
                 .environmentObject(store)
         }
 #endif
