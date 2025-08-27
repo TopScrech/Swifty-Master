@@ -6,7 +6,7 @@ final class DataModel {
     private var topicsById: [Topic.ID: Topic] = [:]
     
     /// The shared singleton data model object
-    static let shared: DataModel = {
+    static let shared = {
         DataModel()
     }()
     
