@@ -1,6 +1,6 @@
 import SwiftUI
 
-#if os(macOS)
+#if os(macOS) || os(tvOS)
 import Combine
 #endif
 

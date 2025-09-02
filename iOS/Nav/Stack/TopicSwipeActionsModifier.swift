@@ -15,16 +15,11 @@ struct TopicSwipeActionsModifier: ViewModifier {
 #else
         content
             .swipeActions(edge: .leading) {
-                Button {
-                    store.addOrRemoveFavorite(topic)
-                } label: {
-                    if store.favoriteTopics.contains(topic) {
-                        Image(systemName: "star.slash.fill")
-                            .tint(.red)
-                    } else {
-                        Image(systemName: "star")
-                            .tint(.yellow)
+                if store.favoriteTopics.contains(topic) {
+                    SFButton("star.slash.fill") {
+                        store.addOrRemoveFavorite(topic)
                     }
+                    .tint(.red)
                 }
             }
             .swipeActions {

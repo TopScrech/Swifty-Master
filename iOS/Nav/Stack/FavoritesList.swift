@@ -20,19 +20,7 @@ struct FavoritesList: View {
                             }
                         }
                     }
-                    .swipeActions(edge: .leading) {
-                        if store.favoriteTopics.contains(topic) {
-                            SFButton("star.slash.fill") {
-                                store.addOrRemoveFavorite(topic)
-                            }
-                            .tint(.red)
-                        }
-                    }
-                    .swipeActions {
-                        if let url = topic.shareLink {
-                            ShareLink(item: url)
-                        }
-                    }
+                    .topicSwipeActions(topic)
                 }
                 .onMove { here, there in
                     move(from: here, to: there)
