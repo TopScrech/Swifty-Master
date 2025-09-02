@@ -33,6 +33,7 @@ struct TopicDocsCard: View {
 #if os(iOS) || os(visionOS)
         .safariCover($safariCover, url: doc.url)
 #endif
+#if !os(tvOS)
         .contextMenu {
             if let url = URL(string: doc.url) {
                 Button("Copy", systemImage: "document.on.document") {
@@ -42,6 +43,7 @@ struct TopicDocsCard: View {
                 ShareLink(item: url)
             }
         }
+#endif
     }
     
     private func openLink() {

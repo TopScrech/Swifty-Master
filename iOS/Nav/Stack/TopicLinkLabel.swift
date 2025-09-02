@@ -60,10 +60,11 @@ struct TopicLinkLabel: View {
                 }
             }
             .tint(.yellow)
-            
+#if !os(tvOS)
             if let url = topic.shareLink {
                 ShareLink(item: url)
             }
+#endif
         }
     }
 }
