@@ -14,26 +14,7 @@ struct StackTopicList: View {
                         NavigationLink(value: topic) {
                             TopicLinkLabel(topic)
                         }
-#if !os(tvOS)
-                        .swipeActions(edge: .leading) {
-                            Button {
-                                store.addOrRemoveFavorite(topic)
-                            } label: {
-                                if store.favoriteTopics.contains(topic) {
-                                    Image(systemName: "star.slash.fill")
-                                        .tint(.red)
-                                } else {
-                                    Image(systemName: "star")
-                                        .tint(.yellow)
-                                }
-                            }
-                        }
-                        .swipeActions {
-                            if let url = topic.shareLink {
-                                ShareLink(item: url)
-                            }
-                        }
-#endif
+                        .topicSwipeActions(topic)
                     }
                 }
             }
