@@ -24,11 +24,14 @@ struct TopicDetail<Link: View>: View {
 }
 
 private struct Content<Link: View>: View {
-    @Environment(NavModel.self) private var navModel
     @Environment(DataModel.self) private var dataModel
     
     private let topic: Topic
     private let relatedLink: (Topic) -> Link
+    
+    private let columns = [
+        GridItem(.adaptive(minimum: 120, maximum: 120))
+    ]
     
     init(
         _ topic: Topic,
@@ -94,10 +97,6 @@ private struct Content<Link: View>: View {
             .largeTitle(.bold)
 #endif
     }
-    
-    private let columns = [
-        GridItem(.adaptive(minimum: 120, maximum: 120))
-    ]
     
     @ViewBuilder
     private var relatedTopics: some View {
