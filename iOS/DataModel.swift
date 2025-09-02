@@ -33,7 +33,9 @@ final class DataModel {
     
     func topics(foundIn category: Category?) -> [Topic] {
         guard !searchPrompt.isEmpty else {
-            return Topic.allCases
+            return Topic.allCases.filter {
+                $0.category == category
+            }
         }
         
         return topics.filter {
