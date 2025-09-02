@@ -38,16 +38,6 @@ struct StackContentView: View {
             
             NavigationStack(path: $nav.favoriteTopicPath) {
                 FavoritesList()
-                    .navigationDestination(for: Topic.self) { topic in
-                        TopicDetail(topic) { relatedTopic in
-                            Button {
-                                nav.topicPath.append(relatedTopic)
-                            } label: {
-                                TopicTile(relatedTopic)
-                            }
-                            .buttonStyle(.plain)
-                        }
-                    }
             }
 #if !os(tvOS)
             .badge(store.favoriteArticlesBadge ? store.favoriteTopics.count : 0)

@@ -1,6 +1,7 @@
 import ScrechKit
 
 struct FavoritesList: View {
+    @Environment(NavModel.self) private var nav
     @EnvironmentObject private var store: ValueStore
     
     @State private var isEditing = false
@@ -46,6 +47,16 @@ struct FavoritesList: View {
                         isEditing = true
                     }
                 }
+            }
+        }
+        .navigationDestination(for: Topic.self) { topic in
+            TopicDetail(topic) { relatedTopic in
+                Button {
+                    nav.topicPath.append(relatedTopic)
+                } label: {
+                    TopicTile(relatedTopic)
+                }
+                .buttonStyle(.plain)
             }
         }
     }
