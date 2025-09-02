@@ -145,9 +145,8 @@ final class NavModel: Codable {
         
         self.selectedCategory = try container.decodeIfPresent(Category.self, forKey: .selectedCategory)
         self.columnVisibility = try container.decode(NavigationSplitViewVisibility.self, forKey: .columnVisibility)
-        
-        let topicIds = try container.decode([Topic.ID].self, forKey: .topicPathIds)
-        let favoriteTopicIds = try container.decode([Topic.ID].self, forKey: .favoriteTopicPathIds)
+        let topicIds          = try container.decode([Topic.ID].self, forKey: .topicPathIds)
+        let favoriteTopicIds  = try container.decode([Topic.ID].self, forKey: .favoriteTopicPathIds)
         
         self.topicPath = topicIds.compactMap {
             Topic(rawValue: $0)
