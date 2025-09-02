@@ -40,10 +40,8 @@ private struct Content<Link: View>: View {
     
     var body: some View {
         ScrollView(showsIndicators: false) {
-#warning("macOS")
-#if !os(macOS)
             ContentView(topic)
-#endif
+            
             ViewThatFits(in: .horizontal) {
                 wideDetails
                 narrowDetails
