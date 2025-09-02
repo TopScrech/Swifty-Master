@@ -869,8 +869,8 @@
 			isa = PBXGroup;
 			children = (
 				F34480462E2D5D1900D18E2E /* AppSettings.swift */,
-				F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */,
 				F35198F32E2B9F53004E0F02 /* NavModeButton.swift */,
+				F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */,
 				F3AE99D82E2F861C00D70249 /* ColorTheme.swift */,
 				F325E2DC2E5EA5680008928E /* Debug */,
 			);
@@ -2601,7 +2601,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Everything-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -2644,7 +2644,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Everything-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
