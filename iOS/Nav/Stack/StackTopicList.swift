@@ -13,6 +13,7 @@ struct StackTopicList: View {
                     NavigationLink(value: topic) {
                         TopicLinkLabel(topic)
                     }
+#if !os(tvOS)
                     .swipeActions(edge: .leading) {
                         Button {
                             store.addOrRemoveFavorite(topic)
@@ -31,6 +32,7 @@ struct StackTopicList: View {
                             ShareLink(item: url)
                         }
                     }
+#endif
                 }
             }
         }
