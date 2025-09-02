@@ -56,6 +56,8 @@ struct FavoritesList: View {
 }
 
 #Preview {
-    FavoritesList()
-        .environmentObject(ValueStore())
+    NavigationStack {
+        FavoritesList()
+    }
+    .environmentObject(ValueStore())
 }

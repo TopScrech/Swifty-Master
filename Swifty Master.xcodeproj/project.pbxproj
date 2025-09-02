@@ -1351,6 +1351,14 @@
 			path = Button;
 			sourceTree = "<group>";
 		};
+		F380E0D42E6723DB008C56F8 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
 		F3BBD9D52AEECD3400A9F7E7 = {
 			isa = PBXGroup;
 			children = (
@@ -1597,8 +1605,8 @@
 				F35198EE2E2B9F53004E0F02 /* StackContentView.swift */,
 				F31653B82E3C0A4E00A0E9D7 /* StackTopicList.swift */,
 				F380E0C52E670E84008C56F8 /* TopicSwipeActionsModifier.swift */,
-				F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */,
 				F314C7F12E2E1C1800F63B6A /* TopicLinkLabel.swift */,
+				F380E0D42E6723DB008C56F8 /* Favorites */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
