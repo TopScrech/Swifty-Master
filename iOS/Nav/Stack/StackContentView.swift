@@ -9,28 +9,26 @@ struct StackContentView: View {
         
         TabView(selection: $store.lastTab) {
             NavigationStack(path: $nav.topicPath) {
-                List {
-                    StackTopicList()
-                }
-                .navigationTitle("Categories")
-                .animation(.default, value: store.favoriteTopics)
-                .scrollIndicators(.never)
-                .navigationDestination(for: Topic.self) { topic in
-                    TopicDetail(topic) { relatedTopic in
-                        Button {
-                            nav.topicPath.append(relatedTopic)
-                        } label: {
-                            TopicTile(relatedTopic)
+                StackTopicList()
+                    .navigationTitle("Categories")
+                    .animation(.default, value: store.favoriteTopics)
+                    .scrollIndicators(.never)
+                    .navigationDestination(for: Topic.self) { topic in
+                        TopicDetail(topic) { relatedTopic in
+                            Button {
+                                nav.topicPath.append(relatedTopic)
+                            } label: {
+                                TopicTile(relatedTopic)
+                            }
+                            .buttonStyle(.plain)
                         }
-                        .buttonStyle(.plain)
                     }
-                }
 #if !os(maOS)
-                .toolbar {
-                    NavigationLink(destination: AppSettings()) {
-                        Image(systemName: "gear")
+                    .toolbar {
+                        NavigationLink(destination: AppSettings()) {
+                            Image(systemName: "gear")
+                        }
                     }
-                }
 #endif
             }
             .tag(0)

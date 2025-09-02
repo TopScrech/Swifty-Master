@@ -7,32 +7,34 @@ struct StackTopicList: View {
     private let categories = Category.allCases
     
     var body: some View {
-        ForEach(categories) { category in
-            Section(category.localizedName) {
-                ForEach(dataModel.topics(in: category)) { topic in
-                    NavigationLink(value: topic) {
-                        TopicLinkLabel(topic)
-                    }
+        List {
+            ForEach(categories) { category in
+                Section(category.localizedName) {
+                    ForEach(dataModel.topics(in: category)) { topic in
+                        NavigationLink(value: topic) {
+                            TopicLinkLabel(topic)
+                        }
 #if !os(tvOS)
-                    .swipeActions(edge: .leading) {
-                        Button {
-                            store.addOrRemoveFavorite(topic)
-                        } label: {
-                            if store.favoriteTopics.contains(topic) {
-                                Image(systemName: "star.slash.fill")
-                                    .tint(.red)
-                            } else {
-                                Image(systemName: "star")
-                                    .tint(.yellow)
+                        .swipeActions(edge: .leading) {
+                            Button {
+                                store.addOrRemoveFavorite(topic)
+                            } label: {
+                                if store.favoriteTopics.contains(topic) {
+                                    Image(systemName: "star.slash.fill")
+                                        .tint(.red)
+                                } else {
+                                    Image(systemName: "star")
+                                        .tint(.yellow)
+                                }
                             }
                         }
-                    }
-                    .swipeActions {
-                        if let url = topic.shareLink {
-                            ShareLink(item: url)
+                        .swipeActions {
+                            if let url = topic.shareLink {
+                                ShareLink(item: url)
+                            }
                         }
-                    }
 #endif
+                    }
                 }
             }
         }
