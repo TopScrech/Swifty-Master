@@ -46,7 +46,7 @@ struct CodeBlockView: View {
                 .background(.ultraThinMaterial)
 #endif
                 .cornerRadius(20)
-                
+#if !os(tvOS)
                 Button {
                     Pasteboard.copy(code)
                 } label: {
@@ -62,6 +62,7 @@ struct CodeBlockView: View {
                 .buttonStyle(.plain)
                 .secondary()
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+#endif
             }
         }
         .scrollIndicators(.never)

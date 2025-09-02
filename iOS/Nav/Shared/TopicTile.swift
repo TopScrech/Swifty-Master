@@ -16,9 +16,11 @@ struct TopicTile: View {
         }
         .tint(.primary)
         .scaleEffect(scale)
+#if !os(tvOS)
         .onHover {
             isHovering = $0
         }
+#endif
     }
     
     private var scale: CGFloat {

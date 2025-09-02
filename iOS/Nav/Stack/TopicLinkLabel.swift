@@ -43,6 +43,7 @@ struct TopicLinkLabel: View {
             if !isAvailable {
                 Image(systemName: "lock")
                     .secondary()
+                
             } else if store.favoriteTopics.contains(topic) {
                 Image(systemName: "star.fill")
                     .footnote()

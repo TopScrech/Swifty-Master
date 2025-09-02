@@ -9,8 +9,10 @@ struct DebugSettings: View {
                 Button("Reset nav mode") {
                     store.navMode = nil
                 }
-                
+#warning("Check if does anything on visionOS")
+#if os(iOS) || os(visionOS)
                 Toggle("Status bar", isOn: $store.showStatusBar)
+#endif
             }
 #if !os(macOS)
             Section {

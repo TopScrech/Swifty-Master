@@ -33,7 +33,7 @@ struct NavContainer: View {
 #if !os(visionOS)
         .preferredColorScheme(store.appearance.scheme)
 #endif
-#if !os(macOS)
+#if os(iOS) || os(visionOS)
         .statusBarHidden(!store.showStatusBar)
 #endif
         .task {

@@ -49,7 +49,9 @@ struct StackContentView: View {
                         }
                     }
             }
+#if !os(tvOS)
             .badge(store.favoriteArticlesBadge ? store.favoriteTopics.count : 0)
+#endif
             .tag(1)
             .tabItem {
                 Label("Favorites", systemImage: "star")

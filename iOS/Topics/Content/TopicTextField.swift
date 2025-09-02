@@ -8,8 +8,9 @@ struct TopicTextField: View {
             Text("SwiftUI's TextField is a fundamental UI component used to allow users to input or edit single-line text")
             
             TextField("Placeholder", text: $text)
+#if !os(tvOS)
                 .textFieldStyle(.roundedBorder)
-            
+#endif
             CodeBlockView(.textField)
             
             TopicDisclosureGroup("Secured TextField") {
