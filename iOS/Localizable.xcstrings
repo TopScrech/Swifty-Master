@@ -104,6 +104,12 @@
             "state" : "translated",
             "value" : "Weergave"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оформление"
+          }
         }
       }
     },
