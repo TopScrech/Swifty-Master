@@ -75,7 +75,7 @@ struct NavModePicker: View {
                 }
             }
         }
-        .frame(width: 600, height: 350)
+        .frame(width: 500, height: 600)
 #endif
         .interactiveDismissDisabled(store.navMode == nil)
     }
