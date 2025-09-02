@@ -32,13 +32,15 @@ final class DataModel {
     }
     
     func topics(foundIn category: Category?) -> [Topic] {
+        let categoryTopics = topics.filter {
+            $0.category == category
+        }
+        
         if searchPrompt.isEmpty {
-            Topic.allCases.filter {
-                $0.category == category
-            }
+            return categoryTopics
         } else {
-            topics.filter {
-                $0.category == category && $0.name.localizedStandardContains(searchPrompt)
+            return categoryTopics.filter {
+                $0.name.localizedStandardContains(searchPrompt)
             }
         }
     }
