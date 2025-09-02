@@ -92,11 +92,18 @@ extension View {
 
 // MARK: - Glass Prominent Button Style
 struct GlassProminentButtonStyle: ViewModifier {
+    private let color: Color
+    
+    init(_ color: Color) {
+        self.color = color
+    }
+    
     func body(content: Content) -> some View {
         if #available(iOS 26, macOS 26, *) {
             content
 #if DEBUG && !os(visionOS)
                 .buttonStyle(.glassProminent)
+                .tint(color)
 #endif
         } else {
             content
@@ -105,8 +112,8 @@ struct GlassProminentButtonStyle: ViewModifier {
 }
 
 extension View {
-    func glassProminentButtonStyle() -> some View {
-        modifier(GlassProminentButtonStyle())
+    func glassProminentButtonStyle(_ color: Color) -> some View {
+        modifier(GlassProminentButtonStyle(color))
     }
 }
 

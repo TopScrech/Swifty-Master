@@ -1,6 +1,6 @@
 import ScrechKit
 
-struct FavoritesList: View {
+struct FavoriteList: View {
     @Environment(NavModel.self) private var nav
     @EnvironmentObject private var store: ValueStore
     
@@ -8,27 +8,22 @@ struct FavoritesList: View {
     
     var body: some View {
         List {
-            if store.favoriteTopics.count > 0 {
-                ForEach(store.favoriteTopics) { topic in
-                    NavigationLink(value: topic) {
-                        HStack {
-                            TopicLinkLabel(topic)
-                            
-                            if isEditing {
-                                Image(systemName: "line.3.horizontal")
-                                    .title2()
-                                    .secondary()
-                            }
+            ForEach(store.favoriteTopics) { topic in
+                NavigationLink(value: topic) {
+                    HStack {
+                        TopicLinkLabel(topic)
+                        
+                        if isEditing {
+                            Image(systemName: "line.3.horizontal")
+                                .title2()
+                                .secondary()
                         }
                     }
-                    .topicSwipeActions(topic)
                 }
-                .onMove { here, there in
-                    move(from: here, to: there)
-                }
-            } else {
-                ContentUnavailableView("No favorites found", systemImage: "star")
-                    .frame(maxWidth: .infinity, alignment: .center)
+                .topicSwipeActions(topic)
+            }
+            .onMove { here, there in
+                move(from: here, to: there)
             }
         }
         .navigationTitle("Favorites")
@@ -40,8 +35,7 @@ struct FavoritesList: View {
                     SFButton("checkmark") {
                         isEditing = false
                     }
-                    .glassProminentButtonStyle()
-                    .tint(.blue)
+                    .glassProminentButtonStyle(.blue)
                 } else {
                     SFButton("pencil") {
                         isEditing = true
@@ -68,7 +62,8 @@ struct FavoritesList: View {
 
 #Preview {
     NavigationStack {
-        FavoritesList()
+        FavoriteList()
     }
     .environmentObject(ValueStore())
+    .environment(NavModel())
 }

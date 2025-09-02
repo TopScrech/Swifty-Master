@@ -37,7 +37,7 @@ struct StackContentView: View {
             }
             
             NavigationStack(path: $nav.favoriteTopicPath) {
-                FavoritesList()
+                FavoriteListParent()
             }
 #if !os(tvOS)
             .badge(store.favoriteArticlesBadge ? store.favoriteTopics.count : 0)

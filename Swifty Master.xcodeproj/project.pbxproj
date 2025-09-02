@@ -62,8 +62,8 @@
 		F31617CA2E41D87A00131D26 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = F31617C92E41D87A00131D26 /* SafariCover */; };
 		F31617CC2E42256700131D26 /* TopicCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31617CB2E42256700131D26 /* TopicCategory.swift */; };
 		F31617CD2E42256700131D26 /* TopicCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31617CB2E42256700131D26 /* TopicCategory.swift */; };
-		F31653B62E3C0A1000A0E9D7 /* FavoritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */; };
-		F31653B72E3C0A1000A0E9D7 /* FavoritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */; };
+		F31653B62E3C0A1000A0E9D7 /* FavoriteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B52E3C0A1000A0E9D7 /* FavoriteList.swift */; };
+		F31653B72E3C0A1000A0E9D7 /* FavoriteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B52E3C0A1000A0E9D7 /* FavoriteList.swift */; };
 		F31653B92E3C0A4E00A0E9D7 /* StackTopicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B82E3C0A4E00A0E9D7 /* StackTopicList.swift */; };
 		F31653BA2E3C0A4E00A0E9D7 /* StackTopicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B82E3C0A4E00A0E9D7 /* StackTopicList.swift */; };
 		F31B90BE2E41D29B003A2AA2 /* textEditorFormat.txt in Resources */ = {isa = PBXBuildFile; fileRef = F31B90BD2E41D29B003A2AA2 /* textEditorFormat.txt */; };
@@ -115,7 +115,7 @@
 		F325E3E32E5EBEAE0008928E /* TwoColumnContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */; };
 		F325E3E42E5EBEAE0008928E /* GridTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F82E2B9F53004E0F02 /* GridTopic.swift */; };
 		F325E3E52E5EBEB30008928E /* StackContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EE2E2B9F53004E0F02 /* StackContentView.swift */; };
-		F325E3E62E5EBEB30008928E /* FavoritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */; };
+		F325E3E62E5EBEB30008928E /* FavoriteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B52E3C0A1000A0E9D7 /* FavoriteList.swift */; };
 		F325E3E72E5EBEB30008928E /* TopicLinkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C7F12E2E1C1800F63B6A /* TopicLinkLabel.swift */; };
 		F325E3E82E5EBEB30008928E /* StackTopicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B82E3C0A4E00A0E9D7 /* StackTopicList.swift */; };
 		F325E3E92E5EBEB80008928E /* NavContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198ED2E2B9F53004E0F02 /* NavContainer.swift */; };
@@ -370,7 +370,7 @@
 		F380A2232E4AAB6100157F67 /* TopicTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198FB2E2B9F53004E0F02 /* TopicTile.swift */; };
 		F380A2242E4AAB6100157F67 /* GridTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F82E2B9F53004E0F02 /* GridTopic.swift */; };
 		F380A2252E4AAB6100157F67 /* TopicDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F72E2B9F53004E0F02 /* TopicDetail.swift */; };
-		F380A2262E4AAB6700157F67 /* FavoritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */; };
+		F380A2262E4AAB6700157F67 /* FavoriteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B52E3C0A1000A0E9D7 /* FavoriteList.swift */; };
 		F380A2272E4AAB6700157F67 /* StackContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EE2E2B9F53004E0F02 /* StackContentView.swift */; };
 		F380A2282E4AAB6700157F67 /* TwoColumnContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F02E2B9F53004E0F02 /* TwoColumnContentView.swift */; };
 		F380A2292E4AAB6700157F67 /* TopicLinkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C7F12E2E1C1800F63B6A /* TopicLinkLabel.swift */; };
@@ -527,6 +527,10 @@
 		F380E0CC2E67226B008C56F8 /* Shared Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F380E0CA2E67226B008C56F8 /* Shared Assets.xcassets */; };
 		F380E0CD2E67226B008C56F8 /* Shared Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F380E0CA2E67226B008C56F8 /* Shared Assets.xcassets */; };
 		F380E0CE2E67226B008C56F8 /* Shared Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F380E0CA2E67226B008C56F8 /* Shared Assets.xcassets */; };
+		F380E0D62E672A85008C56F8 /* FavoriteListParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F380E0D52E672A85008C56F8 /* FavoriteListParent.swift */; };
+		F380E0D72E672A85008C56F8 /* FavoriteListParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F380E0D52E672A85008C56F8 /* FavoriteListParent.swift */; };
+		F380E0D82E672A85008C56F8 /* FavoriteListParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F380E0D52E672A85008C56F8 /* FavoriteListParent.swift */; };
+		F380E0D92E672A85008C56F8 /* FavoriteListParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F380E0D52E672A85008C56F8 /* FavoriteListParent.swift */; };
 		F388D19C2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */; };
 		F388D19D2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */; };
 		F399A4AC2E3D52A7008BED17 /* highlightOccurrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */; };
@@ -776,7 +780,7 @@
 		F314C8562E2E663500F63B6A /* TopicColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicColor.swift; sourceTree = "<group>"; };
 		F314C8592E2E665600F63B6A /* TopicGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicGradient.swift; sourceTree = "<group>"; };
 		F31617CB2E42256700131D26 /* TopicCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCategory.swift; sourceTree = "<group>"; };
-		F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesList.swift; sourceTree = "<group>"; };
+		F31653B52E3C0A1000A0E9D7 /* FavoriteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteList.swift; sourceTree = "<group>"; };
 		F31653B82E3C0A4E00A0E9D7 /* StackTopicList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTopicList.swift; sourceTree = "<group>"; };
 		F31B90BD2E41D29B003A2AA2 /* textEditorFormat.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = textEditorFormat.txt; sourceTree = "<group>"; };
 		F31B90C02E41D384003A2AA2 /* textFieldSecured.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = textFieldSecured.txt; sourceTree = "<group>"; };
@@ -833,6 +837,7 @@
 		F380A16D2E4AA1EE00157F67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F380E0C52E670E84008C56F8 /* TopicSwipeActionsModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicSwipeActionsModifier.swift; sourceTree = "<group>"; };
 		F380E0CA2E67226B008C56F8 /* Shared Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Shared Assets.xcassets"; sourceTree = "<group>"; };
+		F380E0D52E672A85008C56F8 /* FavoriteListParent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListParent.swift; sourceTree = "<group>"; };
 		F388D19B2E3AB43A002A1128 /* TopicLowPowerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLowPowerMode.swift; sourceTree = "<group>"; };
 		F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = highlightOccurrences.swift; sourceTree = "<group>"; };
 		F399A4AF2E3DC544008BED17 /* iOS 18 support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOS 18 support.swift"; sourceTree = "<group>"; };
@@ -1354,7 +1359,8 @@
 		F380E0D42E6723DB008C56F8 /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
-				F31653B52E3C0A1000A0E9D7 /* FavoritesList.swift */,
+				F380E0D52E672A85008C56F8 /* FavoriteListParent.swift */,
+				F31653B52E3C0A1000A0E9D7 /* FavoriteList.swift */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -2100,6 +2106,7 @@
 				F314C7FD2E2E2A8400F63B6A /* Models.swift in Sources */,
 				F3C6F6732E40E57A00E94540 /* TopicGauge.swift in Sources */,
 				F314C7F62E2E1E7900F63B6A /* TopicText.swift in Sources */,
+				F380E0D92E672A85008C56F8 /* FavoriteListParent.swift in Sources */,
 				F314C8332E2E536F00F63B6A /* TopicMenu.swift in Sources */,
 				F314C8572E2E663500F63B6A /* TopicColor.swift in Sources */,
 				F399A4AC2E3D52A7008BED17 /* highlightOccurrences.swift in Sources */,
@@ -2166,7 +2173,7 @@
 				F325E2E22E5EA5A70008928E /* DebugSettingsFavorites.swift in Sources */,
 				F3C6F6922E40E58000E94540 /* TopicBadges.swift in Sources */,
 				F3BF16DB2E2C76A8005212D1 /* ContentView.swift in Sources */,
-				F31653B72E3C0A1000A0E9D7 /* FavoritesList.swift in Sources */,
+				F31653B72E3C0A1000A0E9D7 /* FavoriteList.swift in Sources */,
 				F380E0C72E670E84008C56F8 /* TopicSwipeActionsModifier.swift in Sources */,
 				F314C8392E2E53A100F63B6A /* TopicContextMenu.swift in Sources */,
 				F34480412E2D4E0500D18E2E /* TopicActionButton.swift in Sources */,
@@ -2239,6 +2246,7 @@
 				F380E0972E66FBB7008C56F8 /* TopicMenu.swift in Sources */,
 				F380E0982E66FBB7008C56F8 /* TopicPicker.swift in Sources */,
 				F380E0992E66FBB7008C56F8 /* Gauge Card.swift in Sources */,
+				F380E0D82E672A85008C56F8 /* FavoriteListParent.swift in Sources */,
 				F380E09C2E66FBB7008C56F8 /* TopicButton.swift in Sources */,
 				F380E09D2E66FBB7008C56F8 /* TopicGauge.swift in Sources */,
 				F380E09E2E66FBB7008C56F8 /* TopicProgressView.swift in Sources */,
@@ -2294,7 +2302,7 @@
 				F325E3D02E5EBD3C0008928E /* Topic.swift in Sources */,
 				F325E3E52E5EBEB30008928E /* StackContentView.swift in Sources */,
 				F380E0A02E66FBF7008C56F8 /* ContentView.swift in Sources */,
-				F325E3E62E5EBEB30008928E /* FavoritesList.swift in Sources */,
+				F325E3E62E5EBEB30008928E /* FavoriteList.swift in Sources */,
 				F325E3E72E5EBEB30008928E /* TopicLinkLabel.swift in Sources */,
 				F325E3E82E5EBEB30008928E /* StackTopicList.swift in Sources */,
 				F325E3D22E5EBD5F0008928E /* ColorTheme.swift in Sources */,
@@ -2330,7 +2338,7 @@
 				F380A1BD2E4AAA3B00157F67 /* TopicGeometryReader.swift in Sources */,
 				F380A1BE2E4AAA3B00157F67 /* TopicPadding.swift in Sources */,
 				F380A1BF2E4AAA3B00157F67 /* TopicSpacer.swift in Sources */,
-				F380A2262E4AAB6700157F67 /* FavoritesList.swift in Sources */,
+				F380A2262E4AAB6700157F67 /* FavoriteList.swift in Sources */,
 				F380A2272E4AAB6700157F67 /* StackContentView.swift in Sources */,
 				F380A2282E4AAB6700157F67 /* TwoColumnContentView.swift in Sources */,
 				F380A2292E4AAB6700157F67 /* TopicLinkLabel.swift in Sources */,
@@ -2351,6 +2359,7 @@
 				F3FCD1E12E51217B003BDE5E /* NavModeTile.swift in Sources */,
 				F380A1AB2E4AAA2D00157F67 /* TopicLink.swift in Sources */,
 				F380A1AC2E4AAA2D00157F67 /* TopicNavigationLink.swift in Sources */,
+				F380E0D72E672A85008C56F8 /* FavoriteListParent.swift in Sources */,
 				F380A1AD2E4AAA2D00157F67 /* TopicDismiss.swift in Sources */,
 				F380A1CA2E4AAA5000157F67 /* AttributedCodeString.swift in Sources */,
 				F380A1CB2E4AAA5000157F67 /* CodeBlock.swift in Sources */,
@@ -2469,6 +2478,7 @@
 				F3FCD1E92E51B69B003BDE5E /* SettingsAppearancePicker.swift in Sources */,
 				F34480452E2D548F00D18E2E /* TopicToggle.swift in Sources */,
 				F35199212E2B9F53004E0F02 /* StackContentView.swift in Sources */,
+				F380E0D62E672A85008C56F8 /* FavoriteListParent.swift in Sources */,
 				F339042A2E495C2A00A22EE1 /* TopicWarning.swift in Sources */,
 				F3CFBDD12E3F901C005F93EA /* TopicPassAView.swift in Sources */,
 				F3CFBE412E3F9D2E005F93EA /* TopicDetectScreenSize.swift in Sources */,
@@ -2507,7 +2517,7 @@
 				F314C8442E2E654C00F63B6A /* TopicSlider.swift in Sources */,
 				F314C8532E2E65F000F63B6A /* TopicPopover.swift in Sources */,
 				F314C7F22E2E1C1800F63B6A /* TopicLinkLabel.swift in Sources */,
-				F31653B62E3C0A1000A0E9D7 /* FavoritesList.swift in Sources */,
+				F31653B62E3C0A1000A0E9D7 /* FavoriteList.swift in Sources */,
 				F314C8092E2E458B00F63B6A /* TopicTextField.swift in Sources */,
 				F314C84D2E2E657300F63B6A /* TopicStepper.swift in Sources */,
 				F344803B2E2D225A00D18E2E /* TopicSpacer.swift in Sources */,
