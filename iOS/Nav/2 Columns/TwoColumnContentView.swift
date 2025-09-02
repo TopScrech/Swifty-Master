@@ -14,9 +14,13 @@ struct TwoColumnContentView: View {
                 NavigationLink(category.localizedName, value: category)
             }
             .navigationTitle("Categories")
+#if !os(maOS)
             .toolbar {
-                ContentViewToolbar()
+                NavigationLink(destination: AppSettings()) {
+                    Image(systemName: "gear")
+                }
             }
+#endif
         } detail: {
             NavigationStack(path: $nav.topicPath) {
                 GridTopic()

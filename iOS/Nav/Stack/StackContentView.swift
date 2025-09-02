@@ -25,9 +25,13 @@ struct StackContentView: View {
                         .buttonStyle(.plain)
                     }
                 }
+#if !os(maOS)
                 .toolbar {
-                    ContentViewToolbar()
+                    NavigationLink(destination: AppSettings()) {
+                        Image(systemName: "gear")
+                    }
                 }
+#endif
             }
             .tag(0)
             .tabItem {

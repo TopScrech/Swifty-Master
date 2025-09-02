@@ -42,5 +42,6 @@ struct StackTopicList: View {
 #Preview {
     StackTopicList()
         .environment(DataModel())
+        .environment(NavModel())
         .environmentObject(ValueStore())
 }

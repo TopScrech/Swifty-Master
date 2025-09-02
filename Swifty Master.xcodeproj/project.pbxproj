@@ -121,10 +121,6 @@
 		F325E3E82E5EBEB30008928E /* StackTopicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31653B82E3C0A4E00A0E9D7 /* StackTopicList.swift */; };
 		F325E3E92E5EBEB80008928E /* NavContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198ED2E2B9F53004E0F02 /* NavContainer.swift */; };
 		F325E3EB2E5EBF790008928E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */; };
-		F325E3ED2E5EC0550008928E /* ContentViewToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E3EC2E5EC0550008928E /* ContentViewToolbar.swift */; };
-		F325E3EE2E5EC0550008928E /* ContentViewToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E3EC2E5EC0550008928E /* ContentViewToolbar.swift */; };
-		F325E3EF2E5EC0550008928E /* ContentViewToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E3EC2E5EC0550008928E /* ContentViewToolbar.swift */; };
-		F325E3F02E5EC0550008928E /* ContentViewToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E3EC2E5EC0550008928E /* ContentViewToolbar.swift */; };
 		F325E3F12E5EC0E40008928E /* DebugSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C92B152E48AF4300203691 /* DebugSettings.swift */; };
 		F325E3F22E5EC1260008928E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */; };
 		F325E3F32E5EC1260008928E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */; };
@@ -787,7 +783,6 @@
 		F325E2DD2E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSettingsAllCodeBlocks.swift; sourceTree = "<group>"; };
 		F325E2E12E5EA5A70008928E /* DebugSettingsFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSettingsFavorites.swift; sourceTree = "<group>"; };
 		F325E3B32E5EBC760008928E /* macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F325E3EC2E5EC0550008928E /* ContentViewToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewToolbar.swift; sourceTree = "<group>"; };
 		F32E88D42AF856E400959D49 /* Journal View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journal View.swift"; sourceTree = "<group>"; };
 		F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCard.swift; sourceTree = "<group>"; };
 		F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCardImage.swift; sourceTree = "<group>"; };
@@ -1295,7 +1290,6 @@
 			children = (
 				F35198F72E2B9F53004E0F02 /* TopicDetail.swift */,
 				F35198FB2E2B9F53004E0F02 /* TopicTile.swift */,
-				F325E3EC2E5EC0550008928E /* ContentViewToolbar.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -2086,7 +2080,6 @@
 				F3CFBE092E3F981E005F93EA /* TopicTabView.swift in Sources */,
 				F314C7FD2E2E2A8400F63B6A /* Models.swift in Sources */,
 				F3C6F6732E40E57A00E94540 /* TopicGauge.swift in Sources */,
-				F325E3F02E5EC0550008928E /* ContentViewToolbar.swift in Sources */,
 				F314C7F62E2E1E7900F63B6A /* TopicText.swift in Sources */,
 				F314C8332E2E536F00F63B6A /* TopicMenu.swift in Sources */,
 				F314C8572E2E663500F63B6A /* TopicColor.swift in Sources */,
@@ -2187,7 +2180,6 @@
 			isa = PBXSourcesBuildPhase;
 			files = (
 				F325E3E12E5EBEA80008928E /* NavModePicker.swift in Sources */,
-				F325E3EE2E5EC0550008928E /* ContentViewToolbar.swift in Sources */,
 				F325E3E22E5EBEA80008928E /* NavModeTile.swift in Sources */,
 				F325E3C82E5EBD120008928E /* ValueStore.swift in Sources */,
 				F325E3F12E5EC0E40008928E /* DebugSettings.swift in Sources */,
@@ -2335,7 +2327,6 @@
 				F380A1A72E4AAA2D00157F67 /* TopicNavigationBar.swift in Sources */,
 				F380A1A82E4AAA2D00157F67 /* TopicNavigationSplitView.swift in Sources */,
 				F380A1A92E4AAA2D00157F67 /* TopicNavigationStack.swift in Sources */,
-				F325E3ED2E5EC0550008928E /* ContentViewToolbar.swift in Sources */,
 				F380A1AA2E4AAA2D00157F67 /* TopicPassAView.swift in Sources */,
 				F3FCD1E12E51217B003BDE5E /* NavModeTile.swift in Sources */,
 				F380A1AB2E4AAA2D00157F67 /* TopicLink.swift in Sources */,
@@ -2434,7 +2425,6 @@
 				F35199162E2B9F53004E0F02 /* NavModel.swift in Sources */,
 				F3C92B172E48AF4300203691 /* DebugSettings.swift in Sources */,
 				F314C8272E2E52A200F63B6A /* ValueStore.swift in Sources */,
-				F325E3EF2E5EC0550008928E /* ContentViewToolbar.swift in Sources */,
 				F35199192E2B9F53004E0F02 /* NavContainer.swift in Sources */,
 				F3FCD1E22E51217B003BDE5E /* NavModeTile.swift in Sources */,
 				F3CFBE0E2E3F994E005F93EA /* TopicList.swift in Sources */,
