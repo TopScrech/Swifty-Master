@@ -8,13 +8,13 @@ final class DataModel {
     var searchPrompt = ""
     
     var filteredCategories: [Category] {
-        guard !searchPrompt.isEmpty else {
-            return Category.allCases
-        }
-        
-        return Category.allCases.filter {
-            topics(in: $0).contains {
-                $0.name.localizedStandardContains(searchPrompt)
+        if searchPrompt.isEmpty {
+            Category.allCases
+        } else {
+            Category.allCases.filter {
+                topics(in: $0).contains {
+                    $0.name.localizedStandardContains(searchPrompt)
+                }
             }
         }
     }
@@ -32,14 +32,14 @@ final class DataModel {
     }
     
     func topics(foundIn category: Category?) -> [Topic] {
-        guard !searchPrompt.isEmpty else {
-            return Topic.allCases.filter {
+        if searchPrompt.isEmpty {
+            Topic.allCases.filter {
                 $0.category == category
             }
-        }
-        
-        return topics.filter {
-            $0.category == category && $0.name.localizedStandardContains(searchPrompt)
+        } else {
+            topics.filter {
+                $0.category == category && $0.name.localizedStandardContains(searchPrompt)
+            }
         }
     }
     
