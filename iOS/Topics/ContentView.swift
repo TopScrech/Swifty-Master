@@ -31,10 +31,11 @@ struct ContentView: View {
                 }
             }
             .foregroundStyle(.yellow)
-            
+#if !os(tvOS)
             if let url = topic.shareLink {
                 ShareLink(item: url)
             }
+#endif
         }
     }
 }
