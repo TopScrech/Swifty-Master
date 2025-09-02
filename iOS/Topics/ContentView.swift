@@ -61,7 +61,9 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .picker: AnyView(TopicPicker())
     case .gauges: AnyView(TopicGauge())
     case .progressView: AnyView(TopicProgressView())
+#if !os(macOS)
     case .badges: AnyView(TopicBadges())
+#endif
         
         // View
     case .emptyView: AnyView(TopicEmptyView())

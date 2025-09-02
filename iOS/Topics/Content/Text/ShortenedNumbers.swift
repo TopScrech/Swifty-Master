@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct ShortenedNumbers: View {
     private let numbers = [16000, 16000000, 16000000000, 16000000000000]

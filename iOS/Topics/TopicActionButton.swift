@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicActionButton: View {
     private let name: LocalizedStringKey

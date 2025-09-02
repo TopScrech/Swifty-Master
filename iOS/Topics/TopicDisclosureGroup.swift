@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicDisclosureGroup<Content: View>: View {
     private let title: String

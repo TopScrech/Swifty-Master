@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicDocsCardImage: View {
     private let link: String

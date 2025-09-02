@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicHeading: View {
     private let heading: LocalizedStringKey
