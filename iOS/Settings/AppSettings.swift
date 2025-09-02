@@ -14,10 +14,12 @@ struct AppSettings: View {
 #if !os(visionOS)
                 SettingsAppearancePicker()
 #endif
-                Toggle("Code line numbers", isOn: $store.showCodeLineNumbers)
+                Toggle(isOn: $store.showCodeLineNumbers) {
+                    Label("Code line numbers", systemImage: "list.number")
+                }
                 
                 Toggle(isOn: $store.favoriteArticlesBadge) {
-                    Text("Favorite articles badge")
+                    Label("Favorite articles badge", systemImage: "app.badge")
                     Text("Displayed on top of the tab bar")
                 }
             }
@@ -25,12 +27,16 @@ struct AppSettings: View {
             Section {
                 NavModeButton()
 #if !os(visionOS)
-                Toggle("Use built-in Safari", isOn: $store.builtInBrowser)
+                Toggle(isOn: $store.builtInBrowser) {
+                    Label("Use built-in Safari", systemImage: "safari")
+                }
 #endif
             }
             
-            NavigationLink("Debug") {
+            NavigationLink {
                 DebugSettings()
+            } label: {
+                Label("Debug", systemImage: "hammer")
             }
         }
         .formStyle(.grouped)
