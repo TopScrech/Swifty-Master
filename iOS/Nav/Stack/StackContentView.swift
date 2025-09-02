@@ -38,6 +38,13 @@ struct StackContentView: View {
             
             NavigationStack(path: $nav.favoriteTopicPath) {
                 FavoriteListParent()
+#if !os(maOS)
+                    .toolbar {
+                        NavigationLink(destination: AppSettings()) {
+                            Image(systemName: "gear")
+                        }
+                    }
+#endif
             }
 #if !os(tvOS)
             .badge(store.favoriteArticlesBadge ? store.favoriteTopics.count : 0)
