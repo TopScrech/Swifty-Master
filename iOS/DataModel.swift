@@ -5,6 +5,20 @@ final class DataModel {
     private let topics = Topic.allCases
     private var topicsById: [Topic.ID: Topic] = [:]
     
+    var searchPrompt = ""
+    
+    var filteredCategories: [Category] {
+        guard !searchPrompt.isEmpty else {
+            return Category.allCases
+        }
+        
+        return Category.allCases.filter {
+            topics(in: $0).contains {
+                $0.name.localizedStandardContains(searchPrompt)
+            }
+        }
+    }
+    
     /// The shared singleton data model object
     static let shared = {
         DataModel()
@@ -14,6 +28,16 @@ final class DataModel {
     func topics(in category: Category?) -> [Topic] {
         topics.filter {
             $0.category == category
+        }
+    }
+    
+    func topics(foundIn category: Category?) -> [Topic] {
+        guard !searchPrompt.isEmpty else {
+            return Topic.allCases
+        }
+        
+        return topics.filter {
+            $0.category == category && $0.name.localizedStandardContains(searchPrompt)
         }
     }
     

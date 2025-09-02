@@ -4,13 +4,13 @@ struct StackTopicList: View {
     @Environment(DataModel.self) private var dataModel
     @EnvironmentObject private var store: ValueStore
     
-    private let categories = Category.allCases
-    
     var body: some View {
+        @Bindable var dataModel = dataModel
+        
         List {
-            ForEach(categories) { category in
+            ForEach(dataModel.filteredCategories) { category in
                 Section(category.localizedName) {
-                    ForEach(dataModel.topics(in: category)) { topic in
+                    ForEach(dataModel.topics(foundIn: category)) { topic in
                         NavigationLink(value: topic) {
                             TopicLinkLabel(topic)
                         }
@@ -19,6 +19,8 @@ struct StackTopicList: View {
                 }
             }
         }
+        .searchable(text: $dataModel.searchPrompt)
+        .animation(.default, value: dataModel.searchPrompt)
     }
 }
 
