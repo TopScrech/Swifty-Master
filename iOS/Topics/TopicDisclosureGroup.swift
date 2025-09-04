@@ -17,6 +17,14 @@ struct TopicDisclosureGroup<Content: View>: View {
     @State private var isExpanded = true
     
     var body: some View {
+#if os(tvOS)
+        Text(title)
+            .title3(.semibold, design: .rounded)
+            .foregroundStyle(.foreground)
+        
+        VStack(spacing: 25, content: content)
+            .padding(5)
+#else
         DisclosureGroup(isExpanded: $isExpanded) {
             VStack(spacing: 25, content: content)
                 .padding(5)
@@ -25,5 +33,12 @@ struct TopicDisclosureGroup<Content: View>: View {
                 .title3(.semibold, design: .rounded)
                 .foregroundStyle(.foreground)
         }
+#endif
+    }
+}
+
+#Preview {
+    TopicDisclosureGroup("Preview", isExpanded: true) {
+        Text("Preview")
     }
 }

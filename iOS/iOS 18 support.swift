@@ -54,7 +54,7 @@ struct GlassyBackground: ViewModifier {
                 .background(.ultraThinMaterial)
         }
 #else
-        if #available(iOS 26, macOS 26, *) {
+        if #available(iOS 26, macOS 26, tvOS 26, *) {
             if let rectRounding {
                 content
 #if DEBUG
@@ -99,7 +99,7 @@ struct GlassProminentButtonStyle: ViewModifier {
     }
     
     func body(content: Content) -> some View {
-        if #available(iOS 26, macOS 26, *) {
+        if #available(iOS 26, macOS 26, tvOS 26, *) {
             content
 #if DEBUG && !os(visionOS)
                 .buttonStyle(.glassProminent)
@@ -126,7 +126,7 @@ struct LabelIconWidth: ViewModifier {
     }
     
     func body(content: Content) -> some View {
-        if #available(iOS 26, macOS 26, visionOS 26, *) {
+        if #available(iOS 26, macOS 26, visionOS 26, tvOS 26, *) {
             content
 #if DEBUG
                 .labelReservedIconWidth(width)

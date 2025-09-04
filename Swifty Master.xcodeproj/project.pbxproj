@@ -125,7 +125,6 @@
 		F326A4092E69A2080092F514 /* CodeBlockViewCopyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A4082E69A2080092F514 /* CodeBlockViewCopyButton.swift */; };
 		F326A40A2E69A2080092F514 /* CodeBlockViewCopyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A4082E69A2080092F514 /* CodeBlockViewCopyButton.swift */; };
 		F326A40B2E69A2080092F514 /* CodeBlockViewCopyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A4082E69A2080092F514 /* CodeBlockViewCopyButton.swift */; };
-		F326A40C2E69A2080092F514 /* CodeBlockViewCopyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A4082E69A2080092F514 /* CodeBlockViewCopyButton.swift */; };
 		F326A40E2E69A2600092F514 /* removingLastLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A40D2E69A2600092F514 /* removingLastLine.swift */; };
 		F326A40F2E69A2600092F514 /* removingLastLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A40D2E69A2600092F514 /* removingLastLine.swift */; };
 		F326A4102E69A2600092F514 /* removingLastLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A40D2E69A2600092F514 /* removingLastLine.swift */; };
@@ -214,7 +213,6 @@
 		F380A1712E4AA1EE00157F67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F380A16D2E4AA1EE00157F67 /* Assets.xcassets */; };
 		F380A1752E4AA1FA00157F67 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F380A1742E4AA1FA00157F67 /* ScrechKit */; };
 		F380A1772E4AA9C400157F67 /* SwiftyMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E12AEECD3400A9F7E7 /* SwiftyMaster.swift */; };
-		F380A1792E4AAA0400157F67 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = F380A1782E4AAA0400157F67 /* SafariCover */; };
 		F380A17A2E4AAA1000157F67 /* iOS 18 support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399A4AF2E3DC544008BED17 /* iOS 18 support.swift */; };
 		F380A17B2E4AAA1000157F67 /* ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8252E2E52A200F63B6A /* ValueStore.swift */; };
 		F380A17C2E4AAA1000157F67 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E72E2B9F53004E0F02 /* DataModel.swift */; };
@@ -986,7 +984,6 @@
 		F380A15F2E4AA1BE00157F67 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
-				F380A1792E4AAA0400157F67 /* SafariCover in Frameworks */,
 				F380A1752E4AA1FA00157F67 /* ScrechKit in Frameworks */,
 			);
 		};
@@ -1698,7 +1695,6 @@
 			name = tvOS;
 			packageProductDependencies = (
 				F380A1742E4AA1FA00157F67 /* ScrechKit */,
-				F380A1782E4AAA0400157F67 /* SafariCover */,
 			);
 			productName = "Swifty Master";
 			productReference = F380A1622E4AA1BF00157F67 /* tvOS.app */;
@@ -2380,7 +2376,6 @@
 				F380A1A82E4AAA2D00157F67 /* TopicNavigationSplitView.swift in Sources */,
 				F380A1A92E4AAA2D00157F67 /* TopicNavigationStack.swift in Sources */,
 				F380A1AA2E4AAA2D00157F67 /* TopicPassAView.swift in Sources */,
-				F326A40C2E69A2080092F514 /* CodeBlockViewCopyButton.swift in Sources */,
 				F3FCD1E12E51217B003BDE5E /* NavModeTile.swift in Sources */,
 				F380A1AB2E4AAA2D00157F67 /* TopicLink.swift in Sources */,
 				F380A1AC2E4AAA2D00157F67 /* TopicNavigationLink.swift in Sources */,
@@ -2739,7 +2734,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 26.0;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
 			};
 			name = Debug;
 		};
@@ -2771,7 +2766,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 26.0;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -3092,11 +3087,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F3BBD9F52AEECE4000A9F7E7 /* XCRemoteSwiftPackageReference "ScrechKit" */;
 			productName = ScrechKit;
-		};
-		F380A1782E4AAA0400157F67 /* SafariCover */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F31617C82E41D87A00131D26 /* XCRemoteSwiftPackageReference "SafariCover" */;
-			productName = SafariCover;
 		};
 		F3BBD9F62AEECE4000A9F7E7 /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;
