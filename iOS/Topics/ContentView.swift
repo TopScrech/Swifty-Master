@@ -20,11 +20,11 @@ struct ContentView: View {
             ContentViewNavButtons(topic)
             
             ForEach(topic.related) { relatedTopic in
-                NavigationLink(value: topic) {
+                NavigationLink(value: relatedTopic) {
                     Label {
-                        Text(topic.name)
+                        Text(relatedTopic.name)
                     } icon: {
-                        Image(systemName: topic.icon)
+                        Image(systemName: relatedTopic.icon)
                             .foregroundStyle(.blue)
                     }
                     .frame(height: 50)
