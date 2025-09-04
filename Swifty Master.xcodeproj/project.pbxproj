@@ -801,7 +801,7 @@
 		F32313732E69CF0B0011837A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F325E2DD2E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSettingsAllCodeBlocks.swift; sourceTree = "<group>"; };
 		F325E2E12E5EA5A70008928E /* DebugSettingsFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSettingsFavorites.swift; sourceTree = "<group>"; };
-		F325E3B32E5EBC760008928E /* macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F325E3B32E5EBC760008928E /* Swifty Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F326A4032E69A0CA0092F514 /* CodeBlockView macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodeBlockView macOS.swift"; sourceTree = "<group>"; };
 		F326A4082E69A2080092F514 /* CodeBlockViewCopyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlockViewCopyButton.swift; sourceTree = "<group>"; };
 		F326A40D2E69A2600092F514 /* removingLastLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = removingLastLine.swift; sourceTree = "<group>"; };
@@ -1402,7 +1402,7 @@
 				F3BBD9DE2AEECD3400A9F7E7 /* iOS.app */,
 				F3202C992D5596100030B3CC /* visionOS.app */,
 				F380A1622E4AA1BF00157F67 /* tvOS.app */,
-				F325E3B32E5EBC760008928E /* macOS.app */,
+				F325E3B32E5EBC760008928E /* Swifty Master.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1682,7 +1682,7 @@
 				F325E3BE2E5EBC8B0008928E /* ScrechKit */,
 			);
 			productName = "Master SwiftUI";
-			productReference = F325E3B32E5EBC760008928E /* macOS.app */;
+			productReference = F325E3B32E5EBC760008928E /* Swifty Master.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F380A1612E4AA1BE00157F67 /* tvOS */ = {
@@ -2653,7 +2653,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Everything-SwiftUI";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Swifty Master";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -2699,7 +2699,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Everything-SwiftUI";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Swifty Master";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
