@@ -14,15 +14,17 @@ struct ShortenedNumbers: View {
                             .frame(width: 160, alignment: .leading)
                         
                         Spacer()
+                        
                         Text(number, format: .number.notation(.scientific))
                         
                         Spacer()
+                        
                         Text(number, format: .number.notation(.compactName))
                     }
                 }
             }
             .padding()
-            .glassyBackground()
+            .glassyBackground(16)
         }
     }
 }

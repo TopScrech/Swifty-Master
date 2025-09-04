@@ -43,10 +43,6 @@ struct TopicText: View {
             
             CodeBlockView(.text)
             
-            TopicDisclosureGroup("Markdown") {
-                Markdown()
-            }
-            
             TopicDisclosureGroup("Font Size") {
                 ForEach(styles) { text in
                     FontSizeItem(text)
@@ -63,6 +59,10 @@ struct TopicText: View {
                 ForEach(designs) { text in
                     FontDesignItem(text)
                 }
+            }
+            
+            TopicDisclosureGroup("Markdown") {
+                Markdown()
             }
             
             ShortenedNumbers()
