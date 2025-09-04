@@ -16,6 +16,10 @@ struct SettingsAppearancePicker: View {
 }
 
 #Preview {
-    SettingsAppearancePicker()
-        .environmentObject(ValueStore())
+    Form {
+        SettingsAppearancePicker()
+    }
+    .formStyle(.grouped)
+    .buttonStyle(.plain)
+    .environmentObject(ValueStore())
 }

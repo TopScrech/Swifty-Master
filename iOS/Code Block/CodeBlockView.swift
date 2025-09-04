@@ -57,4 +57,5 @@ struct CodeBlockView: View {
 #Preview {
     CodeBlockView(.gauges)
         .environmentObject(ValueStore())
+        .environment(NavModel())
 }

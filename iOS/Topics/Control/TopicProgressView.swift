@@ -20,4 +20,5 @@ struct TopicProgressView: View {
         ContentView(.progressView)
     }
     .environmentObject(ValueStore())
+    .environment(NavModel())
 }

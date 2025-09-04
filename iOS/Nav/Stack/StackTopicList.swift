@@ -2,7 +2,6 @@ import SwiftUI
 
 struct StackTopicList: View {
     @Environment(DataModel.self) private var dataModel
-    @EnvironmentObject private var store: ValueStore
     
     var body: some View {
         @Bindable var dataModel = dataModel

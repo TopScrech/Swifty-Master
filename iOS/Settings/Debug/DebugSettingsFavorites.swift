@@ -39,9 +39,11 @@ struct DebugSettingsFavorites: View {
 
 #Preview {
     NavigationStack {
-        List {
+        Form {
             DebugSettingsFavorites()
         }
+        .formStyle(.grouped)
+        .buttonStyle(.plain)
     }
     .environmentObject(ValueStore())
 }

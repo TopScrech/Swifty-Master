@@ -29,7 +29,9 @@ struct NavModeButton: View {
 }
 
 #Preview {
-    NavModeButton()
-        .environment(NavModel.shared)
-        .environmentObject(ValueStore())
+    List {
+        NavModeButton()
+    }
+    .environment(NavModel.shared)
+    .environmentObject(ValueStore())
 }
