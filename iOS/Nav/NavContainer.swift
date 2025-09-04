@@ -45,6 +45,7 @@ struct NavContainer: View {
             }
         }
 #if os(macOS)
+        .frame(minWidth: 600)
         .onChange(of: appearsActive) { _, appearsActive in
             if !appearsActive {
                 nav.save()
