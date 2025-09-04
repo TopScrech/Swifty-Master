@@ -14,14 +14,7 @@ struct StackContentView: View {
                     .animation(.default, value: store.favoriteTopics)
                     .scrollIndicators(.never)
                     .navigationDestination(for: Topic.self) { topic in
-                        TopicDetail(topic) { relatedTopic in
-                            Button {
-                                nav.topicPath.append(relatedTopic)
-                            } label: {
-                                TopicTile(relatedTopic)
-                            }
-                            .buttonStyle(.plain)
-                        }
+                        TopicDetail(topic)
                     }
 #if !os(macOS)
                     .toolbar {

@@ -35,10 +35,8 @@ struct TopicToggle: View {
 }
 
 #Preview {
-    TopicDetail(.toggle) { relatedTopic in
-        TopicTile(relatedTopic)
-    }
-    .environment(NavModel())
-    .environment(DataModel())
-    .environmentObject(ValueStore())
+    TopicDetail(.toggle)
+        .environment(NavModel())
+        .environment(DataModel())
+        .environmentObject(ValueStore())
 }

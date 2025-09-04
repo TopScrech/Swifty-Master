@@ -18,6 +18,10 @@ struct ContentView: View {
             TopicDocs(topic.docs)
             
             ContentViewNavButtons(topic)
+            
+            ForEach(topic.related) { relatedTopic in
+                TopicTile(relatedTopic)
+            }
         }
         .scenePadding()
         .toolbar {

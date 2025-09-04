@@ -23,14 +23,7 @@ struct GridTopic: View {
             }
             .navigationTitle(category.localizedName)
             .navigationDestination(for: Topic.self) { topic in
-                TopicDetail(topic) { relatedTopic in
-                    Button {
-                        nav.topicPath.append(relatedTopic)
-                    } label: {
-                        TopicTile(relatedTopic)
-                    }
-                    .buttonStyle(.plain)
-                }
+                TopicDetail(topic)
             }
         } else {
             Text("Choose a category")

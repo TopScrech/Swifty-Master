@@ -44,14 +44,7 @@ struct FavoriteList: View {
             }
         }
         .navigationDestination(for: Topic.self) { topic in
-            TopicDetail(topic) { relatedTopic in
-                Button {
-                    nav.topicPath.append(relatedTopic)
-                } label: {
-                    TopicTile(relatedTopic)
-                }
-                .buttonStyle(.plain)
-            }
+            TopicDetail(topic)
         }
     }
     
