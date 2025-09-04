@@ -26,7 +26,7 @@ struct TopicLinkLabel: View {
             Label {
                 Text(topic.name)
 #if os(macOS)
-                    .title()
+                    .title2()
                     .padding(.leading, 8)
 #endif
                 if !isAvailable {
@@ -38,7 +38,7 @@ struct TopicLinkLabel: View {
                     .opacity(isAvailable ? 1 : 0.25)
                     .frame(width: iconWidth)
 #if os(macOS)
-                    .title(.semibold)
+                    .title3(.semibold)
 #endif
 #if os(visionOS)
                     .foregroundStyle(.primary)
