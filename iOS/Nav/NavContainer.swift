@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct NavContainer: View {
-    private var nav: NavModel = .shared
+    @Environment(NavModel.self) private var nav
     private var dataModel: DataModel = .shared
     
     @EnvironmentObject private var store: ValueStore
@@ -29,12 +29,13 @@ struct NavContainer: View {
                     }
             }
         }
-        .environment(nav)
         .environment(dataModel)
 #if !os(visionOS)
         .preferredColorScheme(store.appearance.scheme)
 #endif
+#if os(iOS) || os(visionOS)
         .statusBarHidden(!store.showStatusBar)
+#endif
         .task {
             nav.load()
         }
@@ -44,6 +45,7 @@ struct NavContainer: View {
             }
         }
 #if os(macOS)
+        .frame(minWidth: 600)
         .onChange(of: appearsActive) { _, appearsActive in
             if !appearsActive {
                 nav.save()

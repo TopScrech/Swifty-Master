@@ -40,5 +40,6 @@ struct TopicGauge: View {
 
 #Preview {
     TopicGauge()
+        .padding()
         .environmentObject(ValueStore())
 }

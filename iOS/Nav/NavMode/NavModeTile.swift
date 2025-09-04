@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct NavModeTile: View {
     @Binding var selection: NavMode?

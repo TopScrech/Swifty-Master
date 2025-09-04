@@ -39,9 +39,9 @@ final class NavModel: Codable {
         topicPath: [Topic] = [],
         favoriteTopicPath: [Topic] = []
     ) {
-        self.columnVisibility = columnVisibility
-        self.selectedCategory = selectedCategory
-        self.topicPath = topicPath
+        self.columnVisibility  = columnVisibility
+        self.selectedCategory  = selectedCategory
+        self.topicPath         = topicPath
         self.favoriteTopicPath = favoriteTopicPath
     }
     
@@ -54,9 +54,9 @@ final class NavModel: Codable {
         let model = try Self.decoder.decode(Self.self, from: data)
         
         self.init(
-            columnVisibility: model.columnVisibility,
-            selectedCategory: model.selectedCategory,
-            topicPath: model.topicPath,
+            columnVisibility:  model.columnVisibility,
+            selectedCategory:  model.selectedCategory,
+            topicPath:         model.topicPath,
             favoriteTopicPath: model.favoriteTopicPath
         )
     }
@@ -74,12 +74,12 @@ final class NavModel: Codable {
         do {
             let model = try NavModel(contentsOf: Self.dataURL)
             
-            selectedCategory = model.selectedCategory
-            columnVisibility = model.columnVisibility
-            topicPath = model.topicPath
+            selectedCategory  = model.selectedCategory
+            columnVisibility  = model.columnVisibility
+            topicPath         = model.topicPath
             favoriteTopicPath = model.favoriteTopicPath
             
-            print("Loaded NavModel \(topicPath)")
+            print("Loaded NavModel:", topicPath)
         } catch {
             print(error)
         }
@@ -90,7 +90,7 @@ final class NavModel: Codable {
         do {
             try jsonData?.write(to: Self.dataURL)
             
-            print("Saved nav path \(topicPath)")
+            print("Saved nav path:", topicPath)
         } catch {
             print(error)
         }
@@ -145,9 +145,8 @@ final class NavModel: Codable {
         
         self.selectedCategory = try container.decodeIfPresent(Category.self, forKey: .selectedCategory)
         self.columnVisibility = try container.decode(NavigationSplitViewVisibility.self, forKey: .columnVisibility)
-        
-        let topicIds = try container.decode([Topic.ID].self, forKey: .topicPathIds)
-        let favoriteTopicIds = try container.decode([Topic.ID].self, forKey: .favoriteTopicPathIds)
+        let topicIds          = try container.decode([Topic.ID].self, forKey: .topicPathIds)
+        let favoriteTopicIds  = try container.decode([Topic.ID].self, forKey: .favoriteTopicPathIds)
         
         self.topicPath = topicIds.compactMap {
             Topic(rawValue: $0)

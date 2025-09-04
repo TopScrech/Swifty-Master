@@ -2,7 +2,6 @@ import ScrechKit
 
 struct CodeBlockView: View {
     @EnvironmentObject private var store: ValueStore
-    @Environment(\.colorScheme) private var colorScheme
     
     private let code: String
     
@@ -36,51 +35,28 @@ struct CodeBlockView: View {
                                 .monospaced()
                                 .foregroundColor(.white)
                         }
+                        .footnote()
                     }
                 }
                 .padding()
-#if !os(visionOS)
+#if os(visionOS)
+                .background(.regularMaterial)
+#else
                 .frame(minWidth: UIScreen.main.bounds.width * 0.92, alignment: .leading)
                 .background(.ultraThinMaterial)
-#else
-                .background(.regularMaterial)
 #endif
                 .cornerRadius(20)
-                
-                Button {
-                    Pasteboard.copy(code)
-                } label: {
-                    Image(systemName: "document.on.document")
-                        .title3(.semibold)
-                        .padding(10)
-                        .glassyBackground(16)
-                        .padding(8)
-                        .contextMenu {
-                            ShareLink(item: code)
-                        }
-                }
-                .buttonStyle(.plain)
-                .secondary()
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+#if !os(tvOS)
+                CodeBlockViewCopyButton(code)
+#endif
             }
         }
         .scrollIndicators(.never)
     }
 }
 
-extension String {
-    var removingLastLine: String {
-        var lines = self.components(separatedBy: .newlines)
-        
-        if lines.isEmpty == false {
-            lines.removeLast()
-        }
-        
-        return lines.joined(separator: "\n")
-    }
-}
-
 #Preview {
     CodeBlockView(.gauges)
         .environmentObject(ValueStore())
+        .environment(NavModel())
 }

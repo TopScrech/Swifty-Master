@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicActionButton: View {
     private let name: LocalizedStringKey
@@ -20,13 +20,12 @@ struct TopicActionButton: View {
             action()
         } label: {
             Text(name)
+                .foregroundStyle(.white)
                 .frame(maxWidth: .infinity)
                 .semibold()
                 .padding(.vertical, 10)
         }
-        .glassyBackground()
-        .glassProminentButtonStyle()
-        .tint(color)
+        .glassProminentButtonStyle(color)
     }
 }
 

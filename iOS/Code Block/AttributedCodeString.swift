@@ -3,9 +3,15 @@ import ScrechKit
 /// Helper function to create an AttributedString with simulated syntax highlighting
 func attributedCodeString(for code: String) -> AttributedString {
     var attributedString = AttributedString(code)
+    let font: Font = .footnote.bold()
+    
+    if code.isEmpty {
+        return attributedString
+    }
     
     // String
     let quotedStringPattern = #""([^"]*?)""#
+    let fullRange = NSRange(code.startIndex..., in: code)
     
     let primaryKeywords = [
         "let", "var",
@@ -19,7 +25,7 @@ func attributedCodeString(for code: String) -> AttributedString {
         "Menu", "Label", "Image", "TextField", "TextEditor", "ProgressView", "TabView", "Tab", "Task", "UIApplication", "Slider", "Stepper",
         "NavigationView", "NavigationStack", "NavigationSplitView", "ScrollView", "ToolbarItem", "ToolbarItemGroup", "NavigationLink", "ForEach",
         "Grid", "GridRow", "LazyVGrid", "LazyHGrid", "Spacer", "GeometryReader", "HStack", "Color", "Rectangle", "UIDevice", "ZStack",
-        "SomeView", "EmptyView", "UIScreen", "Circle", "String", "AnyView", "Link",
+        "EmptyView", "UIScreen", "Circle", "String", "AnyView", "Link",
         "spacing", "value", "in", " View", "SecureField", "Ellipse", "RoundedRectangle", "Capsule", "ConcentricRectangle",
         "@State", "@Environment",
         "Gradient", "LinearGradient", "AngularGradient", "RadialGradient", "EllipticalGradient",
@@ -51,7 +57,7 @@ func attributedCodeString(for code: String) -> AttributedString {
     var stringRanges: [Range<String.Index>] = []
     
     if let regex = try? NSRegularExpression(pattern: quotedStringPattern) {
-        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+        let matches = regex.matches(in: code, range: fullRange)
         
         for match in matches {
             guard match.numberOfRanges >= 1 else {
@@ -73,7 +79,7 @@ func attributedCodeString(for code: String) -> AttributedString {
     let inlineCommentPattern = #"(?m)(?<!:)//.*$"#
     
     if let regex = try? NSRegularExpression(pattern: inlineCommentPattern) {
-        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+        let matches = regex.matches(in: code, range: fullRange)
         
         for match in matches {
             guard match.numberOfRanges >= 1 else {
@@ -100,30 +106,11 @@ func attributedCodeString(for code: String) -> AttributedString {
         }
     }
     
-    // String
-    if let regex = try? NSRegularExpression(pattern: quotedStringPattern) {
-        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
-        
-        for match in matches {
-            guard match.numberOfRanges >= 1 else {
-                continue
-            }
-            
-            // Includes the quotes
-            let fullRange = match.range(at: 0)
-            
-            if let stringRange = Range(fullRange, in: code),
-               let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
-                attributedString[attributedRange].foregroundColor = Color(0xFC6A5D)
-            }
-        }
-    }
-    
     // Interpolation \(somethin')
     let interpolationPattern = #"\\\(([^)]+?)\)"#
     
     if let regex = try? NSRegularExpression(pattern: interpolationPattern) {
-        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+        let matches = regex.matches(in: code, range: fullRange)
         
         for match in matches {
             guard match.numberOfRanges >= 2 else {
@@ -143,7 +130,7 @@ func attributedCodeString(for code: String) -> AttributedString {
     let modifierPattern = #"(?:\s*,\s*|\s+)\.(\w+)\s*\("#
     
     if let regex = try? NSRegularExpression(pattern: modifierPattern) {
-        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+        let matches = regex.matches(in: code, range: fullRange)
         
         for match in matches {
             guard match.numberOfRanges >= 2 else {
@@ -155,7 +142,7 @@ func attributedCodeString(for code: String) -> AttributedString {
             if let stringRange = Range(nameRange, in: code),
                let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
                 attributedString[attributedRange].foregroundColor = Color(0xA167E6)
-                attributedString[attributedRange].font = .body.bold()
+                attributedString[attributedRange].font = font
             }
         }
     }
@@ -165,7 +152,7 @@ func attributedCodeString(for code: String) -> AttributedString {
     let singleParamModifierPattern = #"\.(\w+)\s*\(\s*\.(\w+)\s*\)"#
     
     if let regex = try? NSRegularExpression(pattern: singleParamModifierPattern) {
-        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+        let matches = regex.matches(in: code, range: fullRange)
         
         for match in matches where match.numberOfRanges >= 3 {
             // Group 1: modifier name (e.g. "padding")
@@ -176,13 +163,13 @@ func attributedCodeString(for code: String) -> AttributedString {
             if let r1 = Range(modifierNameRange, in: code),
                let a1 = Range(NSRange(r1, in: code), in: attributedString) {
                 attributedString[a1].foregroundColor = Color(0xA167E6)
-                attributedString[a1].font = .body.bold()
+                attributedString[a1].font = font
             }
             
             if let r2 = Range(paramNameRange, in: code),
                let a2 = Range(NSRange(r2, in: code), in: attributedString) {
                 attributedString[a2].foregroundColor = Color(0xA167E6)
-                attributedString[a2].font = .body.bold()
+                attributedString[a2].font = font
             }
         }
     }
@@ -191,7 +178,7 @@ func attributedCodeString(for code: String) -> AttributedString {
     let betweenBracesPattern = #"\}\s*([A-Za-z_]\w*)\s*:\s*\{"#
     
     if let regex = try? NSRegularExpression(pattern: betweenBracesPattern) {
-        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+        let matches = regex.matches(in: code, range: fullRange)
         
         for match in matches where match.numberOfRanges >= 2 {
             let nameRange = match.range(at: 1)
@@ -199,7 +186,7 @@ func attributedCodeString(for code: String) -> AttributedString {
             if let stringRange = Range(nameRange, in: code),
                let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
                 attributedString[attributedRange].foregroundColor = Color(0xA167E6)
-                attributedString[attributedRange].font = .body.bold()
+                attributedString[attributedRange].font = font
             }
         }
     }
@@ -208,7 +195,7 @@ func attributedCodeString(for code: String) -> AttributedString {
     let dotBlockPattern = #"(?m)^\s*\.\s*([A-Za-z_]\w*)\s*\{"#
     
     if let regex = try? NSRegularExpression(pattern: dotBlockPattern) {
-        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+        let matches = regex.matches(in: code, range: fullRange)
         
         for match in matches where match.numberOfRanges >= 2 {
             let nameRange = match.range(at: 1)
@@ -216,7 +203,7 @@ func attributedCodeString(for code: String) -> AttributedString {
             if let stringRange = Range(nameRange, in: code),
                let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
                 attributedString[attributedRange].foregroundColor = Color(0xD0A8FF)
-                attributedString[attributedRange].font = .body.bold()
+                attributedString[attributedRange].font = font
             }
         }
     }
@@ -225,7 +212,7 @@ func attributedCodeString(for code: String) -> AttributedString {
     let bindingPattern = #"\$[A-Za-z_]\w*"#
     
     if let regex = try? NSRegularExpression(pattern: bindingPattern) {
-        let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+        let matches = regex.matches(in: code, range: fullRange)
         
         for match in matches {
             let nameRange = match.range(at: 0)
@@ -233,7 +220,25 @@ func attributedCodeString(for code: String) -> AttributedString {
             if let stringRange = Range(nameRange, in: code),
                let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
                 attributedString[attributedRange].foregroundColor = Color(0x67B7A4)
-                attributedString[attributedRange].font = .body.bold()
+                attributedString[attributedRange].font = font
+            }
+        }
+    }
+    
+    // Match "struct SomeName: View"
+    let structPattern = #"struct\s+([A-Za-z_]\w*)\s*:\s*View"#
+    
+    if let regex = try? NSRegularExpression(pattern: structPattern) {
+        let matches = regex.matches(in: code, range: fullRange)
+        
+        for match in matches where match.numberOfRanges >= 2 {
+            // Capture group 1 = the struct name
+            let nameRange = match.range(at: 1)
+            
+            if let stringRange = Range(nameRange, in: code),
+               let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
+                attributedString[attributedRange].foregroundColor = Color(0x5DD8FF)
+                attributedString[attributedRange].font = font
             }
         }
     }
@@ -245,15 +250,15 @@ func attributedCodeString(for code: String) -> AttributedString {
         color: Color,
         range: Int = 0
     ) {
-        if let regex = try? NSRegularExpression(pattern: numberPattern) {
-            let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+        if let regex = try? NSRegularExpression(pattern: pattern) {
+            let matches = regex.matches(in: code, range: fullRange)
             
             for match in matches {
                 let range = match.range(at: range)
                 
                 if let stringRange = Range(range, in: code),
                    let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
-                    attributedString[attributedRange].foregroundColor = Color(0xD0BF69)
+                    attributedString[attributedRange].foregroundColor = color
                 }
             }
         }
@@ -261,7 +266,7 @@ func attributedCodeString(for code: String) -> AttributedString {
     
     func colorWholeLine(_ regex: String, color: Color) {
         if let regex = try? NSRegularExpression(pattern: regex) {
-            let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+            let matches = regex.matches(in: code, range: fullRange)
             
             for match in matches {
                 let range = match.range(at: 0)
@@ -281,7 +286,7 @@ func attributedCodeString(for code: String) -> AttributedString {
             for range in ranges {
                 if let attributedRange = Range(NSRange(range, in: code), in: attributedString) {
                     attributedString[attributedRange].foregroundColor = color
-                    attributedString[attributedRange].font = .body.bold()
+                    attributedString[attributedRange].font = font
                 }
             }
         }

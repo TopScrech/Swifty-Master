@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicBadges: View {
     @State private var number = 0

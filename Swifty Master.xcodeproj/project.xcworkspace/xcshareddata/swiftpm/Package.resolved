@@ -1,0 +1,42 @@
+{
+  "originHash" : "b5562ee4e21f2dc451ae3e61439b1f7f7b50bdc9030ad0209392c6d2baecc527",
+  "pins" : [
+    {
+      "identity" : "codeeditorview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mchakravarty/CodeEditorView",
+      "state" : {
+        "revision" : "aba6c189bb2f6fd9d7b8e9f5739aeb3c8c7e3254",
+        "version" : "0.15.4"
+      }
+    },
+    {
+      "identity" : "rearrange",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ChimeHQ/Rearrange.git",
+      "state" : {
+        "revision" : "5ff7f3363f7a08f77e0d761e38e6add31c2136e1",
+        "version" : "1.8.1"
+      }
+    },
+    {
+      "identity" : "safaricover",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TopScrech/SafariCover",
+      "state" : {
+        "branch" : "main",
+        "revision" : "53823cbe9ca2ab959958ef42b935a988d07dff91"
+      }
+    },
+    {
+      "identity" : "screchkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TopScrech/ScrechKit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "ebca8f29757f85adc259ccfa7b22f47f40e74236"
+      }
+    }
+  ],
+  "version" : 3
+}

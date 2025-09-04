@@ -6,9 +6,9 @@ struct TopicTextEditor: View {
     var body: some View {
         VStack(spacing: 25) {
             Text("SwiftUI's `TextEditor` allows users to enter or edit multi-line text. It supports rich formatting and large content inputs")
-            
+#if !os(tvOS)
             TextEditor(text: $text)
-            
+#endif
             CodeBlockView(.textEditor)
             
             TopicDisclosureGroup("Formatting & Selection") {

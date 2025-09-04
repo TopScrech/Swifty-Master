@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicLinkLabel: View {
     @EnvironmentObject private var store: ValueStore
@@ -25,14 +25,21 @@ struct TopicLinkLabel: View {
         HStack {
             Label {
                 Text(topic.name)
-                
+#if os(macOS)
+                    .title2()
+                    .padding(.leading, 8)
+#endif
                 if !isAvailable {
                     Text("Coming soon...")
+                        .secondary()
                 }
             } icon: {
                 Image(systemName: topic.icon)
                     .opacity(isAvailable ? 1 : 0.25)
                     .frame(width: iconWidth)
+#if os(macOS)
+                    .title3(.semibold)
+#endif
 #if os(visionOS)
                     .foregroundStyle(.primary)
 #endif
@@ -43,6 +50,7 @@ struct TopicLinkLabel: View {
             if !isAvailable {
                 Image(systemName: "lock")
                     .secondary()
+                
             } else if store.favoriteTopics.contains(topic) {
                 Image(systemName: "star.fill")
                     .footnote()
@@ -60,10 +68,11 @@ struct TopicLinkLabel: View {
                 }
             }
             .tint(.yellow)
-            
+#if !os(tvOS)
             if let url = topic.shareLink {
                 ShareLink(item: url)
             }
+#endif
         }
     }
 }

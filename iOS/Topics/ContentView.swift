@@ -18,6 +18,22 @@ struct ContentView: View {
             TopicDocs(topic.docs)
             
             ContentViewNavButtons(topic)
+            
+            ForEach(topic.related) { relatedTopic in
+                NavigationLink(value: relatedTopic) {
+                    Label {
+                        Text(relatedTopic.name)
+                    } icon: {
+                        Image(systemName: relatedTopic.icon)
+                            .foregroundStyle(.blue)
+                    }
+                    .frame(height: 50)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal)
+                    .background(.ultraThinMaterial, in: .rect(cornerRadius: 16))
+                    .foregroundStyle(.foreground)
+                }
+            }
         }
         .scenePadding()
         .toolbar {
@@ -31,10 +47,11 @@ struct ContentView: View {
                 }
             }
             .foregroundStyle(.yellow)
-            
+#if !os(tvOS)
             if let url = topic.shareLink {
                 ShareLink(item: url)
             }
+#endif
         }
     }
 }
@@ -42,70 +59,72 @@ struct ContentView: View {
 func topicView(_ topic: Topic) -> AnyView? {
     switch topic {
         // Content
-    case .text: AnyView(TopicText())
-    case .textField: AnyView(TopicTextField())
+    case .text:       AnyView(TopicText())
+    case .textField:  AnyView(TopicTextField())
     case .textEditor: AnyView(TopicTextEditor())
-    case .image: AnyView(TopicImage())
-    case .label: AnyView(TopicLabel())
-    case .shape: AnyView(TopicShape())
-    case .divider: AnyView(TopicDivider())
+    case .image:      AnyView(TopicImage())
+    case .label:      AnyView(TopicLabel())
+    case .shape:      AnyView(TopicShape())
+    case .divider:    AnyView(TopicDivider())
         
         // Control
-    case .toggle: AnyView(TopicToggle())
-    case .button: AnyView(TopicButton())
-    case .menu: AnyView(TopicMenu())
-    case .contextMenu: AnyView(TopicContextMenu())
-    case .slider: AnyView(TopicSlider())
-    case .stepper: AnyView(TopicStepper())
-    case .picker: AnyView(TopicPicker())
-    case .gauges: AnyView(TopicGauge())
+    case .toggle:       AnyView(TopicToggle())
+    case .button:       AnyView(TopicButton())
+    case .menu:         AnyView(TopicMenu())
+    case .contextMenu:  AnyView(TopicContextMenu())
+    case .slider:       AnyView(TopicSlider())
+    case .stepper:      AnyView(TopicStepper())
+    case .picker:       AnyView(TopicPicker())
     case .progressView: AnyView(TopicProgressView())
-    case .badges: AnyView(TopicBadges())
+#if !os(macOS) && !os(tvOS)
+    case .gauges:       AnyView(TopicGauge())
+    case .badges:       AnyView(TopicBadges())
+#endif
         
         // View
-    case .emptyView: AnyView(TopicEmptyView())
+    case .emptyView:       AnyView(TopicEmptyView())
     case .appStoreOverlay: AnyView(AppStoreOverlay())
-    case .sheet: AnyView(TopicSheet())
-    case .alert: AnyView(TopicAlert())
-    case .popover: AnyView(TopicPopover())
+    case .sheet:           AnyView(TopicSheet())
+    case .alert:           AnyView(TopicAlert())
+    case .popover:         AnyView(TopicPopover())
         
         // Nav
-    case .dismiss: AnyView(TopicDismiss())
-    case .navigationView: AnyView(TopicNavigationView())
-    case .navigationStack: AnyView(TopicNavigationStack())
+    case .dismiss:             AnyView(TopicDismiss())
+    case .navigationView:      AnyView(TopicNavigationView())
+    case .navigationStack:     AnyView(TopicNavigationStack())
     case .navigationSplitView: AnyView(TopicNavigationSplitView())
-    case .navigationBar: AnyView(TopicNavigationBar())
-    case .navigationLink: AnyView(TopicNavigationLink())
-    case .passAView: AnyView(TopicPassAView())
-    case .link: AnyView(TopicLink())
+    case .navigationBar:       AnyView(TopicNavigationBar())
+    case .navigationLink:      AnyView(TopicNavigationLink())
+    case .passAView:           AnyView(TopicPassAView())
+    case .link:                AnyView(TopicLink())
         
         // Collections
-    case .vStack: AnyView(TopicVStack())
-    case .hStack: AnyView(TopicHStack())
-    case .zStack: AnyView(TopicZStack())
-    case .list: AnyView(TopicList())
+    case .vStack:     AnyView(TopicVStack())
+    case .hStack:     AnyView(TopicHStack())
+    case .zStack:     AnyView(TopicZStack())
+    case .list:       AnyView(TopicList())
     case .scrollView: AnyView(TopicScrollView())
-    case .grids: AnyView(TopicGrids())
-    case .tabView: AnyView(TopicTabView())
+    case .grids:      AnyView(TopicGrids())
+    case .tabView:    AnyView(TopicTabView())
         
         // Layout
-    case .spacer: AnyView(TopicSpacer())
-    case .padding: AnyView(TopicPadding())
-    case .frame: AnyView(TopicFrame())
+    case .spacer:         AnyView(TopicSpacer())
+    case .padding:        AnyView(TopicPadding())
+    case .frame:          AnyView(TopicFrame())
     case .geometryReader: AnyView(TopicGeometryReader())
     case .equalSizeViews: AnyView(TopicEqualSizeViews())
         
         // Design
-    case .color: AnyView(TopicColor())
+    case .color:    AnyView(TopicColor())
     case .gradient: AnyView(TopicGradient())
         
         // System
-    case .detectDarkMode: AnyView(TopicDarkMode())
-    case .detectOSVersion: AnyView(TopicDetectOSVersion())
-    case .lowPowerMode: AnyView(TopicLowPowerMode())
-    case .detectLang: AnyView(TopicDetectLaguage())
-    case .differentiateOS: AnyView(TopicDifferentiateOS())
-    case .detectScreenSize: AnyView(TopicDetectScreenSize())
+    case .detectDarkMode:         AnyView(TopicDarkMode())
+    case .detectOSVersion:        AnyView(TopicDetectOSVersion())
+    case .lowPowerMode:           AnyView(TopicLowPowerMode())
+    case .detectLang:             AnyView(TopicDetectLaguage())
+    case .differentiateOS:        AnyView(TopicDifferentiateOS())
+    case .detectScreenSize:       AnyView(TopicDetectScreenSize())
     case .detectCompactOrRegular: AnyView(TopicDetectCompactOrRegular())
         
     @unknown default: nil

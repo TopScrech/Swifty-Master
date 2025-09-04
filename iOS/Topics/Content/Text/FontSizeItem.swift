@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct FontSizeItem: View {
     private let text: TextFontSize

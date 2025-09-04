@@ -4,41 +4,25 @@ struct StackContentView: View {
     @Environment(NavModel.self) private var nav
     @EnvironmentObject private var store: ValueStore
     
-    @State private var sheetSettings = false
-    
     var body: some View {
         @Bindable var nav = nav
         
         TabView(selection: $store.lastTab) {
             NavigationStack(path: $nav.topicPath) {
-                List {
-                    StackTopicList()
-                }
-                .navigationTitle("Categories")
-                .animation(.default, value: store.favoriteTopics)
-                .scrollIndicators(.never)
-                .navigationDestination(for: Topic.self) { topic in
-                    TopicDetail(topic) { relatedTopic in
-                        Button {
-                            nav.topicPath.append(relatedTopic)
-                        } label: {
-                            TopicTile(relatedTopic)
-                        }
-                        .buttonStyle(.plain)
+                StackTopicList()
+                    .navigationTitle("Categories")
+                    .animation(.default, value: store.favoriteTopics)
+                    .scrollIndicators(.never)
+                    .navigationDestination(for: Topic.self) { topic in
+                        TopicDetail(topic)
                     }
-                }
-                .toolbar {
-                    ToolbarItem(placement: .topBarTrailing) {
-                        SFButton("gear") {
-                            sheetSettings = true
+#if !os(macOS)
+                    .toolbar {
+                        NavigationLink(destination: AppSettings()) {
+                            Image(systemName: "gear")
                         }
                     }
-                }
-                .sheet($sheetSettings) {
-                    NavigationView {
-                        AppSettings()
-                    }
-                }
+#endif
             }
             .tag(0)
             .tabItem {
@@ -46,19 +30,18 @@ struct StackContentView: View {
             }
             
             NavigationStack(path: $nav.favoriteTopicPath) {
-                FavoritesList()
-                    .navigationDestination(for: Topic.self) { topic in
-                        TopicDetail(topic) { relatedTopic in
-                            Button {
-                                nav.topicPath.append(relatedTopic)
-                            } label: {
-                                TopicTile(relatedTopic)
-                            }
-                            .buttonStyle(.plain)
+                FavoriteListParent()
+#if !os(macOS)
+                    .toolbar {
+                        NavigationLink(destination: AppSettings()) {
+                            Image(systemName: "gear")
                         }
                     }
+#endif
             }
+#if !os(tvOS)
             .badge(store.favoriteArticlesBadge ? store.favoriteTopics.count : 0)
+#endif
             .tag(1)
             .tabItem {
                 Label("Favorites", systemImage: "star")

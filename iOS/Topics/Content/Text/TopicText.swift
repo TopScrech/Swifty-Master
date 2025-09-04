@@ -39,12 +39,9 @@ struct TopicText: View {
     var body: some View {
         VStack(spacing: 25) {
             Text("Text is a SwiftUI element used to display static or dynamic strings in the interface. It supports rich formatting, localization, and adapts to system-wide accessibility settings")
+                .bold(isBold)
             
             CodeBlockView(.text)
-            
-            TopicDisclosureGroup("Markdown") {
-                Markdown()
-            }
             
             TopicDisclosureGroup("Font Size") {
                 ForEach(styles) { text in
@@ -64,9 +61,12 @@ struct TopicText: View {
                 }
             }
             
+            TopicDisclosureGroup("Markdown") {
+                Markdown()
+            }
+            
             ShortenedNumbers()
         }
-        .bold(isBold)
         .toolbar {
             SFButton("bold") {
                 isBold.toggle()

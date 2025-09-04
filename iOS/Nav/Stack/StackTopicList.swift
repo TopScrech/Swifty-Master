@@ -2,43 +2,30 @@ import SwiftUI
 
 struct StackTopicList: View {
     @Environment(DataModel.self) private var dataModel
-    @EnvironmentObject private var store: ValueStore
-    
-    private let categories = Category.allCases
     
     var body: some View {
-        ForEach(categories) { category in
-            Section(category.localizedName) {
-                ForEach(dataModel.topics(in: category)) { topic in
-                    NavigationLink(value: topic) {
-                        TopicLinkLabel(topic)
-                    }
-                    .swipeActions(edge: .leading) {
-                        Button {
-                            store.addOrRemoveFavorite(topic)
-                        } label: {
-                            if store.favoriteTopics.contains(topic) {
-                                Image(systemName: "star.slash.fill")
-                                    .tint(.red)
-                            } else {
-                                Image(systemName: "star")
-                                    .tint(.yellow)
-                            }
+        @Bindable var dataModel = dataModel
+        
+        List {
+            ForEach(dataModel.filteredCategories) { category in
+                Section(category.localizedName) {
+                    ForEach(dataModel.topics(foundIn: category)) { topic in
+                        NavigationLink(value: topic) {
+                            TopicLinkLabel(topic)
                         }
-                    }
-                    .swipeActions {
-                        if let url = topic.shareLink {
-                            ShareLink(item: url)
-                        }
+                        .topicSwipeActions(topic)
                     }
                 }
             }
         }
+        .searchable(text: $dataModel.searchPrompt)
+        .animation(.default, value: dataModel.searchPrompt)
     }
 }
 
 #Preview {
     StackTopicList()
         .environment(DataModel())
+        .environment(NavModel())
         .environmentObject(ValueStore())
 }

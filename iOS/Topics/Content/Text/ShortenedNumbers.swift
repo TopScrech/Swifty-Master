@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct ShortenedNumbers: View {
     private let numbers = [16000, 16000000, 16000000000, 16000000000000]
@@ -14,15 +14,17 @@ struct ShortenedNumbers: View {
                             .frame(width: 160, alignment: .leading)
                         
                         Spacer()
+                        
                         Text(number, format: .number.notation(.scientific))
                         
                         Spacer()
+                        
                         Text(number, format: .number.notation(.compactName))
                     }
                 }
             }
             .padding()
-            .glassyBackground()
+            .glassyBackground(16)
         }
     }
 }

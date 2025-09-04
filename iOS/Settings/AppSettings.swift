@@ -1,23 +1,20 @@
-import SwiftUI
+import ScrechKit
 
 struct AppSettings: View {
     @EnvironmentObject private var store: ValueStore
     
     var body: some View {
         Form {
-            Text("Settings")
-                .largeTitle(.bold, design: .rounded)
-                .listRowBackground(Color.clear)
-                .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
-            
             Section {
 #if !os(visionOS)
                 SettingsAppearancePicker()
 #endif
-                Toggle("Code line numbers", isOn: $store.showCodeLineNumbers)
+                Toggle(isOn: $store.showCodeLineNumbers) {
+                    Label("Code line numbers", systemImage: "list.number")
+                }
                 
                 Toggle(isOn: $store.favoriteArticlesBadge) {
-                    Text("Favorite articles badge")
+                    Label("Favorite articles badge", systemImage: "app.badge")
                     Text("Displayed on top of the tab bar")
                 }
             }
@@ -25,18 +22,22 @@ struct AppSettings: View {
             Section {
                 NavModeButton()
 #if !os(visionOS)
-                Toggle("Use built-in Safari", isOn: $store.builtInBrowser)
+                Toggle(isOn: $store.builtInBrowser) {
+                    Label("Use built-in Safari", systemImage: "safari")
+                }
 #endif
             }
             
-            NavigationLink("Debug") {
+            NavigationLink {
                 DebugSettings()
+            } label: {
+                Label("Debug", systemImage: "hammer")
             }
         }
+        .navigationTitle("Settings")
         .formStyle(.grouped)
         .buttonStyle(.plain)
         .scrollIndicators(.never)
-        .ornamentDismissButton()
     }
 }
 

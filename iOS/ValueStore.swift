@@ -1,5 +1,9 @@
 import SwiftUI
 
+#if os(macOS) || os(tvOS)
+import Combine
+#endif
+
 final class ValueStore: ObservableObject {
 #if !os(visionOS)
     @AppStorage("appearance") var appearance: ColorTheme = .system
