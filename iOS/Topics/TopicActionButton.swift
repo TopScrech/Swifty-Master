@@ -20,11 +20,11 @@ struct TopicActionButton: View {
             action()
         } label: {
             Text(name)
+                .foregroundStyle(.white)
                 .frame(maxWidth: .infinity)
                 .semibold()
                 .padding(.vertical, 10)
         }
-        .glassyBackground()
         .glassProminentButtonStyle(color)
     }
 }
