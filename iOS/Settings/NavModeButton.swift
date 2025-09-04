@@ -6,20 +6,19 @@ struct NavModeButton: View {
     
     var body: some View {
         @Bindable var nav = nav
+        let icon = store.navMode?.icon ?? ""
+        let navMode = store.navMode?.name ?? ""
         
         Button {
             nav.showNavModePicker = true
         } label: {
             HStack {
-                Text("Navigation mode")
+                Label("Navigation mode", systemImage: icon)
                 
                 Spacer()
                 
-                if let icon = store.navMode?.icon {
-                    Image(systemName: icon)
-                        .title3()
-                        .secondary()
-                }
+                Text(navMode)
+                    .secondary()
             }
         }
         .help("Choose your navigation experience")
