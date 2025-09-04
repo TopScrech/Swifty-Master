@@ -5,11 +5,6 @@ struct AppSettings: View {
     
     var body: some View {
         Form {
-            Text("Settings")
-                .largeTitle(.bold, design: .rounded)
-                .listRowBackground(Color.clear)
-                .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
-            
             Section {
 #if !os(visionOS)
                 SettingsAppearancePicker()
@@ -39,6 +34,7 @@ struct AppSettings: View {
                 Label("Debug", systemImage: "hammer")
             }
         }
+        .navigationTitle("Settings")
         .formStyle(.grouped)
         .buttonStyle(.plain)
         .scrollIndicators(.never)
