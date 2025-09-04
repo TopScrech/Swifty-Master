@@ -14,7 +14,7 @@ struct TwoColumnContentView: View {
                 NavigationLink(category.localizedName, value: category)
             }
             .navigationTitle("Categories")
-#if !os(maOS)
+#if !os(macOS)
             .toolbar {
                 NavigationLink(destination: AppSettings()) {
                     Image(systemName: "gear")

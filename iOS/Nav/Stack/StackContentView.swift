@@ -23,7 +23,7 @@ struct StackContentView: View {
                             .buttonStyle(.plain)
                         }
                     }
-#if !os(maOS)
+#if !os(macOS)
                     .toolbar {
                         NavigationLink(destination: AppSettings()) {
                             Image(systemName: "gear")
@@ -38,7 +38,7 @@ struct StackContentView: View {
             
             NavigationStack(path: $nav.favoriteTopicPath) {
                 FavoriteListParent()
-#if !os(maOS)
+#if !os(macOS)
                     .toolbar {
                         NavigationLink(destination: AppSettings()) {
                             Image(systemName: "gear")
