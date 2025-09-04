@@ -25,14 +25,21 @@ struct TopicLinkLabel: View {
         HStack {
             Label {
                 Text(topic.name)
-                
+#if os(macOS)
+                    .title()
+                    .padding(.leading, 8)
+#endif
                 if !isAvailable {
                     Text("Coming soon...")
+                        .secondary()
                 }
             } icon: {
                 Image(systemName: topic.icon)
                     .opacity(isAvailable ? 1 : 0.25)
                     .frame(width: iconWidth)
+#if os(macOS)
+                    .title(.semibold)
+#endif
 #if os(visionOS)
                     .foregroundStyle(.primary)
 #endif
