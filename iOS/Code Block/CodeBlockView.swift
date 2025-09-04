@@ -35,6 +35,7 @@ struct CodeBlockView: View {
                                 .monospaced()
                                 .foregroundColor(.white)
                         }
+                        .footnote()
                     }
                 }
                 .padding()

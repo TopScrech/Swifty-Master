@@ -3,6 +3,7 @@ import ScrechKit
 /// Helper function to create an AttributedString with simulated syntax highlighting
 func attributedCodeString(for code: String) -> AttributedString {
     var attributedString = AttributedString(code)
+    let font: Font = .footnote.bold()
     
     if code.isEmpty {
         return attributedString
@@ -141,7 +142,7 @@ func attributedCodeString(for code: String) -> AttributedString {
             if let stringRange = Range(nameRange, in: code),
                let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
                 attributedString[attributedRange].foregroundColor = Color(0xA167E6)
-                attributedString[attributedRange].font = .body.bold()
+                attributedString[attributedRange].font = font
             }
         }
     }
@@ -162,13 +163,13 @@ func attributedCodeString(for code: String) -> AttributedString {
             if let r1 = Range(modifierNameRange, in: code),
                let a1 = Range(NSRange(r1, in: code), in: attributedString) {
                 attributedString[a1].foregroundColor = Color(0xA167E6)
-                attributedString[a1].font = .body.bold()
+                attributedString[a1].font = font
             }
             
             if let r2 = Range(paramNameRange, in: code),
                let a2 = Range(NSRange(r2, in: code), in: attributedString) {
                 attributedString[a2].foregroundColor = Color(0xA167E6)
-                attributedString[a2].font = .body.bold()
+                attributedString[a2].font = font
             }
         }
     }
@@ -185,7 +186,7 @@ func attributedCodeString(for code: String) -> AttributedString {
             if let stringRange = Range(nameRange, in: code),
                let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
                 attributedString[attributedRange].foregroundColor = Color(0xA167E6)
-                attributedString[attributedRange].font = .body.bold()
+                attributedString[attributedRange].font = font
             }
         }
     }
@@ -202,7 +203,7 @@ func attributedCodeString(for code: String) -> AttributedString {
             if let stringRange = Range(nameRange, in: code),
                let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
                 attributedString[attributedRange].foregroundColor = Color(0xD0A8FF)
-                attributedString[attributedRange].font = .body.bold()
+                attributedString[attributedRange].font = font
             }
         }
     }
@@ -219,7 +220,7 @@ func attributedCodeString(for code: String) -> AttributedString {
             if let stringRange = Range(nameRange, in: code),
                let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
                 attributedString[attributedRange].foregroundColor = Color(0x67B7A4)
-                attributedString[attributedRange].font = .body.bold()
+                attributedString[attributedRange].font = font
             }
         }
     }
@@ -237,7 +238,7 @@ func attributedCodeString(for code: String) -> AttributedString {
             if let stringRange = Range(nameRange, in: code),
                let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
                 attributedString[attributedRange].foregroundColor = Color(0x5DD8FF)
-                attributedString[attributedRange].font = .body.bold()
+                attributedString[attributedRange].font = font
             }
         }
     }
@@ -285,7 +286,7 @@ func attributedCodeString(for code: String) -> AttributedString {
             for range in ranges {
                 if let attributedRange = Range(NSRange(range, in: code), in: attributedString) {
                     attributedString[attributedRange].foregroundColor = color
-                    attributedString[attributedRange].font = .body.bold()
+                    attributedString[attributedRange].font = font
                 }
             }
         }
