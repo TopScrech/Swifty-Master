@@ -130,6 +130,7 @@
 		F326A40F2E69A2600092F514 /* removingLastLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A40D2E69A2600092F514 /* removingLastLine.swift */; };
 		F326A4102E69A2600092F514 /* removingLastLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A40D2E69A2600092F514 /* removingLastLine.swift */; };
 		F326A4112E69A2600092F514 /* removingLastLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A40D2E69A2600092F514 /* removingLastLine.swift */; };
+		F326A4132E69A36B0092F514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F326A4122E69A36B0092F514 /* Assets.xcassets */; };
 		F32E88D52AF856E400959D49 /* Journal View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32E88D42AF856E400959D49 /* Journal View.swift */; };
 		F330586C2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */; };
 		F330586D2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */; };
@@ -803,6 +804,7 @@
 		F326A4032E69A0CA0092F514 /* CodeBlockView macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodeBlockView macOS.swift"; sourceTree = "<group>"; };
 		F326A4082E69A2080092F514 /* CodeBlockViewCopyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlockViewCopyButton.swift; sourceTree = "<group>"; };
 		F326A40D2E69A2600092F514 /* removingLastLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = removingLastLine.swift; sourceTree = "<group>"; };
+		F326A4122E69A36B0092F514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F32E88D42AF856E400959D49 /* Journal View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journal View.swift"; sourceTree = "<group>"; };
 		F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCard.swift; sourceTree = "<group>"; };
 		F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCardImage.swift; sourceTree = "<group>"; };
@@ -1102,6 +1104,7 @@
 		F325E3C32E5EBCA50008928E /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				F326A4122E69A36B0092F514 /* Assets.xcassets */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -1916,6 +1919,7 @@
 				F380E0352E66FA63008C56F8 /* mdBoldItalic.txt in Resources */,
 				F380E0362E66FA63008C56F8 /* textShortenedNumbers.txt in Resources */,
 				F380E0372E66FA63008C56F8 /* mdMonospaced.txt in Resources */,
+				F326A4132E69A36B0092F514 /* Assets.xcassets in Resources */,
 				F380E0382E66FA63008C56F8 /* mdStrikethrough.txt in Resources */,
 				F380E0412E66FA7D008C56F8 /* menu.txt in Resources */,
 				F380E0422E66FA7D008C56F8 /* stepper.txt in Resources */,
