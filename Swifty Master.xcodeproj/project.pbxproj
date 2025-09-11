@@ -129,7 +129,6 @@
 		F326A40F2E69A2600092F514 /* removingLastLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A40D2E69A2600092F514 /* removingLastLine.swift */; };
 		F326A4102E69A2600092F514 /* removingLastLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A40D2E69A2600092F514 /* removingLastLine.swift */; };
 		F326A4112E69A2600092F514 /* removingLastLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A40D2E69A2600092F514 /* removingLastLine.swift */; };
-		F326A4132E69A36B0092F514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F326A4122E69A36B0092F514 /* Assets.xcassets */; };
 		F32E88D52AF856E400959D49 /* Journal View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32E88D42AF856E400959D49 /* Journal View.swift */; };
 		F330586C2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */; };
 		F330586D2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */; };
@@ -548,6 +547,9 @@
 		F3ADA61B2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */; };
 		F3AE99D92E2F861C00D70249 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE99D82E2F861C00D70249 /* ColorTheme.swift */; };
 		F3AE99DA2E2F861C00D70249 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE99D82E2F861C00D70249 /* ColorTheme.swift */; };
+		F3B75CE22E72B7D90096E65E /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F3B75CE12E72B7D90096E65E /* AppIcon.icon */; };
+		F3B75CE32E72B7D90096E65E /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F3B75CE12E72B7D90096E65E /* AppIcon.icon */; };
+		F3B75CE52E72B85A0096E65E /* Liquid Glass.icon in Resources */ = {isa = PBXBuildFile; fileRef = F3B75CE42E72B85A0096E65E /* Liquid Glass.icon */; };
 		F3BBD9E22AEECD3400A9F7E7 /* SwiftyMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E12AEECD3400A9F7E7 /* SwiftyMaster.swift */; };
 		F3BBD9E82AEECD3500A9F7E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */; };
 		F3BBD9F42AEECD6C00A9F7E7 /* Materials View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9F32AEECD6C00A9F7E7 /* Materials View.swift */; };
@@ -803,7 +805,6 @@
 		F326A4032E69A0CA0092F514 /* CodeBlockView macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodeBlockView macOS.swift"; sourceTree = "<group>"; };
 		F326A4082E69A2080092F514 /* CodeBlockViewCopyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlockViewCopyButton.swift; sourceTree = "<group>"; };
 		F326A40D2E69A2600092F514 /* removingLastLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = removingLastLine.swift; sourceTree = "<group>"; };
-		F326A4122E69A36B0092F514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F32E88D42AF856E400959D49 /* Journal View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journal View.swift"; sourceTree = "<group>"; };
 		F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCard.swift; sourceTree = "<group>"; };
 		F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCardImage.swift; sourceTree = "<group>"; };
@@ -855,6 +856,8 @@
 		F399A4AF2E3DC544008BED17 /* iOS 18 support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOS 18 support.swift"; sourceTree = "<group>"; };
 		F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F3AE99D82E2F861C00D70249 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		F3B75CE12E72B7D90096E65E /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		F3B75CE42E72B85A0096E65E /* Liquid Glass.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = "Liquid Glass.icon"; sourceTree = "<group>"; };
 		F3BBD9DE2AEECD3400A9F7E7 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3BBD9E12AEECD3400A9F7E7 /* SwiftyMaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyMaster.swift; sourceTree = "<group>"; };
 		F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1103,7 +1106,6 @@
 			isa = PBXGroup;
 			children = (
 				F32313732E69CF0B0011837A /* Info.plist */,
-				F326A4122E69A36B0092F514 /* Assets.xcassets */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -1414,6 +1416,8 @@
 				F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */,
 				F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */,
 				F380E0CA2E67226B008C56F8 /* Shared Assets.xcassets */,
+				F3B75CE12E72B7D90096E65E /* AppIcon.icon */,
+				F3B75CE42E72B85A0096E65E /* Liquid Glass.icon */,
 				F314C8252E2E52A200F63B6A /* ValueStore.swift */,
 				F326A40D2E69A2600092F514 /* removingLastLine.swift */,
 				F35198E72E2B9F53004E0F02 /* DataModel.swift */,
@@ -1881,6 +1885,7 @@
 				F380E0692E66FAC7008C56F8 /* equalSizeViews.txt in Resources */,
 				F380E06A2E66FAC7008C56F8 /* frame.txt in Resources */,
 				F380E04F2E66FA9B008C56F8 /* passAView.txt in Resources */,
+				F3B75CE22E72B7D90096E65E /* AppIcon.icon in Resources */,
 				F380E0502E66FA9B008C56F8 /* navigationView.txt in Resources */,
 				F380E0512E66FA9B008C56F8 /* navigationBar.txt in Resources */,
 				F380E0522E66FA9B008C56F8 /* navigationStack.txt in Resources */,
@@ -1917,7 +1922,6 @@
 				F380E0352E66FA63008C56F8 /* mdBoldItalic.txt in Resources */,
 				F380E0362E66FA63008C56F8 /* textShortenedNumbers.txt in Resources */,
 				F380E0372E66FA63008C56F8 /* mdMonospaced.txt in Resources */,
-				F326A4132E69A36B0092F514 /* Assets.xcassets in Resources */,
 				F380E0382E66FA63008C56F8 /* mdStrikethrough.txt in Resources */,
 				F380E0412E66FA7D008C56F8 /* menu.txt in Resources */,
 				F380E0422E66FA7D008C56F8 /* stepper.txt in Resources */,
@@ -2047,6 +2051,7 @@
 				F3CFBD7F2E3F8AE2005F93EA /* toggle.txt in Resources */,
 				F3CFBD802E3F8AE2005F93EA /* mdRegular.txt in Resources */,
 				F3CFBD812E3F8AE2005F93EA /* toggleTint.txt in Resources */,
+				F3B75CE32E72B7D90096E65E /* AppIcon.icon in Resources */,
 				F3CFBD822E3F8AE2005F93EA /* emptyView.txt in Resources */,
 				F33904392E49696C00A22EE1 /* spacerFixedSize.txt in Resources */,
 				F3CFBD832E3F8AE2005F93EA /* mdBoldItalic.txt in Resources */,
@@ -2066,6 +2071,7 @@
 				F3CFBDFF2E3F9741005F93EA /* tabView.txt in Resources */,
 				F3C6F66C2E40E46800E94540 /* badges.txt in Resources */,
 				F3CFBD8A2E3F8AE2005F93EA /* sheetBefore15.txt in Resources */,
+				F3B75CE52E72B85A0096E65E /* Liquid Glass.icon in Resources */,
 				F3CFBD8B2E3F8AE2005F93EA /* divider.txt in Resources */,
 				F3CFBD8D2E3F8AE2005F93EA /* popover.txt in Resources */,
 				F3CFBDBF2E3F8E87005F93EA /* link.txt in Resources */,
