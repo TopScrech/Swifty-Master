@@ -1,6 +1,6 @@
 # Swifty Master
 Learn SwiftUI interactively with copiable code snippets
 
-## Contribution
-Feel free to contribute and create/resolve issues!
+## Contribute!
+Feel free to contribute and open/resolve issues!
 I usually review all pull requests within a few hours
