@@ -7,6 +7,11 @@ final class DataModel {
     
     var searchPrompt = ""
     
+    /// The shared singleton data model object
+    static let shared = {
+        DataModel()
+    }()
+    
     var filteredCategories: [Category] {
         if searchPrompt.isEmpty {
             Category.allCases
@@ -18,11 +23,6 @@ final class DataModel {
             }
         }
     }
-    
-    /// The shared singleton data model object
-    static let shared = {
-        DataModel()
-    }()
     
     /// The topics for a given category, sorted by name
     func topics(in category: Category?) -> [Topic] {
