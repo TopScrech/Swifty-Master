@@ -43,8 +43,8 @@ struct FavoriteList: View {
                 }
             }
         }
-        .navigationDestination(for: Topic.self) { topic in
-            TopicDetail(topic)
+        .navigationDestination(for: Topic.self) {
+            TopicDetail($0)
         }
     }
     

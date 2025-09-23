@@ -22,8 +22,8 @@ struct GridTopic: View {
                 .padding()
             }
             .navigationTitle(category.localizedName)
-            .navigationDestination(for: Topic.self) { topic in
-                TopicDetail(topic)
+            .navigationDestination(for: Topic.self) {
+                TopicDetail($0)
             }
         } else {
             Text("Choose a category")

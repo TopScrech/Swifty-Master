@@ -8,44 +8,40 @@ struct StackContentView: View {
         @Bindable var nav = nav
         
         TabView(selection: $store.lastTab) {
-            NavigationStack(path: $nav.topicPath) {
-                StackTopicList()
-                    .navigationTitle("Categories")
-                    .animation(.default, value: store.favoriteTopics)
-                    .scrollIndicators(.never)
-                    .navigationDestination(for: Topic.self) { topic in
-                        TopicDetail(topic)
-                    }
-#if !os(macOS)
-                    .toolbar {
-                        NavigationLink(destination: AppSettings()) {
-                            Image(systemName: "gear")
+            Tab("Topics", systemImage: "list.bullet", value: 0) {
+                NavigationStack(path: $nav.topicPath) {
+                    StackTopicList()
+                        .navigationTitle("Categories")
+                        .animation(.default, value: store.favoriteTopics)
+                        .scrollIndicators(.never)
+                        .navigationDestination(for: Topic.self) {
+                            TopicDetail($0)
                         }
-                    }
+#if !os(macOS)
+                        .toolbar {
+                            NavigationLink(destination: AppSettings()) {
+                                Image(systemName: "gear")
+                            }
+                        }
 #endif
-            }
-            .tag(0)
-            .tabItem {
-                Label("Topics", systemImage: "list.bullet")
+                }
             }
             
-            NavigationStack(path: $nav.favoriteTopicPath) {
-                FavoriteListParent()
+            Tab("Favorites", systemImage: "star", value: 1) {
+                NavigationStack(path: $nav.favoriteTopicPath) {
+                    FavoriteListParent()
 #if !os(macOS)
-                    .toolbar {
-                        NavigationLink(destination: AppSettings()) {
-                            Image(systemName: "gear")
+                        .toolbar {
+                            NavigationLink(destination: AppSettings()) {
+                                Image(systemName: "gear")
+                            }
                         }
-                    }
 #endif
+                }
             }
 #if !os(tvOS)
             .badge(store.favoriteArticlesBadge ? store.favoriteTopics.count : 0)
 #endif
-            .tag(1)
-            .tabItem {
-                Label("Favorites", systemImage: "star")
-            }
         }
     }
 }
