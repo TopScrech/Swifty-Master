@@ -22,7 +22,7 @@ struct NavModeButton: View {
             }
         }
         .help("Choose your navigation experience")
-        .sheet($nav.showNavModePicker) {
+        .fullScreenCover($nav.showNavModePicker) {
             NavModePicker()
         }
     }
