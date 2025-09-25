@@ -67,6 +67,9 @@ struct NavModePicker: View {
                 .ignoresSafeArea()
             }
         }
+#if os(tvOS)
+        .background(.background)
+#endif
 #if os(macOS)
         .toolbar {
             ToolbarItem(placement: .cancellationAction) {
