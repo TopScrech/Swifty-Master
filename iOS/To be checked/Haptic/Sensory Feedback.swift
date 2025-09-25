@@ -18,8 +18,8 @@ struct FeedbackView: View {
     
     var body: some View {
         VStack {
-            ForEach(feedbacks.keys.sorted(), id: \.self) { key in
-                FeedbackButton(key, feedback: feedbacks[key]!)
+            ForEach(feedbacks.keys.sorted(), id: \.self) {
+                FeedbackButton($0, feedback: feedbacks[$0]!)
             }
         }
     }

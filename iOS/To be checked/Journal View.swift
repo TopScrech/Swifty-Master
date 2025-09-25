@@ -24,8 +24,8 @@ struct JournalView: View {
             Text(suggestionTitle ?? "")
             
             List {
-                ForEach(suggestionPhotos, id: \.photo) { item in
-                    AsyncImage(url: item.photo) { image in
+                ForEach(suggestionPhotos, id: \.photo) {
+                    AsyncImage(url: $0.photo) { image in
                         image.image?
                             .resizable ()
                             .aspectRatio(contentMode: .fit)
