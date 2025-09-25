@@ -26,6 +26,16 @@ struct AppSettings: View {
                     Label("Use built-in Safari", systemImage: "safari")
                 }
 #endif
+                Button {
+                    openSettings()
+                } label: {
+                    Label {
+                        Text("Change language")
+                        Text("English, Dutch, Russian")
+                    } icon: {
+                        Image(systemName: "globe")
+                    }
+                }
             }
             
             NavigationLink {
