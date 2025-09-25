@@ -6,18 +6,16 @@ struct NavModeButton: View {
     
     var body: some View {
         @Bindable var nav = nav
-        let icon = store.navMode?.icon ?? ""
-        let navMode = store.navMode?.name ?? ""
         
         Button {
             nav.showNavModePicker = true
         } label: {
             HStack {
-                Label("Navigation mode", systemImage: icon)
+                Label("Navigation mode", systemImage: store.navMode?.icon ?? "")
                 
                 Spacer()
                 
-                Text(navMode)
+                Text(store.navMode?.name ?? "")
                     .secondary()
             }
         }
