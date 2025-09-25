@@ -24,10 +24,12 @@ struct NavModePicker: View {
                 }
                 
                 Text("but first, choose the interface that's comfortable for you")
-                    .fontSize(14)
                     .secondary()
                     .multilineTextAlignment(.center)
+#if !os(tvOS)
                     .frame(width: 300)
+                    .fontSize(14)
+#endif
                 
                 HStack(spacing: 25) {
                     ForEach(NavMode.allCases) { mode in
