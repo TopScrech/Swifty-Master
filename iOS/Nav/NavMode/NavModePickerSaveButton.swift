@@ -1,6 +1,7 @@
 import ScrechKit
 
 struct NavModePickerSaveButton: View {
+    @Environment(NavModel.self) private var nav
     @EnvironmentObject private var store: ValueStore
     @Environment(\.dismiss) private var dismiss
     
@@ -14,6 +15,7 @@ struct NavModePickerSaveButton: View {
         Button("Save") {
             dismiss()
             store.navMode = navMode
+            nav.showNavModePicker = false
         }
         .title2(.semibold, design: .rounded)
 #if os(tvOS)
@@ -31,5 +33,6 @@ struct NavModePickerSaveButton: View {
 
 #Preview {
     NavModePickerSaveButton(.stack)
+        .environment(NavModel())
         .environmentObject(ValueStore())
 }

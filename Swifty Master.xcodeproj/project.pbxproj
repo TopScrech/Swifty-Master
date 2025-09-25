@@ -757,6 +757,7 @@
 		F3E8DD3B2E858B20002E5653 /* NavModePickerSaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8DD392E858B20002E5653 /* NavModePickerSaveButton.swift */; };
 		F3E8DD3C2E858B20002E5653 /* NavModePickerSaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8DD392E858B20002E5653 /* NavModePickerSaveButton.swift */; };
 		F3E8DD3D2E858B20002E5653 /* NavModePickerSaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8DD392E858B20002E5653 /* NavModePickerSaveButton.swift */; };
+		F3E8DD3F2E858D13002E5653 /* NavContainerToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8DD3E2E858D13002E5653 /* NavContainerToolbar.swift */; };
 		F3FCD1E12E51217B003BDE5E /* NavModeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */; };
 		F3FCD1E22E51217B003BDE5E /* NavModeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */; };
 		F3FCD1E32E51217B003BDE5E /* NavModeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */; };
@@ -970,6 +971,7 @@
 		F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectCompactOrRegular.swift; sourceTree = "<group>"; };
 		F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensory Feedback.swift"; sourceTree = "<group>"; };
 		F3E8DD392E858B20002E5653 /* NavModePickerSaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModePickerSaveButton.swift; sourceTree = "<group>"; };
+		F3E8DD3E2E858D13002E5653 /* NavContainerToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavContainerToolbar.swift; sourceTree = "<group>"; };
 		F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModeTile.swift; sourceTree = "<group>"; };
 		F3FCD1E42E5137E7003BDE5E /* tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = tvOS.plist; sourceTree = "<group>"; };
 		F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAppearancePicker.swift; sourceTree = "<group>"; };
@@ -1312,6 +1314,7 @@
 			isa = PBXGroup;
 			children = (
 				F35198ED2E2B9F53004E0F02 /* NavContainer.swift */,
+				F3E8DD3E2E858D13002E5653 /* NavContainerToolbar.swift */,
 				F3FCD1E62E513C28003BDE5E /* Stack */,
 				F3FCD1E72E513C3B003BDE5E /* 2 Columns */,
 				F35198FC2E2B9F53004E0F02 /* Shared */,
@@ -2572,6 +2575,7 @@
 				F3CFBDC82E3F900E005F93EA /* TopicNavigationSplitView.swift in Sources */,
 				F388D19C2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */,
 				F34480332E2CD41100D18E2E /* TopicDarkMode.swift in Sources */,
+				F3E8DD3F2E858D13002E5653 /* NavContainerToolbar.swift in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */

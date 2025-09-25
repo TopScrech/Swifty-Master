@@ -17,26 +17,14 @@ struct StackContentView: View {
                         .navigationDestination(for: Topic.self) {
                             TopicDetail($0)
                         }
-#if !os(macOS)
-                        .toolbar {
-                            NavigationLink(destination: AppSettings()) {
-                                Image(systemName: "gear")
-                            }
-                        }
-#endif
+                        .navContainerToolbar()
                 }
             }
             
             Tab("Favorites", systemImage: "star", value: 1) {
                 NavigationStack(path: $nav.favoriteTopicPath) {
                     FavoriteListParent()
-#if !os(macOS)
-                        .toolbar {
-                            NavigationLink(destination: AppSettings()) {
-                                Image(systemName: "gear")
-                            }
-                        }
-#endif
+                        .navContainerToolbar()
                 }
             }
 #if !os(tvOS)
