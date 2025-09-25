@@ -23,7 +23,7 @@ struct NavModeTile: View {
                     .offset(y: 50)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
             }
-            .background(.ultraThinMaterial)
+            .glassyBackground(16)
             .clipShape(.rect(cornerRadius: 16))
             .overlay {
                 if selection == mode {
