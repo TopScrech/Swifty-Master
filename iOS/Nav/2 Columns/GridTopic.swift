@@ -34,12 +34,14 @@ struct GridTopic: View {
 
 #Preview {
     GridTopic()
+        .darkSchemePreferred()
         .environment(DataModel.shared)
         .environment(NavModel(selectedCategory: .content))
 }
 
 #Preview {
     GridTopic()
+        .darkSchemePreferred()
         .environment(DataModel.shared)
         .environment(NavModel(selectedCategory: nil))
 }

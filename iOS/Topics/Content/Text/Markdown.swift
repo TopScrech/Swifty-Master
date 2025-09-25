@@ -43,4 +43,5 @@ struct Markdown: View {
     NavigationStack {
         Markdown()
     }
+    .darkSchemePreferred()
 }

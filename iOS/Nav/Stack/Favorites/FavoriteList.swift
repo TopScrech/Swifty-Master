@@ -57,6 +57,7 @@ struct FavoriteList: View {
     NavigationStack {
         FavoriteList()
     }
+    .darkSchemePreferred()
     .environmentObject(ValueStore())
     .environment(NavModel())
 }

@@ -25,6 +25,7 @@ struct TwoColumnContentView: View {
 
 #Preview {
     TwoColumnContentView()
+        .darkSchemePreferred()
         .environment(DataModel.shared)
         .environment(NavModel.shared)
 }

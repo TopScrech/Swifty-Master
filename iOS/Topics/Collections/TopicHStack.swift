@@ -12,4 +12,5 @@ struct TopicHStack: View {
 
 #Preview {
     TopicHStack()
+        .darkSchemePreferred()
 }

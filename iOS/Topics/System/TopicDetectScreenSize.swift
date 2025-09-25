@@ -12,4 +12,5 @@ struct TopicDetectScreenSize: View {
 
 #Preview {
     TopicDetectScreenSize()
+        .darkSchemePreferred()
 }

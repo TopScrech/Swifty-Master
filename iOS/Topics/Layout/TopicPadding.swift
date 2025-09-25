@@ -12,4 +12,5 @@ struct TopicPadding: View {
 
 #Preview {
     TopicPadding()
+        .darkSchemePreferred()
 }

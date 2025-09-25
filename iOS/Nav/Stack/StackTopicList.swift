@@ -25,6 +25,7 @@ struct StackTopicList: View {
 
 #Preview {
     StackTopicList()
+        .darkSchemePreferred()
         .environment(DataModel())
         .environment(NavModel())
         .environmentObject(ValueStore())

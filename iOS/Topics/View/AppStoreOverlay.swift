@@ -21,4 +21,5 @@ struct AppStoreOverlay: View {
 
 #Preview {
     AppStoreOverlay()
+        .darkSchemePreferred()
 }

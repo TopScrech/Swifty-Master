@@ -12,4 +12,5 @@ struct TopicList: View {
 
 #Preview {
     TopicList()
+        .darkSchemePreferred()
 }

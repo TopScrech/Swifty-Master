@@ -13,4 +13,5 @@ struct ExampleSheet: View {
 
 #Preview {
     ExampleSheet()
+        .darkSchemePreferred()
 }

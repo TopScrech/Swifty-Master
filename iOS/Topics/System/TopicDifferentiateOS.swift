@@ -14,4 +14,5 @@ struct TopicDifferentiateOS: View {
 
 #Preview {
     TopicDifferentiateOS()
+        .darkSchemePreferred()
 }

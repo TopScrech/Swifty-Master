@@ -33,6 +33,7 @@ struct NavModePickerSaveButton: View {
 
 #Preview {
     NavModePickerSaveButton(.stack)
+        .darkSchemePreferred()
         .environment(NavModel())
         .environmentObject(ValueStore())
 }

@@ -18,4 +18,5 @@ struct TopicEmptyView: View {
 
 #Preview {
     TopicEmptyView()
+        .darkSchemePreferred()
 }

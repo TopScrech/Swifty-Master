@@ -12,4 +12,5 @@ struct TopicGradient: View {
 
 #Preview {
     TopicGradient()
+        .darkSchemePreferred()
 }

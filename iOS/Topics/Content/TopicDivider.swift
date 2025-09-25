@@ -12,4 +12,5 @@ struct TopicDivider: View {
 
 #Preview {
     TopicDivider()
+        .darkSchemePreferred()
 }

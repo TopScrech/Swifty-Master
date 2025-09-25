@@ -12,4 +12,5 @@ struct TopicScrollView: View {
 
 #Preview {
     TopicScrollView()
+        .darkSchemePreferred()
 }

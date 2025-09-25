@@ -23,4 +23,5 @@ struct TopicLowPowerMode: View {
 
 #Preview {
     TopicLowPowerMode()
+        .darkSchemePreferred()
 }

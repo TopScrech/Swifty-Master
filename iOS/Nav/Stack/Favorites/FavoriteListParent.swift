@@ -15,5 +15,6 @@ struct FavoriteListParent: View {
 
 #Preview {
     FavoriteListParent()
+        .darkSchemePreferred()
         .environmentObject(ValueStore())
 }

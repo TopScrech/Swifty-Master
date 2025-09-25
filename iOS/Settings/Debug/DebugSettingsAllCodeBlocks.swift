@@ -36,4 +36,5 @@ struct DebugSettingsAllCodeBlocks: View {
             DebugSettingsAllCodeBlocks()
         }
     }
+    .darkSchemePreferred()
 }

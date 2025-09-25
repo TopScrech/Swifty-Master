@@ -12,4 +12,5 @@ struct TopicNavigationView: View {
 
 #Preview {
     TopicNavigationView()
+        .darkSchemePreferred()
 }

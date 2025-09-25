@@ -19,4 +19,5 @@ struct ImagePickerView: View {
 
 #Preview {
     ImagePickerView()
+        .darkSchemePreferred()
 }

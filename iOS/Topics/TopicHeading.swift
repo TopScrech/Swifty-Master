@@ -16,4 +16,5 @@ struct TopicHeading: View {
 
 //#Preview {
 //    TopicHeading()
+//    .darkSchemePreferred()
 //}

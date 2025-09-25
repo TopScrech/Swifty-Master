@@ -133,5 +133,6 @@ func topicView(_ topic: Topic) -> AnyView? {
 
 #Preview {
     ContentView(.dismiss)
+        .darkSchemePreferred()
         .environmentObject(ValueStore())
 }

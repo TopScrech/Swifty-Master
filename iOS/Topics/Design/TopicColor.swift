@@ -12,4 +12,5 @@ struct TopicColor: View {
 
 #Preview {
     TopicColor()
+        .darkSchemePreferred()
 }

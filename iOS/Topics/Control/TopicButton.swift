@@ -16,4 +16,5 @@ struct TopicButton: View {
 
 #Preview {
     TopicButton()
+        .darkSchemePreferred()
 }

@@ -49,4 +49,5 @@ extension Theme {
 
 #Preview {
     TestView()
+        .darkSchemePreferred()
 }

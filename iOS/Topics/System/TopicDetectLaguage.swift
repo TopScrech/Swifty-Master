@@ -12,4 +12,5 @@ struct TopicDetectLaguage: View {
 
 #Preview {
     TopicDetectLaguage()
+        .darkSchemePreferred()
 }

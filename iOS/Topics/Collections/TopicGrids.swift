@@ -26,4 +26,5 @@ struct TopicGrids: View {
 
 #Preview {
     TopicGrids()
+        .darkSchemePreferred()
 }

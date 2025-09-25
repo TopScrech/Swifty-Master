@@ -22,4 +22,5 @@ struct TopicImage: View {
 
 #Preview {
     TopicImage()
+        .darkSchemePreferred()
 }

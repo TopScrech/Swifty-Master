@@ -74,5 +74,6 @@ struct NavModePicker: View {
 
 #Preview {
     NavModePicker()
+        .darkSchemePreferred()
         .environmentObject(ValueStore())
 }

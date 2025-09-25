@@ -36,6 +36,7 @@ struct TopicToggle: View {
 
 #Preview {
     TopicDetail(.toggle)
+        .darkSchemePreferred()
         .environment(NavModel())
         .environment(DataModel())
         .environmentObject(ValueStore())

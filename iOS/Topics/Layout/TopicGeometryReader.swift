@@ -12,4 +12,5 @@ struct TopicGeometryReader: View {
 
 #Preview {
     TopicGeometryReader()
+        .darkSchemePreferred()
 }

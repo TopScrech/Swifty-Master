@@ -23,4 +23,5 @@ struct TopicAlert: View {
 
 #Preview {
     TopicAlert()
+        .darkSchemePreferred()
 }

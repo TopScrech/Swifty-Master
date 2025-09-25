@@ -12,4 +12,5 @@ struct TopicShape: View {
 
 #Preview {
     TopicShape()
+        .darkSchemePreferred()
 }

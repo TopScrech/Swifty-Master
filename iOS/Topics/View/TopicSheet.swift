@@ -28,4 +28,5 @@ struct TopicSheet: View {
 
 #Preview {
     TopicSheet()
+        .darkSchemePreferred()
 }

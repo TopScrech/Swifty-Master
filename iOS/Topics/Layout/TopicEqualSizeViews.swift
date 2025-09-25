@@ -12,4 +12,5 @@ struct TopicEqualSizeViews: View {
 
 #Preview {
     TopicEqualSizeViews()
+        .darkSchemePreferred()
 }

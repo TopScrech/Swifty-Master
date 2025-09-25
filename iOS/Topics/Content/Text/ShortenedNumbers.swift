@@ -31,4 +31,5 @@ struct ShortenedNumbers: View {
 
 #Preview {
     ShortenedNumbers()
+        .darkSchemePreferred()
 }

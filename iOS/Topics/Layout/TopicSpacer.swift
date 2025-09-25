@@ -22,4 +22,5 @@ struct TopicSpacer: View {
 
 #Preview {
     TopicSpacer()
+        .darkSchemePreferred()
 }

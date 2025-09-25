@@ -41,4 +41,5 @@ struct TopicDisclosureGroup<Content: View>: View {
     TopicDisclosureGroup("Preview", isExpanded: true) {
         Text("Preview")
     }
+    .darkSchemePreferred()
 }

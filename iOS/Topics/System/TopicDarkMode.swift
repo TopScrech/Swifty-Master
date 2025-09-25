@@ -16,4 +16,5 @@ struct TopicDarkMode: View {
 
 #Preview {
     TopicDarkMode()
+        .darkSchemePreferred()
 }

@@ -77,4 +77,5 @@ struct TopicText: View {
 
 #Preview {
     TopicText()
+        .darkSchemePreferred()
 }

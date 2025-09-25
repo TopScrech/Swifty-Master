@@ -30,4 +30,5 @@ struct TopicTextField: View {
 
 #Preview {
     TopicTextField()
+        .darkSchemePreferred()
 }

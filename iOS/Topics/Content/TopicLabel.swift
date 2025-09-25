@@ -12,4 +12,5 @@ struct TopicLabel: View {
 
 #Preview {
     TopicLabel()
+        .darkSchemePreferred()
 }

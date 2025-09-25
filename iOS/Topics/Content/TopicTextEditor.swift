@@ -25,4 +25,5 @@ struct TopicTextEditor: View {
 
 #Preview {
     TopicTextEditor()
+        .darkSchemePreferred()
 }

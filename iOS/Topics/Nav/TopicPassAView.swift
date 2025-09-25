@@ -12,4 +12,5 @@ struct TopicPassAView: View {
 
 #Preview {
     TopicPassAView()
+        .darkSchemePreferred()
 }

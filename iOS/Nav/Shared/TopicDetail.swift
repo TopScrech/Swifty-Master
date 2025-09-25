@@ -89,5 +89,6 @@ private struct Content: View {
 
 #Preview {
     TopicDetail(.text)
+        .darkSchemePreferred()
         .environment(DataModel.shared)
 }

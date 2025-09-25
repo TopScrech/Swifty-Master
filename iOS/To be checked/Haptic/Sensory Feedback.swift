@@ -47,4 +47,5 @@ struct FeedbackButton: View {
 
 #Preview {
     FeedbackView()
+        .darkSchemePreferred()
 }

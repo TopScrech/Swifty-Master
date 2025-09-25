@@ -52,5 +52,6 @@ struct TopicBadges: View {
     ScrollView {
         ContentView(.badges)
     }
+    .darkSchemePreferred()
     .environmentObject(ValueStore())
 }

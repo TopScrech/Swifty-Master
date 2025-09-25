@@ -41,5 +41,6 @@ struct TopicGauge: View {
 #Preview {
     TopicGauge()
         .padding()
+        .darkSchemePreferred()
         .environmentObject(ValueStore())
 }

@@ -81,5 +81,6 @@ struct TopicLinkLabel: View {
 
 #Preview {
     TopicLinkLabel(.spacer)
+        .darkSchemePreferred()
         .environmentObject(ValueStore())
 }

@@ -36,6 +36,7 @@ struct NavModeButton: View {
     List {
         NavModeButton()
     }
+    .darkSchemePreferred()
     .environment(NavModel.shared)
     .environmentObject(ValueStore())
 }

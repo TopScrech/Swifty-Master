@@ -18,4 +18,5 @@ struct TopicMenu: View {
 
 #Preview {
     TopicMenu()
+        .darkSchemePreferred()
 }

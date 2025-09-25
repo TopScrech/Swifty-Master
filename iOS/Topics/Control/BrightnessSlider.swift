@@ -29,4 +29,5 @@ struct BrightnessSlider: View {
 
 #Preview {
     BrightnessSlider()
+        .darkSchemePreferred()
 }

@@ -30,4 +30,5 @@ struct TopicWarning: View {
 #Preview {
     TopicWarning("Preview")
         .padding()
+        .darkSchemePreferred()
 }

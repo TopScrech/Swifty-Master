@@ -36,6 +36,7 @@ struct StackContentView: View {
 
 #Preview {
     StackContentView()
+        .darkSchemePreferred()
         .environment(DataModel.shared)
         .environment(NavModel.shared)
         .environmentObject(ValueStore())

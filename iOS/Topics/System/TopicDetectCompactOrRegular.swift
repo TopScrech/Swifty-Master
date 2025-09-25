@@ -12,4 +12,5 @@ struct TopicDetectCompactOrRegular: View {
 
 #Preview {
     TopicDetectCompactOrRegular()
+        .darkSchemePreferred()
 }

@@ -21,5 +21,6 @@ struct SettingsAppearancePicker: View {
     }
     .formStyle(.grouped)
     .buttonStyle(.plain)
+    .darkSchemePreferred()
     .environmentObject(ValueStore())
 }
