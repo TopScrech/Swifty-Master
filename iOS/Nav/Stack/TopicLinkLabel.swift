@@ -44,7 +44,9 @@ struct TopicLinkLabel: View {
                     .foregroundStyle(.primary)
 #endif
             }
-            
+#if os(tvOS)
+            .labelIconWidth(64)
+#endif
             Spacer()
             
             if !isAvailable {
