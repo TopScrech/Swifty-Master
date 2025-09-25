@@ -6,10 +6,12 @@ struct TopicDocType: Identifiable {
     }
     
     let name: String
+    let details: String?
     let url: String
     
-    init(_ name: String, url: String) {
+    init(_ name: String, details: String? = nil, url: String) {
         self.name = name
+        self.details = details
         self.url = url
     }
 }
@@ -24,8 +26,7 @@ extension Topic {
                 TopicDocType("font(_:)", url: "https://developer.apple.com/documentation/swiftui/text/font(_:)"),
                 TopicDocType("fontDesign(_:)", url: "https://developer.apple.com/documentation/swiftui/text/fontdesign(_:)"),
                 TopicDocType("fontWeight(_:)", url: "https://developer.apple.com/documentation/swiftui/text/fontweight(_:)"),
-                TopicDocType("fontWidth(_:)", url: "https://developer.apple.com/documentation/swiftui/text/fontwidth(_:)"
-                            )
+                TopicDocType("fontWidth(_:)", url: "https://developer.apple.com/documentation/swiftui/text/fontwidth(_:)")
             ]
             
         case .textField:
@@ -33,13 +34,13 @@ extension Topic {
                 TopicDocType("Text Field", url: "https://developer.apple.com/documentation/swiftui/textfield"),
                 TopicDocType("textFieldStyle(_:)", url: "https://developer.apple.com/documentation/swiftui/view/textfieldstyle(_:)"),
                 TopicDocType("keyboardType(_:)", url: "https://developer.apple.com/documentation/swiftui/view/keyboardtype(_:)"),
-                TopicDocType("Building rich SwiftUI text experiences (iOS 26)", url: "https://developer.apple.com/documentation/swiftui/building-rich-swiftui-text-experiences")
+                TopicDocType("Building rich SwiftUI text experiences", details: "iOS 26+", url: "https://developer.apple.com/documentation/swiftui/building-rich-swiftui-text-experiences")
             ]
             
         case .textEditor:
             [
                 TopicDocType("Text Editor", url: "https://developer.apple.com/documentation/swiftui/texteditor"),
-                TopicDocType("init(text:selection:) (iOS 26)", url: "https://developer.apple.com/documentation/swiftui/texteditor/init(text:selection:)")
+                TopicDocType("init(text:selection:)", details: "iOS, macOS, visionOS 26+", url: "https://developer.apple.com/documentation/swiftui/texteditor/init(text:selection:)")
             ]
             
         case .shape:
@@ -48,7 +49,7 @@ extension Topic {
                 TopicDocType("RoundedRectangle", url: "https://developer.apple.com/documentation/swiftui/roundedrectangle"),
                 TopicDocType("Circle", url: "https://developer.apple.com/documentation/swiftui/circle"),
                 TopicDocType("Ellipse", url: "https://developer.apple.com/documentation/swiftui/ellipse"),
-                TopicDocType("ConcentricRectangle (iOS 26+)", url: "https://developer.apple.com/documentation/swiftui/concentricrectangle"),
+                TopicDocType("ConcentricRectangle", details: "iOS, macOS, tvOS, watchOS, visionOS 26+", url: "https://developer.apple.com/documentation/swiftui/concentricrectangle"),
                 TopicDocType("fill(_:style:)", url: "https://developer.apple.com/documentation/swiftui/shapeview/fill(_:style:)")
             ]
             
@@ -67,15 +68,13 @@ extension Topic {
         case .gauges:
             [
                 TopicDocType("Gauge", url: "https://developer.apple.com/documentation/swiftui/gauge"),
-                TopicDocType("gaugeStyle(_:)", url: "https://developer.apple.com/documentation/swiftui/view/gaugestyle(_:)"
-                            )
+                TopicDocType("gaugeStyle(_:)", url: "https://developer.apple.com/documentation/swiftui/view/gaugestyle(_:)")
             ]
             
         case .progressView:
             [
                 TopicDocType("ProgressView", url: "https://developer.apple.com/documentation/swiftui/progressview"),
-                TopicDocType("progressViewStyle(_:)", url: "https://developer.apple.com/documentation/swiftui/view/progressviewstyle(_:)"
-                            )
+                TopicDocType("progressViewStyle(_:)", url: "https://developer.apple.com/documentation/swiftui/view/progressviewstyle(_:)")
             ]
             
         case .button:
@@ -83,7 +82,7 @@ extension Topic {
                 TopicDocType("Button", url: "https://developer.apple.com/documentation/swiftui/button"),
                 TopicDocType("buttonStyle(_:)", url: "https://developer.apple.com/documentation/swiftui/view/buttonstyle(_:)"),
                 TopicDocType("buttonBorderShape(_:)", url: "https://developer.apple.com/documentation/swiftui/view/buttonbordershape(_:)"),
-                TopicDocType("controlSize(_:) (iOS 26+)", url: "https://developer.apple.com/documentation/swiftui/view/controlsize(_:)-rvbn")
+                TopicDocType("controlSize(_:)", details: "iOS, macOS, tvOS, watchOS, visionOS 26+", url: "https://developer.apple.com/documentation/swiftui/view/controlsize(_:)-rvbn")
             ]
             
         case .toggle:
@@ -95,8 +94,7 @@ extension Topic {
         case .menu:
             [
                 TopicDocType("Menu", url: "https://developer.apple.com/documentation/swiftui/menu"),
-                TopicDocType("menuStyle(_:)", url: "https://developer.apple.com/documentation/swiftui/view/menustyle(_:)"
-                            )
+                TopicDocType("menuStyle(_:)", url: "https://developer.apple.com/documentation/swiftui/view/menustyle(_:)")
             ]
             
         case .slider:
@@ -108,8 +106,7 @@ extension Topic {
         case .picker:
             [
                 TopicDocType("Picker", url: "https://developer.apple.com/documentation/swiftui/picker"),
-                TopicDocType("pickerStyle(_:)", url: "https://developer.apple.com/documentation/swiftui/view/pickerstyle(_:)"
-                            )
+                TopicDocType("pickerStyle(_:)", url: "https://developer.apple.com/documentation/swiftui/view/pickerstyle(_:)")
             ]
             
         case .contextMenu:
@@ -136,9 +133,8 @@ extension Topic {
             
         case .badges:
             [
-                TopicDocType("applicationIconBadgeNumber (Deprecated, iOS 2.0 - 16.0)", url: "https://developer.apple.com/documentation/uikit/uiapplication/applicationiconbadgenumber"),
-                TopicDocType("setBadgeCount(_:withCompletionHandler:)", url: "https://developer.apple.com/documentation/UserNotifications/UNUserNotificationCenter/setBadgeCount(_:withCompletionHandler:)"
-                            )
+                TopicDocType("applicationIconBadgeNumber", details: "Deprecated: iOS 2.0-16.0", url: "https://developer.apple.com/documentation/uikit/uiapplication/applicationiconbadgenumber"),
+                TopicDocType("setBadgeCount(_:withCompletionHandler:)", url: "https://developer.apple.com/documentation/UserNotifications/UNUserNotificationCenter/setBadgeCount(_:withCompletionHandler:)")
             ]
             
             // MARK: - Navigation
@@ -146,7 +142,7 @@ extension Topic {
             [TopicDocType("dismiss()", url: "https://developer.apple.com/documentation/swiftui/environmentvalues/dismiss")]
             
         case .navigationView:
-            [TopicDocType("NavigationView (Deprecated)", url: "https://developer.apple.com/documentation/swiftui/navigationview")]
+            [TopicDocType("NavigationView", details: "Deprecated: iOS 13.0–26.1", url: "https://developer.apple.com/documentation/swiftui/navigationview")]
             
         case .navigationStack:
             [TopicDocType("NavigationStack", url: "https://developer.apple.com/documentation/swiftui/navigationstack")]
@@ -194,12 +190,10 @@ extension Topic {
             
             // MARK: - Layout
         case .padding:
-            [TopicDocType("padding(_:_:)", url: "https://developer.apple.com/documentation/swiftui/view/padding(_:_:)"
-                         )]
+            [TopicDocType("padding(_:_:)", url: "https://developer.apple.com/documentation/swiftui/view/padding(_:_:)")]
             
         case .frame:
-            [TopicDocType("frame(width:height:alignment:)", url: "https://developer.apple.com/documentation/swiftui/view/frame(width:height:alignment:)"
-                         )]
+            [TopicDocType("frame(width:height:alignment:)", url: "https://developer.apple.com/documentation/swiftui/view/frame(width:height:alignment:)")]
             
         case .geometryReader:
             [TopicDocType("GeometryReader", url: "https://developer.apple.com/documentation/swiftui/geometryreader")]

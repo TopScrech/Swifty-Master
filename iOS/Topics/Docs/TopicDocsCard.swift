@@ -19,13 +19,21 @@ struct TopicDocsCard: View {
             HStack(spacing: 12) {
                 TopicDocsCardImage(doc.url)
                 
-                Text(doc.name)
-                    .bold()
-                    .rounded()
-                    .lineLimit(2)
-                    .foregroundStyle(.foreground)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .multilineTextAlignment(.leading)
+                VStack(alignment: .leading) {
+                    Text(doc.name)
+                        .bold()
+                        .rounded()
+                        .lineLimit(2)
+                        .foregroundStyle(.foreground)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .multilineTextAlignment(.leading)
+                    
+                    if let details = doc.details {
+                        Text(details)
+                            .footnote()
+                            .secondary()
+                    }
+                }
             }
         }
         .buttonStyle(.plain)
