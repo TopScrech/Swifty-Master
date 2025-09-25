@@ -44,7 +44,11 @@ struct NavModePicker: View {
                     store.navMode = navMode
                 }
                 .title2(.semibold, design: .rounded)
+#if os(tvOS)
+                .foregroundStyle(.black)
+#else
                 .foregroundStyle(.background)
+#endif
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 10)
                 .background(.primary, in: .rect(cornerRadius: 16))
