@@ -31,29 +31,15 @@ struct NavModePicker: View {
                     .fontSize(14)
 #endif
                 HStack(spacing: 25) {
-                    ForEach(NavMode.allCases) { mode in
-                        NavModeTile($navMode, mode: mode)
+                    ForEach(NavMode.allCases) {
+                        NavModeTile($navMode, mode: $0)
                     }
                 }
                 .padding(.top)
                 
                 Spacer()
                 
-                Button("Save") {
-                    dismiss()
-                    store.navMode = navMode
-                }
-                .title2(.semibold, design: .rounded)
-#if os(tvOS)
-                .foregroundStyle(.black)
-#else
-                .foregroundStyle(.background)
-#endif
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 10)
-                .background(.primary, in: .rect(cornerRadius: 16))
-                .disabled(navMode == nil)
-                .buttonStyle(.plain)
+                NavModePickerSaveButton(navMode)
             }
             .scenePadding()
             .background {
