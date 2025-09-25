@@ -20,9 +20,15 @@ struct NavModeButton: View {
             }
         }
         .help("Choose your navigation experience")
+#if os(macOS)
+        .sheet($nav.showNavModePicker) {
+            NavModePicker()
+        }
+#else
         .fullScreenCover($nav.showNavModePicker) {
             NavModePicker()
         }
+#endif
     }
 }
 

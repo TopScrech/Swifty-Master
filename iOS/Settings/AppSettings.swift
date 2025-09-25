@@ -26,6 +26,7 @@ struct AppSettings: View {
                     Label("Use built-in Safari", systemImage: "safari")
                 }
 #endif
+#if !os(macOS)
                 Button {
                     openSettings()
                 } label: {
@@ -36,6 +37,7 @@ struct AppSettings: View {
                         Image(systemName: "globe")
                     }
                 }
+#endif
             }
             
             NavigationLink {
