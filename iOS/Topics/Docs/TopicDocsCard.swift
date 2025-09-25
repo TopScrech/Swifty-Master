@@ -51,6 +51,13 @@ struct TopicDocsCard: View {
                 
                 ShareLink(item: url)
             }
+            
+            if let downloadURLString = doc.downloadURL,
+               let downloadURL = URL(string: downloadURLString) {
+                Link(destination: downloadURL) {
+                    Label("Download linked resource", systemImage: "square.and.arrow.down")
+                }
+            }
         }
 #endif
     }

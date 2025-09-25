@@ -8,11 +8,18 @@ struct TopicDocType: Identifiable {
     let name: String
     let details: String?
     let url: String
+    let downloadURL: String?
     
-    init(_ name: String, details: String? = nil, url: String) {
+    init(
+        _ name: String,
+        details: String? = nil,
+        url: String,
+        downloadURL: String? = nil
+    ) {
         self.name = name
         self.details = details
         self.url = url
+        self.downloadURL = downloadURL
     }
 }
 
@@ -34,7 +41,7 @@ extension Topic {
                 TopicDocType("Text Field", url: "https://developer.apple.com/documentation/swiftui/textfield"),
                 TopicDocType("textFieldStyle(_:)", url: "https://developer.apple.com/documentation/swiftui/view/textfieldstyle(_:)"),
                 TopicDocType("keyboardType(_:)", url: "https://developer.apple.com/documentation/swiftui/view/keyboardtype(_:)"),
-                TopicDocType("Building rich SwiftUI text experiences", details: "iOS 26+", url: "https://developer.apple.com/documentation/swiftui/building-rich-swiftui-text-experiences")
+                TopicDocType("Building rich SwiftUI text experiences", details: "iOS 26+", url: "https://developer.apple.com/documentation/swiftui/building-rich-swiftui-text-experiences", downloadURL: "https://docs-assets.developer.apple.com/published/af5124237a05/BuildingRichSwiftUITextExperiences.zip")
             ]
             
         case .textEditor:
