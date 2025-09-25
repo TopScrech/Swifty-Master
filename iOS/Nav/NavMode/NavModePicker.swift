@@ -30,13 +30,9 @@ struct NavModePicker: View {
                     .frame(width: 300)
                     .fontSize(14)
 #endif
-                
                 HStack(spacing: 25) {
                     ForEach(NavMode.allCases) { mode in
-                        NavModeTile(
-                            selection: $navMode,
-                            mode: mode
-                        )
+                        NavModeTile($navMode, mode: mode)
                     }
                 }
                 .padding(.top)

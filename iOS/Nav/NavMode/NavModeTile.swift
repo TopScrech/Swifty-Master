@@ -1,8 +1,13 @@
 import ScrechKit
 
 struct NavModeTile: View {
-    @Binding var selection: NavMode?
-    let mode: NavMode
+    @Binding private var selection: NavMode?
+    private let mode: NavMode
+    
+    init(_ selection: Binding<NavMode?>, mode: NavMode) {
+        _selection = selection
+        self.mode = mode
+    }
     
     var body: some View {
         Button {
