@@ -757,6 +757,7 @@
 		F3F5AD6E2E885EA0007AD97D /* NavContainerToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8DD3E2E858D13002E5653 /* NavContainerToolbar.swift */; };
 		F3F5AD6F2E885ED7007AD97D /* NavContainerToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8DD3E2E858D13002E5653 /* NavContainerToolbar.swift */; };
 		F3F5AD702E885ED7007AD97D /* NavContainerToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8DD3E2E858D13002E5653 /* NavContainerToolbar.swift */; };
+		F3F5AD722E886017007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD712E886017007AD97D /* Appearance */; };
 		F3FCD1E12E51217B003BDE5E /* NavModeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */; };
 		F3FCD1E22E51217B003BDE5E /* NavModeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */; };
 		F3FCD1E32E51217B003BDE5E /* NavModeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */; };
@@ -983,6 +984,7 @@
 		F325E3B02E5EBC760008928E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				F3F5AD722E886017007AD97D /* Appearance in Frameworks */,
 				F325E3BF2E5EBC8B0008928E /* ScrechKit in Frameworks */,
 			);
 		};
@@ -1684,6 +1686,7 @@
 			name = macOS;
 			packageProductDependencies = (
 				F325E3BE2E5EBC8B0008928E /* ScrechKit */,
+				F3F5AD712E886017007AD97D /* Appearance */,
 			);
 			productName = "Master SwiftUI";
 			productReference = F325E3B32E5EBC760008928E /* Swifty Master.app */;
@@ -3114,6 +3117,11 @@
 			productName = ScrechKit;
 		};
 		F3F5AD6C2E885E51007AD97D /* Appearance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3F5AD6B2E885E51007AD97D /* XCRemoteSwiftPackageReference "Appearance" */;
+			productName = Appearance;
+		};
+		F3F5AD712E886017007AD97D /* Appearance */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F3F5AD6B2E885E51007AD97D /* XCRemoteSwiftPackageReference "Appearance" */;
 			productName = Appearance;

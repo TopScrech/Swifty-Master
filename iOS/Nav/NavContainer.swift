@@ -1,5 +1,9 @@
 import ScrechKit
 
+#if canImport(Appearance)
+import Appearance
+#endif
+
 struct NavContainer: View {
     @Environment(NavModel.self) private var nav
     private var dataModel: DataModel = .shared
