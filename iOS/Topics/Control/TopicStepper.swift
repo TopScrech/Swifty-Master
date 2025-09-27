@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicStepper: View {
     @State private var stepperValue = 0

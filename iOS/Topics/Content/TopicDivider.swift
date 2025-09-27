@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicDivider: View {
     var body: some View {

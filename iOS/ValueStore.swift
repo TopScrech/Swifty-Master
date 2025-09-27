@@ -4,9 +4,15 @@ import SwiftUI
 import Combine
 #endif
 
+#if canImport(Appearance)
+import Appearance
+#endif
+
 final class ValueStore: ObservableObject {
+#if canImport(Appearance)
+    @AppStorage("appearance") var appearance: Appearance = .system
+#endif
 #if !os(visionOS)
-    @AppStorage("appearance") var appearance: ColorTheme = .system
     @AppStorage("built_in_browser") var builtInBrowser = true
 #endif
     @AppStorage("favorite_topics") var favoriteTopics: [Topic] = []

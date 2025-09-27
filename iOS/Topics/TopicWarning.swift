@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicWarning: View {
     private let warning: LocalizedStringKey

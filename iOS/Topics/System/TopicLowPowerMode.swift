@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicLowPowerMode: View {
     private let lowPowerMode = ProcessInfo.processInfo.isLowPowerModeEnabled

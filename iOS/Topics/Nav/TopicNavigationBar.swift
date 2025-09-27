@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicNavigationBar: View {
     var body: some View {

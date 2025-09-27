@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicScrollView: View {
     var body: some View {

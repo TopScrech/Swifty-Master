@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicGauge: View {
     var body: some View {

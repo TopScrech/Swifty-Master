@@ -96,12 +96,10 @@
 		F325E3CF2E5EBD3C0008928E /* TopicRelated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E8B212E4162EF00B05370 /* TopicRelated.swift */; };
 		F325E3D02E5EBD3C0008928E /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EB2E2B9F53004E0F02 /* Topic.swift */; };
 		F325E3D12E5EBD480008928E /* NavMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E82E2B9F53004E0F02 /* NavMode.swift */; };
-		F325E3D22E5EBD5F0008928E /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE99D82E2F861C00D70249 /* ColorTheme.swift */; };
 		F325E3D32E5EBE740008928E /* DebugSettingsAllCodeBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E2DD2E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift */; };
 		F325E3D42E5EBE740008928E /* DebugSettingsFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E2E12E5EA5A70008928E /* DebugSettingsFavorites.swift */; };
 		F325E3D62E5EBE780008928E /* NavModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F32E2B9F53004E0F02 /* NavModeButton.swift */; };
 		F325E3D72E5EBE780008928E /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480462E2D5D1900D18E2E /* AppSettings.swift */; };
-		F325E3D82E5EBE780008928E /* SettingsAppearancePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */; };
 		F325E3DA2E5EBE8D0008928E /* CodeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351984D2E2AF689004E0F02 /* CodeBlock.swift */; };
 		F325E3DB2E5EBE8D0008928E /* AttributedCodeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198C02E2B7E34004E0F02 /* AttributedCodeString.swift */; };
 		F325E3DC2E5EBE9F0008928E /* NavModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198EA2E2B9F53004E0F02 /* NavModel.swift */; };
@@ -370,7 +368,6 @@
 		F380A21B2E4AAAF900157F67 /* NavModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F32E2B9F53004E0F02 /* NavModeButton.swift */; };
 		F380A21C2E4AAAF900157F67 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480462E2D5D1900D18E2E /* AppSettings.swift */; };
 		F380A21D2E4AAAF900157F67 /* DebugSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C92B152E48AF4300203691 /* DebugSettings.swift */; };
-		F380A21E2E4AAAF900157F67 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE99D82E2F861C00D70249 /* ColorTheme.swift */; };
 		F380A2202E4AAB5A00157F67 /* NavMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198E82E2B9F53004E0F02 /* NavMode.swift */; };
 		F380A2222E4AAB5A00157F67 /* NavModePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198F42E2B9F53004E0F02 /* NavModePicker.swift */; };
 		F380A2232E4AAB6100157F67 /* TopicTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198FB2E2B9F53004E0F02 /* TopicTile.swift */; };
@@ -545,8 +542,6 @@
 		F399A4B12E3DC544008BED17 /* iOS 18 support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399A4AF2E3DC544008BED17 /* iOS 18 support.swift */; };
 		F3ADA61A2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */; };
 		F3ADA61B2D9C04C800F2DAA6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */; };
-		F3AE99D92E2F861C00D70249 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE99D82E2F861C00D70249 /* ColorTheme.swift */; };
-		F3AE99DA2E2F861C00D70249 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE99D82E2F861C00D70249 /* ColorTheme.swift */; };
 		F3B75CE22E72B7D90096E65E /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F3B75CE12E72B7D90096E65E /* AppIcon.icon */; };
 		F3B75CE32E72B7D90096E65E /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F3B75CE12E72B7D90096E65E /* AppIcon.icon */; };
 		F3B75CE52E72B85A0096E65E /* Liquid Glass.icon in Resources */ = {isa = PBXBuildFile; fileRef = F3B75CE42E72B85A0096E65E /* Liquid Glass.icon */; };
@@ -758,11 +753,13 @@
 		F3E8DD3C2E858B20002E5653 /* NavModePickerSaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8DD392E858B20002E5653 /* NavModePickerSaveButton.swift */; };
 		F3E8DD3D2E858B20002E5653 /* NavModePickerSaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8DD392E858B20002E5653 /* NavModePickerSaveButton.swift */; };
 		F3E8DD3F2E858D13002E5653 /* NavContainerToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8DD3E2E858D13002E5653 /* NavContainerToolbar.swift */; };
+		F3F5AD6D2E885E51007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD6C2E885E51007AD97D /* Appearance */; };
+		F3F5AD6E2E885EA0007AD97D /* NavContainerToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8DD3E2E858D13002E5653 /* NavContainerToolbar.swift */; };
+		F3F5AD6F2E885ED7007AD97D /* NavContainerToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8DD3E2E858D13002E5653 /* NavContainerToolbar.swift */; };
+		F3F5AD702E885ED7007AD97D /* NavContainerToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8DD3E2E858D13002E5653 /* NavContainerToolbar.swift */; };
 		F3FCD1E12E51217B003BDE5E /* NavModeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */; };
 		F3FCD1E22E51217B003BDE5E /* NavModeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */; };
 		F3FCD1E32E51217B003BDE5E /* NavModeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */; };
-		F3FCD1E92E51B69B003BDE5E /* SettingsAppearancePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */; };
-		F3FCD1EB2E51B69B003BDE5E /* SettingsAppearancePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -860,7 +857,6 @@
 		F399A4AB2E3D52A7008BED17 /* highlightOccurrences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = highlightOccurrences.swift; sourceTree = "<group>"; };
 		F399A4AF2E3DC544008BED17 /* iOS 18 support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOS 18 support.swift"; sourceTree = "<group>"; };
 		F3ADA6192D9C04C800F2DAA6 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		F3AE99D82E2F861C00D70249 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
 		F3B75CE12E72B7D90096E65E /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		F3B75CE42E72B85A0096E65E /* Liquid Glass.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = "Liquid Glass.icon"; sourceTree = "<group>"; };
 		F3BBD9DE2AEECD3400A9F7E7 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -974,7 +970,6 @@
 		F3E8DD3E2E858D13002E5653 /* NavContainerToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavContainerToolbar.swift; sourceTree = "<group>"; };
 		F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModeTile.swift; sourceTree = "<group>"; };
 		F3FCD1E42E5137E7003BDE5E /* tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = tvOS.plist; sourceTree = "<group>"; };
-		F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAppearancePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1002,6 +997,7 @@
 			files = (
 				F3BBD9F72AEECE4000A9F7E7 /* ScrechKit in Frameworks */,
 				F31617CA2E41D87A00131D26 /* SafariCover in Frameworks */,
+				F3F5AD6D2E885E51007AD97D /* Appearance in Frameworks */,
 				F33E8B262E416BD700B05370 /* CodeEditorView in Frameworks */,
 			);
 		};
@@ -1040,8 +1036,6 @@
 			children = (
 				F34480462E2D5D1900D18E2E /* AppSettings.swift */,
 				F35198F32E2B9F53004E0F02 /* NavModeButton.swift */,
-				F3FCD1E82E51B69B003BDE5E /* SettingsAppearancePicker.swift */,
-				F3AE99D82E2F861C00D70249 /* ColorTheme.swift */,
 				F325E2DC2E5EA5680008928E /* Debug */,
 			);
 			path = Settings;
@@ -1728,6 +1722,7 @@
 				F3BBD9F62AEECE4000A9F7E7 /* ScrechKit */,
 				F33E8B252E416BD700B05370 /* CodeEditorView */,
 				F31617C92E41D87A00131D26 /* SafariCover */,
+				F3F5AD6C2E885E51007AD97D /* Appearance */,
 			);
 			productName = "Everything SwiftUI";
 			productReference = F3BBD9DE2AEECD3400A9F7E7 /* iOS.app */;
@@ -1771,6 +1766,7 @@
 				F3BBD9F52AEECE4000A9F7E7 /* XCRemoteSwiftPackageReference "ScrechKit" */,
 				F33E8B242E416BD700B05370 /* XCRemoteSwiftPackageReference "CodeEditorView" */,
 				F31617C82E41D87A00131D26 /* XCRemoteSwiftPackageReference "SafariCover" */,
+				F3F5AD6B2E885E51007AD97D /* XCRemoteSwiftPackageReference "Appearance" */,
 			);
 			preferredProjectObjectVersion = 90;
 			productRefGroup = F3BBD9DF2AEECD3400A9F7E7 /* Products */;
@@ -2192,7 +2188,6 @@
 				F3CFBDEE2E3F95B7005F93EA /* TopicZStack.swift in Sources */,
 				F35C358D2E440FD900622147 /* ShortenedNumbers.swift in Sources */,
 				F33E8B192E41495100B05370 /* ContentViewNavButtons.swift in Sources */,
-				F3AE99DA2E2F861C00D70249 /* ColorTheme.swift in Sources */,
 				F344803A2E2D225A00D18E2E /* TopicSpacer.swift in Sources */,
 				F33E8B1D2E4162C100B05370 /* TopicDoc.swift in Sources */,
 				F35199052E2B9F53004E0F02 /* NavContainer.swift in Sources */,
@@ -2211,6 +2206,7 @@
 				F314C8392E2E53A100F63B6A /* TopicContextMenu.swift in Sources */,
 				F34480412E2D4E0500D18E2E /* TopicActionButton.swift in Sources */,
 				F3CFBDE82E3F959D005F93EA /* TopicVStack.swift in Sources */,
+				F3F5AD6E2E885EA0007AD97D /* NavContainerToolbar.swift in Sources */,
 				F3C92B1C2E48BC4600203691 /* ExampleSheet.swift in Sources */,
 				F314C80D2E2E486200F63B6A /* TopicTextEditor.swift in Sources */,
 				F3CFBDC92E3F900E005F93EA /* TopicNavigationSplitView.swift in Sources */,
@@ -2332,7 +2328,6 @@
 				F3E8DD3C2E858B20002E5653 /* NavModePickerSaveButton.swift in Sources */,
 				F325E3D62E5EBE780008928E /* NavModeButton.swift in Sources */,
 				F325E3D72E5EBE780008928E /* AppSettings.swift in Sources */,
-				F325E3D82E5EBE780008928E /* SettingsAppearancePicker.swift in Sources */,
 				F325E3E92E5EBEB80008928E /* NavContainer.swift in Sources */,
 				F325E3D02E5EBD3C0008928E /* Topic.swift in Sources */,
 				F325E3E52E5EBEB30008928E /* StackContentView.swift in Sources */,
@@ -2342,9 +2337,9 @@
 				F325E3E72E5EBEB30008928E /* TopicLinkLabel.swift in Sources */,
 				F325E3E82E5EBEB30008928E /* StackTopicList.swift in Sources */,
 				F326A4102E69A2600092F514 /* removingLastLine.swift in Sources */,
-				F325E3D22E5EBD5F0008928E /* ColorTheme.swift in Sources */,
 				F380E0C62E670E84008C56F8 /* TopicSwipeActionsModifier.swift in Sources */,
 				F325E3D12E5EBD480008928E /* NavMode.swift in Sources */,
+				F3F5AD702E885ED7007AD97D /* NavContainerToolbar.swift in Sources */,
 				F325E3C72E5EBCDE0008928E /* SwiftyMaster.swift in Sources */,
 			);
 		};
@@ -2365,7 +2360,6 @@
 				F380A21B2E4AAAF900157F67 /* NavModeButton.swift in Sources */,
 				F380A21C2E4AAAF900157F67 /* AppSettings.swift in Sources */,
 				F380A21D2E4AAAF900157F67 /* DebugSettings.swift in Sources */,
-				F380A21E2E4AAAF900157F67 /* ColorTheme.swift in Sources */,
 				F380A1A32E4AAA2700157F67 /* Gauge Card.swift in Sources */,
 				F380A1A42E4AAA2700157F67 /* TopicProgressView.swift in Sources */,
 				F380A1A62E4AAA2700157F67 /* TopicStepper.swift in Sources */,
@@ -2439,9 +2433,9 @@
 				F380A1C52E4AAA4B00157F67 /* TopicDarkMode.swift in Sources */,
 				F380A1C62E4AAA4B00157F67 /* TopicDetectCompactOrRegular.swift in Sources */,
 				F380A1C72E4AAA4B00157F67 /* TopicDetectOSVersion.swift in Sources */,
+				F3F5AD6F2E885ED7007AD97D /* NavContainerToolbar.swift in Sources */,
 				F380A1C82E4AAA4B00157F67 /* TopicDetectLaguage.swift in Sources */,
 				F380A1C92E4AAA4B00157F67 /* TopicDetectScreenSize.swift in Sources */,
-				F3FCD1EB2E51B69B003BDE5E /* SettingsAppearancePicker.swift in Sources */,
 				F380A18D2E4AAA1A00157F67 /* TopicHeading.swift in Sources */,
 				F380A1802E4AAA1500157F67 /* TopicDoc.swift in Sources */,
 				F380A1C12E4AAA4400157F67 /* TopicColor.swift in Sources */,
@@ -2485,7 +2479,6 @@
 				F35199142E2B9F53004E0F02 /* TopicDetail.swift in Sources */,
 				F3CFBE262E3F9B16005F93EA /* TopicFrame.swift in Sources */,
 				F314C83B2E2E540800F63B6A /* TopicSheet.swift in Sources */,
-				F3AE99D92E2F861C00D70249 /* ColorTheme.swift in Sources */,
 				F325E2E32E5EA5A70008928E /* DebugSettingsFavorites.swift in Sources */,
 				F314C7F72E2E1E7900F63B6A /* TopicText.swift in Sources */,
 				F3C6F6752E40E57B00E94540 /* TopicProgressView.swift in Sources */,
@@ -2516,7 +2509,6 @@
 				F314C8062E2E2D4A00F63B6A /* FontDesignItem.swift in Sources */,
 				F3CFBDCB2E3F900F005F93EA /* TopicNavigationBar.swift in Sources */,
 				F326A4112E69A2600092F514 /* removingLastLine.swift in Sources */,
-				F3FCD1E92E51B69B003BDE5E /* SettingsAppearancePicker.swift in Sources */,
 				F34480452E2D548F00D18E2E /* TopicToggle.swift in Sources */,
 				F35199212E2B9F53004E0F02 /* StackContentView.swift in Sources */,
 				F380E0D62E672A85008C56F8 /* FavoriteListParent.swift in Sources */,
@@ -3075,6 +3067,14 @@
 				kind = branch;
 			};
 		};
+		F3F5AD6B2E885E51007AD97D /* XCRemoteSwiftPackageReference "Appearance" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/Appearance";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -3112,6 +3112,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F3BBD9F52AEECE4000A9F7E7 /* XCRemoteSwiftPackageReference "ScrechKit" */;
 			productName = ScrechKit;
+		};
+		F3F5AD6C2E885E51007AD97D /* Appearance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3F5AD6B2E885E51007AD97D /* XCRemoteSwiftPackageReference "Appearance" */;
+			productName = Appearance;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

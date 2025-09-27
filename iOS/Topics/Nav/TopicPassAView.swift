@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicPassAView: View {
     var body: some View {

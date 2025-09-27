@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct FavoriteListParent: View {
     @EnvironmentObject private var store: ValueStore

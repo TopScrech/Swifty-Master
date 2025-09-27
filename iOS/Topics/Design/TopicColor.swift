@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicColor: View {
     var body: some View {

@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct ContentView: View {
     @EnvironmentObject private var store: ValueStore

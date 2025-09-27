@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct NavContainer: View {
     @Environment(NavModel.self) private var nav
@@ -30,7 +30,7 @@ struct NavContainer: View {
             }
         }
         .environment(dataModel)
-#if !os(visionOS)
+#if canImport(Appearance)
         .preferredColorScheme(store.appearance.scheme)
 #endif
 #if os(iOS) || os(visionOS)

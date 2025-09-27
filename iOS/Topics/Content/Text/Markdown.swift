@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct Markdown: View {
     var body: some View {

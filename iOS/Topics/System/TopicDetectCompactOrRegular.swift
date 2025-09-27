@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicDetectCompactOrRegular: View {
     var body: some View {

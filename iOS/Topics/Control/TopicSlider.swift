@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicSlider: View {
     var body: some View {

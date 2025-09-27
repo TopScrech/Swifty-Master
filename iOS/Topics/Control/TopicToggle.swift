@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicToggle: View {
     @State private var isOn = true

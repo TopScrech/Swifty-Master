@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicDarkMode: View {
     var body: some View {

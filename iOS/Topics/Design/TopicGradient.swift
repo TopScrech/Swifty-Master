@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicGradient: View {
     var body: some View {

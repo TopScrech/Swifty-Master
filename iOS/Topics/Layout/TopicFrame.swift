@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicFrame: View {
     var body: some View {
