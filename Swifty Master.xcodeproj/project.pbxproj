@@ -77,9 +77,9 @@
 		F3202CBB2D5596380030B3CC /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3202CBA2D5596380030B3CC /* ScrechKit */; };
 		F3202CC02D5597400030B3CC /* AppStoreOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3202C932D55952F0030B3CC /* AppStoreOverlay.swift */; };
 		F3202CC22D5597490030B3CC /* SwiftyMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E12AEECD3400A9F7E7 /* SwiftyMaster.swift */; };
-		F3202CC52D55977A0030B3CC /* Image Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9FA2AEED4CE00A9F7E7 /* Image Picker.swift */; };
-		F3202CC62D55977A0030B3CC /* Image Picker 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37916ED2AF14A7A00B880AF /* Image Picker 2.swift */; };
-		F3202CC72D55977A0030B3CC /* Image Picker View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9F82AEED4BC00A9F7E7 /* Image Picker View.swift */; };
+		F3202CC52D55977A0030B3CC /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9FA2AEED4CE00A9F7E7 /* ImagePicker.swift */; };
+		F3202CC62D55977A0030B3CC /* Image_Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37916ED2AF14A7A00B880AF /* Image_Picker.swift */; };
+		F3202CC72D55977A0030B3CC /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9F82AEED4BC00A9F7E7 /* ImagePickerView.swift */; };
 		F325E2DE2E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E2DD2E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift */; };
 		F325E2DF2E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E2DD2E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift */; };
 		F325E2E02E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325E2DD2E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift */; };
@@ -127,7 +127,7 @@
 		F326A40F2E69A2600092F514 /* removingLastLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A40D2E69A2600092F514 /* removingLastLine.swift */; };
 		F326A4102E69A2600092F514 /* removingLastLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A40D2E69A2600092F514 /* removingLastLine.swift */; };
 		F326A4112E69A2600092F514 /* removingLastLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A40D2E69A2600092F514 /* removingLastLine.swift */; };
-		F32E88D52AF856E400959D49 /* Journal View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32E88D42AF856E400959D49 /* Journal View.swift */; };
+		F32E88D52AF856E400959D49 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32E88D42AF856E400959D49 /* JournalView.swift */; };
 		F330586C2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */; };
 		F330586D2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */; };
 		F330586F2E3A9B250099CEB7 /* TopicDocsCardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */; };
@@ -166,8 +166,8 @@
 		F34480452E2D548F00D18E2E /* TopicToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480432E2D548F00D18E2E /* TopicToggle.swift */; };
 		F34480472E2D5D1900D18E2E /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480462E2D5D1900D18E2E /* AppSettings.swift */; };
 		F34480482E2D5D1900D18E2E /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480462E2D5D1900D18E2E /* AppSettings.swift */; };
-		F35198472E2AECAA004E0F02 /* Gauge Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198462E2AECAA004E0F02 /* Gauge Card.swift */; };
-		F35198482E2AECAA004E0F02 /* Gauge Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198462E2AECAA004E0F02 /* Gauge Card.swift */; };
+		F35198472E2AECAA004E0F02 /* GaugeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198462E2AECAA004E0F02 /* GaugeCard.swift */; };
+		F35198482E2AECAA004E0F02 /* GaugeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198462E2AECAA004E0F02 /* GaugeCard.swift */; };
 		F351984E2E2AF689004E0F02 /* CodeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351984D2E2AF689004E0F02 /* CodeBlock.swift */; };
 		F351984F2E2AF689004E0F02 /* CodeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351984D2E2AF689004E0F02 /* CodeBlock.swift */; };
 		F35198C12E2B7E34004E0F02 /* AttributedCodeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198C02E2B7E34004E0F02 /* AttributedCodeString.swift */; };
@@ -204,7 +204,7 @@
 		F35C358D2E440FD900622147 /* ShortenedNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35C358B2E440FD900622147 /* ShortenedNumbers.swift */; };
 		F35C35902E44125100622147 /* textShortenedNumbers.txt in Resources */ = {isa = PBXBuildFile; fileRef = F35C358F2E44125100622147 /* textShortenedNumbers.txt */; };
 		F35C35912E44125100622147 /* textShortenedNumbers.txt in Resources */ = {isa = PBXBuildFile; fileRef = F35C358F2E44125100622147 /* textShortenedNumbers.txt */; };
-		F37916EE2AF14A7A00B880AF /* Image Picker 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37916ED2AF14A7A00B880AF /* Image Picker 2.swift */; };
+		F37916EE2AF14A7A00B880AF /* Image_Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37916ED2AF14A7A00B880AF /* Image_Picker.swift */; };
 		F37D9DA72E488D6D008ECB6D /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = F37D9DA62E488D6D008ECB6D /* text.txt */; };
 		F37D9DA82E488D6D008ECB6D /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = F37D9DA62E488D6D008ECB6D /* text.txt */; };
 		F380A1712E4AA1EE00157F67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F380A16D2E4AA1EE00157F67 /* Assets.xcassets */; };
@@ -249,7 +249,7 @@
 		F380A19F2E4AAA2700157F67 /* TopicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8342E2E538200F63B6A /* TopicButton.swift */; };
 		F380A1A02E4AAA2700157F67 /* TopicPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C84F2E2E657400F63B6A /* TopicPicker.swift */; };
 		F380A1A12E4AAA2700157F67 /* TopicToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480432E2D548F00D18E2E /* TopicToggle.swift */; };
-		F380A1A32E4AAA2700157F67 /* Gauge Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198462E2AECAA004E0F02 /* Gauge Card.swift */; };
+		F380A1A32E4AAA2700157F67 /* GaugeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198462E2AECAA004E0F02 /* GaugeCard.swift */; };
 		F380A1A42E4AAA2700157F67 /* TopicProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6F6742E40E57B00E94540 /* TopicProgressView.swift */; };
 		F380A1A62E4AAA2700157F67 /* TopicStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C84C2E2E657300F63B6A /* TopicStepper.swift */; };
 		F380A1A72E4AAA2D00157F67 /* TopicNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBDCA2E3F900F005F93EA /* TopicNavigationBar.swift */; };
@@ -485,7 +485,7 @@
 		F380E0962E66FBB7008C56F8 /* TopicToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34480432E2D548F00D18E2E /* TopicToggle.swift */; };
 		F380E0972E66FBB7008C56F8 /* TopicMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8312E2E536F00F63B6A /* TopicMenu.swift */; };
 		F380E0982E66FBB7008C56F8 /* TopicPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C84F2E2E657400F63B6A /* TopicPicker.swift */; };
-		F380E0992E66FBB7008C56F8 /* Gauge Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198462E2AECAA004E0F02 /* Gauge Card.swift */; };
+		F380E0992E66FBB7008C56F8 /* GaugeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35198462E2AECAA004E0F02 /* GaugeCard.swift */; };
 		F380E09C2E66FBB7008C56F8 /* TopicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C8342E2E538200F63B6A /* TopicButton.swift */; };
 		F380E09D2E66FBB7008C56F8 /* TopicGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6F6712E40E57A00E94540 /* TopicGauge.swift */; };
 		F380E09E2E66FBB7008C56F8 /* TopicProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6F6742E40E57B00E94540 /* TopicProgressView.swift */; };
@@ -547,10 +547,10 @@
 		F3B75CE52E72B85A0096E65E /* Liquid Glass.icon in Resources */ = {isa = PBXBuildFile; fileRef = F3B75CE42E72B85A0096E65E /* Liquid Glass.icon */; };
 		F3BBD9E22AEECD3400A9F7E7 /* SwiftyMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9E12AEECD3400A9F7E7 /* SwiftyMaster.swift */; };
 		F3BBD9E82AEECD3500A9F7E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */; };
-		F3BBD9F42AEECD6C00A9F7E7 /* Materials View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9F32AEECD6C00A9F7E7 /* Materials View.swift */; };
+		F3BBD9F42AEECD6C00A9F7E7 /* MaterialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9F32AEECD6C00A9F7E7 /* MaterialsView.swift */; };
 		F3BBD9F72AEECE4000A9F7E7 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3BBD9F62AEECE4000A9F7E7 /* ScrechKit */; };
-		F3BBD9F92AEED4BC00A9F7E7 /* Image Picker View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9F82AEED4BC00A9F7E7 /* Image Picker View.swift */; };
-		F3BBD9FB2AEED4CE00A9F7E7 /* Image Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9FA2AEED4CE00A9F7E7 /* Image Picker.swift */; };
+		F3BBD9F92AEED4BC00A9F7E7 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9F82AEED4BC00A9F7E7 /* ImagePickerView.swift */; };
+		F3BBD9FB2AEED4CE00A9F7E7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBD9FA2AEED4CE00A9F7E7 /* ImagePicker.swift */; };
 		F3BF16DA2E2C76A8005212D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF16D92E2C76A8005212D1 /* ContentView.swift */; };
 		F3BF16DB2E2C76A8005212D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF16D92E2C76A8005212D1 /* ContentView.swift */; };
 		F3BF16DD2E2C7717005212D1 /* TopicDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF16DC2E2C7717005212D1 /* TopicDismiss.swift */; };
@@ -747,7 +747,7 @@
 		F3CFBE422E3F9D2E005F93EA /* TopicDetectScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE402E3F9D2E005F93EA /* TopicDetectScreenSize.swift */; };
 		F3CFBE442E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */; };
 		F3CFBE452E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */; };
-		F3D8C11C2B2BB51000C7B0A9 /* Sensory Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */; };
+		F3D8C11C2B2BB51000C7B0A9 /* SensoryFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C11B2B2BB51000C7B0A9 /* SensoryFeedback.swift */; };
 		F3E8DD3A2E858B20002E5653 /* NavModePickerSaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8DD392E858B20002E5653 /* NavModePickerSaveButton.swift */; };
 		F3E8DD3B2E858B20002E5653 /* NavModePickerSaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8DD392E858B20002E5653 /* NavModePickerSaveButton.swift */; };
 		F3E8DD3C2E858B20002E5653 /* NavModePickerSaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8DD392E858B20002E5653 /* NavModePickerSaveButton.swift */; };
@@ -801,14 +801,14 @@
 		F3202C992D5596100030B3CC /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3202CAF2D5596210030B3CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3202CB22D5596210030B3CC /* visionOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = visionOS.plist; sourceTree = "<group>"; };
-		F32313732E69CF0B0011837A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F32313732E69CF0B0011837A /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
 		F325E2DD2E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSettingsAllCodeBlocks.swift; sourceTree = "<group>"; };
 		F325E2E12E5EA5A70008928E /* DebugSettingsFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSettingsFavorites.swift; sourceTree = "<group>"; };
 		F325E3B32E5EBC760008928E /* Swifty Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F326A4032E69A0CA0092F514 /* CodeBlockView macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodeBlockView macOS.swift"; sourceTree = "<group>"; };
 		F326A4082E69A2080092F514 /* CodeBlockViewCopyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlockViewCopyButton.swift; sourceTree = "<group>"; };
 		F326A40D2E69A2600092F514 /* removingLastLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = removingLastLine.swift; sourceTree = "<group>"; };
-		F32E88D42AF856E400959D49 /* Journal View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journal View.swift"; sourceTree = "<group>"; };
+		F32E88D42AF856E400959D49 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCard.swift; sourceTree = "<group>"; };
 		F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCardImage.swift; sourceTree = "<group>"; };
 		F3378F9C2E2E68DF00A31D7F /* TopicDetectOSVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectOSVersion.swift; sourceTree = "<group>"; };
@@ -828,7 +828,7 @@
 		F344803F2E2D4E0500D18E2E /* TopicActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicActionButton.swift; sourceTree = "<group>"; };
 		F34480432E2D548F00D18E2E /* TopicToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicToggle.swift; sourceTree = "<group>"; };
 		F34480462E2D5D1900D18E2E /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
-		F35198462E2AECAA004E0F02 /* Gauge Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gauge Card.swift"; sourceTree = "<group>"; };
+		F35198462E2AECAA004E0F02 /* GaugeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeCard.swift; sourceTree = "<group>"; };
 		F351984D2E2AF689004E0F02 /* CodeBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlock.swift; sourceTree = "<group>"; };
 		F35198C02E2B7E34004E0F02 /* AttributedCodeString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedCodeString.swift; sourceTree = "<group>"; };
 		F35198C32E2B7E56004E0F02 /* CodeBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlockView.swift; sourceTree = "<group>"; };
@@ -847,7 +847,7 @@
 		F35198FB2E2B9F53004E0F02 /* TopicTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTile.swift; sourceTree = "<group>"; };
 		F35C358B2E440FD900622147 /* ShortenedNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortenedNumbers.swift; sourceTree = "<group>"; };
 		F35C358F2E44125100622147 /* textShortenedNumbers.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = textShortenedNumbers.txt; sourceTree = "<group>"; };
-		F37916ED2AF14A7A00B880AF /* Image Picker 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker 2.swift"; sourceTree = "<group>"; };
+		F37916ED2AF14A7A00B880AF /* Image_Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_Picker.swift; sourceTree = "<group>"; };
 		F37D9DA62E488D6D008ECB6D /* text.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = text.txt; sourceTree = "<group>"; };
 		F380A1622E4AA1BF00157F67 /* tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F380A16D2E4AA1EE00157F67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -865,9 +865,9 @@
 		F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3BBD9E92AEECD3500A9F7E7 /* iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS.entitlements; sourceTree = "<group>"; };
 		F3BBD9ED2AEECD3500A9F7E7 /* iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iOS.plist; sourceTree = "<group>"; };
-		F3BBD9F32AEECD6C00A9F7E7 /* Materials View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Materials View.swift"; sourceTree = "<group>"; };
-		F3BBD9F82AEED4BC00A9F7E7 /* Image Picker View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker View.swift"; sourceTree = "<group>"; };
-		F3BBD9FA2AEED4CE00A9F7E7 /* Image Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Picker.swift"; sourceTree = "<group>"; };
+		F3BBD9F32AEECD6C00A9F7E7 /* MaterialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsView.swift; sourceTree = "<group>"; };
+		F3BBD9F82AEED4BC00A9F7E7 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		F3BBD9FA2AEED4CE00A9F7E7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		F3BF16D92E2C76A8005212D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F3BF16DC2E2C7717005212D1 /* TopicDismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDismiss.swift; sourceTree = "<group>"; };
 		F3BF16E12E2C7D1C005212D1 /* TopicHeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicHeading.swift; sourceTree = "<group>"; };
@@ -966,7 +966,7 @@
 		F3CFBE3D2E3F9D2D005F93EA /* TopicDifferentiateOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDifferentiateOS.swift; sourceTree = "<group>"; };
 		F3CFBE402E3F9D2E005F93EA /* TopicDetectScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectScreenSize.swift; sourceTree = "<group>"; };
 		F3CFBE432E3F9D2F005F93EA /* TopicDetectCompactOrRegular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectCompactOrRegular.swift; sourceTree = "<group>"; };
-		F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensory Feedback.swift"; sourceTree = "<group>"; };
+		F3D8C11B2B2BB51000C7B0A9 /* SensoryFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensoryFeedback.swift; sourceTree = "<group>"; };
 		F3E8DD392E858B20002E5653 /* NavModePickerSaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModePickerSaveButton.swift; sourceTree = "<group>"; };
 		F3E8DD3E2E858D13002E5653 /* NavContainerToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavContainerToolbar.swift; sourceTree = "<group>"; };
 		F3FCD1E02E51217B003BDE5E /* NavModeTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModeTile.swift; sourceTree = "<group>"; };
@@ -1009,7 +1009,7 @@
 		F3146C6C2CF73DD6005D58B3 /* Materials */ = {
 			isa = PBXGroup;
 			children = (
-				F3BBD9F32AEECD6C00A9F7E7 /* Materials View.swift */,
+				F3BBD9F32AEECD6C00A9F7E7 /* MaterialsView.swift */,
 			);
 			path = Materials;
 			sourceTree = "<group>";
@@ -1017,7 +1017,7 @@
 		F3146C6D2CF73DE2005D58B3 /* Haptic */ = {
 			isa = PBXGroup;
 			children = (
-				F3D8C11B2B2BB51000C7B0A9 /* Sensory Feedback.swift */,
+				F3D8C11B2B2BB51000C7B0A9 /* SensoryFeedback.swift */,
 			);
 			path = Haptic;
 			sourceTree = "<group>";
@@ -1109,7 +1109,7 @@
 		F325E3C32E5EBCA50008928E /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				F32313732E69CF0B0011837A /* Info.plist */,
+				F32313732E69CF0B0011837A /* macOS.plist */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -1259,7 +1259,7 @@
 				F314C84C2E2E657300F63B6A /* TopicStepper.swift */,
 				F314C84F2E2E657400F63B6A /* TopicPicker.swift */,
 				F3C6F6712E40E57A00E94540 /* TopicGauge.swift */,
-				F35198462E2AECAA004E0F02 /* Gauge Card.swift */,
+				F35198462E2AECAA004E0F02 /* GaugeCard.swift */,
 				F3C6F6742E40E57B00E94540 /* TopicProgressView.swift */,
 				F3C6F6902E40E58000E94540 /* TopicBadges.swift */,
 			);
@@ -1272,10 +1272,10 @@
 				F33E8B272E416BEF00B05370 /* TestView.swift */,
 				F3146C6C2CF73DD6005D58B3 /* Materials */,
 				F3146C6D2CF73DE2005D58B3 /* Haptic */,
-				F32E88D42AF856E400959D49 /* Journal View.swift */,
-				F3BBD9F82AEED4BC00A9F7E7 /* Image Picker View.swift */,
-				F3BBD9FA2AEED4CE00A9F7E7 /* Image Picker.swift */,
-				F37916ED2AF14A7A00B880AF /* Image Picker 2.swift */,
+				F32E88D42AF856E400959D49 /* JournalView.swift */,
+				F3BBD9F82AEED4BC00A9F7E7 /* ImagePickerView.swift */,
+				F3BBD9FA2AEED4CE00A9F7E7 /* ImagePicker.swift */,
+				F37916ED2AF14A7A00B880AF /* Image_Picker.swift */,
 			);
 			path = "To be checked";
 			sourceTree = "<group>";
@@ -2131,7 +2131,7 @@
 				F34480322E2CD41100D18E2E /* TopicDarkMode.swift in Sources */,
 				F31653B92E3C0A4E00A0E9D7 /* StackTopicList.swift in Sources */,
 				F399A4B02E3DC544008BED17 /* iOS 18 support.swift in Sources */,
-				F3202CC52D55977A0030B3CC /* Image Picker.swift in Sources */,
+				F3202CC52D55977A0030B3CC /* ImagePicker.swift in Sources */,
 				F3CFBE092E3F981E005F93EA /* TopicTabView.swift in Sources */,
 				F314C7FD2E2E2A8400F63B6A /* Models.swift in Sources */,
 				F3C6F6732E40E57A00E94540 /* TopicGauge.swift in Sources */,
@@ -2150,18 +2150,18 @@
 				F314C8542E2E65F000F63B6A /* TopicPopover.swift in Sources */,
 				F314C7FA2E2E1F0F00F63B6A /* TopicDisclosureGroup.swift in Sources */,
 				F3CFBE2D2E3F9B18005F93EA /* TopicEqualSizeViews.swift in Sources */,
-				F3202CC62D55977A0030B3CC /* Image Picker 2.swift in Sources */,
+				F3202CC62D55977A0030B3CC /* Image_Picker.swift in Sources */,
 				F3CFBDF12E3F95B8005F93EA /* TopicGrids.swift in Sources */,
 				F35198C42E2B7E56004E0F02 /* CodeBlockView.swift in Sources */,
 				F33E8B202E4162DF00B05370 /* TopicIcon.swift in Sources */,
 				F3CFBE2A2E3F9B17005F93EA /* TopicGeometryReader.swift in Sources */,
 				F3CFBDC32E3F8FA5005F93EA /* TopicNavigationView.swift in Sources */,
 				F314C8002E2E2A9400F63B6A /* FontSizeItem.swift in Sources */,
-				F35198482E2AECAA004E0F02 /* Gauge Card.swift in Sources */,
+				F35198482E2AECAA004E0F02 /* GaugeCard.swift in Sources */,
 				F388D19D2E3AB43A002A1128 /* TopicLowPowerMode.swift in Sources */,
 				F3CFBE422E3F9D2E005F93EA /* TopicDetectScreenSize.swift in Sources */,
 				F326A40A2E69A2080092F514 /* CodeBlockViewCopyButton.swift in Sources */,
-				F3202CC72D55977A0030B3CC /* Image Picker View.swift in Sources */,
+				F3202CC72D55977A0030B3CC /* ImagePickerView.swift in Sources */,
 				F314C8262E2E52A200F63B6A /* ValueStore.swift in Sources */,
 				F34480482E2D5D1900D18E2E /* AppSettings.swift in Sources */,
 				F314C85B2E2E665600F63B6A /* TopicGradient.swift in Sources */,
@@ -2278,7 +2278,7 @@
 				F380E0962E66FBB7008C56F8 /* TopicToggle.swift in Sources */,
 				F380E0972E66FBB7008C56F8 /* TopicMenu.swift in Sources */,
 				F380E0982E66FBB7008C56F8 /* TopicPicker.swift in Sources */,
-				F380E0992E66FBB7008C56F8 /* Gauge Card.swift in Sources */,
+				F380E0992E66FBB7008C56F8 /* GaugeCard.swift in Sources */,
 				F380E0D82E672A85008C56F8 /* FavoriteListParent.swift in Sources */,
 				F380E09C2E66FBB7008C56F8 /* TopicButton.swift in Sources */,
 				F380E09D2E66FBB7008C56F8 /* TopicGauge.swift in Sources */,
@@ -2363,7 +2363,7 @@
 				F380A21B2E4AAAF900157F67 /* NavModeButton.swift in Sources */,
 				F380A21C2E4AAAF900157F67 /* AppSettings.swift in Sources */,
 				F380A21D2E4AAAF900157F67 /* DebugSettings.swift in Sources */,
-				F380A1A32E4AAA2700157F67 /* Gauge Card.swift in Sources */,
+				F380A1A32E4AAA2700157F67 /* GaugeCard.swift in Sources */,
 				F380A1A42E4AAA2700157F67 /* TopicProgressView.swift in Sources */,
 				F380A1A62E4AAA2700157F67 /* TopicStepper.swift in Sources */,
 				F380A17A2E4AAA1000157F67 /* iOS 18 support.swift in Sources */,
@@ -2462,13 +2462,13 @@
 				F3C92B1D2E48BC4600203691 /* ExampleSheet.swift in Sources */,
 				F33E8B282E416BEF00B05370 /* TestView.swift in Sources */,
 				F34480472E2D5D1900D18E2E /* AppSettings.swift in Sources */,
-				F37916EE2AF14A7A00B880AF /* Image Picker 2.swift in Sources */,
-				F32E88D52AF856E400959D49 /* Journal View.swift in Sources */,
+				F37916EE2AF14A7A00B880AF /* Image_Picker.swift in Sources */,
+				F32E88D52AF856E400959D49 /* JournalView.swift in Sources */,
 				F3C6F6722E40E57A00E94540 /* TopicGauge.swift in Sources */,
 				F3BF16DD2E2C7717005212D1 /* TopicDismiss.swift in Sources */,
 				F31617CC2E42256700131D26 /* TopicCategory.swift in Sources */,
 				F314C7F92E2E1F0F00F63B6A /* TopicDisclosureGroup.swift in Sources */,
-				F35198472E2AECAA004E0F02 /* Gauge Card.swift in Sources */,
+				F35198472E2AECAA004E0F02 /* GaugeCard.swift in Sources */,
 				F399A4AD2E3D52A7008BED17 /* highlightOccurrences.swift in Sources */,
 				F314C7FE2E2E2A8400F63B6A /* Models.swift in Sources */,
 				F325E2DF2E5EA5820008928E /* DebugSettingsAllCodeBlocks.swift in Sources */,
@@ -2539,17 +2539,17 @@
 				F33E8B222E4162EF00B05370 /* TopicRelated.swift in Sources */,
 				F314C8582E2E663500F63B6A /* TopicColor.swift in Sources */,
 				F33E8B1C2E4162C100B05370 /* TopicDoc.swift in Sources */,
-				F3BBD9FB2AEED4CE00A9F7E7 /* Image Picker.swift in Sources */,
+				F3BBD9FB2AEED4CE00A9F7E7 /* ImagePicker.swift in Sources */,
 				F34480362E2D218400D18E2E /* TopicEmptyView.swift in Sources */,
 				F34480402E2D4E0500D18E2E /* TopicActionButton.swift in Sources */,
 				F3BF16E22E2C7D1C005212D1 /* TopicHeading.swift in Sources */,
 				F35198C52E2B7E56004E0F02 /* CodeBlockView.swift in Sources */,
 				F330586F2E3A9B250099CEB7 /* TopicDocsCardImage.swift in Sources */,
-				F3D8C11C2B2BB51000C7B0A9 /* Sensory Feedback.swift in Sources */,
+				F3D8C11C2B2BB51000C7B0A9 /* SensoryFeedback.swift in Sources */,
 				F399A4B12E3DC544008BED17 /* iOS 18 support.swift in Sources */,
 				F330586D2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */,
 				F3CFBDE72E3F959D005F93EA /* TopicVStack.swift in Sources */,
-				F3BBD9F42AEECD6C00A9F7E7 /* Materials View.swift in Sources */,
+				F3BBD9F42AEECD6C00A9F7E7 /* MaterialsView.swift in Sources */,
 				F314C8442E2E654C00F63B6A /* TopicSlider.swift in Sources */,
 				F314C8532E2E65F000F63B6A /* TopicPopover.swift in Sources */,
 				F3E8DD3B2E858B20002E5653 /* NavModePickerSaveButton.swift in Sources */,
@@ -2562,7 +2562,7 @@
 				F35C358C2E440FD900622147 /* ShortenedNumbers.swift in Sources */,
 				F351984E2E2AF689004E0F02 /* CodeBlock.swift in Sources */,
 				F380E0C82E670E84008C56F8 /* TopicSwipeActionsModifier.swift in Sources */,
-				F3BBD9F92AEED4BC00A9F7E7 /* Image Picker View.swift in Sources */,
+				F3BBD9F92AEED4BC00A9F7E7 /* ImagePickerView.swift in Sources */,
 				F339041F2E4932A200A22EE1 /* BrightnessSlider.swift in Sources */,
 				F35198C12E2B7E34004E0F02 /* AttributedCodeString.swift in Sources */,
 				F3CFBE3E2E3F9D2D005F93EA /* TopicDifferentiateOS.swift in Sources */,
@@ -2652,7 +2652,7 @@
 				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
+				INFOPLIST_FILE = macOS/macOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Swifty Master";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
@@ -2698,7 +2698,7 @@
 				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
+				INFOPLIST_FILE = macOS/macOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Swifty Master";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
