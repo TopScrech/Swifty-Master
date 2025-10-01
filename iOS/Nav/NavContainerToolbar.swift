@@ -10,6 +10,7 @@ struct NavContainerToolbar: ViewModifier {
                 NavigationLink(destination: AppSettings()) {
                     Image(systemName: "gear")
                 }
+                .keyboardShortcut("s")
             }
 #endif
     }
