@@ -1,11 +1,11 @@
 import SwiftUI
 
-struct NavContainerToolbar: ViewModifier {
-    func body(content: Content) -> some View {
+extension View {
+    func navContainerToolbar() -> some View {
 #if os(macOS)
-        content
+        self
 #else
-        content
+        self
             .toolbar {
                 NavigationLink(destination: AppSettings()) {
                     Image(systemName: "gear")
@@ -13,11 +13,5 @@ struct NavContainerToolbar: ViewModifier {
                 .keyboardShortcut("s")
             }
 #endif
-    }
-}
-
-extension View {
-    func navContainerToolbar() -> some View {
-        modifier(NavContainerToolbar())
     }
 }

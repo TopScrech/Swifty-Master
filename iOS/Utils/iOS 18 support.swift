@@ -1,71 +1,51 @@
 import SwiftUI
 
-// MARK: - Nav Subtitle
-struct NavSubtitle: ViewModifier {
-    private let subtitle: LocalizedStringKey
-    
-    init(_ subtitle: LocalizedStringKey) {
-        self.subtitle = subtitle
-    }
-    
-    init(_ subtitle: String) {
-        self.subtitle = LocalizedStringKey(subtitle)
-    }
-    
-    func body(content: Content) -> some View {
+extension View {
+    @ViewBuilder
+    func navSubtitle(_ subtitle: LocalizedStringKey) -> some View {
 #if os(visionOS) || os(tvOS)
-        content
+        self
 #else
         if #available(iOS 26, *) {
-            content
+            self
                 .navigationSubtitle(subtitle)
+        } else {
+            self
         }
 #endif
+    }
+    
+    func navSubtitle<T: CustomStringConvertible>(_ subtitle: T) -> some View {
+        navSubtitle(LocalizedStringKey(subtitle.description))
     }
 }
 
 extension View {
-    func navSubtitle(_ subtitle: LocalizedStringKey) -> some View {
-        modifier(NavSubtitle(subtitle))
-    }
-    
-    func navSubtitle<T: CustomStringConvertible>(_ subtitle: T) -> some View {
-        modifier(NavSubtitle(subtitle.description))
-    }
-}
-
-// MARK: - Glassy Background
-struct GlassyBackground: ViewModifier {
-    private let rectRounding: CGFloat?
-    
-    init(_ rectRounding: CGFloat? = nil) {
-        self.rectRounding = rectRounding
-    }
-    
-    func body(content: Content) -> some View {
+    @ViewBuilder
+    func glassyBackground(_ rectRounding: CGFloat? = nil) -> some View {
 #if os(visionOS)
         if let rectRounding {
-            content
+            self
                 .background(.ultraThinMaterial, in: .rect(cornerRadius: rectRounding))
         } else {
-            content
+            self
                 .background(.ultraThinMaterial)
         }
 #else
         if #available(iOS 26, macOS 26, tvOS 26, *) {
             if let rectRounding {
-                content
+                self
                     .glassEffect(in: .rect(cornerRadius: rectRounding))
             } else {
-                content
+                self
                     .glassEffect()
             }
         } else {
             if let rectRounding {
-                content
+                self
                     .background(.ultraThinMaterial, in: .rect(cornerRadius: rectRounding))
             } else {
-                content
+                self
                     .background(.ultraThinMaterial)
             }
         }
@@ -74,58 +54,28 @@ struct GlassyBackground: ViewModifier {
 }
 
 extension View {
-    func glassyBackground(_ rectRounding: CGFloat? = nil) -> some View {
-        modifier(GlassyBackground(rectRounding))
-    }
-}
-
-// MARK: - Glass Prominent Button Style
-struct GlassProminentButtonStyle: ViewModifier {
-    private let color: Color
-    
-    init(_ color: Color) {
-        self.color = color
-    }
-    
-    func body(content: Content) -> some View {
+    @ViewBuilder
+    func glassProminentButtonStyle(_ color: Color) -> some View {
         if #available(iOS 26, macOS 26, tvOS 26, *) {
-            content
+            self
 #if !os(visionOS)
                 .buttonStyle(.glassProminent)
                 .tint(color)
 #endif
         } else {
-            content
+            self
         }
     }
 }
 
 extension View {
-    func glassProminentButtonStyle(_ color: Color) -> some View {
-        modifier(GlassProminentButtonStyle(color))
-    }
-}
-
-// MARK: - Label Icon Width
-struct LabelIconWidth: ViewModifier {
-    private let width: CGFloat
-    
-    init(_ width: CGFloat) {
-        self.width = width
-    }
-    
-    func body(content: Content) -> some View {
+    @ViewBuilder
+    func labelIconWidth(_ width: CGFloat) -> some View {
         if #available(iOS 26, macOS 26, visionOS 26, tvOS 26, *) {
-            content
+            self
                 .labelReservedIconWidth(width)
         } else {
-            content
+            self
         }
-    }
-}
-
-extension View {
-    func labelIconWidth(_ width: CGFloat) -> some View {
-        modifier(LabelIconWidth(width))
     }
 }
