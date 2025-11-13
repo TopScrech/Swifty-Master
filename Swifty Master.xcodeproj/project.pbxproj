@@ -119,7 +119,6 @@
 		F326A4092E69A2080092F514 /* CodeBlockViewCopyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A4082E69A2080092F514 /* CodeBlockViewCopyButton.swift */; };
 		F326A40A2E69A2080092F514 /* CodeBlockViewCopyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A4082E69A2080092F514 /* CodeBlockViewCopyButton.swift */; };
 		F326A40B2E69A2080092F514 /* CodeBlockViewCopyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A4082E69A2080092F514 /* CodeBlockViewCopyButton.swift */; };
-		F32E88D52AF856E400959D49 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32E88D42AF856E400959D49 /* JournalView.swift */; };
 		F330586C2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */; };
 		F330586D2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */; };
 		F330586F2E3A9B250099CEB7 /* TopicDocsCardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */; };
@@ -806,7 +805,6 @@
 		F325E3B32E5EBC760008928E /* Swifty Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F326A4032E69A0CA0092F514 /* CodeBlockView macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodeBlockView macOS.swift"; sourceTree = "<group>"; };
 		F326A4082E69A2080092F514 /* CodeBlockViewCopyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlockViewCopyButton.swift; sourceTree = "<group>"; };
-		F32E88D42AF856E400959D49 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCard.swift; sourceTree = "<group>"; };
 		F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDocsCardImage.swift; sourceTree = "<group>"; };
 		F3378F9C2E2E68DF00A31D7F /* TopicDetectOSVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetectOSVersion.swift; sourceTree = "<group>"; };
@@ -1272,7 +1270,6 @@
 				F33E8B272E416BEF00B05370 /* TestView.swift */,
 				F3146C6C2CF73DD6005D58B3 /* Materials */,
 				F3146C6D2CF73DE2005D58B3 /* Haptic */,
-				F32E88D42AF856E400959D49 /* JournalView.swift */,
 				F3BBD9F82AEED4BC00A9F7E7 /* ImagePickerView.swift */,
 				F3BBD9FA2AEED4CE00A9F7E7 /* ImagePicker.swift */,
 				F37916ED2AF14A7A00B880AF /* Image_Picker.swift */,
@@ -2471,7 +2468,6 @@
 				F33E8B282E416BEF00B05370 /* TestView.swift in Sources */,
 				F34480472E2D5D1900D18E2E /* AppSettings.swift in Sources */,
 				F37916EE2AF14A7A00B880AF /* Image_Picker.swift in Sources */,
-				F32E88D52AF856E400959D49 /* JournalView.swift in Sources */,
 				F3C6F6722E40E57A00E94540 /* TopicGauge.swift in Sources */,
 				F3BF16DD2E2C7717005212D1 /* TopicDismiss.swift in Sources */,
 				F31617CC2E42256700131D26 /* TopicCategory.swift in Sources */,
