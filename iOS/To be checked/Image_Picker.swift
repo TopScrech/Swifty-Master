@@ -7,9 +7,11 @@ struct Image_Picker: View {
     
     var body: some View {
         VStack {
+            let uiImage = image ?? UIImage(resource: .vodka)
+            
             //            PhotosPicker(selection: $photoItem, matching: .any(of: <#T##[PHPickerFilter]#>)) {
             PhotosPicker(selection: $photoItem) {
-                Image(uiImage: image ?? UIImage(resource: .vodka))
+                Image(uiImage: uiImage)
                     .resizable()
                     .scaledToFit()
             }

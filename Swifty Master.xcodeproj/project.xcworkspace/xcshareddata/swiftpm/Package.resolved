@@ -7,7 +7,7 @@
       "location" : "https://github.com/TopScrech/Appearance",
       "state" : {
         "branch" : "main",
-        "revision" : "ffd455ead37ffdf6809381083b85192a909eb001"
+        "revision" : "1a8f0bc05a667f1079c9f7b3b31840f60abd7db5"
       }
     },
     {
@@ -34,7 +34,7 @@
       "location" : "https://github.com/TopScrech/SafariCover",
       "state" : {
         "branch" : "main",
-        "revision" : "53823cbe9ca2ab959958ef42b935a988d07dff91"
+        "revision" : "395397e46cb476106fcd8436f955bba3eb0963fa"
       }
     },
     {
@@ -43,7 +43,7 @@
       "location" : "https://github.com/TopScrech/ScrechKit",
       "state" : {
         "branch" : "main",
-        "revision" : "28f4be08c8801f324b0c6e107edf5982291296f6"
+        "revision" : "735c132cef69b438430228e911e772b8d26e8a97"
       }
     }
   ],

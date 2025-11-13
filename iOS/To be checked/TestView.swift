@@ -1,5 +1,5 @@
 import SwiftUI
-import CodeEditorView
+@preconcurrency import CodeEditorView
 import LanguageSupport
 
 struct TestView: View {
