@@ -19,13 +19,21 @@ struct TopicDocsCard: View {
             HStack(spacing: 12) {
                 TopicDocsCardImage(doc.url)
                 
-                Text(doc.name)
-                    .bold()
-                    .rounded()
-                    .lineLimit(2)
-                    .foregroundStyle(.foreground)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .multilineTextAlignment(.leading)
+                VStack(alignment: .leading) {
+                    Text(doc.name)
+                        .bold()
+                        .rounded()
+                        .lineLimit(2)
+                        .foregroundStyle(.foreground)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .multilineTextAlignment(.leading)
+                    
+                    if let details = doc.details {
+                        Text(details)
+                            .footnote()
+                            .secondary()
+                    }
+                }
             }
         }
         .buttonStyle(.plain)
@@ -42,6 +50,13 @@ struct TopicDocsCard: View {
                 }
                 
                 ShareLink(item: url)
+            }
+            
+            if let downloadURLString = doc.downloadURL,
+               let downloadURL = URL(string: downloadURLString) {
+                Link(destination: downloadURL) {
+                    Label("Download linked resource", systemImage: "square.and.arrow.down")
+                }
             }
         }
 #endif
@@ -69,5 +84,6 @@ struct TopicDocsCard: View {
 #Preview {
     TopicDocsCard(.init("Preview", url: "https://developer.apple.com/documentation/swiftui/toggle"))
         .scenePadding()
+        .darkSchemePreferred()
         .environmentObject(ValueStore())
 }

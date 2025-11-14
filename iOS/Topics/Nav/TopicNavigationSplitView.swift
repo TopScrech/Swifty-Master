@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicNavigationSplitView: View {
     var body: some View {
@@ -12,4 +12,5 @@ struct TopicNavigationSplitView: View {
 
 #Preview {
     TopicNavigationSplitView()
+        .darkSchemePreferred()
 }

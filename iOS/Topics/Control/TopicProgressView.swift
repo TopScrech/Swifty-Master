@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicProgressView: View {
     var body: some View {
@@ -19,6 +19,7 @@ struct TopicProgressView: View {
     ScrollView {
         ContentView(.progressView)
     }
+    .darkSchemePreferred()
     .environmentObject(ValueStore())
     .environment(NavModel())
 }

@@ -43,8 +43,8 @@ struct FavoriteList: View {
                 }
             }
         }
-        .navigationDestination(for: Topic.self) { topic in
-            TopicDetail(topic)
+        .navigationDestination(for: Topic.self) {
+            TopicDetail($0)
         }
     }
     
@@ -57,6 +57,7 @@ struct FavoriteList: View {
     NavigationStack {
         FavoriteList()
     }
+    .darkSchemePreferred()
     .environmentObject(ValueStore())
     .environment(NavModel())
 }

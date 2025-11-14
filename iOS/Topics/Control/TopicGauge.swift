@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicGauge: View {
     var body: some View {
@@ -41,5 +41,6 @@ struct TopicGauge: View {
 #Preview {
     TopicGauge()
         .padding()
+        .darkSchemePreferred()
         .environmentObject(ValueStore())
 }

@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct ContentView: View {
     @EnvironmentObject private var store: ValueStore
@@ -133,5 +133,6 @@ func topicView(_ topic: Topic) -> AnyView? {
 
 #Preview {
     ContentView(.dismiss)
+        .darkSchemePreferred()
         .environmentObject(ValueStore())
 }

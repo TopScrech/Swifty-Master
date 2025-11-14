@@ -12,8 +12,8 @@ struct TopicDocs: View {
             if docs.count > 0 {
                 TopicHeading("Docs")
                 
-                ForEach(docs) { doc in
-                    TopicDocsCard(doc)
+                ForEach(docs) {
+                    TopicDocsCard($0)
                 }
             }
         }
@@ -22,4 +22,5 @@ struct TopicDocs: View {
 
 //#Preview {
 //    TopicDocs()
+//    .darkSchemePreferred()
 //}

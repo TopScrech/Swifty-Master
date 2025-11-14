@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicContextMenu: View {
     var body: some View {
@@ -12,4 +12,5 @@ struct TopicContextMenu: View {
 
 #Preview {
     TopicContextMenu()
+        .darkSchemePreferred()
 }

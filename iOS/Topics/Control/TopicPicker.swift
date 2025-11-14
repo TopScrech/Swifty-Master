@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicPicker: View {
     @State private var favoriteAnimal = "Dog"
@@ -25,4 +25,5 @@ struct TopicPicker: View {
 
 #Preview {
     TopicPicker()
+        .darkSchemePreferred()
 }

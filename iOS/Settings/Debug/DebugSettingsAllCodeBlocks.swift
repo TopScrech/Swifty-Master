@@ -6,8 +6,8 @@ struct DebugSettingsAllCodeBlocks: View {
             NavigationLink {
                 ScrollView {
                     LazyVStack {
-                        ForEach(CodeBlock.allCases) { block in
-                            CodeBlockView(block)
+                        ForEach(CodeBlock.allCases) {
+                            CodeBlockView($0)
                         }
                     }
                 }
@@ -36,4 +36,5 @@ struct DebugSettingsAllCodeBlocks: View {
             DebugSettingsAllCodeBlocks()
         }
     }
+    .darkSchemePreferred()
 }

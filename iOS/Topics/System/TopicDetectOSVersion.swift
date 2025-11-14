@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicDetectOSVersion: View {
     var body: some View {
@@ -14,4 +14,5 @@ struct TopicDetectOSVersion: View {
 
 #Preview {
     TopicDetectOSVersion()
+        .darkSchemePreferred()
 }

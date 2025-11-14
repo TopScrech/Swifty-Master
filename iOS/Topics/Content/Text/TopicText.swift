@@ -44,20 +44,20 @@ struct TopicText: View {
             CodeBlockView(.text)
             
             TopicDisclosureGroup("Font Size") {
-                ForEach(styles) { text in
-                    FontSizeItem(text)
+                ForEach(styles) {
+                    FontSizeItem($0)
                 }
             }
             
             TopicDisclosureGroup("Font Weight") {
-                ForEach(weights) { text in
-                    FontWeightItem(text)
+                ForEach(weights) {
+                    FontWeightItem($0)
                 }
             }
             
             TopicDisclosureGroup("Font Design") {
-                ForEach(designs) { text in
-                    FontDesignItem(text)
+                ForEach(designs) {
+                    FontDesignItem($0)
                 }
             }
             
@@ -77,4 +77,5 @@ struct TopicText: View {
 
 #Preview {
     TopicText()
+        .darkSchemePreferred()
 }

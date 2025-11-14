@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicToggle: View {
     @State private var isOn = true
@@ -36,6 +36,7 @@ struct TopicToggle: View {
 
 #Preview {
     TopicDetail(.toggle)
+        .darkSchemePreferred()
         .environment(NavModel())
         .environment(DataModel())
         .environmentObject(ValueStore())

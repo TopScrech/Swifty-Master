@@ -1,6 +1,15 @@
 {
-  "originHash" : "b5562ee4e21f2dc451ae3e61439b1f7f7b50bdc9030ad0209392c6d2baecc527",
+  "originHash" : "946807d17484d84b7211bfa3c36a34249333fee496b7e67401d61cca44ed30b3",
   "pins" : [
+    {
+      "identity" : "appearance",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TopScrech/Appearance",
+      "state" : {
+        "branch" : "main",
+        "revision" : "1a8f0bc05a667f1079c9f7b3b31840f60abd7db5"
+      }
+    },
     {
       "identity" : "codeeditorview",
       "kind" : "remoteSourceControl",
@@ -25,7 +34,7 @@
       "location" : "https://github.com/TopScrech/SafariCover",
       "state" : {
         "branch" : "main",
-        "revision" : "53823cbe9ca2ab959958ef42b935a988d07dff91"
+        "revision" : "395397e46cb476106fcd8436f955bba3eb0963fa"
       }
     },
     {
@@ -34,7 +43,7 @@
       "location" : "https://github.com/TopScrech/ScrechKit",
       "state" : {
         "branch" : "main",
-        "revision" : "ebca8f29757f85adc259ccfa7b22f47f40e74236"
+        "revision" : "d8ffdc58388da376d18a7b71f0e78f34e5416219"
       }
     }
   ],

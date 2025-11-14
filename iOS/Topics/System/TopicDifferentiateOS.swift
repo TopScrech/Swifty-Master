@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicDifferentiateOS: View {
     var body: some View {
@@ -14,4 +14,5 @@ struct TopicDifferentiateOS: View {
 
 #Preview {
     TopicDifferentiateOS()
+        .darkSchemePreferred()
 }

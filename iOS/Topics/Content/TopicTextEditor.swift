@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicTextEditor: View {
     @State private var text = ""
@@ -25,4 +25,5 @@ struct TopicTextEditor: View {
 
 #Preview {
     TopicTextEditor()
+        .darkSchemePreferred()
 }

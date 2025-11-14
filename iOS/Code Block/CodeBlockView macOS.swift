@@ -49,5 +49,6 @@ struct CodeBlockView: View {
 
 #Preview {
     CodeBlockView(.gauges)
+        .darkSchemePreferred()
         .environmentObject(ValueStore())
 }

@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicTextField: View {
     @State private var text = ""
@@ -30,4 +30,5 @@ struct TopicTextField: View {
 
 #Preview {
     TopicTextField()
+        .darkSchemePreferred()
 }

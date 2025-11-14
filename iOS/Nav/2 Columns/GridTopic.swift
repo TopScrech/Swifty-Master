@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct GridTopic: View {
     @Environment(NavModel.self) private var nav
@@ -22,8 +22,8 @@ struct GridTopic: View {
                 .padding()
             }
             .navigationTitle(category.localizedName)
-            .navigationDestination(for: Topic.self) { topic in
-                TopicDetail(topic)
+            .navigationDestination(for: Topic.self) {
+                TopicDetail($0)
             }
         } else {
             Text("Choose a category")
@@ -34,12 +34,14 @@ struct GridTopic: View {
 
 #Preview {
     GridTopic()
+        .darkSchemePreferred()
         .environment(DataModel.shared)
         .environment(NavModel(selectedCategory: .content))
 }
 
 #Preview {
     GridTopic()
+        .darkSchemePreferred()
         .environment(DataModel.shared)
         .environment(NavModel(selectedCategory: nil))
 }

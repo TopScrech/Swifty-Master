@@ -18,6 +18,12 @@ struct ContentView: View {
             ForEach(numbers, id: \.self) { number in
                 Text(number.description)
             }
+            
+            //or
+            
+            ForEach(numbers, id: \.self) {
+                Text($0.description)
+            }
         }
     }
 }

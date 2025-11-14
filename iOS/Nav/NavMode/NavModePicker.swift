@@ -24,34 +24,22 @@ struct NavModePicker: View {
                 }
                 
                 Text("but first, choose the interface that's comfortable for you")
-                    .fontSize(14)
                     .secondary()
                     .multilineTextAlignment(.center)
+#if !os(tvOS)
                     .frame(width: 300)
-                
+                    .fontSize(14)
+#endif
                 HStack(spacing: 25) {
-                    ForEach(NavMode.allCases) { mode in
-                        NavModeTile(
-                            selection: $navMode,
-                            mode: mode
-                        )
+                    ForEach(NavMode.allCases) {
+                        NavModeTile($navMode, mode: $0)
                     }
                 }
                 .padding(.top)
                 
                 Spacer()
                 
-                Button("Save") {
-                    dismiss()
-                    store.navMode = navMode
-                }
-                .title2(.semibold, design: .rounded)
-                .foregroundStyle(.background)
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 10)
-                .background(.primary, in: .rect(cornerRadius: 16))
-                .disabled(navMode == nil)
-                .buttonStyle(.plain)
+                NavModePickerSaveButton(navMode)
             }
             .scenePadding()
             .background {
@@ -67,6 +55,9 @@ struct NavModePicker: View {
                 .ignoresSafeArea()
             }
         }
+#if os(tvOS)
+        .background(.background)
+#endif
 #if os(macOS)
         .toolbar {
             ToolbarItem(placement: .cancellationAction) {
@@ -83,5 +74,6 @@ struct NavModePicker: View {
 
 #Preview {
     NavModePicker()
+        .darkSchemePreferred()
         .environmentObject(ValueStore())
 }

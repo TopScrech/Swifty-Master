@@ -1,8 +1,13 @@
 import ScrechKit
 
 struct NavModeTile: View {
-    @Binding var selection: NavMode?
-    let mode: NavMode
+    @Binding private var selection: NavMode?
+    private let mode: NavMode
+    
+    init(_ selection: Binding<NavMode?>, mode: NavMode) {
+        _selection = selection
+        self.mode = mode
+    }
     
     var body: some View {
         Button {
@@ -23,7 +28,7 @@ struct NavModeTile: View {
                     .offset(y: 50)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
             }
-            .background(.ultraThinMaterial)
+            .glassyBackground(16)
             .clipShape(.rect(cornerRadius: 16))
             .overlay {
                 if selection == mode {
@@ -41,6 +46,7 @@ struct NavModeTile: View {
 
 #Preview {
     NavModePicker()
+        .darkSchemePreferred()
         .environment(NavModel())
         .environmentObject(ValueStore())
 }

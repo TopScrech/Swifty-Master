@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicPassAView: View {
     var body: some View {
@@ -12,4 +12,5 @@ struct TopicPassAView: View {
 
 #Preview {
     TopicPassAView()
+        .darkSchemePreferred()
 }

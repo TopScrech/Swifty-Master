@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicNavigationBar: View {
     var body: some View {
@@ -12,4 +12,5 @@ struct TopicNavigationBar: View {
 
 #Preview {
     TopicNavigationBar()
+        .darkSchemePreferred()
 }

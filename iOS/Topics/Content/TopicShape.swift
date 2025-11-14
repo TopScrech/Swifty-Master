@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicShape: View {
     var body: some View {
@@ -12,4 +12,5 @@ struct TopicShape: View {
 
 #Preview {
     TopicShape()
+        .darkSchemePreferred()
 }

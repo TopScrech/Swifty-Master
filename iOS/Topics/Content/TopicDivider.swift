@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicDivider: View {
     var body: some View {
@@ -12,4 +12,5 @@ struct TopicDivider: View {
 
 #Preview {
     TopicDivider()
+        .darkSchemePreferred()
 }

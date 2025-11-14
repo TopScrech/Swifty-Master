@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicDetectLaguage: View {
     var body: some View {
@@ -12,4 +12,5 @@ struct TopicDetectLaguage: View {
 
 #Preview {
     TopicDetectLaguage()
+        .darkSchemePreferred()
 }

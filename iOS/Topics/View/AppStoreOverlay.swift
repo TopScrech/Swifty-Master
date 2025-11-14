@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct AppStoreOverlay: View {
     @State private var overlay = false
@@ -21,4 +21,5 @@ struct AppStoreOverlay: View {
 
 #Preview {
     AppStoreOverlay()
+        .darkSchemePreferred()
 }

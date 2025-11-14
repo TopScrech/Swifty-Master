@@ -23,13 +23,13 @@ private struct Content: View {
     
     private let topic: Topic
     
-    private let columns = [
-        GridItem(.adaptive(minimum: 120, maximum: 120))
-    ]
-    
     init(_ topic: Topic) {
         self.topic = topic
     }
+    
+    private let columns = [
+        GridItem(.adaptive(minimum: 120, maximum: 120))
+    ]
     
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -89,5 +89,6 @@ private struct Content: View {
 
 #Preview {
     TopicDetail(.text)
+        .darkSchemePreferred()
         .environment(DataModel.shared)
 }

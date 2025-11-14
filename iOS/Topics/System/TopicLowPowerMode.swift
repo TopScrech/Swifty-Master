@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicLowPowerMode: View {
     private let lowPowerMode = ProcessInfo.processInfo.isLowPowerModeEnabled
@@ -23,4 +23,5 @@ struct TopicLowPowerMode: View {
 
 #Preview {
     TopicLowPowerMode()
+        .darkSchemePreferred()
 }

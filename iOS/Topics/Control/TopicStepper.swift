@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicStepper: View {
     @State private var stepperValue = 0
@@ -20,4 +20,5 @@ struct TopicStepper: View {
 
 #Preview {
     TopicStepper()
+        .darkSchemePreferred()
 }

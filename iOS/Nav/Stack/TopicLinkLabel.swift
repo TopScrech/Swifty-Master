@@ -44,7 +44,9 @@ struct TopicLinkLabel: View {
                     .foregroundStyle(.primary)
 #endif
             }
-            
+#if os(tvOS)
+            .labelIconWidth(64)
+#endif
             Spacer()
             
             if !isAvailable {
@@ -79,5 +81,6 @@ struct TopicLinkLabel: View {
 
 #Preview {
     TopicLinkLabel(.spacer)
+        .darkSchemePreferred()
         .environmentObject(ValueStore())
 }

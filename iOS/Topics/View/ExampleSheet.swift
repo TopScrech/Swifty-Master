@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct ExampleSheet: View {
     @Environment(\.dismiss) private var dismiss
@@ -13,4 +13,5 @@ struct ExampleSheet: View {
 
 #Preview {
     ExampleSheet()
+        .darkSchemePreferred()
 }

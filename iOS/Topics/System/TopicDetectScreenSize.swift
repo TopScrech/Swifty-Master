@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicDetectScreenSize: View {
     var body: some View {
@@ -12,4 +12,5 @@ struct TopicDetectScreenSize: View {
 
 #Preview {
     TopicDetectScreenSize()
+        .darkSchemePreferred()
 }

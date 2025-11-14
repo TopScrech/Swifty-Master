@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicAlert: View {
     @State private var alertExample = false
@@ -23,4 +23,5 @@ struct TopicAlert: View {
 
 #Preview {
     TopicAlert()
+        .darkSchemePreferred()
 }

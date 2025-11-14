@@ -64,4 +64,5 @@ struct ContentViewNavButtons: View {
 
 //#Preview {
 //    ContentViewNavButtons()
+//    .darkSchemePreferred()
 //}

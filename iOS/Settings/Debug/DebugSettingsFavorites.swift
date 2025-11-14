@@ -45,5 +45,6 @@ struct DebugSettingsFavorites: View {
         .formStyle(.grouped)
         .buttonStyle(.plain)
     }
+    .darkSchemePreferred()
     .environmentObject(ValueStore())
 }

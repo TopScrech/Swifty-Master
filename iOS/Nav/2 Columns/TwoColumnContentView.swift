@@ -14,13 +14,7 @@ struct TwoColumnContentView: View {
                 NavigationLink(category.localizedName, value: category)
             }
             .navigationTitle("Categories")
-#if !os(macOS)
-            .toolbar {
-                NavigationLink(destination: AppSettings()) {
-                    Image(systemName: "gear")
-                }
-            }
-#endif
+            .navContainerToolbar()
         } detail: {
             NavigationStack(path: $nav.topicPath) {
                 GridTopic()
@@ -31,6 +25,7 @@ struct TwoColumnContentView: View {
 
 #Preview {
     TwoColumnContentView()
+        .darkSchemePreferred()
         .environment(DataModel.shared)
         .environment(NavModel.shared)
 }

@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicGradient: View {
     var body: some View {
@@ -12,4 +12,5 @@ struct TopicGradient: View {
 
 #Preview {
     TopicGradient()
+        .darkSchemePreferred()
 }

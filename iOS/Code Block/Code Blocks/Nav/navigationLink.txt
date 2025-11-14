@@ -8,6 +8,6 @@ List {
         // label
     }
 }
-.navigationDestination(for: /* Value type */.self) { data in
-    ViewOfDestination(data: data)
+.navigationDestination(for: /* Value type */.self) {
+    ViewOfDestination(data: $0)
 }

@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct DebugSettings: View {
     @EnvironmentObject private var store: ValueStore
@@ -38,5 +38,6 @@ struct DebugSettings: View {
     NavigationStack {
         DebugSettings()
     }
+    .darkSchemePreferred()
     .environmentObject(ValueStore())
 }

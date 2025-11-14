@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicGrids: View {
     var body: some View {
@@ -26,4 +26,5 @@ struct TopicGrids: View {
 
 #Preview {
     TopicGrids()
+        .darkSchemePreferred()
 }

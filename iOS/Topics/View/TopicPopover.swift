@@ -22,4 +22,5 @@ struct TopicPopover: View {
 
 #Preview {
     TopicPopover()
+        .darkSchemePreferred()
 }

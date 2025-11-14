@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicPadding: View {
     var body: some View {
@@ -12,4 +12,5 @@ struct TopicPadding: View {
 
 #Preview {
     TopicPadding()
+        .darkSchemePreferred()
 }

@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TopicWarning: View {
     private let warning: LocalizedStringKey
@@ -30,4 +30,5 @@ struct TopicWarning: View {
 #Preview {
     TopicWarning("Preview")
         .padding()
+        .darkSchemePreferred()
 }

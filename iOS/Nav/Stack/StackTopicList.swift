@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct StackTopicList: View {
     @Environment(DataModel.self) private var dataModel
@@ -25,6 +25,7 @@ struct StackTopicList: View {
 
 #Preview {
     StackTopicList()
+        .darkSchemePreferred()
         .environment(DataModel())
         .environment(NavModel())
         .environmentObject(ValueStore())
