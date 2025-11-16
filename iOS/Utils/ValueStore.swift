@@ -22,8 +22,10 @@ final class ValueStore: ObservableObject {
     
     // Debug
     @AppStorage("show_code_line_numbers") var showCodeLineNumbers = false
-    @AppStorage("show_status_bar") var showStatusBar = true
     
+#if os(iOS)
+    @AppStorage("show_status_bar") var showStatusBar = true
+#endif
     func addOrRemoveFavorite(_ item: Topic) {
         if favoriteTopics.contains(item) {
             favoriteTopics.removeAll {
