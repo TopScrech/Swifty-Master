@@ -55,6 +55,11 @@ struct NavModePicker: View {
                 .ignoresSafeArea()
             }
         }
+        .task {
+            if navMode == nil {
+                navMode = .twoColumn
+            }
+        }
 #if os(tvOS)
         .background(.background)
 #endif

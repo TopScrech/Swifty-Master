@@ -119,6 +119,7 @@
 		F326A4092E69A2080092F514 /* CodeBlockViewCopyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A4082E69A2080092F514 /* CodeBlockViewCopyButton.swift */; };
 		F326A40A2E69A2080092F514 /* CodeBlockViewCopyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A4082E69A2080092F514 /* CodeBlockViewCopyButton.swift */; };
 		F326A40B2E69A2080092F514 /* CodeBlockViewCopyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326A4082E69A2080092F514 /* CodeBlockViewCopyButton.swift */; };
+		F32A18B62ECAFECD00BE176C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BBD9E72AEECD3500A9F7E7 /* Assets.xcassets */; };
 		F330586C2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */; };
 		F330586D2E3A9A4F0099CEB7 /* TopicDocsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586B2E3A9A4F0099CEB7 /* TopicDocsCard.swift */; };
 		F330586F2E3A9B250099CEB7 /* TopicDocsCardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330586E2E3A9B250099CEB7 /* TopicDocsCardImage.swift */; };
@@ -1932,6 +1933,7 @@
 				F380E0602E66FAB5008C56F8 /* scrollView.txt in Resources */,
 				F325E3F32E5EC1260008928E /* Localizable.xcstrings in Resources */,
 				F380E0342E66FA63008C56F8 /* text.txt in Resources */,
+				F32A18B62ECAFECD00BE176C /* Assets.xcassets in Resources */,
 				F380E0352E66FA63008C56F8 /* mdBoldItalic.txt in Resources */,
 				F380E0362E66FA63008C56F8 /* textShortenedNumbers.txt in Resources */,
 				F380E0372E66FA63008C56F8 /* mdMonospaced.txt in Resources */,
@@ -2849,7 +2851,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 26.1;
+				MARKETING_VERSION = 26.1.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2911,7 +2913,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 26.1;
+				MARKETING_VERSION = 26.1.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
