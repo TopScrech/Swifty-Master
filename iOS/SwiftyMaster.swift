@@ -17,9 +17,11 @@ struct SwiftyMaster: App {
         }
 #if os(macOS)
         Settings {
-            AppSettings()
-                .environment(nav)
-                .environmentObject(store)
+            NavigationStack {
+                AppSettings()
+            }
+            .environment(nav)
+            .environmentObject(store)
         }
 #endif
     }
