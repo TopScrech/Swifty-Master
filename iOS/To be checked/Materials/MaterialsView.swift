@@ -47,8 +47,9 @@ struct MaterialsView: View {
 }
 
 #Preview {
-    ScrollView(showsIndicators: false) {
+    ScrollView {
         MaterialsView()
     }
     .darkSchemePreferred()
+    .scrollIndicators(.never)
 }

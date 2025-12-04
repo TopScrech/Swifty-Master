@@ -32,7 +32,7 @@ private struct Content: View {
     ]
     
     var body: some View {
-        ScrollView(showsIndicators: false) {
+        ScrollView {
             ContentView(topic)
             
             ViewThatFits(in: .horizontal) {
@@ -43,6 +43,7 @@ private struct Content: View {
         }
         .navigationTitle(topic.name)
         .navSubtitle(topic.category.localizedName)
+        .scrollIndicators(.never)
     }
     
     private var wideDetails: some View {
