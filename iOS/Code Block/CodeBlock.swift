@@ -32,6 +32,7 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          emptyView, emptyViewAnyView,
          popover,
          alert,
+         confirmationDialog,
          appStoreOverlay,
          
          // Nav

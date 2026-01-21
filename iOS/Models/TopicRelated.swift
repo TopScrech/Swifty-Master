@@ -12,6 +12,9 @@ extension Topic {
         case .contextMenu: [.menu]
         case .menu:        [.contextMenu]
             
+        case .alert:              [.confirmationDialog]
+        case .confirmationDialog: [.alert]
+            
         case .vStack:      [.hStack]
         case .hStack:      [.vStack]
             

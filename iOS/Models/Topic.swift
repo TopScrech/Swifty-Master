@@ -28,6 +28,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          sheet = "Sheet",
          popover = "Popover",
          alert = "Alert",
+         confirmationDialog = "Confirmation Dialog",
          emptyView = "Empty View",
          appStoreOverlay = "App Store Overlay",
          

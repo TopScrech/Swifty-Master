@@ -86,6 +86,7 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .appStoreOverlay: AnyView(AppStoreOverlay())
     case .sheet:           AnyView(TopicSheet())
     case .alert:           AnyView(TopicAlert())
+    case .confirmationDialog: AnyView(TopicConfirmationDialog())
     case .popover:         AnyView(TopicPopover())
         
         // Nav

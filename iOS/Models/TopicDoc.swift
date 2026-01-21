@@ -129,6 +129,9 @@ extension Topic {
         case .alert:
             [TopicDocType("alert(_:ispresented:actions:message:)", url: "https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:actions:message:)-6awwp")]
             
+        case .confirmationDialog:
+            [TopicDocType("confirmationDialog(_:isPresented:titleVisibility:actions:message:)", url: "https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:actions:message:)")]
+            
         case .emptyView:
             [TopicDocType("EmptyView", url: "https://developer.apple.com/documentation/swiftui/emptyview")]
             

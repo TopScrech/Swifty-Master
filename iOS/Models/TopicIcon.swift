@@ -28,6 +28,7 @@ extension Topic {
         case .sheet: "square.stack"
         case .popover: "questionmark.bubble"
         case .alert: "exclamationmark.bubble"
+        case .confirmationDialog: "checkmark.bubble"
         case .emptyView: "rectangle.dashed"
         case .appStoreOverlay: "apple.logo"
             

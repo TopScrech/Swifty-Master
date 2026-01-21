@@ -24,6 +24,7 @@
 		F32313732E69CF0B0011837A /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
 		F325E3B32E5EBC760008928E /* Swifty Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F380A1622E4AA1BF00157F67 /* tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3A811E72F2146DA00D96952 /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENTS.md; sourceTree = "<group>"; };
 		F3BBD9DE2AEECD3400A9F7E7 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -186,6 +187,7 @@
 		F3BBD9D52AEECD3400A9F7E7 = {
 			isa = PBXGroup;
 			children = (
+				F3A811E72F2146DA00D96952 /* AGENTS.md */,
 				F30070012E2F0B9A00E76725 /* README.md */,
 				F383A5052ECF30A400350A0F /* iOS */,
 				F383A81D2ECF30AE00350A0F /* visionOS */,

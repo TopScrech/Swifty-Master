@@ -9,7 +9,7 @@ extension Topic {
         case .button, .menu, .contextMenu, .toggle, .slider, .stepper, .picker, .gauges, .progressView, .badges:
                 .control
             
-        case .sheet, .popover, .alert, .emptyView, .appStoreOverlay:
+        case .sheet, .popover, .alert, .confirmationDialog, .emptyView, .appStoreOverlay:
                 .view
             
         case .dismiss, .navigationView, .navigationStack, .navigationSplitView, .navigationBar, .navigationLink, .passAView, .link:
