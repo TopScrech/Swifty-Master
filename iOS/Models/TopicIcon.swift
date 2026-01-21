@@ -48,6 +48,7 @@ extension Topic {
         case .hStack: "square.split.2x1"
         case .zStack: "square.stack.3d.up"
         case .list: "list.bullet.clipboard"
+        case .swipeActions: "hand.draw"
         case .scrollView: "scroll"
         case .grids: "square.grid.3x3"
         case .tabView: "platter.filled.bottom.iphone"

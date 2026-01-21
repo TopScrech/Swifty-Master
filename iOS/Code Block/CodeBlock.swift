@@ -51,6 +51,7 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          hStack,
          zStack,
          list,
+         swipeActions,
          scrollView,
          grid, lazyVGrid, lazyHGrid,
          tabView,

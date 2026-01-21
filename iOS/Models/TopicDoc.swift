@@ -198,6 +198,9 @@ extension Topic {
             
         case .list:
             [TopicDocType("List", url: "https://developer.apple.com/documentation/swiftui/list")]
+
+        case .swipeActions:
+            [TopicDocType("swipeActions(edge:allowsFullSwipe:content:)", url: "https://developer.apple.com/documentation/swiftui/view/swipeactions(edge:allowsfullswipe:content:)")]
             
         case .scrollView:
             [TopicDocType("ScrollView", url: "https://developer.apple.com/documentation/swiftui/scrollview")]

@@ -15,7 +15,7 @@ extension Topic {
         case .dismiss, .navigationView, .navigationStack, .navigationSplitView, .navigationBar, .navigationLink, .passAView, .link, .shareLink:
                 .navigation
             
-        case .vStack, .hStack, .zStack, .list, .scrollView, .grids, .tabView:
+        case .vStack, .hStack, .zStack, .list, .swipeActions, .scrollView, .grids, .tabView:
                 .collections
             
         case .spacer, .padding, .frame, /*.positionPoint, */.geometryReader, .equalSizeViews:

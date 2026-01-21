@@ -105,6 +105,7 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .hStack:     AnyView(TopicHStack())
     case .zStack:     AnyView(TopicZStack())
     case .list:       AnyView(TopicList())
+    case .swipeActions: AnyView(TopicSwipeActions())
     case .scrollView: AnyView(TopicScrollView())
     case .grids:      AnyView(TopicGrids())
     case .tabView:    AnyView(TopicTabView())

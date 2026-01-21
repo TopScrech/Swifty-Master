@@ -25,7 +25,8 @@ extension Topic {
         case .gradient:    [.color]
             
         case .scrollView:  [.list]
-        case .list:        [.scrollView]
+        case .list:        [.scrollView, .swipeActions]
+        case .swipeActions: [.list]
             
         case .slider:      [.stepper]
         case .stepper:     [.slider]

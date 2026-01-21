@@ -48,6 +48,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          hStack = "HStack",
          zStack = "ZStack",
          list = "List",
+         swipeActions = "Swipe Actions",
          scrollView = "ScrollView",
          grids = "Grids",
          tabView = "TabView",

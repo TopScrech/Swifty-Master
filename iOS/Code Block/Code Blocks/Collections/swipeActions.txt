@@ -1,0 +1,17 @@
+List {
+    Text("Order #128")
+        .swipeActions {
+            Button(role: .destructive) {
+
+            } label: {
+                Label("Delete", systemImage: "trash")
+            }
+
+            Button {
+
+            } label: {
+                Label("Pin", systemImage: "pin")
+            }
+            .tint(.orange)
+        }
+}
