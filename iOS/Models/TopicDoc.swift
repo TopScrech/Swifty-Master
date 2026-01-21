@@ -172,6 +172,13 @@ extension Topic {
         case .link:
             [TopicDocType("Link", url: "https://developer.apple.com/documentation/swiftui/link")]
             
+        case .shareLink:
+            [
+                TopicDocType("ShareLink", url: "https://developer.apple.com/documentation/swiftui/sharelink"),
+                TopicDocType("SharePreview", url: "https://developer.apple.com/documentation/swiftui/sharepreview"),
+                TopicDocType("Transferable", url: "https://developer.apple.com/documentation/foundation/transferable")
+            ]
+            
             // MARK: - Collections
         case .vStack:
             [TopicDocType("VStack", url: "https://developer.apple.com/documentation/swiftui/vstack")]

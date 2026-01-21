@@ -41,6 +41,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          navigationLink = "Navigation Link",
          passAView = "Pass a View",
          link = "Link",
+         shareLink = "ShareLink",
          
          // Collections
          vStack = "VStack",

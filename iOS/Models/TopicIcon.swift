@@ -41,6 +41,7 @@ extension Topic {
         case .navigationLink: "point.topright.arrow.triangle.backward.to.point.bottomleft.scurvepath"
         case .passAView: "inset.filled.trailinghalf.arrow.trailing.rectangle"
         case .link: "link"
+        case .shareLink: "square.and.arrow.up"
             
             // Collections
         case .vStack: "square.split.1x2"

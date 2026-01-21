@@ -44,6 +44,7 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          navigationLink,
          passAView,
          link,
+         shareLink,
          
          // Collection
          vStack,

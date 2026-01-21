@@ -12,7 +12,7 @@ extension Topic {
         case .sheet, .popover, .alert, .confirmationDialog, .emptyView, .appStoreOverlay:
                 .view
             
-        case .dismiss, .navigationView, .navigationStack, .navigationSplitView, .navigationBar, .navigationLink, .passAView, .link:
+        case .dismiss, .navigationView, .navigationStack, .navigationSplitView, .navigationBar, .navigationLink, .passAView, .link, .shareLink:
                 .navigation
             
         case .vStack, .hStack, .zStack, .list, .scrollView, .grids, .tabView:

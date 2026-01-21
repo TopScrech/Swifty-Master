@@ -98,6 +98,7 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .navigationLink:      AnyView(TopicNavigationLink())
     case .passAView:           AnyView(TopicPassAView())
     case .link:                AnyView(TopicLink())
+    case .shareLink:           AnyView(TopicShareLink())
         
         // Collections
     case .vStack:     AnyView(TopicVStack())

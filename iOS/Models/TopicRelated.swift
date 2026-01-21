@@ -15,6 +15,9 @@ extension Topic {
         case .alert:              [.confirmationDialog]
         case .confirmationDialog: [.alert]
             
+        case .link:      [.shareLink]
+        case .shareLink: [.link]
+            
         case .vStack:      [.hStack]
         case .hStack:      [.vStack]
             
