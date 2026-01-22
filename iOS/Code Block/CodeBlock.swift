@@ -75,7 +75,8 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          detectLanguage,
          differentiateOS,
          detectScreenSize,
-         detectCompactOrRegular
+         detectCompactOrRegular,
+         settingsAlternativeIcons
     
     var code: String {
         guard let url = Bundle.main.url(forResource: self.rawValue, withExtension: "txt") else {

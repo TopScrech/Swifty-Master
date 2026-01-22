@@ -73,6 +73,7 @@ extension Topic {
         case .detectCompactOrRegular: "iphone.sizes"
         case .detectLang: "globe"
         case .lowPowerMode: "battery.25percent"
+        case .settingsAlternativeIcons: "app.badge"
         }
     }
 }

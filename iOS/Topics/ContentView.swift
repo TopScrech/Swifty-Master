@@ -129,6 +129,7 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .differentiateOS:        AnyView(TopicDifferentiateOS())
     case .detectScreenSize:       AnyView(TopicDetectScreenSize())
     case .detectCompactOrRegular: AnyView(TopicDetectCompactOrRegular())
+    case .settingsAlternativeIcons: AnyView(TopicSettingsAlternativeIcons())
         
     @unknown default: nil
     }

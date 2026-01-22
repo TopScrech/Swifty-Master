@@ -28,11 +28,15 @@ extension Topic {
         case .list:        [.scrollView, .swipeActions]
         case .swipeActions: [.list]
             
+        case .badges:      [.settingsAlternativeIcons]
+            
         case .slider:      [.stepper]
         case .stepper:     [.slider]
             
         case .spacer:      [.divider]
         case .divider:     [.spacer]
+            
+        case .settingsAlternativeIcons: [.badges]
             
         default: []
         }

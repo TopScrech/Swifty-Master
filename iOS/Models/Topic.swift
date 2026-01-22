@@ -72,7 +72,8 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          detectScreenSize = "Detect Screen Size",
          detectCompactOrRegular = "Detect Compact or Regular",
          detectLang = "Detect Language",
-         lowPowerMode = "Low Power Mode"
+         lowPowerMode = "Low Power Mode",
+         settingsAlternativeIcons = "Settings Alternative Icons"
     
     var id: String {
         rawValue
