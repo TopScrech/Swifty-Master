@@ -250,6 +250,9 @@ extension Topic {
         case .lowPowerMode:
             [TopicDocType("isLowPowerModeEnabled", url: "https://developer.apple.com/documentation/foundation/processinfo/islowpowermodeenabled")]
             
+        case .preventScreenSleep:
+            [TopicDocType("isIdleTimerDisabled", url: "https://developer.apple.com/documentation/uikit/uiapplication/1623129-isidletimerdisabled")]
+            
         case .settingsAlternativeIcons:
             [
                 TopicDocType("setAlternateIconName(_:completionHandler:)", url: "https://developer.apple.com/documentation/uikit/uiapplication/setalternateiconname(_:completionhandler:)"),

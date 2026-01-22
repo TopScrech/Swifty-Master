@@ -38,6 +38,9 @@ extension Topic {
             
         case .settingsAlternativeIcons: [.badges]
             
+        case .lowPowerMode: [.preventScreenSleep]
+        case .preventScreenSleep: [.lowPowerMode]
+            
         default: []
         }
     }
