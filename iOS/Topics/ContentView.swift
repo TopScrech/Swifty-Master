@@ -126,6 +126,7 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .detectOSVersion:        AnyView(TopicDetectOSVersion())
     case .lowPowerMode:           AnyView(TopicLowPowerMode())
     case .preventScreenSleep:     AnyView(TopicPreventScreenSleep())
+    case .preventScreenshots:     AnyView(TopicPreventScreenshots())
     case .detectLang:             AnyView(TopicDetectLaguage())
     case .differentiateOS:        AnyView(TopicDifferentiateOS())
     case .detectScreenSize:       AnyView(TopicDetectScreenSize())

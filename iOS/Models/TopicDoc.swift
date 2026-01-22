@@ -253,6 +253,12 @@ extension Topic {
         case .preventScreenSleep:
             [TopicDocType("isIdleTimerDisabled", url: "https://developer.apple.com/documentation/uikit/uiapplication/1623129-isidletimerdisabled")]
             
+        case .preventScreenshots:
+            [
+                TopicDocType("isSecureTextEntry", url: "https://developer.apple.com/documentation/uikit/uitextinputtraits/issecuretextentry"),
+                TopicDocType("UITextField", url: "https://developer.apple.com/documentation/uikit/uitextfield")
+            ]
+            
         case .settingsAlternativeIcons:
             [
                 TopicDocType("setAlternateIconName(_:completionHandler:)", url: "https://developer.apple.com/documentation/uikit/uiapplication/setalternateiconname(_:completionhandler:)"),

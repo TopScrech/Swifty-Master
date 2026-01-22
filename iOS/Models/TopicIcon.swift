@@ -74,6 +74,7 @@ extension Topic {
         case .detectLang: "globe"
         case .lowPowerMode: "battery.25percent"
         case .preventScreenSleep: "sun.max"
+        case .preventScreenshots: "iphone.slash"
         case .settingsAlternativeIcons: "app.badge"
         }
     }

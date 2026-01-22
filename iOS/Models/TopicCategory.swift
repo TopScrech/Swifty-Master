@@ -24,7 +24,7 @@ extension Topic {
         case .color, .gradient:
                 .design
             
-        case .detectOSVersion, .detectDarkMode, .differentiateOS, .detectScreenSize, .detectCompactOrRegular, .detectLang, .lowPowerMode, .preventScreenSleep, .settingsAlternativeIcons:
+        case .detectOSVersion, .detectDarkMode, .differentiateOS, .detectScreenSize, .detectCompactOrRegular, .detectLang, .lowPowerMode, .preventScreenSleep, .preventScreenshots, .settingsAlternativeIcons:
                 .system
         }
     }

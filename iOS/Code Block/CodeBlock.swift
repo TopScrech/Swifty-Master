@@ -73,6 +73,7 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          detectOSVersion, detectOSVersionNewAndOld, detectDeviceUsed,
          lowPowerMode,
          preventScreenSleep,
+         preventScreenshots,
          detectLanguage,
          differentiateOS,
          detectScreenSize,
