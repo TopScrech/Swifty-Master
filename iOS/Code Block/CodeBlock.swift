@@ -53,6 +53,7 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          list,
          swipeActions,
          scrollView,
+         scrollViewStretchyHeader,
          grid, lazyVGrid, lazyHGrid,
          tabView,
          
