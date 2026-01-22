@@ -4,45 +4,49 @@ struct CodeBlockView: View {
     @EnvironmentObject private var store: ValueStore
     
     private let code: String
+    private let style: CodeBlockStyle
     
-    init(_ code: CodeBlock) {
+    @State private var availableWidth: CGFloat = 0
+    
+    init(_ code: CodeBlock, style: CodeBlockStyle = .standard) {
         self.code = code.code.removingLastLine
+        self.style = style
     }
     
-    init(_ code: String) {
+    init(_ code: String, style: CodeBlockStyle = .standard) {
         self.code = code.removingLastLine
-    }
-    
-    private var codeLines: Array<(offset: Int, element: String)> {
-        Array(code.components(separatedBy: .newlines).enumerated())
+        self.style = style
     }
     
     var body: some View {
-        ZStack {
-            VStack(alignment: .leading, spacing: 4) {
-                ForEach(codeLines, id: \.offset) { index, line in
-                    HStack(alignment: .top, spacing: 16) {
-                        if store.showCodeLineNumbers {
-                            Text(index + 1)
-                                .monospaced()
-                                .foregroundColor(.gray)
-                                .frame(width: 30, alignment: .trailing)
-                                .lineLimit(1)
-                        }
-                        
-                        Text(attributedCodeString(for: line))
-                            .monospaced()
-                            .foregroundColor(.white)
-                    }
-                }
+        ZStack(alignment: .topTrailing) {
+            ScrollView(.horizontal) {
+                CodeBlockLinesView(
+                    code: code,
+                    style: style,
+                    showsLineNumbers: store.showCodeLineNumbers
+                )
+                .padding(style.padding)
+                .frame(minWidth: max(availableWidth, 1), alignment: .leading)
             }
-            .padding()
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .background(.regularMaterial)
-            .cornerRadius(20)
+            .scrollIndicators(.never)
 #if !os(tvOS)
             CodeBlockViewCopyButton(code)
 #endif
+        }
+        .background(style.background, in: .rect(cornerRadius: style.cornerRadius))
+        .background(widthReader)
+    }
+    
+    private var widthReader: some View {
+        GeometryReader { proxy in
+            Color.clear
+                .onAppear {
+                    availableWidth = proxy.size.width
+                }
+                .onChange(of: proxy.size.width) { newValue in
+                    availableWidth = newValue
+                }
         }
     }
 }
