@@ -32,6 +32,7 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          emptyView, emptyViewAnyView,
          popover,
          alert,
+         confirmationDialog,
          appStoreOverlay,
          
          // Nav
@@ -43,13 +44,16 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          navigationLink,
          passAView,
          link,
+         shareLink,
          
          // Collection
          vStack,
          hStack,
          zStack,
          list,
+         swipeActions,
          scrollView,
+         scrollViewStretchyHeader,
          grid, lazyVGrid, lazyHGrid,
          tabView,
          
@@ -69,10 +73,13 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          darkMode, darkModeLock,
          detectOSVersion, detectOSVersionNewAndOld, detectDeviceUsed,
          lowPowerMode,
+         preventScreenSleep,
+         preventScreenshots,
          detectLanguage,
          differentiateOS,
          detectScreenSize,
-         detectCompactOrRegular
+         detectCompactOrRegular,
+         settingsAlternativeIcons
     
     var code: String {
         guard let url = Bundle.main.url(forResource: self.rawValue, withExtension: "txt") else {

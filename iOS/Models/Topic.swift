@@ -28,6 +28,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          sheet = "Sheet",
          popover = "Popover",
          alert = "Alert",
+         confirmationDialog = "Confirmation Dialog",
          emptyView = "Empty View",
          appStoreOverlay = "App Store Overlay",
          
@@ -40,12 +41,14 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          navigationLink = "Navigation Link",
          passAView = "Pass a View",
          link = "Link",
+         shareLink = "ShareLink",
          
          // Collections
          vStack = "VStack",
          hStack = "HStack",
          zStack = "ZStack",
          list = "List",
+         swipeActions = "Swipe Actions",
          scrollView = "ScrollView",
          grids = "Grids",
          tabView = "TabView",
@@ -69,7 +72,10 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          detectScreenSize = "Detect Screen Size",
          detectCompactOrRegular = "Detect Compact or Regular",
          detectLang = "Detect Language",
-         lowPowerMode = "Low Power Mode"
+         lowPowerMode = "Low Power Mode",
+         preventScreenSleep = "Prevent Screen Sleep",
+         preventScreenshots = "Prevent Screenshots",
+         settingsAlternativeIcons = "Settings Alternative Icons"
     
     var id: String {
         rawValue

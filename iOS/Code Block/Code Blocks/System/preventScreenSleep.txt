@@ -1,0 +1,19 @@
+import UIKit
+import SwiftUI
+
+struct ContentView: View {
+    @State private var keepScreenAwake = false
+
+    var body: some View {
+        Toggle("Keep screen awake", isOn: $keepScreenAwake)
+            .onChange(of: keepScreenAwake) { _, newValue in
+                UIApplication.shared.isIdleTimerDisabled = newValue
+            }
+            .onAppear {
+                keepScreenAwake = UIApplication.shared.isIdleTimerDisabled
+            }
+            .onDisappear {
+                UIApplication.shared.isIdleTimerDisabled = false
+            }
+    }
+}

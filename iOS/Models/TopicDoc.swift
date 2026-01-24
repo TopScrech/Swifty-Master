@@ -129,6 +129,9 @@ extension Topic {
         case .alert:
             [TopicDocType("alert(_:ispresented:actions:message:)", url: "https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:actions:message:)-6awwp")]
             
+        case .confirmationDialog:
+            [TopicDocType("confirmationDialog(_:isPresented:titleVisibility:actions:message:)", url: "https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:actions:message:)")]
+            
         case .emptyView:
             [TopicDocType("EmptyView", url: "https://developer.apple.com/documentation/swiftui/emptyview")]
             
@@ -169,6 +172,13 @@ extension Topic {
         case .link:
             [TopicDocType("Link", url: "https://developer.apple.com/documentation/swiftui/link")]
             
+        case .shareLink:
+            [
+                TopicDocType("ShareLink", url: "https://developer.apple.com/documentation/swiftui/sharelink"),
+                TopicDocType("SharePreview", url: "https://developer.apple.com/documentation/swiftui/sharepreview"),
+                TopicDocType("Transferable", url: "https://developer.apple.com/documentation/foundation/transferable")
+            ]
+            
             // MARK: - Collections
         case .vStack:
             [TopicDocType("VStack", url: "https://developer.apple.com/documentation/swiftui/vstack")]
@@ -188,6 +198,9 @@ extension Topic {
             
         case .list:
             [TopicDocType("List", url: "https://developer.apple.com/documentation/swiftui/list")]
+
+        case .swipeActions:
+            [TopicDocType("swipeActions(edge:allowsFullSwipe:content:)", url: "https://developer.apple.com/documentation/swiftui/view/swipeactions(edge:allowsfullswipe:content:)")]
             
         case .scrollView:
             [TopicDocType("ScrollView", url: "https://developer.apple.com/documentation/swiftui/scrollview")]
@@ -236,6 +249,21 @@ extension Topic {
             
         case .lowPowerMode:
             [TopicDocType("isLowPowerModeEnabled", url: "https://developer.apple.com/documentation/foundation/processinfo/islowpowermodeenabled")]
+            
+        case .preventScreenSleep:
+            [TopicDocType("isIdleTimerDisabled", url: "https://developer.apple.com/documentation/uikit/uiapplication/1623129-isidletimerdisabled")]
+            
+        case .preventScreenshots:
+            [
+                TopicDocType("isSecureTextEntry", url: "https://developer.apple.com/documentation/uikit/uitextinputtraits/issecuretextentry"),
+                TopicDocType("UITextField", url: "https://developer.apple.com/documentation/uikit/uitextfield")
+            ]
+            
+        case .settingsAlternativeIcons:
+            [
+                TopicDocType("setAlternateIconName(_:completionHandler:)", url: "https://developer.apple.com/documentation/uikit/uiapplication/setalternateiconname(_:completionhandler:)"),
+                TopicDocType("supportsAlternateIcons", url: "https://developer.apple.com/documentation/uikit/uiapplication/supportsalternateicons")
+            ]
             
         default:
             []

@@ -1,0 +1,25 @@
+struct AppSettings: View {
+    var body: some View {
+        Form {
+            Section("App Icon") {
+                Button("Glassy icon") {
+                    setIcon(named: "Liquid Glass")
+                }
+
+                Button("Reset icon") {
+                    setIcon(named: nil)
+                }
+            }
+        }
+    }
+
+    private func setIcon(named name: String?) {
+        guard UIApplication.shared.supportsAlternateIcons else { return }
+
+        UIApplication.shared.setAlternateIconName(name) { error in
+            if let error {
+                print(error.localizedDescription)
+            }
+        }
+    }
+}

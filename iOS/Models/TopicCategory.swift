@@ -9,13 +9,13 @@ extension Topic {
         case .button, .menu, .contextMenu, .toggle, .slider, .stepper, .picker, .gauges, .progressView, .badges:
                 .control
             
-        case .sheet, .popover, .alert, .emptyView, .appStoreOverlay:
+        case .sheet, .popover, .alert, .confirmationDialog, .emptyView, .appStoreOverlay:
                 .view
             
-        case .dismiss, .navigationView, .navigationStack, .navigationSplitView, .navigationBar, .navigationLink, .passAView, .link:
+        case .dismiss, .navigationView, .navigationStack, .navigationSplitView, .navigationBar, .navigationLink, .passAView, .link, .shareLink:
                 .navigation
             
-        case .vStack, .hStack, .zStack, .list, .scrollView, .grids, .tabView:
+        case .vStack, .hStack, .zStack, .list, .swipeActions, .scrollView, .grids, .tabView:
                 .collections
             
         case .spacer, .padding, .frame, /*.positionPoint, */.geometryReader, .equalSizeViews:
@@ -24,7 +24,7 @@ extension Topic {
         case .color, .gradient:
                 .design
             
-        case .detectOSVersion, .detectDarkMode, .differentiateOS, .detectScreenSize, .detectCompactOrRegular, .detectLang, .lowPowerMode:
+        case .detectOSVersion, .detectDarkMode, .differentiateOS, .detectScreenSize, .detectCompactOrRegular, .detectLang, .lowPowerMode, .preventScreenSleep, .preventScreenshots, .settingsAlternativeIcons:
                 .system
         }
     }

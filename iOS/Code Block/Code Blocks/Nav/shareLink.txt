@@ -1,0 +1,11 @@
+let url = URL(string: "https://swift.org")!
+
+ShareLink(item: url)
+
+ShareLink("Share Swift", item: url)
+
+ShareLink(item: url) {
+    Label("Share link", systemImage: "square.and.arrow.up")
+}
+
+ShareLink(item: url, preview: SharePreview("Swift", image: Image(systemName: "swift")))

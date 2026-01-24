@@ -28,6 +28,7 @@ extension Topic {
         case .sheet: "square.stack"
         case .popover: "questionmark.bubble"
         case .alert: "exclamationmark.bubble"
+        case .confirmationDialog: "checkmark.bubble"
         case .emptyView: "rectangle.dashed"
         case .appStoreOverlay: "apple.logo"
             
@@ -40,12 +41,14 @@ extension Topic {
         case .navigationLink: "point.topright.arrow.triangle.backward.to.point.bottomleft.scurvepath"
         case .passAView: "inset.filled.trailinghalf.arrow.trailing.rectangle"
         case .link: "link"
+        case .shareLink: "square.and.arrow.up"
             
             // Collections
         case .vStack: "square.split.1x2"
         case .hStack: "square.split.2x1"
         case .zStack: "square.stack.3d.up"
         case .list: "list.bullet.clipboard"
+        case .swipeActions: "hand.draw"
         case .scrollView: "scroll"
         case .grids: "square.grid.3x3"
         case .tabView: "platter.filled.bottom.iphone"
@@ -70,6 +73,9 @@ extension Topic {
         case .detectCompactOrRegular: "iphone.sizes"
         case .detectLang: "globe"
         case .lowPowerMode: "battery.25percent"
+        case .preventScreenSleep: "sun.max"
+        case .preventScreenshots: "iphone.slash"
+        case .settingsAlternativeIcons: "app.badge"
         }
     }
 }

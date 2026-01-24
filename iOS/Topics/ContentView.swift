@@ -86,6 +86,7 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .appStoreOverlay: AnyView(AppStoreOverlay())
     case .sheet:           AnyView(TopicSheet())
     case .alert:           AnyView(TopicAlert())
+    case .confirmationDialog: AnyView(TopicConfirmationDialog())
     case .popover:         AnyView(TopicPopover())
         
         // Nav
@@ -97,12 +98,14 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .navigationLink:      AnyView(TopicNavigationLink())
     case .passAView:           AnyView(TopicPassAView())
     case .link:                AnyView(TopicLink())
+    case .shareLink:           AnyView(TopicShareLink())
         
         // Collections
     case .vStack:     AnyView(TopicVStack())
     case .hStack:     AnyView(TopicHStack())
     case .zStack:     AnyView(TopicZStack())
     case .list:       AnyView(TopicList())
+    case .swipeActions: AnyView(TopicSwipeActions())
     case .scrollView: AnyView(TopicScrollView())
     case .grids:      AnyView(TopicGrids())
     case .tabView:    AnyView(TopicTabView())
@@ -122,10 +125,13 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .detectDarkMode:         AnyView(TopicDarkMode())
     case .detectOSVersion:        AnyView(TopicDetectOSVersion())
     case .lowPowerMode:           AnyView(TopicLowPowerMode())
+    case .preventScreenSleep:     AnyView(TopicPreventScreenSleep())
+    case .preventScreenshots:     AnyView(TopicPreventScreenshots())
     case .detectLang:             AnyView(TopicDetectLaguage())
     case .differentiateOS:        AnyView(TopicDifferentiateOS())
     case .detectScreenSize:       AnyView(TopicDetectScreenSize())
     case .detectCompactOrRegular: AnyView(TopicDetectCompactOrRegular())
+    case .settingsAlternativeIcons: AnyView(TopicSettingsAlternativeIcons())
         
     @unknown default: nil
     }

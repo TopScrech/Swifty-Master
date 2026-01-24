@@ -12,6 +12,12 @@ extension Topic {
         case .contextMenu: [.menu]
         case .menu:        [.contextMenu]
             
+        case .alert:              [.confirmationDialog]
+        case .confirmationDialog: [.alert]
+            
+        case .link:      [.shareLink]
+        case .shareLink: [.link]
+            
         case .vStack:      [.hStack]
         case .hStack:      [.vStack]
             
@@ -19,13 +25,22 @@ extension Topic {
         case .gradient:    [.color]
             
         case .scrollView:  [.list]
-        case .list:        [.scrollView]
+        case .list:        [.scrollView, .swipeActions]
+        case .swipeActions: [.list]
+            
+        case .badges:      [.settingsAlternativeIcons]
             
         case .slider:      [.stepper]
         case .stepper:     [.slider]
             
         case .spacer:      [.divider]
         case .divider:     [.spacer]
+            
+        case .settingsAlternativeIcons: [.badges]
+            
+        case .lowPowerMode: [.preventScreenSleep]
+        case .preventScreenSleep: [.lowPowerMode, .preventScreenshots]
+        case .preventScreenshots: [.preventScreenSleep]
             
         default: []
         }

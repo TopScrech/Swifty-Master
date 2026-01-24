@@ -5,11 +5,7 @@ struct TopicActionButton: View {
     private let color: Color
     private let action: () -> Void
     
-    init(
-        _ name: LocalizedStringKey,
-        color: Color,
-        action: @escaping () -> Void = {}
-    ) {
+    init(_ name: LocalizedStringKey, color: Color, action: @escaping () -> Void = {}) {
         self.name = name
         self.color = color
         self.action = action
