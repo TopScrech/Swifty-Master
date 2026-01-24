@@ -13,7 +13,7 @@ struct StretchyHeaderDemoView: View {
         }
         .ignoresSafeArea(edges: .top)
         .navigationTitle("Stretchy Header")
-        .navigationBarTitleDisplayMode(.inline)
+        .toolbarTitleDisplayMode(.inline)
     }
     
     private var header: some View {
