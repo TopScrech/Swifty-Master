@@ -44,7 +44,7 @@ struct CodeBlockView: View {
                 .onAppear {
                     availableWidth = proxy.size.width
                 }
-                .onChange(of: proxy.size.width) { newValue in
+                .onChange(of: proxy.size.width) { _, newValue in
                     availableWidth = newValue
                 }
         }
