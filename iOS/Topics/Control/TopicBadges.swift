@@ -1,3 +1,4 @@
+import OSLog
 import ScrechKit
 
 struct TopicBadges: View {
@@ -38,7 +39,7 @@ struct TopicBadges: View {
             do {
                 try await center.setBadgeCount(new)
             } catch {
-                print(error)
+                Logger().error("Failed to set badge count: \(error)")
             }
         }
     }

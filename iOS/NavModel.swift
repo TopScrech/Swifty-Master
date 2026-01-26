@@ -1,6 +1,7 @@
 // A navigation model used to persist and restore the navigation state
 
 import SwiftUI
+import OSLog
 
 @Observable
 final class NavModel: Codable {
@@ -16,6 +17,7 @@ final class NavModel: Codable {
     
     private static let decoder = JSONDecoder()
     private static let encoder = JSONEncoder()
+    private static let logger = Logger()
     
     /// The URL for the JSON file that stores the topic data
     private static var dataURL: URL {
@@ -65,7 +67,7 @@ final class NavModel: Codable {
         do {
             try FileManager.default.removeItem(at: Self.dataURL)
         } catch {
-            print(error)
+            Self.logger.error("Failed to clear nav cache: \(String(describing: error))")
         }
     }
     
@@ -79,9 +81,9 @@ final class NavModel: Codable {
             topicPath         = model.topicPath
             favoriteTopicPath = model.favoriteTopicPath
             
-            print("Loaded NavModel:", topicPath)
+            Self.logger.info("Loaded NavModel: \(String(describing: self.topicPath))")
         } catch {
-            print(error)
+            Self.logger.error("Failed to load NavModel: \(String(describing: error))")
         }
     }
     
@@ -90,9 +92,9 @@ final class NavModel: Codable {
         do {
             try jsonData?.write(to: Self.dataURL)
             
-            print("Saved nav path:", topicPath)
+            Self.logger.info("Saved nav path: \(String(describing: self.topicPath))")
         } catch {
-            print(error)
+            Self.logger.error("Failed to save nav path: \(String(describing: error))")
         }
     }
     

@@ -1,6 +1,9 @@
 import SwiftUI
+import OSLog
 
 struct ImagePickerView: View {
+    private let logger = Logger()
+    
     var body: some View {
         VStack {
             ImagePicker(
@@ -8,8 +11,8 @@ struct ImagePickerView: View {
                 subTitle: "Tap to add an Image",
                 systemImage: "square.and.arrow.up",
                 tint: .blue
-            ) { image in
-                print(image)
+            ) {
+                logger.info("Image picked: \(String(describing: $0))")
             }
         }
         .ignoresSafeArea(edges: [.bottom])

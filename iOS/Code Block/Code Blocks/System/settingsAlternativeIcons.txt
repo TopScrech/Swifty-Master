@@ -1,4 +1,6 @@
 struct AppSettings: View {
+    private let logger = Logger()
+    
     var body: some View {
         Form {
             Section("App Icon") {
@@ -18,7 +20,7 @@ struct AppSettings: View {
 
         UIApplication.shared.setAlternateIconName(name) { error in
             if let error {
-                print(error.localizedDescription)
+                logger.error("Failed to set app icon: \(error)")
             }
         }
     }
