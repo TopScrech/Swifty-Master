@@ -86,10 +86,66 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
     }
     
     var shareLink: URL? {
-        if let url = URL(string: "https://swift-docs.dev/" + self.rawValue) {
-            url
-        } else {
-            nil
+        var components = URLComponents()
+        components.scheme = "https"
+        components.host = Self.shareLinkHost
+        components.percentEncodedPath = "/" + Self.encodedShareLinkPath(rawValue)
+        return components.url
+    }
+    
+    static func topic(from url: URL) -> Topic? {
+        guard
+            let host = url.host,
+            Self.shareLinkHosts.contains(host)
+        else {
+            return nil
+        }
+        
+        let pathComponents = url.pathComponents.filter {
+            $0 != "/"
+        }
+        
+        for component in pathComponents.reversed() {
+            if let match = Self.matchingTopic(for: component) {
+                return match
+            }
+        }
+        
+        if
+            let components = URLComponents(url: url, resolvingAgainstBaseURL: false),
+            let topicQuery = components.queryItems?.first(where: { $0.name == "topic" })?.value,
+            let match = Self.matchingTopic(for: topicQuery)
+        {
+            return match
+        }
+        
+        if
+            let fragment = url.fragment,
+            let match = Self.matchingTopic(for: fragment)
+        {
+            return match
+        }
+        
+        return nil
+    }
+    
+    private static let shareLinkHost = "swift-docs.dev"
+    private static let shareLinkHosts: Set<String> = ["swift-docs.dev", "www.swift-docs.dev"]
+    
+    private static func encodedShareLinkPath(_ topic: String) -> String {
+        topic.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? topic
+    }
+    
+    private static func matchingTopic(for candidate: String) -> Topic? {
+        let decoded = candidate.removingPercentEncoding ?? candidate
+        let normalized = decoded
+            .replacingOccurrences(of: "-", with: " ")
+            .replacingOccurrences(of: "_", with: " ")
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        return Topic.allCases.first {
+            $0.rawValue.caseInsensitiveCompare(decoded) == .orderedSame ||
+            $0.rawValue.caseInsensitiveCompare(normalized) == .orderedSame
         }
     }
 }
