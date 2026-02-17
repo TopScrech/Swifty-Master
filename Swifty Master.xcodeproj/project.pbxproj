@@ -27,6 +27,7 @@
 		F3A66CB52F294FFE008354CC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		F3A811E72F2146DA00D96952 /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENTS.md; sourceTree = "<group>"; };
 		F3BBD9DE2AEECD3400A9F7E7 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3D858F42F451DB800B2A3F7 /* UNLICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = UNLICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -191,6 +192,7 @@
 			children = (
 				F3A811E72F2146DA00D96952 /* AGENTS.md */,
 				F30070012E2F0B9A00E76725 /* README.md */,
+				F3D858F42F451DB800B2A3F7 /* UNLICENSE.txt */,
 				F383A5052ECF30A400350A0F /* iOS */,
 				F383A81D2ECF30AE00350A0F /* visionOS */,
 				F383A8182ECF30A800350A0F /* tvOS */,
