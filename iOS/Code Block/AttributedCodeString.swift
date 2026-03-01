@@ -33,6 +33,10 @@ extension AttributedString {
                 apply(color: modifierParameterColor, to: token, in: code, highlightedString: &highlightedString)
             }
 
+            if shouldColorAsAttributeIdentifier(tokens: tokens, at: index) {
+                apply(color: attributeColor, to: token, in: code, highlightedString: &highlightedString)
+            }
+
             if shouldColorAsBinding(tokens: tokens, at: index) {
                 apply(color: bindingColor, to: token, in: code, highlightedString: &highlightedString)
             }
@@ -55,6 +59,8 @@ extension AttributedString {
                 triviaOffset = nextOffset
             }
         }
+
+        colorBindings(in: code, highlightedString: &highlightedString)
 
         return highlightedString
     }
@@ -187,6 +193,36 @@ extension AttributedString {
         }
 
         return false
+    }
+
+    private static func shouldColorAsAttributeIdentifier(tokens: [TokenSyntax], at index: Int) -> Bool {
+        guard
+            case .identifier = tokens[index].tokenKind,
+            index > 0,
+            case .atSign = tokens[index - 1].tokenKind
+        else {
+            return false
+        }
+
+        return true
+    }
+
+    private static func colorBindings(in code: String, highlightedString: inout AttributedString) {
+        guard let regex = try? NSRegularExpression(pattern: #"\$[A-Za-z_]\w*|\$\d+"#) else {
+            return
+        }
+
+        let fullRange = NSRange(code.startIndex..., in: code)
+        for match in regex.matches(in: code, range: fullRange) {
+            guard
+                let range = Range(match.range, in: code),
+                let attributedRange = Range(range, in: highlightedString)
+            else {
+                continue
+            }
+
+            highlightedString[attributedRange].foregroundColor = bindingColor
+        }
     }
 
     private static func apply(
