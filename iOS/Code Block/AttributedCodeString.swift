@@ -1,312 +1,242 @@
 import ScrechKit
+import SwiftParser
+import SwiftSyntax
 
-/// Helper function to create an AttributedString with simulated syntax highlighting
 func attributedCodeString(for code: String) -> AttributedString {
-    var attributedString = AttributedString(code)
-    let font: Font = .footnote.bold()
-    
-    if code.isEmpty {
-        return attributedString
-    }
-    
-    // String
-    let quotedStringPattern = #""([^"]*?)""#
-    let fullRange = NSRange(code.startIndex..., in: code)
-    
-    let primaryKeywords = [
-        "let", "var",
-        "if ", "else", "elseif", "@available",
-        "struct", "func", "return", "import", "public", "extension", "private", "some",
-        "true", "false"
-    ]
-    
-    let secondaryKeywords = [
-        "Gauge", "GaugeCard", "Text", "VStack", "Button", "List", "Toggle", "Picker", "Divider",
-        "Menu", "Label", "Image", "TextField", "TextEditor", "ProgressView", "TabView", "Tab", "Task", "UIApplication", "Slider", "Stepper",
-        "NavigationView", "NavigationStack", "NavigationSplitView", "ScrollView", "ToolbarItem", "ToolbarItemGroup", "NavigationLink", "ForEach",
-        "Grid", "GridRow", "LazyVGrid", "LazyHGrid", "Spacer", "GeometryReader", "HStack", "Color", "Rectangle", "UIDevice", "ZStack",
-        "EmptyView", "UIScreen", "Circle", "String", "AnyView", "Link",
-        "spacing", "value", "in", " View", "SecureField", "Ellipse", "RoundedRectangle", "Capsule", "ConcentricRectangle",
-        "@State", "@Environment",
-        "Gradient", "LinearGradient", "AngularGradient", "RadialGradient", "EllipticalGradient",
-        "SKOverlay", "Binding", "Bool", "AppConfiguration", "appIdentifier", "position"
-    ]
-    
-    let modifiers = [
-        "label",
-        "dismiss", "opacity",
-        "navigationBarBackButtonHidden", "appStoreOverlay"
-    ]
-    
-    // Int & Double
-    let numberPattern = #"(?<!\w)(?:\d+\.\d+|\d+)(?!\w)"#
-    colorBasedOnPattern(numberPattern, color: Color(0xD0BF69))
-    
-    colorKeywords(primaryKeywords, color: Color(0xFC5FA3))
-    
-    colorWholeLine(#"(?m)^#(if|else|endif).*"#, color: Color(0xFD8F3F))
-    
-    // Secondary keywords
-    colorKeywords(secondaryKeywords, color: Color(0xD0A8FF))
-    
-    // Modifiers
-    colorKeywords(modifiers, color: Color(0xA167E6))
-    
-    // Comments (inline)
-    // Keep track of string ranges to avoid coloring comments inside strings
-    var stringRanges: [Range<String.Index>] = []
-    
-    if let regex = try? NSRegularExpression(pattern: quotedStringPattern) {
-        let matches = regex.matches(in: code, range: fullRange)
-        
-        for match in matches {
-            guard match.numberOfRanges >= 1 else {
-                continue
-            }
-            
-            let fullRange = match.range(at: 0)
-            
-            if let stringRange = Range(fullRange, in: code),
-               let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
-                stringRanges.append(stringRange) // <-- collect for later
-                attributedString[attributedRange].foregroundColor = Color(0xFC6A5D)
-            }
-        }
-    }
-    
-    // Now color only the `// ...` part (not whole line), anywhere on the line
-    // Avoid URLs like http:// with a simple negative-lookbehind for ':'
-    let inlineCommentPattern = #"(?m)(?<!:)//.*$"#
-    
-    if let regex = try? NSRegularExpression(pattern: inlineCommentPattern) {
-        let matches = regex.matches(in: code, range: fullRange)
-        
-        for match in matches {
-            guard match.numberOfRanges >= 1 else {
-                continue
-            }
-            
-            let fullRange = match.range(at: 0)
-            
-            if let commentRange = Range(fullRange, in: code) {
-                // Skip if the comment start sits inside any string literal
-                let start = commentRange.lowerBound
-                let isInsideString = stringRanges.contains {
-                    $0.contains(start)
-                }
-                
-                if isInsideString {
-                    continue
-                }
-                
-                if let attributedRange = Range(NSRange(commentRange, in: code), in: attributedString) {
-                    attributedString[attributedRange].foregroundColor = Color(0x6C7986)
-                }
-            }
-        }
-    }
-    
-    // Interpolation \(somethin')
-    let interpolationPattern = #"\\\(([^)]+?)\)"#
-    
-    if let regex = try? NSRegularExpression(pattern: interpolationPattern) {
-        let matches = regex.matches(in: code, range: fullRange)
-        
-        for match in matches {
-            guard match.numberOfRanges >= 2 else {
-                continue
-            }
-            
-            let innerRange = match.range(at: 1)
-            
-            if let stringRange = Range(innerRange, in: code),
-               let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
-                attributedString[attributedRange].foregroundColor = Color(0xA167E6)
-            }
-        }
-    }
-    
-    // View Modifiers
-    let modifierPattern = #"(?:\s*,\s*|\s+)\.(\w+)\s*\("#
-    
-    if let regex = try? NSRegularExpression(pattern: modifierPattern) {
-        let matches = regex.matches(in: code, range: fullRange)
-        
-        for match in matches {
-            guard match.numberOfRanges >= 2 else {
-                continue
-            }
-            
-            let nameRange = match.range(at: 1)
-            
-            if let stringRange = Range(nameRange, in: code),
-               let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
-                attributedString[attributedRange].foregroundColor = Color(0xA167E6)
-                attributedString[attributedRange].font = font
-            }
-        }
-    }
-    
-    // View Modifiers with a single enum-style parameter
-    // e.g. .padding(.vertical)
-    let singleParamModifierPattern = #"\.(\w+)\s*\(\s*\.(\w+)\s*\)"#
-    
-    if let regex = try? NSRegularExpression(pattern: singleParamModifierPattern) {
-        let matches = regex.matches(in: code, range: fullRange)
-        
-        for match in matches where match.numberOfRanges >= 3 {
-            // Group 1: modifier name (e.g. "padding")
-            let modifierNameRange = match.range(at: 1)
-            // Group 2: single parameter (e.g. "vertical")
-            let paramNameRange = match.range(at: 2)
-            
-            if let r1 = Range(modifierNameRange, in: code),
-               let a1 = Range(NSRange(r1, in: code), in: attributedString) {
-                attributedString[a1].foregroundColor = Color(0xA167E6)
-                attributedString[a1].font = font
-            }
-            
-            if let r2 = Range(paramNameRange, in: code),
-               let a2 = Range(NSRange(r2, in: code), in: attributedString) {
-                attributedString[a2].foregroundColor = Color(0xA167E6)
-                attributedString[a2].font = font
-            }
-        }
-    }
-    
-    // Identifiers in `} anyTextHere: {`
-    let betweenBracesPattern = #"\}\s*([A-Za-z_]\w*)\s*:\s*\{"#
-    
-    if let regex = try? NSRegularExpression(pattern: betweenBracesPattern) {
-        let matches = regex.matches(in: code, range: fullRange)
-        
-        for match in matches where match.numberOfRanges >= 2 {
-            let nameRange = match.range(at: 1)
-            
-            if let stringRange = Range(nameRange, in: code),
-               let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
-                attributedString[attributedRange].foregroundColor = Color(0xA167E6)
-                attributedString[attributedRange].font = font
-            }
-        }
-    }
-    
-    // Identifiers in `.anyTextHere {`
-    let dotBlockPattern = #"(?m)^\s*\.\s*([A-Za-z_]\w*)\s*\{"#
-    
-    if let regex = try? NSRegularExpression(pattern: dotBlockPattern) {
-        let matches = regex.matches(in: code, range: fullRange)
-        
-        for match in matches where match.numberOfRanges >= 2 {
-            let nameRange = match.range(at: 1)
-            
-            if let stringRange = Range(nameRange, in: code),
-               let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
-                attributedString[attributedRange].foregroundColor = Color(0xD0A8FF)
-                attributedString[attributedRange].font = font
-            }
-        }
-    }
-    
-    // Color SwiftUI bindings `$property`
-    let bindingPattern = #"\$[A-Za-z_]\w*"#
-    
-    if let regex = try? NSRegularExpression(pattern: bindingPattern) {
-        let matches = regex.matches(in: code, range: fullRange)
-        
-        for match in matches {
-            let nameRange = match.range(at: 0)
-            
-            if let stringRange = Range(nameRange, in: code),
-               let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
-                attributedString[attributedRange].foregroundColor = Color(0x67B7A4)
-                attributedString[attributedRange].font = font
-            }
-        }
-    }
-    
-    // Match "struct SomeName: View"
-    let structPattern = #"struct\s+([A-Za-z_]\w*)\s*:\s*View"#
-    
-    if let regex = try? NSRegularExpression(pattern: structPattern) {
-        let matches = regex.matches(in: code, range: fullRange)
-        
-        for match in matches where match.numberOfRanges >= 2 {
-            // Capture group 1 = the struct name
-            let nameRange = match.range(at: 1)
-            
-            if let stringRange = Range(nameRange, in: code),
-               let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
-                attributedString[attributedRange].foregroundColor = Color(0x5DD8FF)
-                attributedString[attributedRange].font = font
-            }
-        }
-    }
-    
-    return attributedString
-    
-    func colorBasedOnPattern(
-        _ pattern: String,
-        color: Color,
-        range: Int = 0
-    ) {
-        if let regex = try? NSRegularExpression(pattern: pattern) {
-            let matches = regex.matches(in: code, range: fullRange)
-            
-            for match in matches {
-                let range = match.range(at: range)
-                
-                if let stringRange = Range(range, in: code),
-                   let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
-                    attributedString[attributedRange].foregroundColor = color
-                }
-            }
-        }
-    }
-    
-    func colorWholeLine(_ regex: String, color: Color) {
-        if let regex = try? NSRegularExpression(pattern: regex) {
-            let matches = regex.matches(in: code, range: fullRange)
-            
-            for match in matches {
-                let range = match.range(at: 0)
-                
-                if let stringRange = Range(range, in: code),
-                   let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
-                    attributedString[attributedRange].foregroundColor = color
-                }
-            }
-        }
-    }
-    
-    func colorKeywords(_ keywords: [String], color: Color) {
-        for keyword in keywords {
-            let ranges = code.ranges(of: keyword)
-            
-            for range in ranges {
-                if let attributedRange = Range(NSRange(range, in: code), in: attributedString) {
-                    attributedString[attributedRange].foregroundColor = color
-                    attributedString[attributedRange].font = font
-                }
-            }
-        }
-    }
+    AttributedString.highlight(code: code)
 }
 
-extension String {
-    /// Helper to find all ranges of a substring within a string
-    func ranges(of substring: String) -> [Range<String.Index>] {
-        var result: [Range<String.Index>] = []
-        var startIndex = self.startIndex
-        
-        while
-            startIndex < self.endIndex,
-            let range = self.range(of: substring, range: startIndex..<self.endIndex)
-        {
-            result.append(range)
-            startIndex = range.upperBound
+extension AttributedString {
+    static func highlight(code: String) -> AttributedString {
+        var highlightedString = AttributedString(code)
+
+        guard !code.isEmpty else {
+            return highlightedString
         }
-        
+
+        let sourceFile = Parser.parse(source: code)
+        let tokens = Array(sourceFile.tokens(viewMode: .sourceAccurate))
+        let parameterLabelIndices = callParameterLabelIndices(in: tokens)
+
+        for (index, token) in tokens.enumerated() {
+            if let color = color(for: token.tokenKind) {
+                let lowerBound = token.positionAfterSkippingLeadingTrivia.utf8Offset
+                let upperBound = token.endPositionBeforeTrailingTrivia.utf8Offset
+                apply(color: color, to: lowerBound..<upperBound, in: code, highlightedString: &highlightedString)
+            }
+
+            if shouldColorAsModifier(tokens: tokens, at: index) {
+                apply(color: modifierColor, to: token, in: code, highlightedString: &highlightedString)
+            }
+
+            if parameterLabelIndices.contains(index) {
+                apply(color: modifierParameterColor, to: token, in: code, highlightedString: &highlightedString)
+            }
+
+            if shouldColorAsBinding(tokens: tokens, at: index) {
+                apply(color: bindingColor, to: token, in: code, highlightedString: &highlightedString)
+            }
+
+            var triviaOffset = token.position.utf8Offset
+            for piece in token.leadingTrivia {
+                let nextOffset = triviaOffset + piece.sourceLength.utf8Length
+                if piece.isComment {
+                    apply(color: commentColor, to: triviaOffset..<nextOffset, in: code, highlightedString: &highlightedString)
+                }
+                triviaOffset = nextOffset
+            }
+
+            triviaOffset = token.endPositionBeforeTrailingTrivia.utf8Offset
+            for piece in token.trailingTrivia {
+                let nextOffset = triviaOffset + piece.sourceLength.utf8Length
+                if piece.isComment {
+                    apply(color: commentColor, to: triviaOffset..<nextOffset, in: code, highlightedString: &highlightedString)
+                }
+                triviaOffset = nextOffset
+            }
+        }
+
+        return highlightedString
+    }
+
+    private static func color(for tokenKind: TokenKind) -> Color? {
+        switch tokenKind {
+        case .keyword:
+            keywordColor
+        case .poundIf, .poundElse, .poundElseif, .poundEndif, .poundAvailable, .poundUnavailable, .poundSourceLocation:
+            directiveColor
+        case .integerLiteral, .floatLiteral:
+            numberColor
+        case .stringQuote, .multilineStringQuote, .stringSegment, .rawStringPoundDelimiter, .regexLiteralPattern, .regexPoundDelimiter, .regexSlash:
+            stringColor
+        case .dollarIdentifier:
+            bindingColor
+        case .atSign:
+            attributeColor
+        case .identifier(let identifier) where identifier.first?.isUppercase == true:
+            typeColor
+        default:
+            nil
+        }
+    }
+
+    private static func shouldColorAsModifier(tokens: [TokenSyntax], at index: Int) -> Bool {
+        guard
+            index > 0,
+            case .identifier = tokens[index].tokenKind,
+            case .period = tokens[index - 1].tokenKind
+        else {
+            return false
+        }
+
+        let hasCallParenthesis: Bool = if index + 1 < tokens.count {
+            if case .leftParen = tokens[index + 1].tokenKind {
+                true
+            } else {
+                false
+            }
+        } else {
+            false
+        }
+
+        let hasLeadingDotContext: Bool = if index >= 2 {
+            switch tokens[index - 2].tokenKind {
+            case .leftParen, .leftSquare, .leftBrace, .comma, .colon, .equal:
+                true
+            default:
+                false
+            }
+        } else {
+            true
+        }
+
+        return hasCallParenthesis || hasLeadingDotContext
+    }
+
+    private static func callParameterLabelIndices(in tokens: [TokenSyntax]) -> Set<Int> {
+        var result: Set<Int> = []
+        var index = 0
+
+        while index < tokens.count {
+            guard isCallOpeningParen(tokens: tokens, at: index) else {
+                index += 1
+                continue
+            }
+
+            var depth = 1
+            var scanIndex = index + 1
+
+            while scanIndex < tokens.count, depth > 0 {
+                switch tokens[scanIndex].tokenKind {
+                case .leftParen:
+                    depth += 1
+                case .rightParen:
+                    depth -= 1
+                default:
+                    break
+                }
+
+                if depth == 1,
+                   case .identifier = tokens[scanIndex].tokenKind,
+                   scanIndex + 1 < tokens.count,
+                   case .colon = tokens[scanIndex + 1].tokenKind {
+                    result.insert(scanIndex)
+                }
+
+                scanIndex += 1
+            }
+
+            index = max(scanIndex, index + 1)
+        }
+
         return result
     }
+
+    private static func isCallOpeningParen(tokens: [TokenSyntax], at index: Int) -> Bool {
+        guard
+            index > 0,
+            case .leftParen = tokens[index].tokenKind
+        else {
+            return false
+        }
+
+        switch tokens[index - 1].tokenKind {
+        case .identifier, .rightParen, .rightSquare, .rightBrace, .rightAngle:
+            return true
+        default:
+            return false
+        }
+    }
+
+    private static func shouldColorAsBinding(tokens: [TokenSyntax], at index: Int) -> Bool {
+        guard index > 0 else {
+            return false
+        }
+
+        if case .identifier = tokens[index].tokenKind,
+           case .prefixOperator(let value) = tokens[index - 1].tokenKind,
+           value == "$" {
+            return true
+        }
+
+        if case .prefixOperator(let value) = tokens[index].tokenKind,
+           value == "$",
+           index + 1 < tokens.count,
+           case .identifier = tokens[index + 1].tokenKind {
+            return true
+        }
+
+        return false
+    }
+
+    private static func apply(
+        color: Color,
+        to token: TokenSyntax,
+        in code: String,
+        highlightedString: inout AttributedString
+    ) {
+        let lowerBound = token.positionAfterSkippingLeadingTrivia.utf8Offset
+        let upperBound = token.endPositionBeforeTrailingTrivia.utf8Offset
+        apply(color: color, to: lowerBound..<upperBound, in: code, highlightedString: &highlightedString)
+    }
+
+    private static func apply(
+        color: Color,
+        to utf8Range: Range<Int>,
+        in code: String,
+        highlightedString: inout AttributedString
+    ) {
+        guard
+            let startIndex = stringIndex(for: utf8Range.lowerBound, in: code),
+            let endIndex = stringIndex(for: utf8Range.upperBound, in: code),
+            startIndex <= endIndex,
+            let attributedRange = Range(startIndex..<endIndex, in: highlightedString)
+        else {
+            return
+        }
+
+        highlightedString[attributedRange].foregroundColor = color
+    }
+
+    private static func stringIndex(for utf8Offset: Int, in code: String) -> String.Index? {
+        guard
+            utf8Offset >= 0,
+            let utf8Index = code.utf8.index(code.utf8.startIndex, offsetBy: utf8Offset, limitedBy: code.utf8.endIndex)
+        else {
+            return nil
+        }
+
+        return String.Index(utf8Index, within: code)
+    }
+
+    private static let keywordColor = Color(0xFC5FA3)
+    private static let directiveColor = Color(0xFD8F3F)
+    private static let numberColor = Color(0xD0BF69)
+    private static let stringColor = Color(0xFC6A5D)
+    private static let commentColor = Color(0x6C7986)
+    private static let attributeColor = Color(0xA167E6)
+    private static let bindingColor = Color(0x67B7A4)
+    private static let modifierColor = Color(0xA167E6)
+    private static let modifierParameterColor = Color(0xA167E6)
+    private static let typeColor = Color(0xD0A8FF)
 }
