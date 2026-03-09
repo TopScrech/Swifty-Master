@@ -6,6 +6,7 @@
 // visionOS 1.0+
 
 private let center = UNUserNotificationCenter.current()
+private let logger = Logger()
 
 private func changeBadgeNumber(_ new: Int) {
     requestPermission()
@@ -14,7 +15,7 @@ private func changeBadgeNumber(_ new: Int) {
         do {
             try await center.setBadgeCount(new)
         } catch {
-            print(error)
+            logger.error("Failed to set badge count: \(String(describing: error))")
         }
     }
 }

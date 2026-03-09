@@ -43,6 +43,16 @@ struct NavContainer: View {
         .task {
             nav.load()
         }
+        .onOpenURL {
+            handleUniversalLink($0)
+        }
+        .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { activity in
+            guard let url = activity.webpageURL else {
+                return
+            }
+            
+            handleUniversalLink(url)
+        }
         .onChange(of: scenePhase) { _, newScenePhase in
             if newScenePhase == .background {
                 nav.save()
@@ -65,6 +75,20 @@ struct NavContainer: View {
         .onChange(of: nav.favoriteTopicPath) {
             nav.save()
         }
+    }
+    
+    private func handleUniversalLink(_ url: URL) {
+        guard let topic = Topic.topic(from: url) else {
+            return
+        }
+        
+        if store.navMode == nil {
+            store.navMode = .stack
+        }
+        
+        store.lastTab = 0
+        nav.selectedCategory = topic.category
+        nav.topicPath = [topic]
     }
 }
 

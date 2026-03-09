@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 90;
+	objectVersion = 100;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,14 @@
 		F33E8B262E416BD700B05370 /* CodeEditorView in Frameworks */ = {isa = PBXBuildFile; productRef = F33E8B252E416BD700B05370 /* CodeEditorView */; };
 		F380A1752E4AA1FA00157F67 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F380A1742E4AA1FA00157F67 /* ScrechKit */; };
 		F3BBD9F72AEECE4000A9F7E7 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3BBD9F62AEECE4000A9F7E7 /* ScrechKit */; };
+		F3C9D109304A1A1A00A1B2C3 /* SwiftSyntax in Frameworks */ = {isa = PBXBuildFile; productRef = F3C9D101304A1A1A00A1B2C3 /* SwiftSyntax */; };
+		F3C9D10A304A1A1A00A1B2C3 /* SwiftParser in Frameworks */ = {isa = PBXBuildFile; productRef = F3C9D102304A1A1A00A1B2C3 /* SwiftParser */; };
+		F3C9D10B304A1A1A00A1B2C3 /* SwiftSyntax in Frameworks */ = {isa = PBXBuildFile; productRef = F3C9D103304A1A1A00A1B2C3 /* SwiftSyntax */; };
+		F3C9D10C304A1A1A00A1B2C3 /* SwiftParser in Frameworks */ = {isa = PBXBuildFile; productRef = F3C9D104304A1A1A00A1B2C3 /* SwiftParser */; };
+		F3C9D10D304A1A1A00A1B2C3 /* SwiftSyntax in Frameworks */ = {isa = PBXBuildFile; productRef = F3C9D105304A1A1A00A1B2C3 /* SwiftSyntax */; };
+		F3C9D10E304A1A1A00A1B2C3 /* SwiftParser in Frameworks */ = {isa = PBXBuildFile; productRef = F3C9D106304A1A1A00A1B2C3 /* SwiftParser */; };
+		F3C9D10F304A1A1A00A1B2C3 /* SwiftSyntax in Frameworks */ = {isa = PBXBuildFile; productRef = F3C9D107304A1A1A00A1B2C3 /* SwiftSyntax */; };
+		F3C9D110304A1A1A00A1B2C3 /* SwiftParser in Frameworks */ = {isa = PBXBuildFile; productRef = F3C9D108304A1A1A00A1B2C3 /* SwiftParser */; };
 		F3F5AD6D2E885E51007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD6C2E885E51007AD97D /* Appearance */; };
 		F3F5AD722E886017007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD712E886017007AD97D /* Appearance */; };
 /* End PBXBuildFile section */
@@ -24,8 +32,10 @@
 		F32313732E69CF0B0011837A /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
 		F325E3B32E5EBC760008928E /* Swifty Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F380A1622E4AA1BF00157F67 /* tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3A66CB52F294FFE008354CC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		F3A811E72F2146DA00D96952 /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENTS.md; sourceTree = "<group>"; };
 		F3BBD9DE2AEECD3400A9F7E7 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3C1C3FC2F48FCBD00D3D257 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -142,6 +152,8 @@
 			files = (
 				F33904212E49341000A22EE1 /* SafariCover in Frameworks */,
 				F3202CBB2D5596380030B3CC /* ScrechKit in Frameworks */,
+				F3C9D10B304A1A1A00A1B2C3 /* SwiftSyntax in Frameworks */,
+				F3C9D10C304A1A1A00A1B2C3 /* SwiftParser in Frameworks */,
 			);
 		};
 		F325E3B02E5EBC760008928E /* Frameworks */ = {
@@ -149,12 +161,16 @@
 			files = (
 				F3F5AD722E886017007AD97D /* Appearance in Frameworks */,
 				F325E3BF2E5EBC8B0008928E /* ScrechKit in Frameworks */,
+				F3C9D10F304A1A1A00A1B2C3 /* SwiftSyntax in Frameworks */,
+				F3C9D110304A1A1A00A1B2C3 /* SwiftParser in Frameworks */,
 			);
 		};
 		F380A15F2E4AA1BE00157F67 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
 				F380A1752E4AA1FA00157F67 /* ScrechKit in Frameworks */,
+				F3C9D10D304A1A1A00A1B2C3 /* SwiftSyntax in Frameworks */,
+				F3C9D10E304A1A1A00A1B2C3 /* SwiftParser in Frameworks */,
 			);
 		};
 		F3BBD9DB2AEECD3400A9F7E7 /* Frameworks */ = {
@@ -164,6 +180,8 @@
 				F31617CA2E41D87A00131D26 /* SafariCover in Frameworks */,
 				F3F5AD6D2E885E51007AD97D /* Appearance in Frameworks */,
 				F33E8B262E416BD700B05370 /* CodeEditorView in Frameworks */,
+				F3C9D109304A1A1A00A1B2C3 /* SwiftSyntax in Frameworks */,
+				F3C9D10A304A1A1A00A1B2C3 /* SwiftParser in Frameworks */,
 			);
 		};
 /* End PBXFrameworksBuildPhase section */
@@ -179,6 +197,7 @@
 		F325E3C32E5EBCA50008928E /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				F3A66CB52F294FFE008354CC /* macOS.entitlements */,
 				F32313732E69CF0B0011837A /* macOS.plist */,
 			);
 			path = macOS;
@@ -189,6 +208,7 @@
 			children = (
 				F3A811E72F2146DA00D96952 /* AGENTS.md */,
 				F30070012E2F0B9A00E76725 /* README.md */,
+				F3C1C3FC2F48FCBD00D3D257 /* LICENSE.txt */,
 				F383A5052ECF30A400350A0F /* iOS */,
 				F383A81D2ECF30AE00350A0F /* visionOS */,
 				F383A8182ECF30A800350A0F /* tvOS */,
@@ -229,6 +249,8 @@
 			packageProductDependencies = (
 				F3202CBA2D5596380030B3CC /* ScrechKit */,
 				F33904202E49341000A22EE1 /* SafariCover */,
+				F3C9D103304A1A1A00A1B2C3 /* SwiftSyntax */,
+				F3C9D104304A1A1A00A1B2C3 /* SwiftParser */,
 			);
 			productName = "Everything SwiftUI visionOS";
 			productReference = F3202C992D5596100030B3CC /* visionOS.app */;
@@ -251,6 +273,8 @@
 			packageProductDependencies = (
 				F325E3BE2E5EBC8B0008928E /* ScrechKit */,
 				F3F5AD712E886017007AD97D /* Appearance */,
+				F3C9D107304A1A1A00A1B2C3 /* SwiftSyntax */,
+				F3C9D108304A1A1A00A1B2C3 /* SwiftParser */,
 			);
 			productName = "Master SwiftUI";
 			productReference = F325E3B32E5EBC760008928E /* Swifty Master.app */;
@@ -272,6 +296,8 @@
 			name = tvOS;
 			packageProductDependencies = (
 				F380A1742E4AA1FA00157F67 /* ScrechKit */,
+				F3C9D105304A1A1A00A1B2C3 /* SwiftSyntax */,
+				F3C9D106304A1A1A00A1B2C3 /* SwiftParser */,
 			);
 			productName = "Swifty Master";
 			productReference = F380A1622E4AA1BF00157F67 /* tvOS.app */;
@@ -296,6 +322,8 @@
 				F33E8B252E416BD700B05370 /* CodeEditorView */,
 				F31617C92E41D87A00131D26 /* SafariCover */,
 				F3F5AD6C2E885E51007AD97D /* Appearance */,
+				F3C9D101304A1A1A00A1B2C3 /* SwiftSyntax */,
+				F3C9D102304A1A1A00A1B2C3 /* SwiftParser */,
 			);
 			productName = "Everything SwiftUI";
 			productReference = F3BBD9DE2AEECD3400A9F7E7 /* iOS.app */;
@@ -340,8 +368,9 @@
 				F33E8B242E416BD700B05370 /* XCRemoteSwiftPackageReference "CodeEditorView" */,
 				F31617C82E41D87A00131D26 /* XCRemoteSwiftPackageReference "SafariCover" */,
 				F3F5AD6B2E885E51007AD97D /* XCRemoteSwiftPackageReference "Appearance" */,
+				F3C9D100304A1A1A00A1B2C3 /* XCRemoteSwiftPackageReference "swift-syntax" */,
 			);
-			preferredProjectObjectVersion = 90;
+			preferredProjectObjectVersion = 100;
 			productRefGroup = F3BBD9DF2AEECD3400A9F7E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -406,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = visionOS/visionOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -433,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = visionOS/visionOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -461,6 +492,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
@@ -507,6 +539,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
@@ -553,6 +586,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = tvOS/tvOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -585,6 +619,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = tvOS/tvOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -670,7 +705,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 26.2;
+				MARKETING_VERSION = 64.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -732,7 +767,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 26.2;
+				MARKETING_VERSION = 64.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -899,6 +934,14 @@
 				kind = branch;
 			};
 		};
+		F3C9D100304A1A1A00A1B2C3 /* XCRemoteSwiftPackageReference "swift-syntax" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftlang/swift-syntax";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 600.0.1;
+			};
+		};
 		F3F5AD6B2E885E51007AD97D /* XCRemoteSwiftPackageReference "Appearance" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/Appearance";
@@ -944,6 +987,46 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F3BBD9F52AEECE4000A9F7E7 /* XCRemoteSwiftPackageReference "ScrechKit" */;
 			productName = ScrechKit;
+		};
+		F3C9D101304A1A1A00A1B2C3 /* SwiftSyntax */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3C9D100304A1A1A00A1B2C3 /* XCRemoteSwiftPackageReference "swift-syntax" */;
+			productName = SwiftSyntax;
+		};
+		F3C9D102304A1A1A00A1B2C3 /* SwiftParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3C9D100304A1A1A00A1B2C3 /* XCRemoteSwiftPackageReference "swift-syntax" */;
+			productName = SwiftParser;
+		};
+		F3C9D103304A1A1A00A1B2C3 /* SwiftSyntax */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3C9D100304A1A1A00A1B2C3 /* XCRemoteSwiftPackageReference "swift-syntax" */;
+			productName = SwiftSyntax;
+		};
+		F3C9D104304A1A1A00A1B2C3 /* SwiftParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3C9D100304A1A1A00A1B2C3 /* XCRemoteSwiftPackageReference "swift-syntax" */;
+			productName = SwiftParser;
+		};
+		F3C9D105304A1A1A00A1B2C3 /* SwiftSyntax */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3C9D100304A1A1A00A1B2C3 /* XCRemoteSwiftPackageReference "swift-syntax" */;
+			productName = SwiftSyntax;
+		};
+		F3C9D106304A1A1A00A1B2C3 /* SwiftParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3C9D100304A1A1A00A1B2C3 /* XCRemoteSwiftPackageReference "swift-syntax" */;
+			productName = SwiftParser;
+		};
+		F3C9D107304A1A1A00A1B2C3 /* SwiftSyntax */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3C9D100304A1A1A00A1B2C3 /* XCRemoteSwiftPackageReference "swift-syntax" */;
+			productName = SwiftSyntax;
+		};
+		F3C9D108304A1A1A00A1B2C3 /* SwiftParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3C9D100304A1A1A00A1B2C3 /* XCRemoteSwiftPackageReference "swift-syntax" */;
+			productName = SwiftParser;
 		};
 		F3F5AD6C2E885E51007AD97D /* Appearance */ = {
 			isa = XCSwiftPackageProductDependency;
