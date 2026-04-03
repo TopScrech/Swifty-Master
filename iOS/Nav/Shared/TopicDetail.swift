@@ -41,7 +41,7 @@ private struct Content: View {
             }
             .scenePadding()
         }
-        .navigationTitle(topic.name)
+        .navigationTitle(topic.localizedName)
         .navSubtitle(topic.category.localizedName)
         .scrollIndicators(.never)
     }
@@ -82,7 +82,7 @@ private struct Content: View {
     @ViewBuilder
     private var title: some View {
 #if os(macOS)
-        Text(topic.name)
+        Text(topic.localizedName)
             .largeTitle(.bold)
 #endif
     }

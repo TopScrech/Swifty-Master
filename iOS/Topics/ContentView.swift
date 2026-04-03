@@ -22,7 +22,7 @@ struct ContentView: View {
             ForEach(topic.related) { relatedTopic in
                 NavigationLink(value: relatedTopic) {
                     Label {
-                        Text(relatedTopic.name)
+                        Text(relatedTopic.localizedName)
                     } icon: {
                         Image(systemName: relatedTopic.icon)
                             .foregroundStyle(.blue)

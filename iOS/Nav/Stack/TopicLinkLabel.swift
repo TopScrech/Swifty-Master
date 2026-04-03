@@ -24,7 +24,7 @@ struct TopicLinkLabel: View {
     var body: some View {
         HStack {
             Label {
-                Text(topic.name)
+                Text(topic.localizedName)
 #if os(macOS)
                     .title2()
                     .padding(.leading, 8)

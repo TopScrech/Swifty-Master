@@ -84,6 +84,10 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
     var name: String {
         rawValue
     }
+
+    var localizedName: LocalizedStringKey {
+        LocalizedStringKey(rawValue)
+    }
     
     var shareLink: URL? {
         var components = URLComponents()

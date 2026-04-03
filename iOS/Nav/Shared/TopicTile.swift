@@ -11,7 +11,7 @@ struct TopicTile: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Label(topic.name, systemImage: topic.icon)
+            Label(topic.localizedName, systemImage: topic.icon)
                 .lineLimit(2, reservesSpace: true)
         }
         .tint(.primary)
