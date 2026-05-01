@@ -7,13 +7,6 @@
 - Assets live in `Assets.xcassets` and `Shared Assets.xcassets` per platform.
 - Tests (if added) should go in `Unit Tests/` and be wired to the relevant Xcode test target.
 
-## Build, Test, and Development Commands
-Prefer Xcode for running and signing. CLI examples:
-- List schemes: `xcodebuild -project "Swifty Master.xcodeproj" -list`
-- Build iOS: `xcodebuild -project "Swifty Master.xcodeproj" -scheme iOS -destination 'platform=iOS Simulator,name=iPhone 17 Pro Max' build`
-- Build macOS: `xcodebuild -project "Swifty Master.xcodeproj" -scheme macOS build`
-- Run tests (once a test target exists): `xcodebuild -project "Swifty Master.xcodeproj" -scheme iOS test -destination 'platform=iOS Simulator,name=iPhone 15'`
-
 ## Coding Style & Naming Conventions
 - Swift/SwiftUI, 4-space indentation, Xcode default formatting
 - Keep SwiftUI view files named after the main view type
