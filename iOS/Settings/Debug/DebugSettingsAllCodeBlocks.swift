@@ -10,10 +10,10 @@ struct DebugSettingsAllCodeBlocks: View {
                             CodeBlockView($0)
                         }
                     }
+                    .scenePadding()
                 }
                 .navigationTitle("All code blocks")
                 .scrollIndicators(.never)
-                .scenePadding()
                 .navSubtitle(CodeBlock.allCases.count)
                 .toolbarTitleDisplayMode(.inline)
             } label: {

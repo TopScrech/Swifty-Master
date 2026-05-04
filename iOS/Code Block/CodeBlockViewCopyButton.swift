@@ -22,7 +22,6 @@ struct CodeBlockViewCopyButton: View {
         }
         .buttonStyle(.plain)
         .secondary()
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
     }
 }
 

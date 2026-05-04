@@ -1,21 +1,27 @@
 import SwiftUI
 
 struct CodeBlockLinesView: View {
-    let code: String
-    let style: CodeBlockStyle
-    let showsLineNumbers: Bool
+    @EnvironmentObject private var store: ValueStore
     
-    @State private var lineNumberWidth: CGFloat = 0
+    private let code: String
+    private let style: CodeBlockStyle
+    
+    init(_ code: String, with style: CodeBlockStyle) {
+        self.code = code
+        self.style = style
+    }
+    
+    @State private var lineNumberWidth = 0.0
     
     private var codeLines: [String] {
         code.components(separatedBy: .newlines)
     }
     
     var body: some View {
-        LazyVStack(alignment: .leading, spacing: style.lineSpacing) {
+        VStack(alignment: .leading, spacing: style.lineSpacing) {
             ForEach(Array(codeLines.enumerated()), id: \.offset) { index, line in
                 HStack(alignment: .top, spacing: style.lineNumberSpacing) {
-                    if showsLineNumbers {
+                    if store.showCodeLineNumbers {
                         Text(String(index + 1))
                             .font(style.font)
                             .foregroundColor(style.lineNumberColor)

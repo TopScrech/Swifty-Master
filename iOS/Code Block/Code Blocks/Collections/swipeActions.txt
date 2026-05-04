@@ -1,16 +1,12 @@
 List {
     Text("Order #128")
         .swipeActions {
-            Button(role: .destructive) {
-
-            } label: {
-                Label("Delete", systemImage: "trash")
+            Button("Delete", systemImage: "trash", role: .destructive) {
+                
             }
-
-            Button {
-
-            } label: {
-                Label("Pin", systemImage: "pin")
+            
+            Button("Pin", systemImage: "pin") {
+                
             }
             .tint(.orange)
         }
