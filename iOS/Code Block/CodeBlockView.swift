@@ -25,12 +25,16 @@ struct CodeBlockView: View {
         .scrollIndicators(.never)
         .fixedSize(horizontal: false, vertical: true)
 #if !os(tvOS)
-        .overlay(alignment: .topTrailing) {
+        .overlay(alignment: copyButtonAlignment) {
             CodeBlockViewCopyButton(code)
         }
 #endif
         .background(style.background, in: .rect(cornerRadius: style.cornerRadius))
         .background(widthReader)
+    }
+    
+    private var copyButtonAlignment: Alignment {
+        code.split(separator: "\n", omittingEmptySubsequences: false).count > 3 ? .topTrailing : .trailing
     }
     
     private var widthReader: some View {
