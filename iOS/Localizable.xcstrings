@@ -35,6 +35,12 @@
             "state" : "translated",
             "value" : "@Environment(\\.horizontalSizeClass) उपलब्ध क्षैतिज आकार वर्ग का पता लगाने देता है, ताकि आप compact या regular चौड़ाइयों के लिए अपना layout अनुकूलित कर सकें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "@Environment(\\.horizontalSizeClass) дає змогу визначати доступний горизонтальний клас розміру, щоб адаптувати layout для compact або regular ширини"
+          }
         }
       }
     },
@@ -70,6 +76,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "**बोल्ड**, ***बोल्ड इटैलिक***"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Жирний**, ***жирний курсив***"
           }
         }
       }
@@ -110,6 +122,12 @@
             "state" : "translated",
             "value" : "`Monospaced`"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "`Monospaced`"
+          }
         }
       }
     },
@@ -145,6 +163,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "~~स्ट्राइकथ्रू~~"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "~~Закреслений~~"
           }
         }
       }
@@ -182,6 +206,12 @@
             "state" : "translated",
             "value" : "Confirmation dialog विकल्पों की सूची दिखाता है, आमतौर पर destructive या secondary actions के लिए"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Діалог підтвердження показує список варіантів, зазвичай для руйнівних або другорядних дій"
+          }
         }
       }
     },
@@ -217,6 +247,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "एक container जो navigation bar का उपयोग करके views के बीच navigation सक्षम करता है (iOS 16 में NavigationStack के पक्ष में deprecated)"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Контейнер, що забезпечує навігацію між view за допомогою навігаційної панелі (застарів в iOS 16 на користь NavigationStack)"
           }
         }
       }
@@ -254,6 +290,12 @@
             "state" : "translated",
             "value" : "Link किसी दिए गए URL को user के default browser या संबंधित app में खोलता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Link відкриває вказану URL-адресу в браузері користувача за замовчуванням або у пов’язаній app"
+          }
         }
       }
     },
@@ -289,6 +331,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Programmatic navigation के साथ views के stack को manage करने वाला modern container"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сучасний контейнер для керування стеком view з програмною навігацією"
           }
         }
       }
@@ -326,6 +374,12 @@
             "state" : "translated",
             "value" : "Popover किसी दूसरी view से जुड़ी छोटी dismissible view दिखाता है, जिसका उपयोग आमतौर पर contextual जानकारी या actions के लिए होता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Popover показує невелику dismissible view, прив’язану до іншої view, яку часто використовують для контекстної інформації або дій"
+          }
         }
       }
     },
@@ -362,6 +416,12 @@
             "state" : "translated",
             "value" : "ShareLink लोगों को system share sheet का उपयोग करके URL, text या अन्य transferable items share करने देता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ShareLink дає змогу ділитися URL, текстом або іншими transferable items через системний sheet поширення"
+          }
         }
       }
     },
@@ -397,6 +457,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sheet current screen के ऊपर modal view दिखाती है, जिसका उपयोग अक्सर settings या secondary content के लिए होता है"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sheet показує modal view поверх поточного екрана, часто для налаштувань або другорядного вмісту"
           }
         }
       }
@@ -446,6 +512,12 @@
             "state" : "translated",
             "value" : "सभी को favorites में जोड़ें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Додати все до обраного"
+          }
         }
       }
     },
@@ -481,6 +553,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सभी code blocks"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Усі блоки коду"
           }
         }
       }
@@ -518,6 +596,12 @@
             "state" : "translated",
             "value" : "Alternate icons केवल iOS पर उपलब्ध हैं"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Альтернативні іконки доступні лише на iOS"
+          }
         }
       }
     },
@@ -553,6 +637,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "इस device पर alternate icons supported नहीं हैं"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Альтернативні іконки не підтримуються на цьому пристрої"
           }
         }
       }
@@ -590,6 +680,12 @@
             "state" : "translated",
             "value" : "API Key"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "API-ключ"
+          }
         }
       }
     },
@@ -620,6 +716,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Store Overlay"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "App Store Overlay"
@@ -661,6 +763,12 @@
             "state" : "translated",
             "value" : "Appearance"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вигляд"
+          }
         }
       }
     },
@@ -696,6 +804,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "बेहतर performance के लिए views को lazy grid में arrange करें, जहां items screen पर दिखाई देने पर ही load होते हैं"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Розташовує view у lazy grid, завантажуючи елементи лише тоді, коли вони з’являються на екрані, для кращої продуктивності"
           }
         }
       }
@@ -733,6 +847,12 @@
             "state" : "translated",
             "value" : "Views को एक row में horizontally arrange करता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Розташовує view горизонтально в одному рядку"
+          }
         }
       }
     },
@@ -768,6 +888,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Views को एक column में vertically arrange करता है"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Розташовує view вертикально в одному стовпці"
           }
         }
       }
@@ -805,6 +931,12 @@
             "state" : "translated",
             "value" : "App icon पर badge"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Badge над іконкою app"
+          }
         }
       }
     },
@@ -840,6 +972,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bundle.main.preferredLocalizations app के preferred language codes लौटाता है, जिनसे आप user की locale के आधार पर content या behavior adjust कर सकते हैं"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bundle.main.preferredLocalizations повертає бажані мовні коди app, які можна використати для налаштування вмісту або поведінки відповідно до locale користувача"
           }
         }
       }
@@ -877,6 +1015,12 @@
             "state" : "translated",
             "value" : "लेकिन पहले, वह interface चुनें जो आपके लिए comfortable हो"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "але спочатку виберіть інтерфейс, який вам зручний"
+          }
         }
       }
     },
@@ -909,6 +1053,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Button"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Button"
@@ -949,6 +1099,12 @@
             "state" : "translated",
             "value" : "Button एक UI element है जिससे users tap करने पर action trigger कर सकते हैं"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Button — це UI element, який дає користувачам змогу запускати дію після натискання"
+          }
         }
       }
     },
@@ -979,6 +1135,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "C"
@@ -1019,6 +1181,12 @@
             "state" : "translated",
             "value" : "Cancel"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скасувати"
+          }
         }
       }
     },
@@ -1055,6 +1223,12 @@
             "state" : "translated",
             "value" : "बिल्ली"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кіт"
+          }
         }
       }
     },
@@ -1088,6 +1262,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Categories"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Категорії"
           }
         }
       }
@@ -1125,6 +1305,12 @@
             "state" : "translated",
             "value" : "Badge number को %lld में बदलें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Змінити число badge на %lld"
+          }
         }
       }
     },
@@ -1160,6 +1346,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "भाषा बदलें"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Змінити мову"
           }
         }
       }
@@ -1197,6 +1389,12 @@
             "state" : "translated",
             "value" : "Home screen पर app icon check करें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перевірте іконку app на домашньому екрані"
+          }
         }
       }
     },
@@ -1230,6 +1428,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Category चुनें"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Виберіть категорію"
           }
         }
       }
@@ -1267,6 +1471,12 @@
             "state" : "translated",
             "value" : "Topic चुनें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Виберіть тему"
+          }
         }
       }
     },
@@ -1303,6 +1513,12 @@
             "state" : "translated",
             "value" : "Action चुनें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Виберіть дію"
+          }
         }
       }
     },
@@ -1336,6 +1552,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "अपना navigation experience चुनें"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Виберіть свій спосіб навігації"
           }
         }
       }
@@ -1373,6 +1595,12 @@
             "state" : "translated",
             "value" : "Code line numbers"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Номери рядків коду"
+          }
         }
       }
     },
@@ -1406,6 +1634,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Collections"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Колекції"
           }
         }
       }
@@ -1443,6 +1677,12 @@
             "state" : "translated",
             "value" : "Color"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Колір"
+          }
         }
       }
     },
@@ -1478,6 +1718,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "जल्द आ रहा है..."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Незабаром..."
           }
         }
       }
@@ -1515,6 +1761,12 @@
             "state" : "translated",
             "value" : "Conditional compilation checks आपको platform या environment के अनुसार अलग code चलाने देते हैं जिसके लिए आपका app build किया गया है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перевірки умовної компіляції дають змогу запускати різний код залежно від платформи або середовища, для якого збирається app"
+          }
         }
       }
     },
@@ -1548,6 +1800,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Content"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вміст"
           }
         }
       }
@@ -1585,6 +1843,12 @@
             "state" : "translated",
             "value" : "Context Menu actions का menu दिखाने देता है जब user किसी ऐसे element को hold करता है जिस पर .contextMenu लगाया गया है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Context Menu дає змогу показати меню дій, коли користувач утримує певний елемент, до якого застосовано .contextMenu"
+          }
         }
       }
     },
@@ -1618,6 +1882,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Control"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Керування"
           }
         }
       }
@@ -1655,6 +1925,12 @@
             "state" : "translated",
             "value" : "Control button जो tap करने पर destination view पर navigate करता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Control button, який після натискання переходить до destination view"
+          }
         }
       }
     },
@@ -1691,6 +1967,12 @@
             "state" : "translated",
             "value" : "Copy"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Копіювати"
+          }
         }
       }
     },
@@ -1726,6 +2008,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Custom Label"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Власний Label"
           }
         }
       }
@@ -1764,6 +2052,12 @@
             "state" : "translated",
             "value" : "Dark"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Темний"
+          }
         }
       }
     },
@@ -1796,6 +2090,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Debug"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Debug"
@@ -1836,6 +2136,12 @@
             "state" : "translated",
             "value" : "Delete"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Видалити"
+          }
         }
       }
     },
@@ -1869,6 +2175,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Design"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дизайн"
           }
         }
       }
@@ -1906,6 +2218,12 @@
             "state" : "translated",
             "value" : "Destructive button"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Руйнівна кнопка"
+          }
         }
       }
     },
@@ -1942,6 +2260,12 @@
             "state" : "translated",
             "value" : "Low Power Mode detect करने से energy बचाने और battery low होने पर smooth user experience बनाए रखने में मदद मिलती है. SwiftUI apps energy-intensive features disable करके system energy-saving goals के अनुसार behavior adjust कर सकते हैं"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Виявлення Low Power Mode допомагає економити енергію та підтримувати плавний досвід користування, коли заряд батареї низький. SwiftUI apps можуть змінювати поведінку, вимикаючи енергоємні функції відповідно до системних цілей енергозбереження"
+          }
         }
       }
     },
@@ -1975,6 +2299,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "OS version detect करने में #available का उपयोग करके यह check करना शामिल है कि current version x या उससे higher है या नहीं, जिससे platform capabilities के आधार पर conditional code execution संभव होता है"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Визначення версії OS передбачає використання #available, щоб перевірити, чи поточна версія x або новіша, і виконувати код умовно залежно від можливостей платформи"
           }
         }
       }
@@ -2012,6 +2342,12 @@
             "state" : "translated",
             "value" : "Timers, workouts या reading modes के दौरान screen awake रखने के लिए idle timer disable करें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вимкніть idle timer, щоб екран не засинав під час таймерів, тренувань або режимів читання"
+          }
         }
       }
     },
@@ -2047,6 +2383,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dismiss"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закрити"
           }
         }
       }
@@ -2084,6 +2426,12 @@
             "state" : "translated",
             "value" : "Tab bar के ऊपर दिखाया गया"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показується над tab bar"
+          }
         }
       }
     },
@@ -2120,6 +2468,12 @@
             "state" : "translated",
             "value" : "Primary और detail content के बीच navigate करने के लिए multi-column interface दिखाता है, जो अक्सर iPad और Mac पर उपयोग होता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показує багатоколонковий інтерфейс для навігації між основним і детальним вмістом, часто використовується на iPad і Mac"
+          }
         }
       }
     },
@@ -2153,6 +2507,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "SwiftUI में Divider() content अलग करने के लिए visual line जोड़ता है, जिससे UI साफ structure होती है. यह readability और visual grouping सुधारने के लिए stacks और lists में खास उपयोगी है"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Divider() у SwiftUI додає візуальну лінію для розділення вмісту й допомагає чітко структурувати UI. Це особливо корисно у stacks і lists для покращення читабельності та візуального групування"
           }
         }
       }
@@ -2190,6 +2550,12 @@
             "state" : "translated",
             "value" : "Docs"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Документи"
+          }
         }
       }
     },
@@ -2225,6 +2591,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "कुत्ता"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пес"
           }
         }
       }
@@ -2262,6 +2634,12 @@
             "state" : "translated",
             "value" : "Linked resource download करें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Завантажити пов’язаний ресурс"
+          }
         }
       }
     },
@@ -2292,6 +2670,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Drag & Drop"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Drag & Drop"
@@ -2332,6 +2716,12 @@
             "state" : "translated",
             "value" : "Duplicate"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дублювати"
+          }
         }
       }
     },
@@ -2367,6 +2757,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "EmptyView SwiftUI का built-in type है जो view hierarchy में कुछ भी render नहीं करता. यह placeholder logic या conditional rendering के लिए उपयोगी है जब कोई UI नहीं दिखानी हो"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "EmptyView — вбудований тип SwiftUI, який нічого не рендерить в ієрархії view. Він корисний для placeholder logic або умовного rendering, коли UI не потрібно показувати"
           }
         }
       }
@@ -2404,6 +2800,12 @@
             "state" : "translated",
             "value" : "English, Dutch, Russian"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Англійська, нідерландська, російська"
+          }
         }
       }
     },
@@ -2439,6 +2841,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Favorite"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обране"
           }
         }
       }
@@ -2476,6 +2884,12 @@
             "state" : "translated",
             "value" : "Favorite animal"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Улюблена тварина"
+          }
         }
       }
     },
@@ -2511,6 +2925,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Favorite articles badge"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Badge обраних статей"
           }
         }
       }
@@ -2548,6 +2968,12 @@
             "state" : "translated",
             "value" : "Favorites"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обране"
+          }
         }
       }
     },
@@ -2583,6 +3009,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "मछली"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Риба"
           }
         }
       }
@@ -2620,6 +3052,12 @@
             "state" : "translated",
             "value" : "GeometryReader अपने container का size और position देता है, जिससे आप available space के अनुसार adapt होने वाले layouts बना सकते हैं"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GeometryReader надає розмір і позицію свого container, даючи змогу створювати layouts, які адаптуються до доступного простору"
+          }
         }
       }
     },
@@ -2655,6 +3093,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Glassy icon"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скляна іконка"
           }
         }
       }
@@ -2692,6 +3136,12 @@
             "state" : "translated",
             "value" : "Grid views को rows और columns में arrange करता है, जिससे lazy loading के बिना layout पर flexible control मिलता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grid розташовує view у рядках і стовпцях, даючи гнучкий контроль над layout без lazy loading"
+          }
         }
       }
     },
@@ -2727,6 +3177,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "नमस्ते, मैं Pyzh हूं. चलिए SwiftUI की दुनिया में उतरते हैं!"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Привіт, я Pyzh. Занурмося у світ SwiftUI!"
           }
         }
       }
@@ -2764,6 +3220,12 @@
             "state" : "translated",
             "value" : "Native back button छिपाएं"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сховати нативну кнопку назад"
+          }
         }
       }
     },
@@ -2799,6 +3261,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Idle timer control केवल iOS पर उपलब्ध है"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Керування idle timer доступне лише на iOS"
           }
         }
       }
@@ -2836,6 +3304,12 @@
             "state" : "translated",
             "value" : "Image का उपयोग icons, photos या system-provided images जैसे visual content दिखाने के लिए होता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image використовується для показу візуального вмісту, такого як іконки, фото або системні зображення"
+          }
         }
       }
     },
@@ -2869,6 +3343,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Image Picker"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вибір зображення"
           }
         }
       }
@@ -2906,6 +3386,12 @@
             "state" : "translated",
             "value" : "SwiftUI में आप .alert modifier का उपयोग करके alert present कर सकते हैं, जो button tap होने पर title, message और optional actions वाला alert दिखाता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "У SwiftUI alert можна показати за допомогою modifier .alert, який після натискання кнопки показує alert із title, message та optional actions"
+          }
         }
       }
     },
@@ -2941,6 +3427,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ध्यान रखें कि Spacer की minimum length %@ default रूप से 0 होती है"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пам’ятайте, що Spacer за замовчуванням має minimum length %@, що дорівнює 0"
           }
         }
       }
@@ -2978,6 +3470,12 @@
             "state" : "translated",
             "value" : "Screen awake रखें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не вимикати екран"
+          }
         }
       }
     },
@@ -3008,6 +3506,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layout"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Layout"
@@ -3058,6 +3562,12 @@
             "state" : "translated",
             "value" : "Users को settings screen से app icon switch करने दें. अपने asset catalog में alternate icons जोड़ें और उन्हें Info.plist में CFBundleAlternateIcons के अंतर्गत list करें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дайте користувачам змогу змінювати іконку app з екрана налаштувань. Додайте альтернативні іконки до asset catalog і перелічіть їх в Info.plist під CFBundleAlternateIcons"
+          }
         }
       }
     },
@@ -3093,6 +3603,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Light"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Світлий"
           }
         }
       }
@@ -3130,6 +3646,12 @@
             "state" : "translated",
             "value" : "Linear ProgressView"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Лінійний ProgressView"
+          }
         }
       }
     },
@@ -3160,6 +3682,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "linearCapacity"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "linearCapacity"
@@ -3200,6 +3728,12 @@
             "state" : "translated",
             "value" : "Link"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Link"
+          }
         }
       }
     },
@@ -3235,6 +3769,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Link: [click](https://topscrech.dev)"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Link: [натиснути](https://topscrech.dev)"
           }
         }
       }
@@ -3272,6 +3812,12 @@
             "state" : "translated",
             "value" : "List rows की scrollable lazy collection दिखाती है जिसमें static या dynamic content हो सकता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "List показує scrollable lazy collection рядків, які можуть містити статичний або динамічний вміст"
+          }
         }
       }
     },
@@ -3307,6 +3853,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Low Power Mode disabled"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Low Power Mode вимкнено"
           }
         }
       }
@@ -3344,6 +3896,12 @@
             "state" : "translated",
             "value" : "Low Power Mode enabled"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Low Power Mode увімкнено"
+          }
         }
       }
     },
@@ -3379,6 +3937,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "अपनी minimum target version के लिए available symbols चुनना सुनिश्चित करें"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Переконайтеся, що вибрані symbols доступні для вашої мінімальної target version"
           }
         }
       }
@@ -3416,6 +3980,12 @@
             "state" : "translated",
             "value" : "Item manage करें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Керувати елементом"
+          }
         }
       }
     },
@@ -3446,6 +4016,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Markdown"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Markdown"
@@ -3486,6 +4062,12 @@
             "state" : "translated",
             "value" : "Menu"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Меню"
+          }
         }
       }
     },
@@ -3521,6 +4103,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Menu user interaction के लिए customizable, collapsible options list देता है"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menu надає customizable, collapsible список options для взаємодії з користувачем"
           }
         }
       }
@@ -3558,6 +4146,12 @@
             "state" : "translated",
             "value" : "Message"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Повідомлення"
+          }
         }
       }
     },
@@ -3591,6 +4185,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Navigation"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Навігація"
           }
         }
       }
@@ -3628,6 +4228,12 @@
             "state" : "translated",
             "value" : "Navigation mode"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Режим навігації"
+          }
         }
       }
     },
@@ -3663,6 +4269,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "कोई favorites नहीं मिले"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обраного не знайдено"
           }
         }
       }
@@ -3700,6 +4312,12 @@
             "state" : "translated",
             "value" : "नहीं"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "не"
+          }
         }
       }
     },
@@ -3735,6 +4353,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ध्यान दें कि notifications permission required है"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зверніть увагу, що потрібен дозвіл на notifications"
           }
         }
       }
@@ -3772,6 +4396,12 @@
             "state" : "translated",
             "value" : "Stretchy header demo खोलें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Відкрити demo stretchy header"
+          }
         }
       }
     },
@@ -3808,6 +4438,12 @@
             "state" : "translated",
             "value" : "Views को z-axis के साथ एक-दूसरे के ऊपर overlay करता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Накладає view одна на одну вздовж осі z"
+          }
         }
       }
     },
@@ -3840,6 +4476,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Placeholder"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Placeholder"
@@ -3878,6 +4520,12 @@
             "state" : "translated",
             "value" : "Present"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показати"
+          }
         }
       }
     },
@@ -3913,6 +4561,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Popover present करें"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показати popover"
           }
         }
       }
@@ -3950,6 +4604,12 @@
             "state" : "translated",
             "value" : "Sheet present करें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показати sheet"
+          }
         }
       }
     },
@@ -3985,6 +4645,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alert present करें"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показати alert"
           }
         }
       }
@@ -4022,6 +4688,12 @@
             "state" : "translated",
             "value" : "Screenshots रोकें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Запобігти screenshot"
+          }
         }
       }
     },
@@ -4057,6 +4729,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Title वाली ProgressView"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ProgressView із title"
           }
         }
       }
@@ -4094,6 +4772,12 @@
             "state" : "translated",
             "value" : "Header image stretch करने के लिए नीचे खींचें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Потягніть вниз, щоб розтягнути header image"
+          }
         }
       }
     },
@@ -4130,6 +4814,12 @@
             "state" : "translated",
             "value" : "Purple"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Фіолетовий"
+          }
         }
       }
     },
@@ -4162,6 +4852,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RC-3910-8842"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "RC-3910-8842"
@@ -4202,6 +4898,12 @@
             "state" : "translated",
             "value" : "Recovery Code"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Код відновлення"
+          }
         }
       }
     },
@@ -4238,6 +4940,12 @@
             "state" : "translated",
             "value" : "Regular text"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Звичайний текст"
+          }
         }
       }
     },
@@ -4261,6 +4969,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Related articles"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пов’язані статті"
           }
         }
       }
@@ -4299,6 +5013,12 @@
             "state" : "translated",
             "value" : "Related Topics"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пов’язані теми"
+          }
         }
       }
     },
@@ -4334,6 +5054,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सभी favorites हटाएं"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Видалити все обране"
           }
         }
       }
@@ -4371,6 +5097,12 @@
             "state" : "translated",
             "value" : "Rename"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перейменувати"
+          }
         }
       }
     },
@@ -4406,6 +5138,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Icon reset करें"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скинути іконку"
           }
         }
       }
@@ -4443,6 +5181,12 @@
             "state" : "translated",
             "value" : "Nav mode reset करें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скинути режим навігації"
+          }
         }
       }
     },
@@ -4478,6 +5222,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Row %lld"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рядок %lld"
           }
         }
       }
@@ -4515,6 +5265,12 @@
             "state" : "translated",
             "value" : "Save"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зберегти"
+          }
         }
       }
     },
@@ -4550,6 +5306,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "visualEffect() के साथ scroll view offset के आधार पर header image scale करें"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Масштабуйте header image на основі offset його scroll view за допомогою visualEffect()"
           }
         }
       }
@@ -4587,6 +5349,12 @@
             "state" : "translated",
             "value" : "Screenshot masking केवल iOS पर उपलब्ध है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screenshot masking доступний лише на iOS"
+          }
         }
       }
     },
@@ -4622,6 +5390,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ScrollView content को horizontally या vertically scroll करने देता है जब वह available space में fit नहीं होता"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScrollView дає змогу прокручувати вміст горизонтально або вертикально, коли він не вміщується в доступний простір"
           }
         }
       }
@@ -4659,6 +5433,12 @@
             "state" : "translated",
             "value" : ".frame(maxWidth: .infinity) set करने से views अपने container में बराबर expand होते हैं, जिससे items में consistent sizing बनी रहती है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Встановлення .frame(maxWidth: .infinity) змушує view однаково розширюватися в container, забезпечуючи consistent sizing між елементами"
+          }
         }
       }
     },
@@ -4695,6 +5475,12 @@
             "state" : "translated",
             "value" : "Settings"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Налаштування"
+          }
         }
       }
     },
@@ -4728,6 +5514,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "SF Symbols Apple icons को app में शामिल करने का convenient और modern तरीका देते हैं, जिससे intuitive और visually appealing designs के साथ user experience बेहतर होता है. ये icons localization और animations support करते हैं"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols надають зручний і сучасний спосіб додати іконки Apple до вашої app, покращуючи user experience інтуїтивними та візуально привабливими дизайнами. Ці іконки підтримують localization і animations"
           }
         }
       }
@@ -4765,6 +5557,12 @@
             "state" : "translated",
             "value" : "Shapes आपको circles और rectangles जैसे custom graphics सीधे code में आसानी से बनाने देते हैं. इन्हें style, scale और animate करके unique और dynamic UI elements बनाए जा सकते हैं"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shapes дають змогу легко створювати custom graphics, як-от circles і rectangles, безпосередньо в code. Їх можна style, scale і animate для створення унікальних і динамічних UI elements"
+          }
         }
       }
     },
@@ -4801,6 +5599,12 @@
             "state" : "translated",
             "value" : "Swift share करें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поширити Swift"
+          }
         }
       }
     },
@@ -4833,6 +5637,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sheet"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sheet"
@@ -4873,6 +5683,12 @@
             "state" : "translated",
             "value" : "Confirmation dialog दिखाएं"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показати діалог підтвердження"
+          }
         }
       }
     },
@@ -4905,6 +5721,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sk_live_49Y2K-9A90-1B2C"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "sk_live_49Y2K-9A90-1B2C"
@@ -4945,6 +5767,12 @@
             "state" : "translated",
             "value" : "Slider customizable UI control है जिससे users continuous range से value select कर सकते हैं"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slider — customizable UI control, який дає користувачам змогу вибирати value з неперервного діапазону"
+          }
         }
       }
     },
@@ -4980,6 +5808,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fixed size वाला Spacer"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spacer із fixed size"
           }
         }
       }
@@ -5017,6 +5851,12 @@
             "state" : "translated",
             "value" : "Minimum size वाला Spacer"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spacer із minimum size"
+          }
         }
       }
     },
@@ -5053,6 +5893,12 @@
             "state" : "translated",
             "value" : "Spacer() एक element है जो layout में जितना हो सके उतना space लेता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spacer() — елемент, який займає стільки простору в layout, скільки може"
+          }
         }
       }
     },
@@ -5083,6 +5929,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stack"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stack"
@@ -5123,6 +5975,12 @@
             "state" : "translated",
             "value" : "Status bar"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status bar"
+          }
         }
       }
     },
@@ -5155,6 +6013,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stepper"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stepper"
@@ -5195,6 +6059,12 @@
             "state" : "translated",
             "value" : "Stepper customizable control है जो range से value select करने देता है और settings adjust करने या progress दिखाने का simple और intuitive तरीका देता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stepper — customizable control, який дає змогу вибрати value з діапазону, забезпечуючи простий та інтуїтивний спосіб змінювати settings або показувати progress"
+          }
         }
       }
     },
@@ -5227,6 +6097,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stepper: %lld"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stepper: %lld"
@@ -5267,6 +6143,12 @@
             "state" : "translated",
             "value" : "Stretchy Header"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stretchy Header"
+          }
         }
       }
     },
@@ -5299,6 +6181,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stretchy image header"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stretchy image header"
@@ -5339,6 +6227,12 @@
             "state" : "translated",
             "value" : "Style"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Стиль"
+          }
         }
       }
     },
@@ -5374,6 +6268,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Style Details"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Деталі стилю"
           }
         }
       }
@@ -5411,6 +6311,12 @@
             "state" : "translated",
             "value" : "SwiftUI Color एक type है जो color को ऐसे represent करता है कि SwiftUI views में use और integrate करना आसान हो"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI Color — тип, який представляє color у спосіб, зручний для використання та інтеграції у SwiftUI views"
+          }
         }
       }
     },
@@ -5446,6 +6352,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "SwiftUI Gradient आपको user interface में किसी shape या area पर colors के बीच visually appealing, smooth transitions बनाने देता है"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI Gradient дає змогу створювати візуально привабливі плавні переходи між colors на shape або area вашого user interface"
           }
         }
       }
@@ -5483,6 +6395,12 @@
             "state" : "translated",
             "value" : "SwiftUI आपको view को property के रूप में store करके दूसरी view में pass करने देता है, अक्सर different view types handle करने के लिए AnyView का उपयोग होता है. इससे displayed content बदलते हुए layouts reuse करना आसान होता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI дає змогу передавати view в іншу view, зберігаючи її як property, часто використовуючи AnyView для роботи з різними типами view. Це спрощує повторне використання layouts із заміною показаного content"
+          }
         }
       }
     },
@@ -5518,6 +6436,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "SwiftUI का `TextEditor` users को multi-line text enter या edit करने देता है. यह rich formatting और large content inputs support करता है"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI `TextEditor` дає користувачам змогу вводити або редагувати multi-line text. Він підтримує rich formatting і великі content inputs"
           }
         }
       }
@@ -5555,6 +6479,12 @@
             "state" : "translated",
             "value" : "SwiftUI का Picker customizable, interactive तरीका है जिससे users options की list से select कर सकते हैं"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI Picker — customizable, interactive спосіб, що дає користувачам змогу вибирати зі списку options"
+          }
         }
       }
     },
@@ -5590,6 +6520,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "SwiftUI का TextField fundamental UI component है जो users को single-line text input या edit करने देता है"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI TextField — базовий UI component, який дає користувачам змогу вводити або редагувати single-line text"
           }
         }
       }
@@ -5627,6 +6563,12 @@
             "state" : "translated",
             "value" : "List row swipe करने पर swipe actions contextual actions दिखाते हैं"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swipe actions показують contextual actions, коли ви свайпаєте рядок list"
+          }
         }
       }
     },
@@ -5659,6 +6601,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "System"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "System"
@@ -5699,6 +6647,12 @@
             "state" : "translated",
             "value" : "TabView आपको tab bar interface का उपयोग करके multiple views के बीच switch करने देता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TabView дає змогу перемикатися між кількома views за допомогою tab bar interface"
+          }
         }
       }
     },
@@ -5735,6 +6689,12 @@
             "state" : "translated",
             "value" : "Text SwiftUI element है जिसका उपयोग interface में static या dynamic strings दिखाने के लिए होता है. यह rich formatting, localization support करता है और system-wide accessibility settings के अनुसार adapt होता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Text — елемент SwiftUI для показу static або dynamic strings в interface. Він підтримує rich formatting, localization і адаптується до системних accessibility settings"
+          }
         }
       }
     },
@@ -5768,6 +6728,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : ".frame() modifier view का size set करता है, जिसमें alignment के साथ fixed या flexible minimum, ideal और maximum dimensions के options होते हैं"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifier .frame() задає size view з options для fixed або flexible minimum, ideal і maximum dimensions разом з alignment"
           }
         }
       }
@@ -5803,6 +6769,12 @@
             "state" : "translated",
             "value" : ".padding() modifier view के आसपास space जोड़ता है और layout spacing control करने के लिए size, edges या दोनों से customize किया जा सकता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifier .padding() додає space навколо view і може налаштовуватися за size, edges або обома параметрами для control layout spacing"
+          }
         }
       }
     },
@@ -5837,6 +6809,12 @@
             "state" : "translated",
             "value" : ".preferredColorScheme(_:) modifier system setting की परवाह किए बिना view को specific color scheme में display करने के लिए force करता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifier .preferredColorScheme(_:) примушує view відображатися у specific color scheme незалежно від system setting"
+          }
         }
       }
     },
@@ -5870,6 +6848,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "@Environment(\\.colorScheme) property आपको detect करने देती है कि system light या dark mode में है, ताकि आप UI accordingly adjust कर सकें"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Property @Environment(\\.colorScheme) дає змогу визначати, чи system у light або dark mode, щоб відповідно adjust UI"
           }
         }
       }
@@ -5907,6 +6891,12 @@
             "state" : "translated",
             "value" : "App Store overlay आपको App Store पर पहले से published app promote करने और उसके updates trigger करने देता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Store overlay дає змогу просувати app, яка вже опублікована в App Store, і навіть запускати updates для неї"
+          }
         }
       }
     },
@@ -5942,6 +6932,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Label view text को icon के साथ combine करती है, जो SF Symbols, आपके asset catalog या fully custom view से आ सकता है, और इसे different label styles से style किया जा सकता है"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Label view поєднує text з icon, яка може походити з SF Symbols, вашого asset catalog або fully custom view, і може style за допомогою різних label styles"
           }
         }
       }
@@ -5979,6 +6975,12 @@
             "state" : "translated",
             "value" : "Navigation container की top bar जो titles, buttons और अन्य controls दिखा सकती है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Верхня панель у navigation container, яка може показувати titles, buttons та інші controls"
+          }
         }
       }
     },
@@ -6014,6 +7016,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "इस app में Settings > Debug में icon switch buttons पहले से शामिल हैं"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ця app уже містить кнопки перемикання icon у Settings > Debug"
           }
         }
       }
@@ -6051,6 +7059,12 @@
             "state" : "translated",
             "value" : "यह UIKit technique screenshots कम कर सकती है, लेकिन guarantee नहीं है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ця UIKit technique може зменшити screenshots, але не є гарантією"
+          }
         }
       }
     },
@@ -6083,6 +7097,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Title"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Title"
@@ -6123,6 +7143,12 @@
             "state" : "translated",
             "value" : "iOS 15 से पहले sheet dismiss करने के लिए केवल sheet content में change करना होता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Щоб dismiss sheet до iOS 15, потрібно змінити лише sheet content"
+          }
         }
       }
     },
@@ -6155,6 +7181,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toggle"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toggle"
@@ -6195,6 +7227,12 @@
             "state" : "translated",
             "value" : "Toggle users को value on या off switch करने देता है और UI automatically update करने के लिए state property से bind किया जा सकता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toggle дає користувачам змогу вмикати або вимикати value і може бути bound до state property для автоматичного update UI"
+          }
         }
       }
     },
@@ -6232,6 +7270,12 @@
             "state" : "translated",
             "value" : "Topics"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Теми"
+          }
         }
       }
     },
@@ -6267,6 +7311,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Settings में try करें"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Спробуйте в Settings"
           }
         }
       }
@@ -6304,6 +7354,12 @@
             "state" : "translated",
             "value" : "जब इसकी ज़रूरत न रहे तो extra battery drain से बचने के लिए इसे वापस off कर दें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вимкніть це знову, коли воно більше не потрібне, щоб уникнути додаткового battery drain"
+          }
         }
       }
     },
@@ -6337,6 +7393,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "दो columns"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Два стовпці"
           }
         }
       }
@@ -6374,6 +7436,12 @@
             "state" : "translated",
             "value" : "UIScreen.main.bounds screen की width और height देता है, जिसका उपयोग आप views को dynamically size करने के लिए कर सकते हैं"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "UIScreen.main.bounds дає width і height екрана, які можна використовувати для динамічного sizing views"
+          }
         }
       }
     },
@@ -6409,6 +7477,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Favorite undo करें"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скасувати обране"
           }
         }
       }
@@ -6446,6 +7520,12 @@
             "state" : "translated",
             "value" : "AnyView के साथ usage"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Використання з AnyView"
+          }
         }
       }
     },
@@ -6481,6 +7561,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sensitive UI के screenshots discourage करने के लिए secure text entry mask use करें"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Використовуйте secure text entry mask, щоб перешкоджати screenshots sensitive UI"
           }
         }
       }
@@ -6518,6 +7604,12 @@
             "state" : "translated",
             "value" : "Built-in Safari use करें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Використовувати вбудований Safari"
+          }
         }
       }
     },
@@ -6548,6 +7640,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "View"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "View"
@@ -6585,6 +7683,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "जब कोई function switch statement के जरिए AnyView return करता है, EmptyView() convenient और concise default case है. यह return type satisfy करते हुए unnecessary layout calculations से बचाता है"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Коли function повертає AnyView через switch statement, EmptyView() є зручним і стислим default case. Він уникає зайвих layout calculations, водночас задовольняючи return type"
           }
         }
       }
