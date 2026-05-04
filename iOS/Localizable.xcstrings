@@ -41,6 +41,12 @@
             "state" : "translated",
             "value" : "@Environment(\\.horizontalSizeClass) дає змогу визначати доступний горизонтальний клас розміру, щоб адаптувати layout для compact або regular ширини"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "@Environment(\\.horizontalSizeClass), kullanılabilir yatay size class değerini algılamanızı sağlar; böylece layout’unuzu compact veya regular genişliklere uyarlayabilirsiniz"
+          }
         }
       }
     },
@@ -82,6 +88,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "**Жирний**, ***жирний курсив***"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Kalın**, ***kalın italik***"
           }
         }
       }
@@ -128,6 +140,12 @@
             "state" : "translated",
             "value" : "`Monospaced`"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "`Monospaced`"
+          }
         }
       }
     },
@@ -169,6 +187,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "~~Закреслений~~"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "~~Üstü çizili~~"
           }
         }
       }
@@ -212,6 +236,12 @@
             "state" : "translated",
             "value" : "Діалог підтвердження показує список варіантів, зазвичай для руйнівних або другорядних дій"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirmation dialog, genellikle destructive veya secondary actions için bir seçenek listesi sunar"
+          }
         }
       }
     },
@@ -253,6 +283,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Контейнер, що забезпечує навігацію між view за допомогою навігаційної панелі (застарів в iOS 16 на користь NavigationStack)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Navigation bar kullanarak view’lar arasında navigation sağlayan bir container (iOS 16’da NavigationStack lehine deprecated oldu)"
           }
         }
       }
@@ -296,6 +332,12 @@
             "state" : "translated",
             "value" : "Link відкриває вказану URL-адресу в браузері користувача за замовчуванням або у пов’язаній app"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Link, belirtilen URL’yi kullanıcının default browser’ında veya ilişkili app içinde açar"
+          }
         }
       }
     },
@@ -337,6 +379,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сучасний контейнер для керування стеком view з програмною навігацією"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Programmatic navigation ile view stack yönetmek için modern bir container"
           }
         }
       }
@@ -380,6 +428,12 @@
             "state" : "translated",
             "value" : "Popover показує невелику dismissible view, прив’язану до іншої view, яку часто використовують для контекстної інформації або дій"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Popover, başka bir view’a bağlı küçük ve kapatılabilir bir view gösterir; genellikle contextual bilgi veya actions için kullanılır"
+          }
         }
       }
     },
@@ -422,6 +476,12 @@
             "state" : "translated",
             "value" : "ShareLink дає змогу ділитися URL, текстом або іншими transferable items через системний sheet поширення"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ShareLink, kullanıcıların sistem share sheet ile URL, text veya diğer transferable items paylaşmasını sağlar"
+          }
         }
       }
     },
@@ -463,6 +523,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sheet показує modal view поверх поточного екрана, часто для налаштувань або другорядного вмісту"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sheet, current screen üzerinde modal view gösterir; genellikle settings veya secondary content için kullanılır"
           }
         }
       }
@@ -518,6 +584,12 @@
             "state" : "translated",
             "value" : "Додати все до обраного"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tümünü favorilere ekle"
+          }
         }
       }
     },
@@ -559,6 +631,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Усі блоки коду"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tüm code blocks"
           }
         }
       }
@@ -602,6 +680,12 @@
             "state" : "translated",
             "value" : "Альтернативні іконки доступні лише на iOS"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alternate icons yalnızca iOS’te kullanılabilir"
+          }
         }
       }
     },
@@ -643,6 +727,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Альтернативні іконки не підтримуються на цьому пристрої"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu device alternate icons desteklemiyor"
           }
         }
       }
@@ -686,6 +776,12 @@
             "state" : "translated",
             "value" : "API-ключ"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "API Key"
+          }
         }
       }
     },
@@ -722,6 +818,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Store Overlay"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "App Store Overlay"
@@ -769,6 +871,12 @@
             "state" : "translated",
             "value" : "Вигляд"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Görünüm"
+          }
         }
       }
     },
@@ -810,6 +918,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Розташовує view у lazy grid, завантажуючи елементи лише тоді, коли вони з’являються на екрані, для кращої продуктивності"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daha iyi performance için items yalnızca ekranda göründükçe yüklenirken view’ları lazy grid içinde düzenler"
           }
         }
       }
@@ -853,6 +967,12 @@
             "state" : "translated",
             "value" : "Розташовує view горизонтально в одному рядку"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "View’ları tek bir row içinde yatay olarak düzenler"
+          }
         }
       }
     },
@@ -894,6 +1014,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Розташовує view вертикально в одному стовпці"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "View’ları tek bir column içinde dikey olarak düzenler"
           }
         }
       }
@@ -937,6 +1063,12 @@
             "state" : "translated",
             "value" : "Badge над іконкою app"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App icon üzerinde badge"
+          }
         }
       }
     },
@@ -978,6 +1110,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bundle.main.preferredLocalizations повертає бажані мовні коди app, які можна використати для налаштування вмісту або поведінки відповідно до locale користувача"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bundle.main.preferredLocalizations app’in tercih ettiği language codes değerlerini döndürür; bunları kullanıcının locale değerine göre content veya behavior ayarlamak için kullanabilirsiniz"
           }
         }
       }
@@ -1021,6 +1159,12 @@
             "state" : "translated",
             "value" : "але спочатку виберіть інтерфейс, який вам зручний"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ama önce sizin için rahat olan interface’i seçin"
+          }
         }
       }
     },
@@ -1059,6 +1203,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Button"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Button"
@@ -1105,6 +1255,12 @@
             "state" : "translated",
             "value" : "Button — це UI element, який дає користувачам змогу запускати дію після натискання"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Button, users’ın dokunduğunda bir action tetiklemesini sağlayan UI element’tir"
+          }
         }
       }
     },
@@ -1141,6 +1297,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "C"
@@ -1187,6 +1349,12 @@
             "state" : "translated",
             "value" : "Скасувати"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vazgeç"
+          }
         }
       }
     },
@@ -1229,6 +1397,12 @@
             "state" : "translated",
             "value" : "Кіт"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kedi"
+          }
         }
       }
     },
@@ -1268,6 +1442,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Категорії"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kategoriler"
           }
         }
       }
@@ -1311,6 +1491,12 @@
             "state" : "translated",
             "value" : "Змінити число badge на %lld"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Badge sayısını %lld olarak değiştir"
+          }
         }
       }
     },
@@ -1352,6 +1538,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Змінити мову"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dili değiştir"
           }
         }
       }
@@ -1395,6 +1587,12 @@
             "state" : "translated",
             "value" : "Перевірте іконку app на домашньому екрані"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home screen’de app icon’u kontrol edin"
+          }
         }
       }
     },
@@ -1434,6 +1632,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Виберіть категорію"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kategori seç"
           }
         }
       }
@@ -1477,6 +1681,12 @@
             "state" : "translated",
             "value" : "Виберіть тему"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konu seç"
+          }
         }
       }
     },
@@ -1519,6 +1729,12 @@
             "state" : "translated",
             "value" : "Виберіть дію"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Action seç"
+          }
         }
       }
     },
@@ -1558,6 +1774,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Виберіть свій спосіб навігації"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Navigation deneyiminizi seçin"
           }
         }
       }
@@ -1601,6 +1823,12 @@
             "state" : "translated",
             "value" : "Номери рядків коду"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Code line numbers"
+          }
         }
       }
     },
@@ -1640,6 +1868,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Колекції"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koleksiyonlar"
           }
         }
       }
@@ -1683,6 +1917,12 @@
             "state" : "translated",
             "value" : "Колір"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Renk"
+          }
         }
       }
     },
@@ -1724,6 +1964,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Незабаром..."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yakında..."
           }
         }
       }
@@ -1767,6 +2013,12 @@
             "state" : "translated",
             "value" : "Перевірки умовної компіляції дають змогу запускати різний код залежно від платформи або середовища, для якого збирається app"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conditional compilation checks, app’inizin build edildiği platform veya environment’a göre farklı code çalıştırmanızı sağlar"
+          }
         }
       }
     },
@@ -1806,6 +2058,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вміст"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İçerik"
           }
         }
       }
@@ -1849,6 +2107,12 @@
             "state" : "translated",
             "value" : "Context Menu дає змогу показати меню дій, коли користувач утримує певний елемент, до якого застосовано .contextMenu"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Context Menu, user .contextMenu uygulanmış belirli bir element’i basılı tuttuğunda actions menüsü göstermeyi sağlar"
+          }
         }
       }
     },
@@ -1888,6 +2152,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Керування"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontrol"
           }
         }
       }
@@ -1931,6 +2201,12 @@
             "state" : "translated",
             "value" : "Control button, який після натискання переходить до destination view"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dokunulduğunda destination view’a navigate eden control button"
+          }
         }
       }
     },
@@ -1973,6 +2249,12 @@
             "state" : "translated",
             "value" : "Копіювати"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopyala"
+          }
         }
       }
     },
@@ -2014,6 +2296,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Власний Label"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Özel Label"
           }
         }
       }
@@ -2058,6 +2346,12 @@
             "state" : "translated",
             "value" : "Темний"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koyu"
+          }
         }
       }
     },
@@ -2096,6 +2390,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Debug"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Debug"
@@ -2142,6 +2442,12 @@
             "state" : "translated",
             "value" : "Видалити"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sil"
+          }
         }
       }
     },
@@ -2181,6 +2487,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Дизайн"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tasarım"
           }
         }
       }
@@ -2224,6 +2536,12 @@
             "state" : "translated",
             "value" : "Руйнівна кнопка"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Destructive button"
+          }
         }
       }
     },
@@ -2266,6 +2584,12 @@
             "state" : "translated",
             "value" : "Виявлення Low Power Mode допомагає економити енергію та підтримувати плавний досвід користування, коли заряд батареї низький. SwiftUI apps можуть змінювати поведінку, вимикаючи енергоємні функції відповідно до системних цілей енергозбереження"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Low Power Mode algılamak enerji tasarrufu sağlar ve battery düşükken akıcı user experience korumaya yardımcı olur. SwiftUI apps, enerji yoğun features’ı devre dışı bırakarak behavior’ını sistemin energy-saving goals değerlerine göre ayarlayabilir"
+          }
         }
       }
     },
@@ -2305,6 +2629,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Визначення версії OS передбачає використання #available, щоб перевірити, чи поточна версія x або новіша, і виконувати код умовно залежно від можливостей платформи"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OS version algılamak, current version’ın x veya daha yüksek olup olmadığını #available ile kontrol etmeyi içerir; böylece platform capabilities’e göre conditional code execution mümkün olur"
           }
         }
       }
@@ -2348,6 +2678,12 @@
             "state" : "translated",
             "value" : "Вимкніть idle timer, щоб екран не засинав під час таймерів, тренувань або режимів читання"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Timers, workouts veya reading modes sırasında screen awake tutmak için idle timer’ı devre dışı bırakın"
+          }
         }
       }
     },
@@ -2389,6 +2725,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Закрити"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapat"
           }
         }
       }
@@ -2432,6 +2774,12 @@
             "state" : "translated",
             "value" : "Показується над tab bar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tab bar üzerinde gösterilir"
+          }
         }
       }
     },
@@ -2474,6 +2822,12 @@
             "state" : "translated",
             "value" : "Показує багатоколонковий інтерфейс для навігації між основним і детальним вмістом, часто використовується на iPad і Mac"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Primary ve detail content arasında navigation için multi-column interface gösterir; genellikle iPad ve Mac’te kullanılır"
+          }
         }
       }
     },
@@ -2513,6 +2867,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Divider() у SwiftUI додає візуальну лінію для розділення вмісту й допомагає чітко структурувати UI. Це особливо корисно у stacks і lists для покращення читабельності та візуального групування"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI’de Divider(), content’i ayırmak için görsel bir çizgi ekler ve UI yapınızı netleştirmeye yardımcı olur. Readability ve visual grouping’i iyileştirmek için özellikle stacks ve lists içinde kullanışlıdır"
           }
         }
       }
@@ -2556,6 +2916,12 @@
             "state" : "translated",
             "value" : "Документи"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dokümanlar"
+          }
         }
       }
     },
@@ -2597,6 +2963,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пес"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Köpek"
           }
         }
       }
@@ -2640,6 +3012,12 @@
             "state" : "translated",
             "value" : "Завантажити пов’язаний ресурс"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bağlantılı resource’u indir"
+          }
         }
       }
     },
@@ -2676,6 +3054,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Drag & Drop"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Drag & Drop"
@@ -2722,6 +3106,12 @@
             "state" : "translated",
             "value" : "Дублювати"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çoğalt"
+          }
         }
       }
     },
@@ -2763,6 +3153,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "EmptyView — вбудований тип SwiftUI, який нічого не рендерить в ієрархії view. Він корисний для placeholder logic або умовного rendering, коли UI не потрібно показувати"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "EmptyView, view hierarchy içinde hiçbir şey render etmeyen built-in SwiftUI type’tır. UI gösterilmemesi gerektiğinde placeholder logic veya conditional rendering için kullanışlıdır"
           }
         }
       }
@@ -2806,6 +3202,12 @@
             "state" : "translated",
             "value" : "Англійська, нідерландська, російська"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İngilizce, Felemenkçe, Rusça"
+          }
         }
       }
     },
@@ -2847,6 +3249,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Обране"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favori"
           }
         }
       }
@@ -2890,6 +3298,12 @@
             "state" : "translated",
             "value" : "Улюблена тварина"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favori hayvan"
+          }
         }
       }
     },
@@ -2931,6 +3345,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Badge обраних статей"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favori articles badge"
           }
         }
       }
@@ -2974,6 +3394,12 @@
             "state" : "translated",
             "value" : "Обране"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favoriler"
+          }
         }
       }
     },
@@ -3015,6 +3441,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Риба"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Balık"
           }
         }
       }
@@ -3058,6 +3490,12 @@
             "state" : "translated",
             "value" : "GeometryReader надає розмір і позицію свого container, даючи змогу створювати layouts, які адаптуються до доступного простору"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GeometryReader container’ının size ve position bilgilerini sağlar; böylece available space’e uyum sağlayan layouts oluşturabilirsiniz"
+          }
         }
       }
     },
@@ -3099,6 +3537,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скляна іконка"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Glassy icon"
           }
         }
       }
@@ -3142,6 +3586,12 @@
             "state" : "translated",
             "value" : "Grid розташовує view у рядках і стовпцях, даючи гнучкий контроль над layout без lazy loading"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grid, view’ları rows ve columns halinde düzenler; lazy loading olmadan layout üzerinde esnek kontrol sağlar"
+          }
         }
       }
     },
@@ -3183,6 +3633,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Привіт, я Pyzh. Занурмося у світ SwiftUI!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Merhaba, ben Pyzh. SwiftUI dünyasına dalalım!"
           }
         }
       }
@@ -3226,6 +3682,12 @@
             "state" : "translated",
             "value" : "Сховати нативну кнопку назад"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Native back button’ı gizle"
+          }
         }
       }
     },
@@ -3267,6 +3729,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Керування idle timer доступне лише на iOS"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Idle timer control yalnızca iOS’te kullanılabilir"
           }
         }
       }
@@ -3310,6 +3778,12 @@
             "state" : "translated",
             "value" : "Image використовується для показу візуального вмісту, такого як іконки, фото або системні зображення"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image, icons, fotoğraflar veya system-provided images gibi visual content göstermek için kullanılır"
+          }
         }
       }
     },
@@ -3349,6 +3823,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вибір зображення"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image Picker"
           }
         }
       }
@@ -3392,6 +3872,12 @@
             "state" : "translated",
             "value" : "У SwiftUI alert можна показати за допомогою modifier .alert, який після натискання кнопки показує alert із title, message та optional actions"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI’de .alert modifier kullanarak alert gösterebilirsiniz; button’a dokunulduğunda title, message ve optional actions içeren bir alert gösterir"
+          }
         }
       }
     },
@@ -3433,6 +3919,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пам’ятайте, що Spacer за замовчуванням має minimum length %@, що дорівнює 0"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spacer’ın default olarak 0’a eşit minimum length %@ değerine sahip olduğunu unutmayın"
           }
         }
       }
@@ -3476,6 +3968,12 @@
             "state" : "translated",
             "value" : "Не вимикати екран"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screen awake tut"
+          }
         }
       }
     },
@@ -3512,6 +4010,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layout"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Layout"
@@ -3568,6 +4072,12 @@
             "state" : "translated",
             "value" : "Дайте користувачам змогу змінювати іконку app з екрана налаштувань. Додайте альтернативні іконки до asset catalog і перелічіть їх в Info.plist під CFBundleAlternateIcons"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Users’ın app icon’u settings screen’den değiştirmesine izin verin. Asset catalog’a alternate icons ekleyin ve bunları Info.plist içinde CFBundleAlternateIcons altında listeleyin"
+          }
         }
       }
     },
@@ -3609,6 +4119,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Світлий"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Açık"
           }
         }
       }
@@ -3652,6 +4168,12 @@
             "state" : "translated",
             "value" : "Лінійний ProgressView"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Linear ProgressView"
+          }
         }
       }
     },
@@ -3688,6 +4210,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "linearCapacity"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "linearCapacity"
@@ -3734,6 +4262,12 @@
             "state" : "translated",
             "value" : "Link"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Link"
+          }
         }
       }
     },
@@ -3775,6 +4309,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Link: [натиснути](https://topscrech.dev)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Link: [tıkla](https://topscrech.dev)"
           }
         }
       }
@@ -3818,6 +4358,12 @@
             "state" : "translated",
             "value" : "List показує scrollable lazy collection рядків, які можуть містити статичний або динамічний вміст"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "List, static veya dynamic content içerebilen scrollable lazy row collection gösterir"
+          }
         }
       }
     },
@@ -3859,6 +4405,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Low Power Mode вимкнено"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Low Power Mode devre dışı"
           }
         }
       }
@@ -3902,6 +4454,12 @@
             "state" : "translated",
             "value" : "Low Power Mode увімкнено"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Low Power Mode etkin"
+          }
         }
       }
     },
@@ -3943,6 +4501,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Переконайтеся, що вибрані symbols доступні для вашої мінімальної target version"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minimum target version için available symbols seçtiğinizden emin olun"
           }
         }
       }
@@ -3986,6 +4550,12 @@
             "state" : "translated",
             "value" : "Керувати елементом"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Item yönet"
+          }
         }
       }
     },
@@ -4022,6 +4592,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Markdown"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Markdown"
@@ -4068,6 +4644,12 @@
             "state" : "translated",
             "value" : "Меню"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menü"
+          }
         }
       }
     },
@@ -4109,6 +4691,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Menu надає customizable, collapsible список options для взаємодії з користувачем"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menu, user interaction için customizable ve collapsible options list sağlar"
           }
         }
       }
@@ -4152,6 +4740,12 @@
             "state" : "translated",
             "value" : "Повідомлення"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mesaj"
+          }
         }
       }
     },
@@ -4191,6 +4785,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Навігація"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Navigation"
           }
         }
       }
@@ -4234,6 +4834,12 @@
             "state" : "translated",
             "value" : "Режим навігації"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Navigation mode"
+          }
         }
       }
     },
@@ -4275,6 +4881,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Обраного не знайдено"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favori bulunamadı"
           }
         }
       }
@@ -4318,6 +4930,12 @@
             "state" : "translated",
             "value" : "не"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "değil"
+          }
         }
       }
     },
@@ -4359,6 +4977,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Зверніть увагу, що потрібен дозвіл на notifications"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifications permission gerektiğini unutmayın"
           }
         }
       }
@@ -4402,6 +5026,12 @@
             "state" : "translated",
             "value" : "Відкрити demo stretchy header"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stretchy header demo’yu aç"
+          }
         }
       }
     },
@@ -4444,6 +5074,12 @@
             "state" : "translated",
             "value" : "Накладає view одна на одну вздовж осі z"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "View’ları z-axis boyunca üst üste overlay eder"
+          }
         }
       }
     },
@@ -4482,6 +5118,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Placeholder"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Placeholder"
@@ -4526,6 +5168,12 @@
             "state" : "translated",
             "value" : "Показати"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Göster"
+          }
         }
       }
     },
@@ -4567,6 +5215,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Показати popover"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Popover göster"
           }
         }
       }
@@ -4610,6 +5264,12 @@
             "state" : "translated",
             "value" : "Показати sheet"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sheet göster"
+          }
         }
       }
     },
@@ -4651,6 +5311,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Показати alert"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alert göster"
           }
         }
       }
@@ -4694,6 +5360,12 @@
             "state" : "translated",
             "value" : "Запобігти screenshot"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screenshots’ı engelle"
+          }
         }
       }
     },
@@ -4735,6 +5407,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ProgressView із title"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Title içeren ProgressView"
           }
         }
       }
@@ -4778,6 +5456,12 @@
             "state" : "translated",
             "value" : "Потягніть вниз, щоб розтягнути header image"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Header image’i stretch etmek için aşağı çekin"
+          }
         }
       }
     },
@@ -4820,6 +5504,12 @@
             "state" : "translated",
             "value" : "Фіолетовий"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mor"
+          }
         }
       }
     },
@@ -4858,6 +5548,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RC-3910-8842"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "RC-3910-8842"
@@ -4904,6 +5600,12 @@
             "state" : "translated",
             "value" : "Код відновлення"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurtarma Kodu"
+          }
         }
       }
     },
@@ -4946,6 +5648,12 @@
             "state" : "translated",
             "value" : "Звичайний текст"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Normal text"
+          }
         }
       }
     },
@@ -4975,6 +5683,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пов’язані статті"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İlgili articles"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Похожие статьи"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gerelateerde artikelen"
           }
         }
       }
@@ -5019,6 +5745,12 @@
             "state" : "translated",
             "value" : "Пов’язані теми"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İlgili Topics"
+          }
         }
       }
     },
@@ -5060,6 +5792,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Видалити все обране"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tüm favorileri kaldır"
           }
         }
       }
@@ -5103,6 +5841,12 @@
             "state" : "translated",
             "value" : "Перейменувати"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeniden adlandır"
+          }
         }
       }
     },
@@ -5144,6 +5888,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скинути іконку"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Icon’u sıfırla"
           }
         }
       }
@@ -5187,6 +5937,12 @@
             "state" : "translated",
             "value" : "Скинути режим навігації"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nav mode’u sıfırla"
+          }
         }
       }
     },
@@ -5228,6 +5984,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Рядок %lld"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Row %lld"
           }
         }
       }
@@ -5271,6 +6033,12 @@
             "state" : "translated",
             "value" : "Зберегти"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaydet"
+          }
         }
       }
     },
@@ -5312,6 +6080,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Масштабуйте header image на основі offset його scroll view за допомогою visualEffect()"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "visualEffect() ile header image’i scroll view offset değerine göre scale edin"
           }
         }
       }
@@ -5355,6 +6129,12 @@
             "state" : "translated",
             "value" : "Screenshot masking доступний лише на iOS"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screenshot masking yalnızca iOS’te kullanılabilir"
+          }
         }
       }
     },
@@ -5396,6 +6176,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ScrollView дає змогу прокручувати вміст горизонтально або вертикально, коли він не вміщується в доступний простір"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScrollView, content available space’e sığmadığında yatay veya dikey scroll edilmesini sağlar"
           }
         }
       }
@@ -5439,6 +6225,12 @@
             "state" : "translated",
             "value" : "Встановлення .frame(maxWidth: .infinity) змушує view однаково розширюватися в container, забезпечуючи consistent sizing між елементами"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ".frame(maxWidth: .infinity) ayarlamak, view’ların container içinde eşit genişlemesini sağlar ve items arasında consistent sizing sunar"
+          }
         }
       }
     },
@@ -5481,6 +6273,12 @@
             "state" : "translated",
             "value" : "Налаштування"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ayarlar"
+          }
         }
       }
     },
@@ -5520,6 +6318,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "SF Symbols надають зручний і сучасний спосіб додати іконки Apple до вашої app, покращуючи user experience інтуїтивними та візуально привабливими дизайнами. Ці іконки підтримують localization і animations"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols, Apple icons’u app’inize dahil etmek için pratik ve modern bir yol sağlar; intuitive ve visually appealing designs ile user experience’ı geliştirir. Bu icons localization ve animations destekler"
           }
         }
       }
@@ -5563,6 +6367,12 @@
             "state" : "translated",
             "value" : "Shapes дають змогу легко створювати custom graphics, як-от circles і rectangles, безпосередньо в code. Їх можна style, scale і animate для створення унікальних і динамічних UI elements"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shapes, circles ve rectangles gibi custom graphics’i doğrudan code içinde kolayca oluşturmanızı sağlar. Unique ve dynamic UI elements oluşturmak için style, scale ve animate edilebilirler"
+          }
         }
       }
     },
@@ -5605,6 +6415,12 @@
             "state" : "translated",
             "value" : "Поширити Swift"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swift’i paylaş"
+          }
         }
       }
     },
@@ -5643,6 +6459,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sheet"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sheet"
@@ -5689,6 +6511,12 @@
             "state" : "translated",
             "value" : "Показати діалог підтвердження"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirmation dialog göster"
+          }
         }
       }
     },
@@ -5727,6 +6555,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sk_live_49Y2K-9A90-1B2C"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "sk_live_49Y2K-9A90-1B2C"
@@ -5773,6 +6607,12 @@
             "state" : "translated",
             "value" : "Slider — customizable UI control, який дає користувачам змогу вибирати value з неперервного діапазону"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slider, users’ın continuous range içinden value seçmesini sağlayan customizable UI control’dür"
+          }
         }
       }
     },
@@ -5814,6 +6654,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spacer із fixed size"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fixed size içeren Spacer"
           }
         }
       }
@@ -5857,6 +6703,12 @@
             "state" : "translated",
             "value" : "Spacer із minimum size"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minimum size içeren Spacer"
+          }
         }
       }
     },
@@ -5899,6 +6751,12 @@
             "state" : "translated",
             "value" : "Spacer() — елемент, який займає стільки простору в layout, скільки може"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spacer(), layout içinde alabildiği kadar space kaplayan bir element’tir"
+          }
         }
       }
     },
@@ -5935,6 +6793,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stack"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stack"
@@ -5981,6 +6845,12 @@
             "state" : "translated",
             "value" : "Status bar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status bar"
+          }
         }
       }
     },
@@ -6019,6 +6889,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stepper"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stepper"
@@ -6065,6 +6941,12 @@
             "state" : "translated",
             "value" : "Stepper — customizable control, який дає змогу вибрати value з діапазону, забезпечуючи простий та інтуїтивний спосіб змінювати settings або показувати progress"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stepper, bir range içinden value seçmeyi sağlayan customizable control’dür; settings ayarlamak veya progress göstermek için simple ve intuitive bir yol sunar"
+          }
         }
       }
     },
@@ -6103,6 +6985,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stepper: %lld"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stepper: %lld"
@@ -6149,6 +7037,12 @@
             "state" : "translated",
             "value" : "Stretchy Header"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stretchy Header"
+          }
         }
       }
     },
@@ -6187,6 +7081,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stretchy image header"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stretchy image header"
@@ -6233,6 +7133,12 @@
             "state" : "translated",
             "value" : "Стиль"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stil"
+          }
         }
       }
     },
@@ -6274,6 +7180,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Деталі стилю"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stil Detayları"
           }
         }
       }
@@ -6317,6 +7229,12 @@
             "state" : "translated",
             "value" : "SwiftUI Color — тип, який представляє color у спосіб, зручний для використання та інтеграції у SwiftUI views"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI Color, color’ı SwiftUI views içinde kullanması ve entegre etmesi kolay bir şekilde temsil eden type’tır"
+          }
         }
       }
     },
@@ -6358,6 +7276,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "SwiftUI Gradient дає змогу створювати візуально привабливі плавні переходи між colors на shape або area вашого user interface"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI Gradient, user interface içinde bir shape veya area üzerinde colors arasında visually appealing ve smooth transitions oluşturmanızı sağlar"
           }
         }
       }
@@ -6401,6 +7325,12 @@
             "state" : "translated",
             "value" : "SwiftUI дає змогу передавати view в іншу view, зберігаючи її як property, часто використовуючи AnyView для роботи з різними типами view. Це спрощує повторне використання layouts із заміною показаного content"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI, bir view’ı property olarak saklayarak başka bir view’a geçirmenizi sağlar; different view types yönetmek için genellikle AnyView kullanılır. Bu, displayed content değişirken layouts yeniden kullanmayı kolaylaştırır"
+          }
         }
       }
     },
@@ -6442,6 +7372,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "SwiftUI `TextEditor` дає користувачам змогу вводити або редагувати multi-line text. Він підтримує rich formatting і великі content inputs"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI’nin `TextEditor`’ı users’ın multi-line text girmesine veya düzenlemesine izin verir. Rich formatting ve large content inputs destekler"
           }
         }
       }
@@ -6485,6 +7421,12 @@
             "state" : "translated",
             "value" : "SwiftUI Picker — customizable, interactive спосіб, що дає користувачам змогу вибирати зі списку options"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI Picker, users’ın options listesinden seçim yapmasını sağlayan customizable ve interactive bir yoldur"
+          }
         }
       }
     },
@@ -6526,6 +7468,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "SwiftUI TextField — базовий UI component, який дає користувачам змогу вводити або редагувати single-line text"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI TextField, users’ın single-line text girmesini veya düzenlemesini sağlayan temel UI component’tir"
           }
         }
       }
@@ -6569,6 +7517,12 @@
             "state" : "translated",
             "value" : "Swipe actions показують contextual actions, коли ви свайпаєте рядок list"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir list row swipe edildiğinde swipe actions contextual actions gösterir"
+          }
         }
       }
     },
@@ -6607,6 +7561,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "System"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "System"
@@ -6653,6 +7613,12 @@
             "state" : "translated",
             "value" : "TabView дає змогу перемикатися між кількома views за допомогою tab bar interface"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TabView, tab bar interface kullanarak multiple views arasında geçiş yapmanızı sağlar"
+          }
         }
       }
     },
@@ -6695,6 +7661,12 @@
             "state" : "translated",
             "value" : "Text — елемент SwiftUI для показу static або dynamic strings в interface. Він підтримує rich formatting, localization і адаптується до системних accessibility settings"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Text, interface içinde static veya dynamic strings göstermek için kullanılan SwiftUI element’tir. Rich formatting, localization destekler ve system-wide accessibility settings’e uyum sağlar"
+          }
         }
       }
     },
@@ -6734,6 +7706,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Modifier .frame() задає size view з options для fixed або flexible minimum, ideal і maximum dimensions разом з alignment"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ".frame() modifier, alignment ile birlikte fixed veya flexible minimum, ideal ve maximum dimensions options sunarak view size ayarlar"
           }
         }
       }
@@ -6775,6 +7753,12 @@
             "state" : "translated",
             "value" : "Modifier .padding() додає space навколо view і може налаштовуватися за size, edges або обома параметрами для control layout spacing"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ".padding() modifier view çevresine space ekler; layout spacing kontrolü için size, edges veya her ikisiyle customize edilebilir"
+          }
         }
       }
     },
@@ -6815,6 +7799,12 @@
             "state" : "translated",
             "value" : "Modifier .preferredColorScheme(_:) примушує view відображатися у specific color scheme незалежно від system setting"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ".preferredColorScheme(_:) modifier, system setting ne olursa olsun view’ı belirli bir color scheme içinde display etmeye zorlar"
+          }
         }
       }
     },
@@ -6854,6 +7844,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Property @Environment(\\.colorScheme) дає змогу визначати, чи system у light або dark mode, щоб відповідно adjust UI"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "@Environment(\\.colorScheme) property, system’ın light veya dark mode’da olup olmadığını algılamanızı sağlar; böylece UI’ı buna göre adjust edebilirsiniz"
           }
         }
       }
@@ -6897,6 +7893,12 @@
             "state" : "translated",
             "value" : "App Store overlay дає змогу просувати app, яка вже опублікована в App Store, і навіть запускати updates для неї"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Store overlay, App Store’da zaten published olan bir app’i promote etmenizi ve hatta onun updates değerlerini trigger etmenizi sağlar"
+          }
         }
       }
     },
@@ -6938,6 +7940,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Label view поєднує text з icon, яка може походити з SF Symbols, вашого asset catalog або fully custom view, і може style за допомогою різних label styles"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Label view, text’i SF Symbols, asset catalog veya fully custom view’dan gelebilen bir icon ile birleştirir ve different label styles ile style edilebilir"
           }
         }
       }
@@ -6981,6 +7989,12 @@
             "state" : "translated",
             "value" : "Верхня панель у navigation container, яка може показувати titles, buttons та інші controls"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Navigation container içindeki, titles, buttons ve diğer controls gösterebilen top bar"
+          }
         }
       }
     },
@@ -7022,6 +8036,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ця app уже містить кнопки перемикання icon у Settings > Debug"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu app Settings > Debug içinde icon switch buttons zaten içerir"
           }
         }
       }
@@ -7065,6 +8085,12 @@
             "state" : "translated",
             "value" : "Ця UIKit technique може зменшити screenshots, але не є гарантією"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu UIKit technique screenshots’ı azaltabilir, ancak garanti değildir"
+          }
         }
       }
     },
@@ -7103,6 +8129,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Title"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Title"
@@ -7149,6 +8181,12 @@
             "state" : "translated",
             "value" : "Щоб dismiss sheet до iOS 15, потрібно змінити лише sheet content"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS 15 öncesinde bir sheet dismiss etmek için yalnızca sheet content içinde değişiklik yapmak gerekir"
+          }
         }
       }
     },
@@ -7187,6 +8225,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toggle"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toggle"
@@ -7233,6 +8277,12 @@
             "state" : "translated",
             "value" : "Toggle дає користувачам змогу вмикати або вимикати value і може бути bound до state property для автоматичного update UI"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toggle, users’ın bir value’yu on veya off yapmasını sağlar ve UI’ı otomatik update etmek için state property’ye bind edilebilir"
+          }
         }
       }
     },
@@ -7276,6 +8326,12 @@
             "state" : "translated",
             "value" : "Теми"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konular"
+          }
         }
       }
     },
@@ -7317,6 +8373,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Спробуйте в Settings"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings içinde deneyin"
           }
         }
       }
@@ -7360,6 +8422,12 @@
             "state" : "translated",
             "value" : "Вимкніть це знову, коли воно більше не потрібне, щоб уникнути додаткового battery drain"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ek battery drain önlemek için artık gerekmediğinde bunu tekrar off yapın"
+          }
         }
       }
     },
@@ -7399,6 +8467,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Два стовпці"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İki column"
           }
         }
       }
@@ -7442,6 +8516,12 @@
             "state" : "translated",
             "value" : "UIScreen.main.bounds дає width і height екрана, які можна використовувати для динамічного sizing views"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "UIScreen.main.bounds screen width ve height değerlerini verir; bunları views’ı dynamically size etmek için kullanabilirsiniz"
+          }
         }
       }
     },
@@ -7483,6 +8563,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скасувати обране"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favoriyi geri al"
           }
         }
       }
@@ -7526,6 +8612,12 @@
             "state" : "translated",
             "value" : "Використання з AnyView"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AnyView ile kullanım"
+          }
         }
       }
     },
@@ -7567,6 +8659,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Використовуйте secure text entry mask, щоб перешкоджати screenshots sensitive UI"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sensitive UI screenshots’ını caydırmak için secure text entry mask kullanın"
           }
         }
       }
@@ -7610,6 +8708,12 @@
             "state" : "translated",
             "value" : "Використовувати вбудований Safari"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Built-in Safari kullan"
+          }
         }
       }
     },
@@ -7646,6 +8750,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "View"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "View"
@@ -7689,6 +8799,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Коли function повертає AnyView через switch statement, EmptyView() є зручним і стислим default case. Він уникає зайвих layout calculations, водночас задовольняючи return type"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Switch statement ile AnyView döndüren bir function kullanırken EmptyView() pratik ve kısa bir default case’tir. Return type’ı karşılarken gereksiz layout calculations’ı önler"
           }
         }
       }
