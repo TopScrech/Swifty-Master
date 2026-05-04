@@ -1,12 +1,8 @@
 import ScrechKit
 
 struct CodeBlockView: View {
-    @EnvironmentObject private var store: ValueStore
-    
     private let code: String
     private let style: CodeBlockStyle
-    
-    @State private var availableWidth: CGFloat = 0
     
     init(_ code: CodeBlock, style: CodeBlockStyle = .standard) {
         self.code = code.code.removingLastLine
@@ -18,15 +14,13 @@ struct CodeBlockView: View {
         self.style = style
     }
     
+    @State private var availableWidth = 0.0
+    
     var body: some View {
         ScrollView(.horizontal) {
-            CodeBlockLinesView(
-                code: code,
-                style: style,
-                showsLineNumbers: store.showCodeLineNumbers
-            )
-            .padding(style.padding)
-            .frame(minWidth: max(availableWidth, 1), alignment: .leading)
+            CodeBlockLinesView(code, with: style)
+                .padding(style.padding)
+                .frame(minWidth: max(availableWidth, 1), alignment: .leading)
         }
         .scrollIndicators(.never)
         .fixedSize(horizontal: false, vertical: true)
