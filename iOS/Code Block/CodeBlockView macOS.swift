@@ -20,13 +20,9 @@ struct CodeBlockView: View {
     
     var body: some View {
         ScrollView(.horizontal) {
-            CodeBlockLinesView(
-                code: code,
-                style: style,
-                showsLineNumbers: store.showCodeLineNumbers
-            )
-            .padding(style.padding)
-            .frame(minWidth: max(availableWidth, 1), alignment: .leading)
+            CodeBlockLinesView(code, with: style)
+                .padding(style.padding)
+                .frame(minWidth: max(availableWidth, 1), alignment: .leading)
         }
         .scrollIndicators(.never)
         .fixedSize(horizontal: false, vertical: true)
