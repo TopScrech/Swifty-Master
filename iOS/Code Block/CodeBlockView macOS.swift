@@ -19,21 +19,22 @@ struct CodeBlockView: View {
     }
     
     var body: some View {
-        ZStack(alignment: .topTrailing) {
-            ScrollView(.horizontal) {
-                CodeBlockLinesView(
-                    code: code,
-                    style: style,
-                    showsLineNumbers: store.showCodeLineNumbers
-                )
-                .padding(style.padding)
-                .frame(minWidth: max(availableWidth, 1), alignment: .leading)
-            }
-            .scrollIndicators(.never)
-#if !os(tvOS)
-            CodeBlockViewCopyButton(code)
-#endif
+        ScrollView(.horizontal) {
+            CodeBlockLinesView(
+                code: code,
+                style: style,
+                showsLineNumbers: store.showCodeLineNumbers
+            )
+            .padding(style.padding)
+            .frame(minWidth: max(availableWidth, 1), alignment: .leading)
         }
+        .scrollIndicators(.never)
+        .fixedSize(horizontal: false, vertical: true)
+#if !os(tvOS)
+        .overlay(alignment: .topTrailing) {
+            CodeBlockViewCopyButton(code)
+        }
+#endif
         .background(style.background, in: .rect(cornerRadius: style.cornerRadius))
         .background(widthReader)
     }

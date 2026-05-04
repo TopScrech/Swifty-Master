@@ -12,7 +12,7 @@ struct CodeBlockLinesView: View {
     }
     
     var body: some View {
-        LazyVStack(alignment: .leading, spacing: style.lineSpacing) {
+        VStack(alignment: .leading, spacing: style.lineSpacing) {
             ForEach(Array(codeLines.enumerated()), id: \.offset) { index, line in
                 HStack(alignment: .top, spacing: style.lineNumberSpacing) {
                     if showsLineNumbers {
