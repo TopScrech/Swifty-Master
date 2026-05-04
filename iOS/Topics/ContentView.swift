@@ -18,22 +18,7 @@ struct ContentView: View {
             TopicDocs(topic.docs)
             
             ContentViewNavButtons(topic)
-            
-            ForEach(topic.related) { relatedTopic in
-                NavigationLink(value: relatedTopic) {
-                    Label {
-                        Text(relatedTopic.localizedName)
-                    } icon: {
-                        Image(systemName: relatedTopic.icon)
-                            .foregroundStyle(.blue)
-                    }
-                    .frame(height: 50)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.horizontal)
-                    .background(.ultraThinMaterial, in: .rect(cornerRadius: 16))
-                    .foregroundStyle(.foreground)
-                }
-            }
+            ContentViewRelatedTopics(topic.related)
         }
         .scenePadding()
         .toolbar {
