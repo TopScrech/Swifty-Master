@@ -3,7 +3,7 @@ import ScrechKit
 struct TopicHStack: View {
     var body: some View {
         VStack(spacing: 25) {
-            Text("Arranges views vertically in a single column")
+            Text("Arranges views horizontally in a single column")
             
             CodeBlockView(.hStack)
         }
