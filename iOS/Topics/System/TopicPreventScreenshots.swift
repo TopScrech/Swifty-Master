@@ -6,7 +6,6 @@ struct TopicPreventScreenshots: View {
     var body: some View {
         VStack(spacing: 25) {
             Text("Use a secure text entry mask to discourage screenshots of sensitive UI")
-            
 #if os(iOS)
             VStack(spacing: 16) {
                 VStack(alignment: .leading, spacing: 12) {
@@ -43,7 +42,6 @@ struct TopicPreventScreenshots: View {
 #else
             TopicWarning("Screenshot masking is available on iOS only")
 #endif
-            
             CodeBlockView(.preventScreenshots)
         }
     }

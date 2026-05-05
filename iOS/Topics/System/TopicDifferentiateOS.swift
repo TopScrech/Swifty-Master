@@ -6,7 +6,6 @@ struct TopicDifferentiateOS: View {
             Text("Conditional compilation checks let you run different code depending on the platform or environment your app is built for")
             
             CodeBlockView(.differentiateOS)
-            
             CodeBlockView(.detectDeviceUsed)
         }
     }
