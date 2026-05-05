@@ -366,6 +366,7 @@
 				hi,
 				uk,
 				tr,
+				it,
 			);
 			mainGroup = F3BBD9D52AEECD3400A9F7E7;
 			packageReferences = (

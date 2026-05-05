@@ -47,6 +47,12 @@
             "state" : "translated",
             "value" : "@Environment(\\.horizontalSizeClass) дає змогу визначати доступний горизонтальний клас розміру, щоб адаптувати layout для compact або regular ширини"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "@Environment(\\.horizontalSizeClass) ti permette di rilevare la classe di dimensione orizzontale disponibile, così puoi adattare il layout a larghezze compatte o regolari"
+          }
         }
       }
     },
@@ -94,6 +100,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "**Жирний**, ***жирний курсив***"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Grassetto**, ***grassetto corsivo***"
           }
         }
       }
@@ -146,6 +158,12 @@
             "state" : "translated",
             "value" : "`Monospaced`"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "`Monospaziato`"
+          }
         }
       }
     },
@@ -193,6 +211,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "~~Закреслений~~"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "~~Barrato~~"
           }
         }
       }
@@ -242,6 +266,12 @@
             "state" : "translated",
             "value" : "Діалог підтвердження показує список варіантів, зазвичай для руйнівних або другорядних дій"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una finestra di conferma presenta un elenco di scelte, in genere per azioni distruttive o secondarie"
+          }
         }
       }
     },
@@ -289,6 +319,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Контейнер, що забезпечує навігацію між view за допомогою навігаційної панелі (застарів в iOS 16 на користь NavigationStack)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un contenitore che consente la navigazione tra viste usando una barra di navigazione (deprecato in iOS 16 a favore di NavigationStack)"
           }
         }
       }
@@ -338,6 +374,12 @@
             "state" : "translated",
             "value" : "Link відкриває вказану URL-адресу в браузері користувача за замовчуванням або у пов’язаній app"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un Link apre un URL specifico nel browser predefinito dell'utente o nell'app associata"
+          }
         }
       }
     },
@@ -385,6 +427,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сучасний контейнер для керування стеком view з програмною навігацією"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un contenitore moderno per gestire una pila di viste con navigazione programmatica"
           }
         }
       }
@@ -434,6 +482,12 @@
             "state" : "translated",
             "value" : "Popover показує невелику dismissible view, прив’язану до іншої view, яку часто використовують для контекстної інформації або дій"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un popover mostra una piccola vista chiudibile ancorata a un'altra vista, comunemente usata per informazioni o azioni contestuali"
+          }
         }
       }
     },
@@ -482,6 +536,12 @@
             "state" : "translated",
             "value" : "ShareLink дає змогу ділитися URL, текстом або іншими transferable items через системний sheet поширення"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uno ShareLink consente di condividere un URL, testo o altri elementi trasferibili usando il foglio di condivisione del sistema"
+          }
         }
       }
     },
@@ -529,6 +589,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sheet показує modal view поверх поточного екрана, часто для налаштувань або другорядного вмісту"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uno sheet presenta una vista modale sopra la schermata corrente, spesso usata per impostazioni o contenuti secondari"
           }
         }
       }
@@ -590,6 +656,12 @@
             "state" : "translated",
             "value" : "Додати все до обраного"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi tutto ai preferiti"
+          }
         }
       }
     },
@@ -637,6 +709,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Усі блоки коду"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutti i blocchi di codice"
           }
         }
       }
@@ -686,6 +764,12 @@
             "state" : "translated",
             "value" : "Альтернативні іконки доступні лише на iOS"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le icone alternative sono disponibili solo su iOS"
+          }
         }
       }
     },
@@ -733,6 +817,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Альтернативні іконки не підтримуються на цьому пристрої"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le icone alternative non sono supportate su questo dispositivo"
           }
         }
       }
@@ -782,6 +872,12 @@
             "state" : "translated",
             "value" : "API-ключ"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiave API"
+          }
         }
       }
     },
@@ -827,6 +923,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "App Store Overlay"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Overlay App Store"
           }
         }
       }
@@ -877,6 +979,12 @@
             "state" : "translated",
             "value" : "Вигляд"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aspetto"
+          }
         }
       }
     },
@@ -925,6 +1033,12 @@
             "state" : "translated",
             "value" : "Розташовує view у lazy grid, завантажуючи елементи лише тоді, коли вони з’являються на екрані, для кращої продуктивності"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disponi le viste in una griglia lazy, caricando gli elementi solo quando appaiono sullo schermo per migliorare le prestazioni"
+          }
         }
       }
     },
@@ -972,6 +1086,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Розташовує view горизонтально в одному стовпці"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dispone le viste orizzontalmente in una singola colonna"
           }
         }
       }
@@ -1022,6 +1142,12 @@
             "state" : "translated",
             "value" : "Розташовує view горизонтально в одному рядку"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dispone le viste orizzontalmente in una singola riga"
+          }
         }
       }
     },
@@ -1071,6 +1197,12 @@
             "state" : "translated",
             "value" : "Розташовує view вертикально в одному стовпці"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dispone le viste verticalmente in una singola colonna"
+          }
         }
       }
     },
@@ -1118,6 +1250,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Розташовує view вертикально в одному рядку"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dispone le viste verticalmente in una singola riga"
           }
         }
       }
@@ -1167,6 +1305,12 @@
             "state" : "translated",
             "value" : "Badge над іконкою app"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Badge sull'icona dell'app"
+          }
         }
       }
     },
@@ -1214,6 +1358,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bundle.main.preferredLocalizations повертає бажані мовні коди app, які можна використати для налаштування вмісту або поведінки відповідно до locale користувача"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bundle.main.preferredLocalizations restituisce i codici lingua preferiti dell'app, che puoi usare per adattare contenuti o comportamento in base alle impostazioni locali dell'utente"
           }
         }
       }
@@ -1263,6 +1413,12 @@
             "state" : "translated",
             "value" : "але спочатку виберіть інтерфейс, який вам зручний"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ma prima scegli l'interfaccia più comoda per te"
+          }
         }
       }
     },
@@ -1310,6 +1466,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Button"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pulsante"
           }
         }
       }
@@ -1359,6 +1521,12 @@
             "state" : "translated",
             "value" : "Button — це UI element, який дає користувачам змогу запускати дію після натискання"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Button è un elemento dell'interfaccia che consente agli utenti di avviare un'azione con un tocco"
+          }
         }
       }
     },
@@ -1401,6 +1569,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "C"
@@ -1453,6 +1627,12 @@
             "state" : "translated",
             "value" : "Скасувати"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annulla"
+          }
         }
       }
     },
@@ -1501,6 +1681,12 @@
             "state" : "translated",
             "value" : "Кіт"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gatto"
+          }
         }
       }
     },
@@ -1546,6 +1732,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Категорії"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Categorie"
           }
         }
       }
@@ -1595,6 +1787,12 @@
             "state" : "translated",
             "value" : "Змінити число badge на %lld"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambia il numero del badge in %lld"
+          }
         }
       }
     },
@@ -1642,6 +1840,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Змінити мову"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambia lingua"
           }
         }
       }
@@ -1691,6 +1895,12 @@
             "state" : "translated",
             "value" : "Перевірте іконку app на домашньому екрані"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controlla l'icona dell'app nella schermata Home"
+          }
         }
       }
     },
@@ -1736,6 +1946,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Виберіть категорію"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli una categoria"
           }
         }
       }
@@ -1785,6 +2001,12 @@
             "state" : "translated",
             "value" : "Виберіть тему"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli un argomento"
+          }
         }
       }
     },
@@ -1833,6 +2055,12 @@
             "state" : "translated",
             "value" : "Виберіть дію"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli un'azione"
+          }
         }
       }
     },
@@ -1878,6 +2106,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Виберіть свій спосіб навігації"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli la tua esperienza di navigazione"
           }
         }
       }
@@ -1927,6 +2161,12 @@
             "state" : "translated",
             "value" : "Номери рядків коду"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numeri di riga del codice"
+          }
         }
       }
     },
@@ -1972,6 +2212,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Колекції"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Collezioni"
           }
         }
       }
@@ -2021,6 +2267,12 @@
             "state" : "translated",
             "value" : "Колір"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colore"
+          }
         }
       }
     },
@@ -2068,6 +2320,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Незабаром..."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In arrivo..."
           }
         }
       }
@@ -2117,6 +2375,12 @@
             "state" : "translated",
             "value" : "Перевірки умовної компіляції дають змогу запускати різний код залежно від платформи або середовища, для якого збирається app"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I controlli di compilazione condizionale consentono di eseguire codice diverso in base alla piattaforma o all'ambiente per cui viene creata l'app"
+          }
         }
       }
     },
@@ -2162,6 +2426,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вміст"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contenuto"
           }
         }
       }
@@ -2211,6 +2481,12 @@
             "state" : "translated",
             "value" : "Context Menu дає змогу показати меню дій, коли користувач утримує певний елемент, до якого застосовано .contextMenu"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Context Menu consente di mostrare un menu di azioni quando l'utente tiene premuto un elemento specifico a cui è stato applicato .contextMenu"
+          }
         }
       }
     },
@@ -2256,6 +2532,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Керування"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controllo"
           }
         }
       }
@@ -2305,6 +2587,12 @@
             "state" : "translated",
             "value" : "Control button, який після натискання переходить до destination view"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pulsante di controllo che naviga verso una vista di destinazione quando viene toccato"
+          }
         }
       }
     },
@@ -2353,6 +2641,12 @@
             "state" : "translated",
             "value" : "Копіювати"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copia"
+          }
         }
       }
     },
@@ -2400,6 +2694,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Власний Label"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etichetta personalizzata"
           }
         }
       }
@@ -2450,6 +2750,12 @@
             "state" : "translated",
             "value" : "Темний"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scuro"
+          }
         }
       }
     },
@@ -2494,6 +2800,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Debug"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Debug"
@@ -2546,6 +2858,12 @@
             "state" : "translated",
             "value" : "Видалити"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina"
+          }
         }
       }
     },
@@ -2591,6 +2909,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Дизайн"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Design"
           }
         }
       }
@@ -2640,6 +2964,12 @@
             "state" : "translated",
             "value" : "Руйнівна кнопка"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pulsante distruttivo"
+          }
         }
       }
     },
@@ -2688,6 +3018,12 @@
             "state" : "translated",
             "value" : "Виявлення Low Power Mode допомагає економити енергію та підтримувати плавний досвід користування, коли заряд батареї низький. SwiftUI apps можуть змінювати поведінку, вимикаючи енергоємні функції відповідно до системних цілей енергозбереження"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rilevare la modalità Risparmio energetico aiuta a conservare energia e mantenere un'esperienza fluida quando la batteria è scarica. Le app SwiftUI possono adattare il comportamento disattivando funzionalità ad alto consumo per rispettare gli obiettivi di risparmio energetico del sistema"
+          }
         }
       }
     },
@@ -2733,6 +3069,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Визначення версії OS передбачає використання #available, щоб перевірити, чи поточна версія x або новіша, і виконувати код умовно залежно від можливостей платформи"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rilevare la versione del sistema operativo significa usare #available per verificare se la versione corrente è x o successiva, permettendo l'esecuzione condizionale del codice in base alle capacità della piattaforma"
           }
         }
       }
@@ -2782,6 +3124,12 @@
             "state" : "translated",
             "value" : "Вимкніть idle timer, щоб екран не засинав під час таймерів, тренувань або режимів читання"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disattiva il timer di inattività per mantenere lo schermo acceso durante timer, allenamenti o modalità di lettura"
+          }
         }
       }
     },
@@ -2829,6 +3177,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Закрити"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiudi"
           }
         }
       }
@@ -2878,6 +3232,12 @@
             "state" : "translated",
             "value" : "Показує багатоколонковий інтерфейс для навігації між основним і детальним вмістом, часто використовується на iPad і Mac"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra un'interfaccia a più colonne per navigare tra contenuto principale e dettagli, spesso usata su iPad e Mac"
+          }
         }
       }
     },
@@ -2923,6 +3283,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Divider() у SwiftUI додає візуальну лінію для розділення вмісту й допомагає чітко структурувати UI. Це особливо корисно у stacks і lists для покращення читабельності та візуального групування"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Divider() in SwiftUI aggiunge una linea visiva per separare i contenuti, aiutando a strutturare chiaramente l'interfaccia. È particolarmente utile in stack ed elenchi per migliorare leggibilità e raggruppamento visivo"
           }
         }
       }
@@ -2972,6 +3338,12 @@
             "state" : "translated",
             "value" : "Документи"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Documentazione"
+          }
         }
       }
     },
@@ -3019,6 +3391,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пес"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cane"
           }
         }
       }
@@ -3068,6 +3446,12 @@
             "state" : "translated",
             "value" : "Завантажити пов’язаний ресурс"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scarica la risorsa collegata"
+          }
         }
       }
     },
@@ -3113,6 +3497,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Drag & Drop"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trascina e rilascia"
           }
         }
       }
@@ -3162,6 +3552,12 @@
             "state" : "translated",
             "value" : "Дублювати"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Duplica"
+          }
         }
       }
     },
@@ -3209,6 +3605,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "EmptyView — вбудований тип SwiftUI, який нічого не рендерить в ієрархії view. Він корисний для placeholder logic або умовного rendering, коли UI не потрібно показувати"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "EmptyView è un tipo SwiftUI integrato che non renderizza nulla nella gerarchia delle viste. È utile per logica segnaposto o rendering condizionale quando non deve essere mostrata alcuna interfaccia"
           }
         }
       }
@@ -3258,6 +3660,12 @@
             "state" : "translated",
             "value" : "Обране"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preferito"
+          }
         }
       }
     },
@@ -3305,6 +3713,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Улюблена тварина"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Animale preferito"
           }
         }
       }
@@ -3354,6 +3768,12 @@
             "state" : "translated",
             "value" : "Обране"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preferiti"
+          }
         }
       }
     },
@@ -3401,6 +3821,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Риба"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pesce"
           }
         }
       }
@@ -3450,6 +3876,12 @@
             "state" : "translated",
             "value" : "GeometryReader надає розмір і позицію свого container, даючи змогу створювати layouts, які адаптуються до доступного простору"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GeometryReader fornisce dimensione e posizione del suo contenitore, consentendo di creare layout che si adattano allo spazio disponibile"
+          }
         }
       }
     },
@@ -3497,6 +3929,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скляна іконка"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Icona vetrosa"
           }
         }
       }
@@ -3546,6 +3984,12 @@
             "state" : "translated",
             "value" : "Grid розташовує view у рядках і стовпцях, даючи гнучкий контроль над layout без lazy loading"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grid dispone le viste in righe e colonne, offrendo un controllo flessibile sul layout senza caricamento lazy"
+          }
         }
       }
     },
@@ -3593,6 +4037,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Привіт, я Pyzh. Занурмося у світ SwiftUI!"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ciao, sono Pyzh. Immergiamoci nel mondo di SwiftUI!"
           }
         }
       }
@@ -3642,6 +4092,12 @@
             "state" : "translated",
             "value" : "Сховати нативну кнопку назад"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nascondi il pulsante Indietro nativo"
+          }
         }
       }
     },
@@ -3689,6 +4145,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Керування idle timer доступне лише на iOS"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il controllo del timer di inattività è disponibile solo su iOS"
           }
         }
       }
@@ -3738,6 +4200,12 @@
             "state" : "translated",
             "value" : "Image використовується для показу візуального вмісту, такого як іконки, фото або системні зображення"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image viene usato per mostrare contenuti visivi come icone, foto o immagini fornite dal sistema"
+          }
         }
       }
     },
@@ -3783,6 +4251,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вибір зображення"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selettore immagini"
           }
         }
       }
@@ -3832,6 +4306,12 @@
             "state" : "translated",
             "value" : "У SwiftUI alert можна показати за допомогою modifier .alert, який після натискання кнопки показує alert із title, message та optional actions"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In SwiftUI puoi presentare un avviso usando il modificatore .alert, che mostra un avviso con titolo, messaggio e azioni opzionali quando il pulsante viene toccato"
+          }
         }
       }
     },
@@ -3879,6 +4359,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пам’ятайте, що Spacer за замовчуванням має minimum length %@, що дорівнює 0"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tieni presente che uno Spacer ha una lunghezza minima %@ pari a 0 per impostazione predefinita"
           }
         }
       }
@@ -3928,6 +4414,12 @@
             "state" : "translated",
             "value" : "Не вимикати екран"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantieni lo schermo acceso"
+          }
         }
       }
     },
@@ -3970,6 +4462,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layout"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Layout"
@@ -4032,6 +4530,12 @@
             "state" : "translated",
             "value" : "Дайте користувачам змогу змінювати іконку app з екрана налаштувань. Додайте альтернативні іконки до asset catalog і перелічіть їх в Info.plist під CFBundleAlternateIcons"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consenti agli utenti di cambiare l'icona dell'app da una schermata impostazioni. Aggiungi icone alternative al catalogo asset ed elencale in Info.plist sotto CFBundleAlternateIcons"
+          }
         }
       }
     },
@@ -4079,6 +4583,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Світлий"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiaro"
           }
         }
       }
@@ -4128,6 +4638,12 @@
             "state" : "translated",
             "value" : "Лінійний ProgressView"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ProgressView lineare"
+          }
         }
       }
     },
@@ -4170,6 +4686,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "linearCapacity"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "linearCapacity"
@@ -4222,6 +4744,12 @@
             "state" : "translated",
             "value" : "Link"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Link"
+          }
         }
       }
     },
@@ -4269,6 +4797,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Link: [натиснути](https://topscrech.dev)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Link: [clic](https://topscrech.dev)"
           }
         }
       }
@@ -4318,6 +4852,12 @@
             "state" : "translated",
             "value" : "List показує scrollable lazy collection рядків, які можуть містити статичний або динамічний вміст"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "List mostra una raccolta lazy e scorrevole di righe che possono contenere contenuti statici o dinamici"
+          }
         }
       }
     },
@@ -4365,6 +4905,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Low Power Mode вимкнено"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modalità Risparmio energetico disattivata"
           }
         }
       }
@@ -4414,6 +4960,12 @@
             "state" : "translated",
             "value" : "Low Power Mode увімкнено"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modalità Risparmio energetico attivata"
+          }
         }
       }
     },
@@ -4461,6 +5013,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Переконайтеся, що вибрані symbols доступні для вашої мінімальної target version"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assicurati di scegliere simboli disponibili per la tua versione minima di destinazione"
           }
         }
       }
@@ -4510,6 +5068,12 @@
             "state" : "translated",
             "value" : "Керувати елементом"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gestisci elemento"
+          }
         }
       }
     },
@@ -4552,6 +5116,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Markdown"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Markdown"
@@ -4604,6 +5174,12 @@
             "state" : "translated",
             "value" : "Меню"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menu"
+          }
         }
       }
     },
@@ -4651,6 +5227,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Menu надає customizable, collapsible список options для взаємодії з користувачем"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menu fornisce un elenco di opzioni personalizzabile e comprimibile per l'interazione dell'utente"
           }
         }
       }
@@ -4700,6 +5282,12 @@
             "state" : "translated",
             "value" : "Повідомлення"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Messaggio"
+          }
         }
       }
     },
@@ -4745,6 +5333,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Навігація"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Navigazione"
           }
         }
       }
@@ -4794,6 +5388,12 @@
             "state" : "translated",
             "value" : "Режим навігації"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modalità di navigazione"
+          }
         }
       }
     },
@@ -4841,6 +5441,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Обраного не знайдено"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessun preferito trovato"
           }
         }
       }
@@ -4890,6 +5496,12 @@
             "state" : "translated",
             "value" : "не"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "non"
+          }
         }
       }
     },
@@ -4937,6 +5549,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Відкрити demo stretchy header"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apri la demo dell'intestazione estensibile"
           }
         }
       }
@@ -4986,6 +5604,12 @@
             "state" : "translated",
             "value" : "Накладає view одна на одну вздовж осі z"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sovrappone le viste una sopra l'altra lungo l'asse z"
+          }
         }
       }
     },
@@ -5034,6 +5658,12 @@
             "state" : "translated",
             "value" : "Placeholder"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Segnaposto"
+          }
         }
       }
     },
@@ -5079,6 +5709,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Показати"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Presenta"
           }
         }
       }
@@ -5128,6 +5764,12 @@
             "state" : "translated",
             "value" : "Показати popover"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Presenta un popover"
+          }
         }
       }
     },
@@ -5175,6 +5817,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Показати sheet"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Presenta uno sheet"
           }
         }
       }
@@ -5224,6 +5872,12 @@
             "state" : "translated",
             "value" : "Показати alert"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Presenta un avviso"
+          }
         }
       }
     },
@@ -5271,6 +5925,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Запобігти screenshot"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impedisci screenshot"
           }
         }
       }
@@ -5320,6 +5980,12 @@
             "state" : "translated",
             "value" : "ProgressView із title"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ProgressView con titolo"
+          }
         }
       }
     },
@@ -5367,6 +6033,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Потягніть вниз, щоб розтягнути header image"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tira verso il basso per estendere l'immagine dell'intestazione"
           }
         }
       }
@@ -5416,6 +6088,12 @@
             "state" : "translated",
             "value" : "Фіолетовий"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Viola"
+          }
         }
       }
     },
@@ -5460,6 +6138,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RC-3910-8842"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "RC-3910-8842"
@@ -5512,6 +6196,12 @@
             "state" : "translated",
             "value" : "Код відновлення"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codice di recupero"
+          }
         }
       }
     },
@@ -5560,6 +6250,12 @@
             "state" : "translated",
             "value" : "Звичайний текст"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Testo normale"
+          }
         }
       }
     },
@@ -5607,6 +6303,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пов’язані статті"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Articoli correlati"
           }
         }
       }
@@ -5657,6 +6359,12 @@
             "state" : "translated",
             "value" : "Пов’язані теми"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argomenti correlati"
+          }
         }
       }
     },
@@ -5704,6 +6412,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Видалити все обране"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rimuovi tutti i preferiti"
           }
         }
       }
@@ -5753,6 +6467,12 @@
             "state" : "translated",
             "value" : "Перейменувати"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rinomina"
+          }
         }
       }
     },
@@ -5800,6 +6520,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скинути іконку"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ripristina icona"
           }
         }
       }
@@ -5849,6 +6575,12 @@
             "state" : "translated",
             "value" : "Скинути режим навігації"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ripristina modalità di navigazione"
+          }
         }
       }
     },
@@ -5896,6 +6628,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Рядок %lld"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riga %lld"
           }
         }
       }
@@ -5945,6 +6683,12 @@
             "state" : "translated",
             "value" : "Зберегти"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva"
+          }
         }
       }
     },
@@ -5992,6 +6736,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Масштабуйте header image на основі offset його scroll view за допомогою visualEffect()"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scala un'immagine di intestazione in base all'offset della sua vista di scorrimento con visualEffect()"
           }
         }
       }
@@ -6041,6 +6791,12 @@
             "state" : "translated",
             "value" : "Screenshot masking доступний лише на iOS"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La mascheratura degli screenshot è disponibile solo su iOS"
+          }
         }
       }
     },
@@ -6088,6 +6844,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ScrollView дає змогу прокручувати вміст вертикально або горизонтально, коли він не вміщується в доступний простір"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScrollView consente di scorrere il contenuto verticalmente o orizzontalmente quando non entra nello spazio disponibile"
           }
         }
       }
@@ -6137,6 +6899,12 @@
             "state" : "translated",
             "value" : "Встановлення .frame(maxWidth: .infinity) змушує view однаково розширюватися в container, забезпечуючи consistent sizing між елементами"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostare .frame(maxWidth: .infinity) fa espandere le viste in modo uniforme nel contenitore, garantendo dimensioni coerenti tra gli elementi"
+          }
         }
       }
     },
@@ -6185,6 +6953,12 @@
             "state" : "translated",
             "value" : "Налаштування"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni"
+          }
         }
       }
     },
@@ -6230,6 +7004,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "SF Symbols надають зручний і сучасний спосіб додати іконки Apple до вашої app, покращуючи user experience інтуїтивними та візуально привабливими дизайнами. Ці іконки підтримують localization і animations"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols offre un modo comodo e moderno per integrare le icone Apple nella tua app, migliorando l'esperienza utente con design intuitivi e piacevoli. Queste icone supportano localizzazione e animazioni"
           }
         }
       }
@@ -6279,6 +7059,12 @@
             "state" : "translated",
             "value" : "Shapes дають змогу легко створювати custom graphics, як-от circles і rectangles, безпосередньо в code. Їх можна style, scale і animate для створення унікальних і динамічних UI elements"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le forme permettono di creare facilmente grafiche personalizzate come cerchi e rettangoli direttamente nel codice. Possono essere stilizzate, scalate e animate per costruire elementi UI unici e dinamici"
+          }
         }
       }
     },
@@ -6327,6 +7113,12 @@
             "state" : "translated",
             "value" : "Поширити Swift"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Condividi Swift"
+          }
         }
       }
     },
@@ -6371,6 +7163,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sheet"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sheet"
@@ -6423,6 +7221,12 @@
             "state" : "translated",
             "value" : "Показати діалог підтвердження"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra finestra di conferma"
+          }
         }
       }
     },
@@ -6467,6 +7271,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sk_live_49Y2K-9A90-1B2C"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "sk_live_49Y2K-9A90-1B2C"
@@ -6519,6 +7329,12 @@
             "state" : "translated",
             "value" : "Slider — customizable UI control, який дає користувачам змогу вибирати value з неперервного діапазону"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slider è un controllo UI personalizzabile che consente agli utenti di selezionare un valore da un intervallo continuo"
+          }
         }
       }
     },
@@ -6566,6 +7382,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spacer із fixed size"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spacer con dimensione fissa"
           }
         }
       }
@@ -6615,6 +7437,12 @@
             "state" : "translated",
             "value" : "Spacer із minimum size"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spacer con dimensione minima"
+          }
         }
       }
     },
@@ -6663,6 +7491,12 @@
             "state" : "translated",
             "value" : "Spacer() — елемент, який займає стільки простору в layout, скільки може"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spacer() è un elemento che occupa tutto lo spazio possibile in un layout"
+          }
         }
       }
     },
@@ -6705,6 +7539,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stack"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stack"
@@ -6757,6 +7597,12 @@
             "state" : "translated",
             "value" : "Status bar"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Barra di stato"
+          }
         }
       }
     },
@@ -6801,6 +7647,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stepper"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stepper"
@@ -6853,6 +7705,12 @@
             "state" : "translated",
             "value" : "Stepper — customizable control, який дає змогу вибрати value з діапазону, забезпечуючи простий та інтуїтивний спосіб змінювати settings або показувати progress"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stepper è un controllo personalizzabile che consente di selezionare un valore da un intervallo, offrendo un modo semplice e intuitivo per regolare impostazioni o mostrare avanzamento"
+          }
         }
       }
     },
@@ -6897,6 +7755,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stepper: %lld"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stepper: %lld"
@@ -6949,6 +7813,12 @@
             "state" : "translated",
             "value" : "Stretchy Header"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intestazione estensibile"
+          }
         }
       }
     },
@@ -6996,6 +7866,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stretchy image header"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intestazione immagine estensibile"
           }
         }
       }
@@ -7045,6 +7921,12 @@
             "state" : "translated",
             "value" : "Стиль"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stile"
+          }
         }
       }
     },
@@ -7092,6 +7974,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Деталі стилю"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dettagli stile"
           }
         }
       }
@@ -7141,6 +8029,12 @@
             "state" : "translated",
             "value" : "SwiftUI Color — тип, який представляє color у спосіб, зручний для використання та інтеграції у SwiftUI views"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI Color è un tipo che rappresenta un colore in modo facile da usare e integrare nelle viste SwiftUI"
+          }
         }
       }
     },
@@ -7188,6 +8082,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "SwiftUI Gradient дає змогу створювати візуально привабливі плавні переходи між colors на shape або area вашого user interface"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI Gradient consente di creare transizioni fluide e gradevoli tra colori attraverso una forma o un'area dell'interfaccia utente"
           }
         }
       }
@@ -7237,6 +8137,12 @@
             "state" : "translated",
             "value" : "SwiftUI дає змогу передавати view в іншу view, зберігаючи її як property, часто використовуючи AnyView для роботи з різними типами view. Це спрощує повторне використання layouts із заміною показаного content"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI consente di passare una vista dentro un'altra vista salvandola come proprietà, spesso usando AnyView per gestire tipi di vista diversi. Questo rende semplice riutilizzare i layout cambiando il contenuto visualizzato"
+          }
         }
       }
     },
@@ -7284,6 +8190,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "SwiftUI `TextEditor` дає користувачам змогу вводити або редагувати multi-line text. Він підтримує rich formatting і великі content inputs"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "`TextEditor` di SwiftUI consente agli utenti di inserire o modificare testo su più righe. Supporta formattazione ricca e input di grandi dimensioni"
           }
         }
       }
@@ -7333,6 +8245,12 @@
             "state" : "translated",
             "value" : "SwiftUI Picker — customizable, interactive спосіб, що дає користувачам змогу вибирати зі списку options"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Picker di SwiftUI è un modo personalizzabile e interattivo che consente agli utenti di scegliere da un elenco di opzioni"
+          }
         }
       }
     },
@@ -7380,6 +8298,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "SwiftUI TextField — базовий UI component, який дає користувачам змогу вводити або редагувати single-line text"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TextField di SwiftUI è un componente UI fondamentale usato per consentire agli utenti di inserire o modificare testo su una sola riga"
           }
         }
       }
@@ -7429,6 +8353,12 @@
             "state" : "translated",
             "value" : "Swipe actions показують contextual actions, коли ви свайпаєте рядок list"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le azioni di scorrimento mostrano azioni contestuali quando scorri una riga dell'elenco"
+          }
         }
       }
     },
@@ -7476,6 +8406,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "System"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema"
           }
         }
       }
@@ -7525,6 +8461,12 @@
             "state" : "translated",
             "value" : "TabView дає змогу перемикатися між кількома views за допомогою tab bar interface"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TabView consente di passare tra più viste usando un'interfaccia con barra delle schede"
+          }
         }
       }
     },
@@ -7573,6 +8515,12 @@
             "state" : "translated",
             "value" : "Text — елемент SwiftUI для показу static або dynamic strings в interface. Він підтримує rich formatting, localization і адаптується до системних accessibility settings"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Text è un elemento SwiftUI usato per mostrare stringhe statiche o dinamiche nell'interfaccia. Supporta formattazione ricca, localizzazione e si adatta alle impostazioni di accessibilità del sistema"
+          }
         }
       }
     },
@@ -7618,6 +8566,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Modifier .frame() задає size view з options для fixed або flexible minimum, ideal і maximum dimensions разом з alignment"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il modificatore .frame() imposta la dimensione di una vista, con opzioni per dimensioni minime, ideali e massime fisse o flessibili, insieme all'allineamento"
           }
         }
       }
@@ -7665,6 +8619,12 @@
             "state" : "translated",
             "value" : "Modifier .padding() додає space навколо view і може налаштовуватися за size, edges або обома параметрами для control layout spacing"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il modificatore .padding() aggiunge spazio intorno a una vista e può essere personalizzato per dimensione, bordi o entrambi per controllare la spaziatura del layout"
+          }
         }
       }
     },
@@ -7711,6 +8671,12 @@
             "state" : "translated",
             "value" : "Modifier .preferredColorScheme(_:) примушує view відображатися у specific color scheme незалежно від system setting"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il modificatore .preferredColorScheme(_:) forza una vista a mostrarsi con uno schema colore specifico, indipendentemente dall'impostazione di sistema"
+          }
         }
       }
     },
@@ -7756,6 +8722,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Property @Environment(\\.colorScheme) дає змогу визначати, чи system у light або dark mode, щоб відповідно adjust UI"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La proprietà @Environment(\\.colorScheme) consente di rilevare se il sistema è in modalità chiara o scura, così puoi adattare l'interfaccia di conseguenza"
           }
         }
       }
@@ -7805,6 +8777,12 @@
             "state" : "translated",
             "value" : "App Store overlay дає змогу просувати app, яка вже опублікована в App Store, і навіть запускати updates для неї"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'overlay App Store consente di promuovere un'app già pubblicata sull'App Store e persino di attivarne gli aggiornamenti"
+          }
         }
       }
     },
@@ -7853,12 +8831,26 @@
             "state" : "translated",
             "value" : "Label view поєднує text з icon, яка може походити з SF Symbols, вашого asset catalog або fully custom view, і може style за допомогою різних label styles"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La vista Label combina testo e icona, che può provenire da SF Symbols, dal catalogo asset o da una vista completamente personalizzata, e può essere stilizzata con diversi stili di etichetta"
+          }
         }
       }
     },
     "The notifications permission is required" : {
       "comment" : "A warning message displayed in the app.",
-      "isCommentAutoGenerated" : true
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "È richiesta l’autorizzazione per le notifiche"
+          }
+        }
+      }
     },
     "The top bar in a navigation container that can show titles, buttons, and other controls" : {
       "comment" : "A description of a navigation bar in SwiftUI.",
@@ -7904,6 +8896,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Верхня панель у navigation container, яка може показувати titles, buttons та інші controls"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La barra superiore in un contenitore di navigazione che può mostrare titoli, pulsanti e altri controlli"
           }
         }
       }
@@ -7953,6 +8951,12 @@
             "state" : "translated",
             "value" : "Ця app уже містить кнопки перемикання icon у Settings > Debug"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa app include già pulsanti per cambiare icona in Impostazioni > Debug"
+          }
         }
       }
     },
@@ -8000,6 +9004,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ця UIKit technique може зменшити screenshots, але не є гарантією"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa tecnica UIKit può ridurre gli screenshot, ma non è una garanzia"
           }
         }
       }
@@ -8049,6 +9059,12 @@
             "state" : "translated",
             "value" : "Title"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titolo"
+          }
         }
       }
     },
@@ -8096,6 +9112,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Щоб dismiss sheet до iOS 15, потрібно змінити лише sheet content"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per chiudere uno sheet prima di iOS 15, c'è una modifica da fare solo nel contenuto dello sheet"
           }
         }
       }
@@ -8145,6 +9167,12 @@
             "state" : "translated",
             "value" : "Toggle"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Interruttore"
+          }
         }
       }
     },
@@ -8192,6 +9220,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toggle дає користувачам змогу вмикати або вимикати value і може бути bound до state property для автоматичного update UI"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toggle consente agli utenti di attivare o disattivare un valore e può essere associato a una proprietà di stato per aggiornare automaticamente l'interfaccia"
           }
         }
       }
@@ -8242,6 +9276,12 @@
             "state" : "translated",
             "value" : "Теми"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argomenti"
+          }
         }
       }
     },
@@ -8289,6 +9329,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Спробуйте в Settings"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Provalo in Impostazioni"
           }
         }
       }
@@ -8338,6 +9384,12 @@
             "state" : "translated",
             "value" : "Вимкніть це знову, коли воно більше не потрібне, щоб уникнути додаткового battery drain"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disattivalo di nuovo quando non ti serve più per evitare consumo aggiuntivo della batteria"
+          }
         }
       }
     },
@@ -8383,6 +9435,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Два стовпці"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Due colonne"
           }
         }
       }
@@ -8432,6 +9490,12 @@
             "state" : "translated",
             "value" : "UIScreen.main.bounds дає width і height екрана, які можна використовувати для динамічного sizing views"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "UIScreen.main.bounds fornisce larghezza e altezza dello schermo, che puoi usare per dimensionare le viste dinamicamente"
+          }
         }
       }
     },
@@ -8479,6 +9543,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скасувати обране"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annulla preferito"
           }
         }
       }
@@ -8528,6 +9598,12 @@
             "state" : "translated",
             "value" : "Використання з AnyView"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uso con AnyView"
+          }
         }
       }
     },
@@ -8575,6 +9651,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Використовуйте secure text entry mask, щоб перешкоджати screenshots sensitive UI"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa una maschera di inserimento testo sicura per scoraggiare screenshot di interfacce sensibili"
           }
         }
       }
@@ -8624,6 +9706,12 @@
             "state" : "translated",
             "value" : "Використовувати вбудований Safari"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa Safari integrato"
+          }
         }
       }
     },
@@ -8670,6 +9758,12 @@
             "state" : "translated",
             "value" : "View"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vista"
+          }
         }
       }
     },
@@ -8715,6 +9809,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Коли function повертає AnyView через switch statement, EmptyView() є зручним і стислим default case. Він уникає зайвих layout calculations, водночас задовольняючи return type"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quando usi una funzione che restituisce AnyView tramite un'istruzione switch, EmptyView() è un caso predefinito comodo e conciso. Evita calcoli di layout non necessari pur soddisfacendo il tipo restituito"
           }
         }
       }
