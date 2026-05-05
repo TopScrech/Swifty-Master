@@ -1,11 +1,11 @@
 import ScrechKit
 
 struct NavModePicker: View {
-    @State private var navMode: NavMode?
     @EnvironmentObject private var store: ValueStore
-    
     @Environment(\.dismiss) private var dismiss
     @Environment(\.colorScheme) private var appearance
+    
+    @State private var navMode: NavMode?
     
     var body: some View {
         NavigationStack {
@@ -36,6 +36,7 @@ struct NavModePicker: View {
                     }
                 }
                 .padding(.top)
+                .hapticOn(navMode, as: .selection)
                 
                 Spacer()
                 

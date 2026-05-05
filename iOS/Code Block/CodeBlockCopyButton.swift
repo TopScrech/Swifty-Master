@@ -26,7 +26,7 @@ struct CodeBlockCopyButton: View {
         }
         .buttonStyle(.plain)
         .secondary()
-        .sensoryFeedback(.success, trigger: trigger)
+        .hapticOn(trigger, as: .success)
     }
 }
 
