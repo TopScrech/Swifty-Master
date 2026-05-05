@@ -18,22 +18,16 @@ struct CodeBlockLines: View {
     }
     
     var body: some View {
-        VStack(alignment: .leading, spacing: style.lineSpacing) {
-            ForEach(Array(codeLines.enumerated()), id: \.offset) { index, line in
-                HStack(alignment: .top, spacing: style.lineNumberSpacing) {
-                    if store.showCodeLineNumbers {
-                        Text(String(index + 1))
-                            .font(style.font)
-                            .foregroundColor(style.lineNumberColor)
-                            .frame(width: max(lineNumberWidth, style.lineNumberMinWidth), alignment: .trailing)
-                            .lineLimit(1)
-                    }
-                    
-                    Text(attributedCodeString(for: line))
-                        .font(style.font)
-                        .foregroundColor(style.textColor)
-                }
+        HStack(alignment: .top, spacing: style.lineNumberSpacing) {
+            if store.showCodeLineNumbers {
+                CodeBlockLineNumbers(
+                    lineCount: codeLines.count,
+                    width: max(lineNumberWidth, style.lineNumberMinWidth),
+                    style: style
+                )
             }
+            
+            codeText
         }
 #if !os(tvOS)
         .textSelection(.enabled)
@@ -42,6 +36,47 @@ struct CodeBlockLines: View {
         .onPreferenceChange(LineNumberWidthKey.self) { width in
             lineNumberWidth = width
         }
+    }
+    
+    @ViewBuilder private var codeText: some View {
+#if canImport(UIKit) && !os(tvOS)
+        SelectableCodeTextView(code: code, textColor: style.textColor, lineSpacing: style.lineSpacing)
+#else
+        VStack(alignment: .leading, spacing: style.lineSpacing) {
+            ForEach(codeLines.enumerated(), id: \.offset) { _, line in
+                Text(attributedCodeString(for: line))
+                    .font(style.font)
+                    .foregroundStyle(style.textColor)
+            }
+        }
+#endif
+    }
+}
+
+private struct CodeBlockLineNumbers: View {
+    let lineCount: Int
+    let width: CGFloat
+    let style: CodeBlockStyle
+    
+    var body: some View {
+#if canImport(UIKit) && !os(tvOS)
+        CodeBlockLineNumbersTextView(
+            lineCount: lineCount,
+            width: width,
+            color: style.lineNumberColor,
+            lineSpacing: style.lineSpacing
+        )
+#else
+        VStack(alignment: .trailing, spacing: style.lineSpacing) {
+            ForEach(1...lineCount, id: \.self) {
+                Text(String($0))
+                    .font(style.font)
+                    .foregroundStyle(style.lineNumberColor)
+                    .frame(width: width, alignment: .trailing)
+                    .lineLimit(1)
+            }
+        }
+#endif
     }
 }
 
