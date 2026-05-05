@@ -18,7 +18,7 @@ struct CodeBlockView: View {
     
     var body: some View {
         ScrollView(.horizontal) {
-            CodeBlockLinesView(code, with: style)
+            CodeBlockLines(code, with: style)
                 .padding(style.padding)
                 .frame(minWidth: max(availableWidth, 1), alignment: .leading)
         }
@@ -26,7 +26,7 @@ struct CodeBlockView: View {
         .fixedSize(horizontal: false, vertical: true)
 #if !os(tvOS)
         .overlay(alignment: copyButtonAlignment) {
-            CodeBlockViewCopyButton(code)
+            CodeBlockCopyButton(code)
         }
 #endif
         .background(style.background, in: .rect(cornerRadius: style.cornerRadius))
