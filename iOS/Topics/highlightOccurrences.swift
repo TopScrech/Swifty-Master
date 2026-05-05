@@ -1,11 +1,6 @@
 import SwiftUI
 
-func highlightOccurrences(
-    in text: String,
-    target: String,
-    color: Color
-) -> AttributedString {
-    
+func highlightOccurrences(in text: String, target: String, color: Color) -> AttributedString {
     var attributed = AttributedString(text)
     
     guard !target.isEmpty else {
