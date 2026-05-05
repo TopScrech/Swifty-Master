@@ -2,7 +2,7 @@ import ScrechKit
 
 struct TopicEmptyView: View {
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Text("EmptyView is a built-in SwiftUI type that renders nothing in the view hierarchy. It’s useful for placeholder logic or conditional rendering when no UI should be shown")
             
             CodeBlockView(.emptyView)

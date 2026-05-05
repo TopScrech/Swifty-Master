@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct ContentViewNavButtons: View {
     @EnvironmentObject private var store: ValueStore
@@ -11,27 +11,22 @@ struct ContentViewNavButtons: View {
     }
     
     var body: some View {
-#if DEBUG
         HStack {
             if store.lastTab == 0 {
                 let topics = Topic.allCases
                 let index = topics.firstIndex(of: topic)
                 
                 if let index, index != 0 {
-                    Button {
+                    SFButton("arrow.backward") {
                         let nextTopic = topics[index - 1]
                         navModel.topicPath = [nextTopic]
-                    } label: {
-                        Image(systemName: "arrow.backward")
                     }
                 }
                 
                 if let index, topics.count > index + 1 {
-                    Button {
+                    SFButton("arrow.forward") {
                         let nextTopic = topics[index + 1]
                         navModel.topicPath = [nextTopic]
-                    } label: {
-                        Image(systemName: "arrow.forward")
                     }
                 }
             } else {
@@ -39,26 +34,21 @@ struct ContentViewNavButtons: View {
                 let index = topics.firstIndex(of: topic)
                 
                 if let index, index != 0 {
-                    Button {
+                    SFButton("arrow.backward") {
                         let nextTopic = topics[index - 1]
                         navModel.favoriteTopicPath = [nextTopic]
-                    } label: {
-                        Image(systemName: "arrow.backward")
                     }
                 }
                 
                 if let index, store.favoriteTopics.count > index + 1 {
-                    Button {
+                    SFButton("arrow.forward") {
                         let nextTopic = topics[index + 1]
                         navModel.favoriteTopicPath = [nextTopic]
-                    } label: {
-                        Image(systemName: "arrow.forward")
                     }
                 }
             }
         }
         .buttonStyle(.bordered)
-#endif
     }
 }
 

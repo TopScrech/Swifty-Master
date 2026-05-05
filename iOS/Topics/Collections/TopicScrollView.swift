@@ -2,11 +2,10 @@ import ScrechKit
 
 struct TopicScrollView: View {
     var body: some View {
-        VStack(spacing: 25) {
-            Text("ScrollView allows content to be scrolled horizontally or vertically when it doesn’t fit within the available space")
+        VStack(spacing: 20) {
+            Text("ScrollView allows content to be scrolled vertically or horizontally when it doesn’t fit within the available space")
             
             CodeBlockView(.scrollView)
-            
             TopicHeading("Stretchy image header")
             
             Text("Scale a header image based on its scroll view offset with visualEffect()")

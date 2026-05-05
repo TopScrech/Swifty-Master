@@ -1,11 +1,27 @@
 HStack {
     Text("From the left")
-    
     Text("To the right")
 }
 
 HStack(alignment: .top, spacing: 0) {
     Text("From the left")
-    
     Text("To the right")
+}
+
+struct ContentView: View {
+    private let numbers = [4, 16, 64]
+    
+    var body: some View {
+        HStack {
+            ForEach(numbers, id: \.self) { number in
+                Text(number.description)
+            }
+            
+            // or
+            
+            ForEach(numbers, id: \.self) {
+                Text($0.description)
+            }
+        }
+    }
 }

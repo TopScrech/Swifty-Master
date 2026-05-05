@@ -1,5 +1,9 @@
-Image(systemName: "battery.100.bolt")
-    .symbolRenderingMode(.hierarchical)
-    .foregroundColor(.blue)
-    .font(.largeTitle)
-    .imageScale(.large)
+struct BatteryView: View {
+    var bode: some View {
+        Image(systemName: "battery.100.bolt")
+            .symbolRenderingMode(.hierarchical)
+            .foregroundColor(.blue)
+            .font(.largeTitle)
+            .imageScale(.large)
+    }
+}

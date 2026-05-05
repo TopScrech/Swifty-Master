@@ -2,7 +2,7 @@ import ScrechKit
 
 struct TopicGeometryReader: View {
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Text("GeometryReader provides the size and position of its container, allowing you to create layouts that adapt to available space")
             
             CodeBlockView(.geometryReader)

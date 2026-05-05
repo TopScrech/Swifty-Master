@@ -2,7 +2,7 @@ import ScrechKit
 
 struct TopicDetectScreenSize: View {
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Text("UIScreen.main.bounds gives you the screen’s width and height, which you can use to size views dynamically")
             
             CodeBlockView(.detectScreenSize)

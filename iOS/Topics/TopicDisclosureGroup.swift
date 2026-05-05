@@ -22,11 +22,11 @@ struct TopicDisclosureGroup<Content: View>: View {
             .title3(.semibold, design: .rounded)
             .foregroundStyle(.foreground)
         
-        VStack(spacing: 25, content: content)
+        VStack(spacing: 20, content: content)
             .padding(5)
 #else
         DisclosureGroup(isExpanded: $isExpanded) {
-            VStack(spacing: 25, content: content)
+            VStack(spacing: 20, content: content)
                 .padding(5)
         } label: {
             Text(title)

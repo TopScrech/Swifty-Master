@@ -1,7 +1,9 @@
-@State private var text = ""
-
-var body: some View {
-    TextEditor(text: $text)
-        .foregroundStyle(.secondary)
-        .lineSpacing(5)
+struct TextEditorView: View {
+    @State private var text = ""
+    
+    var body: some View {
+        TextEditor(text: $text)
+            .foregroundStyle(.secondary)
+            .lineSpacing(5)
+    }
 }

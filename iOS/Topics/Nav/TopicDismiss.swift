@@ -6,7 +6,7 @@ struct TopicDismiss: View {
     @State private var hideBackButton = false
     
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Text(highlightOccurrences(
                 in: "You can programmatically go back from any view or close a sheet using the dismiss() environment method",
                 target: "dismiss",

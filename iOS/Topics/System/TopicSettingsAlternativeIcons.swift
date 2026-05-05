@@ -1,13 +1,9 @@
 import ScrechKit
-#if canImport(UIKit)
-import UIKit
-#endif
 
 struct TopicSettingsAlternativeIcons: View {
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Text("Let users switch your app icon from a settings screen. Add alternate icons to your asset catalog and list them in Info.plist under CFBundleAlternateIcons")
-            
 #if os(iOS)
             if UIApplication.shared.supportsAlternateIcons {
                 VStack(spacing: 12) {
@@ -32,7 +28,6 @@ struct TopicSettingsAlternativeIcons: View {
 #else
             TopicWarning("Alternate icons are available on iOS only")
 #endif
-            
             CodeBlockView(.settingsAlternativeIcons)
         }
     }

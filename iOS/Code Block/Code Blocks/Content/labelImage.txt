@@ -1,0 +1,2 @@
+// Text & Image from assets catalogue
+Label("User", image: "myImage")

@@ -2,7 +2,7 @@ import ScrechKit
 
 struct TopicSpacer: View {
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Text("Spacer() is an element that takes up as much space as it can in a layout")
             
             CodeBlockView(.spacer)

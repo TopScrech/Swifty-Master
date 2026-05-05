@@ -1,78 +1,126 @@
-import ScrechKit
+#if canImport(UIKit) && !os(tvOS)
+import SwiftUI
 import SwiftParser
 import SwiftSyntax
 
-func attributedCodeString(for code: String) -> AttributedString {
-    AttributedString.highlight(code: code)
+struct SelectableCodeTextView: UIViewRepresentable {
+    let code: String
+    let textColor: Color
+    let lineSpacing: CGFloat
+    
+    func makeUIView(context: Context) -> UITextView {
+        let textView = UITextView()
+        textView.backgroundColor = .clear
+        textView.isEditable = false
+        textView.isSelectable = true
+        textView.isScrollEnabled = false
+        textView.textContainerInset = .zero
+        textView.textContainer.lineFragmentPadding = 0
+        textView.adjustsFontForContentSizeCategory = true
+        textView.setContentCompressionResistancePriority(.required, for: .horizontal)
+        textView.setContentHuggingPriority(.required, for: .horizontal)
+        return textView
+    }
+    
+    func updateUIView(_ textView: UITextView, context: Context) {
+        textView.attributedText = attributedText
+    }
+    
+    func sizeThatFits(_ proposal: ProposedViewSize, uiView: UITextView, context: Context) -> CGSize? {
+        textSize
+    }
+    
+    private var attributedText: NSAttributedString {
+        let attributedString = NSMutableAttributedString(string: code)
+        let fullRange = NSRange(location: 0, length: attributedString.length)
+        
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = lineSpacing
+        
+        attributedString.addAttribute(.font, value: CodeBlockTextMetrics.font, range: fullRange)
+        attributedString.addAttribute(.foregroundColor, value: UIColor(textColor), range: fullRange)
+        attributedString.addAttribute(.paragraphStyle, value: paragraphStyle, range: fullRange)
+        attributedString.applySyntaxHighlighting(to: code)
+        
+        return attributedString
+    }
+    
+    private var textSize: CGSize {
+        let boundingSize = attributedText.boundingRect(
+            with: CGSize(width: 10_000, height: CGFloat.greatestFiniteMagnitude),
+            options: [.usesLineFragmentOrigin, .usesFontLeading],
+            context: nil
+        )
+        
+        return CGSize(width: ceil(boundingSize.width), height: ceil(boundingSize.height))
+    }
+    
 }
 
-extension AttributedString {
-    static func highlight(code: String) -> AttributedString {
-        var highlightedString = AttributedString(code)
-        
+private extension NSMutableAttributedString {
+    func applySyntaxHighlighting(to code: String) {
         guard !code.isEmpty else {
-            return highlightedString
+            return
         }
         
         let sourceFile = Parser.parse(source: code)
         let tokens = Array(sourceFile.tokens(viewMode: .sourceAccurate))
-        let parameterLabelIndices = callParameterLabelIndices(in: tokens)
+        let parameterLabelIndices = Self.callParameterLabelIndices(in: tokens)
         
         for (index, token) in tokens.enumerated() {
-            if let color = color(for: token.tokenKind) {
-                let lowerBound = token.positionAfterSkippingLeadingTrivia.utf8Offset
-                let upperBound = token.endPositionBeforeTrailingTrivia.utf8Offset
-                
-                apply(color: color, to: lowerBound..<upperBound, in: code, highlightedString: &highlightedString)
+            if let color = Self.color(for: token.tokenKind) {
+                apply(color: color, to: token, in: code)
             }
             
-            if shouldColorAsModifier(tokens: tokens, at: index) {
-                apply(color: modifierColor, to: token, in: code, highlightedString: &highlightedString)
+            if Self.shouldColorAsModifier(tokens: tokens, at: index) {
+                apply(color: Self.modifierColor, to: token, in: code)
             }
             
             if parameterLabelIndices.contains(index) {
-                apply(color: modifierParameterColor, to: token, in: code, highlightedString: &highlightedString)
+                apply(color: Self.modifierParameterColor, to: token, in: code)
             }
             
-            if shouldColorAsAttributeIdentifier(tokens: tokens, at: index) {
-                apply(color: attributeColor, to: token, in: code, highlightedString: &highlightedString)
+            if Self.shouldColorAsAttributeIdentifier(tokens: tokens, at: index) {
+                apply(color: Self.attributeColor, to: token, in: code)
             }
             
-            if shouldColorAsBinding(tokens: tokens, at: index) {
-                apply(color: bindingColor, to: token, in: code, highlightedString: &highlightedString)
+            if Self.shouldColorAsBinding(tokens: tokens, at: index) {
+                apply(color: Self.bindingColor, to: token, in: code)
             }
             
-            var triviaOffset = token.position.utf8Offset
-            
-            for piece in token.leadingTrivia {
-                let nextOffset = triviaOffset + piece.sourceLength.utf8Length
-                
-                if piece.isComment {
-                    apply(color: commentColor, to: triviaOffset..<nextOffset, in: code, highlightedString: &highlightedString)
-                }
-                
-                triviaOffset = nextOffset
-            }
-            
-            triviaOffset = token.endPositionBeforeTrailingTrivia.utf8Offset
-            
-            for piece in token.trailingTrivia {
-                let nextOffset = triviaOffset + piece.sourceLength.utf8Length
-                
-                if piece.isComment {
-                    apply(color: commentColor, to: triviaOffset..<nextOffset, in: code, highlightedString: &highlightedString)
-                }
-                
-                triviaOffset = nextOffset
-            }
+            applyCommentColors(for: token, in: code)
         }
         
-        colorBindings(in: code, highlightedString: &highlightedString)
-        
-        return highlightedString
+        colorBindings(in: code)
     }
     
-    private static func color(for tokenKind: TokenKind) -> Color? {
+    private func applyCommentColors(for token: TokenSyntax, in code: String) {
+        var triviaOffset = token.position.utf8Offset
+        
+        for piece in token.leadingTrivia {
+            let nextOffset = triviaOffset + piece.sourceLength.utf8Length
+            
+            if piece.isComment {
+                apply(color: Self.commentColor, to: triviaOffset..<nextOffset, in: code)
+            }
+            
+            triviaOffset = nextOffset
+        }
+        
+        triviaOffset = token.endPositionBeforeTrailingTrivia.utf8Offset
+        
+        for piece in token.trailingTrivia {
+            let nextOffset = triviaOffset + piece.sourceLength.utf8Length
+            
+            if piece.isComment {
+                apply(color: Self.commentColor, to: triviaOffset..<nextOffset, in: code)
+            }
+            
+            triviaOffset = nextOffset
+        }
+    }
+    
+    private static func color(for tokenKind: TokenKind) -> UIColor? {
         switch tokenKind {
         case .keyword:
             keywordColor
@@ -220,7 +268,7 @@ extension AttributedString {
         return true
     }
     
-    private static func colorBindings(in code: String, highlightedString: inout AttributedString) {
+    private func colorBindings(in code: String) {
         guard let regex = try? NSRegularExpression(pattern: #"\$[A-Za-z_]\w*|\$\d+"#) else {
             return
         }
@@ -228,44 +276,26 @@ extension AttributedString {
         let fullRange = NSRange(code.startIndex..., in: code)
         
         for match in regex.matches(in: code, range: fullRange) {
-            guard
-                let range = Range(match.range, in: code),
-                let attributedRange = Range(range, in: highlightedString)
-            else {
-                continue
-            }
-            
-            highlightedString[attributedRange].foregroundColor = bindingColor
+            addAttribute(.foregroundColor, value: Self.bindingColor, range: match.range)
         }
     }
     
-    private static func apply(
-        color: Color,
-        to token: TokenSyntax,
-        in code: String,
-        highlightedString: inout AttributedString
-    ) {
+    private func apply(color: UIColor, to token: TokenSyntax, in code: String) {
         let lowerBound = token.positionAfterSkippingLeadingTrivia.utf8Offset
         let upperBound = token.endPositionBeforeTrailingTrivia.utf8Offset
-        apply(color: color, to: lowerBound..<upperBound, in: code, highlightedString: &highlightedString)
+        apply(color: color, to: lowerBound..<upperBound, in: code)
     }
     
-    private static func apply(
-        color: Color,
-        to utf8Range: Range<Int>,
-        in code: String,
-        highlightedString: inout AttributedString
-    ) {
+    private func apply(color: UIColor, to utf8Range: Range<Int>, in code: String) {
         guard
-            let startIndex = stringIndex(for: utf8Range.lowerBound, in: code),
-            let endIndex = stringIndex(for: utf8Range.upperBound, in: code),
-            startIndex <= endIndex,
-            let attributedRange = Range(startIndex..<endIndex, in: highlightedString)
+            let startIndex = Self.stringIndex(for: utf8Range.lowerBound, in: code),
+            let endIndex = Self.stringIndex(for: utf8Range.upperBound, in: code),
+            startIndex <= endIndex
         else {
             return
         }
         
-        highlightedString[attributedRange].foregroundColor = color
+        addAttribute(.foregroundColor, value: color, range: NSRange(startIndex..<endIndex, in: code))
     }
     
     private static func stringIndex(for utf8Offset: Int, in code: String) -> String.Index? {
@@ -279,14 +309,15 @@ extension AttributedString {
         return String.Index(utf8Index, within: code)
     }
     
-    private static let keywordColor = Color(0xFC5FA3)
-    private static let directiveColor = Color(0xFD8F3F)
-    private static let numberColor = Color(0xD0BF69)
-    private static let stringColor = Color(0xFC6A5D)
-    private static let commentColor = Color(0x6C7986)
-    private static let attributeColor = Color(0xA167E6)
-    private static let bindingColor = Color(0x67B7A4)
-    private static let modifierColor = Color(0xA167E6)
-    private static let modifierParameterColor = Color(0xA167E6)
-    private static let typeColor = Color(0xD0A8FF)
+    private static let keywordColor = UIColor(Color(0xFC5FA3))
+    private static let directiveColor = UIColor(Color(0xFD8F3F))
+    private static let numberColor = UIColor(Color(0xD0BF69))
+    private static let stringColor = UIColor(Color(0xFC6A5D))
+    private static let commentColor = UIColor(Color(0x6C7986))
+    private static let attributeColor = UIColor(Color(0xA167E6))
+    private static let bindingColor = UIColor(Color(0x67B7A4))
+    private static let modifierColor = UIColor(Color(0xA167E6))
+    private static let modifierParameterColor = UIColor(Color(0xA167E6))
+    private static let typeColor = UIColor(Color(0xD0A8FF))
 }
+#endif

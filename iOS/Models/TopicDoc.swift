@@ -41,6 +41,7 @@ extension Topic {
                 TopicDocType("Text Field", url: "https://developer.apple.com/documentation/swiftui/textfield"),
                 TopicDocType("textFieldStyle(_:)", url: "https://developer.apple.com/documentation/swiftui/view/textfieldstyle(_:)"),
                 TopicDocType("keyboardType(_:)", url: "https://developer.apple.com/documentation/swiftui/view/keyboardtype(_:)"),
+                TopicDocType("autocorrectiondisabled(_:)", url: "https://developer.apple.com/documentation/swiftui/view/autocorrectiondisabled(_:)"),
                 TopicDocType("Building rich SwiftUI text experiences", details: "iOS 26+", url: "https://developer.apple.com/documentation/swiftui/building-rich-swiftui-text-experiences", downloadURL: "https://docs-assets.developer.apple.com/published/af5124237a05/BuildingRichSwiftUITextExperiences.zip")
             ]
             

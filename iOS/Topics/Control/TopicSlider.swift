@@ -2,7 +2,7 @@ import ScrechKit
 
 struct TopicSlider: View {
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Text("Slider is a customizable UI control that allows users to select a value from a continuous range")      
 #if os(iOS)
             BrightnessSlider()

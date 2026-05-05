@@ -11,12 +11,16 @@ struct NavModePickerSaveButton: View {
         self.navMode = navMode
     }
     
+    @State private var trigger = true
+    
     var body: some View {
         Button("Save") {
+            trigger.toggle()
             dismiss()
             store.navMode = navMode
             nav.showNavModePicker = false
         }
+        .hapticOn(trigger, as: .success)
         .title2(.semibold, design: .rounded)
 #if os(tvOS)
         .foregroundStyle(.black)

@@ -41,7 +41,7 @@ struct FeedbackButton: View {
             trigger.toggle()
         }
         .padding()
-        .sensoryFeedback(feedback, trigger: trigger)
+        .hapticOn(trigger, as: feedback)
     }
 }
 

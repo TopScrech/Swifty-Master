@@ -2,7 +2,7 @@ import ScrechKit
 
 struct TopicEqualSizeViews: View {
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Text("Setting .frame(maxWidth: .infinity) makes views expand equally within their container, ensuring consistent sizing across items")
             
             CodeBlockView(.equalSizeViews)

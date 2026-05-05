@@ -13,47 +13,36 @@ struct AppSettings: View {
 #if canImport(Appearance)
                 AppearancePicker($store.appearance)
 #endif
-                Toggle(isOn: $store.showCodeLineNumbers) {
-                    Label("Code line numbers", systemImage: "list.number")
+#if !os(macOS)
+                Button("Change language", systemImage: "globe") {
+                    openSettings()
                 }
-                
-                Toggle(isOn: $store.favoriteArticlesBadge) {
-                    Label("Favorite articles badge", systemImage: "app.badge")
-                    Text("Displayed on top of the tab bar")
-                }
+#endif
             }
             
             Section {
-                NavModeButton()
+                Toggle(isOn: $store.showCodeLineNumbers) {
+                    Label("Code line numbers", systemImage: "list.number")
+                }
 #if !os(visionOS)
                 Toggle(isOn: $store.builtInBrowser) {
                     Label("Use built-in Safari", systemImage: "safari")
                 }
 #endif
-#if !os(macOS)
-                Button {
-                    openSettings()
-                } label: {
-                    Label {
-                        Text("Change language")
-                        Text("English, Dutch, Russian")
-                    } icon: {
-                        Image(systemName: "globe")
-                    }
-                }
-#endif
-            }
-            
-            NavigationLink {
-                DebugSettings()
-            } label: {
-                Label("Debug", systemImage: "hammer")
+                NavModeButton()
             }
         }
         .navigationTitle("Settings")
         .formStyle(.grouped)
         .buttonStyle(.plain)
         .scrollIndicators(.never)
+        .toolbar {
+            NavigationLink {
+                DebugSettings()
+            } label: {
+                Label("Debug", systemImage: "hammer")
+            }
+        }
     }
 }
 

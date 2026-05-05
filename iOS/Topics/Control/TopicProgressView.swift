@@ -2,7 +2,7 @@ import ScrechKit
 
 struct TopicProgressView: View {
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             ProgressView()
             
             ProgressView("ProgressView with a title")

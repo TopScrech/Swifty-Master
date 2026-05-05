@@ -10,14 +10,15 @@ struct ContentView: View {
     }
     
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 0) {
             if let view = topicView(topic) {
                 view
             }
             
             TopicDocs(topic.docs)
-            
+#if DEBUG
             ContentViewNavButtons(topic)
+#endif
             ContentViewRelatedTopics(topic.related)
         }
         .scenePadding()

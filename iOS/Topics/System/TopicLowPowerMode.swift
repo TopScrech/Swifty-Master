@@ -4,7 +4,7 @@ struct TopicLowPowerMode: View {
     private let lowPowerMode = ProcessInfo.processInfo.isLowPowerModeEnabled
     
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Text("Detecting Low Power Mode helps conserve energy and maintain a smooth user experience when the battery is low. SwiftUI apps can adjust behavior by disabling power-intensive features to align with system energy-saving goals")
             
             Group {

@@ -1,4 +1,4 @@
-struct ContentView: View {
+struct TextFieldView: View {
     @State private var text = ""
 
     var body: some View {

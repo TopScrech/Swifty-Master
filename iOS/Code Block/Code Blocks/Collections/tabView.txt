@@ -6,19 +6,13 @@ struct ContentView: View {
             TabBarDetailOne()
                 .tag(0)
                 .tabItem {
-                    Label("Baseball", systemImage: "baseball")
+                    Label("Home", systemImage: "house")
                 }
             
             TabBarDetailTwo()
                 .tag(1)
                 .tabItem {
-                    Label("Basketball", systemImage: "basketball")
-                }
-            
-            TabBarDetailThree()
-                .tag(2)
-                .tabItem {
-                    Label("Football", systemImage: "football")
+                    Label("Settings", systemImage: "gear")
                 }
         }
     }

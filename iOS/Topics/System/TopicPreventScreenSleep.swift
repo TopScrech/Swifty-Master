@@ -1,15 +1,11 @@
 import ScrechKit
-#if canImport(UIKit)
-import UIKit
-#endif
 
 struct TopicPreventScreenSleep: View {
     @State private var keepScreenAwake = false
-
+    
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Text("Disable the idle timer to keep the screen awake during timers, workouts, or reading modes")
-
 #if os(iOS)
             Toggle("Keep screen awake", isOn: $keepScreenAwake)
                 .padding()
@@ -23,7 +19,7 @@ struct TopicPreventScreenSleep: View {
                 .onDisappear {
                     UIApplication.shared.isIdleTimerDisabled = false
                 }
-
+            
             Text("Turn this back off when you no longer need it to avoid extra battery drain")
                 .footnote()
                 .secondary()
@@ -31,7 +27,7 @@ struct TopicPreventScreenSleep: View {
 #else
             TopicWarning("Idle timer control is available on iOS only")
 #endif
-
+            
             CodeBlockView(.preventScreenSleep)
         }
     }

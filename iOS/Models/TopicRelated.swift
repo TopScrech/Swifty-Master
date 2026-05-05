@@ -24,8 +24,11 @@ extension Topic {
         case .color:       [.gradient]
         case .gradient:    [.color]
             
-        case .scrollView:  [.list]
-        case .list:        [.scrollView, .swipeActions]
+        case .gauges:       [.progressView]
+        case .progressView: [.gauges]
+            
+        case .scrollView:   [.list]
+        case .list:         [.scrollView, .swipeActions]
         case .swipeActions: [.list]
             
         case .badges:      [.settingsAlternativeIcons]

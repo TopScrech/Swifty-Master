@@ -2,28 +2,24 @@ import ScrechKit
 
 struct Markdown: View {
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             VStack {
                 Text("Regular text")
-                
                 CodeBlockView(.mdRegular)
             }
             
             VStack {
                 Text("**Bold**, ***bold italic***")
-                
                 CodeBlockView(.mdBoldItalic)
             }
             
             VStack {
                 Text("~~Strikethrough~~")
-                
                 CodeBlockView(.mdStrikethrough)
             }
             
             VStack {
                 Text("`Monospaced`")
-                
                 CodeBlockView(.mdMonospaced)
             }
             

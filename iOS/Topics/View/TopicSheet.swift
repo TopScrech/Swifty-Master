@@ -4,7 +4,7 @@ struct TopicSheet: View {
     @State private var sheetExample = false
     
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Text("A sheet presents a modal view over the current screen, often used for settings or secondary content")
             
             TopicActionButton("Present a sheet", color: .blue.opacity(0.3)) {
