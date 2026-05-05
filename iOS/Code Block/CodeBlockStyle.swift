@@ -16,8 +16,7 @@ struct CodeBlockStyle {
         let background = AnyShapeStyle(.regularMaterial)
 #else
         let background = AnyShapeStyle(.ultraThinMaterial)
-#endif
-        
+#endif  
         return CodeBlockStyle(
             font: .system(.footnote, design: .monospaced),
             lineSpacing: 4,
