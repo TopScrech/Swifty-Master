@@ -34,7 +34,7 @@ struct CodeBlockView: View {
     }
     
     private var copyButtonAlignment: Alignment {
-        code.split(separator: "\n", omittingEmptySubsequences: false).count > 3 ? .topTrailing : .trailing
+        code.split(separator: "\n", omittingEmptySubsequences: false).count > 2 ? .topTrailing : .trailing
     }
     
     private var widthReader: some View {
