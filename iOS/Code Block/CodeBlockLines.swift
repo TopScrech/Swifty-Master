@@ -38,7 +38,8 @@ struct CodeBlockLines: View {
         }
     }
     
-    @ViewBuilder private var codeText: some View {
+    @ViewBuilder
+    private var codeText: some View {
 #if canImport(UIKit) && !os(tvOS)
         SelectableCodeTextView(code: code, textColor: style.textColor, lineSpacing: style.lineSpacing)
 #else
