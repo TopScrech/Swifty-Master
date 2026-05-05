@@ -27,10 +27,14 @@ struct TopicTextField: View {
             }
             
             TopicDisclosureGroup("Custom Keyboard") {
+                Text("Use keyboardType(_:) to specify the keyboard type to use for text entry. A number of different keyboard types are available to meet specialized input needs, such as entering email addresses or phone numbers")
+                
                 CodeBlockView(.customKeyboard)
             }
             
             TopicDisclosureGroup("Disable Autocorrection") {
+                Text("Use this method when the effect of autocorrection would make it more difficult for the user to input information. The entry of proper names and street addresses are examples where autocorrection can negatively affect the user’s ability complete a data entry task")
+                
                 CodeBlockView(.textFieldDisableAutocorrection)
             }
         }

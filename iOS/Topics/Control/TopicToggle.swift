@@ -15,14 +15,7 @@ struct TopicToggle: View {
             
             TopicHeading("Style Details")
             
-            TopicDisclosureGroup("Style") {
-                VStack(spacing: 25) {
-                    Toggle("Purple", isOn: $isOn)
-                        .tint(.purple)
-                }
-            }
-            
-            TopicDisclosureGroup("Color") {
+            TopicDisclosureGroup("Tint") {
                 VStack(spacing: 25) {
                     Toggle("Purple", isOn: $isOn)
                         .tint(.purple)
