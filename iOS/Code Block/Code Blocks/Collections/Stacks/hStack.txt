@@ -9,7 +9,7 @@ HStack(alignment: .top, spacing: 0) {
 }
 
 struct ContentView: View {
-    let numbers = [4, 16, 64]
+    private let numbers = [4, 16, 64]
     
     var body: some View {
         HStack {
