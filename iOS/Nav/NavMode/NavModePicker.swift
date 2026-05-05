@@ -36,8 +36,9 @@ struct NavModePicker: View {
                     }
                 }
                 .padding(.top)
+#if !os(visionOS)
                 .hapticOn(navMode, as: .selection)
-                
+#endif
                 Spacer()
                 
                 NavModePickerSaveButton(navMode)

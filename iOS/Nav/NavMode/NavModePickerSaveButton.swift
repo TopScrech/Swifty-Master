@@ -20,7 +20,9 @@ struct NavModePickerSaveButton: View {
             store.navMode = navMode
             nav.showNavModePicker = false
         }
+#if !os(visionOS)
         .hapticOn(trigger, as: .success)
+#endif
         .title2(.semibold, design: .rounded)
 #if os(tvOS)
         .foregroundStyle(.black)

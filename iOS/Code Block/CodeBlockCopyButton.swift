@@ -26,7 +26,9 @@ struct CodeBlockCopyButton: View {
         }
         .buttonStyle(.plain)
         .secondary()
+#if !os(visionOS)
         .hapticOn(trigger, as: .success)
+#endif
     }
 }
 
