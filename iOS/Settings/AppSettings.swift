@@ -16,11 +16,6 @@ struct AppSettings: View {
                 Toggle(isOn: $store.showCodeLineNumbers) {
                     Label("Code line numbers", systemImage: "list.number")
                 }
-                
-                Toggle(isOn: $store.favoriteArticlesBadge) {
-                    Label("Favorite articles badge", systemImage: "app.badge")
-                    Text("Displayed on top of the tab bar")
-                }
             }
             
             Section {
