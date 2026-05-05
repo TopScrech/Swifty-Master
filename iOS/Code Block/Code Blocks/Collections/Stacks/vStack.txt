@@ -1,6 +1,5 @@
 VStack {
     Text("Text above")
-    
     Text("Text below")
 }
 
