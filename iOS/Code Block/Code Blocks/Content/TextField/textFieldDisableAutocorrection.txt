@@ -1,6 +1,6 @@
 TextField("Placeholder", text: $text)
     .autocorrectionDisabled()
 
-    //or
+    // or
 
     .autocorrectionDisabled(boolProperty)
