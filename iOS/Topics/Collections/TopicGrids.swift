@@ -12,11 +12,9 @@ struct TopicGrids: View {
                     .padding(.top)
                 
                 TopicHeading("LazyVGrid")
-                
                 CodeBlockView(.lazyVGrid)
                 
                 TopicHeading("LazyHGrid")
-                
                 CodeBlockView(.lazyHGrid)
             }
             .padding(.top)
