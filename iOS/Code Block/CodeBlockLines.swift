@@ -38,14 +38,13 @@ struct CodeBlockLines: View {
         }
     }
     
-    @ViewBuilder
     private var codeText: some View {
 #if canImport(UIKit) && !os(tvOS)
         SelectableCodeTextView(code: code, textColor: style.textColor, lineSpacing: style.lineSpacing)
 #else
         VStack(alignment: .leading, spacing: style.lineSpacing) {
-            ForEach(codeLines.enumerated(), id: \.offset) { _, line in
-                Text(attributedCodeString(for: line))
+            ForEach(codeLines.indices, id: \.self) {
+                Text(attributedCodeString(for: codeLines[$0]))
                     .font(style.font)
                     .foregroundStyle(style.textColor)
             }
