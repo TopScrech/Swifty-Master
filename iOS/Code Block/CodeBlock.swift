@@ -55,7 +55,7 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          scrollView,
          scrollViewStretchyHeader,
          grid, lazyVGrid, lazyHGrid,
-         tabView,
+         tabView, tabViewNew,
          
          // Layout
          spacer, spacerMinLenght, spacerFixedSize,
