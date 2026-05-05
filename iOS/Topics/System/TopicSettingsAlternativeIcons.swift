@@ -1,7 +1,4 @@
 import ScrechKit
-#if canImport(UIKit)
-import UIKit
-#endif
 
 struct TopicSettingsAlternativeIcons: View {
     var body: some View {

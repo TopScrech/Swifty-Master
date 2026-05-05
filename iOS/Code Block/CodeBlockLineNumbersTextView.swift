@@ -1,6 +1,5 @@
 #if canImport(UIKit) && !os(tvOS)
 import SwiftUI
-import UIKit
 
 struct CodeBlockLineNumbersTextView: UIViewRepresentable {
     let lineCount: Int

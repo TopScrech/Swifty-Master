@@ -1,8 +1,7 @@
 #if canImport(UIKit) && !os(tvOS)
+import SwiftUI
 import SwiftParser
 import SwiftSyntax
-import SwiftUI
-import UIKit
 
 struct SelectableCodeTextView: UIViewRepresentable {
     let code: String
