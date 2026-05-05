@@ -4,7 +4,7 @@ struct TopicTextEditor: View {
     @State private var text = ""
     
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Text("SwiftUI's `TextEditor` allows users to enter or edit multi-line text. It supports rich formatting and large content inputs")
 #if !os(tvOS)
             TextEditor(text: $text)

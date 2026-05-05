@@ -2,7 +2,7 @@ import ScrechKit
 
 struct TopicNavigationLink: View {
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Text("Control button that navigates to a destination view when tapped")
             
             CodeBlockView(.navigationLink)

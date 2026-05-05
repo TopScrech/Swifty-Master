@@ -4,7 +4,7 @@ struct TopicToggle: View {
     @State private var isOn = true
     
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Text("Toggle lets users switch a value on or off, and can be bound to a state property to update your UI automatically")
             
             Toggle("Toggle", isOn: $isOn)
@@ -16,7 +16,7 @@ struct TopicToggle: View {
             TopicHeading("Style Details")
             
             TopicDisclosureGroup("Tint") {
-                VStack(spacing: 25) {
+                VStack(spacing: 20) {
                     Toggle("Purple", isOn: $isOn)
                         .tint(.purple)
                     

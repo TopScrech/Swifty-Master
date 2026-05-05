@@ -7,7 +7,7 @@ struct TopicBadges: View {
     private let center = UNUserNotificationCenter.current()
     
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Stepper(value: $number, in: 0...100) {
                 Text("Change badge number to \(number)")
                 

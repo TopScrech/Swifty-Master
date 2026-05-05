@@ -2,7 +2,7 @@ import ScrechKit
 
 struct TopicImage: View {
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Text("Image is used to display visual content such as icons, photo's, or system-provided images")
             
             CodeBlockView(.image)

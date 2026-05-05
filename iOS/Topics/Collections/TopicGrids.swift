@@ -2,7 +2,7 @@ import ScrechKit
 
 struct TopicGrids: View {
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Text("Grid arranges views in rows and columns, giving you flexible control over layout without lazy loading")
             
             CodeBlockView(.grid)

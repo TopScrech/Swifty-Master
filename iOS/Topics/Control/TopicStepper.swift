@@ -4,7 +4,7 @@ struct TopicStepper: View {
     @State private var stepperValue = 0
     
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Text("Stepper is a customizable slider control that allows to select a value from a range, providing a simple and intuitive way to adjust settings or display progress")
 #if !os(tvOS)
             Stepper(value: $stepperValue, in: 0...Int.max) {

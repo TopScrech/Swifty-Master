@@ -4,7 +4,7 @@ struct TopicConfirmationDialog: View {
     @State private var showDialog = false
     
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Text("A confirmation dialog presents a list of choices, typically for destructive or secondary actions")
             
             TopicActionButton("Show confirmation dialog", color: .blue.opacity(0.3)) {

@@ -2,7 +2,7 @@ import ScrechKit
 
 struct TopicGauge: View {
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             GaugeCard("accessoryCircular") {
                 Gauge(value: 50, in: 0...100) {
                     Text("C")

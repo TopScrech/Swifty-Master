@@ -2,7 +2,7 @@ import ScrechKit
 
 struct TopicDarkMode: View {
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Text("The @Environment(\\.colorScheme) property lets you detect whether the system is in light or dark mode so you can adjust your UI accordingly")
             
             CodeBlockView(.darkMode)

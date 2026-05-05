@@ -4,7 +4,7 @@ struct TopicPreventScreenshots: View {
     @State private var preventScreenshots = true
     
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Text("Use a secure text entry mask to discourage screenshots of sensitive UI")
 #if os(iOS)
             VStack(spacing: 16) {

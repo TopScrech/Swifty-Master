@@ -2,7 +2,7 @@ import ScrechKit
 
 struct TopicScrollView: View {
     var body: some View {
-        VStack(spacing: 25) {
+        VStack(spacing: 20) {
             Text("ScrollView allows content to be scrolled vertically or horizontally when it doesn’t fit within the available space")
             
             CodeBlockView(.scrollView)
