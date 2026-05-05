@@ -33,6 +33,7 @@ struct SelectableCodeTextView: UIViewRepresentable {
     private var attributedText: NSAttributedString {
         let attributedString = NSMutableAttributedString(string: code)
         let fullRange = NSRange(location: 0, length: attributedString.length)
+        
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = lineSpacing
         
