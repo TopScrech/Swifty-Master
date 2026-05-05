@@ -8,6 +8,8 @@ struct TopicBadges: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("Use a badge to convey optional, supplementary information about a view. Keep the contents of the badge as short as possible. Badges appear in list rows, tab bars, toolbar items, and menus")
+            
             Stepper(value: $number, in: 0...100) {
                 Text("Change badge number to \(number)")
                 
