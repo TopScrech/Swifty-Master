@@ -7,21 +7,26 @@ struct CodeBlockCopyButton: View {
         self.code = code
     }
     
+    @State private var trigger = false
+    
     var body: some View {
         Button {
             Pasteboard.copy(code)
+            trigger.toggle()
         } label: {
             Image(systemName: "document.on.document")
                 .title3(.semibold)
                 .padding(10)
                 .glassyBackground(16)
                 .padding(8)
+                .contentShape(.rect)
                 .contextMenu {
                     ShareLink(item: code)
                 }
         }
         .buttonStyle(.plain)
         .secondary()
+        .sensoryFeedback(.success, trigger: trigger)
     }
 }
 
