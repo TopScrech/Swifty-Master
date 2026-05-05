@@ -1,0 +1,8 @@
+// Text & Custom view
+Label {
+    Text("User")
+} icon: {
+    // Custom view
+    Circle()
+        .fill(.secondary)
+}

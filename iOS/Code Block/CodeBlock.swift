@@ -10,7 +10,7 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          image,
          textField, textFieldSecured, textFieldDisableAutocorrection,
          textEditor, textEditorFormat,
-         label,
+         label, labelImage, labelCustomView, labelStyle,
          sfSymbols,
          shape,
          customKeyboard,

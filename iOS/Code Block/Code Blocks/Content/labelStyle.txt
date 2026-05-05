@@ -1,2 +1,3 @@
-// Text & SF Symbol
+// Label Style
 Label("User", systemImage: "person.fill")
+    .labelStyle(.iconOnly)
