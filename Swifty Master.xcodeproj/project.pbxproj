@@ -67,7 +67,7 @@
 			membershipExceptions = (
 				AppIcon.icon,
 				Assets.xcassets,
-				"Code Block/CodeBlockViewCopyButton.swift",
+				"Code Block/CodeBlockCopyButton.swift",
 				iOS.plist,
 				"Liquid Glass.icon",
 				"To be checked/Haptic/SensoryFeedback.swift",

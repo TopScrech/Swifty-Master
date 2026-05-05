@@ -1,6 +1,6 @@
 import ScrechKit
 
-struct CodeBlockViewCopyButton: View {
+struct CodeBlockCopyButton: View {
     private let code: String
     
     init(_ code: String) {
@@ -26,6 +26,6 @@ struct CodeBlockViewCopyButton: View {
 }
 
 //#Preview {
-//    CodeBlockViewCopyButton()
+//    CodeBlockCopyButton()
 //    .darkSchemePreferred()
 //}

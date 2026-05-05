@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct CodeBlockLinesView: View {
+struct CodeBlockLines: View {
     @EnvironmentObject private var store: ValueStore
     
     private let code: String
