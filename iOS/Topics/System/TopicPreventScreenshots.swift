@@ -34,11 +34,6 @@ struct TopicPreventScreenshots: View {
                     .padding()
                     .glassyBackground(16)
             }
-            
-            Text("This UIKit technique can reduce screenshots but is not a guarantee")
-                .footnote()
-                .secondary()
-                .multilineTextAlignment(.center)
 #else
             TopicWarning("Screenshot masking is available on iOS only")
 #endif
