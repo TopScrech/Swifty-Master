@@ -36,17 +36,18 @@ struct AppSettings: View {
                 }
 #endif
             }
-            
+        }
+        .navigationTitle("Settings")
+        .formStyle(.grouped)
+        .buttonStyle(.plain)
+        .scrollIndicators(.never)
+        .toolbar {
             NavigationLink {
                 DebugSettings()
             } label: {
                 Label("Debug", systemImage: "hammer")
             }
         }
-        .navigationTitle("Settings")
-        .formStyle(.grouped)
-        .buttonStyle(.plain)
-        .scrollIndicators(.never)
     }
 }
 
