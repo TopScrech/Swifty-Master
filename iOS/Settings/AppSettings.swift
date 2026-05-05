@@ -13,23 +13,23 @@ struct AppSettings: View {
 #if canImport(Appearance)
                 AppearancePicker($store.appearance)
 #endif
-                Toggle(isOn: $store.showCodeLineNumbers) {
-                    Label("Code line numbers", systemImage: "list.number")
-                }
-            }
-            
-            Section {
-                NavModeButton()
-#if !os(visionOS)
-                Toggle(isOn: $store.builtInBrowser) {
-                    Label("Use built-in Safari", systemImage: "safari")
-                }
-#endif
 #if !os(macOS)
                 Button("Change language", systemImage: "globe") {
                     openSettings()
                 }
 #endif
+            }
+            
+            Section {
+                Toggle(isOn: $store.showCodeLineNumbers) {
+                    Label("Code line numbers", systemImage: "list.number")
+                }
+#if !os(visionOS)
+                Toggle(isOn: $store.builtInBrowser) {
+                    Label("Use built-in Safari", systemImage: "safari")
+                }
+#endif
+                NavModeButton()
             }
         }
         .navigationTitle("Settings")
