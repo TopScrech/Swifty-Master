@@ -29,7 +29,6 @@ struct TopicSettingsAlternativeIcons: View {
 #else
             TopicWarning("Alternate icons are available on iOS only")
 #endif
-            
             CodeBlockView(.settingsAlternativeIcons)
         }
     }

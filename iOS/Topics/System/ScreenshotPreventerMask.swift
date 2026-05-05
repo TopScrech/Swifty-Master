@@ -21,14 +21,14 @@ struct ScreenshotPreventerMask: UIViewRepresentable {
         view.isSecureTextEntry = true
         view.text = ""
         view.isUserInteractionEnabled = false
-
+        
         setupMaskLayer(view)
-
+        
         return view
     }
-
+    
     func updateUIView(_ uiView: UIView, context: Context) {}
-
+    
     private func setupMaskLayer(_ view: UIView) {
         if let autoHideLayer = findAutoHideLayer(view) {
             autoHideLayer.backgroundColor = UIColor.white.cgColor
@@ -36,11 +36,11 @@ struct ScreenshotPreventerMask: UIViewRepresentable {
             view.layer.sublayers?.last?.backgroundColor = UIColor.white.cgColor
         }
     }
-
+    
     private func findAutoHideLayer(_ view: UIView) -> CALayer? {
-        view.layer.sublayers?.first(where: { layer in
+        view.layer.sublayers?.first { layer in
             layer.delegate.debugDescription.contains("UITextLayoutCanvasView")
-        })
+        }
     }
 }
 #endif

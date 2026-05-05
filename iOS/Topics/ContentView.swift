@@ -16,8 +16,9 @@ struct ContentView: View {
             }
             
             TopicDocs(topic.docs)
-            
+#if DEBUG
             ContentViewNavButtons(topic)
+#endif
             ContentViewRelatedTopics(topic.related)
         }
         .scenePadding()
