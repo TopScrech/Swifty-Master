@@ -13,6 +13,7 @@
 		F33904212E49341000A22EE1 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = F33904202E49341000A22EE1 /* SafariCover */; };
 		F33E8B262E416BD700B05370 /* CodeEditorView in Frameworks */ = {isa = PBXBuildFile; productRef = F33E8B252E416BD700B05370 /* CodeEditorView */; };
 		F380A1752E4AA1FA00157F67 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F380A1742E4AA1FA00157F67 /* ScrechKit */; };
+		F3837D3B2FA9507900F94024 /* CodeBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3837B732FA9507900F94024 /* CodeBlockView.swift */; };
 		F3BBD9F72AEECE4000A9F7E7 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3BBD9F62AEECE4000A9F7E7 /* ScrechKit */; };
 		F3C9D109304A1A1A00A1B2C3 /* SwiftSyntax in Frameworks */ = {isa = PBXBuildFile; productRef = F3C9D101304A1A1A00A1B2C3 /* SwiftSyntax */; };
 		F3C9D10A304A1A1A00A1B2C3 /* SwiftParser in Frameworks */ = {isa = PBXBuildFile; productRef = F3C9D102304A1A1A00A1B2C3 /* SwiftParser */; };
@@ -32,6 +33,7 @@
 		F32313732E69CF0B0011837A /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
 		F325E3B32E5EBC760008928E /* Swifty Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F380A1622E4AA1BF00157F67 /* tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3837B732FA9507900F94024 /* CodeBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlockView.swift; sourceTree = "<group>"; };
 		F3A66CB52F294FFE008354CC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		F3A811E72F2146DA00D96952 /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENTS.md; sourceTree = "<group>"; };
 		F3BBD9DE2AEECD3400A9F7E7 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,7 +44,6 @@
 		F383A8122ECF30A400350A0F /* Exceptions for "iOS" folder in "iOS" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				"Code Block/CodeBlockView macOS.swift",
 				iOS.plist,
 			);
 			target = F3BBD9DD2AEECD3400A9F7E7 /* iOS */;
@@ -52,7 +53,6 @@
 			membershipExceptions = (
 				AppIcon.icon,
 				Assets.xcassets,
-				"Code Block/CodeBlockView macOS.swift",
 				iOS.plist,
 				"Liquid Glass.icon",
 				"To be checked/Haptic/SensoryFeedback.swift",
@@ -67,7 +67,6 @@
 			membershipExceptions = (
 				AppIcon.icon,
 				Assets.xcassets,
-				"Code Block/CodeBlockView macOS.swift",
 				"Code Block/CodeBlockViewCopyButton.swift",
 				iOS.plist,
 				"Liquid Glass.icon",
@@ -199,6 +198,7 @@
 			children = (
 				F3A66CB52F294FFE008354CC /* macOS.entitlements */,
 				F32313732E69CF0B0011837A /* macOS.plist */,
+				F3837B732FA9507900F94024 /* CodeBlockView.swift */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -420,6 +420,7 @@
 		F325E3AF2E5EBC760008928E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
+				F3837D3B2FA9507900F94024 /* CodeBlockView.swift in Sources */,
 			);
 		};
 		F380A15E2E4AA1BE00157F67 /* Sources */ = {
