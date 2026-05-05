@@ -31,15 +31,8 @@ struct AppSettings: View {
                 }
 #endif
 #if !os(macOS)
-                Button {
+                Button("Change language", systemImage: "globe") {
                     openSettings()
-                } label: {
-                    Label {
-                        Text("Change language")
-                        Text("English, Dutch, Russian")
-                    } icon: {
-                        Image(systemName: "globe")
-                    }
                 }
 #endif
             }

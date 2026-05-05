@@ -22,8 +22,7 @@ struct TopicBadges: View {
             CodeBlockView(.badges)
             
             TopicHeading("Badge over app icon")
-            
-            TopicWarning("Note that the notifications permission is required")
+            TopicWarning("The notifications permission is required")
             
             CodeBlockView(.badgeOverAppIcon)
         }
