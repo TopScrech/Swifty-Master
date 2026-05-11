@@ -8,6 +8,10 @@ struct StackTopicList: View {
         @Bindable var dataModel = dataModel
         
         List {
+            if let fanControlURL = URL(string: "https://fancontrol.dev?source=swifty-master") {
+                AdView(title: "FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: fanControlURL)
+            }
+            
             if store.favoriteTopics.count > 0 {
                 Section("Favorites") {
                     ForEach(store.favoriteTopics) { topic in
