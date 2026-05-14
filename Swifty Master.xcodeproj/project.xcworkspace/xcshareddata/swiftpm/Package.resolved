@@ -34,7 +34,7 @@
       "location" : "https://github.com/TopScrech/SafariCover",
       "state" : {
         "branch" : "main",
-        "revision" : "31d054a86fa244ba080634d27b7a79bdc8c1ebd8"
+        "revision" : "859847671a9bed9879663653266f7ea930dc9f0d"
       }
     },
     {
@@ -43,7 +43,7 @@
       "location" : "https://github.com/TopScrech/ScrechKit",
       "state" : {
         "branch" : "main",
-        "revision" : "fd773c46059dfaa41dbe3e754ba672f1273ea074"
+        "revision" : "a2f1a8b71c3b389cdf9917b14673d747d75ca051"
       }
     },
     {
