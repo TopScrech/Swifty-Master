@@ -923,8 +923,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/SafariCover";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		F33E8B242E416BD700B05370 /* XCRemoteSwiftPackageReference "CodeEditorView" */ = {
@@ -939,24 +939,25 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/ScrechKit";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		F3C9D100304A1A1A00A1B2C3 /* XCRemoteSwiftPackageReference "swift-syntax" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/swiftlang/swift-syntax";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 600.0.1;
+				kind = versionRange;
+				maximumVersion = 1000.0.0;
+				minimumVersion = 600.0.0;
 			};
 		};
 		F3F5AD6B2E885E51007AD97D /* XCRemoteSwiftPackageReference "Appearance" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/Appearance";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
