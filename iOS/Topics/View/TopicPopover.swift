@@ -13,7 +13,7 @@ struct TopicPopover: View {
             
             CodeBlockView(.popover)
         }
-        .popover($popoverExample) {
+        .popover(isPresented: $popoverExample) {
             ExampleSheet()
                 .presentationDetents([.height(320)])
         }
