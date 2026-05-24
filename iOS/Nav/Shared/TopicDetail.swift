@@ -42,7 +42,6 @@ private struct Content: View {
             .scenePadding()
         }
         .navigationTitle(topic.localizedName)
-        .navSubtitle(topic.category.localizedName)
         .scrollIndicators(.never)
     }
     

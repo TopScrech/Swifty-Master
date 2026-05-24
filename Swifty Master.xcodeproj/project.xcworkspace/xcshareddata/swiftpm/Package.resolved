@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/TopScrech/Appearance",
       "state" : {
-        "branch" : "main",
-        "revision" : "63b3aa005019fd29033e8a588e0f1215b33e8403"
+        "revision" : "52f010520817af8cc09c68329ebde790778c6ced",
+        "version" : "1.0.1"
       }
     },
     {
@@ -33,8 +33,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/TopScrech/SafariCover",
       "state" : {
-        "branch" : "main",
-        "revision" : "31d054a86fa244ba080634d27b7a79bdc8c1ebd8"
+        "revision" : "8cd5c6b2c94d87dc03c5e990df2279eadbe44b2d",
+        "version" : "1.3.1"
       }
     },
     {
@@ -42,8 +42,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/TopScrech/ScrechKit",
       "state" : {
-        "branch" : "main",
-        "revision" : "fd773c46059dfaa41dbe3e754ba672f1273ea074"
+        "revision" : "b042653a85530e387eb5036a49983918d6511276",
+        "version" : "1.0.4"
       }
     },
     {
@@ -51,8 +51,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/swiftlang/swift-syntax",
       "state" : {
-        "revision" : "0687f71944021d616d34d922343dcef086855920",
-        "version" : "600.0.1"
+        "revision" : "9de99a78f099e59caf2b2beec65a4c45d54b2081",
+        "version" : "603.0.1"
       }
     }
   ],
