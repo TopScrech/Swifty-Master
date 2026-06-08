@@ -10,8 +10,8 @@ struct TopicDisclosureGroup<Content: View>: View {
         @ViewBuilder content: @escaping () -> Content
     ) {
         self.title = title
-        self.isExpanded = isExpanded
         self.content = content
+        _isExpanded = State(initialValue: isExpanded)
     }
     
     @State private var isExpanded = true
