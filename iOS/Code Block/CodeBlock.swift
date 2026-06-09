@@ -79,7 +79,10 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          differentiateOS,
          detectScreenSize,
          detectCompactOrRegular,
-         settingsAlternativeIcons
+         settingsAlternativeIcons,
+         
+         // New in iOS 27
+         enumPreview
     
     var code: String {
         guard let url = Bundle.main.url(forResource: self.rawValue, withExtension: "txt") else {

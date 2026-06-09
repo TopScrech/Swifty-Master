@@ -26,6 +26,9 @@ extension Topic {
             
         case .detectOSVersion, .detectDarkMode, .differentiateOS, .detectScreenSize, .detectCompactOrRegular, .detectLang, .lowPowerMode, .preventScreenSleep, .preventScreenshots, .settingsAlternativeIcons:
                 .system
+            
+        case .enumPreview:
+                .newIniOS27
         }
     }
 }

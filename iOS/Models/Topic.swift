@@ -75,7 +75,10 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          lowPowerMode = "Low Power Mode",
          preventScreenSleep = "Prevent Screen Sleep",
          preventScreenshots = "Prevent Screenshots",
-         settingsAlternativeIcons = "Settings Alternative Icons"
+         settingsAlternativeIcons = "Settings Alternative Icons",
+         
+         // New in iOS 27
+         enumPreview = "Enum Preview"
     
     var id: String {
         rawValue

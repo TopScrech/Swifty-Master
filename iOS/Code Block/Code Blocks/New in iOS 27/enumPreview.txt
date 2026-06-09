@@ -1,0 +1,23 @@
+import SwiftUI
+
+enum Icon: String, CaseIterable {
+    case hammer = "hammer",
+         globe = "globe",
+         pizza = "pizza.slice",
+         star = "star"
+}
+
+struct EnumPreview: View {
+    let value: Icon
+    
+    var body: some View {
+        Image(systemName: value.rawValue)
+            .font(.largeTitle)
+    }
+}
+
+#Preview(arguments: Icon.allCases) {
+    EnumPreview(value: $0)
+        .padding(.horizontal, 100)
+        .padding(.vertical, 50)
+}

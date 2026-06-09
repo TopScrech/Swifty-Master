@@ -76,6 +76,9 @@ extension Topic {
         case .preventScreenSleep: "sun.max"
         case .preventScreenshots: "iphone.slash"
         case .settingsAlternativeIcons: "app.badge"
+            
+            // New in iOS 27
+        case .enumPreview: "list.bullet.rectangle"
         }
     }
 }
