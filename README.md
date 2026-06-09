@@ -7,7 +7,7 @@ Learn SwiftUI interactively with copiable code snippets
 - iOS/iPadOS 17+
 - macOS 14+
 - tvOS 17+
-- visionOS 1+
+- visionOS 2+
 
 ## Contribute!
 Feel free to contribute and open/resolve issues!
