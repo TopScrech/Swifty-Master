@@ -83,7 +83,8 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          settingsAlternativeIcons,
          
          // New in Xcode 27
-         enumPreview
+         enumPreview,
+         reorderableContainers
     
     var code: String {
         guard let url = Bundle.main.url(forResource: self.rawValue, withExtension: "txt") else {

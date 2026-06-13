@@ -543,6 +543,17 @@ extension Topic {
                 category: .newIniOS27,
                 icon: "list.bullet.rectangle"
             )
+            
+        case .reorderableContainers:
+            TopicMetadata(
+                category: .newIniOS27,
+                icon: "arrow.up.arrow.down.square",
+                docs: [
+                    TopicDocType("reorderable()", url: "https://developer.apple.com/documentation/swiftui/dynamicviewcontent/reorderable()"),
+                    TopicDocType("reorderContainer(for:isEnabled:move:)", url: "https://developer.apple.com/documentation/swiftui/view/reordercontainer(for:isenabled:move:)")
+                ],
+                related: [.list, .vStack, .grids]
+            )
         }
     }
 }

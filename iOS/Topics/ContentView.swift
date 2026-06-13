@@ -134,6 +134,7 @@ func topicView(_ topic: Topic) -> AnyView? {
         // New in Xcode 27
     case .differentiateOS: AnyView(TopicDifferentiateOS())
     case .enumPreview: AnyView(TopicEnumPreview())
+    case .reorderableContainers: AnyView(TopicReorderableContainers())
     }
 }
 
