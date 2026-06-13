@@ -2,6 +2,7 @@ import ScrechKit
 
 struct SFSymbolTile: View {
     let symbol: SFSymbolEntry
+    let size: CGFloat
     
     var body: some View {
         VStack {
@@ -15,6 +16,7 @@ struct SFSymbolTile: View {
                 .lineLimit(2)
                 .minimumScaleFactor(0.8)
                 .multilineTextAlignment(.center)
+                .frame(maxWidth: .infinity)
                 .selectableSymbolText()
             
             if symbol.isRestricted {
@@ -23,8 +25,8 @@ struct SFSymbolTile: View {
                     .foregroundStyle(.orange)
             }
         }
-        .frame(maxWidth: .infinity, minHeight: 96)
         .padding()
+        .frame(width: size, height: size)
         .background(.thinMaterial)
         .clipShape(.rect(cornerRadius: 8))
     }
