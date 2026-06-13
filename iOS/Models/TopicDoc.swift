@@ -269,7 +269,7 @@ extension Topic {
                 TopicDocType("supportsAlternateIcons", url: "https://developer.apple.com/documentation/uikit/uiapplication/supportsalternateicons")
             ]
             
-            // MARK: - New in iOS 27
+            // MARK: - New in Xcode 27
         case .enumPreview:
             []
             

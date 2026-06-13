@@ -81,7 +81,7 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          detectCompactOrRegular,
          settingsAlternativeIcons,
          
-         // New in iOS 27
+         // New in Xcode 27
          enumPreview
     
     var code: String {

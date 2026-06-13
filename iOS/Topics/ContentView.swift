@@ -131,7 +131,7 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .detectCompactOrRegular: AnyView(TopicDetectCompactOrRegular())
     case .settingsAlternativeIcons: AnyView(TopicSettingsAlternativeIcons())
         
-        // New in iOS 27
+        // New in Xcode 27
     case .enumPreview: AnyView(TopicEnumPreview())
         
     @unknown default: nil

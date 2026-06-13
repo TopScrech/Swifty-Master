@@ -78,7 +78,7 @@ extension Topic {
         case .preventScreenshots: "iphone.slash"
         case .settingsAlternativeIcons: "app.badge"
             
-            // New in iOS 27
+            // New in Xcode 27
         case .enumPreview: "list.bullet.rectangle"
         }
     }

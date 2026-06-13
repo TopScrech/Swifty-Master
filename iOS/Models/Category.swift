@@ -28,7 +28,7 @@ enum Category: Int, CaseIterable, Identifiable, Codable {
         case .layout:      "Layout"
         case .design:      "Design"
         case .system:      "System"
-        case .newIniOS27:  "New in iOS 27"
+        case .newIniOS27:  "New in Xcode 27"
         }
     }
 }
