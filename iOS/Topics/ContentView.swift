@@ -135,6 +135,7 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .differentiateOS: AnyView(TopicDifferentiateOS())
     case .enumPreview: AnyView(TopicEnumPreview())
     case .reorderableContainers: AnyView(TopicReorderableContainers())
+    case .asyncImageCaching: AnyView(TopicAsyncImageCaching())
     }
 }
 

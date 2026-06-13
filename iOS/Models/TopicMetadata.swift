@@ -554,6 +554,17 @@ extension Topic {
                 ],
                 related: [.list, .vStack, .grids]
             )
+            
+        case .asyncImageCaching:
+            TopicMetadata(
+                category: .newIniOS27,
+                icon: "photo",
+                docs: [
+                    TopicDocType("AsyncImage", url: "https://developer.apple.com/documentation/swiftui/asyncimage"),
+                    TopicDocType("init(request:scale:transaction:content:)", url: "https://developer.apple.com/documentation/swiftui/asyncimage/init(request:scale:transaction:content:)")
+                ],
+                related: [.image]
+            )
         }
     }
 }

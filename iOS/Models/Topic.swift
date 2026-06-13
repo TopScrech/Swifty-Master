@@ -80,7 +80,8 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          // New in Xcode 27
          differentiateOS = "Differentiate OS",
          enumPreview = "Enum case Preview",
-         reorderableContainers = "Reorderable Containers"
+         reorderableContainers = "Reorderable Containers",
+         asyncImageCaching = "AsyncImage Caching"
     
     var id: String {
         rawValue

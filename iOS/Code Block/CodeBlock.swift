@@ -84,7 +84,8 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          
          // New in Xcode 27
          enumPreview,
-         reorderableContainers
+         reorderableContainers,
+         asyncImageCaching
     
     var code: String {
         guard let url = Bundle.main.url(forResource: self.rawValue, withExtension: "txt") else {
