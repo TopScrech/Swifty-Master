@@ -81,6 +81,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          differentiateOS = "Differentiate OS",
          enumPreview = "Enum case Preview",
          reorderableContainers = "Reorderable Containers",
+         swipeActionsInContainers = "Swipe Actions in Containers",
          asyncImageCaching = "AsyncImage Caching"
     
     var id: String {

@@ -85,6 +85,7 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          // New in Xcode 27
          enumPreview,
          reorderableContainers,
+         swipeActionsInContainers,
          asyncImageCaching
     
     var code: String {

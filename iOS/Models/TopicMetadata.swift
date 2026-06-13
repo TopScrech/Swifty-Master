@@ -555,6 +555,17 @@ extension Topic {
                 related: [.list, .vStack, .grids]
             )
             
+        case .swipeActionsInContainers:
+            TopicMetadata(
+                category: .newIniOS27,
+                icon: "hand.draw",
+                docs: [
+                    TopicDocType("swipeActions(edge:allowsFullSwipe:content:onPresentationChanged:)", url: "https://developer.apple.com/documentation/swiftui/view/swipeactions(edge:allowsfullswipe:content:onpresentationchanged:)"),
+                    TopicDocType("swipeActionsContainer()", url: "https://developer.apple.com/documentation/swiftui/view/swipeactionscontainer()")
+                ],
+                related: [.swipeActions, .list, .scrollView, .vStack, .grids]
+            )
+            
         case .asyncImageCaching:
             TopicMetadata(
                 category: .newIniOS27,
