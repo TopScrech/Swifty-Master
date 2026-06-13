@@ -3514,6 +3514,7 @@
       }
     },
     "Drag & Drop" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -4272,6 +4273,7 @@
       }
     },
     "Image Picker" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
