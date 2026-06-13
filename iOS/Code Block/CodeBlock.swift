@@ -71,6 +71,7 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          
          // System
          darkMode, darkModeLock,
+         anyAppleOS,
          detectOSVersion, detectOSVersionNewAndOld, detectDeviceUsed,
          lowPowerMode,
          preventScreenSleep,

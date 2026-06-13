@@ -126,12 +126,12 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .preventScreenSleep:     AnyView(TopicPreventScreenSleep())
     case .preventScreenshots:     AnyView(TopicPreventScreenshots())
     case .detectLang:             AnyView(TopicDetectLaguage())
-    case .differentiateOS:        AnyView(TopicDifferentiateOS())
     case .detectScreenSize:       AnyView(TopicDetectScreenSize())
     case .detectCompactOrRegular: AnyView(TopicDetectCompactOrRegular())
     case .settingsAlternativeIcons: AnyView(TopicSettingsAlternativeIcons())
         
         // New in Xcode 27
+    case .differentiateOS: AnyView(TopicDifferentiateOS())
     case .enumPreview: AnyView(TopicEnumPreview())
         
     @unknown default: nil

@@ -69,7 +69,6 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          // System
          detectOSVersion = "Detect OS Version",
          detectDarkMode = "Detect Dark Mode",
-         differentiateOS = "Differentiate OS",
          detectScreenSize = "Detect Screen Size",
          detectCompactOrRegular = "Detect Compact or Regular",
          detectLang = "Detect Language",
@@ -79,6 +78,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          settingsAlternativeIcons = "Settings Alternative Icons",
          
          // New in Xcode 27
+         differentiateOS = "Differentiate OS",
          enumPreview = "Enum case Preview"
     
     var id: String {

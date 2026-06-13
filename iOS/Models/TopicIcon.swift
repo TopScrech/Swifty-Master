@@ -69,7 +69,6 @@ extension Topic {
             // System
         case .detectOSVersion: "waveform.path.ecg.magnifyingglass"
         case .detectDarkMode: "circle.righthalf.filled"
-        case .differentiateOS: "macbook.and.vision.pro"
         case .detectScreenSize: "arrow.down.left.and.arrow.up.right.rectangle"
         case .detectCompactOrRegular: "iphone.sizes"
         case .detectLang: "globe"
@@ -79,6 +78,7 @@ extension Topic {
         case .settingsAlternativeIcons: "app.badge"
             
             // New in Xcode 27
+        case .differentiateOS: "macbook.and.vision.pro"
         case .enumPreview: "list.bullet.rectangle"
         }
     }
