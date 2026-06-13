@@ -3,7 +3,7 @@ import ScrechKit
 struct TopicEnumPreview: View {
     var body: some View {
         VStack(spacing: 20) {
-            Text("Enum previews let a SwiftUI preview run once for each value in a collection of arguments")
+            Text("Enum case previews let a SwiftUI preview run once for each value in a collection of arguments")
             
             CodeBlockView(.enumPreview)
             

@@ -79,7 +79,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
          settingsAlternativeIcons = "Settings Alternative Icons",
          
          // New in Xcode 27
-         enumPreview = "Enum Preview"
+         enumPreview = "Enum case Preview"
     
     var id: String {
         rawValue
