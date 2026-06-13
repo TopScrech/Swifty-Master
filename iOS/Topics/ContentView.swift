@@ -9,7 +9,6 @@ struct ContentView: View {
         self.topic = topic
     }
     
-    @ViewBuilder
     var body: some View {
         if topic.isSpecialExperience {
             content
@@ -77,6 +76,8 @@ func topicView(_ topic: Topic) -> AnyView? {
 #if !os(macOS) && !os(tvOS)
     case .gauges:       AnyView(TopicGauge())
     case .badges:       AnyView(TopicBadges())
+#else
+    case .gauges, .badges: nil
 #endif
         
         // View
@@ -133,8 +134,6 @@ func topicView(_ topic: Topic) -> AnyView? {
         // New in Xcode 27
     case .differentiateOS: AnyView(TopicDifferentiateOS())
     case .enumPreview: AnyView(TopicEnumPreview())
-        
-    @unknown default: nil
     }
 }
 
