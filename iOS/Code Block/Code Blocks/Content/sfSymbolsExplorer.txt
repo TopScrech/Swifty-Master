@@ -1,0 +1,29 @@
+struct SFSymbolCatalog: Decodable {
+    let symbols: [SFSymbolEntry]
+}
+
+struct SFSymbolEntry: Decodable, Identifiable {
+    let name: String
+    let availability: String
+    let categories: [String]
+    let searchTerms: [String]
+    
+    var id: String {
+        name
+    }
+}
+
+struct SFSymbolsGrid: View {
+    let symbols: [SFSymbolEntry]
+    
+    var body: some View {
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: 92))]) {
+            ForEach(symbols) {
+                VStack {
+                    Image(systemName: $0.name)
+                    Text($0.name)
+                }
+            }
+        }
+    }
+}

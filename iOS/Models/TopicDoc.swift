@@ -69,6 +69,9 @@ extension Topic {
                 TopicDocType("SF Symbols macOS app", url: "https://developer.apple.com/sf-symbols")
             ]
             
+        case .sfSymbolsExplorer:
+            []
+            
         case .divider:
             [TopicDocType("Divider", url: "https://developer.apple.com/documentation/swiftui/divider")]
             

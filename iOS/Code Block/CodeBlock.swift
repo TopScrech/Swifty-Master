@@ -11,7 +11,7 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          textField, textFieldSecured, textFieldDisableAutocorrection,
          textEditor, textEditorFormat,
          label, labelImage, labelCustomView, labelStyle,
-         sfSymbols,
+         sfSymbols, sfSymbolsExplorer,
          shape,
          customKeyboard,
          

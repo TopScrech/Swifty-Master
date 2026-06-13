@@ -9,35 +9,46 @@ struct ContentView: View {
         self.topic = topic
     }
     
+    @ViewBuilder
     var body: some View {
+        if topic.isSpecialExperience {
+            content
+        } else {
+            content
+                .scenePadding()
+                .toolbar {
+                    Button {
+                        store.addOrRemoveFavorite(topic)
+                    } label: {
+                        if store.favoriteTopics.contains(topic) {
+                            Image(systemName: "star.slash.fill")
+                        } else {
+                            Image(systemName: "star")
+                        }
+                    }
+                    .foregroundStyle(.yellow)
+#if !os(tvOS)
+                    if let url = topic.shareLink {
+                        ShareLink(item: url)
+                    }
+#endif
+                }
+        }
+    }
+    
+    private var content: some View {
         VStack(spacing: 0) {
             if let view = topicView(topic) {
                 view
             }
             
-            TopicDocs(topic.docs)
+            if !topic.isSpecialExperience {
+                TopicDocs(topic.docs)
 #if DEBUG
-            ContentViewNavButtons(topic)
+                ContentViewNavButtons(topic)
 #endif
-            ContentViewRelatedTopics(topic.related)
-        }
-        .scenePadding()
-        .toolbar {
-            Button {
-                store.addOrRemoveFavorite(topic)
-            } label: {
-                if store.favoriteTopics.contains(topic) {
-                    Image(systemName: "star.slash.fill")
-                } else {
-                    Image(systemName: "star")
-                }
+                ContentViewRelatedTopics(topic.related)
             }
-            .foregroundStyle(.yellow)
-#if !os(tvOS)
-            if let url = topic.shareLink {
-                ShareLink(item: url)
-            }
-#endif
         }
     }
 }
@@ -49,6 +60,7 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .textField:  AnyView(TopicTextField())
     case .textEditor: AnyView(TopicTextEditor())
     case .image:      AnyView(TopicImage())
+    case .sfSymbolsExplorer: AnyView(TopicSFSymbolsExplorer())
     case .label:      AnyView(TopicLabel())
     case .shape:      AnyView(TopicShape())
     case .divider:    AnyView(TopicDivider())

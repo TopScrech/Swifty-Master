@@ -7,6 +7,7 @@ extension Topic {
         case .textEditor:  [.textField]
             
         case .image:       [.label]
+        case .sfSymbolsExplorer: []
         case .label:       [.image]
             
         case .contextMenu: [.menu]
