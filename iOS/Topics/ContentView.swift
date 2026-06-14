@@ -87,6 +87,7 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .alert:           AnyView(TopicAlert())
     case .confirmationDialog: AnyView(TopicConfirmationDialog())
     case .popover:         AnyView(TopicPopover())
+    case .customViewModifiers: AnyView(TopicCustomViewModifiers())
         
         // Nav
     case .dismiss:             AnyView(TopicDismiss())

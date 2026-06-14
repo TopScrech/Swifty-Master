@@ -261,6 +261,16 @@ extension Topic {
                 ]
             )
             
+        case .customViewModifiers:
+            TopicMetadata(
+                category: .view,
+                icon: "paintbrush.pointed",
+                docs: [
+                    TopicDocType("ViewModifier", url: "https://developer.apple.com/documentation/swiftui/viewmodifier"),
+                    TopicDocType("modifier(_:)", url: "https://developer.apple.com/documentation/swiftui/view/modifier(_:)")
+                ]
+            )
+            
             // MARK: - Navigation
         case .dismiss:
             TopicMetadata(

@@ -34,6 +34,7 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          alert,
          confirmationDialog,
          appStoreOverlay,
+         customViewModifiers,
          
          // Nav
          dismiss, dismissHideBackButton,
