@@ -8,10 +8,8 @@ struct TopicShareLink: View {
             Text("A ShareLink lets people share a URL, text, or other transferable items using the system share sheet")
 
 #if !os(tvOS)
-            ShareLink(item: url) {
-                Label("Share Swift", systemImage: "square.and.arrow.up")
-            }
-            .buttonStyle(.borderedProminent)
+            ShareLink(item: url)
+                .buttonStyle(.borderedProminent)
 #else
             Text("ShareLink is not available on tvOS")
 #endif
