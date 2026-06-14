@@ -67,6 +67,7 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          
          // Design
          color,
+         hexColors,
          gradient,
          
          // System
