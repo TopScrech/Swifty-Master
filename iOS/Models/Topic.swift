@@ -141,8 +141,8 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         return nil
     }
     
-    private static let shareLinkHost = "swift-docs.com"
-    private static let shareLinkHosts: Set<String> = ["swift-docs.com", "www.swift-docs.com"]
+    private static let shareLinkHost = "swift-hub.dev"
+    private static let shareLinkHosts: Set<String> = ["swift-hub.dev", "www.swift-hub.dev"]
     
     private static func encodedShareLinkPath(_ topic: String) -> String {
         topic.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? topic
