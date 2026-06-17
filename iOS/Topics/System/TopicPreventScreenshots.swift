@@ -10,7 +10,7 @@ struct TopicPreventScreenshots: View {
             VStack(spacing: 16) {
                 VStack(alignment: .leading, spacing: 12) {
                     Label("API Key", systemImage: "key.fill")
-                        .font(.headline)
+                        .headline()
                     
                     Text("sk_live_49Y2K-9A90-1B2C")
                         .monospaced()
@@ -19,7 +19,7 @@ struct TopicPreventScreenshots: View {
                     Divider()
                     
                     Label("Recovery Code", systemImage: "lock.shield")
-                        .font(.headline)
+                        .headline()
                     
                     Text("RC-3910-8842")
                         .monospaced()

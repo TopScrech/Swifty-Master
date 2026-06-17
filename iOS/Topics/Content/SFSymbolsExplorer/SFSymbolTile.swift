@@ -7,12 +7,12 @@ struct SFSymbolTile: View {
     var body: some View {
         VStack {
             Image(systemName: symbol.name)
-                .font(.title)
+                .title()
                 .symbolRenderingMode(.hierarchical)
                 .frame(height: 36)
             
             Text(symbol.name)
-                .font(.caption)
+                .caption()
                 .lineLimit(2)
                 .minimumScaleFactor(0.8)
                 .multilineTextAlignment(.center)
@@ -21,7 +21,7 @@ struct SFSymbolTile: View {
             
             if symbol.isRestricted {
                 Image(systemName: "exclamationmark.triangle")
-                    .font(.caption)
+                    .caption()
                     .foregroundStyle(.orange)
             }
         }

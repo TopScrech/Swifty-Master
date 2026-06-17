@@ -8,7 +8,7 @@ struct SFSymbolDetailView: View {
             Section {
                 VStack {
                     Image(systemName: symbol.name)
-                        .font(.largeTitle)
+                        .largeTitle()
                         .symbolRenderingMode(.hierarchical)
                     
                     Text(symbol.name)
