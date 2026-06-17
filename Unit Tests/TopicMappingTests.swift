@@ -8,6 +8,7 @@ struct TopicMappingTests {
         for topic in Topic.allCases {
             let metadata = topic.metadata
             
+            #expect(!metadata.title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty, "\(topic.id) has no title")
             #expect(Category.allCases.contains(metadata.category), "\(topic.name) has an unknown category")
             #expect(!metadata.icon.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty, "\(topic.name) has no icon")
             
@@ -33,6 +34,14 @@ struct TopicMappingTests {
             #expect(topicView(topic) != nil, "\(topic.name) has no topic view")
         }
 #endif
+    }
+    
+    @Test
+    func topicsDecodeFromStoredTitlesAndIds() throws {
+        let decoder = JSONDecoder()
+        
+        #expect(try decoder.decode(Topic.self, from: Data(#""Text Field""#.utf8)) == .textField)
+        #expect(try decoder.decode(Topic.self, from: Data(#""textField""#.utf8)) == .textField)
     }
     
     @Test

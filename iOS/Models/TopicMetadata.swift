@@ -1,6 +1,7 @@
 import Foundation
 
 struct TopicMetadata {
+    let title: String
     let category: Category
     let icon: String
     let docs: [TopicDocType]
@@ -8,12 +9,14 @@ struct TopicMetadata {
     let isSpecialExperience: Bool
     
     init(
+        title: String,
         category: Category,
         icon: String,
         docs: [TopicDocType] = [],
         related: [Topic] = [],
         isSpecialExperience: Bool = false
     ) {
+        self.title = title
         self.category = category
         self.icon = icon
         self.docs = docs
@@ -28,6 +31,7 @@ extension Topic {
             // MARK: - Content
         case .text:
             TopicMetadata(
+                title: "Text",
                 category: .content,
                 icon: "textformat",
                 docs: [
@@ -41,6 +45,7 @@ extension Topic {
             
         case .textField:
             TopicMetadata(
+                title: "Text Field",
                 category: .content,
                 icon: "keyboard",
                 docs: [
@@ -55,6 +60,7 @@ extension Topic {
             
         case .textEditor:
             TopicMetadata(
+                title: "Text Editor",
                 category: .content,
                 icon: "square.and.pencil",
                 docs: [
@@ -66,6 +72,7 @@ extension Topic {
             
         case .image:
             TopicMetadata(
+                title: "Image",
                 category: .content,
                 icon: "photo",
                 docs: [
@@ -78,6 +85,7 @@ extension Topic {
             
         case .sfSymbolsExplorer:
             TopicMetadata(
+                title: "SF Symbols Explorer",
                 category: .content,
                 icon: "square.grid.2x2",
                 isSpecialExperience: true
@@ -85,6 +93,7 @@ extension Topic {
             
         case .label:
             TopicMetadata(
+                title: "Label",
                 category: .content,
                 icon: "character.textbox",
                 related: [.image]
@@ -92,6 +101,7 @@ extension Topic {
             
         case .shape:
             TopicMetadata(
+                title: "Shape",
                 category: .content,
                 icon: "circle.on.square",
                 docs: [
@@ -106,6 +116,7 @@ extension Topic {
             
         case .divider:
             TopicMetadata(
+                title: "Divider",
                 category: .content,
                 icon: "square.and.line.vertical.and.square",
                 docs: [TopicDocType("Divider", url: "https://developer.apple.com/documentation/swiftui/divider")],
@@ -115,6 +126,7 @@ extension Topic {
             // MARK: - Control
         case .button:
             TopicMetadata(
+                title: "Button",
                 category: .control,
                 icon: "digitalcrown.press",
                 docs: [
@@ -127,6 +139,7 @@ extension Topic {
             
         case .menu:
             TopicMetadata(
+                title: "Menu",
                 category: .control,
                 icon: "filemenu.and.pointer.arrow",
                 docs: [
@@ -138,6 +151,7 @@ extension Topic {
             
         case .contextMenu:
             TopicMetadata(
+                title: "Context Menu",
                 category: .control,
                 icon: "contextualmenu.and.pointer.arrow",
                 docs: [TopicDocType("ContextMenu", url: "https://developer.apple.com/documentation/swiftui/view/contextmenu(menuitems:)")],
@@ -146,6 +160,7 @@ extension Topic {
             
         case .toggle:
             TopicMetadata(
+                title: "Toggle",
                 category: .control,
                 icon: "switch.2",
                 docs: [
@@ -156,6 +171,7 @@ extension Topic {
             
         case .slider:
             TopicMetadata(
+                title: "Slider",
                 category: .control,
                 icon: "slider.horizontal.3",
                 docs: [TopicDocType("Slider", url: "https://developer.apple.com/documentation/swiftui/slider")],
@@ -164,6 +180,7 @@ extension Topic {
             
         case .stepper:
             TopicMetadata(
+                title: "Stepper",
                 category: .control,
                 icon: "plus.minus.capsule",
                 docs: [TopicDocType("Stepper", url: "https://developer.apple.com/documentation/swiftui/stepper")],
@@ -172,6 +189,7 @@ extension Topic {
             
         case .picker:
             TopicMetadata(
+                title: "Picker",
                 category: .control,
                 icon: "checklist",
                 docs: [
@@ -182,6 +200,7 @@ extension Topic {
             
         case .gauges:
             TopicMetadata(
+                title: "Gauges",
                 category: .control,
                 icon: "gauge.open",
                 docs: [
@@ -193,6 +212,7 @@ extension Topic {
             
         case .progressView:
             TopicMetadata(
+                title: "ProgressView",
                 category: .control,
                 icon: "progress.indicator",
                 docs: [
@@ -204,6 +224,7 @@ extension Topic {
             
         case .badges:
             TopicMetadata(
+                title: "Badges",
                 category: .control,
                 icon: "app.badge",
                 docs: [
@@ -216,6 +237,7 @@ extension Topic {
             // MARK: - View
         case .sheet:
             TopicMetadata(
+                title: "Sheet",
                 category: .view,
                 icon: "square.stack",
                 docs: [TopicDocType("sheet(item:onDismiss:content:)", url: "https://developer.apple.com/documentation/swiftui/view/sheet(item:onDismiss:content:)")]
@@ -223,6 +245,7 @@ extension Topic {
             
         case .popover:
             TopicMetadata(
+                title: "Popover",
                 category: .view,
                 icon: "questionmark.bubble",
                 docs: [TopicDocType("popover(isPresented:attachmentAnchor:arrowEdge:content:)", url: "https://developer.apple.com/documentation/swiftui/view/popover(ispresented:attachmentanchor:arrowedge:content:)")]
@@ -230,6 +253,7 @@ extension Topic {
             
         case .alert:
             TopicMetadata(
+                title: "Alert",
                 category: .view,
                 icon: "exclamationmark.bubble",
                 docs: [TopicDocType("alert(_:ispresented:actions:message:)", url: "https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:actions:message:)-6awwp")],
@@ -238,6 +262,7 @@ extension Topic {
             
         case .confirmationDialog:
             TopicMetadata(
+                title: "Confirmation Dialog",
                 category: .view,
                 icon: "checkmark.bubble",
                 docs: [TopicDocType("confirmationDialog(_:isPresented:titleVisibility:actions:message:)", url: "https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:actions:message:)")],
@@ -246,6 +271,7 @@ extension Topic {
             
         case .emptyView:
             TopicMetadata(
+                title: "Empty View",
                 category: .view,
                 icon: "rectangle.dashed",
                 docs: [TopicDocType("EmptyView", url: "https://developer.apple.com/documentation/swiftui/emptyview")]
@@ -253,6 +279,7 @@ extension Topic {
             
         case .appStoreOverlay:
             TopicMetadata(
+                title: "App Store Overlay",
                 category: .view,
                 icon: "apple.logo",
                 docs: [
@@ -263,6 +290,7 @@ extension Topic {
             
         case .customViewModifiers:
             TopicMetadata(
+                title: "Custom View Modifiers",
                 category: .view,
                 icon: "paintbrush.pointed",
                 docs: [
@@ -274,6 +302,7 @@ extension Topic {
             // MARK: - Navigation
         case .dismiss:
             TopicMetadata(
+                title: "Dismiss",
                 category: .navigation,
                 icon: "chevron.backward.chevron.backward.dotted",
                 docs: [TopicDocType("dismiss()", url: "https://developer.apple.com/documentation/swiftui/environmentvalues/dismiss")]
@@ -281,6 +310,7 @@ extension Topic {
             
         case .navigationView:
             TopicMetadata(
+                title: "Navigation View",
                 category: .navigation,
                 icon: "macwindow",
                 docs: [TopicDocType("NavigationView", details: "Deprecated: iOS 13.0-26.1", url: "https://developer.apple.com/documentation/swiftui/navigationview")]
@@ -288,6 +318,7 @@ extension Topic {
             
         case .navigationStack:
             TopicMetadata(
+                title: "Navigation Stack",
                 category: .navigation,
                 icon: "macwindow.on.rectangle",
                 docs: [TopicDocType("NavigationStack", url: "https://developer.apple.com/documentation/swiftui/navigationstack")]
@@ -295,6 +326,7 @@ extension Topic {
             
         case .navigationSplitView:
             TopicMetadata(
+                title: "Navigation Split View",
                 category: .navigation,
                 icon: "sidebar.left",
                 docs: [TopicDocType("NavigationSplitView", url: "https://developer.apple.com/documentation/swiftui/navigationsplitview")]
@@ -302,6 +334,7 @@ extension Topic {
             
         case .navigationBar:
             TopicMetadata(
+                title: "Navigation Bar",
                 category: .navigation,
                 icon: "menubar.arrow.up.rectangle",
                 docs: [TopicDocType("toolbar(content:)", url: "https://developer.apple.com/documentation/swiftui/view/toolbar(content:)")]
@@ -309,6 +342,7 @@ extension Topic {
             
         case .navigationLink:
             TopicMetadata(
+                title: "Navigation Link",
                 category: .navigation,
                 icon: "point.topright.arrow.triangle.backward.to.point.bottomleft.scurvepath",
                 docs: [TopicDocType("NavigationLink", url: "https://developer.apple.com/documentation/swiftui/navigationlink")]
@@ -316,6 +350,7 @@ extension Topic {
             
         case .passAView:
             TopicMetadata(
+                title: "Pass a View",
                 category: .navigation,
                 icon: "inset.filled.trailinghalf.arrow.trailing.rectangle",
                 docs: [TopicDocType("AnyView", url: "https://developer.apple.com/documentation/swiftui/anyview")]
@@ -323,6 +358,7 @@ extension Topic {
             
         case .link:
             TopicMetadata(
+                title: "Link",
                 category: .navigation,
                 icon: "link",
                 docs: [TopicDocType("Link", url: "https://developer.apple.com/documentation/swiftui/link")],
@@ -331,6 +367,7 @@ extension Topic {
             
         case .shareLink:
             TopicMetadata(
+                title: "ShareLink",
                 category: .navigation,
                 icon: "square.and.arrow.up",
                 docs: [
@@ -344,6 +381,7 @@ extension Topic {
             // MARK: - Collections
         case .vStack:
             TopicMetadata(
+                title: "VStack",
                 category: .collections,
                 icon: "square.split.1x2",
                 docs: [TopicDocType("VStack", url: "https://developer.apple.com/documentation/swiftui/vstack")],
@@ -352,6 +390,7 @@ extension Topic {
             
         case .hStack:
             TopicMetadata(
+                title: "HStack",
                 category: .collections,
                 icon: "square.split.2x1",
                 docs: [TopicDocType("HStack", url: "https://developer.apple.com/documentation/swiftui/hstack")],
@@ -360,6 +399,7 @@ extension Topic {
             
         case .zStack:
             TopicMetadata(
+                title: "ZStack",
                 category: .collections,
                 icon: "square.stack.3d.up",
                 docs: [TopicDocType("ZStack", url: "https://developer.apple.com/documentation/swiftui/zstack")]
@@ -367,6 +407,7 @@ extension Topic {
             
         case .list:
             TopicMetadata(
+                title: "List",
                 category: .collections,
                 icon: "list.bullet.clipboard",
                 docs: [TopicDocType("List", url: "https://developer.apple.com/documentation/swiftui/list")],
@@ -375,6 +416,7 @@ extension Topic {
             
         case .swipeActions:
             TopicMetadata(
+                title: "Swipe Actions",
                 category: .collections,
                 icon: "hand.draw",
                 docs: [TopicDocType("swipeActions(edge:allowsFullSwipe:content:)", url: "https://developer.apple.com/documentation/swiftui/view/swipeactions(edge:allowsfullswipe:content:)")],
@@ -383,6 +425,7 @@ extension Topic {
             
         case .scrollView:
             TopicMetadata(
+                title: "ScrollView",
                 category: .collections,
                 icon: "scroll",
                 docs: [TopicDocType("ScrollView", url: "https://developer.apple.com/documentation/swiftui/scrollview")],
@@ -391,6 +434,7 @@ extension Topic {
             
         case .grids:
             TopicMetadata(
+                title: "Grids",
                 category: .collections,
                 icon: "square.grid.3x3",
                 docs: [
@@ -402,6 +446,7 @@ extension Topic {
             
         case .tabView:
             TopicMetadata(
+                title: "TabView",
                 category: .collections,
                 icon: "platter.filled.bottom.iphone",
                 docs: [TopicDocType("TabView", url: "https://developer.apple.com/documentation/swiftui/tabview")]
@@ -410,6 +455,7 @@ extension Topic {
             // MARK: - Layout
         case .spacer:
             TopicMetadata(
+                title: "Spacer",
                 category: .layout,
                 icon: "space",
                 docs: [TopicDocType("Spacer", url: "https://developer.apple.com/documentation/swiftui/spacer")],
@@ -418,6 +464,7 @@ extension Topic {
             
         case .padding:
             TopicMetadata(
+                title: "Padding",
                 category: .layout,
                 icon: "arrowtriangle.left.and.line.vertical.and.arrowtriangle.right",
                 docs: [TopicDocType("padding(_:_:)", url: "https://developer.apple.com/documentation/swiftui/view/padding(_:_:)")]
@@ -425,6 +472,7 @@ extension Topic {
             
         case .frame:
             TopicMetadata(
+                title: "Frame",
                 category: .layout,
                 icon: "photo.artframe",
                 docs: [TopicDocType("frame(width:height:alignment:)", url: "https://developer.apple.com/documentation/swiftui/view/frame(width:height:alignment:)")]
@@ -432,6 +480,7 @@ extension Topic {
             
         case .geometryReader:
             TopicMetadata(
+                title: "Geometry Reader",
                 category: .layout,
                 icon: "arrow.up.and.down.and.arrow.left.and.right",
                 docs: [TopicDocType("GeometryReader", url: "https://developer.apple.com/documentation/swiftui/geometryreader")]
@@ -439,6 +488,7 @@ extension Topic {
             
         case .equalSizeViews:
             TopicMetadata(
+                title: "Equal Size Views",
                 category: .layout,
                 icon: "rectangle.split.3x1"
             )
@@ -446,6 +496,7 @@ extension Topic {
             // MARK: - Design
         case .color:
             TopicMetadata(
+                title: "Color",
                 category: .design,
                 icon: "paintpalette",
                 docs: [TopicDocType("Color", url: "https://developer.apple.com/documentation/swiftui/color")],
@@ -454,6 +505,7 @@ extension Topic {
             
         case .gradient:
             TopicMetadata(
+                title: "Gradient",
                 category: .design,
                 icon: "app.translucent",
                 docs: [
@@ -469,6 +521,7 @@ extension Topic {
             // MARK: - System
         case .detectOSVersion:
             TopicMetadata(
+                title: "Detect OS Version",
                 category: .system,
                 icon: "waveform.path.ecg.magnifyingglass",
                 docs: [
@@ -479,6 +532,7 @@ extension Topic {
             
         case .detectDarkMode:
             TopicMetadata(
+                title: "Detect Dark Mode",
                 category: .system,
                 icon: "circle.righthalf.filled",
                 docs: [TopicDocType("colorScheme", url: "https://developer.apple.com/documentation/swiftui/environmentvalues/colorscheme")]
@@ -486,18 +540,21 @@ extension Topic {
             
         case .detectScreenSize:
             TopicMetadata(
+                title: "Detect Screen Size",
                 category: .system,
                 icon: "arrow.down.left.and.arrow.up.right.rectangle"
             )
             
         case .detectCompactOrRegular:
             TopicMetadata(
+                title: "Detect Compact or Regular",
                 category: .system,
                 icon: "iphone.sizes"
             )
             
         case .detectLang:
             TopicMetadata(
+                title: "Detect Language",
                 category: .system,
                 icon: "globe",
                 docs: [TopicDocType("preferredLocalizations", url: "https://developer.apple.com/documentation/foundation/bundle/preferredlocalizations")]
@@ -505,6 +562,7 @@ extension Topic {
             
         case .lowPowerMode:
             TopicMetadata(
+                title: "Low Power Mode",
                 category: .system,
                 icon: "battery.25percent",
                 docs: [TopicDocType("isLowPowerModeEnabled", url: "https://developer.apple.com/documentation/foundation/processinfo/islowpowermodeenabled")],
@@ -513,6 +571,7 @@ extension Topic {
             
         case .preventScreenSleep:
             TopicMetadata(
+                title: "Prevent Screen Sleep",
                 category: .system,
                 icon: "sun.max",
                 docs: [TopicDocType("isIdleTimerDisabled", url: "https://developer.apple.com/documentation/uikit/uiapplication/1623129-isidletimerdisabled")],
@@ -521,6 +580,7 @@ extension Topic {
             
         case .preventScreenshots:
             TopicMetadata(
+                title: "Prevent Screenshots",
                 category: .system,
                 icon: "iphone.slash",
                 docs: [
@@ -532,6 +592,7 @@ extension Topic {
             
         case .settingsAlternativeIcons:
             TopicMetadata(
+                title: "Settings Alternative Icons",
                 category: .system,
                 icon: "app.badge",
                 docs: [
@@ -544,18 +605,21 @@ extension Topic {
             // MARK: - New in Xcode 27
         case .differentiateOS:
             TopicMetadata(
+                title: "Differentiate OS",
                 category: .newIniOS27,
                 icon: "macbook.and.vision.pro"
             )
             
         case .enumPreview:
             TopicMetadata(
+                title: "Enum case Preview",
                 category: .newIniOS27,
                 icon: "list.bullet.rectangle"
             )
             
         case .reorderableContainers:
             TopicMetadata(
+                title: "Reorderable Containers",
                 category: .newIniOS27,
                 icon: "arrow.up.arrow.down.square",
                 docs: [
@@ -567,6 +631,7 @@ extension Topic {
             
         case .swipeActionsInContainers:
             TopicMetadata(
+                title: "Swipe Actions in Containers",
                 category: .newIniOS27,
                 icon: "hand.draw",
                 docs: [
@@ -578,6 +643,7 @@ extension Topic {
             
         case .asyncImageCaching:
             TopicMetadata(
+                title: "AsyncImage Caching",
                 category: .newIniOS27,
                 icon: "photo",
                 docs: [

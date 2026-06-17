@@ -150,13 +150,9 @@ final class NavModel: Codable {
         let topicIds          = try container.decode([Topic.ID].self, forKey: .topicPathIds)
         let favoriteTopicIds  = try container.decode([Topic.ID].self, forKey: .favoriteTopicPathIds)
         
-        self.topicPath = topicIds.compactMap {
-            Topic(rawValue: $0)
-        }
+        self.topicPath = topicIds.compactMap(Topic.topic(matching:))
         
-        self.favoriteTopicPath = favoriteTopicIds.compactMap {
-            Topic(rawValue: $0)
-        }
+        self.favoriteTopicPath = favoriteTopicIds.compactMap(Topic.topic(matching:))
     }
     
     func encode(to encoder: Encoder) throws {
