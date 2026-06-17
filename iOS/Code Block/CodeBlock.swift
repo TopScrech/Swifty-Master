@@ -41,7 +41,7 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          navigationView,
          navigationStack,
          navigationSplitView,
-         navigationBar,
+         navigationBar, navigationBarTitleMenu,
          navigationLink,
          passAView,
          link,
