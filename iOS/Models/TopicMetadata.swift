@@ -573,7 +573,7 @@ extension Topic {
                     TopicDocType("swipeActions(edge:allowsFullSwipe:content:onPresentationChanged:)", url: "https://developer.apple.com/documentation/swiftui/view/swipeactions(edge:allowsfullswipe:content:onpresentationchanged:)"),
                     TopicDocType("swipeActionsContainer()", url: "https://developer.apple.com/documentation/swiftui/view/swipeactionscontainer()")
                 ],
-                related: [.swipeActions, .list, .scrollView, .vStack, .grids]
+                related: [.swipeActions, .list, .scrollView]
             )
             
         case .asyncImageCaching:
