@@ -66,6 +66,8 @@
 				Assets.xcassets,
 				iOS.plist,
 				"Liquid Glass.icon",
+				Topics/Control/BrightnessScreenReaderUIView.swift,
+				Topics/Control/BrightnessScreenReaderView.swift,
 				Topics/Control/BrightnessSlider.swift,
 			);
 			target = F3202C982D5596100030B3CC /* visionOS */;
@@ -78,6 +80,8 @@
 				"Code Block/CodeBlockCopyButton.swift",
 				iOS.plist,
 				"Liquid Glass.icon",
+				Topics/Control/BrightnessScreenReaderUIView.swift,
+				Topics/Control/BrightnessScreenReaderView.swift,
 				Topics/Control/BrightnessSlider.swift,
 				Topics/Control/TopicBadges.swift,
 				Topics/Control/TopicGauge.swift,
@@ -90,6 +94,8 @@
 				"Code Block/CodeBlockView.swift",
 				iOS.plist,
 				"Liquid Glass.icon",
+				Topics/Control/BrightnessScreenReaderUIView.swift,
+				Topics/Control/BrightnessScreenReaderView.swift,
 				Topics/Control/BrightnessSlider.swift,
 				Topics/Control/TopicBadges.swift,
 			);
