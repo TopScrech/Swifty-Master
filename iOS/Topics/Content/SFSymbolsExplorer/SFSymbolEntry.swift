@@ -1,3 +1,5 @@
+import Foundation
+
 nonisolated struct SFSymbolEntry: Decodable, Identifiable, Hashable, Sendable {
     let name: String
     let availability: String

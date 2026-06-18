@@ -1,3 +1,5 @@
+import Foundation
+
 nonisolated struct SFSymbolCategory: Decodable, Identifiable, Hashable, Sendable {
     let key: String
     let icon: String

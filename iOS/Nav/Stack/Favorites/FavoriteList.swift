@@ -35,7 +35,9 @@ struct FavoriteList: View {
                     SFButton("checkmark") {
                         isEditing = false
                     }
+#if !os(visionOS)
                     .buttonStyle(.glassProminent)
+#endif
                     .tint(.blue)
                 } else {
                     SFButton("pencil") {

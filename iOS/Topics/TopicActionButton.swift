@@ -21,7 +21,9 @@ struct TopicActionButton: View {
                 .semibold()
                 .padding(.vertical, 10)
         }
+#if !os(visionOS)
         .buttonStyle(.glassProminent)
+#endif
         .tint(color)
     }
 }
