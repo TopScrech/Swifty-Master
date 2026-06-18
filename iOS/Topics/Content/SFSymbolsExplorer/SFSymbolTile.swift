@@ -2,13 +2,14 @@ import ScrechKit
 
 struct SFSymbolTile: View {
     let symbol: SFSymbolEntry
+    let renderingMode: SFSymbolRenderingMode
     let size: CGFloat
     
     var body: some View {
         VStack {
             Image(systemName: symbol.name)
                 .title()
-                .symbolRenderingMode(.hierarchical)
+                .symbolExplorerStyle(renderingMode)
                 .frame(height: 36)
             
             Text(symbol.name)

@@ -2,6 +2,7 @@ import ScrechKit
 
 struct SFSymbolsGrid: View {
     let symbols: [SFSymbolEntry]
+    let renderingMode: SFSymbolRenderingMode
     
     @State private var availableWidth = 0.0
     
@@ -37,7 +38,7 @@ struct SFSymbolsGrid: View {
         List(rowStarts, id: \.self) { start in
             HStack(spacing: spacing) {
                 ForEach(rowSymbols(start)) { symbol in
-                    SFSymbolTile(symbol: symbol, size: tileSize)
+                    SFSymbolTile(symbol: symbol, renderingMode: renderingMode, size: tileSize)
                 }
                 
                 ForEach(0..<placeholderCount(start), id: \.self) { _ in

@@ -4,6 +4,7 @@ struct TopicSFSymbolsExplorer: View {
     @State private var catalog: SFSymbolCatalog?
     @State private var searchText = ""
     @State private var selectedCategory = "all"
+    @State private var renderingMode = SFSymbolRenderingMode.hierarchical
     
     private var filteredSymbols: [SFSymbolEntry] {
         guard let catalog else {
@@ -17,7 +18,7 @@ struct TopicSFSymbolsExplorer: View {
     }
     
     var body: some View {
-        SFSymbolsGrid(symbols: filteredSymbols)
+        SFSymbolsGrid(symbols: filteredSymbols, renderingMode: renderingMode)
             .toolbarTitleDisplayMode(.inline)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .task {
@@ -25,6 +26,10 @@ struct TopicSFSymbolsExplorer: View {
             }
             .searchable(text: $searchText, prompt: "Search symbols")
             .toolbar {
+                ToolbarItem {
+                    SFSymbolRenderingModePicker($renderingMode)
+                }
+                
                 ToolbarItem {
                     if let catalog {
                         SFSymbolsCategoryPicker($selectedCategory, in: catalog.categories)

@@ -2,6 +2,7 @@ import ScrechKit
 
 struct SFSymbolDetailView: View {
     let symbol: SFSymbolEntry
+    let renderingMode: SFSymbolRenderingMode
     
     var body: some View {
         List {
@@ -9,7 +10,7 @@ struct SFSymbolDetailView: View {
                 VStack {
                     Image(systemName: symbol.name)
                         .largeTitle()
-                        .symbolRenderingMode(.hierarchical)
+                        .symbolExplorerStyle(renderingMode)
                     
                     Text(symbol.name)
                         .selectableSymbolText()
