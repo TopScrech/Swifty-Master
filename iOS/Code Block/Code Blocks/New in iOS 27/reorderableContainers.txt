@@ -1,0 +1,31 @@
+import SwiftUI
+
+struct ReorderableContainer: View {
+    @State private var model = ReorderableContainerModel()
+    
+    var body: some View {
+        ScrollView {
+            LazyVStack {
+                ForEach(model.icons) {
+                    IconRowView(icon: $0)
+                }
+                .reorderable()
+            }
+            .reorderContainer(for: Icon.self, move: model.move)
+            .scenePadding()
+        }
+    }
+}
+
+@Observable
+final class ReorderableContainerModel {
+    var icons: [Icon] = Icon.examples
+    
+    func move(_ difference: ReorderDifference<Icon.ID, ReorderableSingleCollectionIdentifier>) {
+        difference.apply(to: &icons)
+    }
+}
+
+#Preview {
+    ReorderableContainer()
+}

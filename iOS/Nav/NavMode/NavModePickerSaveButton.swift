@@ -29,7 +29,7 @@ struct NavModePickerSaveButton: View {
 #else
         .foregroundStyle(.background)
 #endif
-        .frame(maxWidth: .infinity)
+        .buttonSizing(.flexible)
         .padding(.vertical, 10)
         .background(.primary, in: .rect(cornerRadius: 16))
         .disabled(navMode == nil)

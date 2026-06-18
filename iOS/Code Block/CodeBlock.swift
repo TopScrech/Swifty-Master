@@ -11,7 +11,7 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          textField, textFieldSecured, textFieldDisableAutocorrection,
          textEditor, textEditorFormat,
          label, labelImage, labelCustomView, labelStyle,
-         sfSymbols,
+         sfSymbols, sfSymbolsExplorer,
          shape,
          customKeyboard,
          
@@ -34,13 +34,14 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          alert,
          confirmationDialog,
          appStoreOverlay,
+         customViewModifiers,
          
          // Nav
          dismiss, dismissHideBackButton,
          navigationView,
          navigationStack,
          navigationSplitView,
-         navigationBar,
+         navigationBar, navigationBarTitleMenu,
          navigationLink,
          passAView,
          link,
@@ -67,10 +68,12 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          
          // Design
          color,
+         hexColors,
          gradient,
          
          // System
          darkMode, darkModeLock,
+         anyAppleOS,
          detectOSVersion, detectOSVersionNewAndOld, detectDeviceUsed,
          lowPowerMode,
          preventScreenSleep,
@@ -79,7 +82,13 @@ enum CodeBlock: String, Identifiable, CaseIterable {
          differentiateOS,
          detectScreenSize,
          detectCompactOrRegular,
-         settingsAlternativeIcons
+         settingsAlternativeIcons,
+         
+         // New in Xcode 27
+         enumPreview,
+         reorderableContainers,
+         swipeActionsInContainers,
+         asyncImageCaching
     
     var code: String {
         guard let url = Bundle.main.url(forResource: self.rawValue, withExtension: "txt") else {

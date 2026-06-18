@@ -1,0 +1,18 @@
+ScrollView {
+    LazyVStack {
+        ForEach(model.messages) { message in
+            MessageRow(message: message)
+                .swipeActions(edge: .trailing) {
+                    Button("Delete", systemImage: "trash", role: .destructive) {
+                        model.delete(message)
+                    }
+                    
+                    Button("Archive", systemImage: "archivebox") {
+                        model.archive(message)
+                    }
+                }
+        }
+    }
+    .swipeActionsContainer() // required
+    .scenePadding()
+}

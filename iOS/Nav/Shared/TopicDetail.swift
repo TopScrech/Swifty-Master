@@ -32,17 +32,22 @@ private struct Content: View {
     ]
     
     var body: some View {
-        ScrollView {
+        if topic.isSpecialExperience {
             ContentView(topic)
-            
-            ViewThatFits(in: .horizontal) {
-                wideDetails
-                narrowDetails
+                .navigationTitle(topic.localizedName)
+        } else {
+            ScrollView {
+                ContentView(topic)
+                
+                ViewThatFits(in: .horizontal) {
+                    wideDetails
+                    narrowDetails
+                }
+                .scenePadding()
             }
-            .scenePadding()
+            .navigationTitle(topic.localizedName)
+            .scrollIndicators(.never)
         }
-        .navigationTitle(topic.localizedName)
-        .scrollIndicators(.never)
     }
     
     private var wideDetails: some View {

@@ -1,0 +1,11 @@
+// Simple example
+AsyncImage(url: url)
+
+// Custom caching policy
+let imageRequest = URLRequest(
+    url: url,
+    cachePolicy: .returnCacheDataElseLoad,
+    timeoutInterval: 30
+)
+
+AsyncImage(request: imageRequest)

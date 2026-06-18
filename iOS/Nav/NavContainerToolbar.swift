@@ -11,6 +11,7 @@ extension View {
                     Image(systemName: "gear")
                 }
                 .keyboardShortcut("s")
+                .frame(32)
             }
 #endif
     }

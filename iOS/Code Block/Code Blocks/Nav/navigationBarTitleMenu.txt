@@ -1,0 +1,27 @@
+struct ContentView: View {
+    @State private var selectedSection = "Overview"
+
+    var body: some View {
+        NavigationStack {
+            List {
+                Text(selectedSection)
+            }
+            .navigationTitle(selectedSection)
+            .toolbarTitleMenu {
+                Button("Overview", systemImage: "rectangle.grid.1x2") {
+                    selectedSection = "Overview"
+                }
+
+                Button("Favorites", systemImage: "heart") {
+                    selectedSection = "Favorites"
+                }
+
+                Divider()
+
+                Button("Settings", systemImage: "gearshape") {
+                    selectedSection = "Settings"
+                }
+            }
+        }
+    }
+}

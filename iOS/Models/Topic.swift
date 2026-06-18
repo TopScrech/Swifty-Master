@@ -4,97 +4,124 @@ import SwiftUI
 
 enum Topic: String, Identifiable, CaseIterable, Codable {
     // Content
-    case text = "Text",
-         textField = "Text Field",
-         textEditor = "Text Editor",
-         image = "Image",
-         label = "Label",
-         shape = "Shape",
-         divider = "Divider",
-         gauges = "Gauges",
-         progressView = "ProgressView",
-         badges = "Badges",
+    case text,
+         textField,
+         textEditor,
+         image,
+         sfSymbolsExplorer,
+         label,
+         shape,
+         divider,
+         gauges,
+         progressView,
+         badges,
          
          // Control
-         button = "Button",
-         menu = "Menu",
-         contextMenu = "Context Menu",
-         toggle = "Toggle",
-         slider = "Slider",
-         stepper = "Stepper",
-         picker = "Picker",
+         button,
+         menu,
+         contextMenu,
+         toggle,
+         slider,
+         stepper,
+         picker,
          
          // View
-         sheet = "Sheet",
-         popover = "Popover",
-         alert = "Alert",
-         confirmationDialog = "Confirmation Dialog",
-         emptyView = "Empty View",
-         appStoreOverlay = "App Store Overlay",
+         sheet,
+         popover,
+         alert,
+         confirmationDialog,
+         emptyView,
+         appStoreOverlay,
+         customViewModifiers,
          
          // Navigation
-         dismiss = "Dismiss",
-         navigationView = "Navigation View",
-         navigationStack = "Navigation Stack",
-         navigationSplitView = "Navigation Split View",
-         navigationBar = "Navigation Bar",
-         navigationLink = "Navigation Link",
-         passAView = "Pass a View",
-         link = "Link",
-         shareLink = "ShareLink",
+         dismiss,
+         navigationView,
+         navigationStack,
+         navigationSplitView,
+         navigationBar,
+         navigationLink,
+         passAView,
+         link,
+         shareLink,
          
          // Collections
-         vStack = "VStack",
-         hStack = "HStack",
-         zStack = "ZStack",
-         list = "List",
-         swipeActions = "Swipe Actions",
-         scrollView = "ScrollView",
-         grids = "Grids",
-         tabView = "TabView",
+         vStack,
+         hStack,
+         zStack,
+         list,
+         swipeActions,
+         scrollView,
+         grids,
+         tabView,
          
          // Layout
-         spacer = "Spacer",
-         padding = "Padding",
-         frame = "Frame",
+         spacer,
+         padding,
+         frame,
          //         positionPoint = "Position Point",
-         geometryReader = "Geometry Reader",
-         equalSizeViews = "Equal Size Views",
+         geometryReader,
+         equalSizeViews,
          
          // Design
-         color = "Color",
-         gradient = "Gradient",
+         color,
+         gradient,
          
          // System
-         detectOSVersion = "Detect OS Version",
-         detectDarkMode = "Detect Dark Mode",
-         differentiateOS = "Differentiate OS",
-         detectScreenSize = "Detect Screen Size",
-         detectCompactOrRegular = "Detect Compact or Regular",
-         detectLang = "Detect Language",
-         lowPowerMode = "Low Power Mode",
-         preventScreenSleep = "Prevent Screen Sleep",
-         preventScreenshots = "Prevent Screenshots",
-         settingsAlternativeIcons = "Settings Alternative Icons"
+         detectOSVersion,
+         detectDarkMode,
+         detectScreenSize,
+         detectCompactOrRegular,
+         detectLang,
+         lowPowerMode,
+         preventScreenSleep,
+         preventScreenshots,
+         settingsAlternativeIcons,
+         
+         // New in Xcode 27
+         differentiateOS,
+         enumPreview,
+         reorderableContainers,
+         swipeActionsInContainers,
+         asyncImageCaching
     
     var id: String {
         rawValue
     }
     
     var name: String {
-        rawValue
+        metadata.title
     }
-
+    
     var localizedName: LocalizedStringKey {
-        LocalizedStringKey(rawValue)
+        LocalizedStringKey(name)
     }
     
     var shareLink: URL? {
         var components = URLComponents()
         components.scheme = "https"
         components.host = Self.shareLinkHost
-        components.percentEncodedPath = "/" + Self.encodedShareLinkPath(rawValue)
+        components.percentEncodedPath = "/" + Self.encodedShareLinkPath(name)
         return components.url
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        let value = try container.decode(String.self)
+        
+        guard let topic = Self.topic(matching: value) else {
+            throw DecodingError.dataCorruptedError(
+                in: container,
+                debugDescription: "Unknown topic: \(value)"
+            )
+        }
+        
+        self = topic
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        try container.encode(id)
     }
     
     static func topic(from url: URL) -> Topic? {
@@ -110,7 +137,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         }
         
         for component in pathComponents.reversed() {
-            if let match = Self.matchingTopic(for: component) {
+            if let match = Self.topic(matching: component) {
                 return match
             }
         }
@@ -118,14 +145,14 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         if
             let components = URLComponents(url: url, resolvingAgainstBaseURL: false),
             let topicQuery = components.queryItems?.first(where: { $0.name == "topic" })?.value,
-            let match = Self.matchingTopic(for: topicQuery)
+            let match = Self.topic(matching: topicQuery)
         {
             return match
         }
         
         if
             let fragment = url.fragment,
-            let match = Self.matchingTopic(for: fragment)
+            let match = Self.topic(matching: fragment)
         {
             return match
         }
@@ -133,23 +160,24 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         return nil
     }
     
-    private static let shareLinkHost = "swift-docs.com"
-    private static let shareLinkHosts: Set<String> = ["swift-docs.com", "www.swift-docs.com"]
+    private static let shareLinkHost = "swift-hub.dev"
+    private static let shareLinkHosts: Set<String> = ["swift-hub.dev", "www.swift-hub.dev"]
     
     private static func encodedShareLinkPath(_ topic: String) -> String {
         topic.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? topic
     }
     
-    private static func matchingTopic(for candidate: String) -> Topic? {
+    static func topic(matching candidate: String) -> Topic? {
         let decoded = candidate.removingPercentEncoding ?? candidate
         let normalized = decoded
-            .replacingOccurrences(of: "-", with: " ")
-            .replacingOccurrences(of: "_", with: " ")
+            .replacing("-", with: " ")
+            .replacing("_", with: " ")
             .trimmingCharacters(in: .whitespacesAndNewlines)
         
         return Topic.allCases.first {
             $0.rawValue.caseInsensitiveCompare(decoded) == .orderedSame ||
-            $0.rawValue.caseInsensitiveCompare(normalized) == .orderedSame
+            $0.name.caseInsensitiveCompare(decoded) == .orderedSame ||
+            $0.name.caseInsensitiveCompare(normalized) == .orderedSame
         }
     }
 }

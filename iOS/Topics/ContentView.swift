@@ -10,34 +10,44 @@ struct ContentView: View {
     }
     
     var body: some View {
+        if topic.isSpecialExperience {
+            content
+        } else {
+            content
+                .scenePadding()
+                .toolbar {
+                    Button {
+                        store.addOrRemoveFavorite(topic)
+                    } label: {
+                        if store.favoriteTopics.contains(topic) {
+                            Image(systemName: "star.slash.fill")
+                        } else {
+                            Image(systemName: "star")
+                        }
+                    }
+                    .foregroundStyle(.yellow)
+#if !os(tvOS)
+                    if let url = topic.shareLink {
+                        ShareLink(item: url)
+                    }
+#endif
+                }
+        }
+    }
+    
+    private var content: some View {
         VStack(spacing: 0) {
             if let view = topicView(topic) {
                 view
             }
             
-            TopicDocs(topic.docs)
+            if !topic.isSpecialExperience {
+                TopicDocs(topic.docs)
 #if DEBUG
-            ContentViewNavButtons(topic)
+                ContentViewNavButtons(topic)
 #endif
-            ContentViewRelatedTopics(topic.related)
-        }
-        .scenePadding()
-        .toolbar {
-            Button {
-                store.addOrRemoveFavorite(topic)
-            } label: {
-                if store.favoriteTopics.contains(topic) {
-                    Image(systemName: "star.slash.fill")
-                } else {
-                    Image(systemName: "star")
-                }
+                ContentViewRelatedTopics(topic.related)
             }
-            .foregroundStyle(.yellow)
-#if !os(tvOS)
-            if let url = topic.shareLink {
-                ShareLink(item: url)
-            }
-#endif
         }
     }
 }
@@ -49,6 +59,7 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .textField:  AnyView(TopicTextField())
     case .textEditor: AnyView(TopicTextEditor())
     case .image:      AnyView(TopicImage())
+    case .sfSymbolsExplorer: AnyView(TopicSFSymbolsExplorer())
     case .label:      AnyView(TopicLabel())
     case .shape:      AnyView(TopicShape())
     case .divider:    AnyView(TopicDivider())
@@ -65,6 +76,8 @@ func topicView(_ topic: Topic) -> AnyView? {
 #if !os(macOS) && !os(tvOS)
     case .gauges:       AnyView(TopicGauge())
     case .badges:       AnyView(TopicBadges())
+#else
+    case .gauges, .badges: nil
 #endif
         
         // View
@@ -74,6 +87,7 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .alert:           AnyView(TopicAlert())
     case .confirmationDialog: AnyView(TopicConfirmationDialog())
     case .popover:         AnyView(TopicPopover())
+    case .customViewModifiers: AnyView(TopicCustomViewModifiers())
         
         // Nav
     case .dismiss:             AnyView(TopicDismiss())
@@ -114,12 +128,16 @@ func topicView(_ topic: Topic) -> AnyView? {
     case .preventScreenSleep:     AnyView(TopicPreventScreenSleep())
     case .preventScreenshots:     AnyView(TopicPreventScreenshots())
     case .detectLang:             AnyView(TopicDetectLaguage())
-    case .differentiateOS:        AnyView(TopicDifferentiateOS())
     case .detectScreenSize:       AnyView(TopicDetectScreenSize())
     case .detectCompactOrRegular: AnyView(TopicDetectCompactOrRegular())
     case .settingsAlternativeIcons: AnyView(TopicSettingsAlternativeIcons())
         
-    @unknown default: nil
+        // New in Xcode 27
+    case .differentiateOS: AnyView(TopicDifferentiateOS())
+    case .enumPreview: AnyView(TopicEnumPreview())
+    case .reorderableContainers: AnyView(TopicReorderableContainers())
+    case .swipeActionsInContainers: AnyView(TopicSwipeActionsInContainers())
+    case .asyncImageCaching: AnyView(TopicAsyncImageCaching())
     }
 }
 

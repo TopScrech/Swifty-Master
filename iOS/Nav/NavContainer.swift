@@ -40,12 +40,8 @@ struct NavContainer: View {
 #if os(iOS)
         .statusBarHidden(!store.showStatusBar)
 #endif
-        .task {
-            nav.load()
-        }
-        .onOpenURL {
-            handleUniversalLink($0)
-        }
+        .task(nav.load)
+        .onOpenURL(perform: handleUniversalLink)
         .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { activity in
             guard let url = activity.webpageURL else {
                 return

@@ -3,7 +3,8 @@
 import SwiftUI
 
 enum Category: Int, CaseIterable, Identifiable, Codable {
-    case content,         // Text, TextField, Text Editor, Image, SF Symbols, Label, Shape, Divider, Custom Keyboard
+    case newIniOS27,
+         content,         // Text, TextField, Text Editor, Image, SF Symbols, Label, Shape, Divider, Custom Keyboard
          control,        // Button, Menu, Context Menu, Toggle, Slider, Stepper, Picker
          view,          // Sheet, Popover, Alert, Empty View, App Store Overlay
          navigation,   // Navigation View, Navigation Stack, Navigation Split View, Navigation Bar, Navigation Link, Pass a view, Link
@@ -27,6 +28,7 @@ enum Category: Int, CaseIterable, Identifiable, Codable {
         case .layout:      "Layout"
         case .design:      "Design"
         case .system:      "System"
+        case .newIniOS27:  "New in Xcode 27"
         }
     }
 }

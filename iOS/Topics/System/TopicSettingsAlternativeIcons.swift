@@ -23,7 +23,7 @@ struct TopicSettingsAlternativeIcons: View {
             
             Text("This app already includes icon switch buttons in Settings > Debug")
                 .footnote()
-                .foregroundStyle(.secondary)
+                .secondary()
                 .multilineTextAlignment(.center)
 #else
             TopicWarning("Alternate icons are available on iOS only")

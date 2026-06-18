@@ -13,11 +13,15 @@ final class DataModel {
     }()
     
     var filteredCategories: [Category] {
+        filteredCategories()
+    }
+    
+    func filteredCategories(excluding excludedTopics: Set<Topic> = []) -> [Category] {
         if searchPrompt.isEmpty {
             Category.allCases
         } else {
             Category.allCases.filter {
-                topics(in: $0).contains {
+                topics(in: $0, excluding: excludedTopics).contains {
                     $0.name.localizedStandardContains(searchPrompt)
                 }
             }
@@ -26,15 +30,21 @@ final class DataModel {
     
     /// The topics for a given category, sorted by name
     func topics(in category: Category?) -> [Topic] {
+        topics(in: category, excluding: [])
+    }
+    
+    func topics(in category: Category?, excluding excludedTopics: Set<Topic>) -> [Topic] {
         topics.filter {
-            $0.category == category
+            $0.category == category && !excludedTopics.contains($0)
         }
     }
     
     func topics(foundIn category: Category?) -> [Topic] {
-        let categoryTopics = topics.filter {
-            $0.category == category
-        }
+        topics(foundIn: category, excluding: [])
+    }
+    
+    func topics(foundIn category: Category?, excluding excludedTopics: Set<Topic>) -> [Topic] {
+        let categoryTopics = topics(in: category, excluding: excludedTopics)
         
         if searchPrompt.isEmpty {
             return categoryTopics
