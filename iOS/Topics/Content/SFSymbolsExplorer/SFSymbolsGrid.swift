@@ -35,20 +35,23 @@ struct SFSymbolsGrid: View {
     }
     
     var body: some View {
-        List(rowStarts, id: \.self) { start in
-            HStack(spacing: spacing) {
-                ForEach(rowSymbols(start)) { symbol in
-                    SFSymbolTile(symbol: symbol, renderingMode: renderingMode, size: tileSize)
-                }
-                
-                ForEach(0..<placeholderCount(start), id: \.self) { _ in
-                    Color.clear
-                        .frame(width: tileSize, height: tileSize)
+        ScrollView {
+            LazyVStack(spacing: spacing) {
+                ForEach(rowStarts, id: \.self) { start in
+                    HStack(spacing: spacing) {
+                        ForEach(rowSymbols(start)) { symbol in
+                            SFSymbolTile(symbol: symbol, renderingMode: renderingMode, size: tileSize)
+                        }
+                        
+                        ForEach(0..<placeholderCount(start), id: \.self) { _ in
+                            Color.clear
+                                .frame(width: tileSize, height: tileSize)
+                        }
+                    }
                 }
             }
-            .symbolListRowStyle(spacing: spacing)
+            .padding(spacing)
         }
-        .listStyle(.plain)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .onGeometryChange(for: CGFloat.self) {
             $0.size.width

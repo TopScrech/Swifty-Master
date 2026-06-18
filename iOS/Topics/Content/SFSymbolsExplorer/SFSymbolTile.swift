@@ -30,5 +30,6 @@ struct SFSymbolTile: View {
         .frame(width: size, height: size)
         .background(.thinMaterial)
         .clipShape(.rect(cornerRadius: 8))
+        .symbolCopyContextMenu(symbol.name)
     }
 }

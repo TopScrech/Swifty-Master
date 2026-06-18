@@ -16,6 +16,7 @@ struct SFSymbolDetailView: View {
                         .selectableSymbolText()
                 }
                 .frame(maxWidth: .infinity)
+                .symbolCopyContextMenu(symbol.name)
             }
             
             Section("Metadata") {
