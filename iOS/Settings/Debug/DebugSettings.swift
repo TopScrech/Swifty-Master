@@ -5,14 +5,11 @@ struct DebugSettings: View {
     
     var body: some View {
         List {
-            Section {
-                Button("Reset nav mode") {
-                    store.navMode = nil
-                }
 #if os(iOS)
+            Section {
                 Toggle("Status bar", isOn: $store.showStatusBar)
-#endif
             }
+#endif
 #if !os(macOS)
             Section {
                 Button("Glassy icon") {

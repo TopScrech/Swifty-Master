@@ -29,7 +29,6 @@ struct AppSettings: View {
                     Label("Use built-in Safari", systemImage: "safari")
                 }
 #endif
-                NavModeButton()
             }
             
             Section {

@@ -16,23 +16,7 @@ struct NavContainer: View {
 #endif
     
     var body: some View {
-        @Bindable var nav = nav
-        
-        Group {
-            switch store.navMode {
-            case .stack?:
-                StackContentView()
-                
-            case .twoColumn?:
-                TwoColumnContentView()
-                
-            case nil:
-                NavModeButton()
-                    .onAppear {
-                        nav.showNavModePicker = true
-                    }
-            }
-        }
+        SidebarNavigationView()
         .environment(dataModel)
 #if canImport(Appearance)
         .preferredColorScheme(store.appearance.scheme)
@@ -40,7 +24,10 @@ struct NavContainer: View {
 #if os(iOS)
         .statusBarHidden(!store.showStatusBar)
 #endif
-        .task(nav.load)
+        .task {
+            nav.load()
+            nav.ensureSelectedCategory()
+        }
         .onOpenURL(perform: handleUniversalLink)
         .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { activity in
             guard let url = activity.webpageURL else {
@@ -78,11 +65,6 @@ struct NavContainer: View {
             return
         }
         
-        if store.navMode == nil {
-            store.navMode = .stack
-        }
-        
-        store.lastTab = 0
         nav.selectedCategory = topic.category
         nav.topicPath = [topic]
     }
