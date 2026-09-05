@@ -27,12 +27,6 @@ struct TopicSwipeActionsModifier: ViewModifier {
                     }
                 }
             }
-            .swipeActions {
-                if let url = topic.shareLink {
-                    ShareLink(item: url)
-                        .labelStyle(.iconOnly)
-                }
-            }
 #endif
     }
 }

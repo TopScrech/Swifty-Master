@@ -97,14 +97,6 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         LocalizedStringKey(name)
     }
     
-    var shareLink: URL? {
-        var components = URLComponents()
-        components.scheme = "https"
-        components.host = Self.shareLinkHost
-        components.percentEncodedPath = "/" + Self.encodedShareLinkPath(name)
-        return components.url
-    }
-    
     init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
         let value = try container.decode(String.self)
@@ -160,12 +152,7 @@ enum Topic: String, Identifiable, CaseIterable, Codable {
         return nil
     }
     
-    private static let shareLinkHost = "swift-hub.dev"
     private static let shareLinkHosts: Set<String> = ["swift-hub.dev", "www.swift-hub.dev"]
-    
-    private static func encodedShareLinkPath(_ topic: String) -> String {
-        topic.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? topic
-    }
     
     static func topic(matching candidate: String) -> Topic? {
         let decoded = candidate.removingPercentEncoding ?? candidate
