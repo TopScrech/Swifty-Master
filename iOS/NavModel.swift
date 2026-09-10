@@ -13,8 +13,6 @@ final class NavModel: Codable {
     
     var columnVisibility: NavigationSplitViewVisibility
     
-    var showNavModePicker = false
-    
     private static let decoder = JSONDecoder()
     private static let encoder = JSONEncoder()
     private static let logger = Logger()
@@ -37,7 +35,7 @@ final class NavModel: Codable {
     /// selected topic category, and navigation state based on topic data
     init(
         columnVisibility: NavigationSplitViewVisibility = .automatic,
-        selectedCategory: Category? = nil,
+        selectedCategory: Category? = .sfSymbols,
         topicPath: [Topic] = [],
         favoriteTopicPath: [Topic] = []
     ) {
@@ -71,6 +69,29 @@ final class NavModel: Codable {
         }
     }
     
+    func ensureSelectedCategory() {
+        selectedCategory = selectedCategory ?? .sfSymbols
+    }
+    
+    func selectCategory(_ category: Category) {
+        guard selectedCategory != category else {
+            return
+        }
+        
+        selectedCategory = category
+        topicPath = []
+    }
+    
+    func clearTopicPathIfNeeded() {
+        guard let selectedCategory else {
+            return
+        }
+        
+        if !topicPath.allSatisfy({ $0.category == selectedCategory }) {
+            topicPath = []
+        }
+    }
+    
     /// Loads the navigation data for the navigation model from a previously saved state
     func load() {
         do {
@@ -80,6 +101,7 @@ final class NavModel: Codable {
             columnVisibility  = model.columnVisibility
             topicPath         = model.topicPath
             favoriteTopicPath = model.favoriteTopicPath
+            ensureSelectedCategory()
             
             Self.logger.info("Loaded NavModel: \(String(describing: self.topicPath))")
         } catch {

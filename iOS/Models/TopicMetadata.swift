@@ -85,8 +85,8 @@ extension Topic {
             
         case .sfSymbolsExplorer:
             TopicMetadata(
-                title: "SF Symbols Explorer",
-                category: .content,
+                title: "SF Symbols",
+                category: .sfSymbols,
                 icon: "square.grid.2x2",
                 isSpecialExperience: true
             )

@@ -5,15 +5,14 @@ struct StackTopicList: View {
     @EnvironmentObject private var store: ValueStore
     
     private let promotedTopics = [Topic.sfSymbolsExplorer]
+    private let fanControlURL = URL(string: "https://fancontrol.dev?source=swifty-master")!
     
     var body: some View {
         @Bindable var dataModel = dataModel
         let promotedTopicSet = Set(promotedTopics)
         
         List {
-            if let fanControlURL = URL(string: "https://fancontrol.dev?source=swifty-master") {
-                AdView(title: "FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: fanControlURL)
-            }
+            AdView(title: "FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: fanControlURL)
             
             let visiblePromotedTopics = promotedTopics.filter {
                 dataModel.searchPrompt.isEmpty || $0.name.localizedStandardContains(dataModel.searchPrompt)

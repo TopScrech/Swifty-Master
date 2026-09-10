@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 100;
+	objectVersion = 110;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,6 @@
 		F33904212E49341000A22EE1 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = F33904202E49341000A22EE1 /* SafariCover */; };
 		F33E8B262E416BD700B05370 /* CodeEditorView in Frameworks */ = {isa = PBXBuildFile; productRef = F33E8B252E416BD700B05370 /* CodeEditorView */; };
 		F380A1752E4AA1FA00157F67 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F380A1742E4AA1FA00157F67 /* ScrechKit */; };
-		F3837D3B2FA9507900F94024 /* CodeBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3837B732FA9507900F94024 /* CodeBlockView.swift */; };
 		F3BBD9F72AEECE4000A9F7E7 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3BBD9F62AEECE4000A9F7E7 /* ScrechKit */; };
 		F3C9D109304A1A1A00A1B2C3 /* SwiftSyntax in Frameworks */ = {isa = PBXBuildFile; productRef = F3C9D101304A1A1A00A1B2C3 /* SwiftSyntax */; };
 		F3C9D10A304A1A1A00A1B2C3 /* SwiftParser in Frameworks */ = {isa = PBXBuildFile; productRef = F3C9D102304A1A1A00A1B2C3 /* SwiftParser */; };
@@ -40,11 +39,8 @@
 /* Begin PBXFileReference section */
 		F30070012E2F0B9A00E76725 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F3202C992D5596100030B3CC /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F32313732E69CF0B0011837A /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
 		F325E3B32E5EBC760008928E /* Swifty Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F380A1622E4AA1BF00157F67 /* tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3837B732FA9507900F94024 /* CodeBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlockView.swift; sourceTree = "<group>"; };
-		F3A66CB52F294FFE008354CC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		F3A811E72F2146DA00D96952 /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENTS.md; sourceTree = "<group>"; };
 		F3BBD9DE2AEECD3400A9F7E7 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C1C3FC2F48FCBD00D3D257 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -52,6 +48,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F34D8A1D3053338F00820A9D /* Exceptions for "macOS" folder in "macOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CodeBlockView.swift,
+			);
+			target = F325E3B22E5EBC760008928E /* macOS */;
+		};
 		F383A8122ECF30A400350A0F /* Exceptions for "iOS" folder in "iOS" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -118,6 +121,14 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		F34D8A1B3053338E00820A9D /* macOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F34D8A1D3053338F00820A9D /* Exceptions for "macOS" folder in "macOS" target */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
 		F383A5052ECF30A400350A0F /* iOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -205,16 +216,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F325E3C32E5EBCA50008928E /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				F3A66CB52F294FFE008354CC /* macOS.entitlements */,
-				F32313732E69CF0B0011837A /* macOS.plist */,
-				F3837B732FA9507900F94024 /* CodeBlockView.swift */,
-			);
-			path = macOS;
-			sourceTree = "<group>";
-		};
 		F3BBD9D52AEECD3400A9F7E7 = {
 			isa = PBXGroup;
 			children = (
@@ -224,7 +225,7 @@
 				F4A000022FC0000000000002 /* Unit Tests */,
 				F383A81D2ECF30AE00350A0F /* visionOS */,
 				F383A8182ECF30A800350A0F /* tvOS */,
-				F325E3C32E5EBCA50008928E /* macOS */,
+				F34D8A1B3053338E00820A9D /* macOS */,
 				F3C1C3FC2F48FCBD00D3D257 /* LICENSE.txt */,
 				F3202CB92D5596380030B3CC /* Frameworks */,
 				F3BBD9DF2AEECD3400A9F7E7 /* Products */,
@@ -415,7 +416,7 @@
 				F3F5AD6B2E885E51007AD97D /* XCRemoteSwiftPackageReference "Appearance" */,
 				F3C9D100304A1A1A00A1B2C3 /* XCRemoteSwiftPackageReference "swift-syntax" */,
 			);
-			preferredProjectObjectVersion = 100;
+			preferredProjectObjectVersion = 110;
 			productRefGroup = F3BBD9DF2AEECD3400A9F7E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -466,7 +467,6 @@
 		F325E3AF2E5EBC760008928E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				F3837D3B2FA9507900F94024 /* CodeBlockView.swift in Sources */,
 			);
 		};
 		F380A15E2E4AA1BE00157F67 /* Sources */ = {
@@ -771,7 +771,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 64.1;
+				MARKETING_VERSION = 64.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -834,7 +834,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 64.1;
+				MARKETING_VERSION = 64.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;

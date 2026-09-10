@@ -16,7 +16,6 @@ final class ValueStore: ObservableObject {
     @AppStorage("built_in_browser") var builtInBrowser = true
 #endif
     @AppStorage("favorite_topics") var favoriteTopics: [Topic] = []
-    @AppStorage("nav_mode") var navMode: NavMode?
     @AppStorage("last_tab") var lastTab = 0
     
     // Debug

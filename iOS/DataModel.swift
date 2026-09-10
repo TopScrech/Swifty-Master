@@ -18,7 +18,9 @@ final class DataModel {
     
     func filteredCategories(excluding excludedTopics: Set<Topic> = []) -> [Category] {
         if searchPrompt.isEmpty {
-            Category.allCases
+            Category.allCases.filter {
+                !topics(in: $0, excluding: excludedTopics).isEmpty
+            }
         } else {
             Category.allCases.filter {
                 topics(in: $0, excluding: excludedTopics).contains {
