@@ -9,16 +9,9 @@ struct NavSettingsButton: View {
         }
         .labelStyle(.iconOnly)
         .keyboardShortcut("s")
-        .sheet(isPresented: $showsSettings) {
+        .sheet($showsSettings) {
             NavigationStack {
                 AppSettings()
-                    .toolbar {
-                        ToolbarItem(placement: .confirmationAction) {
-                            Button("Done") {
-                                showsSettings = false
-                            }
-                        }
-                    }
             }
         }
     }
