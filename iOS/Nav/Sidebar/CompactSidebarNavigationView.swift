@@ -6,6 +6,7 @@ struct CompactSidebarNavigationView: View {
     
     @State private var showsSidebar = false
     @State private var dragOffset = 0.0
+    @State private var acceptsSidebarDrag: Bool?
     
     private let sidebarWidth = 280.0
     private let edgeSwipeWidth = 24.0
@@ -49,8 +50,6 @@ struct CompactSidebarNavigationView: View {
                     .transition(.move(edge: .leading))
             }
         }
-        .animation(.snappy(duration: 0.25, extraBounce: 0), value: showsSidebar)
-        .animation(.snappy(duration: 0.25, extraBounce: 0), value: dragOffset)
         .simultaneousGesture(
             DragGesture()
                 .onChanged(handleDragChanged)
@@ -70,33 +69,46 @@ struct CompactSidebarNavigationView: View {
     }
     
     private func openSidebar() {
-        dragOffset = 0
-        showsSidebar = true
+        withAnimation(.snappy(duration: 0.25, extraBounce: 0)) {
+            dragOffset = 0
+            showsSidebar = true
+        }
     }
     
     private func closeSidebar() {
-        dragOffset = 0
-        showsSidebar = false
+        withAnimation(.snappy(duration: 0.25, extraBounce: 0)) {
+            dragOffset = 0
+            showsSidebar = false
+        }
     }
     
     private func handleDragChanged(_ value: DragGesture.Value) {
+        if acceptsSidebarDrag == nil {
+            let translation = value.translation
+            let isHorizontal = abs(translation.width) > abs(translation.height)
+            acceptsSidebarDrag = isHorizontal && (showsSidebar
+                ? translation.width < 0
+                : value.startLocation.x > edgeSwipeWidth && translation.width > 0)
+        }
+
+        guard acceptsSidebarDrag == true else { return }
+
         if showsSidebar {
             dragOffset = max(min(value.translation.width, 0), -sidebarWidth)
-        } else if value.startLocation.x <= edgeSwipeWidth && value.translation.width > 0 {
-            dragOffset = min(value.translation.width, sidebarWidth)
+        } else {
+            dragOffset = max(min(value.translation.width, sidebarWidth), 0)
         }
     }
     
     private func handleDragEnded(_ value: DragGesture.Value) {
-        if showsSidebar {
-            let predictedWidth = sidebarWidth + value.predictedEndTranslation.width
-            
+        defer { acceptsSidebarDrag = nil }
+        guard acceptsSidebarDrag == true else { return }
+
+        withAnimation(.snappy(duration: 0.25, extraBounce: 0)) {
+            let predictedWidth = (showsSidebar ? sidebarWidth : 0) + value.predictedEndTranslation.width
             showsSidebar = predictedWidth > sidebarWidth * 0.5
-        } else {
-            showsSidebar = value.startLocation.x <= edgeSwipeWidth && value.predictedEndTranslation.width > sidebarWidth * 0.35
+            dragOffset = 0
         }
-        
-        dragOffset = 0
     }
 }
 
