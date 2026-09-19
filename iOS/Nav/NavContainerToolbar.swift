@@ -7,11 +7,7 @@ extension View {
 #else
         self
             .toolbar {
-                NavigationLink(destination: AppSettings()) {
-                    Image(systemName: "gear")
-                }
-                .keyboardShortcut("s")
-                .frame(32)
+                NavSettingsButton()
             }
 #endif
     }
