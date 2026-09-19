@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct NavSettingsButton: View {
     @State private var showsSettings = false
