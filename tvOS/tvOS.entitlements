@@ -4,8 +4,8 @@
 <dict>
 	<key>com.apple.developer.associated-domains</key>
 	<array>
-		<string>webcredentials:swift-hub.dev?mode=developer</string>
-		<string>applinks:swift-hub.dev?mode=developer</string>
+		<string>webcredentials:swift-hub.dev</string>
+		<string>applinks:swift-hub.dev</string>
 	</array>
 </dict>
 </plist>
