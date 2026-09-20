@@ -60,7 +60,6 @@
       "target-membership": [
         "iOS",
         "macOS",
-        "tvOS",
         "visionOS",
       ],
       "membership-exceptions": [
@@ -78,20 +77,6 @@
             "Topics/Control/BrightnessScreenReaderUIView.swift",
             "Topics/Control/BrightnessScreenReaderView.swift",
             "Topics/Control/BrightnessSlider.swift",
-            "iOS.plist",
-          ],
-        }, {
-          "target": "tvOS",
-          "exclusions": [
-            "AppIcon.icon",
-            "Assets.xcassets",
-            "Code Block/CodeBlockCopyButton.swift",
-            "Liquid Glass.icon",
-            "Topics/Control/BrightnessScreenReaderUIView.swift",
-            "Topics/Control/BrightnessScreenReaderView.swift",
-            "Topics/Control/BrightnessSlider.swift",
-            "Topics/Control/TopicBadges.swift",
-            "Topics/Control/TopicGauge.swift",
             "iOS.plist",
           ],
         }, {
@@ -122,17 +107,6 @@
       ],
     }, {
       "kind": "folder",
-      "path": "tvOS",
-      "membership-exceptions": [
-        {
-          "target": "tvOS",
-          "inclusions": [
-            "Assets.xcassets",
-          ],
-        },
-      ],
-    }, {
-      "kind": "folder",
       "path": "macOS",
       "membership-exceptions": [
         {
@@ -151,7 +125,6 @@
       "children": [
         { "path": "<PRODUCTS>/iOS.app", "id": "F3BBD9DE2AEECD3400A9F7E7", "type": "wrapper.application", "index": false },
         { "path": "<PRODUCTS>/visionOS.app", "id": "F3202C992D5596100030B3CC", "type": "wrapper.application", "index": false },
-        { "path": "<PRODUCTS>/tvOS.app", "id": "F380A1622E4AA1BF00157F67", "type": "wrapper.application", "index": false },
         { "path": "<PRODUCTS>/Swifty Master.app", "id": "F325E3B32E5EBC760008928E", "type": "wrapper.application", "index": false },
         { "path": "<PRODUCTS>/Unit Tests.xctest", "id": "F4A000012FC0000000000001", "type": "wrapper.cfbundle", "index": false },
       ],
@@ -287,62 +260,7 @@
         "SWIFT_VERSION": "6.0",
         "TARGETED_DEVICE_FAMILY": "7",
         "VALIDATE_PRODUCT[config=Release]": "YES",
-        "XROS_DEPLOYMENT_TARGET": "26",
-      },
-    }, {
-      "name": "tvOS",
-      "id": "F380A1612E4AA1BE00157F67",
-      "product": "Products/tvOS.app",
-      "product-type": "application",
-      "build-phases": [
-        "compile-sources",
-        "frameworks",
-        "resources",
-      ],
-      "package-product-members": [
-        {
-          "package": "ScrechKit",
-          "product-name": "ScrechKit",
-          "build-phase": { "build-phase": "frameworks" },
-        }, {
-          "package": "swift-syntax",
-          "product-name": "SwiftParser",
-          "build-phase": { "build-phase": "frameworks" },
-        }, {
-          "package": "swift-syntax",
-          "product-name": "SwiftSyntax",
-          "build-phase": { "build-phase": "frameworks" },
-        },
-      ],
-      "build-settings": {
-        "ASSETCATALOG_COMPILER_APPICON_NAME": "App Icon & Top Shelf Image",
-        "ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME": "AccentColor",
-        "CODE_SIGN_ENTITLEMENTS": "tvOS/tvOS.entitlements",
-        "CODE_SIGN_STYLE": "Automatic",
-        "ENABLE_PREVIEWS": "YES",
-        "GENERATE_INFOPLIST_FILE": "YES",
-        "INFOPLIST_FILE": "tvOS/tvOS.plist",
-        "INFOPLIST_KEY_CFBundleDisplayName": "Swifty Master",
-        "INFOPLIST_KEY_ITSAppUsesNonExemptEncryption": "NO",
-        "INFOPLIST_KEY_LSApplicationCategoryType": "public.app-category.developer-tools",
-        "INFOPLIST_KEY_UILaunchScreen_Generation": "YES",
-        "INFOPLIST_KEY_UIUserInterfaceStyle": "Automatic",
-        "LD_RUNPATH_SEARCH_PATHS": [
-          "$(inherited)",
-          "@executable_path/Frameworks",
-        ],
-        "PRODUCT_BUNDLE_IDENTIFIER": "dev.topscrech.Everything-SwiftUI",
-        "PRODUCT_NAME": "$(TARGET_NAME)",
-        "SDKROOT": "appletvos",
-        "STRING_CATALOG_GENERATE_SYMBOLS": "YES",
-        "SWIFT_APPROACHABLE_CONCURRENCY": "YES",
-        "SWIFT_DEFAULT_ACTOR_ISOLATION": "MainActor",
-        "SWIFT_EMIT_LOC_STRINGS": "YES",
-        "SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY": "YES",
-        "SWIFT_VERSION": "6.0",
-        "TARGETED_DEVICE_FAMILY": "3",
-        "TVOS_DEPLOYMENT_TARGET": "26",
-        "VALIDATE_PRODUCT[config=Release]": "YES",
+        "XROS_DEPLOYMENT_TARGET": "1",
       },
     }, {
       "name": "macOS",
@@ -512,7 +430,7 @@
     "GCC_WARN_UNUSED_FUNCTION": "YES",
     "GCC_WARN_UNUSED_VARIABLE": "YES",
     "LOCALIZATION_PREFERS_STRING_CATALOGS": "YES",
-    "MARKETING_VERSION": "64.2.1",
+    "MARKETING_VERSION": "64.2.2",
     "MTL_ENABLE_DEBUG_INFO[config=Debug]": "INCLUDE_SOURCE",
     "MTL_ENABLE_DEBUG_INFO[config=Release]": "NO",
     "MTL_FAST_MATH": "YES",
