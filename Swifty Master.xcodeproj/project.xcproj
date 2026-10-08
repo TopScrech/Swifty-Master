@@ -441,6 +441,6 @@
     "SWIFT_EMIT_LOC_STRINGS": "YES",
     "SWIFT_OPTIMIZATION_LEVEL[config=Debug]": "-Onone",
   },
-  "last-upgrade": "27.1",
+  "last-upgrade": "27.2",
   "last-swift-update": "26.0",
 }
