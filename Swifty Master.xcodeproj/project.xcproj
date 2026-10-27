@@ -25,8 +25,7 @@
       "version": {
         "up-to-next-major-version": "0.65.1",
       },
-    },
-    {
+    }, {
       "kind": "remote",
       "repository": "https://github.com/TopScrech/ScrechKit",
       "version": {
@@ -36,7 +35,7 @@
       "kind": "remote",
       "repository": "https://github.com/mchakravarty/CodeEditorView",
       "version": {
-        "up-to-next-major-version": "0.15.4",
+        "up-to-next-major-version": "0.16.0",
       },
     }, {
       "kind": "remote",
@@ -149,17 +148,16 @@
           "name": "Check Package Updates",
           "run-on-every-build": true,
           "shell": "/bin/sh",
-          "script": "/usr/bin/python3 \"$SRCROOT/Scripts/check-package-updates.py\""
-        }
+          "script": "/usr/bin/python3 \"$SRCROOT/Scripts/check-package-updates.py\"",
+        },
       ],
       "build-settings": {
-        "SDKROOT": "macosx",
-        "SUPPORTED_PLATFORMS": "macosx",
         "ENABLE_USER_SCRIPT_SANDBOXING": "NO",
-        "SKIP_INSTALL": "YES"
-      }
-    },
-    {
+        "SDKROOT": "macosx",
+        "SKIP_INSTALL": "YES",
+        "SUPPORTED_PLATFORMS": "macosx",
+      },
+    }, {
       "name": "iOS",
       "id": "F3BBD9DD2AEECD3400A9F7E7",
       "product": "Products/iOS.app",
