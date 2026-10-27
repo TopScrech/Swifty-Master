@@ -140,11 +140,32 @@
   ],
   "targets": [
     {
+      "name": "Check Package Updates",
+      "id": "E8B2BCF06F1843E187A22D79",
+      "kind": "aggregate",
+      "build-phases": [
+        {
+          "kind": "script",
+          "name": "Check Package Updates",
+          "run-on-every-build": true,
+          "shell": "/bin/sh",
+          "script": "/usr/bin/python3 \"$SRCROOT/Scripts/check-package-updates.py\""
+        }
+      ],
+      "build-settings": {
+        "SDKROOT": "macosx",
+        "SUPPORTED_PLATFORMS": "macosx",
+        "ENABLE_USER_SCRIPT_SANDBOXING": "NO",
+        "SKIP_INSTALL": "YES"
+      }
+    },
+    {
       "name": "iOS",
       "id": "F3BBD9DD2AEECD3400A9F7E7",
       "product": "Products/iOS.app",
       "product-type": "application",
       "dependencies": [
+        "Check Package Updates",
         { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
       ],
       "build-phases": [
@@ -225,6 +246,7 @@
       "product": "Products/visionOS.app",
       "product-type": "application",
       "dependencies": [
+        "Check Package Updates",
         { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
       ],
       "build-phases": [
@@ -282,6 +304,7 @@
       "product": "Products/Swifty Master.app",
       "product-type": "application",
       "dependencies": [
+        "Check Package Updates",
         { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
       ],
       "build-phases": [
@@ -358,6 +381,7 @@
       "product-type": "bundle.unit-test",
       "test-host-target": "iOS",
       "dependencies": [
+        "Check Package Updates",
         { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
         "iOS",
       ],
