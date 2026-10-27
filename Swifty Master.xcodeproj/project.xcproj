@@ -33,9 +33,9 @@
       },
     }, {
       "kind": "remote",
-      "repository": "https://github.com/mchakravarty/CodeEditorView",
+      "repository": "https://github.com/TopScrech/CodeEditorView",
       "version": {
-        "up-to-next-major-version": "0.16.0",
+        "branch": "main",
       },
     }, {
       "kind": "remote",
